@@ -1,0 +1,6 @@
+.venv/
+.venv311/
+.tools/
+__pycache__/
+output/
+tmp/

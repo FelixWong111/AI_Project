@@ -1,0 +1,20 @@
+[
+  {
+    "index": 0,
+    "backend": 700,
+    "opened": true,
+    "read_success": true,
+    "frame_read_ms": 3.7925999999970372,
+    "resolution": [
+      1280,
+      720
+    ],
+    "device_identity": "TBD; verify Camo preview manually"
+  },
+  {
+    "index": 0,
+    "backend": 1400,
+    "opened": false,
+    "read_success": false
+  }
+]

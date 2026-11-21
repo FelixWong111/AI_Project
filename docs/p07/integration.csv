@@ -1,0 +1,7 @@
+case_id,mock_automation,real_status,real_dependency
+U01,PASS,NOT_RUN,P02 images and P08 bridge plus frozen models
+U02,PASS,NOT_RUN,Missing and extra parts scenes with verified counts
+U03,PASS,NOT_RUN,P06 ID0 localization and incorrect-size samples plus calibration
+U04,PASS,NOT_RUN,P08 shared rejudge and same-frame real inference
+U05,PASS,NOT_RUN,P02 empty and ID0-only scenes plus object model
+U06,PASS,NOT_RUN,Fixed count metadata and real unjudgeable images

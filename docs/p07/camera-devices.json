@@ -1,0 +1,27 @@
+[
+  {
+    "index": 0,
+    "name": "Camo",
+    "backend": "dshow"
+  },
+  {
+    "index": 1,
+    "name": "HP True Vision FHD Camera",
+    "backend": "dshow"
+  },
+  {
+    "index": 2,
+    "name": "OBS Virtual Camera",
+    "backend": "dshow"
+  },
+  {
+    "index": 0,
+    "name": "Camo",
+    "backend": "msmf"
+  },
+  {
+    "index": 1,
+    "name": "HP True Vision FHD Camera",
+    "backend": "msmf"
+  }
+]

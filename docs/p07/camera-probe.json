@@ -1,0 +1,44 @@
+[
+  {
+    "index": 0,
+    "backend": 700,
+    "opened": false,
+    "read_success": false
+  },
+  {
+    "index": 0,
+    "backend": 1400,
+    "opened": false,
+    "read_success": false
+  },
+  {
+    "index": 1,
+    "backend": 700,
+    "opened": true,
+    "read_success": true,
+    "frame_read_ms": 3.445199999999815,
+    "resolution": [
+      1280,
+      720
+    ],
+    "device_identity": "TBD; verify Camo preview manually"
+  },
+  {
+    "index": 1,
+    "backend": 1400,
+    "opened": false,
+    "read_success": false
+  },
+  {
+    "index": 2,
+    "backend": 700,
+    "opened": false,
+    "read_success": false
+  },
+  {
+    "index": 2,
+    "backend": 1400,
+    "opened": false,
+    "read_success": false
+  }
+]

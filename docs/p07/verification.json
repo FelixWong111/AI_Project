@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-11-21T13:19:44.233885+00:00",
+  "environment": {
+    "python": "3.11.14",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4"
+  },
+  "records": [
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "test_bad_image (test_p07.InputOutputTests.test_bad_image) ... ok\ntest_camera_open_failure (test_p07.InputOutputTests.test_camera_open_failure) ... ok\ntest_counts_file (test_p07.InputOutputTests.test_counts_file) ... ok\ntest_exports (test_p07.InputOutputTests.test_exports) ... ok\ntest_fake_camera_disconnect_reconnect_and_release (test_p07.InputOutputTests.test_fake_camera_disconnect_reconnect_and_release) ... ok\ntest_image_video_and_csv (test_p07.InputOutputTests.test_image_video_and_csv) ... ok\ntest_latency_evidence_boundaries_and_unique_frames (test_p07.InputOutputTests.test_latency_evidence_boundaries_and_unique_frames) ... ok\ntest_recording (test_p07.InputOutputTests.test_recording) ... ok\ntest_U01 (test_p07.MockIntegrationTests.test_U01) ... ok\ntest_U02 (test_p07.MockIntegrationTests.test_U02) ... ok\ntest_U03 (test_p07.MockIntegrationTests.test_U03) ... ok\ntest_U04_no_reinfer_or_observation_change (test_p07.MockIntegrationTests.test_U04_no_reinfer_or_observation_change) ... ok\ntest_U05 (test_p07.MockIntegrationTests.test_U05) ... ok\ntest_U06 (test_p07.MockIntegrationTests.test_U06) ... ok\ntest_camera_selection_matches_name_and_backend (test_p07.MockIntegrationTests.test_camera_selection_matches_name_and_backend) ... ok\ntest_image_empty_fixed_counts_is_fail (test_p07.MockIntegrationTests.test_image_empty_fixed_counts_is_fail) ... ok\ntest_invalid_counts (test_p07.MockIntegrationTests.test_invalid_counts) ... ok\ntest_invalid_frame (test_p07.MockIntegrationTests.test_invalid_frame) ... ok\ntest_invalid_result (test_p07.MockIntegrationTests.test_invalid_result) ... ok\ntest_real_never_falls_back (test_p07.MockIntegrationTests.test_real_never_falls_back) ... ok\ntest_review_without_reliable_counts (test_p07.MockIntegrationTests.test_review_without_reliable_counts) ... ok\ntest_ui_for_all_models (test_p07.MockIntegrationTests.test_ui_for_all_models) ... ok\ntest_worker_error_and_rejudge (test_p07.MockIntegrationTests.test_worker_error_and_rejudge) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 3.704s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "tools/p07_demo.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Created tmp/p07-demo/mock-input.png and mock-input.avi (synthetic)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "app.py",
+        "--headless",
+        "--image",
+        "tmp/p07-demo/mock-input.png",
+        "--max-frames",
+        "1"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INFO Session: output\\p07\\20261121T131940Z-822ab2cc\nINFO Saved output\\p07\\20261121T131940Z-822ab2cc\\MOCK-\\1795267180970036200\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "app.py",
+        "--headless",
+        "--video",
+        "tmp/p07-demo/mock-input.avi",
+        "--max-frames",
+        "5"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INFO Session: output\\p07\\20261121T131941Z-eaf149e3\nINFO Saved output\\p07\\20261121T131941Z-eaf149e3\\MOCK-\\1795267181349201300\nINFO Saved output\\p07\\20261121T131941Z-eaf149e3\\MOCK-\\1795267181453390200\nINFO Saved output\\p07\\20261121T131941Z-eaf149e3\\MOCK-\\1795267181553663600\nINFO Saved output\\p07\\20261121T131941Z-eaf149e3\\MOCK-\\1795267181654689100\nINFO Saved output\\p07\\20261121T131941Z-eaf149e3\\MOCK-\\1795267181757232800\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "app.py",
+        "--video",
+        "tmp/p07-demo/mock-input.avi",
+        "--max-frames",
+        "5"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INFO Session: output\\p07\\20261121T131942Z-64d77615\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "app.py",
+        "--headless",
+        "--image",
+        "tmp/p07-demo/mock-input.png",
+        "--backend",
+        "real"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "ERROR Real backend unavailable: configure P08 bridge as module:factory; no MOCK fallback\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "app.py",
+        "--headless",
+        "--image",
+        "tmp/p07-demo/absent.png"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INFO Session: output\\p07\\20261121T131943Z-7a0069cd\nERROR Input unavailable: [Errno 2] No such file or directory: 'tmp\\\\p07-demo\\\\absent.png'\n"
+    }
+  ]
+}
