@@ -7,6 +7,7 @@ import logging
 import math
 import time
 from pathlib import Path
+from collections import deque
 
 import cv2
 
@@ -15,6 +16,7 @@ from src.p07_devices import list_cameras, select_camera
 from src.p07_bridge import CLASSES, MODELS, SCENARIOS, load_backend, validate_counts
 from src.p07_output import Journal, Recorder, dump, export_result
 from src.p07_ui import InferenceWorker, present
+from src.p07_dashboard import hit_test
 
 
 def select_file(title: str) -> str:
@@ -24,6 +26,17 @@ def select_file(title: str) -> str:
     root.withdraw()
     try:
         return filedialog.askopenfilename(title=title)
+    finally:
+        root.destroy()
+
+
+def ask_integer(title: str, value: int, maximum: int) -> int | None:
+    import tkinter as tk
+    from tkinter import simpledialog
+    root = tk.Tk()
+    root.withdraw()
+    try:
+        return simpledialog.askinteger(title, title, initialvalue=value, minvalue=0, maxvalue=maximum, parent=root)
     finally:
         root.destroy()
 
@@ -122,6 +135,8 @@ def main(argv=None) -> int:
     dirty_counts = False
     loading = None
     auto_record = args.record
+    clicks = deque()
+    requested_model = None
     title = "P07 Mechanical Component Inspection"
 
     def stop_recording():
@@ -142,6 +157,7 @@ def main(argv=None) -> int:
         last_progress = time.perf_counter()
 
     def save_snapshot(canvas):
+        nonlocal message
         if not cached:
             raise ValueError("No completed result to export")
         stamp = time.time_ns()
@@ -164,13 +180,18 @@ def main(argv=None) -> int:
                 raise OSError("PNG encoder failed")
             data.tofile(output / name)
         logging.info("Saved %s", output)
+        message = "Snapshot and result CSV saved to session output folder"
 
     try:
         if not args.headless:
             cv2.namedWindow(title, cv2.WINDOW_NORMAL)
-            cv2.resizeWindow(title, 1360, 850)
-            for c in "12345":
-                cv2.createTrackbar("Expected " + c, title, expected[c], config["max_count"], lambda value: None)
+            cv2.resizeWindow(title, 1440, 900)
+            def mouse_event(event, x, y, flags, userdata):
+                if event == cv2.EVENT_LBUTTONUP:
+                    action = hit_test(x, y)
+                    if action:
+                        clicks.append(action)
+            cv2.setMouseCallback(title, mouse_event)
         if args.image:
             switch_source("image", args.image)
         elif args.video:
@@ -181,6 +202,10 @@ def main(argv=None) -> int:
             parser.error("headless requires an input source")
 
         while True:
+            if requested_model and not worker.busy and not loading:
+                loading = (requested_model, worker.pool.submit(load_backend, args.backend, requested_model, config))
+                message = "Loading " + requested_model
+                requested_model = None
             if loading and loading[1].done():
                 selected, future = loading
                 loading = None
@@ -204,11 +229,11 @@ def main(argv=None) -> int:
                 new_measurement = not fresh["rejudge"]
                 last_progress = time.perf_counter()
             latest = provider.latest if provider else None
-            if not loading and not worker.busy and cached and dirty_counts:
+            if not loading and not requested_model and not worker.busy and cached and dirty_counts:
                 # The bridge's shared rejudge handles count-only changes without inference.
                 worker.submit(backend, model, cached["packet"], dict(expected), SCENARIOS[scenario_index], generation, cached["result"])
                 dirty_counts = False
-            elif not loading and detecting and latest and not worker.busy and latest.frame_id != last_submitted:
+            elif not loading and not requested_model and detecting and latest and not worker.busy and latest.frame_id != last_submitted:
                 worker.submit(backend, model, latest, dict(expected), SCENARIOS[scenario_index], generation)
                 last_submitted = latest.frame_id
             if not detecting and not cached:
@@ -216,17 +241,17 @@ def main(argv=None) -> int:
             shown_expected = cached["expected"] if cached else expected
             active_backend = provider.backend.lower() if provider else config["camera_backend"]
             device_name = next((d["name"] for d in camera_devices if d["index"] == camera_index and d["backend"] == active_backend), "not selected / see --list-cameras")
-            info = [f'Source: {provider.kind if provider else "none"} | {("RUN" if detecting else "PAUSED") if provider else "NO INPUT"}',
-                    f'Device: {device_name if provider and provider.kind == "camera" else "N/A"}',
-                    f'Camera index: {camera_index} | Mock case: {SCENARIOS[scenario_index] if args.backend == "mock" else "N/A"}',
-                    f'Frame: {displayed.frame_id if displayed else "N/A"} | {displayed.image.shape[1] if displayed else 0}x{displayed.image.shape[0] if displayed else 0}',
-                    f'Capture FPS: {latest.capture_fps if latest else 0:.2f} | Processing FPS: {processing_rate.fps:.2f}',
-                    f'Inference ms: {format(cached["inference_ms"], ".2f") if cached and cached["inference_ms"] is not None else "N/A"}',
-                    f'Processing proxy ms: {format(last_processing_ms, ".2f") if last_processing_ms is not None else "N/A"}',
-                    ('COUNTS UPDATE PENDING' if dirty_counts or (cached and expected != cached['expected']) else ''),
-                    (provider.error if provider else message)[:62],
-                    ('RECORDING (constant FPS)' if recorder else message)[:62]]
-            canvas = present(displayed, cached["result"] if cached else None, shown_expected, model, args.backend, info)
+            ui_state = dict(source=provider.kind if provider else "none", device=device_name if provider and provider.kind == "camera" else "N/A",
+                            camera_index=camera_index, detecting=detecting, recording=recorder is not None,
+                            capture_fps=latest.capture_fps if latest else 0, processing_fps=processing_rate.fps,
+                            resolution=f"{displayed.image.shape[1]}x{displayed.image.shape[0]}" if displayed else "N/A",
+                            inference_ms=f'{cached["inference_ms"]:.2f}' if cached and cached["inference_ms"] is not None else "N/A",
+                            processing_ms=f'{last_processing_ms:.2f}' if last_processing_ms is not None else "N/A",
+                            pending_counts=dirty_counts or bool(cached and expected != cached['expected']),
+                            source_status=provider.error if provider else "Choose Camera, Image or Video above",
+                            message=message + (" | MOCK case: " + SCENARIOS[scenario_index] if args.backend == "mock" else ""),
+                            loading=loading[0] if loading else requested_model)
+            canvas = present(displayed, cached["result"] if cached else None, shown_expected, model, args.backend, ui_state)
             if auto_record and displayed is not None:
                 recorder = Recorder(journal.path / (f'{args.backend}-{time.time_ns()}.mp4'), config["record_fps"], (canvas.shape[1], canvas.shape[0]))
                 auto_record = False
@@ -271,20 +296,36 @@ def main(argv=None) -> int:
             if args.headless:
                 continue
             try:
-                updated = {c: cv2.getTrackbarPos("Expected " + c, title) for c in "12345"}
-                if updated != expected:
-                    expected = validate_counts(updated)
-                    dirty_counts = True
+                action = clicks.popleft() if clicks else None
+                key_actions = {"camera": "c", "image": "i", "video": "v", "close": "x", "camera-": "-", "camera+": "+",
+                               "toggle": " ", "snapshot": "s", "record": "r", "quit": "q", "counts-file": "e", "scenario": "n"}
+                if action in key_actions:
+                    key = ord(key_actions[action])
+                elif action and action.startswith("model:"):
+                    key = ord(str(MODELS.index(action.split(":")[1])+1))
+                elif action == "camera-index":
+                    value = ask_integer("Camera index", camera_index, 999)
+                    if value is not None and value != camera_index:
+                        camera_index = value
+                        if provider and provider.kind == "camera":
+                            switch_source("camera", camera_index)
+                elif action and action.startswith(("count:", "count-:", "count+:")):
+                    kind, c = action.split(":")
+                    value = ask_integer("Expected " + CLASSES[int(c)], expected[c], config["max_count"]) if kind == "count" else max(0, min(config["max_count"], expected[c] + (1 if kind == "count+" else -1)))
+                    if value is not None and value != expected[c]:
+                        expected = validate_counts(dict(expected, **{c: value}))
+                        dirty_counts = True
                 if key in (ord("q"), 27):
                     break
                 if key == ord(" "):
-                    detecting = not detecting
+                    if provider:
+                        detecting = not detecting
+                    else:
+                        message = "Choose Camera, Image or Video before starting"
                 elif key in map(ord, "1234"):
                     selected = MODELS[key-ord("1")]
-                    # Load away from event loop using the same idle worker executor.
-                    if not worker.busy and not loading:
-                        loading = (selected, worker.pool.submit(load_backend, args.backend, selected, config))
-                        message = "Loading " + selected
+                    requested_model = selected
+                    message = "Requested " + selected
                 elif key == ord("n") and args.backend == "mock":
                     scenario_index = (scenario_index+1) % len(SCENARIOS)
                     generation += 1
@@ -313,8 +354,8 @@ def main(argv=None) -> int:
                         values = load_expected(path, image_id)
                         if max(values.values()) > config["max_count"]:
                             raise ValueError("Increase max_count in config before loading these counts")
-                        for c in "12345":
-                            cv2.setTrackbarPos("Expected " + c, title, values[c])
+                        expected = values
+                        dirty_counts = True
                 elif key == ord("s"):
                     if dirty_counts or (cached and cached["expected"] != expected):
                         raise ValueError("Wait for count rejudgement before saving")

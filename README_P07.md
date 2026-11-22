@@ -69,12 +69,14 @@ py -3.11 -m venv .venv311
 
 ## 4. 界面操作与配置
 
-窗口内使用英文标签（OpenCV 默认字体不支持中文），本文为中文说明。五条 `Expected 1..5` 滑块输入非负整数，范围由 `max_count` 设置。导入 JSON 时超过 GUI 上限会明确拒绝，先调高配置再启动；公共数据合同本身没有此上限。
+窗口内使用英文标签（OpenCV 默认字体不支持中文），本文为中文说明。2026-11-22 演示版继续使用 OpenCV，采用可缩放的1600×1000画布，截图与录像尺寸固定。顶部为四模型按钮组、Camera/Image/Video/Close、摄像头编号、Start/Pause、Snapshot、Record及Quit；左侧为原帧预览或无输入占位提示；右侧为模型、判定、计数、ID0和性能卡片。
+
+原 Expected 滑块已替换为数量表中的 +/- 按钮和可点击整数输入。范围为0到max_count；下方 Import counts JSON 导入预期文件，Next MOCK case 切换模拟场景。按钮和快捷键使用相同事件处理。模型切换繁忙时会保留请求，加载完成后才更新模型名称和选中高亮。导入 JSON 超过 GUI 上限会明确拒绝，先调高配置再启动；公共数据合同本身没有此上限。
 
 | 操作 | 按键 |
 |---|---|
 | 检测开始/暂停 | 空格 |
-| baseline1 / baseline2 / baseline3 / final | 1 / 2 / 3 / 4（推理空闲时切换） |
+| baseline1 / baseline2 / baseline3 / final | 点击顶部模型按钮，或1 / 2 / 3 / 4（繁忙时排队切换） |
 | Mock 场景轮换 | n |
 | 打开摄像头 / 关闭输入 | c / x |
 | 摄像头索引增加 / 减少 | +（或 =）/ - |
@@ -98,7 +100,8 @@ py -3.11 -m venv .venv311
 | src/camera.py | FrameProvider、后台采集、DirectShow/MSMF 回退、重连、实际 FPS |
 | src/p07_devices.py | 按 OpenCV 后端枚举设备名、名称到索引的明确匹配 |
 | src/p07_bridge.py | P07 本地建议桥接协议、数据校验、独立 Mock 场景 |
-| src/p07_ui.py | 单推理工作线程、框/状态/计数呈现 |
+| src/p07_ui.py | 单推理工作线程与呈现入口 |
+| src/p07_dashboard.py | 演示布局、按钮命中区域、状态和数量卡片 |
 | src/p07_output.py | 采集和时延 CSV、分组摘要、结果包、MP4 与参数 |
 | config/p07.json / requirements-p07.txt | P07 专属配置、锁定运行依赖 |
 | tools/p07_demo.py | 显式合成的离线夹具，不是训练或测试集 |
@@ -269,3 +272,23 @@ Stage 2 演示建议（<2 分钟）：先展示 Camo 有效实拍画面及采集
 | P08 | run_config 嵌套格式与完整元数据 | 计划 §5.4、课程 p12 | TBD | per_image_expected_counts 结构、冻结记录、硬件详情 |
 
 实质性开发建议和核查证据另见 [advice_record.md](docs/p07/advice_record.md)。本代码和自动化证据不代表成员已完成个人复核，也不替代报告中真实贡献说明。
+
+## 12. 演示版 UI 验证（2026-11-22）
+
+```powershell
+.\.venv311\Scripts\python.exe tools/p07_demo.py
+.\.venv311\Scripts\python.exe app.py --image tmp/p07-demo/mock-input.png
+```
+
+1. 点击 baseline1、baseline2，检查顶部选中高亮和右侧大字模型名称。图像级模型不应显示检测框、观测数量或ID0结果。
+2. 点击 baseline3、final，检查框、观测/预期/差值。预期全为1时默认Mock场景为PASS。
+3. 点击 Next MOCK case，依次验证缺件、多件、ID0、空台面、REVIEW等场景。ID0场景显示红色警告和FAIL。
+4. 点击 EXPECTED 数字输入非负整数，或使用旁边 +/-，确认只重判，不改变观测与框。图像级模型不支持的向量显示UNSUPPORTED_COUNTS，恢复固定向量后可恢复判定。
+5. 使用1–4快捷键重复切换；推理繁忙时点击模型按钮，等待加载完成，确认实际结果能力随模型改变，而非只改变显示名称。
+6. 检查Camera/Image/Video、摄像头编号、Start/Pause、Snapshot和Record。Snapshot写入会话目录；Record开始后变为Stop REC。模型或输入切换仍停止当前录像。
+
+本次重构后26项unittest全部通过，验证脚本7项命令均得到预期退出码，包含实际OpenCV窗口的视频展示与自动退出。原始输出见docs/p07/verification.json。第10节23项是此前设备选择修正时的历史数量。
+
+新增tests/test_p07_dashboard.py通过注册的鼠标回调触发实际控制器，核查四模型加载入口（使用MockBackend）、导出model_id、数量更新、暂停/恢复和录像，并检查按钮命中与状态颜色。该测试替代原生显示调用，不等于真实模型或逐项人工点击验收。
+
+布局预览生成命令：`.\.venv311\Scripts\python.exe -m tools.p07_preview_ui`。输出docs/p07/ui/下的占位、PASS、ID0 FAIL、REVIEW和UNSUPPORTED_COUNTS图片，均为显式Mock夹具。预览中的性能数字只用于排版，不是测量结果；实际程序仍显示原有采集与推理计时。

@@ -113,7 +113,7 @@ class MockIntegrationTests(unittest.TestCase):
         for model in MODELS:
             result = MockBackend(model, CONFIG).infer(IMAGE, ONES)
             canvas = present(Frame(1, IMAGE, 0, 0, "image"), result, ONES, model, "mock", [])
-            self.assertEqual(canvas.shape[1], 1140)
+            self.assertEqual(canvas.shape, (1000, 1600, 3))
             self.assertGreater(np.count_nonzero(canvas), 100)
 
     def test_worker_error_and_rejudge(self):
