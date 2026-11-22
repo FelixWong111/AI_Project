@@ -29,6 +29,10 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO_ROOT)
 
+import numpy as np  # noqa: E402
+from sklearn.metrics import accuracy_score, f1_score  # noqa: E402
+from sklearn.model_selection import StratifiedKFold  # noqa: E402
+
 from src.p04 import dataset, evaluate, model, pipeline  # noqa: E402
 
 
@@ -40,6 +44,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output-dir", default=os.path.join(REPO_ROOT, "models", "baseline1"))
     p.add_argument("--split-train", default="train")
     p.add_argument("--split-val", default="val")
+    p.add_argument("--cv-folds", type=int, default=0,
+                   help="if >1, also report stratified K-fold CV accuracy/F1 over all labeled samples")
     return p.parse_args()
 
 
@@ -93,6 +99,27 @@ def main() -> int:
         metrics["validation"]["val_image_ids"] = val_ids
     else:
         print("[train] WARNING: no validation split; validation metrics skipped.")
+
+    if args.cv_folds and args.cv_folds > 1:
+        all_samples = train_samples + val_samples
+        X_all, y_all, _ = pipeline.extract_features(all_samples, image_size, hog_params)
+        skf = StratifiedKFold(n_splits=args.cv_folds, shuffle=True,
+                              random_state=config["mlp"].get("random_state", 42))
+        accs, f1s = [], []
+        for tr, va in skf.split(X_all, y_all):
+            mlp_cv = model.fit_mlp(X_all[tr], y_all[tr], config["mlp"])
+            pred = mlp_cv.predict(X_all[va])
+            accs.append(accuracy_score(y_all[va], pred))
+            f1s.append(f1_score(y_all[va], pred, pos_label="FAIL"))
+        metrics["cross_validation"] = {
+            "folds": args.cv_folds,
+            "n_samples": len(all_samples),
+            "accuracy_mean": round(float(np.mean(accs)), 4),
+            "accuracy_std": round(float(np.std(accs)), 4),
+            "f1_fail_mean": round(float(np.mean(f1s)), 4),
+            "f1_fail_std": round(float(np.std(f1s)), 4),
+        }
+        print("[train] cross-validation:", metrics["cross_validation"])
 
     bundle_path = os.path.join(args.output_dir, "baseline1.joblib")
     model.save_bundle(bundle, bundle_path)

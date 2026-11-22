@@ -51,7 +51,6 @@ from src.p04 import dataset, features, model, pipeline  # noqa: E402
 SUPPORTED_MODELS = {"baseline1", "baseline2", "baseline3", "final"}
 IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png", ".bmp")
 COUNT_KEYS = {"1", "2", "3", "4", "5"}
-VALID_STATUSES = {"PASS", "FAIL", "REVIEW", "UNSUPPORTED_COUNTS", "ERROR"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -86,8 +85,9 @@ def load_cases(counts_file: Optional[str]) -> List[Dict]:
         data = [data]
     cases: List[Dict] = []
     for entry in data:
-        expected = normalize_counts(entry.get("expected_counts", {}))
-        validate_counts(expected)
+        raw_counts = entry.get("expected_counts", {})
+        validate_counts(raw_counts)
+        expected = normalize_counts(raw_counts)
         cases.append({"image_id": entry["image_id"], "expected_counts": expected})
     return cases
 

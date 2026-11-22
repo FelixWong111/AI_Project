@@ -1,46 +1,45 @@
 {
   "train": {
-    "n_samples": 40
+    "n_samples": 28
   },
   "validation": {
     "positive_class": "FAIL",
     "confusion": {
-      "TP": 5,
-      "FP": 1,
-      "FN": 3,
-      "TN": 7
+      "TP": 3,
+      "FP": 0,
+      "FN": 1,
+      "TN": 3
     },
-    "precision_fail": 0.8333,
-    "recall_fail": 0.625,
-    "f1_fail": 0.7143,
-    "balanced_accuracy": 0.75,
+    "precision_fail": 1.0,
+    "recall_fail": 0.75,
+    "f1_fail": 0.8571,
+    "balanced_accuracy": 0.875,
     "support": {
-      "FAIL": 8,
-      "PASS": 8
+      "FAIL": 4,
+      "PASS": 3
     },
     "latency": {
       "n_frames": 20,
-      "latency_ms_median": 4.243,
-      "latency_ms_p95": 5.468,
-      "latency_ms_mean": 4.405
+      "latency_ms_median": 118.903,
+      "latency_ms_p95": 124.486,
+      "latency_ms_mean": 118.865
     },
     "val_image_ids": [
-      "val_0041.png",
-      "val_0042.png",
-      "val_0043.png",
-      "val_0044.png",
-      "val_0045.png",
-      "val_0046.png",
-      "val_0047.png",
-      "val_0048.png",
-      "val_0049.png",
-      "val_0050.png",
-      "val_0051.png",
-      "val_0052.png",
-      "val_0053.png",
-      "val_0054.png",
-      "val_0055.png",
-      "val_0056.png"
+      "08.jpg",
+      "11.jpg",
+      "06.jpg",
+      "25.jpg",
+      "28.jpg",
+      "21.jpg",
+      "17.jpg"
     ]
+  },
+  "cross_validation": {
+    "folds": 5,
+    "n_samples": 35,
+    "accuracy_mean": 0.8857,
+    "accuracy_std": 0.0571,
+    "f1_fail_mean": 0.887,
+    "f1_fail_std": 0.0652
   }
 }

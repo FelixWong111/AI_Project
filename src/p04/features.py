@@ -25,7 +25,10 @@ def load_image_bgr(path: str) -> np.ndarray:
     """
     if not os.path.isfile(path):
         raise FileNotFoundError(f"Image not found: {path}")
-    image = cv2.imread(path, cv2.IMREAD_COLOR)
+    # Read via bytes + imdecode: cv2.imread cannot handle non-ASCII (e.g. Chinese)
+    # paths on Windows, whereas fromfile/imdecode decodes the byte buffer directly.
+    buf = np.fromfile(path, dtype=np.uint8)
+    image = cv2.imdecode(buf, cv2.IMREAD_COLOR)
     if image is None:
         raise ValueError(f"OpenCV could not decode image: {path}")
     return image

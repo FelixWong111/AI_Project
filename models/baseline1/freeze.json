@@ -1,12 +1,12 @@
 {
   "model_id": "baseline1",
   "frozen": true,
-  "frozen_at": "2026-11-22T08:13:18.450020+00:00",
+  "frozen_at": "2026-11-22T10:13:08.677906+00:00",
   "bundle_file": "models\\baseline1\\baseline1.joblib",
-  "config_checksum": "9ccfb3e343910882cbc84e37b8d7c778760589d1b23792c4e0ca099e5e8a06f2",
-  "bundle_checksum": "d92402ecc66dc05f714176bf6fcb60f5694fc73a24fd45d9ef670820f01f601e",
+  "config_checksum": "877bb2a40ddd6b3c05bca9d5d20ecca34e6605a389b6bd2aa250937f74338788",
+  "bundle_checksum": "a66387f8a9713a6ce4d83f83e200b3b1508cc53d6fd10cfd320ddf78e64ce5a6",
   "sklearn_version": "1.9.1",
   "platform": "Windows-10-10.0.19045-SP0",
-  "training_command": "tools\\train_baseline1.py --config config\\baseline1.json --gt-csv data\\demo\\ground_truth_images.csv --images-dir data\\demo\\images --output-dir models\\baseline1",
+  "training_command": "tools\\train_baseline1.py --config config\\baseline1.json --gt-csv data\\ground_truth_images.csv --images-dir data\\raw\\照片\\测试 --output-dir models\\baseline1 --cv-folds 5",
   "python": "3.13.18"
 }

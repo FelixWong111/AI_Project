@@ -30,8 +30,22 @@
 - **引用**：`predict.py`（images.csv 列序、状态分支、run_config 键）；`config/baseline1.json`（`output_capability: image_level`）
 - **核对方式**：对照 §5.3 / §5.4 逐项核对；计数输入校验拒绝布尔、浮点、负值与多余键。
 
-## 待补充（真实数据到位后）
+## 记录 A-03
 
-- 在真实训练/验证集上的一条失败案例：`image_id`、预测 vs 真值、可能原因、工程后果（供 Stage 2 §6 使用）。
-- ≥20 张新鲜帧的实时延迟 median/P95 与硬件记录（当前仅合成数据上的离线计时，不能作为现场性能证据）。
+- **日期**：2026-11-22
+- **来源**：真实照片调试（LLM 协助排查 + 参数选型）
+- **建议摘录**：① OpenCV 在 Windows 中文路径下 `imread` 解码失败，改用 `np.fromfile` 读字节 + `cv2.imdecode` 解码；② 用分层 5 折交叉验证网格比较 HOG 输入尺寸/单元大小，选泛化最好的 96×96、ppc16；③ 训练脚本增加可选分层 K 折交叉验证指标，弥补单次小样本验证波动大的问题。
+- **决策**：接受（Accept）
+- **理由**：真实照片位于 `照片/测试` 中文目录，`imread` 直接返回 None；网格结果中 96/ppc16 的 MLP 5 折准确率 0.886、F1 0.887，优于 128/160/ppc12/ppc20 各组合；小样本下单折验证方差大，CV 指标更适合作为内部迭代参考。
+- **实现状态**：已实现
+- **引用**：
+  - 读图兼容：`src/p04/features.py`（`load_image_bgr`，fromfile + imdecode）
+  - 交叉验证：`tools/train_baseline1.py`（`--cv-folds`，`cross_validation` 指标块）
+  - 配置：`config/baseline1.json`（`image_size: [96, 96]`）
+- **核对方式**：`tests/test_p04.py` 4 项回归通过；35 张真实照片走统一 `predict.py` 产出合规 `images.csv` / `run_config.json`；误判样本 `13.jpg`、`28.jpg` 已记录到 README §5.2。
+
+## 待补充
+
+- ≥20 张新鲜帧在目标工装相机上的实时延迟 median/P95 与硬件记录（当前仅离线解码+推理计时，不能作为现场性能证据）。
+- 样本量扩充后、困难条件（反光/低照/遮挡/相似错规格件）下的表现复测。
 - LLM 在调试、结果解读中的其他具体使用实例与人工核对结论，按 §12 要求在个人报告中补充。

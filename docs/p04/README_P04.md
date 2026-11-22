@@ -43,8 +43,9 @@
 │  ├─ pipeline.py                 # 配置加载、特征批量提取、校验和
 │  └─ evaluate.py                 # 图像级 P/R/F1、混淆矩阵、延迟 median/P95
 ├─ tools/
+│  ├─ convert_shot_sheet.py        # 拍摄填写表(GBK) → 合同 ground_truth_images.csv
 │  ├─ make_demo_data.py           # 合成演示数据（仅跑通流水线，不是项目证据）
-│  └─ train_baseline1.py          # 训练 + 冻结 bundle + 指标/延迟/清单存档
+│  └─ train_baseline1.py          # 训练 + 冻结 bundle + 指标/延迟/清单/交叉验证存档
 ├─ models/baseline1/              # 冻结产物：bundle、冻结配置、metrics、清单、freeze 记录
 ├─ tests/test_p04.py              # 目录/特征形状/计数校验/训练-保存-加载-预测回归
 ├─ docs/p04/
@@ -57,33 +58,46 @@
 
 ## 4. 快速开始（Windows PowerShell，Python 3.11 x64）
 
+### 4.1 真实数据流程
+
 ```powershell
 # 1. 安装依赖（建议先建团队 venv）
 py -3.11 -m venv .venv311
 .\.venv311\Scripts\python.exe -m pip install -r requirements-p04.txt
 
-# 2. 生成合成演示数据（真实数据到位前跑通用）
-.\.venv311\Scripts\python.exe tools\make_demo_data.py --out data\demo
+# 2. 拍摄填写表(GBK) → 合同真值清单（自动排除“待定/待复核”行，分层切 train/val）
+.\.venv311\Scripts\python.exe tools\convert_shot_sheet.py `
+    --sheet "data\raw\照片\测试\拍摄填写表.csv" `
+    --images-dir "data\raw\照片\测试" `
+    --out-csv data\ground_truth_images.csv
 
-# 3. 训练并冻结 baseline1
+# 3. 训练并冻结 baseline1（--cv-folds 5 额外输出分层 5 折交叉验证）
 .\.venv311\Scripts\python.exe tools\train_baseline1.py `
     --config config\baseline1.json `
-    --gt-csv data\demo\ground_truth_images.csv `
-    --images-dir data\demo\images `
-    --output-dir models\baseline1
+    --gt-csv data\ground_truth_images.csv `
+    --images-dir "data\raw\照片\测试" `
+    --output-dir models\baseline1 --cv-folds 5
 
-# 4. 批处理推理
+# 4. 统一批处理推理
 .\.venv311\Scripts\python.exe predict.py `
-    --input_dir data\demo\images\test `
+    --input_dir "data\raw\照片\测试" `
     --model baseline1 `
-    --output-dir outputs\demo-run `
-    --counts_file data\demo\expected_counts.json
+    --output-dir outputs\real-run `
+    --counts_file data\expected_counts.json
 
 # 5. 回归测试
 .\.venv311\Scripts\python.exe tests\test_p04.py
 ```
 
-## 5. 接入真实数据（P02/P03 交付后）
+### 4.2 无真实数据时的合成演示
+
+```powershell
+python tools\make_demo_data.py --out data\demo
+python tools\train_baseline1.py --gt-csv data\demo\ground_truth_images.csv `
+    --images-dir data\demo\images --output-dir models\baseline1
+```
+
+## 5. 数据与当前结果快照（2026-11-22）
 
 真值清单沿用 DATA-02 合同 `ground_truth_images.csv`：
 
@@ -92,10 +106,25 @@ image_id, scene_id, split, width, height, annotation_status,
 count_1, count_2, count_3, count_4, count_5, non_catalogue_count, label
 ```
 
-- `split` 取 `train` / `val`（测试集由 P03 封存、P08 跑评估，训练阶段不碰）；
-- 按 `scene_id` 整组切分，同一场景的帧/角度/光照变体只能落在同一分区；
-- 训练命令替换 `--gt-csv`、`--images-dir` 指向真实数据即可；
+- 当前已标注 **35 张**（PASS 17 / FAIL 18），另有 3 张“待定”已排除，不进入训练/验证；
+- `split` 取 `train` / `val`；按 `scene_id` 整组切分，同一场景变体只能落在同一分区；
 - 固定参考预期向量目前是讨论起点 `[1,1,1,1,1]`，**待组会 D07 确认**；确认后改 `config/baseline1.json` 的 `supported_fixed_counts` 并重新冻结。
+
+### 5.1 当前基线表现（小样本，仅作内部迭代参考，不代表最终性能）
+
+| 口径 | 结果 |
+|---|---|
+| 分层 5 折交叉验证 · 准确率 | 0.886 ± 0.057 |
+| 分层 5 折交叉验证 · FAIL 类 F1 | 0.887 ± 0.065 |
+| 单次验证集（7 张）· balanced accuracy | 0.875（TP=3, FP=0, FN=1, TN=3） |
+| 单帧延迟（离线，含 4032×3024 JPEG 解码） | median 118.9 ms / P95 124.5 ms |
+
+> 延迟主要耗在高分辨率 JPEG 解码；现场实时性能需在目标工装相机上用 ≥20 张新鲜帧复测，当前数字不能作为上线性能证据。
+
+### 5.2 已记录的失败案例（供 §6 使用）
+
+- **`13.jpg`（PASS 误判 FAIL，边界分 0.500）**：五件齐全但摆放倾斜/歪头，HOG 方向直方图对姿态敏感，姿态变化被误判为异常；
+- **`28.jpg`（FAIL 误判 PASS，置信 1.000）**：缺 1 件且混入 1 件 M4×40 长螺丝，这类局部件数/规格差异在全局 HOG 特征里区分度不足，整图级模型漏判。
 
 ## 6. 冻结与交付节点（SW-01）
 
@@ -126,5 +155,5 @@ count_1, count_2, count_3, count_4, count_5, non_catalogue_count, label
 - 图像级基线**看不到单个零件**，无法定位缺件/多件/错规格件，也不做 ID 0 拒识；
 - 只支持固定预期向量，换向量即 `UNSUPPORTED_COUNTS`；
 - 分数是未校准的 MLP 输出，不能当作校准概率；
-- 仓库内附带的 bundle 是**合成演示数据**训练的占位产物，仅用于跑通流水线；**Stage 2 提交前必须用 P02/P03 真实数据重新训练并冻结**，演示指标不得作为项目证据；
-- 真实场景表现、困难条件（反光/低照/遮挡/相似错规格件）结果待真实数据与联调后补。
+- 当前仅 35 张标注样本，交叉验证波动较大；样本量扩充、困难条件（反光/低照/遮挡/相似错规格件）表现待补；
+- `.joblib` 权重包不入库（避免跨 sklearn 版本加载失败），队友在团队 3.11 环境跑一遍 `train_baseline1.py` 即可再生成本地 bundle。

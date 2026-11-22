@@ -47,8 +47,8 @@
   },
   "supported_counts_note": "The fixed reference vector is the group discussion starting point [1,1,1,1,1]; it remains TBD until the 2026-11-12 group meeting confirms D07. Image-level baseline1 supports only this one fixed vector; any other vector must return status UNSUPPORTED_COUNTS with empty predicted_label and prediction_score.",
   "image_size": [
-    128,
-    128
+    96,
+    96
   ],
   "preprocessing": {
     "color": "BGR -> grayscale",
