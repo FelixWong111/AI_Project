@@ -11,4 +11,3 @@ tmp/
 data/
 outputs/
 *.pyc
-models/**/*.joblib
