@@ -1,0 +1,4 @@
+# Shared proposed environment; verify on the team's actual machine before freezing.
+-r requirements-p07.txt
+-r requirements-p05.txt
+ultralytics==8.3.236
