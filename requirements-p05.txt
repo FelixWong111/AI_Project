@@ -2,5 +2,7 @@ numpy==1.26.4
 scipy==1.15.3
 scikit-learn==1.9.1
 Pillow==13.0.0
-# Install matched torch/torchvision CPU or CUDA wheels per README_P05.md.
+torch==2.7.1
+torchvision==0.22.1
+# Install the matching CPU/CUDA build first, as described in README_P05.md.
 # OpenCV and camera dependencies come from requirements-p07.txt.

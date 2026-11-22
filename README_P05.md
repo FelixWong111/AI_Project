@@ -16,14 +16,18 @@ python -m scripts.train_baseline2 --image-dir data/images --images-csv data/grou
 
 团队确认的目标解释器为 Python 3.11.14，NumPy 1.26.4、OpenCV 4.10.0.84、cv2-enumerate-cameras 1.4.0。先用 `python --version` 核对当前虚拟环境，再执行下方安装命令。
 
-P07 原有依赖和 P05 子集在同一个虚拟环境中安装。PyTorch 按机器选择匹配的 CPU/CUDA 包，以下是 CPU 示例。
+YOLO 部分拟采用 PyTorch 2.7.1、TorchVision 0.22.1、Ultralytics 8.3.236，以 YOLO11n 为 baseline3。P05 与 P06 共用这对 PyTorch/TorchVision 版本。此为待队友安装验证的目标环境，尚未冻结为已验证环境。
+
+P07 原有依赖和 P05、YOLO 在同一个虚拟环境中安装。以下是 CPU 示例；使用 NVIDIA GPU 时由运行成员按显卡和驱动选择官方对应的 CUDA 安装源，两个包必须来自同一构建源。
 
 ```powershell
-python -m pip install -r requirements-p07.txt -r requirements-p05.txt
-python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements-team.txt
+python -m pip check
+python -m scripts.check_team_stack --device cpu --output output/team_stack_check.json
 ```
 
-本次测试使用 Python 3.12 CPU，并固定 SciPy 1.15.3 以兼容 P07 的 NumPy 1.26.4。P07 的固定 NumPy/OpenCV 版本实测记录见 `docs/p05/verification.json`。团队 Python 3.11 与 CUDA 需要在对应设备复跑。`requirements-p05.txt` 为该模块依赖子集，正式环境由 P08 汇总冻结。
+历史测试使用 Python 3.12 CPU、PyTorch 2.8.0 / TorchVision 0.23.0，并固定 SciPy 1.15.3 以兼容 P07 的 NumPy 1.26.4。这些历史记录保留在 `docs/p05/verification.json` 和 `training_smoke.json`，不能当作新技术栈已通过的证据。Python 3.11.14、新版本组合、CUDA 均由队友在最终运行机验证。检查脚本验证精确版本、依赖一致性、ResNet18 前向、TorchVision NMS、CLAHE 与 YOLO11n 随机初始化推理；它不证明课程零件识别有效。P06 另用正式训练权重验证预测，P08 汇总冻结环境。详见 `docs/p05/yolo_handoff.md`。
 
 ## P07 相机与离线入口
 

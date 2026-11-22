@@ -32,6 +32,11 @@
     "python": "3.11.14",
     "numpy": "1.26.4",
     "opencv-python": "4.10.0.84",
-    "cv2-enumerate-cameras": "1.4.0"
-  }
+    "cv2-enumerate-cameras": "1.4.0",
+    "torch": "2.7.1",
+    "torchvision": "0.22.1",
+    "ultralytics": "8.3.236",
+    "baseline3": "YOLO11n"
+  },
+  "target_stack_runtime_validation": "NOT_RUN; to be executed on the team deployment machine"
 }
