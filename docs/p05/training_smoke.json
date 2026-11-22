@@ -1,0 +1,29 @@
+{
+  "scope": "synthetic interface verification, no course performance data",
+  "status": "PASS",
+  "checkpoint_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "synthetic_model_version": "77e44faeebac833404033f92c7762d998dcb38fb3506e17c625ff9604cdff11b",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "scikit_learn": "1.9.1",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0",
+    "opencv": "4.10.0"
+  },
+  "train_scenes": 12,
+  "validation_scenes": 8,
+  "checks": [
+    "official ResNet18 features and sklearn fit",
+    "sealed test placeholder not opened; REVIEW excluded",
+    "scene overlap rejected",
+    "validation probabilities matched reloaded classifier",
+    "offline path and BGR frame returned identical results",
+    "fixed counts, unsupported counts, malformed counts, missing and broken images",
+    "images.csv schema and run_config.json",
+    "CLAHE preserved dimensions and did not mutate the source"
+  ],
+  "real_course_training": "NOT_RUN",
+  "real_stage3_comparison": "NOT_RUN"
+}

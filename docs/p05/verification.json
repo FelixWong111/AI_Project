@@ -1,0 +1,37 @@
+{
+  "scope": "P05/P07 real adapter on synthetic scenes with official ResNet18 weights",
+  "source_base": "4552cbaaea376c4fb6a2038cf4046fba0afaecd4",
+  "tests": {
+    "existing_p07": 23,
+    "p05_bridge_regressions": 8,
+    "passed": 31
+  },
+  "integration": {
+    "p07_loader": "PASS",
+    "supported_headless_app": "PASS",
+    "unsupported_headless_app": "PASS",
+    "restored_matches_batch": "PASS",
+    "metadata_version_pin": "PASS",
+    "image_only_export": "PASS"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.15.3"
+  },
+  "real_course_data_training": "NOT_RUN",
+  "camera_display_latency": "NOT_RUN",
+  "cuda_device_run": "NOT_RUN",
+  "python_3_11_run": "NOT_RUN",
+  "synthetic_model_version": "5fa8bcbd0102cb76a1470dd41541cb1a79181f4502e5a632e608c35eca061566",
+  "target_environment": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "opencv-python": "4.10.0.84",
+    "cv2-enumerate-cameras": "1.4.0"
+  }
+}
