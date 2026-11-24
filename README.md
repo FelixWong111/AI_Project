@@ -4,7 +4,7 @@
 
 Baseline1 实时异常输入修正：P07 现启用训练特征支持范围检查，超出范围返回 REVIEW（标签/分数为空），不强制 FAIL。原始 HOG+MLP 权重和验证成绩不变；predict.py 保留原始基线，门控不参与其基线指标。详情及诊断证据见 [实时诊断说明](docs/baseline1_live_diagnosis.md)。部署 Baseline1 到 P07 时还需携带 `models/baseline1/scene_guard.npz`。其他模型不变。
 
-机械零件视觉检测：实时摄像头、图片和视频输入，模型切换、固定工单整图判定、记录和批处理。当前 Baseline1/2 已用 P03 实拍开发数据训练为候选版本；Baseline3/Final 保留检测接口，尚无真实权重。
+机械零件视觉检测：实时摄像头、图片和视频输入，模型切换、记录和统一批处理。Baseline1/2 为实拍数据训练的固定工单分类器；Baseline3 已接入 P06 的真实六类 YOLO11n 权重和计数判定；Final 尚未配置。Baseline3 的尺度/容差及完整未知件拒识尚未提供，不能宣称完整课程功能验收通过。详见 [Baseline3接入](docs/baseline3_integration.md) 和 [功能合规审查](docs/p06/compliance_review.md)。
 
 **Official held-out test: NOT_RUN。** 本次只训练与验证，未读取正式测试图片、测试真值或计算测试成绩。验证结果不是正式测试结果。
 
@@ -16,11 +16,12 @@ PowerShell：
 
 ```powershell
 .\.venv311\Scripts\Activate.ps1
+python -m pip install torch==2.7.1+cu126 torchvision==0.22.1+cu126 --index-url https://download.pytorch.org/whl/cu126
 python -m pip install -r requirements.txt
 python -m pip check
 ```
 
-CMD 激活命令为 `.venv311\Scripts\activate.bat`。也可一直直接调用 `.\.venv311\Scripts\python.exe`，无需激活。requirements 文件安装 Python 包，不安装 Python 解释器。完整运行环境包含 PyTorch 2.7.1、TorchVision 0.22.1；本机已验证 CPU 构建。其余精确依赖由 requirements.txt 引用的唯一运行清单固定；YOLO 的可选团队环境见 requirements-team.txt。
+CMD 激活命令为 `.venv311\Scripts\activate.bat`。也可直接调用 `.\.venv311\Scripts\python.exe`。完整三模型运行需要 PyTorch 2.7.1+cu126、TorchVision 0.22.1+cu126 与 Ultralytics 8.3.236；先按 docs/baseline3_integration.md 安装匹配CUDA构建，再安装 requirements.txt。Baseline1/2 原有依赖版本保留，历史训练CPU环境记录不改写。
 
 ## 数据与固定工单
 
@@ -40,7 +41,8 @@ P03 总包保持完全只读。只使用其 `01_` 开发包，`images/train` 为
 |---|---|---|---|
 | baseline1 | 灰度 128×128 → HOG 1764维 → 训练集 StandardScaler → MLP(32) | models/baseline1/baseline1.joblib | 100% / 1.0000 |
 | baseline2 | RGB 等比例缩放+白边 224×224 → 冻结 ImageNet ResNet18 512维 → 训练集 StandardScaler → Logistic Regression | models/baseline2/baseline2.json + resnet18-f37072fd.pth | 80.43% / 0.7805 |
-| baseline3 / final | P06 检测模型接入口 | 尚未交付 | NOT_RUN |
+| baseline3 | P06 冻结 YOLO11n，0–5类检测+P07计数判定 | models/baseline3/best.pt | 历史训练指标见training_record；集成验收与正式Test分开 |
+| final | Stage3研究改进入口 | 尚未交付 | NOT_RUN |
 
 Baseline1/2 均为图像级分类器，只支持上述固定工单。输出真实 PASS/FAIL 和未校准概率；Baseline1 分数为 P(预测类别)，Baseline2 分数为 P(FAIL)。不输出或虚构框、实际数量、ID 0 数量，界面显示 N/A。其他合法工单返回 UNSUPPORTED_COUNTS，标签和分数为空。文件缺失或推理失败明确 ERROR，无生产 Mock 回退。
 
@@ -66,7 +68,7 @@ python app.py --model baseline2 --camera 0 --capture-backend dshow
 
 本机用户先前确认 Camo 为 DSHOW camera 0；不同电脑需先执行 `python app.py --list-cameras`。可在顶部点击 Baseline1/2，或按 1/2 切换；Start/Pause、Image、Video、Camera、Snapshot、Record 均保留。当前先用验证集图片验收，不用测试图演示。图片模式：`python app.py --model baseline1 --image "允许的验证图片路径"`。
 
-完整键盘与控件说明见 docs/ui_operations.md。未配置 Baseline3/Final 时显示 ERROR 和缺失原因，无法据此演示真实检测。
+完整键盘与控件说明见 docs/ui_operations.md。Baseline3 使用相同GUI及批处理入口，支持自定义工单；Final 未配置时明确 ERROR。Baseline3 权重、CUDA或依赖加载失败也明确ERROR，不回退模拟结果。
 
 ## 课程批处理入口
 

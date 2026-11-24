@@ -17,6 +17,8 @@ from src.camera import Frame
 
 
 def main():
+    package=next(ROOT.glob('P03_*'))
+    before={p.relative_to(package).as_posix():[p.stat().st_size,p.stat().st_mtime_ns] for p in package.rglob('*') if p.is_file()}
     data=json.loads((ROOT/'outputs/training/data/manifest.json').read_text(encoding='utf-8'))
     records=[r for r in data['records'] if r['split']=='validation']
     fixed=data['evidence']['expected_counts']
@@ -61,8 +63,6 @@ def main():
         evidence['models'][name]=dict(reload='PASS',batch_rows=len(rows),batch_predictions_match_training='PASS',
                                      unsupported_counts='PASS',missing_artifact='PASS',headless_app='PASS',
                                      batch_command=subprocess.list2cmdline(command),app_command=subprocess.list2cmdline(gui_command))
-    package=next(ROOT.glob('P03_*'))
-    before=json.loads((ROOT/'outputs/refactor_backup_20261124/p03-stat-before.json').read_text(encoding='utf-8'))
     after={p.relative_to(package).as_posix():[p.stat().st_size,p.stat().st_mtime_ns] for p in package.rglob('*') if p.is_file()}
     removed=sorted(before.keys()-after.keys())
     changed=sorted(p for p in before.keys()&after.keys() if before[p]!=after[p])

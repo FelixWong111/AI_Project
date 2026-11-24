@@ -8,7 +8,7 @@ Baseline2：`config/baseline2.json` 指向 `models/baseline2/`，其中 `baselin
 
 本项目运行 Baseline2 需要 PyTorch 和 TorchVision；Baseline1 算法本身只需要 sklearn/skimage，但完整演示环境统一安装两套依赖。模型加载不下载权重。
 
-GUI：模型按钮或 1/2 快捷键选模型，L 重载；改变 expected 后，图像级模型仅接受训练固定工单。观测计数和 ID 0 输出为 N/A。Baseline3/Final 继续通过 bridge=module:factory 扩展，本次未交付真实检测模型；无配置时 ERROR，不伪装检测成功。
+GUI：模型按钮或 1/2/3 快捷键选模型，L 重载；改变 expected 后，图像级模型仅接受训练固定工单，观测计数和 ID0 为 N/A。Baseline3 已内置真实检测工厂，输出框、计数和ID0；外部 bridge=module:factory 扩展能力保留。Final仍未配置，不以Baseline3或Mock替代。详见 docs/baseline3_integration.md。
 
 旧 `--backend auto/mock` 参数仅为旧命令兼容保留，均不能启用生产模拟推理。合成实现只存在于 tests/p07_stubs.py。旧合成训练器和旧冻结材料已归档，不能用于正式推理。
 

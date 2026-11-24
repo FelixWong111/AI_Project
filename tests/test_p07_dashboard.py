@@ -90,7 +90,8 @@ class DashboardTests(unittest.TestCase):
             root = Path(tmp)
             create(root)
             deployment = dict(CONFIG, model_config=dict(CONFIG['model_config'],
-                              baseline1_bundle=str(root/'missing.joblib'), baseline2_bundle=str(root/'missing-bundle')))
+                              baseline1_bundle=str(root/'missing.joblib'), baseline2_bundle=str(root/'missing-bundle'),
+                              baseline3_config=str(root/'missing-baseline3.json')))
             config_path = root/'deployment.json'
             config_path.write_text(json.dumps(deployment), encoding='utf-8')
             callback, tick = None, 0

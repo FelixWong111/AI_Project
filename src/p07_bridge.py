@@ -240,6 +240,9 @@ def load_backend(mode: str, model: str, config: dict) -> Any:
             raise RuntimeError("Model files changed during loading; retry with a stable delivery set")
         return ImageBackend(model, native, files)
     target = config.get("bridge")
+    if not target and model == 'baseline3':
+        from src.adapters.baseline3 import create_backend
+        return ObjectBackend(create_backend(model_id=model, config=config.get('model_config', {})), model)
     if not target or ":" not in target:
         raise RuntimeError("Real backend unavailable: configure P08 bridge as module:factory; no MOCK fallback")
     module, factory = target.split(":", 1)

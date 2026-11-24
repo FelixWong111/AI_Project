@@ -252,7 +252,8 @@ def main(argv=None) -> int:
             shown_expected = expected
             active_backend = provider.backend.lower() if provider else config["camera_backend"]
             device_name = next((d["name"] for d in camera_devices if d["index"] == camera_index and d["backend"] == active_backend), "not selected / see --list-cameras")
-            ui_state = dict(source=provider.kind if provider else "none", device=device_name if provider and provider.kind == "camera" else "N/A",
+            inference_device = backend.metadata.get('hardware', {}).get('device', 'cpu' if model in MODELS[:2] else 'N/A')
+            ui_state = dict(source=provider.kind if provider else "none", device=(str(inference_device)+' | '+device_name) if provider and provider.kind == "camera" else inference_device,
                             camera_index=camera_index, detecting=detecting, recording=recorder is not None,
                             capture_fps=latest.capture_fps if latest else 0, processing_fps=processing_rate.fps,
                             resolution=f"{displayed.image.shape[1]}x{displayed.image.shape[0]}" if displayed else "N/A",

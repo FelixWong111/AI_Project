@@ -18,6 +18,10 @@ from scripts.generate_work_orders import generate
 
 
 def run():
+    before=dict(models={p.relative_to(ROOT).as_posix():digest(p) for p in (ROOT/'models').rglob('*') if p.is_file()},
+                frozen_config=digest(ROOT/'config/baseline1.json'),
+                p03_metadata={p.relative_to(ROOT).as_posix():[p.stat().st_size,p.stat().st_mtime_ns]
+                              for d in ROOT.glob('P03_*') for p in d.rglob('*') if p.is_file()})
     out=ROOT/'outputs/work_orders_acceptance'/str(time.time_ns());out.mkdir(parents=True)
     manifest=json.loads((ROOT/'outputs/training/data/manifest.json').read_text(encoding='utf-8'))
     row=next(r for r in manifest['records'] if r['split']=='validation' and r['label']=='PASS')
@@ -118,7 +122,6 @@ def run():
         except RuntimeError:
             evidence[name]='NOT_RUN: real detector/weights not configured; count-only contract checked in unit fixtures'
         else:evidence[name]='Available but not evaluated in this validation-only image-classifier check'
-    before=json.loads((ROOT/'outputs/work_orders_acceptance/before.json').read_text(encoding='utf-8'))
     for file,sha in before['models'].items():assert digest(ROOT/file)==sha
     assert digest(ROOT/'config/baseline1.json')==before['frozen_config']
     after={p.relative_to(ROOT).as_posix():[p.stat().st_size,p.stat().st_mtime_ns]

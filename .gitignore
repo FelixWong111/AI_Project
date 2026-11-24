@@ -2,12 +2,12 @@
 .venv311/
 .tools/
 __pycache__/
-output/
-tmp/
+/output/
+/tmp/
 
 # Local raw data and generated experiment outputs. Models remain deliverables.
-data/
-outputs/
+/data/
+/outputs/
 *.pyc
 
 # Read-only local handoff and original datasets are delivered separately, not source code.

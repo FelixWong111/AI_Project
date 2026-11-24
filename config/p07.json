@@ -9,6 +9,7 @@
   "model_config": {
     "baseline1_config": "config/baseline1.json",
     "device": "cpu",
-    "baseline2_bundle": "models/baseline2"
+    "baseline2_bundle": "models/baseline2",
+    "baseline3_config": "config/baseline3.json"
   }
 }

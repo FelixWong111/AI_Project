@@ -1,4 +1,4 @@
-# Python 3.11 x64; install matching CPU/CUDA torch builds as documented in README_P07.md.
+# Python 3.11 x64; install matching CUDA torch builds as documented in README.md.
 numpy==1.26.4
 opencv-python==4.10.0.84
 cv2-enumerate-cameras==1.4.0

@@ -86,14 +86,14 @@ def render(packet, result, expected, model, mode, state):
     card(canvas, 24, 208, 1050, 690, "Inspection view")
     if packet is not None:
         image = packet.image.copy()
+        scale = min(1018/image.shape[1], 604/image.shape[0])
+        image = cv2.resize(image, (max(1, int(image.shape[1]*scale)), max(1, int(image.shape[0]*scale))))
         for obj in result.get("objects", []):
-            x1, y1, x2, y2 = [int(obj[k]) for k in ("xmin", "ymin", "xmax", "ymax")]
+            x1, y1, x2, y2 = [int(obj[k]*scale) for k in ("xmin", "ymin", "xmax", "ymax")]
             color = RED if obj["class_id"] == 0 else GREEN
             cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
             label = f'{CLASSES[obj["class_id"]]} {obj["score"]:.3f}'
-            text(image, label, max(2, x1), max(20, y1+20), .55, color, 2)
-        scale = min(1018/image.shape[1], 604/image.shape[0])
-        image = cv2.resize(image, (max(1, int(image.shape[1]*scale)), max(1, int(image.shape[0]*scale))))
+            text(image, label, max(2, x1), max(18, y1-6), .5, color, 1)
         x, y = 40+(1018-image.shape[1])//2, 254+(604-image.shape[0])//2
         canvas[y:y+image.shape[0], x:x+image.shape[1]] = image
     else:
@@ -112,6 +112,8 @@ def render(packet, result, expected, model, mode, state):
     text(canvas, status, 1112, 375, .72 if len(status) > 10 else 1.05, color, 2)
     score = result.get("prediction_score")
     meaning = f'{score:.3f} | {state.get("score_meaning") or result.get("score_type")}' if score is not None else "Decision: N/A  |  Score: N/A"
+    if score is None and status in ('PASS', 'FAIL'):
+        meaning = 'Score: N/A (count-rule decision)' if model in MODELS[2:] else 'Score: N/A'
     text(canvas, meaning, 1112, 399, .45, MUTED)
     card(canvas, 1094, 426, 482, 260, "Counts summary   /   click expected to edit")
     for label, x in (("CLASS", 1112), ("OBS", 1306), ("EXPECTED", 1384), ("DIFF", 1512)):
