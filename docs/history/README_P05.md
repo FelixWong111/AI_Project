@@ -1,3 +1,5 @@
+> Historical handoff, retained for attribution. Current commands and status: root README.md.
+
 # P05 与 P07 接入说明
 
 本次基于 `main@4552cba` 接入 `baseline2`，分支为 `p05/baseline2-integration`。P07 从 `config/p07-baseline2.json` 加载 `src.p05_bridge:create_backend`。P08 可将该工厂接入自己的统一分发器，模型模块继续复用同一份代码。

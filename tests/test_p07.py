@@ -1,4 +1,5 @@
 from __future__ import annotations
+from p07_stubs import MockBackend
 
 import csv
 import json
@@ -13,12 +14,15 @@ import numpy as np
 from app import load_expected
 from src.camera import Frame, FrameProvider
 from src.p07_devices import select_camera
-from src.p07_bridge import MODELS, MockBackend, load_backend, validate_counts, validate_result
+from src.p07_bridge import MODELS, load_backend, validate_counts, validate_result
 from src.p07_output import CAPTURE_FIELDS, COUNT_FIELDS, IMAGE_FIELDS, OBJECT_FIELDS, Journal, Recorder, export_result
 from src.p07_ui import InferenceWorker, present
 from tools.p07_demo import create
+from p07_stubs import fixture_backend
 
+from src.work_orders import reference_counts
 CONFIG = json.loads(Path("config/p07.json").read_text())
+CONFIG.setdefault("expected_counts", reference_counts())
 ONES = {c: 1 for c in "12345"}
 ZERO = dict.fromkeys("12345", 0)
 IMAGE = np.zeros((480, 640, 3), np.uint8)
@@ -63,7 +67,7 @@ class MockIntegrationTests(unittest.TestCase):
         self.assertEqual(self.infer("review")["status"], "REVIEW")
         self.assertEqual(self.backend.rejudge(self.infer("review"), ZERO)["status"], "REVIEW")
         for model in MODELS[:2]:
-            backend = MockBackend(model, CONFIG)
+            backend = fixture_backend(model, CONFIG)
             raw = backend.infer(IMAGE, ZERO)
             self.assertEqual(raw["status"], "UNSUPPORTED_COUNTS")
             self.assertIsNone(raw["prediction_score"])
@@ -95,9 +99,10 @@ class MockIntegrationTests(unittest.TestCase):
         with self.assertRaises(ValueError): select_camera("Camera", devices=[
             dict(index=0, name="Camera A", backend="dshow"), dict(index=1, name="Camera B", backend="dshow")])
 
-    def test_image_empty_fixed_counts_is_fail(self):
-        result = MockBackend("baseline1", CONFIG).infer(IMAGE, ONES, "empty")
-        self.assertEqual(result["status"], "FAIL")
+    def test_image_models_cannot_construct_mock(self):
+        for model in MODELS[:2]:
+            with self.assertRaises(ValueError):
+                MockBackend(model, CONFIG)
 
     def test_review_without_reliable_counts(self):
         raw = dict(status="REVIEW", predicted_label=None, counts=None, objects=[])
@@ -111,7 +116,7 @@ class MockIntegrationTests(unittest.TestCase):
 
     def test_ui_for_all_models(self):
         for model in MODELS:
-            result = MockBackend(model, CONFIG).infer(IMAGE, ONES)
+            result = fixture_backend(model, CONFIG).infer(IMAGE, ONES)
             canvas = present(Frame(1, IMAGE, 0, 0, "image"), result, ONES, model, "mock", [])
             self.assertEqual(canvas.shape, (1000, 1600, 3))
             self.assertGreater(np.count_nonzero(canvas), 100)
@@ -208,7 +213,7 @@ class InputOutputTests(unittest.TestCase):
 
     def test_exports(self):
         for model in MODELS:
-            result = MockBackend(model, CONFIG).infer(IMAGE, ONES)
+            result = fixture_backend(model, CONFIG).infer(IMAGE, ONES)
             directory = self.path/model
             export_result(directory, "case.png", model, result, ONES, {"evidence_mode": "mock"})
             with (directory/"images.csv").open() as stream:

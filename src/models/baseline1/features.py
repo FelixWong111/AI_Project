@@ -8,6 +8,7 @@ from typing import Dict, Tuple
 import cv2
 import numpy as np
 from skimage.feature import hog
+from PIL import Image, ImageOps
 
 
 SUPPORTED_IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png", ".bmp")
@@ -25,10 +26,9 @@ def load_image_bgr(path: str) -> np.ndarray:
     """
     if not os.path.isfile(path):
         raise FileNotFoundError(f"Image not found: {path}")
-    image = cv2.imread(path, cv2.IMREAD_COLOR)
-    if image is None:
-        raise ValueError(f"OpenCV could not decode image: {path}")
-    return image
+    with Image.open(path) as image:
+        rgb = np.asarray(ImageOps.exif_transpose(image).convert('RGB'))
+    return np.ascontiguousarray(rgb[..., ::-1])
 
 
 def preprocess(bgr: np.ndarray, image_size: Tuple[int, int]) -> np.ndarray:

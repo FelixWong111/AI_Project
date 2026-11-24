@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 
 from .p07_bridge import CLASSES, MODELS
+from .work_orders import reference_counts
 
 WIDTH, HEIGHT = 1600, 1000
 BG = (24, 20, 16)
@@ -25,8 +26,7 @@ def regions():
         ("camera-", (685, 144, 725, 184)), ("camera-index", (733, 144, 807, 184)),
         ("camera+", (815, 144, 855, 184)), ("toggle", (900, 82, 1060, 126)),
         ("snapshot", (1072, 82, 1232, 126)), ("record", (1244, 82, 1404, 126)),
-        ("quit", (1416, 82, 1576, 126)), ("counts-file", (1118, 904, 1340, 938)),
-        ("scenario", (1352, 904, 1576, 938))]]
+        ("quit", (1416, 82, 1576, 126)), ("counts-file", (1118, 904, 1340, 938))]]
     for c in range(1, 6):
         y = 482+(c-1)*39
         controls += [(f"count-:{c}", (1364, y, 1390, y+30)),
@@ -100,7 +100,8 @@ def render(packet, result, expected, model, mode, state):
         text(canvas, "Ready for inspection", 255, 505, 1.1, INK, 2)
         text(canvas, "Choose Camera, Image or Video in the control bar", 220, 548, .65, MUTED)
         text(canvas, "Camo camera: select its index, then click Camera", 235, 583, .57, MUTED)
-    text(canvas, "MOCK  /  Only inference results are simulated" if mode == "mock" else "Real inference / original-image coordinates", 42, 882, .53, AMBER if mode == "mock" else GREEN)
+    text(canvas, "MOCK  /  Only inference results are simulated" if mode == "mock" else
+         f'{state.get("deployment", "Real model")} / {state.get("version", "")} / L: reload model', 42, 882, .53, AMBER if mode == "mock" else GREEN)
     card(canvas, 1094, 208, 482, 90, "Current model")
     text(canvas, model.upper(), 1112, 273, .95, BLUE, 2)
     capability = "IMAGE LEVEL" if model in MODELS[:2] else "OBJECT LEVEL"
@@ -110,7 +111,7 @@ def render(packet, result, expected, model, mode, state):
     color = GREEN if status == "PASS" else RED if status in ("FAIL", "ERROR") else AMBER
     text(canvas, status, 1112, 375, .72 if len(status) > 10 else 1.05, color, 2)
     score = result.get("prediction_score")
-    meaning = f'Score: {score:.3f} ({result.get("score_type")})' if score is not None else "No image-level confidence"
+    meaning = f'{score:.3f} | {state.get("score_meaning") or result.get("score_type")}' if score is not None else "Decision: N/A  |  Score: N/A"
     text(canvas, meaning, 1112, 399, .45, MUTED)
     card(canvas, 1094, 426, 482, 260, "Counts summary   /   click expected to edit")
     for label, x in (("CLASS", 1112), ("OBS", 1306), ("EXPECTED", 1384), ("DIFF", 1512)):
@@ -141,10 +142,11 @@ def render(packet, result, expected, model, mode, state):
             f'Device: {state.get("device", "N/A")}']
     for i, line in enumerate(perf):
         text(canvas, line, 1112, 817+i*20, .43, MUTED, max_width=445)
-    text(canvas, "Source status: " + str(state.get("source_status") or "Ready"), 24, 926, .5, AMBER, max_width=1040)
+    fixed_text = ' / '.join(str(v) for v in reference_counts().values())
+    text(canvas, (f"Fixed counts: {fixed_text} | " if model in MODELS[:2] else "") + "Source status: " + str(state.get("source_status") or "Ready"), 24, 926, .5, AMBER, max_width=1040)
     text(canvas, result.get("message") or state.get("message", ""), 24, 950, .46, MUTED, max_width=1040)
     cv2.line(canvas, (24, 963), (1576, 963), (65, 53, 42), 1)
-    text(canvas, "1-4 Models   Space Start/Pause   C Camera   I Image   V Video   S Snapshot   R Record   N Mock case   Q Quit", 24, 988, .48, MUTED)
+    text(canvas, "1-4 Models   Space Start/Pause   C Camera   I Image   V Video   S Snapshot   R Record   L Reload   Q Quit", 24, 988, .48, MUTED)
     if state.get("loading"):
         text(canvas, "Loading " + state["loading"] + "...", 730, 109, .47, AMBER)
     if state.get("pending_counts"):

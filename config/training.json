@@ -1,0 +1,11 @@
+{
+  "reference_label_field": "reference_label_all_one",
+  "fixed_counts_source": "P03 ground_truth_images.csv reference_label_all_one, checked against all six actual counts",
+  "scene_confirmation": {
+    "each_image_is_distinct_scene": true,
+    "source": "User confirmation in this session on 2026-11-24: 场景独立性直接通过，每个照片的场景都不一样",
+    "scope": "Current P03 development train/validation only; not an automated proof or capture-manifest verification"
+  },
+  "seed": 42,
+  "official_held_out_test": "NOT_RUN"
+}

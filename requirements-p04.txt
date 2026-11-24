@@ -1,10 +1,2 @@
-# P04 baseline1 (SW-01) runtime dependencies.
-# Target environment: Windows + Python 3.11 x64 (team venv). Bounds kept loose
-# so the file installs on the team's locked 3.11 environment.
-numpy>=1.24,<3
-pandas>=2.0
-scikit-learn>=1.4
-opencv-python-headless>=4.8
-scikit-image>=0.22
-joblib>=1.3
-Pillow>=10.0
+# Compatibility install entry; the authoritative runtime is requirements.txt.
+-r requirements.txt

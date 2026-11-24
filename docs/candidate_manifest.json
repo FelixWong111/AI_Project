@@ -1,0 +1,33 @@
+{
+  "stage": "candidate_frozen",
+  "official_held_out_test": "NOT_RUN",
+  "data_manifest_sha256": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
+  "leakage_audit": "outputs/leakage_audit/1795502444356390600",
+  "models": {
+    "baseline1": {
+      "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+      "files_sha256": {
+        "baseline1.joblib": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+        "config.json": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+        "freeze.json": "d99060970307086363cb64d1e00b9d96c62887d6d28a11f3632081acd54dff73",
+        "training_record.json": "df51f35835984108066bafe7b297c7efadf9c988581592bdfbc22b2f84a21a6e"
+      }
+    },
+    "baseline2": {
+      "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+      "files_sha256": {
+        "baseline2.json": "641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55",
+        "resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "training_record.json": "3bc35a4d4984b6d848c8e96d00790e99f94619472b20fc52d81da35d533089ee"
+      }
+    }
+  },
+  "system_extensions": {
+    "baseline1_scene_guard": {
+      "sha256": "edfb5b9b06843f8997bbbe810e31115daf19f65187d98bbcd3dbfd2c4baaf2ec",
+      "path": "models/baseline1/scene_guard.npz",
+      "scope": "P07 only; raw classifier unchanged",
+      "threshold": 63.345938477418734
+    }
+  }
+}

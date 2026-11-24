@@ -11,6 +11,7 @@ from typing import Mapping
 
 import numpy as np
 from PIL import Image, ImageOps
+from src.work_orders import COUNT_KEYS, validate_counts, image_filename, reference_counts
 
 MODEL_ID = "baseline2"
 IMAGE_FIELDS = (
@@ -25,7 +26,6 @@ CLASS_CATALOGUE = [
     {"id": 4, "name": "hex_nut", "spec": "M4"},
     {"id": 5, "name": "flat_washer", "spec": "M5"},
 ]
-COUNT_KEYS = tuple(str(n) for n in range(1, 6))
 WEIGHT_FILE = "resnet18-f37072fd.pth"
 WEIGHT_SHA256 = "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
 PREPROCESSING = {
@@ -35,22 +35,6 @@ PREPROCESSING = {
     "normalization_std": [0.229, 0.224, 0.225],
     "feature_layer": "global average pool, 512 dimensions",
 }
-
-
-def validate_counts(counts: Mapping[str, int]) -> dict[str, int]:
-    if not isinstance(counts, Mapping) or set(counts) != set(COUNT_KEYS):
-        raise ValueError("expected_counts must contain exactly string keys 1–5")
-    if any(type(value) is not int or value < 0 for value in counts.values()):
-        raise ValueError("expected_counts values must be non-negative integers")
-    return {key: counts[key] for key in COUNT_KEYS}
-
-
-def image_filename(value: str) -> str:
-    if not isinstance(value, str) or not value or value in {".", ".."}:
-        raise ValueError("image_id must be a filename")
-    if any(token in value for token in ("/", "\\", ":", "\x00")):
-        raise ValueError(f"Invalid image_id: {value!r}")
-    return value
 
 
 def sha256(path: Path) -> str:
@@ -78,6 +62,8 @@ class ResNet18Features:
         from torchvision.models import resnet18
 
         self.torch = torch
+        # Avoid oversubscribing a laptop CPU for one-frame UI inference.
+        torch.set_num_threads(min(4, torch.get_num_threads()))
         self.device = torch.device(device)
         self.backbone = resnet18(weights=None)
         self.backbone.load_state_dict(
@@ -116,6 +102,8 @@ class Baseline2:
                 or self.manifest.get("preprocessing") != PREPROCESSING):
             raise ValueError("baseline2 model version, schema or preprocessing mismatch")
         self.fixed_counts = validate_counts(self.manifest["supported_fixed_counts"])
+        if self.fixed_counts != reference_counts():
+            raise ValueError('Trained baseline2 counts differ from the common reference; refusing to relabel a model')
         params = self.manifest["classifier"]
         self.mean, self.scale, self.coef = (
             np.asarray(params[key], dtype=np.float64) for key in ("mean", "scale", "coef")

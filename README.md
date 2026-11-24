@@ -1,184 +1,125 @@
-# 机械零件视觉检测：P05 模块与组内接入
+# Mechanical Component Inspection
 
-本仓库用于八人小组的机械零件视觉检测项目。当前代码包含 P07 的相机与界面框架，以及 P05 的第二套基线和算法改进候选。本说明帮助队员安装环境、准备数据、训练 P05 模型和完成模块交接。
+工单规范：唯一公共参考位于 [`config/inspection.json`](config/inspection.json)，固定 ID1–ID5 各 1，ID0 恒为 0。实际数量属于 Ground Truth，不能反推工单。已生成 `outputs/work_orders/train.json`（262条）与 `validation.json`（46条）。生成、GUI/批处理统一校验、UNSUPPORTED_COUNTS 和特殊工单功能测试说明见 [工单接口文档](docs/work_orders.md)。正式 Test 仍为 NOT_RUN。
 
-**当前阶段：代码与接口已做合成数据检查，正式实拍数据上的训练、算法有效性对照，以及新技术栈在最终运行机上的兼容性验证仍待完成。**
+Baseline1 实时异常输入修正：P07 现启用训练特征支持范围检查，超出范围返回 REVIEW（标签/分数为空），不强制 FAIL。原始 HOG+MLP 权重和验证成绩不变；predict.py 保留原始基线，门控不参与其基线指标。详情及诊断证据见 [实时诊断说明](docs/baseline1_live_diagnosis.md)。部署 Baseline1 到 P07 时还需携带 `models/baseline1/scene_guard.npz`。其他模型不变。
 
-## 一、各模块负责什么
+机械零件视觉检测：实时摄像头、图片和视频输入，模型切换、固定工单整图判定、记录和批处理。当前 Baseline1/2 已用 P03 实拍开发数据训练为候选版本；Baseline3/Final 保留检测接口，尚无真实权重。
 
-| 模块 | 负责人 | 用途与状态 |
-|---|---|---|
-| baseline1 | P04 | 第一套图像级基线，由 P04 交付 |
-| baseline2 | P05 | 冻结 ResNet18 特征加逻辑回归，判断整张图片 PASS / FAIL；当前提供训练、批处理与 P07 接入代码 |
-| baseline3 | P06 | 拟用 YOLO11n 检测零件，再结合尺寸校验与目录外件拒识；真实检测适配器和正式权重由 P06 交付 |
-| final | P05 + P06 | 根据冻结基线的失败证据确定改进；当前 CLAHE 亮度增强是候选，由 P06 集成、P08 独立评估 |
-| 相机、界面、演示 | P07 | 采集画面、显示结果、切换预期数量与导出记录 |
-| 统一入口与评估 | P08 | 接入各模型，统一字段与运行记录，组织同图对照 |
+**Official held-out test: NOT_RUN。** 本次只训练与验证，未读取正式测试图片、测试真值或计算测试成绩。验证结果不是正式测试结果。
 
-P05 的 baseline2 是**图像级分类器**：只支持训练时约定的五类预期数量，不能输出零件框或逐类计数。更改为其他有效数量向量时返回 `UNSUPPORTED_COUNTS`。现有 P05 工厂只处理 baseline2；在界面选择 baseline3 不等于已接入真实 YOLO。
+## 环境
 
-## 二、本次修正内容
+Windows、Python 3.11.14，使用现有 `.venv311`，不需要 conda 环境列表中存在它。
 
-- P05 安装目标从 PyTorch 2.8.0 / TorchVision 0.23.0 改为组内拟用的 **2.7.1 / 0.22.1**。
-- 增加组内共用依赖清单，固定 **Ultralytics 8.3.236**，baseline3 拟用 **YOLO11n**。
-- 增加安装后检查脚本和 P05/P06/P07 交接说明。
-- 保留历史测试记录的真实版本，不把旧环境测试改写为新环境已通过。
-
-## 三、目标环境
-
-| 软件 | 目标版本 |
-|---|---|
-| Python | 3.11.14 |
-| NumPy | 1.26.4 |
-| OpenCV：opencv-python | 4.10.0.84 |
-| 相机枚举：cv2-enumerate-cameras | 1.4.0 |
-| PyTorch | 2.7.1 |
-| TorchVision | 0.22.1 |
-| Ultralytics | 8.3.236 |
-
-P05 还使用 SciPy 1.15.3、scikit-learn 1.9.1 和 Pillow 13.0.0，见 [P05 依赖](requirements-p05.txt)。以上是安装验证目标，由最终运行成员验证后再冻结。
-
-## 四、先安装，再检查
-
-所有命令均在**仓库根目录**执行，即能看到 `app.py`、`src` 和 `requirements-team.txt` 的目录。先激活队伍约定的 Python 环境。
-
-### 1. 确认 Python
+PowerShell：
 
 ```powershell
-python --version
-```
-
-应显示 `Python 3.11.14`。
-
-### 2. 安装依赖
-
-下面是 CPU 版本的安装命令。GPU 运行成员根据显卡和驱动选择官方 CUDA 安装源，torch 与 torchvision 必须安装配套构建。
-
-```powershell
-python -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r requirements-team.txt
+.\.venv311\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 python -m pip check
 ```
 
-不要把本文件的 CPU 命令直接用于已经选好的 CUDA 环境。GPU 安装依据见 [PyTorch 官方版本说明](https://pytorch.org/get-started/previous-versions/#v2-7-1)。
+CMD 激活命令为 `.venv311\Scripts\activate.bat`。也可一直直接调用 `.\.venv311\Scripts\python.exe`，无需激活。requirements 文件安装 Python 包，不安装 Python 解释器。完整运行环境包含 PyTorch 2.7.1、TorchVision 0.22.1；本机已验证 CPU 构建。其余精确依赖由 requirements.txt 引用的唯一运行清单固定；YOLO 的可选团队环境见 requirements-team.txt。
 
-### 3. 运行安装后检查
+## 数据与固定工单
+
+新版测试集已整理为 [`data/test_20261124/`](data/test_20261124/README.md)：36 张照片全部直接用真实文件名，无原用例编号映射。统一工单为 expected_counts.json，真值为两份 ground_truth CSV；19 PASS、16 FAIL、1 REVIEW（34.jpg）。scene_id 等于图片名，独立场景依据用户本次确认。该目录只用于评估，不进入训练；整理不代表已执行正式 Test。具体命令和 REVIEW 规则见该目录 README。
+
+P03 总包保持完全只读。只使用其 `01_` 开发包，`images/train` 为 262 张，`images/validation` 为 46 张。脚本按元数据和明确分区读取，不递归扫描整个 P03 图片目录。可用 `--data-dir` 显式指定开发包目录；只有唯一来源时才自动定位。
+
+固定 expected_counts 为 `{"1":1,"2":1,"3":1,"4":1,"5":1}`。依据是 P03 的 `reference_label_all_one` 真值字段及逐类数量核对，不是把课程格式示例当成数量要求。ID 0 期望始终为 0。
+
+训练：124 PASS / 138 FAIL；验证：24 PASS / 22 FAIL。原始 scene_id 仍为 TBD。2026-11-24 用户明确确认每张图片为不同物理场景，因此训练/验证场景数分别按 262/46 记录，确认来源保存在 config/training.json 和外部清单；这不是哈希算法证明，也没有回写或编造拍摄 SceneID。
+
+清单校验、图片与像素哈希、排除记录、数量与框一致性记录保存在 `outputs/training/data/manifest.json`。当前排除 0 张。之后如果数据或确认有变化，需重新审查和生成新版本清单。
+
+## 方法及候选模型
+
+| 模型 | 方法 | 文件 | 验证 Accuracy / FAIL F1 |
+|---|---|---|---|
+| baseline1 | 灰度 128×128 → HOG 1764维 → 训练集 StandardScaler → MLP(32) | models/baseline1/baseline1.joblib | 100% / 1.0000 |
+| baseline2 | RGB 等比例缩放+白边 224×224 → 冻结 ImageNet ResNet18 512维 → 训练集 StandardScaler → Logistic Regression | models/baseline2/baseline2.json + resnet18-f37072fd.pth | 80.43% / 0.7805 |
+| baseline3 / final | P06 检测模型接入口 | 尚未交付 | NOT_RUN |
+
+Baseline1/2 均为图像级分类器，只支持上述固定工单。输出真实 PASS/FAIL 和未校准概率；Baseline1 分数为 P(预测类别)，Baseline2 分数为 P(FAIL)。不输出或虚构框、实际数量、ID 0 数量，界面显示 N/A。其他合法工单返回 UNSUPPORTED_COUNTS，标签和分数为空。文件缺失或推理失败明确 ERROR，无生产 Mock 回退。
+
+## 训练与复现
+
+当前候选已经真实训练，完整记录在 `outputs/training/baseline1/`、`outputs/training/baseline2/`，模型目录也附 training_record.json。重新实验使用新输出目录，防止覆盖冻结证据：
 
 ```powershell
-python -m scripts.check_team_stack --device cpu --output output/team_stack_cpu.json
+python -m scripts.train_baseline1 --output-dir models/baseline1-rerun
+python -m scripts.train_baseline2 --output-dir models/baseline2-rerun
 ```
 
-GPU 部署还需执行：
+首次空模型目录的实际训练命令为 `python -m scripts.train_baseline1` 和 `python -m scripts.train_baseline2`。Baseline1 保存匹配的配置和 freeze，训练新版本时会更新 config/baseline1.json 的候选路径；Baseline2 新目录需显式更新 config/baseline2.json 的 baseline2_bundle 才用于部署。
+
+Baseline2 默认复用 `models/baseline2/resnet18-f37072fd.pth`，可用 `--weights` 指定同 SHA256 的本地官方权重。训练不联网下载，不微调骨干。StandardScaler 仅 fit 训练集；验证集仅比较 2 个 MLP 和 3 个逻辑回归候选，选择 FAIL F1，平局先减少 False PASS，再保留较简单候选；分类阈值固定 0.5，没有反复调阈值。特征缓存带数据、预处理、骨干和依赖版本签名，位于 P03 外部。
+
+## 启动软件
 
 ```powershell
-python -m scripts.check_team_stack --device cuda:0 --output output/team_stack_cuda.json
+python app.py --model baseline1
+python app.py --model baseline2 --camera 0 --capture-backend dshow
 ```
 
-脚本检查版本、依赖一致性、ResNet18 前向运算、TorchVision NMS、CLAHE 和随机初始化 YOLO11n 推理。结果写入指定 JSON；显示 `FAIL` 时按其中的错误修正环境。
+本机用户先前确认 Camo 为 DSHOW camera 0；不同电脑需先执行 `python app.py --list-cameras`。可在顶部点击 Baseline1/2，或按 1/2 切换；Start/Pause、Image、Video、Camera、Snapshot、Record 均保留。当前先用验证集图片验收，不用测试图演示。图片模式：`python app.py --model baseline1 --image "允许的验证图片路径"`。
 
-随机模型测试只检查程序执行，不表示已经学会识别本项目零件。正式验证还需要 P06 的自定义训练权重与实拍数据。
+完整键盘与控件说明见 docs/ui_operations.md。未配置 Baseline3/Final 时显示 ERROR 和缺失原因，无法据此演示真实检测。
 
-### 4. 运行接口测试
+## 课程批处理入口
+
+在 PowerShell 设置当前开发包（只枚举 `01_`，不读取测试）：
+
+```powershell
+$data = Get-ChildItem -Directory -Filter 'P03_*' | ForEach-Object { Get-ChildItem -Directory -LiteralPath $_.FullName } | ForEach-Object { Get-ChildItem -Directory -LiteralPath $_.FullName -Filter '01_*' } | Select-Object -First 1
+$val = Join-Path $data.FullName 'images\validation'
+python predict.py --input_dir "$val" --model baseline1 --output_dir outputs/batch-baseline1 --counts_file outputs/training/data/validation_counts.json
+python predict.py --input_dir "$val" --model baseline2 --output_dir outputs/batch-baseline2 --counts_file outputs/training/data/validation_counts.json
+```
+
+每次运行使用新的输出目录。工单 JSON 是只含 image_id 与 expected_counts 的列表；不含真值、框或实际数量。输出 `images.csv` 和 `run_config.json`。images.csv 的字段顺序固定为：
+
+```text
+image_id,model_id,status,predicted_label,prediction_score,score_type,non_catalogue_count
+```
+
+图像级 non_catalogue_count 为空；不生成 objects.csv/counts.csv。GUI 与 CLI 使用同一注册表和 Adapter，推理不读取 ground truth。
+
+## 验证与资料
 
 ```powershell
 python -m unittest discover -s tests -v
+python tests/test_p04.py
+python -m scripts.check_candidates
 ```
 
-历史环境的 31 项接口测试通过；最终运行机仍需自行运行并保存结果。
+check_candidates 在全部验证图上核对重新加载后的批处理结果与训练记录，检查工单限制、缺失权重、无头 app 和 P03 未变；输出新目录到 outputs/acceptance。实际 GUI 和相机验收状态见 docs/model_training.md，不把无头检查当成真实摄像头实测。
 
-## 五、P05 训练需要队友先交哪些数据
+P08 可使用 docs/model_training.md、docs/system_architecture.md、docs/model_integration.md、模型目录 training_record.json、外部数据清单、原始训练/验证预测、验收记录。完整目标级评估器仍待 P08 提供；本次不覆盖其未来接口。
 
-P03 提供原图和两份 CSV，P08 确认五类固定预期数量。原图文件名与 CSV 的 `image_id` 必须一致。
+## 工程目录
 
-| 文件 | P05 读取的必要字段 |
-|---|---|
-| ground_truth_images.csv | image_id、scene_id、split、annotation_status |
-| ground_truth_objects.csv | image_id、object_id、class_id、ignore |
-
-同一物理场景不能跨训练、验证与测试分区。P05 训练使用 train/val，忽略 test 的图像与目标记录；REVIEW 等不可判定开发样本不进入拟合或验证计分。
-
-项目类别编号为：0 目录外件、1 长螺钉、2 粗螺钉、3 细螺钉、4 六角螺母、5 平垫圈。具体规格以组内冻结目录为准。
-
-## 六、训练 baseline2
-
-```powershell
-python -m scripts.train_baseline2 --image-dir data/images --images-csv data/ground_truth_images.csv --objects-csv data/ground_truth_objects.csv --expected-counts 1 1 1 1 1 --output-dir weights/baseline2
+```text
+app.py / predict.py          实时与课程批处理入口
+config/                     固定工单、数据确认、模型及 UI 配置
+src/data/                   开发数据只读校验
+src/models/baseline1/        P04 HOG/MLP 实现及共享工具
+src/adapters/               Baseline1/2 模型加载与推理
+src/inference/              批处理业务
+src/p07_*.py, camera.py      UI、输入、记录和后端注册
+scripts/                    正式训练与验收
+models/baseline1,baseline2/  真实候选权重、配置及记录
+tests/                      单元测试与测试专用 Stub
+docs/                       当前交接、报告资料及 history 历史来源
+outputs/training/           清单、特征缓存、实验指标、原始预测
+outputs/refactor_backup_20261124/  重构前源码与未提交改动备份
+P03_*/                      权威原数据，完全只读，另行交付
 ```
 
-五个 `1` 仅表示命令示例，正式运行应替换为团队约定的类别 1–5 预期数量。输出目录必须是尚不存在的新目录；重复实验用新的输出目录保存。
+旧原始开发/验证/测试目录保留用于追溯，不是训练入口。旧合成训练器、P05 smoke handoff 和旧配置已归档至重构备份，不是部署模型。Project-Man、team_plan、成员贡献和建议记录保留。
 
-首次运行会下载 torchvision 官方 ResNet18 ImageNet 权重；离线运行可增加 `--weights 本地权重路径`。训练完成会保存骨干权重、分类参数、模型版本、数据哈希和验证结果。训练与推理的预处理均为保比例缩放、白边补齐至 224×224、ImageNet 归一化。
+权重文件保留真实文件且不被 .gitignore 排除；交付时同时提供 models、config、src 和所需依赖。outputs 目录不自动进 Git，需要随实验资料另行交付；尤其不要漏交清单、原始预测、训练记录和备份说明。本次不自动提交或推送 Git。
 
-## 七、连接 P07 界面
-
-先完成训练，再检查 `config/p07-baseline2.json` 中的 `baseline2_bundle`、`device` 和 `expected_counts` 是否与本次模型一致。
-
-使用图片检查：
-
-```powershell
-python app.py --backend real --model baseline2 --config config/p07-baseline2.json --image data/example.png
-```
-
-使用相机检查：
-
-```powershell
-python app.py --backend real --model baseline2 --config config/p07-baseline2.json --camera-name Camo
-```
-
-`Camo` 只是相机名称示例，换成运行机的设备名。相机选择方法见 [P07 说明](README_P07.md)。模型目录不存在时，应先训练或接收完整模型包。
-
-## 八、P08 如何调用 P05 批处理
-
-先创建 `expected_counts.json`，使用以下结构；数量与图片名按实际数据填写：
-
-```json
-[
-  {
-    "image_id": "example.png",
-    "expected_counts": {"1": 1, "2": 1, "3": 1, "4": 1, "5": 1}
-  }
-]
-```
-
-再执行：
-
-```powershell
-python -m scripts.p05_predict --input_dir data/test_images --model baseline2 --output_dir output/baseline2_run01 --counts_file expected_counts.json --bundle-dir weights/baseline2
-```
-
-只处理 JSON 列出的图片，输出目录必须是新目录。生成 `images.csv` 与 `run_config.json`。图像级分类器不生成虚假的目标框与逐类数量。P08 的公共入口仍需调用同一份适配器，见 [P05 接入说明](README_P05.md)。
-
-## 九、与其他成员如何交接
-
-| 成员 | 交给谁 | 需要交付 |
-|---|---|---|
-| P01 / P03 | P05 / P06 / P08 | 标定、原图、标注、场景切分与数据版本 |
-| P05 | P07 / P08 | 完整 baseline2 模型包、配置、依赖、命令与验证记录 |
-| P05 | P06 | 改进候选、适用假设、参数与同图对照要求 |
-| P06 | P07 / P08 | 真实 YOLO 适配器、正式权重、类别映射、检测阈值、尺寸与拒识规则 |
-| P07 | P08 | 界面联调、真实相机运行与至少 20 帧延迟记录 |
-| P08 | 全组 | 统一运行 ID、封存测试集上的对照指标及冻结环境 |
-
-YOLO 若采用训练编号 0–4，必须明确映射到项目编号 1–5；项目的 0 专门表示目录外件。完整接口约定见 [YOLO 交接说明](docs/p05/yolo_handoff.md)。
-
-## 十、主要文件
-
-| 文件 | 用途 |
-|---|---|
-| README_P05.md | P05 模型、接口与接入细节 |
-| README_P07.md | 队友的相机与界面操作说明 |
-| requirements-team.txt | 汇总 P05、P07 与 YOLO 的依赖 |
-| scripts/check_team_stack.py | 最终运行机安装后的检查入口 |
-| scripts/train_baseline2.py | baseline2 训练入口 |
-| scripts/p05_predict.py | baseline2 批处理入口 |
-| src/adapters/baseline2.py | 共用图像级模型适配器 |
-| src/p05_bridge.py | P05 与 P07 的接口桥接 |
-| src/stage3_clahe.py | 待对照验证的 CLAHE 改进候选 |
-| docs/p05/yolo_handoff.md | P05 / P06 / P07 / P08 交接约定 |
-| docs/p05/verification.json | 历史测试环境、接口证据与目标环境 |
-
-## 十一、验证记录应如何理解
-
-历史记录使用 Python 3.12 CPU、PyTorch 2.8.0、TorchVision 0.23.0，其中合成数据训练、重载与接口检查通过。该记录保留原值，方便追溯。
-
-组内拟用的新技术栈、正式数据训练、YOLO 真实权重、CUDA 和真实相机延迟，要在最终运行机分别验证。算法改进需由 P08 在同一组独立场景上比较 baseline3 与 final，至少覆盖正常及两类困难条件，并记录误检、漏检、整图判定与时延。最终结论按实测结果填写。
+P03 更新测试集后：先核定独立场景、标注和工单，封存测试版本，再用两个冻结模型调用同一批处理入口并由独立评估器读取真值；此前不进行正式测试集评估。

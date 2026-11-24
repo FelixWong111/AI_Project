@@ -31,7 +31,7 @@ def fit_mlp(X: np.ndarray, y: np.ndarray, mlp_params: Dict) -> MLPClassifier:
     random_state = params.pop("random_state", 42)
     class_weight = params.pop("class_weight", "balanced")
     mlp = MLPClassifier(random_state=random_state, **params)
-    sample_weight = balanced_sample_weights(y) if class_weight == "balanced" else None
+    sample_weight = balanced_sample_weights(y) if str(class_weight).startswith("balanced") else None
     mlp.fit(X, y, sample_weight=sample_weight)
     return mlp
 

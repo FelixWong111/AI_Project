@@ -7,15 +7,17 @@ Or with pytest:  pytest tests/test_p04.py -v
 from __future__ import annotations
 
 import os
+import json
 import sys
 import tempfile
+from pathlib import Path
 
 import numpy as np
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO_ROOT)
 
-from src.p04 import catalogue, features, model, pipeline  # noqa: E402
+from src.models.baseline1 import catalogue, features, model  # noqa: E402
 
 
 def test_catalogue_ids_and_names() -> None:
@@ -27,7 +29,7 @@ def test_catalogue_ids_and_names() -> None:
 
 
 def test_hog_feature_shape() -> None:
-    config = pipeline.load_config(os.path.join(REPO_ROOT, "config", "baseline1.json"))
+    config = json.loads(Path(REPO_ROOT, "config", "baseline1.json").read_text(encoding="utf-8"))
     image = np.random.default_rng(0).integers(0, 256, (128, 128, 3), dtype=np.uint8)
     vec = features.extract_hog(image, tuple(config["image_size"]), config["hog"])
     expected_dim = features.hog_vector_length(tuple(config["image_size"]), config["hog"])
@@ -63,7 +65,7 @@ def test_train_save_load_predict_roundtrip() -> None:
                    rng.normal(1.0, 0.3, (n_per, 8))]).astype(np.float32)
     y = np.array(["PASS"] * n_per + ["FAIL"] * n_per)
 
-    config = pipeline.load_config(os.path.join(REPO_ROOT, "config", "baseline1.json"))
+    config = json.loads(Path(REPO_ROOT, "config", "baseline1.json").read_text(encoding="utf-8"))
     mlp = model.fit_mlp(X, y, config["mlp"])
     bundle = model.make_bundle(config, mlp, feature_dim=8, config_checksum="test")
 

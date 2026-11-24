@@ -1,0 +1,5 @@
+{
+  "reference_expected_counts": {"1": 1, "2": 1, "3": 1, "4": 1, "5": 1},
+  "non_catalogue_expected": 0,
+  "purpose": "Common baseline evaluation; actual counts and ground truth never define this requirement"
+}

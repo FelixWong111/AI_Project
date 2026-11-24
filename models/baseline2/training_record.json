@@ -1,0 +1,482 @@
+{
+  "model": "baseline2",
+  "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+  "status": "TRAINED_CANDIDATE",
+  "data": {
+    "summary": {
+      "train": {
+        "images": 262,
+        "scenes": 262,
+        "FAIL": 138,
+        "PASS": 124
+      },
+      "validation": {
+        "images": 46,
+        "scenes": 46,
+        "FAIL": 22,
+        "PASS": 24
+      }
+    },
+    "exclusions": [],
+    "expected_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "scene_confirmation": {
+      "each_image_is_distinct_scene": true,
+      "source": "User confirmation in this session on 2026-11-24: 场景独立性直接通过，每个照片的场景都不一样",
+      "scope": "Current P03 development train/validation only; not an automated proof or capture-manifest verification"
+    },
+    "source_scene_ids": "preserved, including TBD",
+    "official_held_out_test": "NOT_RUN",
+    "source_files": {
+      "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/01_P06训练验证_含标注与真值/ground_truth_images.csv": "ca86e70432f2224df1de52e32c81291dc9751f4338e1b516166de086a5eaf9b4",
+      "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/01_P06训练验证_含标注与真值/ground_truth_objects.csv": "85f9190c459e26deeca1cd2475fc7608178d6c67fa88661b7527a2574a108f5c"
+    },
+    "manifest_sha256": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
+    "settings_sha256": "63b9e539ba2efef2e34d1f7773ad83cf2c787e9e6c4ec486b5d5bf6ff8c61650"
+  },
+  "selection_rule": "validation FAIL F1, then fewer false PASS; exact ties keep first candidate",
+  "trials": [
+    {
+      "parameters": {
+        "C": 0.1
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8043478260869565,
+        "precision": 0.8421052631578947,
+        "recall": 0.7272727272727273,
+        "f1": 0.7804878048780488,
+        "TP": 16,
+        "FP": 3,
+        "FN": 6,
+        "TN": 21,
+        "false_PASS": 6,
+        "false_FAIL": 3,
+        "confusion_matrix": [
+          [
+            21,
+            3
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": [
+          {
+            "image_id": "fail171.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.49262000204085055
+          },
+          {
+            "image_id": "fail27.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.21626966291959004
+          },
+          {
+            "image_id": "fail29.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.3419569768466413
+          },
+          {
+            "image_id": "fail35.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.48957698255603954
+          },
+          {
+            "image_id": "fail38.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.16069720899129591
+          },
+          {
+            "image_id": "fail43.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4264881247910357
+          },
+          {
+            "image_id": "pass102.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5221739649614705
+          },
+          {
+            "image_id": "pass133.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5418803494803698
+          },
+          {
+            "image_id": "pass15.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5192240570758013
+          }
+        ]
+      },
+      "warnings": [],
+      "n_iter": [
+        29
+      ]
+    },
+    {
+      "parameters": {
+        "C": 1.0
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8043478260869565,
+        "precision": 0.8421052631578947,
+        "recall": 0.7272727272727273,
+        "f1": 0.7804878048780488,
+        "TP": 16,
+        "FP": 3,
+        "FN": 6,
+        "TN": 21,
+        "false_PASS": 6,
+        "false_FAIL": 3,
+        "confusion_matrix": [
+          [
+            21,
+            3
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": [
+          {
+            "image_id": "fail171.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4598659843939633
+          },
+          {
+            "image_id": "fail27.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.10160144029735596
+          },
+          {
+            "image_id": "fail29.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.3183383161384634
+          },
+          {
+            "image_id": "fail35.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4195179963376636
+          },
+          {
+            "image_id": "fail38.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.13810328243436976
+          },
+          {
+            "image_id": "fail43.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.41348260784203383
+          },
+          {
+            "image_id": "pass102.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7055522962613457
+          },
+          {
+            "image_id": "pass112.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.580502113109943
+          },
+          {
+            "image_id": "pass15.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.6498101461849695
+          }
+        ]
+      },
+      "warnings": [],
+      "n_iter": [
+        31
+      ]
+    },
+    {
+      "parameters": {
+        "C": 10.0
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8043478260869565,
+        "precision": 0.8421052631578947,
+        "recall": 0.7272727272727273,
+        "f1": 0.7804878048780488,
+        "TP": 16,
+        "FP": 3,
+        "FN": 6,
+        "TN": 21,
+        "false_PASS": 6,
+        "false_FAIL": 3,
+        "confusion_matrix": [
+          [
+            21,
+            3
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": [
+          {
+            "image_id": "fail171.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.307991369868693
+          },
+          {
+            "image_id": "fail27.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.03655343549191181
+          },
+          {
+            "image_id": "fail29.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.21005192651842586
+          },
+          {
+            "image_id": "fail35.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.42577113853737547
+          },
+          {
+            "image_id": "fail38.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.04595529956347022
+          },
+          {
+            "image_id": "fail43.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4771162751756658
+          },
+          {
+            "image_id": "pass102.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.8373608612712788
+          },
+          {
+            "image_id": "pass112.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7260720800165722
+          },
+          {
+            "image_id": "pass15.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7730763520850932
+          }
+        ]
+      },
+      "warnings": [],
+      "n_iter": [
+        21
+      ]
+    }
+  ],
+  "selected_parameters": {
+    "C": 0.1
+  },
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 138,
+      "FP": 0,
+      "FN": 0,
+      "TN": 124,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          124,
+          0
+        ],
+        [
+          0,
+          138
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 124,
+      "support_FAIL": 138,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 0.8043478260869565,
+      "precision": 0.8421052631578947,
+      "recall": 0.7272727272727273,
+      "f1": 0.7804878048780488,
+      "TP": 16,
+      "FP": 3,
+      "FN": 6,
+      "TN": 21,
+      "false_PASS": 6,
+      "false_FAIL": 3,
+      "confusion_matrix": [
+        [
+          21,
+          3
+        ],
+        [
+          6,
+          16
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 24,
+      "support_FAIL": 22,
+      "misclassified": [
+        {
+          "image_id": "fail171.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.49262000204085055
+        },
+        {
+          "image_id": "fail27.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.21626966291959004
+        },
+        {
+          "image_id": "fail29.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.3419569768466413
+        },
+        {
+          "image_id": "fail35.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.48957698255603954
+        },
+        {
+          "image_id": "fail38.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.16069720899129591
+        },
+        {
+          "image_id": "fail43.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.4264881247910357
+        },
+        {
+          "image_id": "pass102.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5221739649614705
+        },
+        {
+          "image_id": "pass133.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5418803494803698
+        },
+        {
+          "image_id": "pass15.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5192240570758013
+        }
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "device": "cpu",
+    "torch_threads": 4,
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.9.1",
+      "scikit-image": "0.26.0",
+      "Pillow": "13.0.0",
+      "torch": "2.7.1+cpu",
+      "torchvision": "0.22.1+cpu",
+      "joblib": "1.5.3",
+      "opencv-python": "4.10.0.84"
+    },
+    "cuda_available": false
+  },
+  "command": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe -m scripts.train_baseline2",
+  "training_seconds": 216.57678129998385,
+  "files": {
+    "baseline2.json": {
+      "sha256": "641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55",
+      "size_bytes": 44541
+    },
+    "resnet18-f37072fd.pth": {
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "size_bytes": 46830571
+    }
+  },
+  "official_held_out_test": "NOT_RUN",
+  "source_git_commit": "bf4fda4",
+  "source_worktree": "uncommitted candidate changes; backed up before edits"
+}

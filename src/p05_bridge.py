@@ -6,6 +6,7 @@ from pathlib import Path
 
 from src.adapters.baseline2 import Baseline2, WEIGHT_FILE, validate_counts
 from src.p07_bridge import validate_frame
+from src.work_orders import unsupported_counts
 
 
 class Baseline2Backend:
@@ -31,9 +32,9 @@ class Baseline2Backend:
 
     def infer(self, frame_bgr, expected_counts: dict[str, int]) -> dict:
         validate_frame(frame_bgr)
-        validate_counts(expected_counts)
-        # Evaluate this frame under the trained rule once, even when the UI
-        # currently requests another count vector. Rejudge can then restore it.
+        expected = validate_counts(expected_counts)
+        if expected != self.fixed:
+            return dict(unsupported_counts(), _p05_prediction=None, _p05_pending_frame=frame_bgr.copy())
         prediction = self.adapter.predict_frame(
             frame_bgr, self.fixed, image_id="frame.png"
         )
@@ -42,15 +43,17 @@ class Baseline2Backend:
     def rejudge(self, result: dict, expected_counts: dict[str, int]) -> dict:
         expected = validate_counts(expected_counts)
         original = result.get("_p05_prediction")
+        if expected != self.fixed and result.get('status') != 'ERROR':
+            return dict(unsupported_counts(), _p05_prediction=original,
+                        _p05_pending_frame=result.get('_p05_pending_frame'))
+        if original is None and result.get('_p05_pending_frame') is not None:
+            return self.infer(result['_p05_pending_frame'], expected)
         if not isinstance(original, dict):
             # Preserve worker errors, which have no successful frame observation.
             if result.get("status") == "ERROR":
                 return dict(result)
             raise ValueError("baseline2 cached prediction is missing")
         row = dict(original)
-        if expected != self.fixed and row["status"] != "ERROR":
-            row.update(status="UNSUPPORTED_COUNTS", predicted_label=None,
-                       prediction_score=None, score_type="none")
         row.update(objects=[], counts=None, non_catalogue_count=None,
                    _p05_prediction=dict(original))
         return row

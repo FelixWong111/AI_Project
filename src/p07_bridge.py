@@ -3,22 +3,18 @@ from __future__ import annotations
 
 import importlib
 import math
-from typing import Any, Mapping
+import json
+from pathlib import Path
+from typing import Any
 
 import numpy as np
+from src.work_orders import REFERENCE_CONFIG, validate_counts, reference_counts, unsupported_counts, judge_observed
 
 MODELS = ("baseline1", "baseline2", "baseline3", "final")
 CLASSES = ("non_catalogue", "long_screw", "thick_screw", "thin_screw", "hex_nut", "flat_washer")
 STATUSES = {"PASS", "FAIL", "REVIEW", "UNSUPPORTED_COUNTS", "ERROR"}
 SCENARIOS = ("pass", "missing", "extra", "id0", "empty", "only_id0", "review", "error")
-
-
-def validate_counts(value: Mapping[str, int]) -> dict[str, int]:
-    if not isinstance(value, dict) or set(value) != set("12345"):
-        raise ValueError('expected_counts must contain exactly string keys "1".."5"')
-    if any(type(v) is not int or v < 0 for v in value.values()):
-        raise ValueError("counts must be non-negative integers (not bools)")
-    return dict(value)
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def validate_frame(frame: np.ndarray) -> None:
@@ -30,6 +26,8 @@ def validate_result(result: dict, model: str, shape: tuple) -> dict:
     """Reject malformed bridge responses rather than invent missing object fields."""
     if not isinstance(result, dict) or result.get("status") not in STATUSES:
         raise ValueError("bridge returned invalid status")
+    if result.get("model_id", model) != model:
+        raise ValueError("result model_id does not match the selected model")
     if result.get("predicted_label") not in (None, "PASS", "FAIL"):
         raise ValueError("invalid predicted_label")
     if result.get("status") in {"REVIEW", "ERROR", "UNSUPPORTED_COUNTS"} and result.get("predicted_label") is not None:
@@ -81,75 +79,166 @@ def validate_result(result: dict, model: str, shape: tuple) -> dict:
     return result
 
 
-class MockBackend:
-    """Synthetic fixtures only. Observations never depend on expected_counts."""
-    is_mock = True
 
-    def __init__(self, model: str, config: dict):
-        self.model = model
-        self.fixed = validate_counts(config["mock_fixed_counts"])
-        self.metadata = {"model_version": "MOCK-fixture-v1", "model_file_size_bytes": None,
-                         "score_convention": "MOCK synthetic score; not calibrated probability"}
+def repository_path(value):
+    path = Path(value)
+    return path if path.is_absolute() else REPO_ROOT / path
 
-    def synchronize(self) -> None:
+
+def image_spec(model, config):
+    """Resolve owner-defined paths without moving or rewriting their files."""
+    settings = dict(config.get("model_config", {}))
+    if model == "baseline1":
+        path = repository_path(settings.get("baseline1_config", "config/baseline1.json"))
+        native = json.loads(path.read_text(encoding="utf-8-sig"))
+        bundle = repository_path(settings.get("baseline1_bundle") or native["freeze"]["bundle_file"])
+        files = [path, bundle, bundle.parent / "freeze.json", REFERENCE_CONFIG]
+    else:
+        path = repository_path("config/baseline2.json")
+        defaults = json.loads(path.read_text(encoding="utf-8-sig"))
+        settings = dict(defaults, **settings)
+        bundle = repository_path(settings["baseline2_bundle"])
+        settings["baseline2_bundle"] = str(bundle)
+        files = [path, bundle / "baseline2.json", bundle / "resnet18-f37072fd.pth", REFERENCE_CONFIG]
+    if config.get("_p07_config_path"):
+        files.append(Path(config["_p07_config_path"]))
+    return path, bundle, settings, files
+
+
+def file_signature(files):
+    return tuple((str(p), p.stat().st_mtime_ns, p.stat().st_size) for p in files)
+
+
+class ImageBackend:
+    """P07 count/caching guard around a provider's real inference object."""
+    is_mock = False
+
+    def __init__(self, model, native, files):
+        self.model, self.native = model, native
+        self.fixed = validate_counts(native.fixed)
+        self.metadata = dict(native.metadata)
+        if self.metadata.get("model", model) != model:
+            raise ValueError("loaded model metadata does not match the selected model")
+        self.files, self.signature = files, file_signature(files)
+
+    def synchronize(self):
+        self.native.synchronize()
+
+    def check_current(self):
+        try:
+            unchanged = file_signature(self.files) == self.signature
+        except OSError:
+            unchanged = False
+        if not unchanged:
+            raise RuntimeError("Model files/config changed or disappeared. Press L or click this model to reload")
+
+    def _unsupported(self, cached=None, frame=None):
+        result = dict(unsupported_counts(), _p07_prediction=cached,
+                      _p07_needs_inference=cached is None, _p07_inference_executed=False)
+        if frame is not None:
+            result["_p07_pending_frame"] = frame.copy()
+        return result
+
+    def infer(self, frame_bgr, expected_counts):
+        self.check_current()
+        validate_frame(frame_bgr)
+        expected = validate_counts(expected_counts)
+        if expected != self.fixed:
+            return self._unsupported(frame=frame_bgr)
+        raw = self.native.infer(frame_bgr, expected)
+        validate_result(raw, self.model, frame_bgr.shape)
+        return dict(raw, _p07_prediction=dict(raw), _p07_inference_executed=True)
+
+    def rejudge(self, result, expected_counts):
+        self.check_current()
+        expected = validate_counts(expected_counts)
+        if result.get("status") == "ERROR":
+            return dict(result)
+        cached = result.get("_p07_prediction")
+        if expected != self.fixed:
+            return self._unsupported(cached, result.get("_p07_pending_frame"))
+        if cached is None:
+            # The frame was never inferred while counts were unsupported.
+            return self.infer(result["_p07_pending_frame"], expected)
+        return dict(cached, _p07_prediction=dict(cached), _p07_inference_executed=False)
+
+
+class UnavailableBackend:
+    is_mock = False
+
+    def __init__(self, model, error):
+        self.model, self.error = model, str(error)
+        self.metadata = dict(model=model, model_version="UNAVAILABLE", model_file_size_bytes=None,
+                             output_capability="image_level" if model in MODELS[:2] else "object_level",
+                             error_message=self.error, deployment_stage="provisional" if model == "baseline1" else "submitted-final" if model == "baseline2" else "unavailable")
+
+    def synchronize(self):
         pass
 
-    def infer(self, frame: np.ndarray, expected: dict, scenario: str = "pass") -> dict:
-        validate_frame(frame)
-        validate_counts(expected)
-        if scenario not in SCENARIOS:
-            raise ValueError("unknown MOCK scenario")
-        if scenario == "error":
-            raise ValueError("MOCK injected inference error")
-        if self.model in MODELS[:2]:
-            self.image_result = dict(status="REVIEW" if scenario == "review" else ("PASS" if scenario == "pass" else "FAIL"),
-                                     predicted_label=None, prediction_score=None, score_type=None,
-                                     non_catalogue_count=None, counts=None, objects=[])
-            if self.image_result["status"] in ("PASS", "FAIL"):
-                self.image_result.update(predicted_label=self.image_result["status"], prediction_score=0.9, score_type="prob")
-            return self.rejudge(self.image_result, expected)
-        observed = {str(i): 1 for i in range(1, 6)}
-        observed["0"] = 0
-        if scenario in ("empty", "only_id0"):
-            observed = dict.fromkeys("012345", 0)
-        if scenario == "missing":
-            observed["1"] = 0
-        if scenario == "extra":
-            observed["2"] = 2
-        if scenario in ("id0", "only_id0"):
-            observed["0"] = 1
-        h, w = frame.shape[:2]
-        objects = []
-        for cid in range(6):
-            for j in range(observed[str(cid)]):
-                n = len(objects)
-                x, y = (n % 4) * w / 4, (n // 4) * h / 3
-                objects.append(dict(detection_id=n, class_id=cid, xmin=x, ymin=y,
-                                    xmax=x + w / 6, ymax=y + h / 5, score=0.9))
-        raw = dict(status="REVIEW" if scenario == "review" else "PASS", predicted_label=None,
-                   prediction_score=None, score_type=None, non_catalogue_count=observed["0"],
-                   counts=observed, objects=objects)
-        return self.rejudge(raw, expected)
+    def infer(self, frame_bgr=None, expected_counts=None):
+        return dict(status="ERROR", predicted_label=None, prediction_score=None, score_type="none",
+                    counts=None, objects=[], non_catalogue_count=None, message=self.error,
+                    error_message=self.error, _p07_inference_executed=False)
 
-    def rejudge(self, result: dict, expected: dict) -> dict:
-        validate_counts(expected)
-        new = dict(result)
-        if self.model in MODELS[:2]:
-            if expected != self.fixed:
-                new.update(status="UNSUPPORTED_COUNTS", predicted_label=None, prediction_score=None, score_type=None)
-                return new
-            return dict(getattr(self, "image_result", new))
-        if new["status"] not in ("REVIEW", "ERROR"):
-            status = "PASS" if new["counts"]["0"] == 0 and all(new["counts"][c] == expected[c] for c in "12345") else "FAIL"
-            new.update(status=status, predicted_label=status)
-        return new
+    def rejudge(self, result, expected_counts):
+        return self.infer()
+
+
+class ObjectBackend:
+    """Preserve detector observations when only the requested counts change."""
+    is_mock = False
+
+    def __init__(self, native, model):
+        self.native, self.model = native, model
+        self.metadata = dict(native.metadata)
+        self.metadata['count_decision_score'] = 'none: decision derived from observed vs expected counts; object scores unchanged'
+
+    def synchronize(self):
+        self.native.synchronize()
+
+    def infer(self, frame_bgr, expected_counts):
+        expected = validate_counts(expected_counts)
+        validate_frame(frame_bgr)
+        raw = self.native.infer(frame_bgr, expected)
+        result = judge_observed(raw, expected)
+        validate_result(result, self.model, frame_bgr.shape)
+        return result
+
+    def rejudge(self, result, expected_counts):
+        return judge_observed(result, expected_counts)
 
 
 def load_backend(mode: str, model: str, config: dict) -> Any:
     if model not in MODELS:
         raise ValueError("unknown model ID")
-    if mode == "mock":
-        return MockBackend(model, config)
+    if model in MODELS[:2]:
+        path, bundle, settings, files = image_spec(model, config)
+        missing = [p.relative_to(REPO_ROOT).as_posix() if p.is_relative_to(REPO_ROOT) else str(p)
+                   for p in files if not p.is_file()]
+        if missing:
+            raise FileNotFoundError(model + " missing artifacts: " + ", ".join(missing))
+        before = file_signature(files)
+        if model == "baseline1":
+            from src.adapters.baseline1 import Baseline1Backend
+            native = Baseline1Backend(path, REPO_ROOT, bundle)
+            if config.get('_live_scene_guard'):
+                from src.models.baseline1.scene_guard import SceneGuard
+                guard_path = repository_path('models/baseline1/scene_guard.npz')
+                native.scene_guard = SceneGuard(guard_path, native.metadata['model_version'])
+                native.metadata['system_scene_guard'] = dict(enabled=True,
+                    rule='nearest standardized HOG distance; threshold=max training leave-one-out distance',
+                    threshold=native.scene_guard.limit, raw_baseline_unchanged=True,
+                    scope='P07 system only; not raw baseline benchmark', artifact_sha256=__import__('hashlib').sha256(guard_path.read_bytes()).hexdigest())
+                files.append(guard_path)
+                before = before + file_signature([guard_path])
+        else:
+            # Reuse P05's loading and inference; do not duplicate ResNet/LR.
+            from src.p05_bridge import create_backend
+            native = create_backend(model_id=model, config=settings)
+            native.metadata["deployment_stage"] = "candidate"
+        if file_signature(files) != before:
+            raise RuntimeError("Model files changed during loading; retry with a stable delivery set")
+        return ImageBackend(model, native, files)
     target = config.get("bridge")
     if not target or ":" not in target:
         raise RuntimeError("Real backend unavailable: configure P08 bridge as module:factory; no MOCK fallback")
@@ -161,4 +250,4 @@ def load_backend(mode: str, model: str, config: dict) -> Any:
     if not isinstance(getattr(backend, "metadata", None), dict):
         raise TypeError("P08 bridge must supply metadata")
     backend.is_mock = False
-    return backend
+    return ObjectBackend(backend, model)

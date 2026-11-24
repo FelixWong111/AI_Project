@@ -1,0 +1,12 @@
+{
+  "model_id": "baseline1",
+  "frozen": true,
+  "frozen_at": "2026-11-22T08:13:18.450020+00:00",
+  "bundle_file": "models\\baseline1\\baseline1.joblib",
+  "config_checksum": "9ccfb3e343910882cbc84e37b8d7c778760589d1b23792c4e0ca099e5e8a06f2",
+  "bundle_checksum": "d92402ecc66dc05f714176bf6fcb60f5694fc73a24fd45d9ef670820f01f601e",
+  "sklearn_version": "1.9.1",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "training_command": "tools\\train_baseline1.py --config config\\baseline1.json --gt-csv data\\demo\\ground_truth_images.csv --images-dir data\\demo\\images --output-dir models\\baseline1",
+  "python": "3.13.18"
+}
