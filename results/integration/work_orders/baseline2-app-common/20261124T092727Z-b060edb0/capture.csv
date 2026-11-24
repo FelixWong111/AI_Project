@@ -1,0 +1,2 @@
+session_id,frame_id,timestamp,camera_index,capture_backend,width,height,frame_read_ms,capture_fps,read_success
+20261124T092727Z-b060edb0,1,2026-11-24T09:27:28.100307+00:00,,image,3024,4032,244.9862000066787,0.0,1

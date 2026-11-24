@@ -1,0 +1,128 @@
+{
+  "official_held_out_test": "NOT_RUN",
+  "input_image": "pass102.jpg",
+  "metadata": {
+    "model_id": "baseline3",
+    "model_version": "p06-yolo11n-640-epoch58-4c5a1f759623",
+    "model_file_size_bytes": 5465242,
+    "weights": "${PROJECT_ROOT}\\models\\baseline3\\best.pt",
+    "weights_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+    "output_capability": "object_level",
+    "class_catalogue": {
+      "0": "non_catalogue",
+      "1": "long_screw",
+      "2": "thick_screw",
+      "3": "thin_screw",
+      "4": "hex_nut",
+      "5": "flat_washer"
+    },
+    "thresholds": {
+      "imgsz": 640,
+      "conf": 0.25,
+      "iou": 0.7,
+      "device": 0,
+      "batch": 1,
+      "half": false,
+      "agnostic_nms": false,
+      "augment": false,
+      "max_det": 300
+    },
+    "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability",
+    "preprocessing": "uint8 BGR -> Ultralytics aspect-preserving letterbox imgsz=640; original-pixel xyxy output; no EXIF transform on incoming frames",
+    "coordinate_convention": "continuous original-image pixels, top-left xyxy; 0<=xmin<xmax<=width, 0<=ymin<ymax<=height",
+    "hardware": {
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    "rejection": "Only learned non_catalogue detection; complete open-set rejection not validated",
+    "size_tolerance": null,
+    "calibration": null,
+    "decision_stage": "shared observed-vs-expected count rule; learned ID0 forces FAIL",
+    "ultralytics_version": "8.3.236",
+    "model": "baseline3",
+    "deployment_stage": "real_detector_partial_rejection",
+    "size_verification": "NOT_PROVIDED: calibration/size tolerances absent",
+    "rejection_validation": "PARTIAL: learned class0 only; not arbitrary unknown/incorrect-size rejection",
+    "count_decision_score": "none: decision derived from observed vs expected counts; object scores unchanged"
+  },
+  "real_cuda_worker": "PASS",
+  "input_pixels_unchanged": true,
+  "count_only_rejudge_without_detection": true,
+  "commands": [
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline3 --counts_file outputs/work_orders/validation.json --output_dir ${PROJECT_ROOT}\\outputs\\p06_merge\\1795511737509054100\\batch-baseline3",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --headless --model baseline3 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg --max-frames 1 --timeout 90 --output-dir ${PROJECT_ROOT}\\outputs\\p06_merge\\1795511737509054100\\app-0",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --headless --model baseline3 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\fail130.jpg --max-frames 1 --timeout 90 --output-dir ${PROJECT_ROOT}\\outputs\\p06_merge\\1795511737509054100\\app-1",
+      "exit_code": 0
+    }
+  ],
+  "gui_desktop_manual_click": "NOT_RUN",
+  "camera_latency": "NOT_RUN",
+  "validation_batch_rows": 46,
+  "boxes_count_difference_consistency": "PASS",
+  "real_predicted_id0_fail_examples": [
+    "fail130.jpg",
+    "fail135.jpg",
+    "fail171.jpg",
+    "fail53.jpg",
+    "fail56.jpg",
+    "fail59.jpg",
+    "fail65.jpg",
+    "fail71.jpg",
+    "fail75.jpg",
+    "fail76.jpg",
+    "fail79.jpg",
+    "fail88.jpg",
+    "fail93.jpg"
+  ],
+  "real_id0_rule": "PASS",
+  "gui_controller": {
+    "status": "PASS",
+    "scope": "Real weights/inference; only native window calls stubbed",
+    "actions": [
+      "snapshot",
+      "model:baseline2",
+      "snapshot",
+      "model:baseline3",
+      "snapshot",
+      "quit"
+    ],
+    "seen": [
+      [
+        "baseline1",
+        "PASS"
+      ],
+      [
+        "baseline1",
+        "PASS"
+      ],
+      [
+        "baseline2",
+        "FAIL"
+      ],
+      [
+        "baseline2",
+        "FAIL"
+      ],
+      [
+        "baseline3",
+        "PASS"
+      ],
+      [
+        "baseline3",
+        "PASS"
+      ]
+    ]
+  },
+  "existing_model_hashes_unchanged": true,
+  "p03_metadata_unchanged": true,
+  "size_calibration": "NOT_PROVIDED",
+  "size_tolerances": "NOT_PROVIDED",
+  "open_set_rejection": "NOT_VERIFIED"
+}

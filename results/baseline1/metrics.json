@@ -1,0 +1,69 @@
+{
+  "model": "baseline1",
+  "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+  "source": "results/baseline1/training_record.json",
+  "score_definition": "p_fail=P(FAIL), uncalibrated; raw frozen classifier, not scene-guard system",
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 138,
+      "FP": 0,
+      "FN": 0,
+      "TN": 124,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          124,
+          0
+        ],
+        [
+          0,
+          138
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 124,
+      "support_FAIL": 138,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 22,
+      "FP": 0,
+      "FN": 0,
+      "TN": 24,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          22
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 24,
+      "support_FAIL": 22,
+      "misclassified": []
+    }
+  },
+  "official_held_out_test": "NOT_RUN"
+}

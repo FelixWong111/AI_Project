@@ -1,0 +1,20 @@
+{
+  "policy": "Keep P07 HEAD for all modify/delete conflicts and original contribution note",
+  "kept_head": [
+    "config/baseline1.json",
+    "docs/history/README_P04.md",
+    "docs/history/baseline1_synthetic/config.frozen.json",
+    "docs/history/baseline1_synthetic/metrics.json",
+    "docs/history/baseline1_synthetic/samples.json",
+    "models/baseline1/freeze.json",
+    "predict.py",
+    "requirements-p04.txt",
+    "src/models/baseline1/catalogue.py",
+    "src/models/baseline1/features.py",
+    "src/models/baseline1/model.py",
+    "tests/test_p04.py"
+  ],
+  "restored": [
+    "docs/p04/advice_record.md"
+  ]
+}

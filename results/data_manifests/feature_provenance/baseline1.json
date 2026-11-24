@@ -1,0 +1,36 @@
+{
+  "manifest": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
+  "model": "baseline1",
+  "preprocessing": {
+    "size": [
+      128,
+      128
+    ],
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        16,
+        16
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ],
+      "block_norm": "L2-Hys",
+      "transform_sqrt": true,
+      "channel_axis": null
+    }
+  },
+  "backbone": null,
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.9.1",
+    "scikit-image": "0.26.0",
+    "Pillow": "13.0.0",
+    "torch": "2.7.1+cpu",
+    "torchvision": "0.22.1+cpu",
+    "joblib": "1.5.3",
+    "opencv-python": "4.10.0.84"
+  }
+}

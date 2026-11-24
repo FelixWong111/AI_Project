@@ -1,0 +1,47 @@
+[
+  {
+    "group": [
+      "real",
+      "baseline1",
+      "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+      "image:${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 174.08930000965483,
+    "p95_ms": 174.08930000965483,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  },
+  {
+    "group": [
+      "real",
+      "baseline2",
+      "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+      "image:${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 1353.138599981321,
+    "p95_ms": 1353.138599981321,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  },
+  {
+    "group": [
+      "real",
+      "baseline3",
+      "p06-yolo11n-640-epoch58-4c5a1f759623",
+      "image:${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 2413.0792999931145,
+    "p95_ms": 2413.0792999931145,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  }
+]

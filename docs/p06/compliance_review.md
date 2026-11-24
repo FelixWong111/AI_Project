@@ -34,3 +34,7 @@
 这些补齐工作属于课程必需功能/团队既定基线责任，不能只因增加它们就宣称完成Stage3研究改进。后续实现方案应确认后再做，冻结的当前YOLO权重及参数应保留作为可复现版本。
 
 当前可以报告“真实六类检测与计数已交付、计数规则已接入”；不能报告“尺寸核验、任意未知件拒识、完整课程目标级基线均验收完成”。PASS只表示现有预测观测满足工单，不是物理规格已被标定验证。
+
+## Git归档证据
+
+真实CUDA集成与计数规则证据已纳入[results/integration/baseline3/acceptance.json](../../results/integration/baseline3/acceptance.json)，46张验证图现有输出在[results/baseline3/validation_inference](../../results/baseline3/validation_inference/)。缺失资料及未完成能力仍保持上述状态，归档没有新增功能或性能验证。

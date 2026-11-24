@@ -1,0 +1,32 @@
+{
+  "official_held_out_test": "NOT_RUN",
+  "models": {
+    "baseline1": {
+      "reload": "PASS",
+      "batch_rows": 46,
+      "batch_predictions_match_training": "PASS",
+      "unsupported_counts": "PASS",
+      "missing_artifact": "PASS",
+      "headless_app": "PASS",
+      "batch_command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\acceptance\\1795511987719847700\\baseline1 --counts_file outputs/training/data/validation_counts.json",
+      "app_command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --model baseline1 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\fail130.jpg --headless --max-frames 1 --timeout 60 --output-dir ${PROJECT_ROOT}\\outputs\\acceptance\\1795511987719847700\\baseline1-headless"
+    },
+    "baseline2": {
+      "reload": "PASS",
+      "batch_rows": 46,
+      "batch_predictions_match_training": "PASS",
+      "unsupported_counts": "PASS",
+      "missing_artifact": "PASS",
+      "headless_app": "PASS",
+      "batch_command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline2 --output_dir ${PROJECT_ROOT}\\outputs\\acceptance\\1795511987719847700\\baseline2 --counts_file outputs/training/data/validation_counts.json",
+      "app_command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --model baseline2 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\fail130.jpg --headless --max-frames 1 --timeout 60 --output-dir ${PROJECT_ROOT}\\outputs\\acceptance\\1795511987719847700\\baseline2-headless"
+    }
+  },
+  "p03_original_structure_size_mtime_unchanged": true,
+  "p03_added_during_task": [],
+  "p03_added_file_count": 0,
+  "p03_whole_directory_unchanged": true,
+  "development_image_and_csv_hashes_unchanged": true,
+  "gui_manual_click_verification": "NOT_VERIFIED: no target window exposed by desktop automation",
+  "camera_latency": "NOT_RUN"
+}

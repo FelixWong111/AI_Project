@@ -18,7 +18,7 @@
 
 固定工单为五类各 1、ID 0 为 0。依据 P03 的 `reference_label_all_one`，与六类实际数量及逐框 CSV 逐张核对一致。标注状态 reviewed 被明确接纳；REVIEW/不可判定样本在数据加载器中排除，不自动归为 FAIL。
 
-清单：`outputs/training/data/manifest.json`，版本 SHA256：`44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027`。同一份清单用于两个模型。文件哈希、解码 RGB 像素哈希、原始 SceneID、分区、标签、实际路径均可追溯。
+清单：[results/data_manifests/development.json](../results/data_manifests/development.json)，records 版本 SHA256：`44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027`（不是整个 JSON 文件的字节哈希）。同一份清单用于两个模型。文件哈希、解码 RGB 像素哈希、原始 SceneID、分区、标签、实际路径均可追溯。
 
 ## 方法与参数
 
@@ -66,7 +66,7 @@ Baseline2 False PASS：fail171.jpg、fail27.jpg、fail29.jpg、fail35.jpg、fail
 - Baseline2 JSON SHA256：`641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55`。
 - ResNet18 SHA256：`f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec`。
 
-完整参数、候选结果、文件大小/哈希、环境和数据引用在两个模型目录及 outputs/training 对应目录的 training_record.json 中。training_predictions.csv 与 validation_predictions.csv 保留全部真实 image_id 与概率。
+完整参数、候选结果、文件大小/哈希、环境和数据引用在两个模型目录及 [results/baseline1](../results/baseline1/) / [results/baseline2](../results/baseline2/) 的 training_record.json 中。train_predictions.csv 与 validation_predictions.csv 保留全部真实 image_id、真值和 P(FAIL)；metrics.json 提取原记录指标，errors.csv 仅筛选原预测中的误判，没有重新评估或改变成绩。
 
 实际训练命令：
 
@@ -90,6 +90,6 @@ P03 原有文件路径、大小和修改时间未变，开发图和两份开发 
 
 ## 交给 P08 的材料
 
-本文件、docs/data_leakage_audit.md、docs/system_architecture.md、docs/model_integration.md；models/baseline1 与 models/baseline2 的真实文件；outputs/training/data 清单及工单；各模型全部训练/验证预测和 training_record；outputs/acceptance 的验收记录；outputs/leakage_audit 的逐图审计。outputs 被 Git 忽略，打包交接时必须另行包含，不能只提交源码而漏掉证据。
+本文件、docs/data_leakage_audit.md、docs/system_architecture.md、docs/model_integration.md；models 中的真实模型；[results 统一入口](../results/README.md) 中的清单、工单、训练/验证预测、指标、验收和逐图审计。正式资料直接随 Git 交付，不再单独分发压缩包。outputs 保留本机全部原记录并继续忽略；历史命令中的本机路径与归档位置通过 results/catalog.json 对照。
 
-本次没有提交 Git、没有改分支、没有执行正式 Test。后续待 P03 测试集封存并确认与开发场景隔离，再由 P08 独立评估；如果新证据推翻当前人工场景确认，需要重新审查分区与重训需求。Baseline3/Final 真实权重及完整目标级 evaluator 仍未交付。
+训练及本次归档没有执行正式 Test。后续待 P03 测试集封存并确认与开发场景隔离，再由 P08 独立评估；如果新证据推翻当前人工场景确认，需要重新审查分区与重训需求。Baseline3 后续已真实接入，记录见 results/baseline3 及 docs/baseline3_integration.md；Final 和完整目标级 evaluator 尚未交付。

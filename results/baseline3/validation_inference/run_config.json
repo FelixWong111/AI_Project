@@ -1,0 +1,370 @@
+{
+  "model_id": "baseline3",
+  "model_version": "p06-yolo11n-640-epoch58-4c5a1f759623",
+  "model_file_size_bytes": 5465242,
+  "weights": "${PROJECT_ROOT}\\models\\baseline3\\best.pt",
+  "weights_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+  "output_capability": "object_level",
+  "class_catalogue": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "thresholds": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.7,
+    "device": 0,
+    "batch": 1,
+    "half": false,
+    "agnostic_nms": false,
+    "augment": false,
+    "max_det": 300
+  },
+  "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability",
+  "preprocessing": "uint8 BGR -> Ultralytics aspect-preserving letterbox imgsz=640; original-pixel xyxy output; no EXIF transform on incoming frames",
+  "coordinate_convention": "continuous original-image pixels, top-left xyxy; 0<=xmin<xmax<=width, 0<=ymin<ymax<=height",
+  "hardware": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "rejection": "Only learned non_catalogue detection; complete open-set rejection not validated",
+  "size_tolerance": null,
+  "calibration": null,
+  "decision_stage": "shared observed-vs-expected count rule; learned ID0 forces FAIL",
+  "ultralytics_version": "8.3.236",
+  "model": "baseline3",
+  "deployment_stage": "real_detector_partial_rejection",
+  "size_verification": "NOT_PROVIDED: calibration/size tolerances absent",
+  "rejection_validation": "PARTIAL: learned class0 only; not arbitrary unknown/incorrect-size rejection",
+  "count_decision_score": "none: decision derived from observed vs expected counts; object scores unchanged",
+  "per_image_expected_counts": {
+    "fail130.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail135.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail140.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail164.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail171.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail27.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail29.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail35.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail38.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail41.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail43.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail47.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail53.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail56.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail59.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail65.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail71.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail75.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail76.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail79.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail88.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "fail93.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass102.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass107.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass112.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass119.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass126.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass133.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass138.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass143.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass148.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass15.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass22.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass29.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass36.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass40.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass43.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass46.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass49.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass51.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass54.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass59.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass78.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass84.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass90.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "pass96.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    }
+  },
+  "load_error": null,
+  "evidence_mode": "batch_inference"
+}

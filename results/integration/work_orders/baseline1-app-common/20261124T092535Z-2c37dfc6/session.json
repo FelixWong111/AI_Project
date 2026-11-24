@@ -1,0 +1,29 @@
+{
+  "session_id": "20261124T092535Z-2c37dfc6",
+  "config": {
+    "camera_backend": "auto",
+    "width": 1280,
+    "height": 720,
+    "reconnect_seconds": 2.0,
+    "max_count": 1000,
+    "record_fps": 20.0,
+    "bridge": null,
+    "model_config": {
+      "baseline1_config": "config/baseline1.json",
+      "device": "cpu",
+      "baseline2_bundle": "models/baseline2",
+      "baseline3_config": "config/baseline3.json"
+    },
+    "backend": "real",
+    "model": "baseline1"
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "python": "3.11.14",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4"
+  },
+  "timing_boundary": "frame returned by read -> imshow + waitKey returned; OS/compositor/photon latency unmeasured",
+  "frame_id": "P07 read-attempt counter; not phone frame ID, image_id, or scene_id"
+}

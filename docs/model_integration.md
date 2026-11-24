@@ -13,3 +13,7 @@ GUI：模型按钮或 1/2/3 快捷键选模型，L 重载；改变 expected 后�
 旧 `--backend auto/mock` 参数仅为旧命令兼容保留，均不能启用生产模拟推理。合成实现只存在于 tests/p07_stubs.py。旧合成训练器和旧冻结材料已归档，不能用于正式推理。
 
 批处理使用根目录 predict.py。它按 counts_file 中的 image_id 读取图片，严格校验五个非负整数、重复 ID 和文件名路径。每次使用新的输出目录，避免覆盖证据。只读取图片、工单及模型配置，不读取真值。加载失败仍生成 ERROR 行和 run_config 错误信息，并以非零退出码结束。
+
+## Git内正式实验记录
+
+[results/README.md](../results/README.md)统一管理当前冻结版本证据；[Baseline1/2回归](../results/integration/baseline12/acceptance.json)、[Baseline3真实CUDA集成](../results/integration/baseline3/acceptance.json)、[工单验收](../results/integration/work_orders/acceptance.json)均可直接查阅。来源路径与去重映射在results/catalog.json；新克隆使用 `python -m scripts.collect_results --verify --archive-only` 校验，无需安装推理依赖。历史报告中的outputs路径保持实际执行语义，模型元数据不改写；正式Test继续NOT_RUN。

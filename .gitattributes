@@ -1,0 +1,2 @@
+# Preserve published evidence bytes and SHA256 across Windows/Linux checkouts.
+/results/** -text

@@ -1,0 +1,2323 @@
+{
+  "files": [
+    {
+      "path": "results/data_manifests/development.json",
+      "size_bytes": 207833,
+      "sha256": "36806f288abe6fc77de711011423ca306c5a94ed7cb39870e825625cab092b5c",
+      "purpose": "Actual shared training/validation manifest with labels, counts, SHA256 and pixel hashes",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/data/manifest.json",
+          "sha256": "36806f288abe6fc77de711011423ca306c5a94ed7cb39870e825625cab092b5c"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline1/training_record.json",
+      "size_bytes": 6180,
+      "sha256": "e3efdb59efa58b3222bd2426bb91903654c4da1aa0d9afedf437dd0d7ad67556",
+      "purpose": "Selected parameters, all trial metrics, confusion matrices, environment and freeze hashes",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/training/baseline1/training_record.json",
+          "sha256": "df51f35835984108066bafe7b297c7efadf9c988581592bdfbc22b2f84a21a6e"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline1/train_predictions.csv",
+      "size_bytes": 11243,
+      "sha256": "c34a25527414f1ae2e31525477507a97e6158118eb92d590434dc642b817d96e",
+      "purpose": "Original per-image truth, prediction and P(FAIL)",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/baseline1/train_predictions.csv",
+          "sha256": "c34a25527414f1ae2e31525477507a97e6158118eb92d590434dc642b817d96e"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline1/validation_predictions.csv",
+      "size_bytes": 1991,
+      "sha256": "b3c37fadfacbaf316ee4d706c59b0ccd4ef3f46e56b27b888127e16810bd2c43",
+      "purpose": "Original per-image truth, prediction and P(FAIL)",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/baseline1/validation_predictions.csv",
+          "sha256": "b3c37fadfacbaf316ee4d706c59b0ccd4ef3f46e56b27b888127e16810bd2c43"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/feature_provenance/baseline1.json",
+      "size_bytes": 745,
+      "sha256": "93fc3c5cf90e1fb84a96d10afa55dedd86ffa2d0ddabad3f55ad645840af6768",
+      "purpose": "Feature-cache provenance only; no cached feature tensors",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/features/baseline1-feb9bd76751d6200.json",
+          "sha256": "93fc3c5cf90e1fb84a96d10afa55dedd86ffa2d0ddabad3f55ad645840af6768"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline2/training_record.json",
+      "size_bytes": 12762,
+      "sha256": "d42831da19d8bccf9a34dc24a5afb11cf9d8b04a260b76b4ae6161b01a4881ca",
+      "purpose": "Selected parameters, all trial metrics, confusion matrices, environment and freeze hashes",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/training/baseline2/training_record.json",
+          "sha256": "3bc35a4d4984b6d848c8e96d00790e99f94619472b20fc52d81da35d533089ee"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline2/train_predictions.csv",
+      "size_bytes": 11061,
+      "sha256": "72f3f8711472bad7b5d9555652683e25a64a5f9f33f1ae29e57713aaae9c1e49",
+      "purpose": "Original per-image truth, prediction and P(FAIL)",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Training",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/baseline2/train_predictions.csv",
+          "sha256": "72f3f8711472bad7b5d9555652683e25a64a5f9f33f1ae29e57713aaae9c1e49"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline2/validation_predictions.csv",
+      "size_bytes": 1977,
+      "sha256": "7dc6ff15c683a4d41fe9db0e74c64b377e1e7835b4907ba953cb1983d62155c9",
+      "purpose": "Original per-image truth, prediction and P(FAIL)",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/baseline2/validation_predictions.csv",
+          "sha256": "7dc6ff15c683a4d41fe9db0e74c64b377e1e7835b4907ba953cb1983d62155c9"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/feature_provenance/baseline2.json",
+      "size_bytes": 858,
+      "sha256": "7df2fb9fe33d9a6f8f4ffa599988e44e005d7cda624a77874a9d117589e04325",
+      "purpose": "Feature-cache provenance only; no cached feature tensors",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/training/features/baseline2-fc37db747a77cbbf.json",
+          "sha256": "7df2fb9fe33d9a6f8f4ffa599988e44e005d7cda624a77874a9d117589e04325"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/work_orders/train.json",
+      "size_bytes": 39157,
+      "sha256": "0dc58c127cf9f512944139eda2468dbefdfdcacd6747db430526f33ad3415f70",
+      "purpose": "Fixed work orders, NOT ground truth",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Training",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders/train.json",
+          "sha256": "0dc58c127cf9f512944139eda2468dbefdfdcacd6747db430526f33ad3415f70"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/work_orders/validation.json",
+      "size_bytes": 6873,
+      "sha256": "7341b68fc34c000a6d5b3a414e7b09ef4cac640c36fa03f85572988a5d3433af",
+      "purpose": "Fixed work orders, NOT ground truth",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders/validation.json",
+          "sha256": "7341b68fc34c000a6d5b3a414e7b09ef4cac640c36fa03f85572988a5d3433af"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/work_orders/functional/all_zero.json",
+      "size_bytes": 6873,
+      "sha256": "af2c18633665f263db3831f6c05e59f2c50936092cda19d6a150a76c1a36d4ec",
+      "purpose": "Variable-count functional cases; excluded from common performance metrics",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders/functional/all_zero.json",
+          "sha256": "af2c18633665f263db3831f6c05e59f2c50936092cda19d6a150a76c1a36d4ec"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/work_orders/functional/extra_id1.json",
+      "size_bytes": 6873,
+      "sha256": "fe166ce8d09f3da969f110c46b7028dc35d2ee64d20507002bdfaf191d872249",
+      "purpose": "Variable-count functional cases; excluded from common performance metrics",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders/functional/extra_id1.json",
+          "sha256": "fe166ce8d09f3da969f110c46b7028dc35d2ee64d20507002bdfaf191d872249"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/work_orders/functional/extra_id5.json",
+      "size_bytes": 6873,
+      "sha256": "1ed4726d055a1d233d8194928c61aa86244ba10b6fc736c9963a1a9c3d73177e",
+      "purpose": "Variable-count functional cases; excluded from common performance metrics",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders/functional/extra_id5.json",
+          "sha256": "1ed4726d055a1d233d8194928c61aa86244ba10b6fc736c9963a1a9c3d73177e"
+        }
+      ]
+    },
+    {
+      "path": "results/data_manifests/work_orders/functional/zero_id1.json",
+      "size_bytes": 6873,
+      "sha256": "d594fa6169ad91e83607c54ae9eba8c7162c6378b3c86285b53a601003bd25b9",
+      "purpose": "Variable-count functional cases; excluded from common performance metrics",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders/functional/zero_id1.json",
+          "sha256": "d594fa6169ad91e83607c54ae9eba8c7162c6378b3c86285b53a601003bd25b9"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline1/diagnostics/diagnosis.json",
+      "size_bytes": 5732,
+      "sha256": "559496180dd452955084e1ac1731651cf187a26eefa3bb362afdd7515fe41383",
+      "purpose": "Training-chain/OOD/scene-guard diagnostics, NOT independent evaluation",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training+Synthetic diagnostic",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/baseline1_diagnosis/diagnosis.json",
+          "sha256": "559496180dd452955084e1ac1731651cf187a26eefa3bb362afdd7515fe41383"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline1/diagnostics/training_diagnostics.json",
+      "size_bytes": 53489,
+      "sha256": "a6d7b5f268b9d94276e64a9d528a09c478601af3a0c0631946230bb8980f43fa",
+      "purpose": "Training-chain/OOD/scene-guard diagnostics, NOT independent evaluation",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training+Synthetic diagnostic",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/baseline1_diagnosis/training_diagnostics.json",
+          "sha256": "a6d7b5f268b9d94276e64a9d528a09c478601af3a0c0631946230bb8980f43fa"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline3/training_record.json",
+      "size_bytes": 23376,
+      "sha256": "ee98de4a1380b3a2b432e029c44f37332dcb1443424a15b15fe4a78553918e5e",
+      "purpose": "Historical parameters and epoch curves extracted from frozen checkpoint, not rerun",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Historical training/validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "models/baseline3/training_record.json",
+          "sha256": "12fd1742e0335fe308ed638a41c7349630ebbd6295c018a585a17c928714f7fc"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline3/provenance.json",
+      "size_bytes": 988,
+      "sha256": "5707c3687df517a1d61509d368a8fa607aa3c7b9dd6992686989b102b0c30a92",
+      "purpose": "Weight identity, frozen settings and missing P06 deliverables",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Provenance",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "models/baseline3/provenance.json",
+          "sha256": "5707c3687df517a1d61509d368a8fa607aa3c7b9dd6992686989b102b0c30a92"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline3/validation_inference/counts.csv",
+      "size_bytes": 5676,
+      "sha256": "95cf827c803c60b48bd0828f25263543a26725893e3853641139a6cbb694a87d",
+      "purpose": "Existing real CUDA validation inference, not a new GT-based performance evaluation",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/batch-baseline3/counts.csv",
+          "sha256": "95cf827c803c60b48bd0828f25263543a26725893e3853641139a6cbb694a87d"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline3/validation_inference/images.csv",
+      "size_bytes": 1944,
+      "sha256": "796a738371c9eac53ad8b7951bfac6dc282a9f5847ad7c29a6630aa12efd7061",
+      "purpose": "Existing real CUDA validation inference, not a new GT-based performance evaluation",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/batch-baseline3/images.csv",
+          "sha256": "796a738371c9eac53ad8b7951bfac6dc282a9f5847ad7c29a6630aa12efd7061"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline3/validation_inference/objects.csv",
+      "size_bytes": 28292,
+      "sha256": "34cb413bfeb7dbe53c9a535b67495aa2ca1c8f1f7aaaeb6d6d47c287d37addf2",
+      "purpose": "Existing real CUDA validation inference, not a new GT-based performance evaluation",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/batch-baseline3/objects.csv",
+          "sha256": "34cb413bfeb7dbe53c9a535b67495aa2ca1c8f1f7aaaeb6d6d47c287d37addf2"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline3/validation_inference/run_config.json",
+      "size_bytes": 6312,
+      "sha256": "1223b9f3adaf9e7cbb53a6ca502a6c7ae491fe28e243487f07c68fc58d88f386",
+      "purpose": "Existing real CUDA validation inference, not a new GT-based performance evaluation",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/batch-baseline3/run_config.json",
+          "sha256": "054f0c297282be849e9ba8c6d952a654fc965feba7cf0bffeee35adc5d91735a"
+        }
+      ]
+    },
+    {
+      "path": "results/audits/leakage/audit.json",
+      "size_bytes": 6366,
+      "sha256": "f8df901c7e6c8c6efecccb5055aec61dfa1e0779375050281b49438f292b868e",
+      "purpose": "Historical leakage/source/probability audit of these frozen classifier weights",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Training+Validation audit",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/leakage_audit/1795502444356390600/audit.json",
+          "sha256": "f8df901c7e6c8c6efecccb5055aec61dfa1e0779375050281b49438f292b868e"
+        }
+      ]
+    },
+    {
+      "path": "results/audits/leakage/baseline1_per_image_comparison.json",
+      "size_bytes": 15007,
+      "sha256": "d7bb8c6a0c9b8c8dba5d15f51cab8557701f132480e0c68aaa2d7c9ad67e0c0a",
+      "purpose": "Historical leakage/source/probability audit of these frozen classifier weights",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Training+Validation audit",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/leakage_audit/1795502444356390600/baseline1_per_image_comparison.json",
+          "sha256": "d7bb8c6a0c9b8c8dba5d15f51cab8557701f132480e0c68aaa2d7c9ad67e0c0a"
+        }
+      ]
+    },
+    {
+      "path": "results/audits/leakage/baseline2_per_image_comparison.json",
+      "size_bytes": 15070,
+      "sha256": "2c63fa8d898798f7654c30a89c2ae5a7811403bf904e6160126064a082952de7",
+      "purpose": "Historical leakage/source/probability audit of these frozen classifier weights",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Training+Validation audit",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/leakage_audit/1795502444356390600/baseline2_per_image_comparison.json",
+          "sha256": "2c63fa8d898798f7654c30a89c2ae5a7811403bf904e6160126064a082952de7"
+        }
+      ]
+    },
+    {
+      "path": "results/audits/leakage/image_hashes.json",
+      "size_bytes": 73051,
+      "sha256": "435c0275fd18bdbe43eda325d1ced955a9dcf13ab35fa8518fa22e33100b3b63",
+      "purpose": "Historical leakage/source/probability audit of these frozen classifier weights",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Training+Validation audit",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/leakage_audit/1795502444356390600/image_hashes.json",
+          "sha256": "435c0275fd18bdbe43eda325d1ced955a9dcf13ab35fa8518fa22e33100b3b63"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline12/acceptance.json",
+      "size_bytes": 2538,
+      "sha256": "ece6ead657a5caa395fdc950a99a6137783a3bb60255079030f4676bff8e946a",
+      "purpose": "Latest completed 46-image reload and deployment consistency regression",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/acceptance/1795511987719847700/acceptance.json",
+          "sha256": "21d49abfbbd13f49537ec67000c2aed7ef6eab365406b4317d53ed5ad3955393"
+        }
+      ]
+    },
+    {
+      "path": "results/audits/leakage/original_integration_acceptance.json",
+      "size_bytes": 17558,
+      "sha256": "2eb5403c64bcd44018196d460a7e88c1816f230e72e232045d541ecf220de752",
+      "purpose": "Distinct original acceptance cited by the historical leakage audit",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/acceptance/1795502286780346400/acceptance.json",
+          "sha256": "b4ef1f44e41a9d0f6544af24793fb967b2cf8fab7670e8caad01392245ebab1d"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline12/baseline1/images.csv",
+      "size_bytes": 2721,
+      "sha256": "b11e643edeea06c7618970f4ae98e0b632b5b4d791d99229f2e26056043ac251",
+      "purpose": "Latest real batch regression predictions and run configuration",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/acceptance/1795511987719847700/baseline1/images.csv",
+          "sha256": "b11e643edeea06c7618970f4ae98e0b632b5b4d791d99229f2e26056043ac251"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline12/baseline1/run_config.json",
+      "size_bytes": 7403,
+      "sha256": "8e203892ddbc7f2caaeb8eea8d4a9efc2c569cf53be99add2bb3d2f58a4553b8",
+      "purpose": "Latest real batch regression predictions and run configuration",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/acceptance/1795511987719847700/baseline1/run_config.json",
+          "sha256": "8d73d5faf5c378bdbc4f60c4f4b02a0279284a9c439a8fde2feb24003e0ef9bb"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline12/baseline2/images.csv",
+      "size_bytes": 2760,
+      "sha256": "0dd619bf2e84b6b31aea876ce3454f3e8a37fbac6165a147dcdcc703788e6702",
+      "purpose": "Latest real batch regression predictions and run configuration",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/acceptance/1795511987719847700/baseline2/images.csv",
+          "sha256": "0dd619bf2e84b6b31aea876ce3454f3e8a37fbac6165a147dcdcc703788e6702"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline12/baseline2/run_config.json",
+      "size_bytes": 6453,
+      "sha256": "94d53f847f168e6ec9c7f61078f8094adc2dccbf4fa1a2f0ee0e64d7e5ea4d21",
+      "purpose": "Latest real batch regression predictions and run configuration",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/acceptance/1795511987719847700/baseline2/run_config.json",
+          "sha256": "94d53f847f168e6ec9c7f61078f8094adc2dccbf4fa1a2f0ee0e64d7e5ea4d21"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/acceptance.json",
+      "size_bytes": 4664,
+      "sha256": "7b91c65f115f9e455c46c53d1f29888546d6a48dc706e77db934f61436179264",
+      "purpose": "Real CUDA worker, rejudge, ID0, batch and GUI controller acceptance",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/acceptance.json",
+          "sha256": "07b02a22ebfa3aa3c93ad63360d2403ff02f10e41a67f2d9d2febe03d1cf35b3"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/worker.json",
+      "size_bytes": 3793,
+      "sha256": "3f7cdb4c8ed790b0a5cf84d616f65a0fed6d96ad60528a9ee2778e8a22ad747e",
+      "purpose": "Real CUDA worker, rejudge, ID0, batch and GUI controller acceptance",
+      "models": [
+        "baseline3"
+      ],
+      "scope": "Validation",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/worker.json",
+          "sha256": "3f7cdb4c8ed790b0a5cf84d616f65a0fed6d96ad60528a9ee2778e8a22ad747e"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline1-metadata.json",
+      "size_bytes": 3068,
+      "sha256": "9df262e763a40a4aae4154db762ae585f70bb043b3e0c294ceef421ea82dbb7f",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/baseline1-metadata.json",
+          "sha256": "874193207d6776ffbb5816f58cacc916f3a951012e80f0d700555a67036313ca"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/baseline1-metadata.json",
+          "sha256": "874193207d6776ffbb5816f58cacc916f3a951012e80f0d700555a67036313ca"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/baseline1-metadata.json",
+          "sha256": "874193207d6776ffbb5816f58cacc916f3a951012e80f0d700555a67036313ca"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline2-metadata.json",
+      "size_bytes": 1636,
+      "sha256": "19adcd57e000f091eb5b4a538ac63e5c943541b56bd43cd0dcd12c66546656a3",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/baseline2-metadata.json",
+          "sha256": "19adcd57e000f091eb5b4a538ac63e5c943541b56bd43cd0dcd12c66546656a3"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/baseline2-metadata.json",
+          "sha256": "19adcd57e000f091eb5b4a538ac63e5c943541b56bd43cd0dcd12c66546656a3"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/baseline2-metadata.json",
+          "sha256": "19adcd57e000f091eb5b4a538ac63e5c943541b56bd43cd0dcd12c66546656a3"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline3-metadata.json",
+      "size_bytes": 1785,
+      "sha256": "7806985e61740aaac3bac08a8bc6ffc2b3718efa27ff57163d28fa4c294549dc",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/baseline3-metadata.json",
+          "sha256": "8bc4a44c14499e58f76dd17181773195253a140ccbed49969e9f027b78e48790"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/capture.csv",
+      "size_bytes": 216,
+      "sha256": "8352a32999d78b75a564a1d742cdb0f49a2250155e5eec43d041849d91a4912f",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/capture.csv",
+          "sha256": "8352a32999d78b75a564a1d742cdb0f49a2250155e5eec43d041849d91a4912f"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/latency.csv",
+      "size_bytes": 1215,
+      "sha256": "d5de831c66c30b8a2b4c4e485b9413c03e34f9f9947fd540fdc9ac90c05b1587",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/latency.csv",
+          "sha256": "b94a53d5926d5b23e491a845e3b8ed543265c620fde89fe0545710889c00ba86"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/latency_summary.json",
+      "size_bytes": 1542,
+      "sha256": "3a09f6b62ce972e3530e6610f500a92b66ffe6423265f9c4d68a4260db59de66",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/latency_summary.json",
+          "sha256": "0f6239ed02e17544e9b89ede6d4da6a1fd16664d1cc32775ac2dd8e946654ea1"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/images.csv",
+      "size_bytes": 148,
+      "sha256": "c3527d67afd6fb3f26062ab4dfb9b46aa8f11aa365a802cf099da42993a6a1d7",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/images.csv",
+          "sha256": "c3527d67afd6fb3f26062ab4dfb9b46aa8f11aa365a802cf099da42993a6a1d7"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/REAL-/1795512336154415900/images.csv",
+          "sha256": "c3527d67afd6fb3f26062ab4dfb9b46aa8f11aa365a802cf099da42993a6a1d7"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-common/images.csv",
+          "sha256": "c3527d67afd6fb3f26062ab4dfb9b46aa8f11aa365a802cf099da42993a6a1d7"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/run_config.json",
+      "size_bytes": 3454,
+      "sha256": "4548d44e494bea6b4bc50e9a0b0f1db2fd0e2141027f917f25eb0ee86297a6f4",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/run_config.json",
+          "sha256": "ec4dabcad16446b8d9e97035fe1c71ee05af6d60c2940800655e3563c06bd4b2"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/REAL-/1795512336154415900/run_config.json",
+          "sha256": "ec4dabcad16446b8d9e97035fe1c71ee05af6d60c2940800655e3563c06bd4b2"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/images.csv",
+      "size_bytes": 148,
+      "sha256": "029684d765e731ad085512493a855cd3a146c3bff76fd7290e50c1289bc93adc",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/images.csv",
+          "sha256": "029684d765e731ad085512493a855cd3a146c3bff76fd7290e50c1289bc93adc"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/REAL-/1795512448555742200/images.csv",
+          "sha256": "029684d765e731ad085512493a855cd3a146c3bff76fd7290e50c1289bc93adc"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-common/images.csv",
+          "sha256": "029684d765e731ad085512493a855cd3a146c3bff76fd7290e50c1289bc93adc"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/run_config.json",
+      "size_bytes": 1991,
+      "sha256": "b2d7aa32a298e099b9d12769067bc8f812bb421103958594e9bc4e586a2e3344",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/run_config.json",
+          "sha256": "b2d7aa32a298e099b9d12769067bc8f812bb421103958594e9bc4e586a2e3344"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/REAL-/1795512448555742200/run_config.json",
+          "sha256": "b2d7aa32a298e099b9d12769067bc8f812bb421103958594e9bc4e586a2e3344"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/counts.csv",
+      "size_bytes": 186,
+      "sha256": "ca3d467718f1246761dfb2230e032ddb455a78b47cfd6c9d2bf8d1e46f63476a",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/counts.csv",
+          "sha256": "ca3d467718f1246761dfb2230e032ddb455a78b47cfd6c9d2bf8d1e46f63476a"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/images.csv",
+      "size_bytes": 131,
+      "sha256": "185cfde59ab9730866cdc57f631aa0ad5082def1cf572350961969da4a54be07",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/images.csv",
+          "sha256": "185cfde59ab9730866cdc57f631aa0ad5082def1cf572350961969da4a54be07"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/objects.csv",
+      "size_bytes": 654,
+      "sha256": "27d16ab5c4100d33df6083f8bea518e1bcc4a0ad2b77bcc05a23ceddfedcfc5c",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/objects.csv",
+          "sha256": "27d16ab5c4100d33df6083f8bea518e1bcc4a0ad2b77bcc05a23ceddfedcfc5c"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/run_config.json",
+      "size_bytes": 2103,
+      "sha256": "536be82ef632d4a9ca2ac0d32f97c470c046eee50e60316c6c2a44301adf8df5",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/run_config.json",
+          "sha256": "8556b16970939653bc09756d626826930c77629c63ed176bff3e043d598f4d09"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/session.json",
+      "size_bytes": 866,
+      "sha256": "d9f1b519ce7ce6bad65a464c54c93d9bf6af8aa81264482fc8631d55563e005c",
+      "purpose": "Actual three-model controller exports; native windows isolated, no manual/camera claim",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/session.json",
+          "sha256": "d9f1b519ce7ce6bad65a464c54c93d9bf6af8aa81264482fc8631d55563e005c"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/environment.json",
+      "size_bytes": 548,
+      "sha256": "435fdfaaafd8e463a16a871b1c13ea75f81491726c26d5aa9f2ba7b1993a931f",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/environment.json",
+          "sha256": "435fdfaaafd8e463a16a871b1c13ea75f81491726c26d5aa9f2ba7b1993a931f"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/dependency-review.json",
+      "size_bytes": 1174,
+      "sha256": "50203e131edcf6a85bda408076f383739387f5f9c5bd4e059ce54d7bfebf4611",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/dependency-review.json",
+          "sha256": "50203e131edcf6a85bda408076f383739387f5f9c5bd4e059ce54d7bfebf4611"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/conflict-resolution.json",
+      "size_bytes": 640,
+      "sha256": "d282d87797e821aa8e3f039bdde65901f8f5950c18c342c03960ea3f62a17117",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/conflict-resolution.json",
+          "sha256": "d282d87797e821aa8e3f039bdde65901f8f5950c18c342c03960ea3f62a17117"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/final-state.json",
+      "size_bytes": 311,
+      "sha256": "b77ef105c6cc6427e6a3b349e63ed4ac4d5379e16c5690c22b92b010df7d245b",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/final-state.json",
+          "sha256": "b77ef105c6cc6427e6a3b349e63ed4ac4d5379e16c5690c22b92b010df7d245b"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/source-head.txt",
+      "size_bytes": 82,
+      "sha256": "6643fa951b14adb852331699406e4f140da7c87ba46f75abda823426dd78c0ca",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/source-head.txt",
+          "sha256": "6643fa951b14adb852331699406e4f140da7c87ba46f75abda823426dd78c0ca"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/pip-freeze-before.txt",
+      "size_bytes": 527,
+      "sha256": "f661ef7c5750a837296d9f6e460df6588b0962684c9068ffd6cc5e31cda4dbac",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/pip-freeze-before.txt",
+          "sha256": "f661ef7c5750a837296d9f6e460df6588b0962684c9068ffd6cc5e31cda4dbac"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/p06_merge/unit-tests-final.log",
+      "size_bytes": 11322,
+      "sha256": "0acb6a6b90a7ad1e3f7608e904782aee6589beb13f344d84fc0bbafcc96c0b3d",
+      "purpose": "Completed merge, dependency, environment or final automated-test evidence",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Integration",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/p06_merge/unit-tests-final.log",
+          "sha256": "36c0475a43722905db3a113faebe2e66c1b904dc9aac8f0ec5c516b4a0fe1628"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/environment-after.txt",
+      "size_bytes": 853,
+      "sha256": "81bb73a819d65d857ef90653ea82429646aed47e0ea0d213c7e3f5d461a9bd01",
+      "purpose": "Observed CUDA/YOLO environment after integration",
+      "models": [
+        "baseline1",
+        "baseline2",
+        "baseline3"
+      ],
+      "scope": "Environment",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "docs/p06/integration-requirements-lock.txt",
+          "sha256": "81bb73a819d65d857ef90653ea82429646aed47e0ea0d213c7e3f5d461a9bd01"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/acceptance.json",
+      "size_bytes": 10059,
+      "sha256": "a448c111005f65bfbbea5556a74d78c023c55af237e7488ef6aa26bd27f93e25",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/acceptance.json",
+          "sha256": "10f577bf92db933f8131e6ea2c5c5a4e700f6cbad0335ce5a1f162ec14158b7a"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/all_zero.json",
+      "size_bytes": 155,
+      "sha256": "e657a17464ea0f329ab5c1ce54da6b40769fc9498138de66347c848f5f7788ef",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/all_zero.json",
+          "sha256": "e657a17464ea0f329ab5c1ce54da6b40769fc9498138de66347c848f5f7788ef"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-all_zero/images.csv",
+      "size_bytes": 140,
+      "sha256": "a61b84dc68981879f8725a0edcfd7a451fa3778519c76ea89d81012a88012d7e",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-all_zero/images.csv",
+          "sha256": "a61b84dc68981879f8725a0edcfd7a451fa3778519c76ea89d81012a88012d7e"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/REAL-/1795512339186644100/images.csv",
+          "sha256": "a61b84dc68981879f8725a0edcfd7a451fa3778519c76ea89d81012a88012d7e"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id1/images.csv",
+          "sha256": "a61b84dc68981879f8725a0edcfd7a451fa3778519c76ea89d81012a88012d7e"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id5/images.csv",
+          "sha256": "a61b84dc68981879f8725a0edcfd7a451fa3778519c76ea89d81012a88012d7e"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-zero_id1/images.csv",
+          "sha256": "a61b84dc68981879f8725a0edcfd7a451fa3778519c76ea89d81012a88012d7e"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-all_zero/run_config.json",
+      "size_bytes": 3070,
+      "sha256": "09f471fedf316f557488094b894cb8a0f9f12a060fb2a0d1e71aacf72146091e",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-all_zero/run_config.json",
+          "sha256": "15345322f3946b79fa9af9672fa62edb25f007071937d0914c6fcdf28c66bbab"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-all_zero.log",
+      "size_bytes": 108,
+      "sha256": "ddbde9d336783e5dad60026989a59191d214c2ec78376b685737a75c7054e081",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-all_zero.log",
+          "sha256": "ee54b6abb543c17023d169682cb316d9f269650920c31dbec0909e6217d477d0"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/capture.csv",
+      "size_bytes": 215,
+      "sha256": "752a773f3db92ff1cdc0f5951c382daff5d1f05127d6fa0a9b7097b7be6af78d",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/capture.csv",
+          "sha256": "752a773f3db92ff1cdc0f5951c382daff5d1f05127d6fa0a9b7097b7be6af78d"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/latency.csv",
+      "size_bytes": 502,
+      "sha256": "acea9ee2ae5ace82461517d0d1e049537dedb8caf71f9e45a8b60fcace57fc2e",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/latency.csv",
+          "sha256": "1d2bf41b292dfe083af08764140c507f82faebe2abbe913ea53e4ded7f925987"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/latency_summary.json",
+      "size_bytes": 533,
+      "sha256": "b53f77ff2cc415ff64a3cddb7e56fd1b875424ff3262863d214e18d307e4e076",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/latency_summary.json",
+          "sha256": "4fe648ee45cc1dbd273051e31f4fd5a1ab5b459e84eedca296ba7dc6f2ad8c2c"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/session.json",
+      "size_bytes": 866,
+      "sha256": "ee797c676f9251a8fb36bfb300aa0b8190384cba958e60f72f6e62752b642248",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/session.json",
+          "sha256": "ee797c676f9251a8fb36bfb300aa0b8190384cba958e60f72f6e62752b642248"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-common.log",
+      "size_bytes": 281,
+      "sha256": "950ed38a01e507c2f47dac36231dad0a197b02178925bb69d03b75ca30a1ecca",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common.log",
+          "sha256": "23ac1b77681b72c0a860ca949b35600bcfbcc07f5986491543c97c398b0e1760"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/capture.csv",
+      "size_bytes": 215,
+      "sha256": "3e91f21691c69bc37aa539d70df8c4039570b360958c8946b29495a838e4044a",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/capture.csv",
+          "sha256": "3e91f21691c69bc37aa539d70df8c4039570b360958c8946b29495a838e4044a"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency.csv",
+      "size_bytes": 499,
+      "sha256": "de7147723cf16460dbfb2cad495b231797d2276494d292cd803a10a68989109f",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency.csv",
+          "sha256": "3de0c6439c8a660c1fc89faefb40c7015b6f25015d289293ccc40f9afcff8812"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency_summary.json",
+      "size_bytes": 507,
+      "sha256": "1af715343f2e5e7c15deb68c09258f596bca9d2017a38fe594b5d2fa5512ca27",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency_summary.json",
+          "sha256": "8b4252fdf9e1a94f5bcf044b5f7918ae2474263670ce4627f5719b0eee229034"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/REAL-/1795512339186644100/run_config.json",
+      "size_bytes": 3454,
+      "sha256": "00ad1cbf72a92e4e97bb6a98805c873bd29d9ba52e540700bbacaf13b11c404a",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/REAL-/1795512339186644100/run_config.json",
+          "sha256": "f17c4b0b5c96c726d4aa78363b2f905f048ae7713d2e52333625b6b782b79b58"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/session.json",
+      "size_bytes": 866,
+      "sha256": "8e91a95558989b475e08219a9495e79d0e7c8b6ed717e796c8454a156ec6afc7",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/session.json",
+          "sha256": "8e91a95558989b475e08219a9495e79d0e7c8b6ed717e796c8454a156ec6afc7"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-app-extra_id5.log",
+      "size_bytes": 287,
+      "sha256": "07765c440425d4c73fb19cec601f320fdb80e532ba9e8b79cbfd22f193e72314",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5.log",
+          "sha256": "8c87ce2aca3cd0fbb08db02c7b3694a13d17f1b7b202975f581addb68741f0b0"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-common/run_config.json",
+      "size_bytes": 3070,
+      "sha256": "910c588f6656cbc432e5e25ceee34da08009f1ef2f28d8dd3486d6129985d2c0",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-common/run_config.json",
+          "sha256": "282b861e78a363377f058b3b056a71353a274e27651eac6f705b89ea96060985"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-common.log",
+      "size_bytes": 106,
+      "sha256": "11e60d87d2566505e3acecb7613cc78da7ea5882e2d822f3cacfe8ad20fbe169",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-common.log",
+          "sha256": "0d403658020833b1812524c884c17c647723342ba63cd4b4ec95d995ce150dc9"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-extra_id1/run_config.json",
+      "size_bytes": 3070,
+      "sha256": "a2dbe9897dcaccace94f64efe3e55d7239060e0b46ff5ab0db402f4609826805",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id1/run_config.json",
+          "sha256": "590bef59abca66e0ffba40ca83d12336c86060b8f25a79172bfeea539b04f49d"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-extra_id1.log",
+      "size_bytes": 109,
+      "sha256": "66c7a167d3ce863101ee433a9e781e608e9deb8e29b0751ffe82f161df88cfff",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id1.log",
+          "sha256": "20361cbc3e7a735c531c98906a6efe544216d6e25f27c7375a72e276d89a2ae2"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-extra_id5/run_config.json",
+      "size_bytes": 3070,
+      "sha256": "c538a61204206ac3d0186c1ebe08d6b0f6a60a1ad7d8b7742475856641672711",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id5/run_config.json",
+          "sha256": "ed138523e6e817bafc4de4900e66567337a622a9a8d9d00c26d53c29de457f64"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-extra_id5.log",
+      "size_bytes": 109,
+      "sha256": "50cfa5bc42e5b6053a61c919d9d362520176c55454d51088e5201ac7a7a84d2a",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id5.log",
+          "sha256": "aa267db09ff848a37e9f9c6a34eb1b9044ecfdff0403d91fce6c8b171a5b0aa8"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-zero_id1/run_config.json",
+      "size_bytes": 3070,
+      "sha256": "bacfb248c6dde177a31f2356da1753d1bfe4f4d13dbed722ba5b4430feebf91c",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-zero_id1/run_config.json",
+          "sha256": "c8c8a8a668a3cc766f0fbdfa075d393d69cbbd8f5a2b56ed98d4995cf95500a4"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline1-zero_id1.log",
+      "size_bytes": 108,
+      "sha256": "27393ccc887c3220e923b1fbd13a14d3da8b3fc763e5759b30c3954abfc1656a",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline1-zero_id1.log",
+          "sha256": "b77b5223bfdad3252d5ea48ff73b579bafdf9414612d0926acd6c190b8ac1c0e"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-all_zero/images.csv",
+      "size_bytes": 140,
+      "sha256": "635032dc1af35c027be4eafee0c26e022bdaa374d3270ba5b1a00c41d966fa9a",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-all_zero/images.csv",
+          "sha256": "635032dc1af35c027be4eafee0c26e022bdaa374d3270ba5b1a00c41d966fa9a"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/REAL-/1795512459714679900/images.csv",
+          "sha256": "635032dc1af35c027be4eafee0c26e022bdaa374d3270ba5b1a00c41d966fa9a"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id1/images.csv",
+          "sha256": "635032dc1af35c027be4eafee0c26e022bdaa374d3270ba5b1a00c41d966fa9a"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id5/images.csv",
+          "sha256": "635032dc1af35c027be4eafee0c26e022bdaa374d3270ba5b1a00c41d966fa9a"
+        },
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-zero_id1/images.csv",
+          "sha256": "635032dc1af35c027be4eafee0c26e022bdaa374d3270ba5b1a00c41d966fa9a"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-all_zero/run_config.json",
+      "size_bytes": 1805,
+      "sha256": "7bcd55c838b5bab1948eac5a2242594b13bb822d7f6395f6f9483833b87a6065",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-all_zero/run_config.json",
+          "sha256": "7bcd55c838b5bab1948eac5a2242594b13bb822d7f6395f6f9483833b87a6065"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-all_zero.log",
+      "size_bytes": 108,
+      "sha256": "2ed4f506ebad320ad77f6b5f9daff7248dbd441d1a50471237f195d7b7cbc6e0",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-all_zero.log",
+          "sha256": "7e364eae0bafde7508c2630541af353c56252ec9c697b81c44edb8b3eb04cc71"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/capture.csv",
+      "size_bytes": 215,
+      "sha256": "a48a5c46600484fd91e87b4e1fc54f512b5be2b1efad40e56699f2ba9eee6101",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/capture.csv",
+          "sha256": "a48a5c46600484fd91e87b4e1fc54f512b5be2b1efad40e56699f2ba9eee6101"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/latency.csv",
+      "size_bytes": 503,
+      "sha256": "bf3a382da2c259b206dc1443782be501ee9c321eed4955430649076ce6f126fc",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/latency.csv",
+          "sha256": "46d435aa9d7117d7b7da1bf8732120ae7562d7a58259a9f30399927c2427975b"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/latency_summary.json",
+      "size_bytes": 535,
+      "sha256": "3a798b9c14265f346a257f2fd14fec21c73cbad620cc55a110b6f7ab01a01ce7",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/latency_summary.json",
+          "sha256": "0f9c9df360f55f3dcafd8326ea2f01fb5787fad5d351d56c67435ab15feca935"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/session.json",
+      "size_bytes": 866,
+      "sha256": "f8d675bf4db1c1fb7380aa6565f4311948914424dae014af8ea0f758f21b8183",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/session.json",
+          "sha256": "f8d675bf4db1c1fb7380aa6565f4311948914424dae014af8ea0f758f21b8183"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-common.log",
+      "size_bytes": 281,
+      "sha256": "beef198d002d0cf20fcc9a5a3765c18627a03e0212651d7e9fb993ccc8797646",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common.log",
+          "sha256": "4b2f6ce60f09ffda59ffcf43bc2bfeba691c5947e55d2525f0e67d7364f35fac"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/capture.csv",
+      "size_bytes": 213,
+      "sha256": "701cf1a4505b4cf3d9ff8de95a1d3e4f4cd1c183ace3762d71b05a31b6b36101",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/capture.csv",
+          "sha256": "701cf1a4505b4cf3d9ff8de95a1d3e4f4cd1c183ace3762d71b05a31b6b36101"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency.csv",
+      "size_bytes": 500,
+      "sha256": "842efd6090d9cf0f38fd0d156e99cde33837b8fb8e24a4a46e5aab79f17422c0",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency.csv",
+          "sha256": "7d26a648b87f7b6ff0154461fc6593a835310a4571897d71aa629d6500e2b319"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency_summary.json",
+      "size_bytes": 507,
+      "sha256": "784fb37880ec8c1e74388c8e107bf5c4111b4b4de8cfaa05df0a0dbf8463ff46",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency_summary.json",
+          "sha256": "bab7bef362a124576ecf9ac7062b2a535694f637307e5dea98ea7a286902a12d"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/REAL-/1795512459714679900/run_config.json",
+      "size_bytes": 1991,
+      "sha256": "ea751159db62d7833feabb91f25156bd31c48a2b0fabf20a23896a7a9a233a14",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/REAL-/1795512459714679900/run_config.json",
+          "sha256": "ea751159db62d7833feabb91f25156bd31c48a2b0fabf20a23896a7a9a233a14"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/session.json",
+      "size_bytes": 866,
+      "sha256": "393eca81683ae2a9e6389b5ab59d331332d6b16832382043355c6b2e82d039af",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/session.json",
+          "sha256": "393eca81683ae2a9e6389b5ab59d331332d6b16832382043355c6b2e82d039af"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-app-extra_id5.log",
+      "size_bytes": 287,
+      "sha256": "2254ef88f4bd7f98fe0c6a272a080f982e3a86b9941af2560ebfe4080896d3b8",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5.log",
+          "sha256": "5f1182d10351a8b9cb76eed9ad482b03e5d5d7636ae8c9fe7685aa235000deb3"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-common/run_config.json",
+      "size_bytes": 1805,
+      "sha256": "b8ff8a24b9ed314d0d396014dc59bb1ebab15ee5055daf9c5b2e58154e595ebc",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-common/run_config.json",
+          "sha256": "b8ff8a24b9ed314d0d396014dc59bb1ebab15ee5055daf9c5b2e58154e595ebc"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-common.log",
+      "size_bytes": 106,
+      "sha256": "162129b3427113a047ca6f3862b2088d18d000b1504815c4ef422a29d587d438",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-common.log",
+          "sha256": "a2ff47809c1742f0a01dcbe2a30fc942a84468f50997a61854db5291082a9618"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-extra_id1/run_config.json",
+      "size_bytes": 1805,
+      "sha256": "9a5922b71a74375719dba25c0d30c66c7c726fa74083155fe34638120bfdee16",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id1/run_config.json",
+          "sha256": "9a5922b71a74375719dba25c0d30c66c7c726fa74083155fe34638120bfdee16"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-extra_id1.log",
+      "size_bytes": 109,
+      "sha256": "09011b4fcc2bd4b57244407b96accd45cbc0dcbd62e95945217e790c599c4dc2",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id1.log",
+          "sha256": "37fa34da85ce24018842e1f1e763bc6483f31ff9250463d77dcdf0ee9d17a884"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-extra_id5/run_config.json",
+      "size_bytes": 1805,
+      "sha256": "a67ae0b09ef82adc7746dc7bac262d8f9e4ce45e57727d6d2c24817492d6ef1d",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id5/run_config.json",
+          "sha256": "a67ae0b09ef82adc7746dc7bac262d8f9e4ce45e57727d6d2c24817492d6ef1d"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-extra_id5.log",
+      "size_bytes": 109,
+      "sha256": "88e8bf19161bc7b757725379767ca5273065c244b9cd9dedfaa15032a523b499",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id5.log",
+          "sha256": "06317555506f272e93707a43cd1cc06480abbf7a9d0ee1019e1cdb856eadc12f"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-zero_id1/run_config.json",
+      "size_bytes": 1805,
+      "sha256": "da26062a1ebdcf8c37e0a10aa87a9cd92bad0718469a22bdf79355f5b225b75e",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-zero_id1/run_config.json",
+          "sha256": "da26062a1ebdcf8c37e0a10aa87a9cd92bad0718469a22bdf79355f5b225b75e"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/baseline2-zero_id1.log",
+      "size_bytes": 108,
+      "sha256": "909bc47eb74032d9d788b193be6e93302679b6ab0e1bf0cf9c58b2523a78f5c3",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": true,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/baseline2-zero_id1.log",
+          "sha256": "37a6a450aaf80596d5dc9b19b4f78231ef290c2554c01ab4eb35488c3df2b44d"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/common.json",
+      "size_bytes": 155,
+      "sha256": "23572633ed0ef5d3c33cdc50a82ef3d708ce6e6624464cdfec203971fe8362fb",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/common.json",
+          "sha256": "23572633ed0ef5d3c33cdc50a82ef3d708ce6e6624464cdfec203971fe8362fb"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/extra_id1.json",
+      "size_bytes": 155,
+      "sha256": "a9740327e80c9a2f3f586886a251d91d5d69eeb3e7db8bcc5c186af929f28a52",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/extra_id1.json",
+          "sha256": "a9740327e80c9a2f3f586886a251d91d5d69eeb3e7db8bcc5c186af929f28a52"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/extra_id5.json",
+      "size_bytes": 155,
+      "sha256": "4e7f508c1f0af1fd6421cb1a84b763465372d0a946ef536c4ef388c0d8577306",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/extra_id5.json",
+          "sha256": "4e7f508c1f0af1fd6421cb1a84b763465372d0a946ef536c4ef388c0d8577306"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/invalid-batch.log",
+      "size_bytes": 325,
+      "sha256": "40f1ce70c446b24ac7664bf00e5871ebb71bdbaf62d159e555853d97853d9888",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/invalid-batch.log",
+          "sha256": "40f1ce70c446b24ac7664bf00e5871ebb71bdbaf62d159e555853d97853d9888"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/invalid.json",
+      "size_bytes": 156,
+      "sha256": "e4a7c99c4665956a46568b6a94f827baf2719e1d9bfa5703962dccded3543fb2",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/invalid.json",
+          "sha256": "e4a7c99c4665956a46568b6a94f827baf2719e1d9bfa5703962dccded3543fb2"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/validation_manifest.json",
+      "size_bytes": 75,
+      "sha256": "4ed44cd56cc0efcd09c4d99f33a4ac6a1bf7e618e9815a64cd6d308a9c8d0053",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/validation_manifest.json",
+          "sha256": "4ed44cd56cc0efcd09c4d99f33a4ac6a1bf7e618e9815a64cd6d308a9c8d0053"
+        }
+      ]
+    },
+    {
+      "path": "results/integration/work_orders/zero_id1.json",
+      "size_bytes": 155,
+      "sha256": "ca77f7a0409896e92d00177ca2497b741376b54ca057e47dd6c04415de00efb8",
+      "purpose": "Latest completed U01-U09 functional acceptance, not performance samples",
+      "models": [
+        "baseline1",
+        "baseline2"
+      ],
+      "scope": "Functional",
+      "machine_paths_normalized": false,
+      "sources": [
+        {
+          "path": "outputs/work_orders_acceptance/1795512320558820300/zero_id1.json",
+          "sha256": "ca77f7a0409896e92d00177ca2497b741376b54ca057e47dd6c04415de00efb8"
+        }
+      ]
+    },
+    {
+      "path": "results/baseline1/metrics.json",
+      "size_bytes": 1376,
+      "sha256": "caebc5ecb97c52397b27cc87667cf278e76e1b13dda7deefc836a80f070f320a",
+      "purpose": "Exact extraction of existing recorded metrics",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/baseline1/errors.csv",
+      "size_bytes": 60,
+      "sha256": "e58642726fba688130e0bc08050087bd1594620cfbb3abd0dd138dd961fd346d",
+      "purpose": "Errors filtered from existing predictions; header only means zero errors",
+      "models": [
+        "baseline1"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/baseline2/metrics.json",
+      "size_bytes": 2934,
+      "sha256": "83fea2815249d2063316854ee5d02f275369bb95c8a85e791ee34d54080585bf",
+      "purpose": "Exact extraction of existing recorded metrics",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/baseline2/errors.csv",
+      "size_bytes": 625,
+      "sha256": "289564decf4537cc883fc49d7153de3627d403bc540885537ed8eed2a5aaa596",
+      "purpose": "Errors filtered from existing predictions; header only means zero errors",
+      "models": [
+        "baseline2"
+      ],
+      "scope": "Training+Validation",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/completeness.json",
+      "size_bytes": 1314,
+      "sha256": "96686d67b8ed4c8bed2d71693e8084157d9c976739408eb7221a3a1ae596d264",
+      "purpose": "Evidence availability, no invented results",
+      "models": [],
+      "scope": "Archive index",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/audits/archive/outputs_inventory.csv",
+      "size_bytes": 190083,
+      "sha256": "bda3dd727a7e49e3c381849af8e363a9f89cca2d3d9bf10fde27177afbb8e7a4",
+      "purpose": "Every output file, size, hash, inferred purpose/version and publication decision",
+      "models": [],
+      "scope": "Inventory",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/audits/archive/inventory_summary.json",
+      "size_bytes": 2199,
+      "sha256": "d40b859b768b6b3ce43b4b653cfd79d0877d93d948e5f72d637ba300ae96f299",
+      "purpose": "Complete local outputs inventory totals",
+      "models": [],
+      "scope": "Inventory",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/catalog.json",
+      "size_bytes": 21756,
+      "sha256": "a76b76da46ed5ea3d6ae796aaa023217b22fb6232777d292c7ff049faba1af2d",
+      "purpose": "Versions and canonical original-to-published path map",
+      "models": [],
+      "scope": "Archive index",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/audits/archive/source_integrity.json",
+      "size_bytes": 2194,
+      "sha256": "9235b3fa7ace132f31e68c08d3e3f7e8f9accd0c4d27aea27804bd64471b3351",
+      "purpose": "Collection before/after protection checks",
+      "models": [],
+      "scope": "Integrity",
+      "machine_paths_normalized": false,
+      "sources": []
+    },
+    {
+      "path": "results/audits/archive/publish_check.json",
+      "size_bytes": 733,
+      "sha256": "928f954a8e6eaccf2474944e6677fbf1c32f5fd38736c0ead490601c8e753213",
+      "purpose": "Actual final archive/source/label/score/link/deduplication/sensitive-pattern checks",
+      "models": [],
+      "scope": "Integrity",
+      "machine_paths_normalized": false,
+      "sources": []
+    }
+  ],
+  "source_to_archive": {
+    "outputs/training/data/manifest.json": "results/data_manifests/development.json",
+    "outputs/training/baseline1/training_record.json": "results/baseline1/training_record.json",
+    "outputs/training/baseline1/train_predictions.csv": "results/baseline1/train_predictions.csv",
+    "outputs/training/baseline1/validation_predictions.csv": "results/baseline1/validation_predictions.csv",
+    "outputs/training/features/baseline1-feb9bd76751d6200.json": "results/data_manifests/feature_provenance/baseline1.json",
+    "outputs/training/baseline2/training_record.json": "results/baseline2/training_record.json",
+    "outputs/training/baseline2/train_predictions.csv": "results/baseline2/train_predictions.csv",
+    "outputs/training/baseline2/validation_predictions.csv": "results/baseline2/validation_predictions.csv",
+    "outputs/training/features/baseline2-fc37db747a77cbbf.json": "results/data_manifests/feature_provenance/baseline2.json",
+    "outputs/work_orders/train.json": "results/data_manifests/work_orders/train.json",
+    "outputs/work_orders/validation.json": "results/data_manifests/work_orders/validation.json",
+    "outputs/work_orders/functional/all_zero.json": "results/data_manifests/work_orders/functional/all_zero.json",
+    "outputs/work_orders/functional/extra_id1.json": "results/data_manifests/work_orders/functional/extra_id1.json",
+    "outputs/work_orders/functional/extra_id5.json": "results/data_manifests/work_orders/functional/extra_id5.json",
+    "outputs/work_orders/functional/zero_id1.json": "results/data_manifests/work_orders/functional/zero_id1.json",
+    "outputs/baseline1_diagnosis/diagnosis.json": "results/baseline1/diagnostics/diagnosis.json",
+    "outputs/baseline1_diagnosis/training_diagnostics.json": "results/baseline1/diagnostics/training_diagnostics.json",
+    "models/baseline3/training_record.json": "results/baseline3/training_record.json",
+    "models/baseline3/provenance.json": "results/baseline3/provenance.json",
+    "outputs/p06_merge/1795511737509054100/batch-baseline3/counts.csv": "results/baseline3/validation_inference/counts.csv",
+    "outputs/p06_merge/1795511737509054100/batch-baseline3/images.csv": "results/baseline3/validation_inference/images.csv",
+    "outputs/p06_merge/1795511737509054100/batch-baseline3/objects.csv": "results/baseline3/validation_inference/objects.csv",
+    "outputs/p06_merge/1795511737509054100/batch-baseline3/run_config.json": "results/baseline3/validation_inference/run_config.json",
+    "outputs/leakage_audit/1795502444356390600/audit.json": "results/audits/leakage/audit.json",
+    "outputs/leakage_audit/1795502444356390600/baseline1_per_image_comparison.json": "results/audits/leakage/baseline1_per_image_comparison.json",
+    "outputs/leakage_audit/1795502444356390600/baseline2_per_image_comparison.json": "results/audits/leakage/baseline2_per_image_comparison.json",
+    "outputs/leakage_audit/1795502444356390600/image_hashes.json": "results/audits/leakage/image_hashes.json",
+    "outputs/acceptance/1795511987719847700/acceptance.json": "results/integration/baseline12/acceptance.json",
+    "outputs/acceptance/1795502286780346400/acceptance.json": "results/audits/leakage/original_integration_acceptance.json",
+    "outputs/acceptance/1795511987719847700/baseline1/images.csv": "results/integration/baseline12/baseline1/images.csv",
+    "outputs/acceptance/1795511987719847700/baseline1/run_config.json": "results/integration/baseline12/baseline1/run_config.json",
+    "outputs/acceptance/1795511987719847700/baseline2/images.csv": "results/integration/baseline12/baseline2/images.csv",
+    "outputs/acceptance/1795511987719847700/baseline2/run_config.json": "results/integration/baseline12/baseline2/run_config.json",
+    "outputs/p06_merge/1795511737509054100/acceptance.json": "results/integration/baseline3/acceptance.json",
+    "outputs/p06_merge/1795511737509054100/worker.json": "results/integration/baseline3/worker.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/baseline1-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline1-metadata.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/baseline2-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline2-metadata.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/baseline3-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline3-metadata.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/capture.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/capture.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/latency.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/latency.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/latency_summary.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/latency_summary.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/images.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/run_config.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/run_config.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/images.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/run_config.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/run_config.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/counts.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/counts.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/images.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/objects.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/objects.csv",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/run_config.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511786080444600/run_config.json",
+    "outputs/p06_merge/1795511737509054100/controller/20261124T091623Z-21ade2fe/session.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/session.json",
+    "outputs/p06_merge/environment.json": "results/integration/p06_merge/environment.json",
+    "outputs/p06_merge/dependency-review.json": "results/integration/p06_merge/dependency-review.json",
+    "outputs/p06_merge/conflict-resolution.json": "results/integration/p06_merge/conflict-resolution.json",
+    "outputs/p06_merge/final-state.json": "results/integration/p06_merge/final-state.json",
+    "outputs/p06_merge/source-head.txt": "results/integration/p06_merge/source-head.txt",
+    "outputs/p06_merge/pip-freeze-before.txt": "results/integration/p06_merge/pip-freeze-before.txt",
+    "outputs/p06_merge/unit-tests-final.log": "results/integration/p06_merge/unit-tests-final.log",
+    "docs/p06/integration-requirements-lock.txt": "results/integration/environment-after.txt",
+    "outputs/work_orders_acceptance/1795512320558820300/acceptance.json": "results/integration/work_orders/acceptance.json",
+    "outputs/work_orders_acceptance/1795512320558820300/all_zero.json": "results/integration/work_orders/all_zero.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-all_zero/images.csv": "results/integration/work_orders/baseline1-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-all_zero/run_config.json": "results/integration/work_orders/baseline1-all_zero/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-all_zero.log": "results/integration/work_orders/baseline1-all_zero.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/baseline1-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline1-metadata.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/capture.csv": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/capture.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/latency.csv": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/latency.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/latency_summary.json": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/latency_summary.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/REAL-/1795512336154415900/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/REAL-/1795512336154415900/run_config.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common/20261124T092535Z-2c37dfc6/session.json": "results/integration/work_orders/baseline1-app-common/20261124T092535Z-2c37dfc6/session.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-common.log": "results/integration/work_orders/baseline1-app-common.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/baseline1-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline1-metadata.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/capture.csv": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/capture.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency.csv": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency_summary.json": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/latency_summary.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/REAL-/1795512339186644100/images.csv": "results/integration/work_orders/baseline1-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/REAL-/1795512339186644100/run_config.json": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/REAL-/1795512339186644100/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/session.json": "results/integration/work_orders/baseline1-app-extra_id5/20261124T092539Z-cb6efa62/session.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-app-extra_id5.log": "results/integration/work_orders/baseline1-app-extra_id5.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-common/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511783841404600/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-common/run_config.json": "results/integration/work_orders/baseline1-common/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-common.log": "results/integration/work_orders/baseline1-common.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id1/images.csv": "results/integration/work_orders/baseline1-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id1/run_config.json": "results/integration/work_orders/baseline1-extra_id1/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id1.log": "results/integration/work_orders/baseline1-extra_id1.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id5/images.csv": "results/integration/work_orders/baseline1-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id5/run_config.json": "results/integration/work_orders/baseline1-extra_id5/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-extra_id5.log": "results/integration/work_orders/baseline1-extra_id5.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-zero_id1/images.csv": "results/integration/work_orders/baseline1-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-zero_id1/run_config.json": "results/integration/work_orders/baseline1-zero_id1/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline1-zero_id1.log": "results/integration/work_orders/baseline1-zero_id1.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-all_zero/images.csv": "results/integration/work_orders/baseline2-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-all_zero/run_config.json": "results/integration/work_orders/baseline2-all_zero/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-all_zero.log": "results/integration/work_orders/baseline2-all_zero.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/baseline2-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline2-metadata.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/capture.csv": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/capture.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/latency.csv": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/latency.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/latency_summary.json": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/latency_summary.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/REAL-/1795512448555742200/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/REAL-/1795512448555742200/run_config.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common/20261124T092727Z-b060edb0/session.json": "results/integration/work_orders/baseline2-app-common/20261124T092727Z-b060edb0/session.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-common.log": "results/integration/work_orders/baseline2-app-common.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/baseline2-metadata.json": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/baseline2-metadata.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/capture.csv": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/capture.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency.csv": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency_summary.json": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/latency_summary.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/REAL-/1795512459714679900/images.csv": "results/integration/work_orders/baseline2-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/REAL-/1795512459714679900/run_config.json": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/REAL-/1795512459714679900/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5/20261124T092739Z-100f225a/session.json": "results/integration/work_orders/baseline2-app-extra_id5/20261124T092739Z-100f225a/session.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-app-extra_id5.log": "results/integration/work_orders/baseline2-app-extra_id5.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-common/images.csv": "results/integration/baseline3/controller/20261124T091623Z-21ade2fe/REAL-/1795511785020497200/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-common/run_config.json": "results/integration/work_orders/baseline2-common/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-common.log": "results/integration/work_orders/baseline2-common.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id1/images.csv": "results/integration/work_orders/baseline2-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id1/run_config.json": "results/integration/work_orders/baseline2-extra_id1/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id1.log": "results/integration/work_orders/baseline2-extra_id1.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id5/images.csv": "results/integration/work_orders/baseline2-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id5/run_config.json": "results/integration/work_orders/baseline2-extra_id5/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-extra_id5.log": "results/integration/work_orders/baseline2-extra_id5.log",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-zero_id1/images.csv": "results/integration/work_orders/baseline2-all_zero/images.csv",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-zero_id1/run_config.json": "results/integration/work_orders/baseline2-zero_id1/run_config.json",
+    "outputs/work_orders_acceptance/1795512320558820300/baseline2-zero_id1.log": "results/integration/work_orders/baseline2-zero_id1.log",
+    "outputs/work_orders_acceptance/1795512320558820300/common.json": "results/integration/work_orders/common.json",
+    "outputs/work_orders_acceptance/1795512320558820300/extra_id1.json": "results/integration/work_orders/extra_id1.json",
+    "outputs/work_orders_acceptance/1795512320558820300/extra_id5.json": "results/integration/work_orders/extra_id5.json",
+    "outputs/work_orders_acceptance/1795512320558820300/invalid-batch.log": "results/integration/work_orders/invalid-batch.log",
+    "outputs/work_orders_acceptance/1795512320558820300/invalid.json": "results/integration/work_orders/invalid.json",
+    "outputs/work_orders_acceptance/1795512320558820300/validation_manifest.json": "results/integration/work_orders/validation_manifest.json",
+    "outputs/work_orders_acceptance/1795512320558820300/zero_id1.json": "results/integration/work_orders/zero_id1.json"
+  },
+  "excludes_self_and_human_indexes": true,
+  "duplicate_content_stored_once": true,
+  "transformations": "Personal machine prefixes only when present; otherwise exact bytes. Derived metrics/errors explicitly labelled."
+}

@@ -1,0 +1,10 @@
+split,error_type,image_id,true_label,predicted_label,p_fail
+validation,False PASS,fail171.jpg,FAIL,PASS,0.49262000204085055
+validation,False PASS,fail27.jpg,FAIL,PASS,0.21626966291959004
+validation,False PASS,fail29.jpg,FAIL,PASS,0.3419569768466413
+validation,False PASS,fail35.jpg,FAIL,PASS,0.48957698255603954
+validation,False PASS,fail38.jpg,FAIL,PASS,0.16069720899129591
+validation,False PASS,fail43.jpg,FAIL,PASS,0.4264881247910357
+validation,False FAIL,pass102.jpg,PASS,FAIL,0.5221739649614705
+validation,False FAIL,pass133.jpg,PASS,FAIL,0.5418803494803698
+validation,False FAIL,pass15.jpg,PASS,FAIL,0.5192240570758013

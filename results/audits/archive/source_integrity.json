@@ -1,0 +1,29 @@
+{
+  "original_outputs_count": 510,
+  "original_outputs_sha256_unchanged": true,
+  "models_and_configs_sha256_unchanged": true,
+  "protected_model_config_hashes": {
+    "models/candidates.json": "bcc19c146d1a17cc8518507faf0050f675c8f393da11bc9f491b5b0cfb8a59e9",
+    "models/baseline1/baseline1.joblib": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+    "models/baseline1/config.json": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+    "models/baseline1/freeze.json": "d99060970307086363cb64d1e00b9d96c62887d6d28a11f3632081acd54dff73",
+    "models/baseline1/scene_guard.npz": "edfb5b9b06843f8997bbbe810e31115daf19f65187d98bbcd3dbfd2c4baaf2ec",
+    "models/baseline1/training_record.json": "df51f35835984108066bafe7b297c7efadf9c988581592bdfbc22b2f84a21a6e",
+    "models/baseline2/baseline2.json": "641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55",
+    "models/baseline2/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "models/baseline2/training_record.json": "3bc35a4d4984b6d848c8e96d00790e99f94619472b20fc52d81da35d533089ee",
+    "models/baseline3/best.pt": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+    "models/baseline3/provenance.json": "5707c3687df517a1d61509d368a8fa607aa3c7b9dd6992686989b102b0c30a92",
+    "models/baseline3/training_record.json": "12fd1742e0335fe308ed638a41c7349630ebbd6295c018a585a17c928714f7fc",
+    "config/baseline1.json": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+    "config/baseline2.json": "5ed22e638ad8b3c7827eab9c5b3a6f94909c8f63eb5e7e901b772da8fc1ab3c2",
+    "config/baseline3.json": "257f51db51a2f0b9595680b58fa9af1d0598cae9628968f6a0ea45a2a20fe517",
+    "config/inspection.json": "9de1a1223fe2dda866c99d5f32f3b13c665b6417f185b2487748c0b98610d0fc",
+    "config/p07.json": "7ef54b1967b18be83a6e18571ca47c9b8132e7e91550b13d1e1165ca26e98c95",
+    "config/training.json": "bd8077518418443f112e15c8bf1bbd631f60bfb7b792d4007d388bf131d00f62"
+  },
+  "raw_data_file_count": 1494,
+  "raw_data_paths_sizes_mtimes_unchanged": true,
+  "raw_data_content_not_opened": true,
+  "official_held_out_test": "NOT_RUN"
+}

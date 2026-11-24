@@ -22,11 +22,11 @@ Ground Truth 的实际数量不是工单：实际 `[1,1,1,1,2]` 对固定 `[1,1,
 在项目根目录、已激活 .venv311 后：
 
 ```powershell
-python -m scripts.generate_work_orders --split train --output outputs/work_orders/train.json
-python -m scripts.generate_work_orders --split validation --output outputs/work_orders/validation.json
+python -m scripts.generate_work_orders --manifest results/data_manifests/development.json --split train --output outputs/work_orders/train-new.json
+python -m scripts.generate_work_orders --manifest results/data_manifests/development.json --split validation --output outputs/work_orders/validation-new.json
 ```
 
-本轮已生成 train 262 条、validation 46 条。默认读取经过审查的 `outputs/training/data/manifest.json`，只取 image_id 与 split，不读图片或根据实际数量/标签生成要求。既有文件不覆盖，复跑请换输出文件名。可用 `--manifest` 显式指定 CSV 或 JSON 清单。
+已归档 [train 262 条](../results/data_manifests/work_orders/train.json)、[validation 46 条](../results/data_manifests/work_orders/validation.json)。程序默认仍读取本机 outputs/training/data/manifest.json；上述命令显式使用随 Git 交付的清单，只取 image_id 与 split，不读图片或根据实际数量/标签生成要求。既有文件不覆盖，复跑请换输出文件名。
 
 旧用例编号只能使用明确 `case_id,image_id` 两列的 `--mapping-csv` 转换；无映射时 TEST_01 会被拒绝，不猜测文件名，重复映射/重复图片也拒绝。整理后的数据已直接使用实际图片名，不需要映射。
 
@@ -52,14 +52,14 @@ P07 的 Baseline1 场景支持检查仍保留：固定工单时，合法场景�
 
 Baseline3/Final 的真实检测结果包含实际计数、框、类别和目标分数。统一数量规则比较 observed 与任意合法 expected；ID0>0 始终 FAIL，difference=observed-expected。纯规则的整图判定不制造图像级概率；目标分数保留。
 
-真实后端加载后通过 ObjectBackend 接口复用观测；rejudge 只计算新判定，不再调用检测器、不改变框/类别/计数、不修改观测对象。当前仍未交付真实 Baseline3/Final 权重与适配器；计数逻辑仅有明确标识的单元接口夹具检查，不能写成真实检测验收通过，也不提供生产 Mock 回退。
+真实后端加载后通过 ObjectBackend 接口复用观测；rejudge 只计算新判定，不再调用检测器、不改变框/类别/计数、不修改观测对象。Baseline3 已真实接入，CUDA重判和ID0规则证据见 [验收记录](../results/integration/baseline3/acceptance.json)；Final 仍未配置。尺度与未知件能力缺口见 docs/p06/compliance_review.md，不提供生产 Mock 回退。
 
 ## 两类实验必须分开
 
 共同性能评估统一使用 reference_expected_counts。合法但不同的数量只用于功能测试，使用 `--purpose functional --counts 1 1 1 1 2`，分别保存 JSON 和运行目录，不能混进共同性能指标。生成器拒绝 common 模式下覆盖固定工单。
 
 ```powershell
-python -m scripts.generate_work_orders --split validation --purpose functional --counts 1 1 1 1 2 --output outputs/work_orders/validation-extra-id5.json
+python -m scripts.generate_work_orders --manifest results/data_manifests/development.json --split validation --purpose functional --counts 1 1 1 1 2 --output outputs/work_orders/validation-extra-id5.json
 python predict.py --input_dir "验证图片目录" --model baseline1 --output_dir outputs/functional-baseline1 --counts_file outputs/work_orders/validation-extra-id5.json
 ```
 

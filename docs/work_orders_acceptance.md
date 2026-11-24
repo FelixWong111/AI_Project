@@ -1,6 +1,6 @@
 # 工单规范验收记录（2026-11-24）
 
-实际报告：outputs/work_orders_acceptance/1795506729080232400/acceptance.json。对应目录保留每条命令、退出码、原始CSV、运行配置和无头app快照。正式 Test: NOT_RUN。
+初次报告源位置为 outputs/work_orders_acceptance/1795506729080232400/acceptance.json；同权重在CUDA环境下的最新完整回归已归档至 [acceptance.json](../results/integration/work_orders/acceptance.json)，包含真实命令、退出码及对应CSV/配置，重复内容通过 results/catalog.json 映射到唯一副本。原始快照图片保留本机，不上传。正式 Test: NOT_RUN。
 
 使用允许的 validation/pass102.jpg，不使用正式测试图片。Baseline1 固定工单输出 PASS、P(label)=0.81413716；Baseline2 输出 FAIL、P(FAIL)=0.52217396。后者是已保留的真实误判，不将“真实分类执行成功”混同为分类正确，也没有为验收改标签或模型。
 
@@ -18,15 +18,15 @@
 
 额外覆盖 [2,1,1,1,1] 与 [0,1,1,1,1]；除外层ImageBackend外，直接模型桥接/Adapter入口也检查了分类跳过。实际app以无头模式对两个模型分别执行固定与特殊工单，输出与CLI一致。
 
-Baseline3/Final 的真实权重/适配器尚未配置，因此真实检测及自定义工单现场验收均 NOT_RUN。目标级数量重判、ID0强制FAIL、框和实际数量不变，仅在明确的单元接口夹具上通过，不宣称真实检测能力完成。
+初次工单验收时 Baseline3/Final 实模型均 NOT_RUN；后续 Baseline3 已完成真实CUDA接入与数量重判/ID0验收，见 [Baseline3验收](../results/integration/baseline3/acceptance.json)。Final仍未配置，现场摄像头验收仍为NOT_RUN。工单专项脚本仍只验证Baseline1/2，不能把该报告当作Baseline3性能评估。
 
-52项单元测试通过，日志在 outputs/work_orders_acceptance/unit-tests-final.log。生成器测试覆盖“实际ID5=2但工单仍各1”、真实文件扩展名、显式旧编号映射、重复ID及非法输入；没有根据Ground Truth生成要求。
+初次52项单元测试通过；后续合并后完整76项通过，最终日志已归档 [unit-tests-final.log](../results/integration/p06_merge/unit-tests-final.log)。生成器测试覆盖“实际ID5=2但工单仍各1”、真实文件扩展名、显式旧编号映射、重复ID及非法输入；没有根据Ground Truth生成要求。
 
 ## 生成物
 
-- outputs/work_orders/train.json：262条固定参考工单。
-- outputs/work_orders/validation.json：46条固定参考工单。
-- outputs/work_orders/functional/extra_id5.json、extra_id1.json、zero_id1.json、all_zero.json：各46条验证图特殊工单，只供功能测试，不用于共同性能指标。
+- results/data_manifests/work_orders/train.json：262条固定参考工单。
+- results/data_manifests/work_orders/validation.json：46条固定参考工单。
+- results/data_manifests/work_orders/functional/extra_id5.json、extra_id1.json、zero_id1.json、all_zero.json：各46条验证图特殊工单，只供功能测试，不用于共同性能指标。
 - 本轮真实功能验收为避免无意义重复推理，仅从上述同一验证分区选择一张图片，每种工单单独运行，输入保留在验收目录。
 - 正式Test工单本轮不重新生成，不执行Test推理或评估。
 

@@ -1,0 +1,63 @@
+{
+  "model_id": "baseline3",
+  "model_version": "p06-yolo11n-640-epoch58-4c5a1f759623",
+  "model_file_size_bytes": 5465242,
+  "weights": "${PROJECT_ROOT}\\models\\baseline3\\best.pt",
+  "weights_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+  "output_capability": "object_level",
+  "class_catalogue": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "thresholds": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.7,
+    "device": 0,
+    "batch": 1,
+    "half": false,
+    "agnostic_nms": false,
+    "augment": false,
+    "max_det": 300
+  },
+  "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability",
+  "preprocessing": "uint8 BGR -> Ultralytics aspect-preserving letterbox imgsz=640; original-pixel xyxy output; no EXIF transform on incoming frames",
+  "coordinate_convention": "original image pixels, top-left xyxy",
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "python": "3.11.14",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4",
+    "inference_device": {
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    }
+  },
+  "rejection": "Only learned non_catalogue detection; complete open-set rejection not validated",
+  "size_tolerance": null,
+  "calibration": null,
+  "decision_stage": "shared observed-vs-expected count rule; learned ID0 forces FAIL",
+  "ultralytics_version": "8.3.236",
+  "model": "baseline3",
+  "deployment_stage": "real_detector_partial_rejection",
+  "size_verification": "NOT_PROVIDED: calibration/size tolerances absent",
+  "rejection_validation": "PARTIAL: learned class0 only; not arbitrary unknown/incorrect-size rejection",
+  "count_decision_score": "none: decision derived from observed vs expected counts; object scores unchanged",
+  "evidence_mode": "real",
+  "frame_id": 1,
+  "scene_id": null,
+  "per_image_expected_counts": {
+    "pass102.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    }
+  }
+}

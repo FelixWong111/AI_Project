@@ -17,3 +17,7 @@ Baseline1 的 HOG、MLP 序列化和推理位于 `src/models/baseline1/`，沿�
 本次接手修改了团队计划原先的成员 owner 分工，依据是用户本次明确授权；公共字段和枚举未改。工作区当前未提供 P08 完整目标级 evaluator，本次只做图像级训练/验证与接口检查，不声称目标级评估完成。
 
 `Official held-out test: NOT_RUN`。新测试集更新后，由 P08 使用封存版本进行独立评估；若其与开发集有同场景冲突，需先解决分区并评估重训需求。
+
+## 实验资料交付层
+
+运行仍向outputs写入；正式证据经复制整理到[results](../results/README.md)，与模型加载、工单和推理逻辑分离。原数据、特征缓存、图片/视频和备份继续忽略。P05/P08通过Git取得清单、逐图预测、指标、审计和验收；sources及SHA256见results/file_manifest.json。归档脚本只使用标准库，不导入模型、不读取图片。

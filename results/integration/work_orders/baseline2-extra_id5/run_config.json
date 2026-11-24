@@ -1,0 +1,88 @@
+{
+  "model": "baseline2",
+  "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+  "output_capability": "image_level",
+  "class_catalogue": [
+    {
+      "id": 0,
+      "name": "non_catalogue",
+      "spec": "type/spec not in catalogue"
+    },
+    {
+      "id": 1,
+      "name": "long_screw",
+      "spec": "M4x25"
+    },
+    {
+      "id": 2,
+      "name": "thick_screw",
+      "spec": "M5x10"
+    },
+    {
+      "id": 3,
+      "name": "thin_screw",
+      "spec": "M4x10"
+    },
+    {
+      "id": 4,
+      "name": "hex_nut",
+      "spec": "M4"
+    },
+    {
+      "id": 5,
+      "name": "flat_washer",
+      "spec": "M5"
+    }
+  ],
+  "thresholds": {
+    "fail_probability": 0.5,
+    "rule": ">="
+  },
+  "preprocessing": {
+    "color": "RGB",
+    "orientation": "EXIF for file inputs",
+    "resize": "aspect-preserving fit into 224x224, white padding, bilinear",
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "feature_layer": "global average pool, 512 dimensions"
+  },
+  "coordinate_convention": null,
+  "score_convention": {
+    "prob": "estimated P(FAIL), no probability calibration"
+  },
+  "hardware": {
+    "device": "cpu",
+    "device_name": ""
+  },
+  "rejection": null,
+  "size_tolerance": null,
+  "calibration": null,
+  "per_image_expected_counts": {
+    "pass102.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 2
+    }
+  },
+  "supported_fixed_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "model_file_size_bytes": 46875112,
+  "deployment_stage": "candidate",
+  "load_error": null,
+  "evidence_mode": "batch_inference"
+}

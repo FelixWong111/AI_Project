@@ -1,0 +1,36 @@
+{
+  "imports": {
+    "src/p06_inference.py": [
+      "from __future__ import annotations",
+      "import copy",
+      "import hashlib",
+      "from importlib.metadata import version",
+      "import json",
+      "import math",
+      "import os",
+      "from pathlib import Path",
+      "import threading",
+      "import numpy as np",
+      "from .p06_data import CLASSES",
+      "import torch",
+      "from ultralytics import YOLO"
+    ],
+    "src/p06_data.py": [
+      "from __future__ import annotations",
+      "import csv",
+      "import hashlib",
+      "import json",
+      "import math",
+      "from pathlib import Path",
+      "import tempfile",
+      "from PIL import Image, ImageOps"
+    ]
+  },
+  "conflict_dependencies": "P06 provider directly depends only on p06_data.CLASSES plus numpy/Ultralytics/Torch; no P04 imports. P07 shared factory/validate_result/worker/export contracts preserved and integration-tested.",
+  "reused_p07": [
+    "predict.py unified entry",
+    "baseline1 features/model/catalogue and frozen config",
+    "existing requirements and image-only count guards",
+    "history and contribution evidence"
+  ]
+}

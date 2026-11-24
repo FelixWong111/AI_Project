@@ -1,6 +1,8 @@
 # Mechanical Component Inspection
 
-工单规范：唯一公共参考位于 [`config/inspection.json`](config/inspection.json)，固定 ID1–ID5 各 1，ID0 恒为 0。实际数量属于 Ground Truth，不能反推工单。已生成 `outputs/work_orders/train.json`（262条）与 `validation.json`（46条）。生成、GUI/批处理统一校验、UNSUPPORTED_COUNTS 和特殊工单功能测试说明见 [工单接口文档](docs/work_orders.md)。正式 Test 仍为 NOT_RUN。
+工单规范：唯一公共参考位于 [`config/inspection.json`](config/inspection.json)，固定 ID1–ID5 各 1，ID0 恒为 0。实际数量属于 Ground Truth，不能反推工单。已归档 [训练工单](results/data_manifests/work_orders/train.json)（262条）与 [验证工单](results/data_manifests/work_orders/validation.json)（46条）。生成、GUI/批处理统一校验、UNSUPPORTED_COUNTS 和特殊工单功能测试说明见 [工单接口文档](docs/work_orders.md)。正式 Test 仍为 NOT_RUN。
+
+正式实验资料随 Git 交付，入口为 [results/README.md](results/README.md)。包含当前模型的训练/验证预测、真实标签与分数、指标/误判、数据清单、泄漏审计和集成验收；P05/P08 可直接从 GitHub 查阅。原始数据和本机 outputs 仍不上传，缺项和 Test: NOT_RUN 明确保留。
 
 Baseline1 实时异常输入修正：P07 现启用训练特征支持范围检查，超出范围返回 REVIEW（标签/分数为空），不强制 FAIL。原始 HOG+MLP 权重和验证成绩不变；predict.py 保留原始基线，门控不参与其基线指标。详情及诊断证据见 [实时诊断说明](docs/baseline1_live_diagnosis.md)。部署 Baseline1 到 P07 时还需携带 `models/baseline1/scene_guard.npz`。其他模型不变。
 
@@ -33,7 +35,7 @@ P03 总包保持完全只读。只使用其 `01_` 开发包，`images/train` 为
 
 训练：124 PASS / 138 FAIL；验证：24 PASS / 22 FAIL。原始 scene_id 仍为 TBD。2026-11-24 用户明确确认每张图片为不同物理场景，因此训练/验证场景数分别按 262/46 记录，确认来源保存在 config/training.json 和外部清单；这不是哈希算法证明，也没有回写或编造拍摄 SceneID。
 
-清单校验、图片与像素哈希、排除记录、数量与框一致性记录保存在 `outputs/training/data/manifest.json`。当前排除 0 张。之后如果数据或确认有变化，需重新审查和生成新版本清单。
+清单校验、图片与像素哈希、排除记录、数量与框一致性记录保存在 [正式开发清单](results/data_manifests/development.json)。当前排除 0 张。之后如果数据或确认有变化，需重新审查和生成新版本清单。
 
 ## 方法及候选模型
 
@@ -48,7 +50,7 @@ Baseline1/2 均为图像级分类器，只支持上述固定工单。输出真�
 
 ## 训练与复现
 
-当前候选已经真实训练，完整记录在 `outputs/training/baseline1/`、`outputs/training/baseline2/`，模型目录也附 training_record.json。重新实验使用新输出目录，防止覆盖冻结证据：
+当前候选已经真实训练，完整记录在 [results/baseline1/](results/baseline1/) 和 [results/baseline2/](results/baseline2/)，模型目录也附 training_record.json。重新实验使用新输出目录，防止覆盖冻结证据：
 
 ```powershell
 python -m scripts.train_baseline1 --output-dir models/baseline1-rerun
@@ -77,8 +79,8 @@ python app.py --model baseline2 --camera 0 --capture-backend dshow
 ```powershell
 $data = Get-ChildItem -Directory -Filter 'P03_*' | ForEach-Object { Get-ChildItem -Directory -LiteralPath $_.FullName } | ForEach-Object { Get-ChildItem -Directory -LiteralPath $_.FullName -Filter '01_*' } | Select-Object -First 1
 $val = Join-Path $data.FullName 'images\validation'
-python predict.py --input_dir "$val" --model baseline1 --output_dir outputs/batch-baseline1 --counts_file outputs/training/data/validation_counts.json
-python predict.py --input_dir "$val" --model baseline2 --output_dir outputs/batch-baseline2 --counts_file outputs/training/data/validation_counts.json
+python predict.py --input_dir "$val" --model baseline1 --output_dir outputs/batch-baseline1 --counts_file results/data_manifests/work_orders/validation.json
+python predict.py --input_dir "$val" --model baseline2 --output_dir outputs/batch-baseline2 --counts_file results/data_manifests/work_orders/validation.json
 ```
 
 每次运行使用新的输出目录。工单 JSON 是只含 image_id 与 expected_counts 的列表；不含真值、框或实际数量。输出 `images.csv` 和 `run_config.json`。images.csv 的字段顺序固定为：
@@ -99,7 +101,7 @@ python -m scripts.check_candidates
 
 check_candidates 在全部验证图上核对重新加载后的批处理结果与训练记录，检查工单限制、缺失权重、无头 app 和 P03 未变；输出新目录到 outputs/acceptance。实际 GUI 和相机验收状态见 docs/model_training.md，不把无头检查当成真实摄像头实测。
 
-P08 可使用 docs/model_training.md、docs/system_architecture.md、docs/model_integration.md、模型目录 training_record.json、外部数据清单、原始训练/验证预测、验收记录。完整目标级评估器仍待 P08 提供；本次不覆盖其未来接口。
+P08 可从 [results/README.md](results/README.md) 获取数据清单、原始训练/验证预测、指标、误判与验收记录，并结合 docs/model_training.md、docs/data_leakage_audit.md 和模型目录核对版本。完整目标级评估器仍待 P08 提供；本次不覆盖其未来接口。新克隆无需原始数据即可运行 `python -m scripts.collect_results --verify --archive-only` 核对归档完整性。
 
 ## 工程目录
 
@@ -108,13 +110,14 @@ app.py / predict.py          实时与课程批处理入口
 config/                     固定工单、数据确认、模型及 UI 配置
 src/data/                   开发数据只读校验
 src/models/baseline1/        P04 HOG/MLP 实现及共享工具
-src/adapters/               Baseline1/2 模型加载与推理
+src/adapters/               Baseline1/2/3 模型加载与推理
 src/inference/              批处理业务
 src/p07_*.py, camera.py      UI、输入、记录和后端注册
 scripts/                    正式训练与验收
-models/baseline1,baseline2/  真实候选权重、配置及记录
+models/baseline1,baseline2,baseline3/  真实候选权重、配置及记录
 tests/                      单元测试与测试专用 Stub
 docs/                       当前交接、报告资料及 history 历史来源
+results/                    纳入 Git 的正式实验结果、清单与审计
 outputs/training/           清单、特征缓存、实验指标、原始预测
 outputs/refactor_backup_20261124/  重构前源码与未提交改动备份
 P03_*/                      权威原数据，完全只读，另行交付
@@ -122,6 +125,6 @@ P03_*/                      权威原数据，完全只读，另行交付
 
 旧原始开发/验证/测试目录保留用于追溯，不是训练入口。旧合成训练器、P05 smoke handoff 和旧配置已归档至重构备份，不是部署模型。Project-Man、team_plan、成员贡献和建议记录保留。
 
-权重文件保留真实文件且不被 .gitignore 排除；交付时同时提供 models、config、src 和所需依赖。outputs 目录不自动进 Git，需要随实验资料另行交付；尤其不要漏交清单、原始预测、训练记录和备份说明。本次不自动提交或推送 Git。
+权重文件保留真实文件且不被 .gitignore 排除；交付时同时提供 models、config、src 和所需依赖。正式实验资料已复制到 results 并随 Git 交付；outputs 继续忽略，保留缓存、截图、备份和全部原始运行记录。归档来源及 SHA256 见 results/file_manifest.json，不再要求另发实验压缩包。本次不自动提交或推送 Git。
 
 P03 更新测试集后：先核定独立场景、标注和工单，封存测试版本，再用两个冻结模型调用同一批处理入口并由独立评估器读取真值；此前不进行正式测试集评估。

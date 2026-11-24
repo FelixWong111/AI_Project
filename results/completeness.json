@@ -1,0 +1,31 @@
+{
+  "baseline1": {
+    "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+    "training_images": 262,
+    "validation_images": 46,
+    "training_predictions": "PRESENT",
+    "validation_predictions": "PRESENT",
+    "truth_scores_metrics_confusion_errors_trials": "PRESENT",
+    "official_test": "NOT_RUN"
+  },
+  "baseline2": {
+    "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+    "training_images": 262,
+    "validation_images": 46,
+    "training_predictions": "PRESENT",
+    "validation_predictions": "PRESENT",
+    "truth_scores_metrics_confusion_errors_trials": "PRESENT",
+    "official_test": "NOT_RUN"
+  },
+  "baseline3": {
+    "weights_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+    "validation_inference_images": 46,
+    "historical_checkpoint_training_record": "PRESENT",
+    "actual_training_validation_manifests": "MISSING_FROM_P06",
+    "training_per_image_predictions": "MISSING_FROM_P06",
+    "validated_GT_comparison_confusion_and_errors": "NOT_PRODUCED_IN_THIS_INTEGRATION",
+    "referenced_post_GT_fix_and_resolution_reports": "MISSING_FROM_P06",
+    "image_level_score": "NOT_APPLICABLE: null by count-rule contract; object scores are in objects.csv",
+    "official_test": "NOT_RUN"
+  }
+}

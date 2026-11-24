@@ -1,0 +1,26 @@
+{
+  "source_branch": "origin/feat/p06-baseline3",
+  "source_commit": "dceda24206096c7be1e518083afc38764ae4d5d9",
+  "weights_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+  "weights_size_bytes": 5465242,
+  "original_weights_path": "output/p06_runs/p03_baseline3_640_seed42/weights/best.pt",
+  "current_weights_path": "models/baseline3/best.pt",
+  "preserved_inference": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.7,
+    "device": 0,
+    "batch": 1,
+    "half": false,
+    "agnostic_nms": false,
+    "augment": false,
+    "max_det": 300
+  },
+  "missing_deliverables": [
+    "Referenced post-annotation-fix revalidation and 640-vs-960 reports",
+    "Standalone training command logs and actual data manifests (checkpoint train_args/results are preserved)",
+    "Scale calibration and size tolerance configuration",
+    "Verified complete open-set/incorrect-size rejection mechanism"
+  ],
+  "official_held_out_test": "NOT_RUN"
+}

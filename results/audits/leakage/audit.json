@@ -1,0 +1,136 @@
+{
+  "official_held_out_test": "NOT_RUN",
+  "manifest_sha256": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
+  "scene_independence_basis": {
+    "each_image_is_distinct_scene": true,
+    "source": "User confirmation in this session on 2026-11-24: 场景独立性直接通过，每个照片的场景都不一样",
+    "scope": "Current P03 development train/validation only; not an automated proof or capture-manifest verification"
+  },
+  "image_count": 308,
+  "duplicate_groups": {
+    "sha256": [],
+    "pixel_sha256": []
+  },
+  "models": {
+    "baseline1": {
+      "result": "PASS",
+      "reloaded_real_model": true,
+      "validation_images_compared": 46,
+      "training_deployment_batch_agree": true,
+      "train_only_scaler_statistics_match": true,
+      "cached_validation_features_match_recomputed_pixels": true,
+      "cache_file": "outputs/training/features/baseline1-feb9bd76751d6200.npz",
+      "cache_sha256": "869dd168b45e4534539deb20bc90df21928d466400f964955493e7e345edcf7d",
+      "cache_signature": {
+        "manifest": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
+        "model": "baseline1",
+        "preprocessing": {
+          "size": [
+            128,
+            128
+          ],
+          "hog": {
+            "orientations": 9,
+            "pixels_per_cell": [
+              16,
+              16
+            ],
+            "cells_per_block": [
+              2,
+              2
+            ],
+            "block_norm": "L2-Hys",
+            "transform_sqrt": true,
+            "channel_axis": null
+          }
+        },
+        "backbone": null,
+        "versions": {
+          "numpy": "1.26.4",
+          "scipy": "1.15.3",
+          "scikit-learn": "1.9.1",
+          "scikit-image": "0.26.0",
+          "Pillow": "13.0.0",
+          "torch": "2.7.1+cpu",
+          "torchvision": "0.22.1+cpu",
+          "joblib": "1.5.3",
+          "opencv-python": "4.10.0.84"
+        }
+      },
+      "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+      "feature_inputs": "decoded pixels only; no filename, directory, labels or truth",
+      "scaler_fit_scope": "262 training images only",
+      "classifier_fit_scope": "X[trainmask], y[trainmask]",
+      "selection_scope": "46 validation images; no additional optimization in this audit"
+    },
+    "baseline2": {
+      "result": "PASS",
+      "reloaded_real_model": true,
+      "validation_images_compared": 46,
+      "training_deployment_batch_agree": true,
+      "train_only_scaler_statistics_match": true,
+      "cached_validation_features_match_recomputed_pixels": true,
+      "cache_file": "outputs/training/features/baseline2-fc37db747a77cbbf.npz",
+      "cache_sha256": "46b665da24a7157ec455a97af93472bd20d1085718ac8a51bcf71ef96f66212c",
+      "cache_signature": {
+        "manifest": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
+        "model": "baseline2",
+        "preprocessing": {
+          "color": "RGB",
+          "orientation": "EXIF for file inputs",
+          "resize": "aspect-preserving fit into 224x224, white padding, bilinear",
+          "normalization_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "normalization_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "feature_layer": "global average pool, 512 dimensions"
+        },
+        "backbone": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "versions": {
+          "numpy": "1.26.4",
+          "scipy": "1.15.3",
+          "scikit-learn": "1.9.1",
+          "scikit-image": "0.26.0",
+          "Pillow": "13.0.0",
+          "torch": "2.7.1+cpu",
+          "torchvision": "0.22.1+cpu",
+          "joblib": "1.5.3",
+          "opencv-python": "4.10.0.84"
+        }
+      },
+      "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+      "feature_inputs": "decoded pixels only; no filename, directory, labels or truth",
+      "scaler_fit_scope": "262 training images only",
+      "classifier_fit_scope": "X[trainmask], y[trainmask]",
+      "selection_scope": "46 validation images; no additional optimization in this audit"
+    }
+  },
+  "audited_source_sha256": {
+    "src/data/development.py": "e02c7479c04e14e13504db629fbd6f0fd011eac6ef74c355ca276ae3fcb470dd",
+    "scripts/train_candidates.py": "67b44393c167d2d8fe998da3020c3b08f28bb09ab07d8f0e2100c7830752ce84",
+    "src/models/baseline1/features.py": "68d47a25e9fcd342671f05d6a870e30cd52492b0be78cc896896d253c724ba21",
+    "src/models/baseline1/model.py": "b9344c37e5b2ab09faf7f308d2cc0cca3f44b17e354fe5669c6f8b9bac131810",
+    "src/adapters/baseline1.py": "609d88f15422698d90edf91bf0090495b95a08df087c5801aa9367b23abc1cc6",
+    "src/adapters/baseline2.py": "6fe4e0aaca4691e63f840923b9773c5db21f73387b9153bcb8d445960d658d96",
+    "src/inference/batch.py": "638ea73437dfcb798cc34cf2e7f863fba519f82377457fcffb9717d42d1cdebd",
+    "src/p07_bridge.py": "fc2d9d6c3e5807874e09257efc1b1851c68d37263f3d935795157faf6e666a74",
+    "app.py": "0818d9104c77b5a09cafe272c8ae0b66b0be1052294d622e085bebdd92c78694"
+  },
+  "source_review": {
+    "fitting": "StandardScaler and classifier share estimator.fit(X[trainmask], y[trainmask]); validation uses predict only",
+    "other_fitted_operations": "No PCA, learned feature extraction, calibration or threshold optimization; HOG is deterministic; pretrained ResNet18 frozen/eval",
+    "historical_artifacts": "Old synthetic classifier and scripts archived outside production; cache signed by current real-data manifest/preprocessing/backbone/dependencies",
+    "test_isolation": "Only approved 308 development record paths opened; no test photos or test answers accessed by this audit",
+    "scene_caveat": "User confirmation only; absence of duplicate hashes does not prove physical-scene independence",
+    "gui": "App and batch use load_backend; backend is_mock=False; synthetic class exists only in test fixtures; desktop click verification not completed"
+  },
+  "model_files_unchanged_since_training": true,
+  "execution_command": ".venv311\\Scripts\\python.exe -B -m scripts.audit_model_leakage",
+  "all_development_pixels_redecoded": true
+}

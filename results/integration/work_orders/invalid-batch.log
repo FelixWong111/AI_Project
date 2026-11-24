@@ -1,0 +1,5 @@
+usage: predict.py [-h] --input_dir INPUT_DIR --model
+                  {baseline1,baseline2,baseline3,final} --output_dir
+                  OUTPUT_DIR --counts_file COUNTS_FILE [--config CONFIG]
+                  [--bundle BUNDLE]
+predict.py: error: Invalid counts_file: counts must be non-negative integers (not bools)

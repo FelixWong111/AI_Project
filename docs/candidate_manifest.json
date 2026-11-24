@@ -2,7 +2,7 @@
   "stage": "candidate_frozen",
   "official_held_out_test": "NOT_RUN",
   "data_manifest_sha256": "44498f23f97b84f7bf135a5d2f277baa0e3979c91af77af15cd116337adef027",
-  "leakage_audit": "outputs/leakage_audit/1795502444356390600",
+  "leakage_audit": "results/audits/leakage",
   "models": {
     "baseline1": {
       "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
@@ -29,5 +29,6 @@
       "scope": "P07 only; raw classifier unchanged",
       "threshold": 63.345938477418734
     }
-  }
+  },
+  "published_results": "results/catalog.json"
 }

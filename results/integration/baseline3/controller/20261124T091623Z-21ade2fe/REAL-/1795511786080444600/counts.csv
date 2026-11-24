@@ -1,0 +1,7 @@
+image_id,class_id,observed_count,expected_count,difference
+pass102.jpg,0,0,0,0
+pass102.jpg,1,1,1,0
+pass102.jpg,2,1,1,0
+pass102.jpg,3,1,1,0
+pass102.jpg,4,1,1,0
+pass102.jpg,5,1,1,0

@@ -1,0 +1,17 @@
+[
+  {
+    "group": [
+      "real_headless",
+      "baseline1",
+      "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+      "image:${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg",
+      3024,
+      4032
+    ],
+    "frames": 0,
+    "failed_or_unsupported": 1,
+    "median_ms": null,
+    "p95_ms": null,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  }
+]

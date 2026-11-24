@@ -1,0 +1,2 @@
+image_id,model_id,status,predicted_label,prediction_score,score_type,non_catalogue_count
+pass102.jpg,baseline2,UNSUPPORTED_COUNTS,,,none,

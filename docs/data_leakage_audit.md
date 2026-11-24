@@ -10,7 +10,7 @@
 .\.venv311\Scripts\python.exe -B -m scripts.audit_model_leakage
 ```
 
-原始机器记录：`outputs/leakage_audit/1795502444356390600/audit.json`。308 张图片的实际路径和训练清单在 `outputs/training/data/manifest.json`；审计重新解码后的图片 SHA256、像素 SHA256 在审计目录的 image_hashes.json。
+归档机器记录：[audit.json](../results/audits/leakage/audit.json)，来源为 outputs/leakage_audit/1795502444356390600/audit.json。308 张图片的实际路径和训练清单在 [development.json](../results/data_manifests/development.json)；审计重新解码后的图片 SHA256、像素 SHA256 在 [image_hashes.json](../results/audits/leakage/image_hashes.json)。原记录仍保留在 outputs，公开副本只规范化本机路径前缀，源/副本 SHA 均可复核。
 
 | 项目 | 结论 | 核验依据 |
 |---|---|---|
@@ -29,7 +29,7 @@
 | GUI 人工点击和摄像头表现 | 未完成 | 无头 app 和控件回调测试通过，渲染已检查；桌面自动化未找到可操作窗口，不能声称现场验收通过 |
 | 正式 Test | NOT_RUN | 审计只打开批准的开发图片和开发真值，不读测试图片或测试答案 |
 
-每张验证图三方预测与分数见审计目录中的 baseline1_per_image_comparison.json、baseline2_per_image_comparison.json。原始训练阶段预测未被覆盖，批处理原始输出在 `outputs/acceptance/1795502286780346400/baseline1` 与 `baseline2`。
+每张验证图三方预测与分数见 results/audits/leakage 中的 baseline1_per_image_comparison.json、baseline2_per_image_comparison.json。原始训练阶段预测保留于 results/baseline1、results/baseline2。历史验收记录见 [original_integration_acceptance.json](../results/audits/leakage/original_integration_acceptance.json)，相同预测内容只保留一份；CUDA 环境下最新完成回归见 [baseline12](../results/integration/baseline12/)。
 
 此审计还保存了被审查训练、数据、Adapter、注册表、批处理和 app 源码的 SHA256。模型哈希与训练结束时一致：
 
@@ -47,4 +47,4 @@
 
 P03 原有 1081 个条目大小/修改时间及开发内容哈希未变；工作期间新增 115 个新版测试包条目，详见 acceptance.json。这里只记录新增元信息，没有修改或分析该测试包。保留原数据的声明与“整个目录文件数未变”是不同结论。
 
-候选锁定清单为 `models/candidates.json`，P08 可连同本报告、训练报告、真实模型、全部原始预测及审计 JSON 一起打包。后续只有新证据显示数据分区或标签有问题时才重新评估训练需求；本次不再训练。
+候选锁定清单为 `models/candidates.json`，P08 可直接通过 Git 获取本报告、训练报告、真实模型及 [results](../results/README.md) 中的原始预测和审计 JSON。候选工件中保留的 outputs 路径是历史执行位置，归档映射见 results/catalog.json。后续只有新证据显示数据分区或标签有问题时才重新评估训练需求；本次不再训练。

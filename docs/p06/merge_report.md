@@ -13,7 +13,7 @@
 | tests/test_p04.py | 保留P07链路诊断，P06测试单独迁移并改import路径；真实模型仅用Validation验收，完整自动化单元测试套件实际执行，正式Test未运行 |
 | docs/history/README_P04.md及baseline1_synthetic下config.frozen.json、metrics.json、samples.json | 保留历史证据与贡献，无P06运行依赖，不当作新真实模型 |
 
-另外恢复了合并自动删除的docs/p04/advice_record.md。对P06原模块做AST导入依赖检查，具体记录在outputs/p06_merge/dependency-review.json；对工厂、结果校验、工作线程、导出接口做实际兼容测试，不能仅凭冲突类型机械保留文件。
+另外恢复了合并自动删除的docs/p04/advice_record.md。对P06原模块做AST导入依赖检查，具体记录在results/integration/p06_merge/dependency-review.json；对工厂、结果校验、工作线程、导出接口做实际兼容测试，不能仅凭冲突类型机械保留文件。
 
 发现并修复原.gitignore的data/会同时忽略src/data的问题，改为/data/并补入现有必要Python源码。原数据仍忽略。P06交付树没有原始数据集；唯一图片是历史合成UI截图。真实best.pt从原output位置迁到models，不保留重复权重。
 
@@ -41,13 +41,13 @@ Baseline3的13个ID0例子是“模型预测到ID0后按规则FAIL”的接口�
 
 ## GUI及批处理证据
 
-- outputs/p06_merge/1795511737509054100/acceptance.json：真实CUDA、46张批处理、ID0、三模型控制器及无头app。
-- outputs/acceptance/1795511987719847700/acceptance.json：CUDA环境下Baseline1/2各46张Val与原训练预测逐张比较。
-- outputs/p06_merge/unit-tests-final.log：76项测试通过。
+- results/integration/baseline3/acceptance.json：真实CUDA、46张批处理、ID0、三模型控制器及无头app。
+- results/integration/baseline12/acceptance.json：CUDA环境下Baseline1/2各46张Val与原训练预测逐张比较。
+- results/integration/p06_merge/unit-tests-final.log：76项测试通过。
 - outputs/p06_merge/final-ui/：修正后真实ID0截图；类别/分数按显示分辨率绘制，count-rule结果仅分数N/A，设备显示cuda:0。
-- outputs/p06_merge/work-orders-regression.log及outputs/work_orders_acceptance：特殊合法工单、非法工单、恢复默认、无头app与CLI检查；每次独立输入和输出目录。
+- results/integration/work_orders：特殊合法工单、非法工单、恢复默认、无头app与CLI检查；每次独立输入和输出目录。
 
-本轮工单回归报告为outputs/work_orders_acceptance/1795512320558820300/acceptance.json，真实执行退出0，两个模型U01–U09接口检查均通过。三模型GPU批处理/控制器与76项测试均已完成；未执行正式Test或现场摄像头验收。
+本轮工单回归报告为results/integration/work_orders/acceptance.json，真实执行退出0，两个模型U01–U09接口检查均通过。三模型GPU批处理/控制器与76项测试均已完成；未执行正式Test或现场摄像头验收。
 
 人工桌面窗口点击、真实摄像头及20新帧延迟为NOT_RUN，不能以截图/无头控制器当作实机验收。
 
@@ -83,4 +83,8 @@ docs/p06/ / docs/baseline3_integration.md
 tests/
 ```
 
-P03保持只读，原始data/P03/开发/验证/测试均不在Git跟踪集合中；真实模型在models中正常跟踪。outputs证据被Git忽略，交接时需另行打包；不要将原始数据目录加入提交。
+P03保持只读，原始data/P03/开发/验证/测试均不在Git跟踪集合中；真实模型在models中正常跟踪。原outputs仍被Git忽略；正式文字证据已复制到results随Git交付，无需另行打包；不要将原始数据目录加入提交。
+
+## 正式结果归档补充
+
+本报告描述合并任务当时的状态，不代表后续Git提交状态。当前正式证据入口：[results/README.md](../../results/README.md)。CUDA安装前/后环境分别见 results/integration/p06_merge/pip-freeze-before.txt 和 results/integration/environment-after.txt。原始截图、备份ZIP及完整本机快照保留outputs，不作为Git交付文件；GUI结果可通过已归档CSV、配置和控制器验收复核。后续归档没有重跑模型或正式Test。

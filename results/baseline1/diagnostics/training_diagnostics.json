@@ -1,0 +1,2360 @@
+[
+  {
+    "image_id": "fail02.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.996299684047699,
+      "PASS": 0.0037003273610025644
+    }
+  },
+  {
+    "image_id": "fail100.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9979435801506042,
+      "PASS": 0.0020564200822263956
+    }
+  },
+  {
+    "image_id": "fail101.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9988158345222473,
+      "PASS": 0.0011841868981719017
+    }
+  },
+  {
+    "image_id": "fail102.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9971917271614075,
+      "PASS": 0.0028082644566893578
+    }
+  },
+  {
+    "image_id": "fail103.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9993896484375,
+      "PASS": 0.0006103561026975513
+    }
+  },
+  {
+    "image_id": "fail104.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994601011276245,
+      "PASS": 0.0005398790235631168
+    }
+  },
+  {
+    "image_id": "fail105.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995201230049133,
+      "PASS": 0.00047990024904720485
+    }
+  },
+  {
+    "image_id": "fail106.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9981165528297424,
+      "PASS": 0.0018834501970559359
+    }
+  },
+  {
+    "image_id": "fail107.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9996084570884705,
+      "PASS": 0.0003915314155165106
+    }
+  },
+  {
+    "image_id": "fail108.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.999767541885376,
+      "PASS": 0.00023246397904586047
+    }
+  },
+  {
+    "image_id": "fail109.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994767904281616,
+      "PASS": 0.0005231903633102775
+    }
+  },
+  {
+    "image_id": "fail110.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9989369511604309,
+      "PASS": 0.0010630489559844136
+    }
+  },
+  {
+    "image_id": "fail111.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.996974766254425,
+      "PASS": 0.0030252595897763968
+    }
+  },
+  {
+    "image_id": "fail112.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.996404767036438,
+      "PASS": 0.0035952560137957335
+    }
+  },
+  {
+    "image_id": "fail113.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9982182383537292,
+      "PASS": 0.0017817331245169044
+    }
+  },
+  {
+    "image_id": "fail114.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9990712404251099,
+      "PASS": 0.0009287520661018789
+    }
+  },
+  {
+    "image_id": "fail115.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9992790222167969,
+      "PASS": 0.000720990530680865
+    }
+  },
+  {
+    "image_id": "fail116.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9975718259811401,
+      "PASS": 0.002428146079182625
+    }
+  },
+  {
+    "image_id": "fail117.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995768070220947,
+      "PASS": 0.00042319452040828764
+    }
+  },
+  {
+    "image_id": "fail118.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9999397397041321,
+      "PASS": 6.02740328758955e-05
+    }
+  },
+  {
+    "image_id": "fail119.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9998674988746643,
+      "PASS": 0.00013250701886136085
+    }
+  },
+  {
+    "image_id": "fail120.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9997748732566833,
+      "PASS": 0.00022512057330459356
+    }
+  },
+  {
+    "image_id": "fail121.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994515776634216,
+      "PASS": 0.0005484491703100502
+    }
+  },
+  {
+    "image_id": "fail122.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9984428882598877,
+      "PASS": 0.001557113486342132
+    }
+  },
+  {
+    "image_id": "fail123.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9996799230575562,
+      "PASS": 0.00032008002744987607
+    }
+  },
+  {
+    "image_id": "fail124.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995121359825134,
+      "PASS": 0.00048784384853206575
+    }
+  },
+  {
+    "image_id": "fail125.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9953656792640686,
+      "PASS": 0.004634323995560408
+    }
+  },
+  {
+    "image_id": "fail126.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9977123737335205,
+      "PASS": 0.002287655370309949
+    }
+  },
+  {
+    "image_id": "fail127.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9971116185188293,
+      "PASS": 0.0028883584309369326
+    }
+  },
+  {
+    "image_id": "fail128.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9997551441192627,
+      "PASS": 0.00024483082233928144
+    }
+  },
+  {
+    "image_id": "fail129.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9974490404129028,
+      "PASS": 0.0025509365368634462
+    }
+  },
+  {
+    "image_id": "fail131.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9990888833999634,
+      "PASS": 0.0009111158433370292
+    }
+  },
+  {
+    "image_id": "fail132.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9979378581047058,
+      "PASS": 0.0020621370058506727
+    }
+  },
+  {
+    "image_id": "fail133.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.999761164188385,
+      "PASS": 0.00023882869572844356
+    }
+  },
+  {
+    "image_id": "fail134.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995001554489136,
+      "PASS": 0.0004998687072657049
+    }
+  },
+  {
+    "image_id": "fail136.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9954026937484741,
+      "PASS": 0.004597288090735674
+    }
+  },
+  {
+    "image_id": "fail137.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9978116750717163,
+      "PASS": 0.002188313053920865
+    }
+  },
+  {
+    "image_id": "fail138.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9987083673477173,
+      "PASS": 0.0012916617561131716
+    }
+  },
+  {
+    "image_id": "fail139.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.999564528465271,
+      "PASS": 0.00043546801316551864
+    }
+  },
+  {
+    "image_id": "fail141.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9980143904685974,
+      "PASS": 0.0019856139551848173
+    }
+  },
+  {
+    "image_id": "fail142.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9985436201095581,
+      "PASS": 0.0014563868753612041
+    }
+  },
+  {
+    "image_id": "fail143.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994156360626221,
+      "PASS": 0.0005843398976139724
+    }
+  },
+  {
+    "image_id": "fail144.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9977144002914429,
+      "PASS": 0.002285603666678071
+    }
+  },
+  {
+    "image_id": "fail145.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9957259297370911,
+      "PASS": 0.004274058621376753
+    }
+  },
+  {
+    "image_id": "fail146.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.996481716632843,
+      "PASS": 0.0035182773135602474
+    }
+  },
+  {
+    "image_id": "fail147.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9980757832527161,
+      "PASS": 0.0019242055714130402
+    }
+  },
+  {
+    "image_id": "fail148.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994838833808899,
+      "PASS": 0.0005160971195437014
+    }
+  },
+  {
+    "image_id": "fail149.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9992976188659668,
+      "PASS": 0.0007024019141681492
+    }
+  },
+  {
+    "image_id": "fail150.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9973805546760559,
+      "PASS": 0.002619460690766573
+    }
+  },
+  {
+    "image_id": "fail151.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9996543526649475,
+      "PASS": 0.00034562646760605276
+    }
+  },
+  {
+    "image_id": "fail152.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9996479749679565,
+      "PASS": 0.0003520480531733483
+    }
+  },
+  {
+    "image_id": "fail153.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.997076690196991,
+      "PASS": 0.0029233330860733986
+    }
+  },
+  {
+    "image_id": "fail154.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9969843626022339,
+      "PASS": 0.003015659051015973
+    }
+  },
+  {
+    "image_id": "fail155.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9971311092376709,
+      "PASS": 0.002868879586458206
+    }
+  },
+  {
+    "image_id": "fail156.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9984430074691772,
+      "PASS": 0.0015569948591291904
+    }
+  },
+  {
+    "image_id": "fail157.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994414448738098,
+      "PASS": 0.0005585286417044699
+    }
+  },
+  {
+    "image_id": "fail158.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9986422657966614,
+      "PASS": 0.001357735600322485
+    }
+  },
+  {
+    "image_id": "fail159.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9971204996109009,
+      "PASS": 0.00287952390499413
+    }
+  },
+  {
+    "image_id": "fail160.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9968457221984863,
+      "PASS": 0.0031542598735541105
+    }
+  },
+  {
+    "image_id": "fail161.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9977787137031555,
+      "PASS": 0.0022213123738765717
+    }
+  },
+  {
+    "image_id": "fail162.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994481801986694,
+      "PASS": 0.0005518405232578516
+    }
+  },
+  {
+    "image_id": "fail163.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995492696762085,
+      "PASS": 0.0004507336998358369
+    }
+  },
+  {
+    "image_id": "fail165.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9985692501068115,
+      "PASS": 0.0014307362725958228
+    }
+  },
+  {
+    "image_id": "fail166.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9986954927444458,
+      "PASS": 0.0013045092346146703
+    }
+  },
+  {
+    "image_id": "fail167.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.999254047870636,
+      "PASS": 0.0007459792541339993
+    }
+  },
+  {
+    "image_id": "fail168.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9946580529212952,
+      "PASS": 0.005341923329979181
+    }
+  },
+  {
+    "image_id": "fail169.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9985401034355164,
+      "PASS": 0.0014599179849028587
+    }
+  },
+  {
+    "image_id": "fail170.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9983072280883789,
+      "PASS": 0.0016927431570366025
+    }
+  },
+  {
+    "image_id": "fail172.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9947662353515625,
+      "PASS": 0.0052337623201310635
+    }
+  },
+  {
+    "image_id": "fail173.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9973226189613342,
+      "PASS": 0.0026773849967867136
+    }
+  },
+  {
+    "image_id": "fail174.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994181990623474,
+      "PASS": 0.0005818303907290101
+    }
+  },
+  {
+    "image_id": "fail175.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9971730709075928,
+      "PASS": 0.0028269458562135696
+    }
+  },
+  {
+    "image_id": "fail176.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995709657669067,
+      "PASS": 0.0004290482902433723
+    }
+  },
+  {
+    "image_id": "fail177.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9998891353607178,
+      "PASS": 0.00011086597805842757
+    }
+  },
+  {
+    "image_id": "fail178.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.998952329158783,
+      "PASS": 0.001047678990289569
+    }
+  },
+  {
+    "image_id": "fail20.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9973596334457397,
+      "PASS": 0.0026403379160910845
+    }
+  },
+  {
+    "image_id": "fail21.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9990248680114746,
+      "PASS": 0.0009751395555213094
+    }
+  },
+  {
+    "image_id": "fail22.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.998116672039032,
+      "PASS": 0.0018833534559234977
+    }
+  },
+  {
+    "image_id": "fail23.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9959020018577576,
+      "PASS": 0.004098025616258383
+    }
+  },
+  {
+    "image_id": "fail24.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9930822253227234,
+      "PASS": 0.006917746737599373
+    }
+  },
+  {
+    "image_id": "fail25.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9989238977432251,
+      "PASS": 0.0010761156445369124
+    }
+  },
+  {
+    "image_id": "fail26.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9951316118240356,
+      "PASS": 0.00486840819939971
+    }
+  },
+  {
+    "image_id": "fail28.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9950056672096252,
+      "PASS": 0.004994307179003954
+    }
+  },
+  {
+    "image_id": "fail30.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9965791702270508,
+      "PASS": 0.0034208567813038826
+    }
+  },
+  {
+    "image_id": "fail31.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.996201753616333,
+      "PASS": 0.0037982319481670856
+    }
+  },
+  {
+    "image_id": "fail32.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9970355033874512,
+      "PASS": 0.002964474493637681
+    }
+  },
+  {
+    "image_id": "fail33.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9981884360313416,
+      "PASS": 0.0018115495331585407
+    }
+  },
+  {
+    "image_id": "fail34.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9962578415870667,
+      "PASS": 0.003742148168385029
+    }
+  },
+  {
+    "image_id": "fail36.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9962732791900635,
+      "PASS": 0.003726738505065441
+    }
+  },
+  {
+    "image_id": "fail37.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9996109008789062,
+      "PASS": 0.0003890975785907358
+    }
+  },
+  {
+    "image_id": "fail39.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9927619099617004,
+      "PASS": 0.007238083053380251
+    }
+  },
+  {
+    "image_id": "fail40.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9967827796936035,
+      "PASS": 0.003217231947928667
+    }
+  },
+  {
+    "image_id": "fail42.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9991862177848816,
+      "PASS": 0.0008137829718180001
+    }
+  },
+  {
+    "image_id": "fail44.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9986023902893066,
+      "PASS": 0.0013975984184071422
+    }
+  },
+  {
+    "image_id": "fail45.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9990172982215881,
+      "PASS": 0.000982731464318931
+    }
+  },
+  {
+    "image_id": "fail46.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9992458820343018,
+      "PASS": 0.0007541465456597507
+    }
+  },
+  {
+    "image_id": "fail48.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9989506006240845,
+      "PASS": 0.0010494031012058258
+    }
+  },
+  {
+    "image_id": "fail49.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.998590886592865,
+      "PASS": 0.0014091146877035499
+    }
+  },
+  {
+    "image_id": "fail50.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9998522400856018,
+      "PASS": 0.0001477775804232806
+    }
+  },
+  {
+    "image_id": "fail51.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9997810125350952,
+      "PASS": 0.0002189841034123674
+    }
+  },
+  {
+    "image_id": "fail52.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9960494637489319,
+      "PASS": 0.003950531594455242
+    }
+  },
+  {
+    "image_id": "fail54.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9986608624458313,
+      "PASS": 0.0013391113607212901
+    }
+  },
+  {
+    "image_id": "fail55.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9973971843719482,
+      "PASS": 0.002602818887680769
+    }
+  },
+  {
+    "image_id": "fail57.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9924970865249634,
+      "PASS": 0.007502932567149401
+    }
+  },
+  {
+    "image_id": "fail58.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9939919114112854,
+      "PASS": 0.00600807648152113
+    }
+  },
+  {
+    "image_id": "fail60.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9998923540115356,
+      "PASS": 0.0001076215849025175
+    }
+  },
+  {
+    "image_id": "fail61.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9999140501022339,
+      "PASS": 8.594121754867956e-05
+    }
+  },
+  {
+    "image_id": "fail62.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9999422430992126,
+      "PASS": 5.7770910643739626e-05
+    }
+  },
+  {
+    "image_id": "fail63.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9988921284675598,
+      "PASS": 0.0011078548850491643
+    }
+  },
+  {
+    "image_id": "fail64.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9974793791770935,
+      "PASS": 0.0025206098798662424
+    }
+  },
+  {
+    "image_id": "fail66.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9989352226257324,
+      "PASS": 0.0010648069437593222
+    }
+  },
+  {
+    "image_id": "fail67.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9983763694763184,
+      "PASS": 0.0016236393712460995
+    }
+  },
+  {
+    "image_id": "fail68.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9966784119606018,
+      "PASS": 0.003321595722809434
+    }
+  },
+  {
+    "image_id": "fail69.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9954759478569031,
+      "PASS": 0.0045240530744194984
+    }
+  },
+  {
+    "image_id": "fail70.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.993385910987854,
+      "PASS": 0.006614070385694504
+    }
+  },
+  {
+    "image_id": "fail72.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9977282881736755,
+      "PASS": 0.002271684119477868
+    }
+  },
+  {
+    "image_id": "fail73.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9961812496185303,
+      "PASS": 0.003818738041445613
+    }
+  },
+  {
+    "image_id": "fail74.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.998474657535553,
+      "PASS": 0.0015253679594025016
+    }
+  },
+  {
+    "image_id": "fail77.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9983550906181335,
+      "PASS": 0.0016449184622615576
+    }
+  },
+  {
+    "image_id": "fail78.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9991831183433533,
+      "PASS": 0.000816910935100168
+    }
+  },
+  {
+    "image_id": "fail80.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9953150153160095,
+      "PASS": 0.004684985615313053
+    }
+  },
+  {
+    "image_id": "fail81.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9958128929138184,
+      "PASS": 0.004187122453004122
+    }
+  },
+  {
+    "image_id": "fail82.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9975770711898804,
+      "PASS": 0.0024229194968938828
+    }
+  },
+  {
+    "image_id": "fail83.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9969501495361328,
+      "PASS": 0.0030498469714075327
+    }
+  },
+  {
+    "image_id": "fail84.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994609951972961,
+      "PASS": 0.0005389921134337783
+    }
+  },
+  {
+    "image_id": "fail85.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995740056037903,
+      "PASS": 0.00042597512947395444
+    }
+  },
+  {
+    "image_id": "fail86.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9994984269142151,
+      "PASS": 0.0005015436909161508
+    }
+  },
+  {
+    "image_id": "fail87.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.998597264289856,
+      "PASS": 0.0014027507277205586
+    }
+  },
+  {
+    "image_id": "fail89.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9969614744186401,
+      "PASS": 0.003038550028577447
+    }
+  },
+  {
+    "image_id": "fail90.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9983000755310059,
+      "PASS": 0.0016998968785628676
+    }
+  },
+  {
+    "image_id": "fail91.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9971923828125,
+      "PASS": 0.0028076341841369867
+    }
+  },
+  {
+    "image_id": "fail92.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9977272152900696,
+      "PASS": 0.0022728084586560726
+    }
+  },
+  {
+    "image_id": "fail94.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9989102482795715,
+      "PASS": 0.0010897383326664567
+    }
+  },
+  {
+    "image_id": "fail95.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9984504580497742,
+      "PASS": 0.001549525884911418
+    }
+  },
+  {
+    "image_id": "fail96.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995347261428833,
+      "PASS": 0.00046525432844646275
+    }
+  },
+  {
+    "image_id": "fail97.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9957444071769714,
+      "PASS": 0.004255570936948061
+    }
+  },
+  {
+    "image_id": "fail98.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9995604753494263,
+      "PASS": 0.0004395484575070441
+    }
+  },
+  {
+    "image_id": "fail99.jpg",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "probabilities": {
+      "FAIL": 0.9998123645782471,
+      "PASS": 0.00018765905406326056
+    }
+  },
+  {
+    "image_id": "pass01.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00238114595413208,
+      "PASS": 0.9976188540458679
+    }
+  },
+  {
+    "image_id": "pass02.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0029372572898864746,
+      "PASS": 0.9970627427101135
+    }
+  },
+  {
+    "image_id": "pass03.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0015416145324707031,
+      "PASS": 0.9984583854675293
+    }
+  },
+  {
+    "image_id": "pass04.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0014500021934509277,
+      "PASS": 0.9985499978065491
+    }
+  },
+  {
+    "image_id": "pass05.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00046563148498535156,
+      "PASS": 0.9995343685150146
+    }
+  },
+  {
+    "image_id": "pass06.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 7.665157318115234e-05,
+      "PASS": 0.9999233484268188
+    }
+  },
+  {
+    "image_id": "pass07.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0003407001495361328,
+      "PASS": 0.9996592998504639
+    }
+  },
+  {
+    "image_id": "pass08.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010085701942443848,
+      "PASS": 0.9989914298057556
+    }
+  },
+  {
+    "image_id": "pass09.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0006315112113952637,
+      "PASS": 0.9993684887886047
+    }
+  },
+  {
+    "image_id": "pass10.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00011515617370605469,
+      "PASS": 0.999884843826294
+    }
+  },
+  {
+    "image_id": "pass100.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0024445056915283203,
+      "PASS": 0.9975554943084717
+    }
+  },
+  {
+    "image_id": "pass101.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0009405016899108887,
+      "PASS": 0.9990594983100891
+    }
+  },
+  {
+    "image_id": "pass103.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 4.1961669921875e-05,
+      "PASS": 0.9999580383300781
+    }
+  },
+  {
+    "image_id": "pass104.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0008113980293273926,
+      "PASS": 0.9991886019706726
+    }
+  },
+  {
+    "image_id": "pass105.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.001154780387878418,
+      "PASS": 0.9988452196121216
+    }
+  },
+  {
+    "image_id": "pass106.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0018581151962280273,
+      "PASS": 0.998141884803772
+    }
+  },
+  {
+    "image_id": "pass108.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.002752959728240967,
+      "PASS": 0.997247040271759
+    }
+  },
+  {
+    "image_id": "pass109.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010967254638671875,
+      "PASS": 0.9989032745361328
+    }
+  },
+  {
+    "image_id": "pass11.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 6.198883056640625e-06,
+      "PASS": 0.9999938011169434
+    }
+  },
+  {
+    "image_id": "pass110.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0007258057594299316,
+      "PASS": 0.9992741942405701
+    }
+  },
+  {
+    "image_id": "pass111.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0021545886993408203,
+      "PASS": 0.9978454113006592
+    }
+  },
+  {
+    "image_id": "pass113.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0011533498764038086,
+      "PASS": 0.9988466501235962
+    }
+  },
+  {
+    "image_id": "pass114.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 6.401538848876953e-05,
+      "PASS": 0.9999359846115112
+    }
+  },
+  {
+    "image_id": "pass115.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0019924044609069824,
+      "PASS": 0.998007595539093
+    }
+  },
+  {
+    "image_id": "pass116.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00023978948593139648,
+      "PASS": 0.9997602105140686
+    }
+  },
+  {
+    "image_id": "pass117.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0004214644432067871,
+      "PASS": 0.9995785355567932
+    }
+  },
+  {
+    "image_id": "pass118.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0021773576736450195,
+      "PASS": 0.997822642326355
+    }
+  },
+  {
+    "image_id": "pass12.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 2.1457672119140625e-06,
+      "PASS": 0.9999978542327881
+    }
+  },
+  {
+    "image_id": "pass120.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.004016757011413574,
+      "PASS": 0.9959832429885864
+    }
+  },
+  {
+    "image_id": "pass121.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.003926634788513184,
+      "PASS": 0.9960733652114868
+    }
+  },
+  {
+    "image_id": "pass122.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0007942318916320801,
+      "PASS": 0.9992057681083679
+    }
+  },
+  {
+    "image_id": "pass123.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00139540433883667,
+      "PASS": 0.9986045956611633
+    }
+  },
+  {
+    "image_id": "pass124.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00037789344787597656,
+      "PASS": 0.999622106552124
+    }
+  },
+  {
+    "image_id": "pass125.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010876655578613281,
+      "PASS": 0.9989123344421387
+    }
+  },
+  {
+    "image_id": "pass127.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0018361210823059082,
+      "PASS": 0.9981638789176941
+    }
+  },
+  {
+    "image_id": "pass128.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0007235407829284668,
+      "PASS": 0.9992764592170715
+    }
+  },
+  {
+    "image_id": "pass129.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0015552639961242676,
+      "PASS": 0.9984447360038757
+    }
+  },
+  {
+    "image_id": "pass13.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.003889739513397217,
+      "PASS": 0.9961102604866028
+    }
+  },
+  {
+    "image_id": "pass130.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0034781694412231445,
+      "PASS": 0.9965218305587769
+    }
+  },
+  {
+    "image_id": "pass131.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.002212047576904297,
+      "PASS": 0.9977879524230957
+    }
+  },
+  {
+    "image_id": "pass132.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010956525802612305,
+      "PASS": 0.9989043474197388
+    }
+  },
+  {
+    "image_id": "pass134.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00024563074111938477,
+      "PASS": 0.9997543692588806
+    }
+  },
+  {
+    "image_id": "pass135.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010610222816467285,
+      "PASS": 0.9989389777183533
+    }
+  },
+  {
+    "image_id": "pass136.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.003647327423095703,
+      "PASS": 0.9963526725769043
+    }
+  },
+  {
+    "image_id": "pass137.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0016347765922546387,
+      "PASS": 0.9983652234077454
+    }
+  },
+  {
+    "image_id": "pass139.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0020224452018737793,
+      "PASS": 0.9979775547981262
+    }
+  },
+  {
+    "image_id": "pass14.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00014126300811767578,
+      "PASS": 0.9998587369918823
+    }
+  },
+  {
+    "image_id": "pass140.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00032639503479003906,
+      "PASS": 0.99967360496521
+    }
+  },
+  {
+    "image_id": "pass141.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0002867579460144043,
+      "PASS": 0.9997132420539856
+    }
+  },
+  {
+    "image_id": "pass142.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0002402663230895996,
+      "PASS": 0.9997597336769104
+    }
+  },
+  {
+    "image_id": "pass144.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00029355287551879883,
+      "PASS": 0.9997064471244812
+    }
+  },
+  {
+    "image_id": "pass145.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.002661764621734619,
+      "PASS": 0.9973382353782654
+    }
+  },
+  {
+    "image_id": "pass146.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0006341338157653809,
+      "PASS": 0.9993658661842346
+    }
+  },
+  {
+    "image_id": "pass147.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0017434954643249512,
+      "PASS": 0.998256504535675
+    }
+  },
+  {
+    "image_id": "pass16.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0014971494674682617,
+      "PASS": 0.9985028505325317
+    }
+  },
+  {
+    "image_id": "pass17.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 4.172325134277344e-06,
+      "PASS": 0.9999958276748657
+    }
+  },
+  {
+    "image_id": "pass18.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 5.173683166503906e-05,
+      "PASS": 0.999948263168335
+    }
+  },
+  {
+    "image_id": "pass19.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 3.6954879760742188e-06,
+      "PASS": 0.9999963045120239
+    }
+  },
+  {
+    "image_id": "pass20.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0009935498237609863,
+      "PASS": 0.999006450176239
+    }
+  },
+  {
+    "image_id": "pass21.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 5.8650970458984375e-05,
+      "PASS": 0.999941349029541
+    }
+  },
+  {
+    "image_id": "pass23.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0021737217903137207,
+      "PASS": 0.9978262782096863
+    }
+  },
+  {
+    "image_id": "pass24.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 9.107589721679688e-05,
+      "PASS": 0.9999089241027832
+    }
+  },
+  {
+    "image_id": "pass25.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 8.07046890258789e-05,
+      "PASS": 0.9999192953109741
+    }
+  },
+  {
+    "image_id": "pass26.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 3.814697265625e-05,
+      "PASS": 0.9999618530273438
+    }
+  },
+  {
+    "image_id": "pass27.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00041371583938598633,
+      "PASS": 0.999586284160614
+    }
+  },
+  {
+    "image_id": "pass28.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 1.7881393432617188e-06,
+      "PASS": 0.9999982118606567
+    }
+  },
+  {
+    "image_id": "pass30.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 1.430511474609375e-06,
+      "PASS": 0.9999985694885254
+    }
+  },
+  {
+    "image_id": "pass31.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 5.364418029785156e-06,
+      "PASS": 0.9999946355819702
+    }
+  },
+  {
+    "image_id": "pass32.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0002422928810119629,
+      "PASS": 0.999757707118988
+    }
+  },
+  {
+    "image_id": "pass33.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0019826889038085938,
+      "PASS": 0.9980173110961914
+    }
+  },
+  {
+    "image_id": "pass34.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010061860084533691,
+      "PASS": 0.9989938139915466
+    }
+  },
+  {
+    "image_id": "pass35.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0008682608604431152,
+      "PASS": 0.9991317391395569
+    }
+  },
+  {
+    "image_id": "pass37.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0005990266799926758,
+      "PASS": 0.9994009733200073
+    }
+  },
+  {
+    "image_id": "pass38.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00011849403381347656,
+      "PASS": 0.9998815059661865
+    }
+  },
+  {
+    "image_id": "pass39.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0005329251289367676,
+      "PASS": 0.9994670748710632
+    }
+  },
+  {
+    "image_id": "pass41.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.007235109806060791,
+      "PASS": 0.9927648901939392
+    }
+  },
+  {
+    "image_id": "pass42.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.005507111549377441,
+      "PASS": 0.9944928884506226
+    }
+  },
+  {
+    "image_id": "pass44.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0020170211791992188,
+      "PASS": 0.9979829788208008
+    }
+  },
+  {
+    "image_id": "pass45.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0009245872497558594,
+      "PASS": 0.9990754127502441
+    }
+  },
+  {
+    "image_id": "pass47.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 3.421306610107422e-05,
+      "PASS": 0.9999657869338989
+    }
+  },
+  {
+    "image_id": "pass48.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 7.963180541992188e-05,
+      "PASS": 0.9999203681945801
+    }
+  },
+  {
+    "image_id": "pass50.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00045496225357055664,
+      "PASS": 0.9995450377464294
+    }
+  },
+  {
+    "image_id": "pass52.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.001796722412109375,
+      "PASS": 0.9982032775878906
+    }
+  },
+  {
+    "image_id": "pass53.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0003864169120788574,
+      "PASS": 0.9996135830879211
+    }
+  },
+  {
+    "image_id": "pass55.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0005488991737365723,
+      "PASS": 0.9994511008262634
+    }
+  },
+  {
+    "image_id": "pass56.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0006491541862487793,
+      "PASS": 0.9993508458137512
+    }
+  },
+  {
+    "image_id": "pass57.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00046706199645996094,
+      "PASS": 0.99953293800354
+    }
+  },
+  {
+    "image_id": "pass58.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.006325960159301758,
+      "PASS": 0.9936740398406982
+    }
+  },
+  {
+    "image_id": "pass60.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0010286569595336914,
+      "PASS": 0.9989713430404663
+    }
+  },
+  {
+    "image_id": "pass61.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0007339119911193848,
+      "PASS": 0.9992660880088806
+    }
+  },
+  {
+    "image_id": "pass62.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0009813308715820312,
+      "PASS": 0.999018669128418
+    }
+  },
+  {
+    "image_id": "pass63.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0013837814331054688,
+      "PASS": 0.9986162185668945
+    }
+  },
+  {
+    "image_id": "pass64.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.001659393310546875,
+      "PASS": 0.9983406066894531
+    }
+  },
+  {
+    "image_id": "pass65.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00014722347259521484,
+      "PASS": 0.9998527765274048
+    }
+  },
+  {
+    "image_id": "pass66.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00043076276779174805,
+      "PASS": 0.9995692372322083
+    }
+  },
+  {
+    "image_id": "pass67.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0009257793426513672,
+      "PASS": 0.9990742206573486
+    }
+  },
+  {
+    "image_id": "pass68.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0011193156242370605,
+      "PASS": 0.9988806843757629
+    }
+  },
+  {
+    "image_id": "pass69.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 6.330013275146484e-05,
+      "PASS": 0.9999366998672485
+    }
+  },
+  {
+    "image_id": "pass70.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.005189180374145508,
+      "PASS": 0.9948108196258545
+    }
+  },
+  {
+    "image_id": "pass71.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0018168091773986816,
+      "PASS": 0.9981831908226013
+    }
+  },
+  {
+    "image_id": "pass72.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0009416937828063965,
+      "PASS": 0.9990583062171936
+    }
+  },
+  {
+    "image_id": "pass73.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 6.020069122314453e-05,
+      "PASS": 0.9999397993087769
+    }
+  },
+  {
+    "image_id": "pass74.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00024205446243286133,
+      "PASS": 0.9997579455375671
+    }
+  },
+  {
+    "image_id": "pass75.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 2.2172927856445312e-05,
+      "PASS": 0.9999778270721436
+    }
+  },
+  {
+    "image_id": "pass76.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0001327991485595703,
+      "PASS": 0.9998672008514404
+    }
+  },
+  {
+    "image_id": "pass77.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00016605854034423828,
+      "PASS": 0.9998339414596558
+    }
+  },
+  {
+    "image_id": "pass79.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0003129243850708008,
+      "PASS": 0.9996870756149292
+    }
+  },
+  {
+    "image_id": "pass80.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.000652015209197998,
+      "PASS": 0.999347984790802
+    }
+  },
+  {
+    "image_id": "pass81.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0004526972770690918,
+      "PASS": 0.9995473027229309
+    }
+  },
+  {
+    "image_id": "pass82.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.002205491065979004,
+      "PASS": 0.997794508934021
+    }
+  },
+  {
+    "image_id": "pass83.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0012379884719848633,
+      "PASS": 0.9987620115280151
+    }
+  },
+  {
+    "image_id": "pass85.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0024268031120300293,
+      "PASS": 0.99757319688797
+    }
+  },
+  {
+    "image_id": "pass86.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.003260195255279541,
+      "PASS": 0.9967398047447205
+    }
+  },
+  {
+    "image_id": "pass87.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0019378066062927246,
+      "PASS": 0.9980621933937073
+    }
+  },
+  {
+    "image_id": "pass88.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.00211942195892334,
+      "PASS": 0.9978805780410767
+    }
+  },
+  {
+    "image_id": "pass89.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.001448214054107666,
+      "PASS": 0.9985517859458923
+    }
+  },
+  {
+    "image_id": "pass91.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0007637739181518555,
+      "PASS": 0.9992362260818481
+    }
+  },
+  {
+    "image_id": "pass92.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0017792582511901855,
+      "PASS": 0.9982207417488098
+    }
+  },
+  {
+    "image_id": "pass93.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 1.1205673217773438e-05,
+      "PASS": 0.9999887943267822
+    }
+  },
+  {
+    "image_id": "pass94.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 2.6106834411621094e-05,
+      "PASS": 0.9999738931655884
+    }
+  },
+  {
+    "image_id": "pass95.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0014753937721252441,
+      "PASS": 0.9985246062278748
+    }
+  },
+  {
+    "image_id": "pass97.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0035372376441955566,
+      "PASS": 0.9964627623558044
+    }
+  },
+  {
+    "image_id": "pass98.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0004737377166748047,
+      "PASS": 0.9995262622833252
+    }
+  },
+  {
+    "image_id": "pass99.jpg",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "probabilities": {
+      "FAIL": 0.0014151334762573242,
+      "PASS": 0.9985848665237427
+    }
+  }
+]

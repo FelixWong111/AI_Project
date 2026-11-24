@@ -1,0 +1,114 @@
+{
+  "input_image": "pass102.jpg",
+  "input_split": "validation",
+  "official_held_out_test": "NOT_RUN",
+  "models": {
+    "baseline1": {
+      "U01_or_U02": "PASS",
+      "U03_or_U04": "PASS",
+      "U05": "PASS",
+      "U06": "PASS",
+      "U07": "PASS",
+      "U08": "PASS: real backend/current-view state; native mouse events covered by controller tests",
+      "U09": "PASS",
+      "classification_skipped_for_four_unsupported_vectors": true,
+      "supported_result": {
+        "status": "PASS",
+        "predicted_label": "PASS",
+        "prediction_score": 0.8141371607780457
+      },
+      "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01"
+    },
+    "baseline2": {
+      "U01_or_U02": "PASS",
+      "U03_or_U04": "PASS",
+      "U05": "PASS",
+      "U06": "PASS",
+      "U07": "PASS",
+      "U08": "PASS: real backend/current-view state; native mouse events covered by controller tests",
+      "U09": "PASS",
+      "classification_skipped_for_four_unsupported_vectors": true,
+      "supported_result": {
+        "status": "FAIL",
+        "predicted_label": "FAIL",
+        "prediction_score": 0.5221739649614707
+      },
+      "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1"
+    }
+  },
+  "commands": [
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-common --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\common.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-extra_id5 --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\extra_id5.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-extra_id1 --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\extra_id1.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-zero_id1 --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\zero_id1.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-all_zero --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\all_zero.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --headless --model baseline1 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg --counts-file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\common.json --max-frames 1 --timeout 60 --output-dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-app-common",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --headless --model baseline1 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg --counts-file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\extra_id5.json --max-frames 1 --timeout 60 --output-dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline1-app-extra_id5",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline2 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-common --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\common.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline2 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-extra_id5 --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\extra_id5.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline2 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-extra_id1 --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\extra_id1.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline2 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-zero_id1 --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\zero_id1.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline2 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-all_zero --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\all_zero.json",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --headless --model baseline2 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg --counts-file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\common.json --max-frames 1 --timeout 60 --output-dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-app-common",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B app.py --headless --model baseline2 --image ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation\\pass102.jpg --counts-file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\extra_id5.json --max-frames 1 --timeout 60 --output-dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\baseline2-app-extra_id5",
+      "exit_code": 0
+    },
+    {
+      "command": "${PROJECT_ROOT}\\.venv311\\Scripts\\python.exe -B predict.py --input_dir ${PROJECT_ROOT}\\P03_群交接总包_待SceneID确认_20261124\\P03_群交接总包_待SceneID确认_20261124\\01_P06训练验证_含标注与真值\\images\\validation --model baseline1 --output_dir ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\invalid-run --counts_file ${PROJECT_ROOT}\\outputs\\work_orders_acceptance\\1795512320558820300\\invalid.json",
+      "exit_code": 2
+    }
+  ],
+  "functional_files": {
+    "extra_id5": "outputs/work_orders_acceptance/1795512320558820300/extra_id5.json",
+    "extra_id1": "outputs/work_orders_acceptance/1795512320558820300/extra_id1.json",
+    "zero_id1": "outputs/work_orders_acceptance/1795512320558820300/zero_id1.json",
+    "all_zero": "outputs/work_orders_acceptance/1795512320558820300/all_zero.json"
+  },
+  "invalid_cli": "PASS: rejected before model load/output creation",
+  "baseline3": "Available but not evaluated in this validation-only image-classifier check",
+  "final": "NOT_RUN: real detector/weights not configured; count-only contract checked in unit fixtures",
+  "model_artifacts_unchanged": true,
+  "frozen_preprocessing_config_unchanged": true,
+  "p03_metadata_unchanged": true,
+  "gui_desktop_manual_click": "NOT_RUN: headless execution and automated controller events only"
+}

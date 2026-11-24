@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "files": 123,
+  "total_bytes": 1037384,
+  "largest": [
+    207833,
+    "results/data_manifests/development.json"
+  ],
+  "duplicate_groups": [],
+  "sensitive_findings": [],
+  "local_source_files_checked": true,
+  "official_held_out_test": "NOT_RUN",
+  "original_outputs_rechecked": 510,
+  "source_outputs_sha256_unchanged": true,
+  "protected_model_config_hashes_unchanged": true,
+  "raw_data_metadata_file_count_unchanged": true,
+  "published_source_copies_match_normalization": true,
+  "training_validation_label_score_checks": "PASS",
+  "documented_result_links": "PASS",
+  "test_images_opened": false,
+  "model_execution": false,
+  "count_scope": "Archive before this publication-check report was added"
+}

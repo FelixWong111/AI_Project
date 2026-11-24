@@ -1,0 +1,124 @@
+{
+  "model": "baseline2",
+  "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+  "source": "results/baseline2/training_record.json",
+  "score_definition": "p_fail=P(FAIL), uncalibrated; raw frozen classifier, not scene-guard system",
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 138,
+      "FP": 0,
+      "FN": 0,
+      "TN": 124,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          124,
+          0
+        ],
+        [
+          0,
+          138
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 124,
+      "support_FAIL": 138,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 0.8043478260869565,
+      "precision": 0.8421052631578947,
+      "recall": 0.7272727272727273,
+      "f1": 0.7804878048780488,
+      "TP": 16,
+      "FP": 3,
+      "FN": 6,
+      "TN": 21,
+      "false_PASS": 6,
+      "false_FAIL": 3,
+      "confusion_matrix": [
+        [
+          21,
+          3
+        ],
+        [
+          6,
+          16
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 24,
+      "support_FAIL": 22,
+      "misclassified": [
+        {
+          "image_id": "fail171.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.49262000204085055
+        },
+        {
+          "image_id": "fail27.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.21626966291959004
+        },
+        {
+          "image_id": "fail29.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.3419569768466413
+        },
+        {
+          "image_id": "fail35.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.48957698255603954
+        },
+        {
+          "image_id": "fail38.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.16069720899129591
+        },
+        {
+          "image_id": "fail43.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.4264881247910357
+        },
+        {
+          "image_id": "pass102.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5221739649614705
+        },
+        {
+          "image_id": "pass133.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5418803494803698
+        },
+        {
+          "image_id": "pass15.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5192240570758013
+        }
+      ]
+    }
+  },
+  "official_held_out_test": "NOT_RUN"
+}

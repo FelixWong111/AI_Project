@@ -1,0 +1,225 @@
+{
+  "scope": "Training-chain and synthetic functional diagnostics ONLY; not formal evaluation",
+  "official_held_out_test": "NOT_RUN",
+  "model_sha256": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+  "guard_sha256": "edfb5b9b06843f8997bbbe810e31115daf19f65187d98bbcd3dbfd2c4baaf2ec",
+  "classes": [
+    "FAIL",
+    "PASS"
+  ],
+  "training_distribution": {
+    "FAIL": 138,
+    "PASS": 124
+  },
+  "training_confusion_matrix": [
+    [
+      124,
+      0
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "matrix_order": [
+    "PASS",
+    "FAIL"
+  ],
+  "guard_threshold": 63.345938477418734,
+  "guard_fit": "262 training features only; maximum leave-one-out nearest distance",
+  "validation_support_coverage": 46,
+  "validation_images": 46,
+  "diagnostics": {
+    "train_pass01.jpg": {
+      "raw": {
+        "label": "PASS",
+        "score": 0.9976188540458679,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.00238114595413208,
+          "PASS": 0.9976188540458679
+        }
+      },
+      "system_status": "PASS",
+      "system_label": "PASS",
+      "system_score": 0.9976188540458679,
+      "distance": 0.0
+    },
+    "train_pass02.jpg": {
+      "raw": {
+        "label": "PASS",
+        "score": 0.9970627427101135,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.0029372572898864746,
+          "PASS": 0.9970627427101135
+        }
+      },
+      "system_status": "PASS",
+      "system_label": "PASS",
+      "system_score": 0.9970627427101135,
+      "distance": 0.0
+    },
+    "train_pass03.jpg": {
+      "raw": {
+        "label": "PASS",
+        "score": 0.9984583854675293,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.0015416145324707031,
+          "PASS": 0.9984583854675293
+        }
+      },
+      "system_status": "PASS",
+      "system_label": "PASS",
+      "system_score": 0.9984583854675293,
+      "distance": 0.0
+    },
+    "train_fail02.jpg": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.996299684047699,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.996299684047699,
+          "PASS": 0.003700325498357415
+        }
+      },
+      "system_status": "FAIL",
+      "system_label": "FAIL",
+      "system_score": 0.996299684047699,
+      "distance": 0.0
+    },
+    "train_fail100.jpg": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.9979435801506042,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.9979435801506042,
+          "PASS": 0.0020564240403473377
+        }
+      },
+      "system_status": "FAIL",
+      "system_label": "FAIL",
+      "system_score": 0.9979435801506042,
+      "distance": 0.0
+    },
+    "train_fail101.jpg": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.9988158345222473,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.9988158345222473,
+          "PASS": 0.001184188644401729
+        }
+      },
+      "system_status": "FAIL",
+      "system_label": "FAIL",
+      "system_score": 0.9988158345222473,
+      "distance": 0.0
+    },
+    "black": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.9365406036376953,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.9365406036376953,
+          "PASS": 0.06345938891172409
+        }
+      },
+      "system_status": "REVIEW",
+      "system_label": null,
+      "system_score": null,
+      "distance": 79.76875410134423
+    },
+    "white": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.9365406036376953,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.9365406036376953,
+          "PASS": 0.06345938891172409
+        }
+      },
+      "system_status": "REVIEW",
+      "system_label": null,
+      "system_score": null,
+      "distance": 79.76875410134423
+    },
+    "grey": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.9365406036376953,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.9365406036376953,
+          "PASS": 0.06345938891172409
+        }
+      },
+      "system_status": "REVIEW",
+      "system_label": null,
+      "system_score": null,
+      "distance": 79.76875410134423
+    },
+    "noise": {
+      "raw": {
+        "label": "PASS",
+        "score": 0.9999946355819702,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 5.364418029785156e-06,
+          "PASS": 0.9999946355819702
+        }
+      },
+      "system_status": "REVIEW",
+      "system_label": null,
+      "system_score": null,
+      "distance": 81.18089864809107
+    },
+    "synthetic_book_texture": {
+      "raw": {
+        "label": "FAIL",
+        "score": 0.9999923706054688,
+        "score_type": "prob",
+        "proba": {
+          "FAIL": 0.9999923706054688,
+          "PASS": 7.647033271496184e-06
+        }
+      },
+      "system_status": "REVIEW",
+      "system_label": null,
+      "system_score": null,
+      "distance": 76.01183746047724
+    }
+  },
+  "preprocessing": {
+    "color": "BGR -> grayscale",
+    "resize": "stretch to image_size, aspect ratio not preserved",
+    "denoise": "none",
+    "normalization": "HOG transform_sqrt handles gradient magnitude normalization",
+    "image_size": [
+      128,
+      128
+    ],
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        16,
+        16
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ],
+      "block_norm": "L2-Hys",
+      "transform_sqrt": true,
+      "channel_axis": null
+    }
+  },
+  "scaler_n_samples": 262,
+  "classifier_iterations": 69
+}

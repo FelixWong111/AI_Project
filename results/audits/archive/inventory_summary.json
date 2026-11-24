@@ -1,0 +1,116 @@
+{
+  "total_files": 510,
+  "total_bytes": 420009040,
+  "by_directory": {
+    "acceptance": {
+      "files": 106,
+      "bytes": 119958777,
+      "extensions": {
+        ".csv": 32,
+        ".json": 42,
+        ".jsonl": 8,
+        ".png": 24
+      }
+    },
+    "baseline1-diagnosis.log": {
+      "files": 1,
+      "bytes": 11466,
+      "extensions": {
+        ".log": 1
+      }
+    },
+    "baseline1-regression.log": {
+      "files": 1,
+      "bytes": 4044,
+      "extensions": {
+        ".log": 1
+      }
+    },
+    "baseline1_diagnosis": {
+      "files": 13,
+      "bytes": 3582479,
+      "extensions": {
+        ".json": 6,
+        ".csv": 3,
+        ".jsonl": 1,
+        ".png": 3
+      }
+    },
+    "baseline3": {
+      "files": 2,
+      "bytes": 731,
+      "extensions": {
+        ".json": 2
+      }
+    },
+    "gui_acceptance": {
+      "files": 5,
+      "bytes": 6898,
+      "extensions": {
+        ".json": 2,
+        ".csv": 2,
+        ".jsonl": 1
+      }
+    },
+    "leakage_audit": {
+      "files": 5,
+      "bytes": 109560,
+      "extensions": {
+        ".json": 5
+      }
+    },
+    "p06_merge": {
+      "files": 85,
+      "bytes": 133816349,
+      "extensions": {
+        ".json": 29,
+        ".csv": 25,
+        ".jsonl": 4,
+        ".png": 12,
+        ".log": 9,
+        ".zip": 2,
+        ".txt": 4
+      }
+    },
+    "refactor_backup_20261124": {
+      "files": 8,
+      "bytes": 1707558,
+      "extensions": {
+        ".zip": 3,
+        ".json": 3,
+        ".patch": 1,
+        ".txt": 1
+      }
+    },
+    "training": {
+      "files": 23,
+      "bytes": 3097273,
+      "extensions": {
+        ".log": 7,
+        ".json": 10,
+        ".csv": 4,
+        ".npz": 2
+      }
+    },
+    "work_orders": {
+      "files": 6,
+      "bytes": 73522,
+      "extensions": {
+        ".json": 6
+      }
+    },
+    "work_orders_acceptance": {
+      "files": 255,
+      "bytes": 157640383,
+      "extensions": {
+        ".json": 103,
+        ".csv": 66,
+        ".log": 49,
+        ".jsonl": 12,
+        ".png": 24,
+        ".zip": 1
+      }
+    }
+  },
+  "model_version_note": "Path/category association only; mixed logs may cover multiple models. Individual run metadata remains authoritative."
+}
