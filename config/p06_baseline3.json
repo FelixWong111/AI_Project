@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "model_id": "baseline3",
+  "architecture": "YOLO11n",
+  "release_status": "development_baseline_pending_system_integration",
+  "weights": "output/p06_runs/p03_baseline3_640_seed42/weights/best.pt",
+  "weights_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+  "ultralytics_version": "8.3.236",
+  "class_names": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "inference": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.7,
+    "device": 0,
+    "batch": 1,
+    "half": false,
+    "agnostic_nms": false,
+    "augment": false,
+    "max_det": 300
+  },
+  "input_contract": "uint8 BGR image; preserve original frame coordinate system",
+  "output_coordinates": "original image pixel xyxy",
+  "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability",
+  "counting_contract": "Count retained objects for IDs 0 through 5; ID 0 is not an empty-background label; expected counts are supplied externally",
+  "decision_owner": "P08 shared decision/rejudge implementation; P06 does not duplicate final PASS/FAIL rules",
+  "calibration": null,
+  "size_tolerance": null,
+  "rejection_scope": "Only learned non_catalogue detection; complete open-set rejection not validated",
+  "evaluation_evidence": "output/p06_runs/p03_baseline3_gtfix01_revalidation/review_report_zh.md",
+  "resolution_evidence": "output/p06_runs/p03_baseline3_resolution_640_960/review_report_zh.md"
+}
