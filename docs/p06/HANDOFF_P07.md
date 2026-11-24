@@ -1,4 +1,64 @@
-# P06 → P07：冻结 YOLO11n 检测与计数交接
+# P06 → P07：冻结检测与候选尺寸接口交接
+
+## 2026-11-25 交付更新
+
+本节为本次交接入口，后续旧检测专用说明继续用于原版对照。当前交付包含统一证据入口，
+默认关闭前景补检。尺寸测量提供候选线和毫米估计，真实可信验证记录为零条。
+实际返回 REVIEW。P08 尚需接入共享判定，不能把本版本写成已完成完整尺寸拒识或 U03 验收。
+
+更新后先在仓库根目录执行：
+
+```powershell
+python -B -m unittest discover -s tests -p test_p06_pipeline.py -v
+python -B -m unittest discover -s tests -p test_p06_measurement_policy.py -v
+python -B -m unittest discover -s tests -p test_p07.py -v
+python -B tools/p06_handoff_check.py --config config/p06_p07_pipeline_candidate.json --output-dir output/p06_integrated_handoff_check
+```
+
+最后一条真实加载唯一冻结权重，调用 P07 工厂与工作线程，并检查 CUDA 和缓存重判。
+默认使用程序生成图像，检查工程运行。需要检查现场开发照片时添加 --image 参数。
+已有输出目录会拒绝覆盖，重跑请更换目录。
+
+图片 GUI 与摄像头启动方式：
+
+```powershell
+python -B app.py --backend real --model baseline3 --config config/p06_p07_pipeline_candidate.json --image YOUR_NON_TEST_PHOTO --output-dir output/p06_image_session
+python -B app.py --backend real --model baseline3 --config config/p06_p07_pipeline_candidate.json --camera-name Camo --capture-backend dshow --output-dir output/p06_camera_session
+```
+
+相机名需按 P07 电脑实际枚举结果填写。保留原检测入口
+config/p06_p07_detection_only.json，用于与统一候选入口对照。两个入口共用同一冻结 best.pt。
+
+### P07 与 Agent 应检查的内容
+
+1. 先完成下文环境、权重字节数及 SHA-256 核对。新运行模块只使用已有依赖。
+2. 运行新增测试与真实工厂自检，保存提交号、权重哈希、退出码和 result.json。
+3. 核对框与 counts 一致，修改预期数只重判缓存。状态 REVIEW 是当前输出边界。
+4. 现场拍摄条件需使用新的配置副本记录。当前旧照片候选尺度为 3024×4032，实时
+   1280×720 会明确提示 CALIBRATION_RESOLUTION_MISMATCH。不要仅改变尺寸字段来通过检查。
+5. foreground_enabled=false 是本次明确决定。真实 Train 检查发现另一张空图产生1688个
+   假前景候选，暂不启用该模块，也暂不使用其去重。跨类别重复框仍是已知限制。
+6. measurement_policy.json 中 records=[]。仅在有实际误差验证、支持条件及审核记录后，
+   才能加入可信测量范围；不要自行设置 validated=true 或虚构误差界。
+7. GUI 原框仍为 YOLO 观察。size_evidence 和 rejection_evidence 为新增对象证据，
+   p06_evidence 包含溯源信息。P07 当前通用显示与 CSV 不会自动展示所有新字段；
+   需与 P08 协作决定最终显示、ID0归类及导出，P06接口本身尚未实现最终 PASS/FAIL。
+
+统一入口见 [pipeline.md](pipeline.md)，可信条件见 [measurement_policy.md](measurement_policy.md)，
+尺寸字段见 [size_evidence.md](size_evidence.md)。前景实验说明见 [foreground.md](foreground.md)。
+源码和这些配置均不要求复制 P06 的本地 data 或整个 output。唯一需要的 output 文件是下文的 best.pt。
+
+### 当前实际验证与剩余责任
+
+已有冻结权重 GPU 冒烟与187项流水线阶段测试通过，可信策略接入后完整P06测试193项通过。
+新增功能的合成测试不代表真实测量精度。固定16张Train检查中，85个GT均有同类IoU≥0.5
+的检测匹配，包含15个ID0；这批属于Train，不能作为独立性能。尺寸偏差尚不足以满足
+暂定容差，工位尺度/容差验收及未见错误规格件的真实拒识仍待P06协同核查。
+这些历史结果为开发证据。本次交付的干净检出通过182项P06测试、23项P07回归，
+真实CUDA、P07工厂/工作线程和缓存重判通过。详见 [delivery_validation.md](delivery_validation.md)。
+
+P07负责现场摄像头、GUI与操作记录；P06继续负责测量和拒识模块问题；
+P01协调标定、容差与教师确认；P08负责共享判定及独立Test。后续final集成另行安排。
 
 供 P07 及其 Agent 按顺序执行。当前交付是开发版本的真实检测与计数，不是完整整盘判定系统；不要为“通过验收”更改权重、阈值、标签或返回状态。本文件优先于 P06 旧实验文档中的本机路径示例。
 

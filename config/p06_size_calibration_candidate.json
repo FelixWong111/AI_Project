@@ -1,0 +1,8 @@
+{
+  "calibration_id": "p06-ruler-mean-1-4-5-6-candidate",
+  "capture_geometry_id": "p06-development-fixed-camera-candidate",
+  "frame_width": 3024,
+  "frame_height": 4032,
+  "px_per_mm": [34.46907367628113, 34.02554900972541],
+  "validated": false
+}

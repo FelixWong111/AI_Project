@@ -148,7 +148,7 @@ def axial_edge(gray, xy, guess, diameter, offsets, reason, *, exposed_tip=False)
 
 
 def body_profile_geometry(samples, normal_positions, mid, body, center, axis, normal,
-                          start, width, scale, sref, gray, edge_audit):
+                          start, width, scale, sref, gray, edge_audit, diameter_only=False):
     """Locate the shoulder first, then measure a supported section inside the shaft."""
     tip = len(width) - 1
     rough = float(np.quantile(width[body], .9))
@@ -169,13 +169,16 @@ def body_profile_geometry(samples, normal_positions, mid, body, center, axis, no
     for half, offset, side in ((-gradient[:mid], 0, 0), (gradient[mid:], mid, -1)):
         strong = np.flatnonzero(half > max(2., .4 * float(half.max())))
         require(strong.size, 'SHAFT_EDGE_GRADIENT_WEAK')
-        group = np.split(strong, np.flatnonzero(np.diff(strong) > 1) + 1)[side]
+        groups = np.split(strong, np.flatnonzero(np.diff(strong) > 1) + 1)
+        group = max(groups,key=lambda g:float(half[g].max())) if diameter_only else groups[side]
         edges.append(offset + int(group[np.argmax(half[group])]))
     left, right = edges
     diameter = right - left
-    require(.55 * rough < diameter < 1.15 * rough, 'SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW')
+    lower_fraction = .25 if diameter_only else .55
+    require(max(4,lower_fraction * rough) < diameter < 1.15 * rough, 'SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW')
     require(head_width > 1.5 * diameter, 'HEAD_SHAFT_SEPARATION_FAILED')
-    require(span > 1.4 * diameter, 'SHAFT_TOO_SHORT_OR_WRONG_POSE')
+    if not diameter_only:
+        require(span > 1.4 * diameter, 'SHAFT_TOO_SHORT_OR_WRONG_POSE')
     derivatives = np.gradient(cv2.GaussianBlur(samples[inside], (7, 1), 1.5), axis=1)
     radius = max(2, round(.04 * diameter))
     supported = []
@@ -227,6 +230,8 @@ def body_profile_geometry(samples, normal_positions, mid, body, center, axis, no
                 'SHAFT_SECTION_NOT_CLEAR_OF_HEAD_OR_TIP')
     dims = dict(underhead_length=dimension(xy(shoulder, middle), xy(tip, middle), scale),
                 thread_major_diameter=dimension(xy(u, a), xy(u, b), scale))
+    if diameter_only:
+        dims.pop('underhead_length')
     return dims, dict(shaft_profile_columns=int(inside.sum()), paired_edge_sections=len(matches),
                       diameter_method='paired observed gradients on interior shaft; pooled profile seed',
                       underhead_method='two exposed shoulder tracks' if edge_audit else 'silhouette shoulder transition',
@@ -278,6 +283,37 @@ def screw_geometry(contour, scale, gray, method):
     pixel_grid=grid*scale/sref
     samples=cv2.remap(gray.astype(np.float32),pixel_grid[:,:,0].astype(np.float32),pixel_grid[:,:,1].astype(np.float32),cv2.INTER_LINEAR)
     mid=int(np.argmin(np.abs(normal_positions-np.median((lo[body]+hi[body])/2))))
+    if method=='bounded_refine':
+        from src.p06_screw_edges import refine
+        return refine(samples,normal_positions,mid,body,center,axis,normal,start,width,scale,sref,gray)
+    if method=='independent':
+        dims, failures, details = {}, {}, {}
+        rough = float(np.quantile(width[body],.9))
+        middle = float(np.median((lo[body]+hi[body])/2))
+        def xy(u,v):
+            return (center+axis*(start+u)+normal*v)*scale/sref
+        try:
+            head_width=float(max(width[:int(.5*n)]))
+            head=np.flatnonzero(width[:int(.55*n)]>rough+.3*(head_width-rough))
+            require(len(head)>=3 and head_width>1.2*rough,'HEAD_SHAFT_SEPARATION_FAILED')
+            shoulder = axial_edge(gray,xy,int(head[-1])+1,rough,
+                                  [middle-.64*rough,middle+.64*rough],'UNDERHEAD_BASE_NOT_CONFIRMED')
+            tip = axial_edge(gray,xy,n-1,rough,
+                             [middle-.16*rough,middle,middle+.16*rough],
+                             'SHAFT_TIP_NOT_CONFIRMED',exposed_tip=True)
+            require(tip>shoulder+rough,'SHAFT_TOO_SHORT_OR_WRONG_POSE')
+            dims['underhead_length']=dimension(xy(shoulder,middle),xy(tip,middle),scale)
+        except MeasurementFailure as error:
+            failures['underhead_length']=str(error)
+        try:
+            require(3<mid<len(normal_positions)-4,'SHAFT_METAL_PROFILE_UNRESOLVED')
+            diameter,details=body_profile_geometry(samples,normal_positions,mid,body,center,axis,normal,
+                                                  start,width,scale,sref,gray,False,diameter_only=True)
+            dims.update(diameter)
+        except MeasurementFailure as error:
+            failures['thread_major_diameter']=str(error)
+        details['dimension_failures']=failures
+        return dims,details
     require(3<mid<len(normal_positions)-4,'SHAFT_METAL_PROFILE_UNRESOLVED')
     if method in ('body_profile','edge_audit'):
         return body_profile_geometry(samples,normal_positions,mid,body,center,axis,normal,
@@ -531,8 +567,37 @@ def nut_geometry(contour, scale, params):
         hexagon_xy=(polygon*scale).tolist(),warning='Visible parallel-flat separation, not across-corners or thread-hole diameter.')
 
 
-def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method='body_profile', radial_washer=False):
-    if screw_method not in ('body_profile', 'stage1', 'edge_audit'):
+def isolate_target(image, box, params):
+    """Remove separate foreground components using a supplied crop-local object box."""
+    gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+    x1,y1,x2,y2=box
+    blurred=cv2.GaussianBlur(gray,(3,3),0)
+    otsu,_=cv2.threshold(blurred,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
+    background=float(np.median(np.r_[gray[0],gray[-1],gray[:,0],gray[:,-1]]))
+    binary=(blurred<=min(otsu,background-params['background_offset'])).astype(np.uint8)
+    count,labels,stats,_=cv2.connectedComponentsWithStats(binary,8)
+    candidates=[]
+    for label in range(1,count):
+        area=int(stats[label,cv2.CC_STAT_AREA])
+        if area<params['minimum_area']:continue
+        overlap=int((labels[y1:y2,x1:x2]==label).sum())
+        candidates.append((overlap,label,area))
+    require(bool(candidates),'TARGET_COMPONENT_NOT_FOUND')
+    candidates.sort(reverse=True)
+    overlap,label,area=candidates[0]
+    require(overlap/area>=.85,'TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX')
+    require(len(candidates)==1 or candidates[1][0]<.2*overlap,'TARGET_COMPONENT_AMBIGUOUS')
+    selected=labels==label
+    # Retain a small local neighbourhood for anti-aliased metal edges and dark
+    # thread gaps. Pixel values inside it are copied without alteration.
+    support=cv2.dilate(selected.astype(np.uint8),np.ones((9,9),np.uint8)).astype(bool)
+    clean=image.copy()
+    clean[~support]=np.median(image.reshape(-1,3),axis=0).astype(np.uint8)
+    return clean
+
+
+def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method='body_profile', radial_washer=False, target_box=None):
+    if screw_method not in ('body_profile', 'stage1', 'edge_audit','independent','bounded_refine'):
         raise ValueError('Unknown screw measurement method')
     if not (isinstance(image_bgr,np.ndarray) and image_bgr.dtype==np.uint8 and image_bgr.ndim==3
             and image_bgr.shape[2]==3 and min(image_bgr.shape[:2])>=10):raise ValueError('Need uint8 HxWx3 BGR crop')
@@ -552,15 +617,26 @@ def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method=
         result['reason']='NON_CATALOGUE_NOT_MEASURED';return result
     gray=cv2.cvtColor(image_bgr,cv2.COLOR_BGR2GRAY)
     try:
+        if target_box is not None:
+            box=np.asarray(target_box,float)
+            if (box.shape!=(4,) or not np.isfinite(box).all() or
+                    not 0<=box[0]<box[2]<=gray.shape[1] or not 0<=box[1]<box[3]<=gray.shape[0]):
+                raise ValueError('Invalid crop-local target_box')
+            # Round outward, retaining the complete original GT region.
+            box=np.r_[np.floor(box[:2]),np.ceil(box[2:])].astype(int)
+            isolated=isolate_target(image_bgr,box,params)
+            contour_gray=cv2.cvtColor(isolated,cv2.COLOR_BGR2GRAY)
+        else:
+            contour_gray=gray
         if class_id==5:
             # Check object isolation; bright annuli may have only a narrow dark rim.
-            contour,diag=silhouette(gray,params)
+            contour,diag=silhouette(contour_gray,params)
             result['diagnostics'].update(diag)
             result['contours_xy']=[contour[:,0].tolist()]
             dims,details,contours=washer_geometry(gray,scale,params,radial_washer)
             result['contours_xy']=[c[:,0].tolist() for c in contours]
         else:
-            contour,diag=silhouette(gray,params)
+            contour,diag=silhouette(contour_gray,params)
             result['diagnostics'].update(diag)
             result['contours_xy']=[contour[:,0].tolist()]
             if class_id in (1,2,3):dims,details=screw_geometry(contour,scale,gray,screw_method)
@@ -569,8 +645,16 @@ def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method=
             line=np.array(dim['line_xy'])
             require(np.isfinite(line).all() and dim['pixels']>0 and dim['mm_estimate']>0,'DEGENERATE_MEASUREMENT_LINE')
             require(np.all(line>=0) and np.all(line[:,0]<gray.shape[1]) and np.all(line[:,1]<gray.shape[0]),'MEASUREMENT_LINE_OUTSIDE_CROP')
-        result.update(status='MEASURED_CANDIDATE',dimensions=dims,diagnostics={**diag,**details})
+        failures=details.get('dimension_failures',{})
+        status='MEASURED_CANDIDATE'
+        if failures:status='PARTIAL_CANDIDATE' if dims else 'UNMEASURABLE'
+        result.update(status=status,dimensions=dims,diagnostics={**diag,**details},
+                      reason='; '.join(failures.values()))
     except MeasurementFailure as error:
         result['reason']=str(error)
         result['diagnostics'].update(error.diagnostics)
+    keys = ('underhead_length','thread_major_diameter') if class_id in (1,2,3) else (('outer_diameter','inner_diameter') if class_id==5 else ('across_flats',))
+    result['dimension_status']={key:dict(status='CANDIDATE' if key in result['dimensions'] else 'UNMEASURABLE',
+                                       reason='' if key in result['dimensions'] else result['diagnostics'].get('dimension_failures',{}).get(key,result['reason']))
+                                for key in keys}
     return result

@@ -12,6 +12,42 @@ from PIL import Image,ImageDraw
 
 
 class GeometryTests(unittest.TestCase):
+    def test_target_isolation_and_independent_dimension_failures(self):
+        im=self.image()
+        cv2.rectangle(im,(100,200),(140,350),(30,)*3,-1)
+        cv2.rectangle(im,(140,200),(540,280),(30,)*3,-1)
+        r=measure_object(im,1,(20,20),screw_method='independent',target_box=(95,195,545,355))
+        self.assertEqual(r['status'],'PARTIAL_CANDIDATE',r)
+        self.assertNotIn('underhead_length',r['dimensions'])
+        self.assertIn('thread_major_diameter',r['dimensions'])
+        self.assertEqual(r['dimension_status']['underhead_length']['status'],'UNMEASURABLE')
+        self.assertEqual(r['dimension_status']['thread_major_diameter']['status'],'CANDIDATE')
+
+    def test_separate_neighbour_removed_without_changing_input(self):
+        from src.p06_geometry import isolate_target
+        im=self.image()
+        cv2.rectangle(im,(100,140),(140,340),(30,)*3,-1)
+        cv2.rectangle(im,(140,200),(500,280),(30,)*3,-1)
+        cv2.rectangle(im,(220,360),(500,430),(30,)*3,-1)
+        before=im.copy()
+        cleaned=isolate_target(im,(95,135,505,345),DEFAULT_PARAMETERS)
+        self.assertGreater(cleaned[390,300,0],200)
+        self.assertLess(cleaned[240,300,0],50)
+        np.testing.assert_array_equal(im,before)
+        with self.assertRaises(ValueError):
+            measure_object(im,1,(20,20),target_box=(0,0,900,300))
+
+    def test_diameter_failure_does_not_discard_valid_length(self):
+        from src.p06_geometry import MeasurementFailure
+        im=self.image()
+        cv2.rectangle(im,(100,140),(145,345),(30,)*3,-1)
+        cv2.rectangle(im,(145,200),(545,280),(30,)*3,-1)
+        with patch('src.p06_geometry.body_profile_geometry',side_effect=MeasurementFailure('UNSUPPORTED_THREAD_EDGE')):
+            r=measure_object(im,1,(20,20),screw_method='independent')
+        self.assertEqual(r['status'],'PARTIAL_CANDIDATE',r)
+        self.assertIn('underhead_length',r['dimensions'])
+        self.assertNotIn('thread_major_diameter',r['dimensions'])
+        self.assertEqual(r['dimension_status']['thread_major_diameter']['reason'],'UNSUPPORTED_THREAD_EDGE')
     def image(self):
         return np.full((500, 700, 3), 240, np.uint8)
 
