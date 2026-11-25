@@ -1,6 +1,66 @@
 # P06 candidate geometric measurement
 
+## Bounded shoulder and crest refinement
+
+The opt-in `screw_method='bounded_refine'` uses
+`src/p06_screw_edges.py`. Two development runs on 18 existing marked Train crops
+were followed by a code-hash freeze and a six-object review. No nominal size is
+used for selecting a boundary. The default method remains selected as before.
+
+See `output/p06_bounded_refine_review/report.md` for paired comparisons.
+The three paired review diameters did not improve; paired length mean absolute
+difference changed only from 1.031 to 1.027 mm. This experiment does not justify
+adoption or wider data processing. Per-object overlays and rejection reasons
+are preserved in the development and review folders.
+
+```powershell
+conda run -n ai-p06-yolo python -B tools/p06_bounded_refine.py --output output/p06_bounded_refine_dev_NEW
+conda run -n ai-p06-yolo python -B tools/p06_bounded_refine.py --review-freeze output/p06_bounded_refine_dev_NEW/freeze.json --output output/p06_bounded_refine_review_NEW
+```
+
+## Bounded whole-length experiment
+
+`tools/p06_axial_projection.py` attributes length failures from saved Train
+results, compares both versions on the same 24 human-marked objects and measures
+whole-silhouette projection on those 24 crops. It adds no gates to the current
+measurement API. The proposed projection is a visible contour span, with the head,
+on an estimated axial direction. Short parts, head pose and shadow can bias it.
+Supplier head thickness is not subtracted.
+
+See `output/p06_axial_projection_final/report.md` and the three contact sheets.
+`mark_overall.html` reuses the offline marking page with a distinct queue and a
+single overall-projection field. Mark the intersections of the visible shaft
+axis with the two extreme support planes, including the head. An unclear axis
+or contour can be marked unclear. Export `p06_overall_projection_marks.json`.
+The old rod-length markings stay in their original queue. This page has passed
+syntax and image-path checks; interactive browser validation for this variant
+and independent overall-length ground truth remain pending.
+
+The threshold perturbations produced identical contours in 17 of the 19 cases
+where all variants succeeded, so the observed zero span is not evidence of robust
+segmentation. Manual-axis projection is recorded separately as a sensitivity
+diagnostic. No product thresholds or unknown-specification recall are established.
+
 ## Current screw candidate and line review
+
+The independent-dimension experiment is opt-in through
+`screw_method='independent', target_box=(x1,y1,x2,y2)`. The supplied box uses
+crop-local GT coordinates in the current Train experiment. It selects foreground
+components without allowing a nearby part to define the axis. An extended or
+ambiguous component is refused. Original intensities are retained for gradient
+measurement. Each returned dimension has its own `dimension_status`, and
+`PARTIAL_CANDIDATE` retains a candidate when the other dimension fails.
+
+See `output/p06_geometry_independent_review/report.md`. In the six held-back Train
+objects, the experiment returned no lengths and three diameters with a mean
+absolute difference of 0.936 mm from human image lines. It has not met the
+conditions for adoption. A lower number of two-dimension outputs must not mask
+single-dimension availability. Single-dimension availability also does not
+establish accuracy. The washer implementation remains coupled in this experiment.
+
+```powershell
+conda run -n ai-p06-yolo python -B tools/p06_geometry_independent.py --full-train --output output/p06_geometry_independent_NEW
+```
 
 Open `output/p06_screw_review/index.html` in a desktop browser. Keep the adjacent
 `crops/` directory with the page. All 24 crops come from different Train images,

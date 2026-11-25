@@ -28,6 +28,9 @@ def overlay(crop, result, name, variant):
             x,y = point
             draw.ellipse((x-6,y-6,x+6,y+6), fill=color,outline='black',width=2)
             draw.text((x+7,y-20),letter,font=font(22),fill=color,stroke_width=2,stroke_fill='black')
+        if 'thread_major_diameter' in dims:
+            draw.line([tuple(p) for p in dims['thread_major_diameter']['line_xy']],fill='#1882f0',width=4)
+    elif 'thread_major_diameter' in dims:
         draw.line([tuple(p) for p in dims['thread_major_diameter']['line_xy']],fill='#1882f0',width=4)
     elif 'inner_diameter' in dims:
         for contour,color in zip(result['contours_xy'],('#1882f0','#fadc28')):

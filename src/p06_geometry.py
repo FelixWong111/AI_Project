@@ -440,7 +440,7 @@ def radial_aperture(gray, scale, outer, fit):
     return points, fitted, len(points)
 
 
-def washer_geometry(gray, scale, params, radial=False):
+def washer_geometry(gray, scale, params, radial=False, extent_box=None):
     # A true inner hole must be a child of the centred annular silhouette.
     # Do not search arbitrary circular highlights on the metal face.
     blurred=cv2.GaussianBlur(gray,(5,5),1)
@@ -505,6 +505,10 @@ def washer_geometry(gray, scale, params, radial=False):
             rejected_holes.append(str(error));continue
         if .12*orr<irr<.7*orr and np.linalg.norm(ic-oc)<.12*orr:
             holes.append((c,fitted,depth))
+    def fitted_diameter(fitted):
+        ctr,rad,direction=fitted['center'],fitted['radius'],fitted['direction']
+        return dimension((ctr-rad*direction)*scale,(ctr+rad*direction)*scale,scale)
+
     if radial:
         inner, ifit, radial_support = radial_aperture(gray,scale,ofit,fit)
         # A fitted threshold contour provides an independent check when it
@@ -519,13 +523,30 @@ def washer_geometry(gray, scale, params, radial=False):
                     'RADIAL_AND_CONTOUR_HOLE_DISAGREE')
     else:
         if len(holes)!=1:
-            raise MeasurementFailure('INNER_HOLE_NOT_UNAMBIGUOUS',dict(aperture_candidates=len(holes),rejected_aperture_fits=rejected_holes))
+            issues=dict(aperture_candidates=len(holes),rejected_aperture_fits=rejected_holes)
+            if extent_box is not None:
+                # Bright washers sometimes leave only the dark aperture in the
+                # threshold mask. Its fit can be circular and central too.
+                # Check the observed/fitted exterior against the full target box.
+                major=ofit['direction']
+                minor=np.array([-major[1],major[0]])
+                radii_xy=np.hypot(orr*major,.5*ofit['axes'][0]*minor)*scale
+                bounds=np.r_[oc*scale-radii_xy,oc*scale+radii_xy]
+                size=extent_box[2:]-extent_box[:2]
+                extent_error=float(np.max(np.abs(bounds-extent_box)/np.tile(size,2)))
+                x,y,w,h=cv2.boundingRect(outer)
+                complete=x>1 and y>1 and x+w<gray.shape[1]-1 and y+h<gray.shape[0]-1
+                issues.update(outer_extent_error_fraction=extent_error,outer_contour_interior=complete)
+                if complete and extent_error<=.15:
+                    issues.update(dimension_failures={'inner_diameter':'INNER_HOLE_NOT_UNAMBIGUOUS'},
+                                  outer_ellipse_axes_mm=ofit['axes'],
+                                  outer_ellipse_rms_fraction=ofit['residual'],
+                                  outer_edge_support_fraction=ofit['support_fraction'])
+                    return {'outer_diameter':fitted_diameter(ofit)},issues,[outer]
+            raise MeasurementFailure('INNER_HOLE_NOT_UNAMBIGUOUS',issues)
         inner,ifit,depth=holes[0]
         radial_support = None
-    dims={}
-    for key,fitted in [('outer_diameter',ofit),('inner_diameter',ifit)]:
-        ctr,rad,direction=fitted['center'],fitted['radius'],fitted['direction']
-        dims[key]=dimension((ctr-rad*direction)*scale,(ctr+rad*direction)*scale,scale)
+    dims={'outer_diameter':fitted_diameter(ofit),'inner_diameter':fitted_diameter(ifit)}
     return dims,dict(outer_ellipse_rms_fraction=ofit['residual'],inner_ellipse_rms_fraction=ifit['residual'],
                      outer_ellipse_axes_mm=ofit['axes'],inner_ellipse_axes_mm=ifit['axes'],
                      outer_full_contour_residual=ofit['full_residual'],inner_full_contour_residual=ifit['full_residual'],
@@ -596,7 +617,7 @@ def isolate_target(image, box, params):
     return clean
 
 
-def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method='body_profile', radial_washer=False, target_box=None):
+def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method='body_profile', radial_washer=False, target_box=None, washer_extent_box=None):
     if screw_method not in ('body_profile', 'stage1', 'edge_audit','independent','bounded_refine'):
         raise ValueError('Unknown screw measurement method')
     if not (isinstance(image_bgr,np.ndarray) and image_bgr.dtype==np.uint8 and image_bgr.ndim==3
@@ -616,6 +637,12 @@ def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method=
     if class_id==0:
         result['reason']='NON_CATALOGUE_NOT_MEASURED';return result
     gray=cv2.cvtColor(image_bgr,cv2.COLOR_BGR2GRAY)
+    if washer_extent_box is not None:
+        washer_extent_box=np.asarray(washer_extent_box,float)
+        if (class_id!=5 or washer_extent_box.shape!=(4,) or not np.isfinite(washer_extent_box).all()
+                or not 0<=washer_extent_box[0]<washer_extent_box[2]<=gray.shape[1]
+                or not 0<=washer_extent_box[1]<washer_extent_box[3]<=gray.shape[0]):
+            raise ValueError('Need a crop-local washer extent box within the image')
     try:
         if target_box is not None:
             box=np.asarray(target_box,float)
@@ -633,7 +660,7 @@ def measure_object(image_bgr, class_id, scale, parameters=None, *, screw_method=
             contour,diag=silhouette(contour_gray,params)
             result['diagnostics'].update(diag)
             result['contours_xy']=[contour[:,0].tolist()]
-            dims,details,contours=washer_geometry(gray,scale,params,radial_washer)
+            dims,details,contours=washer_geometry(gray,scale,params,radial_washer,washer_extent_box)
             result['contours_xy']=[c[:,0].tolist() for c in contours]
         else:
             contour,diag=silhouette(contour_gray,params)
