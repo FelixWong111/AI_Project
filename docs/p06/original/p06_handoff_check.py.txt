@@ -17,6 +17,8 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--image',type=Path,help='Optional non-Test local photo; default is a synthetic white frame')
     parser.add_argument('--output-dir',type=Path,default=ROOT/'output/p06_handoff_check')
+    parser.add_argument('--config',type=Path,default=ROOT/'config/p06_p07_detection_only.json',
+                        help='P07 config; use config/p06_p07_pipeline_candidate.json for integrated evidence')
     args=parser.parse_args();out=args.output_dir.resolve()
     if out.exists() or not out.is_relative_to(ROOT/'output'):raise ValueError('Choose a NEW directory under repository output/')
     if args.image:
@@ -27,7 +29,7 @@ def main():
         evidence='USER_SUPPLIED_NON_TEST_PHOTO'
     else:
         image=np.full((480,640,3),255,np.uint8);evidence='SYNTHETIC_FRAME_PIPELINE_ONLY'
-    config=json.loads((ROOT/'config/p06_p07_detection_only.json').read_text(encoding='utf-8'))
+    config=json.loads(args.config.read_text(encoding='utf-8-sig'))
     backend=load_backend('real','baseline3',config)
     import torch
     tensor=torch.tensor([1.,2.,3.],device='cuda:0').square().sum()

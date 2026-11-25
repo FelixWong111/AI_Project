@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P06 螺钉测量线标记</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf1f3;color:#162b37;font:16px "Microsoft YaHei",sans-serif}
+main{max-width:1400px;margin:auto;padding:16px}h1{font-size:22px;margin:0}header,.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+header{justify-content:space-between}button,select,.import{font:inherit;color:inherit;border:1px solid #879aa4;background:white;border-radius:5px;padding:7px 11px;cursor:pointer}
+button[aria-pressed=true],#next{background:#175470;color:white}button:disabled{opacity:.5}
+#viewport{height:57vh;min-height:230px;overflow:auto;background:#26343b;border-radius:6px}
+svg{display:block;margin:auto;cursor:crosshair;touch-action:manipulation}#name{font-weight:bold}#hint{margin:8px 0}#notice{color:#87470c}small{color:#455762}
+</style></head><body><main>
+<header><h1>螺钉测量线标记</h1><span id="progress"></span></header>
+<div class="bar"><button id="prev">上一颗</button><select id="pick" aria-label="选择零件"></select><button id="next">下一颗</button><span id="name"></span></div>
+<div class="bar"><button id="length">① 头下长度</button><button id="diameter">② 螺纹外径</button><span id="state"></span></div>
+<p id="hint"></p><div id="viewport"><svg id="drawing" xmlns="http://www.w3.org/2000/svg"><image id="photo"></image><g id="lines"></g></svg></div>
+<div class="bar" style="margin-top:10px"><button id="minus">缩小</button><button id="plus">放大</button><button id="fit">适应窗口</button><button id="undo">撤销上一操作</button><button id="reset">重画本项</button><button id="unclear">本项看不清</button></div>
+<div class="bar"><button id="download">导出标记 JSON</button><label class="import">恢复 JSON <input id="upload" type="file" accept=".json" hidden></label><span id="notice" role="status"></span></div>
+<small>左键点两个端点。长度与外径可分别标为看不清。支持跳过和回看。当前浏览器自动暂存；离开前导出 JSON，可在另一台电脑恢复。</small>
+</main><script>
+"use strict";
+const queue = /* QUEUE */null;
+const $ = id => document.getElementById(id);
+const keys = ['underhead_length','thread_major_diameter'];
+const titles = ['头下长度','螺纹外径'];
+const colors = ['#bd005b','#0072a9'];
+const storeKey = 'p06-screw-lines-v1-' + queue.queue_id;
+const tasks = queue.tasks;
+let index = 0, field = 0, zoom = 1, marks = {}, history = [];
+const task = () => tasks[index];
+const entry = () => marks[task().object_id] || {};
+const complete = item => item === null || (Array.isArray(item) && item.length === 2);
+const equalPoint = (a,b) => a[0]===b[0] && a[1]===b[1];
+function validate(data) {
+  if(data.version!==1 || data.queue_id!==queue.queue_id || data.coordinates!=='original_display_xy' ||
+     !data.marks || typeof data.marks!=='object' || Array.isArray(data.marks)) throw Error('文件版本或任务队列不匹配');
+  for(const [oid,fields] of Object.entries(data.marks)){
+    const t=tasks.find(t=>t.object_id===oid);
+    if(!t || !fields || typeof fields!=='object' || Array.isArray(fields)) throw Error('未知零件或损坏记录');
+    const [x,y,r,b]=t.crop_xyxy;
+    for(const [k,v] of Object.entries(fields)){
+      if(!keys.includes(k)) throw Error('未知测量项');
+      if(v===null) continue;
+      if(!Array.isArray(v) || ![1,2].includes(v.length) || v.some(p=>!Array.isArray(p)||p.length!==2||
+         !p.every(Number.isFinite)||p[0]<x||p[0]>=r||p[1]<y||p[1]>=b) ||
+         (v.length===2 && equalPoint(v[0],v[1]))) throw Error('端点数据无效');
+    }
+  }
+  return data.marks;
+}
+function payload(){return {version:1,queue_id:queue.queue_id,coordinates:'original_display_xy',marks};}
+function persist(){
+  try{localStorage.setItem(storeKey,JSON.stringify(payload()));$('notice').textContent='已暂存到此浏览器';}
+  catch{$('notice').textContent='浏览器暂存不可用，请导出 JSON 保存进度';}
+}
+function change(value){
+  const oid=task().object_id, k=keys[field];
+  history.push({index,field,previous:entry()[k]});
+  if(!marks[oid]) marks[oid]={};
+  if(value===undefined) delete marks[oid][k]; else marks[oid][k]=value;
+  persist();render();
+}
+function select(i){
+  index=i;field=complete(entry()[keys[0]])&&!complete(entry()[keys[1]])?1:0;
+  zoom=1;render();
+}
+function svg(tag,attrs){
+  const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
+  for(const [k,v] of Object.entries(attrs)) el.setAttribute(k,v);
+  $('lines').append(el);
+}
+function render(){
+  const t=task(),[x,y,r,b]=t.crop_xyxy,w=r-x,h=b-y;
+  $('pick').value=index;
+  $('name').textContent=t.image_id+' · '+['','长螺钉','粗螺钉','细螺钉'][t.class_id];
+  const done=tasks.filter(t=>keys.every(k=>complete((marks[t.object_id]||{})[k]))).length;
+  $('progress').textContent='已完成 '+done+' / '+tasks.length+' 颗';
+  const val=entry()[keys[field]], count=Array.isArray(val)?val.length:0;
+  $('state').textContent=titles.map((s,i)=>s+'：'+(entry()[keys[i]]===null?'看不清':complete(entry()[keys[i]])?'已标记':entry()[keys[i]]?'已点一端':'待标记')).join('　');
+  $('hint').textContent=complete(val)?'本项已记录。可切换测量项、重画或进入下一颗。':
+    (field===0?(count?'再点杆尖中心。':'沿杆轴，先点头下承靠面与杆轴的交点。'):
+    (count?'在同一截面点另一侧牙顶，线应与杆轴垂直。':'在远离头部和杆尖的中段，点一侧清晰的螺纹牙顶外缘。'));
+  $('length').setAttribute('aria-pressed',field===0);$('diameter').setAttribute('aria-pressed',field===1);
+  $('prev').disabled=index===0;$('next').disabled=index===tasks.length-1;$('undo').disabled=!history.length;
+  const drawing=$('drawing'), scale=Math.min(($('viewport').clientWidth-20)/w,($('viewport').clientHeight-20)/h)*zoom;
+  drawing.setAttribute('viewBox','0 0 '+w+' '+h);drawing.style.width=w*scale+'px';drawing.style.height=h*scale+'px';
+  $('photo').setAttribute('href',t.src);$('photo').setAttribute('width',w);$('photo').setAttribute('height',h);
+  $('lines').replaceChildren();
+  keys.forEach((k,i)=>{
+    const pts=entry()[k];if(!pts)return;
+    if(pts.length===2) svg('line',{x1:pts[0][0]-x,y1:pts[0][1]-y,x2:pts[1][0]-x,y2:pts[1][1]-y,stroke:colors[i],'stroke-width':2/scale});
+    for(const p of pts)svg('circle',{cx:p[0]-x,cy:p[1]-y,r:3/scale,stroke:'white',fill:colors[i],'stroke-width':1/scale});
+  });
+}
+tasks.forEach((t,i)=>$('pick').add(new Option((i+1)+' / '+tasks.length+'　'+t.object_id,i)));
+$('drawing').addEventListener('click',e=>{
+  const val=entry()[keys[field]];if(complete(val))return;
+  const svgEl=$('drawing'),pt=new DOMPoint(e.clientX,e.clientY).matrixTransform(svgEl.getScreenCTM().inverse());
+  const [x,y,r,b]=task().crop_xyxy, p=[x+Math.round(pt.x),y+Math.round(pt.y)];
+  if(p[0]<x||p[0]>=r||p[1]<y||p[1]>=b||(val&&equalPoint(val[0],p)))return;
+  change([...(val||[]),p]);
+});
+$('length').onclick=()=>{field=0;render()};$('diameter').onclick=()=>{field=1;render()};
+$('prev').onclick=()=>select(index-1);$('next').onclick=()=>select(index+1);$('pick').onchange=e=>select(Number(e.target.value));
+$('reset').onclick=()=>change(undefined);$('unclear').onclick=()=>change(null);
+$('undo').onclick=()=>{
+  const h=history.pop();index=h.index;field=h.field;
+  if(h.previous===undefined)delete marks[task().object_id][keys[field]];else marks[task().object_id][keys[field]]=h.previous;
+  persist();render();
+};
+$('plus').onclick=()=>{zoom=Math.min(8,zoom*1.5);render()};$('minus').onclick=()=>{zoom=Math.max(.75,zoom/1.5);render()};$('fit').onclick=()=>{zoom=1;render()};
+$('download').onclick=()=>{
+  const url=URL.createObjectURL(new Blob([JSON.stringify(payload(),null,2)],{type:'application/json'}));
+  const a=document.createElement('a');a.href=url;a.download='p06_screw_marks.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+$('upload').onchange=async e=>{
+  try{const replacement=validate(JSON.parse(await e.target.files[0].text()));
+    if(Object.keys(marks).length && !confirm('用导入文件替换本浏览器的当前标记？'))return;
+    marks=replacement;history=[];persist();select(0);}
+  catch(err){$('notice').textContent='恢复失败：'+err.message}finally{e.target.value='';}
+};
+try{const stored=localStorage.getItem(storeKey);if(stored)marks=validate(JSON.parse(stored));}
+catch(err){$('notice').textContent='未能恢复暂存：'+err.message;}
+window.addEventListener('resize',render);
+select(Math.max(0,tasks.findIndex(t=>keys.some(k=>!complete((marks[t.object_id]||{})[k])))));
+</script></body></html>
