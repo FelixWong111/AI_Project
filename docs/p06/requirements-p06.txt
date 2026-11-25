@@ -1,0 +1,12 @@
+# Direct dependencies validated in ai-p06-yolo on Python 3.11.18, 2026-11-22.
+# Complete observed Python-package versions: requirements-p06-lock.txt.
+# Python 3.11.x. Install torch/torchvision from the official cu126 index first:
+# python -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu126
+# Then install this file from https://pypi.org/simple in the P06 venv only.
+numpy==1.26.4
+opencv-python==4.10.0.84
+cv2-enumerate-cameras==1.4.0
+torch==2.7.1
+torchvision==0.22.1
+ultralytics==8.3.236
+Pillow==10.4.0

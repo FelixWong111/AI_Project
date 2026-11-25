@@ -1,0 +1,8 @@
+{
+  "difference_threshold": 30,
+  "minimum_area": 40,
+  "kernel_size": 3,
+  "association_fraction": 0.25,
+  "duplicate_iou": 0.8,
+  "maximum_foreground_fraction": 0.45
+}
