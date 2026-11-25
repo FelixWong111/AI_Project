@@ -6,7 +6,7 @@ import hashlib
 import cv2
 import numpy as np
 
-from .p06_inference import _frame, _observations
+from .models.baseline3.inference import _frame, _observations
 
 DEFAULTS = dict(difference_threshold=30, minimum_area=40, kernel_size=3,
                 association_fraction=.25, duplicate_iou=.8, maximum_foreground_fraction=.45)

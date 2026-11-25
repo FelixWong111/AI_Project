@@ -21,7 +21,7 @@ import warnings
 from PIL import Image, ImageOps
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from src.p06_data import CLASSES, DataError, from_yolo, require, to_yolo
+from src.data.p06_labelme import CLASSES, DataError, from_yolo, require, to_yolo
 from tools.p06_preview_annotations import digest, draw_preview, load_preview
 
 VAL_IMAGES=('pass01.jpg','pass07.jpg','pass13.jpg','pass19.jpg','pass25.jpg','pass32.jpg',

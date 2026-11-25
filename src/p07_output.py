@@ -80,6 +80,14 @@ class Journal:
         self.latency_file.close()
 
 
+def write_diagnostics(directory: Path, images: list, metadata: dict):
+    """Additive evidence sidecar; keep the course output contracts unchanged."""
+    rows = [dict(image_id=iid, expected_counts=dict(expected),
+                 result={k: v for k, v in result.items() if not k.startswith('_')})
+            for iid, expected, result in images]
+    dump(directory / 'diagnostics.json', dict(schema_version=1, model=metadata, images=rows))
+
+
 def export_result(directory: Path, image_id: str, model: str, result: dict, expected: dict, run_config: dict):
     directory.mkdir(parents=True, exist_ok=False)
     def write(name, fields, rows):
@@ -89,11 +97,15 @@ def export_result(directory: Path, image_id: str, model: str, result: dict, expe
             writer.writerows(rows)
     write("images.csv", IMAGE_FIELDS, [dict(image_id=image_id, model_id=model, **{k: result.get(k) for k in IMAGE_FIELDS[2:]})])
     if result.get("counts") is not None:
-        write("objects.csv", OBJECT_FIELDS, [dict(image_id=image_id, model_id=model, **obj) for obj in result["objects"]])
+        fields = ('detection_id','class_id','xmin','ymin','xmax','ymax','score')
+        write("objects.csv", OBJECT_FIELDS, [dict(image_id=image_id, model_id=model,
+              **{k:obj[k] for k in fields}) for obj in result["objects"]])
         write("counts.csv", COUNT_FIELDS, [dict(image_id=image_id, class_id=c, observed_count=result["counts"][str(c)],
               expected_count=0 if c == 0 else expected[str(c)],
               difference=result["counts"][str(c)]-(0 if c == 0 else expected[str(c)])) for c in range(6)])
     dump(directory / "run_config.json", dict(run_config, per_image_expected_counts={image_id: expected}))
+    if model == 'baseline3':
+        write_diagnostics(directory, [(image_id, expected, result)], run_config)
 
 
 class Recorder:

@@ -7,7 +7,7 @@ import unittest
 
 from PIL import Image
 
-from src.p06_data import DataError, inspect_dataset
+from src.data.p06_labelme import DataError, inspect_dataset
 from tools.p06_preview_annotations import COLORS, draw_preview, load_preview, generate
 
 
@@ -62,7 +62,7 @@ class PreviewTests(unittest.TestCase):
 
     def test_dimension_mismatch_refused(self):
         path=self.fixture(6)
-        doc=json.loads(path.read_text()); doc['imageWidth']=120; doc['imageHeight']=80
+        doc=json.loads(path.read_text(encoding='utf-8')); doc['imageWidth']=120; doc['imageHeight']=80
         path.write_text(json.dumps(doc))
         with self.assertRaisesRegex(DataError,'display'):
             load_preview(path)
@@ -92,7 +92,7 @@ class PreviewTests(unittest.TestCase):
 
     def test_one_mismatch_is_reported_without_guessing(self):
         path=self.fixture(6)
-        doc=json.loads(path.read_text()); doc['imageHeight']=80
+        doc=json.loads(path.read_text(encoding='utf-8')); doc['imageHeight']=80
         path.write_text(json.dumps(doc))
         out=self.root/'out'
         summary=generate(self.source,out)

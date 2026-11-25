@@ -8,7 +8,7 @@ import unittest
 from unittest.mock import patch
 
 from PIL import Image
-from src.p06_data import DataError
+from src.data.p06_labelme import DataError
 from tools.p06_build_dataset import create_plan, build_dataset, validate_artifacts, validate_plan
 from tools.p06_build_dataset_v2 import create_v2_plan, validate_v2_plan
 

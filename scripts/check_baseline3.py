@@ -1,8 +1,9 @@
-"""Real CUDA detector integration checks, using validation data only."""
+"""Explicit frozen-YOLO control checks; size-mode checks use check_baseline3_size."""
 from __future__ import annotations
 
 import csv
 import json
+import os
 import subprocess
 import sys
 import time
@@ -38,7 +39,7 @@ def main():
     assert len(validation)==46
     chosen=next(r for r in validation if r['label']=='PASS')
     path=ROOT/chosen['path'];assert digest(path)==chosen['sha256']
-    config=json.loads((ROOT/'config/p07.json').read_text(encoding='utf-8'))
+    config=json.loads((ROOT/'config/p07_yolo_frozen.json').read_text(encoding='utf-8'))
     fixed=reference_counts();backend=load_backend('real','baseline3',config)
     frame=load_image_bgr(str(path));original=frame.copy()
     engine=backend.native.detector._model
@@ -69,13 +70,13 @@ def main():
     write_json(ROOT/'models/baseline3/training_record.json',record)
     def command(args,log):
         run=subprocess.run([sys.executable,'-B',*args],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,
-                           encoding='utf-8',timeout=240)
+                           encoding='utf-8',timeout=240,env=dict(os.environ, PYTHONIOENCODING='utf-8'))
         (out/log).write_text(run.stdout,encoding='utf-8')
         evidence['commands'].append(dict(command=subprocess.list2cmdline([sys.executable,'-B',*args]),exit_code=run.returncode))
         assert run.returncode==0,run.stdout
     # The baseline3 batch includes all approved validation images. No test input is enumerated.
     batch=out/'batch-baseline3'
-    command(['predict.py','--input_dir',str(path.parent),'--model','baseline3','--counts_file',
+    command(['predict.py','--config','config/p07_yolo_frozen.json','--input_dir',str(path.parent),'--model','baseline3','--counts_file',
              'outputs/work_orders/validation.json','--output_dir',str(batch)],'batch.log')
     images=rows(batch/'images.csv');objects=rows(batch/'objects.csv');counts=rows(batch/'counts.csv')
     assert len(images)==46 and len(counts)==46*6
@@ -124,7 +125,7 @@ def main():
          patch.object(cv2,'namedWindow'),patch.object(cv2,'resizeWindow'),patch.object(cv2,'setMouseCallback',side_effect=register), \
          patch.object(cv2,'imshow'),patch.object(cv2,'waitKey',side_effect=wait), \
          patch.object(cv2,'getWindowProperty',return_value=1),patch.object(cv2,'destroyAllWindows'):
-        assert app.main(['--model','baseline1','--image',str(path),'--output-dir',str(out/'controller')])==0
+        assert app.main(['--config','config/p07_yolo_frozen.json','--model','baseline1','--image',str(path),'--output-dir',str(out/'controller')])==0
     exports=list((out/'controller').rglob('images.csv'));assert len(exports)==3
     assert {rows(p)[0]['model_id'] for p in exports}=={'baseline1','baseline2','baseline3'}
     evidence['gui_controller']=dict(status='PASS',scope='Real weights/inference; only native window calls stubbed',actions=actions,seen=seen)
@@ -132,7 +133,7 @@ def main():
     names=[chosen['image_id']]+id0[:1]
     for i,name in enumerate(names):
         record_path=next(ROOT/r['path'] for r in validation if r['image_id']==name)
-        command(['app.py','--headless','--model','baseline3','--image',str(record_path),
+        command(['app.py','--config','config/p07_yolo_frozen.json','--headless','--model','baseline3','--image',str(record_path),
                  '--max-frames','1','--timeout','90','--output-dir',str(out/f'app-{i}')],f'app-{i}.log')
     # Protect all pre-existing baseline1/2 artifacts and configuration, plus P03 metadata.
     assert all(digest(ROOT/file)==sha for file,sha in before['models'].items())

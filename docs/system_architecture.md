@@ -2,7 +2,7 @@
 
 `app.py`（OpenCV 实时界面）和 `predict.py`（课程批处理入口）共同调用 `src/p07_bridge.py:load_backend`。注册表保留 baseline1、baseline2、baseline3、final 四个 ID；所有生产路径均为真实模型，未配置的检测模型报告 ERROR 和缺失原因。
 
-Baseline3 内置工厂指向 src/adapters/baseline3.py，复用迁移后的 P06 检测源 src/models/baseline3/inference.py；config/baseline3.json 绑定本地真实 best.pt 的 SHA256 和冻结参数。P06只生成真实检测观察，P07补充公共工单判定和ID0警告；ObjectBackend负责同帧数量重判，始终保留原目标观测。Final没有默认指向Baseline3，防止冒充研究改进。能力缺口见 docs/p06/compliance_review.md。
+Baseline3 内置工厂指向 src/adapters/baseline3.py。默认SizeVerifiedBackend接入src/p06_pipeline.py的检测、前景、尺寸及策略证据；FrozenYOLOBackend仅用于显式yolo_frozen对照。config/baseline3.json继续绑定相同真实best.pt与冻结参数。P07 adapter拥有最终业务判定；ObjectBackend识别business_decision_owner并委托重判，不能再用纯数量规则覆盖尺寸FAIL/REVIEW。工单只改变决策，不改变框、类别、计数或测量。Final未配置。当前流程和限制见docs/baseline3_size_integration.md；旧合规审查保留为历史。
 
 Baseline1 的 HOG、MLP 序列化和推理位于 `src/models/baseline1/`，沿用 P04 的算法贡献。Baseline2 的冻结 ResNet18 和分类参数推理位于 `src/adapters/baseline2.py`，沿用 P05 的算法贡献；`src/p05_bridge.py` 负责帧结果缓存和工单重判。`src/adapters/baseline1.py` 校验配置、模型和 freeze 校验值。UI 不实现特征或分类算法。
 

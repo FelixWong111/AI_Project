@@ -9,7 +9,7 @@ import numpy as np
 import cv2
 
 from src.p06_size_evidence import compare_dimensions, SizeEvidenceProcessor, validate_specs, validate_calibration
-from src.p06_inference import _observations
+from src.models.baseline3.inference import _observations
 
 
 class SizeEvidenceTests(unittest.TestCase):

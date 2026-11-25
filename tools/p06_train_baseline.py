@@ -15,7 +15,7 @@ import traceback
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from src.p06_data import CLASSES
+from src.data.p06_labelme import CLASSES
 from tools.p06_build_dataset import check_sources, validate_artifacts, validate_project
 from tools.p06_preview_annotations import digest, font
 

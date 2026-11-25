@@ -12,7 +12,7 @@ from tools.p06_train_baseline import CLASSES, Tee, compare_predictions, configur
 from tools.p06_build_dataset import check_sources
 from tools.p06_build_dataset_v2 import validate_project_v2
 from tools.p06_preview_annotations import digest, font
-from src.p06_data import require
+from src.data.p06_labelme import require
 
 DATA=ROOT/'output/p06/yolo_dataset_v2'
 OUT=ROOT/'output/p06/runs/baseline1_best_on_v2_val'

@@ -147,6 +147,8 @@ def main(argv=None) -> int:
     auto_record = args.record
     clicks = deque()
     requested_model = None
+    show_diagnostics = False
+    diagnostic_page = 0
     title = "P07 Mechanical Component Inspection"
 
     def stop_recording():
@@ -269,6 +271,8 @@ def main(argv=None) -> int:
             pending = loading is not None or requested_model is not None
             shown_result = current_result(model, backend, expected, cached, pending)
             effective_mode = "real" if model in MODELS[:2] else "mock" if backend.is_mock else "real"
+            ui_state.update(show_diagnostics=show_diagnostics, diagnostic_page=diagnostic_page,
+                            model_mode=backend.metadata.get('baseline3_mode', 'external'))
             canvas = present(displayed, shown_result, shown_expected, model, effective_mode, ui_state)
             if auto_record and displayed is not None:
                 recorder = Recorder(journal.path / (f'{effective_mode}-{time.time_ns()}.mp4'), config["record_fps"], (canvas.shape[1], canvas.shape[0]))
@@ -321,6 +325,10 @@ def main(argv=None) -> int:
                     key = ord(key_actions[action])
                 elif action and action.startswith("model:"):
                     key = ord(str(MODELS.index(action.split(":")[1])+1))
+                elif action == 'diagnostics':
+                    key = ord('d')
+                elif action in ('diag-prev', 'diag-next'):
+                    key = ord('[' if action == 'diag-prev' else ']')
                 elif action == "camera-index":
                     value = ask_integer("Camera index", camera_index, 999)
                     if value is not None and value != camera_index:
@@ -335,6 +343,10 @@ def main(argv=None) -> int:
                         dirty_counts = True
                 if key in (ord("q"), 27):
                     break
+                if key == ord('d'):
+                    show_diagnostics = not show_diagnostics
+                elif key in (ord('['), ord(']')):
+                    diagnostic_page += 1 if key == ord(']') else -1
                 if key == ord(" "):
                     if provider:
                         detecting = not detecting

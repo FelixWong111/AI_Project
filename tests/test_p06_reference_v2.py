@@ -1,7 +1,7 @@
 """Count/group diagnostics only; no real data or model inference."""
 import unittest
 from tools.p06_reference_v2 import group_records,count_summary,verify_support
-from src.p06_data import DataError
+from src.data.p06_labelme import DataError
 from types import SimpleNamespace
 
 

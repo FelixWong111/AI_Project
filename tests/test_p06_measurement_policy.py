@@ -10,7 +10,7 @@ import numpy as np
 from src.p06_measurement_policy import MeasurementPolicy,load_policy,GEOMETRY
 from src.p06_geometry import DEFAULT_PARAMETERS
 from src.p06_pipeline import create_backend
-from src.p06_inference import _observations
+from src.models.baseline3.inference import _observations
 
 
 ROOT=Path(__file__).resolve().parents[1]

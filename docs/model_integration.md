@@ -1,5 +1,8 @@
 # 模型部署
 
+> 2026-11-25接口更新：Baseline3默认由adapter消费P06尺寸证据，ObjectBackend保留adapter业务决策并委托重判；新增diagnostics.json，不改课程CSV字段。两种模式、字段及失败规则见[尺寸集成接口](baseline3_size_integration.md)。Baseline1/2接口不变。
+
+
 工单接口现统一使用 config/inspection.json 与 src/work_orders.py，见 docs/work_orders.md。冻结模型内部工单不改；加载时核对公共参考。两个图像级模型在特征提取前拒绝其他合法工单，GUI立即清空旧判定和分数。检测模型 count-only rejudge 由统一包装层计算，不改变检测观测。
 
 Baseline1：`config/baseline1.json` + `models/baseline1/baseline1.joblib` + 同目录 `freeze.json`，加载时校验 SHA256、预处理、类别映射和 sklearn 版本。训练时 StandardScaler 与 MLP 一起保存于 Pipeline。

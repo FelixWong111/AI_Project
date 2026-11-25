@@ -1,0 +1,17 @@
+{
+  "original_model_and_experiment_payloads_unchanged": true,
+  "updated_documentation_indices": [
+    "results/DIRECTORY_TREE.txt",
+    "results/README.md"
+  ],
+  "geometry_and_screw_core_bytes_unchanged": true,
+  "p03_paths_sizes_mtimes_unchanged": true,
+  "real_calibration_validated": false,
+  "measurement_policy_records": 0,
+  "teacher_confirmation": "PENDING_NOT_RECORDED",
+  "formal_test": "NOT_RUN",
+  "retrained": false,
+  "dependencies_installed": false,
+  "commit_push": false,
+  "frozen_yolo_sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d"
+}

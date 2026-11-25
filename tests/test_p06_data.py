@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 from PIL import Image
 
-from src.p06_data import CLASSES, DataError, inspect_dataset, to_yolo, from_yolo, export_dataset
+from src.data.p06_labelme import CLASSES, DataError, inspect_dataset, to_yolo, from_yolo, export_dataset
 
 
 class DataTests(unittest.TestCase):
@@ -113,7 +113,7 @@ class DataTests(unittest.TestCase):
         export_dataset(self.report(confirmed_empty={'a.png'}), out)
         self.assertEqual((out / 'labels/unpartitioned/a.txt').read_bytes(), b'')
         self.assertEqual(path.read_bytes(), original)
-        self.assertFalse(json.loads((out / 'conversion.json').read_text())['partition_verified'])
+        self.assertFalse(json.loads((out / 'conversion.json').read_text(encoding='utf-8'))['partition_verified'])
 
     def test_refuse_nested_output_and_report_source_overwrite(self):
         path = self.sample()
@@ -247,9 +247,9 @@ class DataTests(unittest.TestCase):
         self.assertTrue(report['partition_verified'])
         out = self.root / 'out'
         export_dataset(report, out)
-        self.assertEqual((out / 'labels/train/a.txt').read_text().strip(), '1 0.3 0.35 0.4 0.5')
+        self.assertEqual((out / 'labels/train/a.txt').read_text(encoding='utf-8').strip(), '1 0.3 0.35 0.4 0.5')
         self.assertFalse(list(out.rglob('bb.txt')))
-        saved = json.loads((out / 'objects.json').read_text())
+        saved = json.loads((out / 'objects.json').read_text(encoding='utf-8'))
         self.assertEqual([r['image_id'] for r in saved], ['a.png'])
         self.assertEqual(saved[0]['objects'][0]['xyxy'], [20,10,100,60])
         with self.assertRaises(FileExistsError):
@@ -277,7 +277,7 @@ class DataTests(unittest.TestCase):
         self.sample(label='bad')
         report = self.root / 'errors.json'
         self.assertEqual(self.cli('check','--input',self.input,'--report',report).returncode, 1)
-        self.assertEqual(json.loads(report.read_text())['errors'][0]['type'], 'UNKNOWN_LABEL')
+        self.assertEqual(json.loads(report.read_text(encoding='utf-8'))['errors'][0]['type'], 'UNKNOWN_LABEL')
         self.assertEqual(self.cli('check','--input',self.input,'--report',report).returncode, 2)
 
 

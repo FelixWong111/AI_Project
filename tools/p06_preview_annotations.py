@@ -14,7 +14,7 @@ import sys
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from src.p06_data import CLASSES, DataError, _dimensions, _load_labelme_document, _parse_shapes, require
+from src.data.p06_labelme import CLASSES, DataError, _dimensions, _load_labelme_document, _parse_shapes, require
 
 # Red, blue, orange, purple, green, cyan. Same palette in all previews/sheets.
 COLORS=((210,35,45),(20,80,210),(230,125,0),(150,45,185),(20,135,55),(0,140,165))

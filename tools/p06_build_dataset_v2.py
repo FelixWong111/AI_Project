@@ -7,7 +7,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from src.p06_data import require
+from src.data.p06_labelme import require
 from tools.p06_preview_annotations import digest
 from tools.p06_build_dataset import create_plan, _validate_structure, build_dataset, summarize
 

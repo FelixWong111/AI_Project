@@ -1,5 +1,8 @@
 # Baseline3 课程要求与实现缺口审查
 
+> 历史范围说明：本文件主要记录早期仅检测版本。2026-11-25候选尺寸代码已接入P07；更新后的合规矩阵和仍缺的物理证据见[当前集成文档](../baseline3_size_integration.md)。不能把历史“无模块”误用到当前，也不能把成功接入误称完整Stage2验收通过。
+
+
 依据：Project-Man.pdf 第2–5页、team_plan_ai.md §2.1/2.2、HW-01、SW-03。当前不改检测算法、不补造物理参数、不实施 Stage3 研究改进；Formal held-out Test: NOT_RUN。
 
 ## 逐项结论

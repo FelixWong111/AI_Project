@@ -10,6 +10,9 @@
     "baseline1_config": "config/baseline1.json",
     "device": "cpu",
     "baseline2_bundle": "models/baseline2",
-    "baseline3_config": "config/baseline3.json"
+    "baseline3_config": "config/baseline3.json",
+    "baseline3_mode": "size_verified",
+    "baseline3_pipeline_config": "config/p06_pipeline_candidate.json",
+    "baseline3_acceptance_approval": null
   }
 }

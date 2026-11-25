@@ -11,6 +11,7 @@ from src.adapters.baseline2 import IMAGE_FIELDS
 from src.work_orders import load_cases
 from src.models.baseline1.features import load_image_bgr
 from src.p07_bridge import MODELS, UnavailableBackend, load_backend, validate_counts, validate_result
+from src.p07_output import write_diagnostics
 
 
 
@@ -35,7 +36,7 @@ def main(argv=None):
     try:backend=load_backend('real',args.model,config)
     except Exception as exc:
         load_error=str(exc);backend=UnavailableBackend(args.model,exc)
-    rows=[];objects=[];counts=[]
+    rows=[];objects=[];counts=[];diagnostics=[]
     for case in cases:
         try:
             if load_error:raise RuntimeError(load_error)
@@ -46,8 +47,12 @@ def main(argv=None):
             print(f'{case["image_id"]}: {exc}',file=sys.stderr)
         row=dict(result,image_id=case['image_id'],model_id=args.model)
         rows.append({k:row.get(k) for k in IMAGE_FIELDS})
+        if args.model == 'baseline3':
+            diagnostics.append((case['image_id'], case['expected_counts'], result))
         if args.model in ('baseline3','final') and result.get('counts') is not None:
-            objects.extend(dict(image_id=case['image_id'],model_id=args.model,**o) for o in result['objects'])
+            fields = ('detection_id','class_id','xmin','ymin','xmax','ymax','score')
+            objects.extend(dict(image_id=case['image_id'],model_id=args.model,
+                                **{k:o[k] for k in fields}) for o in result['objects'])
             for c in '012345':
                 expected=0 if c=='0' else case['expected_counts'][c]
                 observed=result['counts'][c]
@@ -66,5 +71,7 @@ def main(argv=None):
     metadata.update(per_image_expected_counts={c['image_id']:c['expected_counts'] for c in cases},
                     load_error=load_error,evidence_mode='batch_inference')
     (args.output_dir/'run_config.json').write_text(json.dumps(metadata,indent=2,ensure_ascii=False),encoding='utf-8')
+    if args.model == 'baseline3':
+        write_diagnostics(args.output_dir, diagnostics, metadata)
     print(f'{args.model}: {len(rows)} rows -> {args.output_dir}')
     return 1 if any(r['status']=='ERROR' for r in rows) else 0

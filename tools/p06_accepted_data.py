@@ -10,7 +10,7 @@ import subprocess
 import tempfile
 
 from PIL import Image
-from src.p06_data import CLASSES,_box,_load_labelme_document,_parse_shapes,from_yolo
+from src.data.p06_labelme import CLASSES,_box,_load_labelme_document,_parse_shapes,from_yolo
 from tools.p06_preview_annotations import digest
 from tools.p06_build_dataset import summarize,validate_ultralytics
 

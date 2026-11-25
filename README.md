@@ -6,7 +6,9 @@
 
 Baseline1 实时异常输入修正：P07 现启用训练特征支持范围检查，超出范围返回 REVIEW（标签/分数为空），不强制 FAIL。原始 HOG+MLP 权重和验证成绩不变；predict.py 保留原始基线，门控不参与其基线指标。详情及诊断证据见 [实时诊断说明](docs/baseline1_live_diagnosis.md)。部署 Baseline1 到 P07 时还需携带 `models/baseline1/scene_guard.npz`。其他模型不变。
 
-机械零件视觉检测：实时摄像头、图片和视频输入，模型切换、记录和统一批处理。Baseline1/2 为实拍数据训练的固定工单分类器；Baseline3 已接入 P06 的真实六类 YOLO11n 权重和计数判定；Final 尚未配置。Baseline3 的尺度/容差及完整未知件拒识尚未提供，不能宣称完整课程功能验收通过。详见 [Baseline3接入](docs/baseline3_integration.md) 和 [功能合规审查](docs/p06/compliance_review.md)。
+机械零件视觉检测：实时摄像头、图片和视频输入，模型切换、记录和统一批处理。Baseline1/2 为实拍数据训练的固定工单分类器；Baseline3 默认已接入 P06 最新的检测、可选前景关联、几何候选、规格比较及测量策略，Final 尚未配置。当前真实标定仍未验证，策略记录为空；系统会报告具体 FAIL/REVIEW 原因，不能宣称物理尺寸和完整未知件拒识已验收。详见 [当前尺寸模式、判定及人工步骤](docs/baseline3_size_integration.md)。
+
+Baseline3 默认运行 `python app.py --model baseline3`（size_verified）；复现原冻结数量基线用 `python app.py --model baseline3 --config config/p07_yolo_frozen.json`（yolo_frozen）。两者在界面和run_config明确标识，失败不静默回退。点击 **Sizes / Reasons** 或D查看真实逐对象尺寸、参考/允许量、标定状态和失败原因；Prev/Next或[、]切换对象。候选毫米数值标为PROVISIONAL。快照和批处理增加diagnostics.json，四种课程输出字段保持不变。最新验证见 [2026-11-25集成记录](results/integration/baseline3_size_20261125/README.md)。
 
 **Official held-out test: NOT_RUN。** 本次只训练与验证，未读取正式测试图片、测试真值或计算测试成绩。验证结果不是正式测试结果。
 

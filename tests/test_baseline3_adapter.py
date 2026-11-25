@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 import numpy as np
 
-from src.adapters.baseline3 import Baseline3Backend
+from src.adapters.baseline3 import FrozenYOLOBackend
 from src.models.baseline3.inference import _observations
 from src.work_orders import reference_counts
 
@@ -29,7 +29,7 @@ class Baseline3AdapterTests(unittest.TestCase):
         self.detector = SimpleNamespace(metadata=dict(weights=str(self.weights),model_version='FIXTURE'),
                                         _params=dict(max_det=300),synchronize=lambda:None,infer=infer)
         with patch('src.adapters.baseline3.load_detector',return_value=self.detector):
-            self.backend = Baseline3Backend(self.config)
+            self.backend = FrozenYOLOBackend(self.config)
         self.frame = np.full((20,20,3),128,np.uint8)
 
     def test_count_rule_and_rejudge_preserve_all_observations(self):

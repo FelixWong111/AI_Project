@@ -11,7 +11,7 @@ import numpy as np
 from src.p06_pipeline import EvidencePipeline,IntegratedBackend,create_backend
 from src.p06_size_evidence import SizeEvidenceProcessor
 from src.p06_foreground import ForegroundAssociator
-from src.p06_inference import _observations
+from src.models.baseline3.inference import _observations
 from src.p07_bridge import validate_result,load_backend
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -115,7 +115,7 @@ class PipelineTests(unittest.TestCase):
     def test_factory_rejects_bad_background_before_gpu_load(self):
         cfg=json.loads((ROOT/'config/p06_pipeline_candidate.json').read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as temp:
-            image=Path(temp)/'background.png';cv2.imwrite(str(image),self.bg)
+            image=Path(temp)/'background.png';cv2.imencode('.png',self.bg)[1].tofile(image)
             cfg['background']=dict(path=str(image),file_sha256='wrong',reference_id='x',roi=None)
             cfg['foreground_enabled']=True
             config=Path(temp)/'pipeline.json';config.write_text(json.dumps(cfg),encoding='utf-8')

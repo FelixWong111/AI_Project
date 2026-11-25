@@ -200,11 +200,13 @@ class ObjectBackend:
         expected = validate_counts(expected_counts)
         validate_frame(frame_bgr)
         raw = self.native.infer(frame_bgr, expected)
-        result = judge_observed(raw, expected)
+        result = raw if self.metadata.get('business_decision_owner') == 'baseline3_adapter' else judge_observed(raw, expected)
         validate_result(result, self.model, frame_bgr.shape)
         return result
 
     def rejudge(self, result, expected_counts):
+        if self.metadata.get('business_decision_owner') == 'baseline3_adapter':
+            return self.native.rejudge(result, validate_counts(expected_counts))
         return judge_observed(result, expected_counts)
 
 

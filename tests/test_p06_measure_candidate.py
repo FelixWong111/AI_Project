@@ -95,7 +95,7 @@ class MeasureCandidateTests(unittest.TestCase):
                 generate(source, output)
             with self.assertRaises(ValueError):
                 generate(source, source / 'derived')
-            self.assertEqual(sentinel.read_text(), 'keep')
+            self.assertEqual(sentinel.read_text(encoding='utf-8'), 'keep')
             self.assertEqual(list(source.iterdir()), [])
 
     def test_bad_input_does_not_publish_a_partial_experiment(self):

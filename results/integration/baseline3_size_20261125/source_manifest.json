@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "path": "results/integration/baseline3_size_20261125/acceptance.json",
+      "sha256": "7c305f798b031f670aa6a21ec065f100f4c8e5ed63b5099f746f951bfcabbfc8",
+      "source": "outputs/p07_size_integration_20261125/1795570935167751700/acceptance.json",
+      "source_sha256": "02c1db9a01bca6b020231fe1be169e3eee71c6f80fbb66c50beefbe5335c20d5",
+      "format": "Compact JSON, same values and every object/contour retained"
+    },
+    {
+      "path": "results/integration/baseline3_size_20261125/diagnostics.json",
+      "sha256": "fce100d3d3ecd3866f6c1f51ab675382f6b5a7fba8898b5164f0188b0914aec6",
+      "source": "outputs/p07_size_integration_20261125/1795570935167751700/size-batch/diagnostics.json",
+      "source_sha256": "678340859cc0b2008b23305da6ad9970450db588a8da85475a68410895f444b5",
+      "format": "Compact JSON, same values and every object/contour retained"
+    },
+    {
+      "path": "results/integration/baseline3_size_20261125/baseline12-regression.json",
+      "sha256": "ef5c424a1679f495858a83ca27a52b7e954486e4ba31e68842fdc50ec5f490eb",
+      "source": "outputs/acceptance/1795570268126545500/acceptance.json",
+      "source_sha256": "3afc43cd5b4771990961a332f69eb1f0a55945f3b91de6dbfc29a2e0914ccf29"
+    },
+    {
+      "path": "results/integration/baseline3_size_20261125/work-order-regression.json",
+      "sha256": "11b103c7f09fbcabb122ecd461f178f7201bdb1740a68a069a7da272f2c7ed7e",
+      "source": "outputs/work_orders_acceptance/1795570323498222400/acceptance.json",
+      "source_sha256": "44a55ca9dc0396e7c0a914f22ab79e38268696e738a089fe7f1dcfb96e02dbef"
+    },
+    {
+      "path": "results/integration/baseline3_size_20261125/unit-tests.log",
+      "sha256": "18699529ded09697e29023b2862a8a7410b595f889a36f3fadc1d12620ee47cb",
+      "source": "outputs/p07_size_integration_20261125/unit-tests-final.log",
+      "source_sha256": "52ccaec8b00d81b6fd9e7b8a1ec3ef9eaf0560f0b2ac9c99c6ff50a488e06664"
+    },
+    {
+      "path": "results/integration/baseline3_size_20261125/protection.json",
+      "sha256": "687264f103de4b9c2e2d713ba293c6ab9095baa4a7c14f072eac41d198793b21",
+      "source": "outputs/p07_size_integration_20261125/protection.json",
+      "source_sha256": "687264f103de4b9c2e2d713ba293c6ab9095baa4a7c14f072eac41d198793b21"
+    },
+    {
+      "path": "docs/baseline3_size_details.png",
+      "sha256": "a49dad150e3edf9a7ffbbc3451eff43255370681d19c9140e297790ba7b81ae9",
+      "source": "outputs/p07_size_integration_20261125/1795570935167751700/pass102.jpg.json",
+      "source_sha256": "cdf9a07aba461e70c2004f5414e77b2903053dbdeb57eea5e5e38d80ad2283c5",
+      "note": "Current renderer, saved actual Validation inference; no new model call"
+    },
+    {
+      "path": "results/integration/baseline3_size_20261125/README.md",
+      "sha256": "6f438c95241cc12608fb07ab114315d564717e777214c125fd2d1d4209bd1b1f",
+      "note": "New explanation"
+    }
+  ],
+  "paths_relative_to_repository_root": true,
+  "official_test": "NOT_RUN",
+  "source_commit": "671a594fa8a9078136a88aeadc1f85e08cca9356",
+  "working_tree": "Uncommitted integration fixes; no commit or push",
+  "source_directory": "outputs/p07_size_integration_20261125/1795570935167751700",
+  "unit_test_count": 255,
+  "physical_acceptance": "NOT_VERIFIED"
+}

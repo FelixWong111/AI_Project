@@ -8,9 +8,9 @@ from pathlib import Path
 
 import numpy as np
 
-from .p06_data import CLASSES
+from .data.p06_labelme import CLASSES
 from .p06_geometry import measure_object
-from .p06_inference import _frame, _observations
+from .models.baseline3.inference import _frame, _observations
 
 DIMENSIONS = {
     1: ('underhead_length', 'thread_major_diameter'),

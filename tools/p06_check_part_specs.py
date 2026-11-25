@@ -13,7 +13,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from src.p06_data import CLASSES
+from src.data.p06_labelme import CLASSES
 
 FIELDS={1:{'underhead_length':'under_head_length_mm','thread_major_diameter':'thread_major_diameter_mm'},
         2:{'underhead_length':'under_head_length_mm','thread_major_diameter':'thread_major_diameter_mm'},

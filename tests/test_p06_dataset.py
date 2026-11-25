@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 from PIL import Image
 
-from src.p06_data import DataError
+from src.data.p06_labelme import DataError
 from tools.p06_build_dataset import create_plan, validate_plan, build_dataset, validate_artifacts
 
 
@@ -57,7 +57,7 @@ class DatasetTests(unittest.TestCase):
         self.assertEqual(report['instances'],2)
         self.assertLess(report['max_roundtrip_error_pixels'],1e-6)
         self.assertEqual((out/'labels/val/fail13.txt').read_bytes(),b'')
-        self.assertEqual((out/'labels/train/fail11.txt').read_text().split()[0],'0')
+        self.assertEqual((out/'labels/train/fail11.txt').read_text(encoding='utf-8').split()[0],'0')
         with Image.open(out/'images/train/pass01.png') as im:
             self.assertEqual(im.size,(80,120)); self.assertEqual(im.getexif().get(274,1),1)
         validate_artifacts(plan,out)

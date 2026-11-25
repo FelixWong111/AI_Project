@@ -61,6 +61,14 @@ results/integration/baseline3/controller/20261124T091623Z-21ade2fe/latency.csv
 results/integration/baseline3/controller/20261124T091623Z-21ade2fe/latency_summary.json
 results/integration/baseline3/controller/20261124T091623Z-21ade2fe/session.json
 results/integration/baseline3/worker.json
+results/integration/baseline3_size_20261125/README.md
+results/integration/baseline3_size_20261125/acceptance.json
+results/integration/baseline3_size_20261125/baseline12-regression.json
+results/integration/baseline3_size_20261125/diagnostics.json
+results/integration/baseline3_size_20261125/protection.json
+results/integration/baseline3_size_20261125/source_manifest.json
+results/integration/baseline3_size_20261125/unit-tests.log
+results/integration/baseline3_size_20261125/work-order-regression.json
 results/integration/environment-after.txt
 results/integration/p06_merge/conflict-resolution.json
 results/integration/p06_merge/dependency-review.json

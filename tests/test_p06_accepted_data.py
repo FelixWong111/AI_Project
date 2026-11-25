@@ -6,7 +6,7 @@ from pathlib import Path
 import tempfile
 import unittest
 from PIL import Image
-from src.p06_data import CLASSES,DataError,from_yolo,to_yolo
+from src.data.p06_labelme import CLASSES,DataError,from_yolo,to_yolo
 from tools.p06_accepted_data import accepted_plan,prepare_runtime,check_sources,parse_txt
 
 

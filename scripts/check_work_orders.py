@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import subprocess
 import sys
 import time
@@ -41,7 +42,8 @@ def run():
                   commands=[],functional_files={k:v.relative_to(ROOT).as_posix() for k,v in functional.items()})
     def command(args, logname, expected_code=0):
         completed=subprocess.run([sys.executable,'-B',*args],cwd=ROOT,stdout=subprocess.PIPE,
-                                 stderr=subprocess.STDOUT,encoding='utf-8',timeout=120)
+                                 stderr=subprocess.STDOUT,encoding='utf-8',timeout=120,
+                                 env=dict(os.environ, PYTHONIOENCODING='utf-8'))
         (out/logname).write_text(completed.stdout,encoding='utf-8')
         evidence['commands'].append(dict(command=subprocess.list2cmdline([sys.executable,'-B',*args]),exit_code=completed.returncode))
         assert completed.returncode==expected_code, completed.stdout

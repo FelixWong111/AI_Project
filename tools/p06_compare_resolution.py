@@ -14,7 +14,7 @@ from tools.p06_train_baseline import (inspect_environment,configure_runtime,vali
                                      require,save_json,Tee,snapshot)
 from tools.p06_accepted_data import accepted_plan,check_sources,prepare_runtime
 from tools.p06_preview_annotations import digest
-from src.p06_data import CLASSES
+from src.data.p06_labelme import CLASSES
 
 SOURCE=ROOT/'data/p03/development_v2'
 ACCEPTANCE=ROOT/'output/p06_gt_correction_01/acceptance'

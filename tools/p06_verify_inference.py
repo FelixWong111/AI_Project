@@ -37,9 +37,9 @@ def main():
         save(out/'protected_git_files_sha256.json',protected)
         source=ROOT/'data/p03/development_v2'
         plan=accepted_plan(source,ROOT/'output/p06_gt_correction_01/acceptance')
-        frozen=json.loads((ROOT/'config/p06_baseline3.json').read_text(encoding='utf-8'))
+        frozen=json.loads((ROOT/'config/baseline3.json').read_text(encoding='utf-8'))
         p07_config=json.loads((ROOT/'config/p07.json').read_text(encoding='utf-8'))
-        p07_config.update(bridge='src.p06_inference:create_backend',model_config={'config_path':'config/p06_baseline3.json'})
+        p07_config.update(bridge='src.models.baseline3.inference:create_backend',model_config={'config_path':'config/baseline3.json'})
         save(out/'p07_detection_only.json',p07_config)
         backend=load_backend('real','baseline3',p07_config)
         save(out/'metadata.json',backend.metadata)

@@ -4,7 +4,7 @@ import unittest
 import cv2
 import numpy as np
 from src.p06_foreground import ForegroundAssociator,DEFAULTS
-from src.p06_inference import _observations
+from src.models.baseline3.inference import _observations
 
 
 class ForegroundTests(unittest.TestCase):

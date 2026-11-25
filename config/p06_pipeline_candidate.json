@@ -2,7 +2,7 @@
   "schema_version": 1,
   "foreground_enabled": false,
   "measurement_policy_path": "config/p06_measurement_policy.json",
-  "detector_config_path": "config/p06_baseline3.json",
+  "detector_config_path": "config/baseline3.json",
   "specs_path": "config/p06_part_specs_candidate.json",
   "calibration_path": "config/p06_size_calibration_candidate.json",
   "capture_geometry_id": "p06-development-fixed-camera-candidate",

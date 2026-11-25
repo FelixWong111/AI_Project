@@ -1,5 +1,8 @@
 # P06 统一候选证据接口
 
+> P07接入更新：默认config/p07.json现经src.adapters.baseline3的size_verified模式加载本候选管线并进行有信任门的业务判定；原生P06候选接口仍只提供REVIEW证据。说明见[当前P07集成](../baseline3_size_integration.md)。foreground_enabled=false时实际原因为FOREGROUND_DISABLED，非BACKGROUND_REFERENCE_MISSING。
+
+
 当前交付已显式关闭前景补检，foreground_enabled=false。工厂消费
 measurement_policy_path 指向的验证记录注册表，按经过验证的条件自动接入尺寸可信证据。
 当前真实注册表为空。详见 measurement_policy.md。下文前景关联描述保留为可选实验模式。

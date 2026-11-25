@@ -1,5 +1,8 @@
 # Baseline3 真实模型集成
 
+> 2026-11-25更新：下文保留冻结YOLO对照及早期集成说明；当前默认已改为size_verified。最新入口、判定、界面、验证和人工标定步骤以[当前尺寸集成文档](baseline3_size_integration.md)为准。原冻结对照须显式指定config/p07_yolo_frozen.json，不能将旧的“未提供尺寸模块”描述当作当前代码状态。
+
+
 以P07提交05d2a43为工程基础，接入P06提交dceda24206096c7be1e518083afc38764ae4d5d9。保持合并待提交，不自动commit/push；不训练、不使用正式Test。
 
 ## 交付资源

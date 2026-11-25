@@ -5,8 +5,9 @@ import json
 from pathlib import Path
 
 import cv2
+import numpy as np
 
-from .p06_inference import create_backend as create_detector, _observations, _expected, _frame
+from .models.baseline3.inference import create_backend as create_detector, _observations, _expected, _frame
 from .p06_foreground import ForegroundAssociator
 from .p06_size_evidence import SizeEvidenceProcessor, load_specs
 from .p06_measurement_policy import load_policy
@@ -166,7 +167,7 @@ def create_backend(*,model_id,config):
         image_path=path(background['path'])
         if hashlib.sha256(image_path.read_bytes()).hexdigest()!=background['file_sha256']:
             raise ValueError('Background file SHA256 mismatch')
-        image=cv2.imread(str(image_path),cv2.IMREAD_COLOR)
+        image=cv2.imdecode(np.fromfile(image_path,dtype=np.uint8),cv2.IMREAD_COLOR)
         if image is None:raise ValueError('Background could not be decoded')
         params=json.loads(path(settings['foreground_config_path']).read_text(encoding='utf-8-sig'))
         foreground=ForegroundAssociator(image,reference_id=background['reference_id'],
