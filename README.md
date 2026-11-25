@@ -1,5 +1,7 @@
 # Mechanical Component Inspection
 
+Stage 2实机延迟：激活`.venv311`后运行 `python scripts/benchmark_live.py`，默认Camo Camera0，依次对Baseline1/2/3做20新帧预热＋100新帧测量。记录在`results/live_benchmark/<run_id>/`，完整说明见[实时测试脚本](docs/live_benchmark.md)。Baseline3不允许退回YOLO-only；实际结果需用户连接实体工位运行，本次开发验证不冒充实机成绩。
+
 工单规范：唯一公共参考位于 [`config/inspection.json`](config/inspection.json)，固定 ID1–ID5 各 1，ID0 恒为 0。实际数量属于 Ground Truth，不能反推工单。已归档 [训练工单](results/data_manifests/work_orders/train.json)（262条）与 [验证工单](results/data_manifests/work_orders/validation.json)（46条）。生成、GUI/批处理统一校验、UNSUPPORTED_COUNTS 和特殊工单功能测试说明见 [工单接口文档](docs/work_orders.md)。正式 Test 仍为 NOT_RUN。
 
 正式实验资料随 Git 交付，入口为 [results/README.md](results/README.md)。包含当前模型的训练/验证预测、真实标签与分数、指标/误判、数据清单、泄漏审计和集成验收；P05/P08 可直接从 GitHub 查阅。原始数据和本机 outputs 仍不上传，缺项和 Test: NOT_RUN 明确保留。
