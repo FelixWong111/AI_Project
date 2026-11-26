@@ -1,0 +1,4 @@
+image_id,model_id,status,predicted_label,prediction_score,score_type,non_catalogue_count
+A001.jpg,baseline1,PASS,PASS,0.9974772334098816,prob,
+A200.jpg,baseline1,PASS,PASS,0.9996479749679565,prob,
+A004.jpg,baseline1,PASS,PASS,0.999816358089447,prob,

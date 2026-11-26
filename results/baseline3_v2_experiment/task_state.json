@@ -1,0 +1,625 @@
+{
+  "schema": "baseline3-experiment/v1",
+  "created_at": "2026-11-25T19:14:24.997418+00:00",
+  "updated_at": "2026-11-26T01:37:56.669635+00:00",
+  "phase": "size_caliper_v3_report",
+  "tasks": {
+    "requirements_environment": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T19:19:44.057701+00:00",
+      "environment": "environment.json"
+    },
+    "preserve_old": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T19:18:57.778910+00:00",
+      "record": "old_baseline3.json",
+      "source_archive": "old_source_snapshot.zip"
+    },
+    "dataset_isolation": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T19:19:44.071561+00:00",
+      "pid": 25596,
+      "started_at": "2026-11-25T19:18:57.261988+00:00",
+      "evidence": "prepare.json"
+    },
+    "stage2_audit": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T19:20:35.675530+00:00",
+      "evidence": "stage2_audit.json",
+      "limitation": "Physical size compliance blocked; software review does not imply full Stage 2 pass"
+    },
+    "development": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:31:24.178357+00:00",
+      "scope": "Independent detector/provider dependency injection, unchanged decision/geometry algorithms"
+    },
+    "training": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:27:58.966298+00:00",
+      "pid": 55380,
+      "started_at": "2026-11-25T19:24:54.262476+00:00",
+      "epoch": 99,
+      "checkpoint": "models/baseline3_v2_candidate/resume_last.pt",
+      "log": "training/train.log",
+      "best": "models/baseline3_v2_candidate/best.pt",
+      "epochs": 99,
+      "seconds": 3778.554241899983
+    },
+    "size_calibration": {
+      "status": "BLOCKED",
+      "updated_at": "2026-11-25T19:20:35.698048+00:00",
+      "reason": "Missing compatible physical calibration, specimen/caliper truth, instructor approval and measurement validation; no credible size MAE"
+    },
+    "validation_selection": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:30:56.421774+00:00",
+      "pid": 23448,
+      "started_at": "2026-11-25T20:28:12.272966+00:00",
+      "selected": "new_c0.35_n0.5",
+      "runs": "validation/runs.json"
+    },
+    "candidate_selection": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:30:56.442264+00:00",
+      "recommended_detector": "new",
+      "full_pipeline": "BLOCKED"
+    },
+    "freeze": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:31:40.441136+00:00",
+      "pid": 52276,
+      "started_at": "2026-11-25T20:31:39.617823+00:00",
+      "evidence": "freeze.json"
+    },
+    "stage2_evaluation": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:32:04.464133+00:00",
+      "pid": 5848,
+      "started_at": "2026-11-25T20:31:40.617245+00:00",
+      "runs": "evaluation/runs.json",
+      "images": 30
+    },
+    "failure_analysis": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:32:04.839045+00:00",
+      "pid": 58340,
+      "started_at": "2026-11-25T20:32:04.640206+00:00",
+      "metrics": "comparison_metrics.csv",
+      "failures": "failure_cases/"
+    },
+    "performance": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:31:38.991949+00:00",
+      "pid": 16804,
+      "started_at": "2026-11-25T20:31:24.956669+00:00",
+      "offline": "benchmarks/offline_summary.json",
+      "live": "NOT_RUN: user must connect physical station"
+    },
+    "p07_compatibility": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:31:24.195962+00:00",
+      "pid": 58576,
+      "started_at": "2026-11-25T20:30:56.853267+00:00",
+      "evidence": "tests/real_compatibility.json",
+      "camera": "NOT_RUN"
+    },
+    "acceptance": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:32:05.185413+00:00",
+      "pid": 31812,
+      "started_at": "2026-11-25T20:32:05.008854+00:00",
+      "scope": "Preservation/freeze checks only; see separate software and physical acceptance records",
+      "final_evidence": "tests/final_acceptance.json"
+    },
+    "recommendation": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-25T20:32:05.390106+00:00",
+      "pid": 26780,
+      "started_at": "2026-11-25T20:32:05.346378+00:00",
+      "choice": "new",
+      "physical_stage2": "BLOCKED",
+      "live": "NOT_RUN"
+    },
+    "live_benchmark": {
+      "status": "BLOCKED",
+      "reason": "Requires user-connected Camo, physical platform and fresh arranged frames; no camera attempt or simulated live data",
+      "resume_command": "python scripts/benchmark_live.py --camera 0 --models baseline3 --frames 100 --warmup 20 --display --config results/baseline3_v2_experiment/configs/new_full.json"
+    },
+    "size_v1_inventory": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T00:41:46.885814+00:00",
+      "evidence": "size_development_v1/inventory.json"
+    },
+    "size_v1_rulers": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T00:50:39.295309+00:00",
+      "evidence": "size_development_v1/calibration.json",
+      "teacher_acceptance": "PENDING"
+    },
+    "size_v1_baseline": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T00:53:03.332562+00:00",
+      "evidence": "size_development_v1/baseline_summary.json"
+    },
+    "size_v1_tuning": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T00:57:09.313829+00:00",
+      "evidence": "size_development_v1/selection.json",
+      "retained_scenes_used": false
+    },
+    "size_v1_holdout": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T01:25:00.186185+00:00",
+      "evidence": "size_development_v1/holdout_acceptance.json",
+      "independent_specimen_generalization": false
+    },
+    "size_v1_public_validation": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T01:33:40.436676+00:00",
+      "evidence": "size_development_v1/public_comparison.json",
+      "formal_test": "NOT_RERUN",
+      "stage3_images": "NOT_ACCESSED"
+    },
+    "size_v1_acceptance": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T01:35:03.425830+00:00",
+      "evidence": "size_development_v1/final_acceptance.json",
+      "scope": "Software integration/development diagnostics only",
+      "physical_stage2": "PENDING_NOT_PASSED"
+    },
+    "size_v1_foreground": {
+      "status": "COMPLETED",
+      "updated_at": "2026-11-26T01:37:56.669635+00:00",
+      "evidence": "size_development_v1/foreground_selection.json",
+      "reused_existing_result": true
+    },
+    "size_repair_v2_audit": {
+      "status": "COMPLETED",
+      "evidence": "size_repair_v2/failure_audit.json"
+    },
+    "size_repair_v2_development": {
+      "phase": "develop",
+      "pid": 29120,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+        "--phase",
+        "develop"
+      ],
+      "started_at_utc": "2026-11-26T02:44:44.435783+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T02:44:44.441750+00:00"
+    },
+    "size_repair_v2_freeze": {
+      "phase": "freeze",
+      "pid": 51392,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+        "--phase",
+        "freeze"
+      ],
+      "started_at_utc": "2026-11-26T02:32:47.052845+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T02:32:47.120541+00:00"
+    },
+    "size_repair_v2_regression": {
+      "phase": "regress",
+      "pid": 27384,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+        "--phase",
+        "regress"
+      ],
+      "started_at_utc": "2026-11-26T02:32:48.612877+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T02:34:45.253732+00:00"
+    },
+    "size_repair_v2_acceptance": {
+      "phase": "check",
+      "pid": 3996,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+        "--phase",
+        "check"
+      ],
+      "started_at_utc": "2026-11-26T02:36:49.426575+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T02:37:02.999156+00:00"
+    },
+    "size_repair_v2_train_replay": {
+      "phase": "replay",
+      "pid": 30756,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+        "--phase",
+        "replay"
+      ],
+      "started_at_utc": "2026-11-26T02:32:44.217181+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T02:32:45.451519+00:00"
+    },
+    "size_repair_v2_head_diagnostic": {
+      "phase": "headcheck",
+      "pid": 29120,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+        "--phase",
+        "headcheck"
+      ],
+      "started_at_utc": "2026-11-26T02:44:44.470491+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T02:44:44.474556+00:00"
+    },
+    "size_caliper_v3_audit": {
+      "status": "COMPLETED",
+      "evidence": "results/baseline3_v2_experiment/size_caliper_v3/audit.json"
+    },
+    "size_caliper_v3_develop": {
+      "status": "COMPLETED",
+      "evidence": [
+        "results/baseline3_v2_experiment/size_caliper_v3/development/B_standard.json.record.json",
+        "results/baseline3_v2_experiment/size_caliper_v3/development/B_wide_projection.json.record.json"
+      ],
+      "runs": 2,
+      "not_repeated": true
+    },
+    "size_caliper_v3_select": {
+      "phase": "select",
+      "pid": 42500,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "select"
+      ],
+      "started_at_utc": "2026-11-26T03:33:48.887349+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:36:28.548417+00:00"
+    },
+    "size_caliper_v3_freeze": {
+      "phase": "freeze",
+      "pid": 50300,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "freeze"
+      ],
+      "started_at_utc": "2026-11-26T03:40:14.772792+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:40:14.925293+00:00"
+    },
+    "size_caliper_v3_regress": {
+      "phase": "regress",
+      "pid": 11912,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "regress"
+      ],
+      "started_at_utc": "2026-11-26T03:40:24.702329+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:42:53.401302+00:00"
+    },
+    "size_caliper_v3_check": {
+      "phase": "check",
+      "pid": 18460,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "check"
+      ],
+      "started_at_utc": "2026-11-26T03:44:58.190288+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:46:47.647474+00:00"
+    },
+    "size_caliper_v3_benchmark": {
+      "phase": "benchmark",
+      "pid": 26028,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "benchmark"
+      ],
+      "started_at_utc": "2026-11-26T03:43:35.413007+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:44:13.376225+00:00"
+    },
+    "size_caliper_v3_report": {
+      "phase": "report",
+      "pid": 43648,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "report"
+      ],
+      "started_at_utc": "2026-11-26T03:51:34.278765+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:51:37.418368+00:00"
+    },
+    "size_caliper_v3_archive": {
+      "phase": "archive",
+      "pid": 2784,
+      "invocation": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+        "scripts/develop_caliper_v3.py",
+        "--phase",
+        "archive"
+      ],
+      "started_at_utc": "2026-11-26T03:50:30.501286+00:00",
+      "status": "COMPLETED",
+      "finished_at_utc": "2026-11-26T03:50:42.851440+00:00"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "scripts/experiment_baseline3_v2.py",
+        "--phase",
+        "prepare"
+      ],
+      "pid": 25596,
+      "started_at": "2026-11-25T19:18:57.261141+00:00",
+      "phase": "prepare",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T19:19:44.091290+00:00"
+    },
+    {
+      "command": [
+        "scripts/experiment_baseline3_v2.py",
+        "--phase",
+        "train"
+      ],
+      "pid": 54112,
+      "started_at": "2026-11-25T19:20:35.832680+00:00",
+      "phase": "train",
+      "status": "FAILED",
+      "finished_at": "2026-11-25T19:20:38.771096+00:00"
+    },
+    {
+      "command": [
+        "scripts/experiment_baseline3_v2.py",
+        "--phase",
+        "train"
+      ],
+      "pid": 36480,
+      "started_at": "2026-11-25T19:20:52.417586+00:00",
+      "phase": "train",
+      "status": "FAILED",
+      "finished_at": "2026-11-25T19:21:40.145432+00:00"
+    },
+    {
+      "command": [
+        "scripts/experiment_baseline3_v2.py",
+        "--phase",
+        "train"
+      ],
+      "pid": 30524,
+      "started_at": "2026-11-25T19:24:31.872059+00:00",
+      "phase": "train",
+      "status": "FAILED",
+      "finished_at": "2026-11-25T19:24:34.561621+00:00"
+    },
+    {
+      "command": [
+        "scripts/experiment_baseline3_v2.py",
+        "--phase",
+        "train"
+      ],
+      "pid": 55380,
+      "started_at": "2026-11-25T19:24:54.261448+00:00",
+      "phase": "train",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:27:58.984988+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "validate"
+      ],
+      "pid": 23448,
+      "started_at": "2026-11-25T20:28:12.271045+00:00",
+      "phase": "validate",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:30:56.472414+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "compatibility"
+      ],
+      "pid": 58576,
+      "started_at": "2026-11-25T20:30:56.852520+00:00",
+      "phase": "compatibility",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:31:24.219219+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "performance"
+      ],
+      "pid": 16804,
+      "started_at": "2026-11-25T20:31:24.955923+00:00",
+      "phase": "performance",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:31:39.019731+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "freeze"
+      ],
+      "pid": 52276,
+      "started_at": "2026-11-25T20:31:39.616005+00:00",
+      "phase": "freeze",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:31:40.462399+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "test"
+      ],
+      "pid": 5848,
+      "started_at": "2026-11-25T20:31:40.616408+00:00",
+      "phase": "test",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:32:04.485520+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "analyze"
+      ],
+      "pid": 58340,
+      "started_at": "2026-11-25T20:32:04.638297+00:00",
+      "phase": "analyze",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:32:04.854477+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "check"
+      ],
+      "pid": 31812,
+      "started_at": "2026-11-25T20:32:05.007889+00:00",
+      "phase": "check",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:32:05.202279+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py",
+        "--phase",
+        "recommend"
+      ],
+      "pid": 26780,
+      "started_at": "2026-11-25T20:32:05.344573+00:00",
+      "phase": "recommend",
+      "status": "COMPLETED",
+      "finished_at": "2026-11-25T20:32:05.398396+00:00",
+      "exit_code": 0
+    }
+  ],
+  "limits": {
+    "max_training_runs": 2,
+    "initial_epochs": 100,
+    "patience": 30,
+    "confidence_trials": [
+      0.2,
+      0.25,
+      0.35
+    ],
+    "nms_trials": [
+      0.5,
+      0.7
+    ],
+    "stage3_access": false,
+    "change_gui_defaults": false,
+    "formal_test_repeats": 0
+  },
+  "next_command": "Automatic v3 experiment complete; physical acceptance remains pending",
+  "supervisor": {
+    "pid": 27628,
+    "started_at": "2026-11-25T20:28:12.129978+00:00",
+    "status": "COMPLETED",
+    "finished_at": "2026-11-25T20:32:05.421151+00:00"
+  },
+  "active_child": {
+    "pid": 27828,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\p08_run.py",
+      "--evaluation-config",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\configs\\validation.json",
+      "--config",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_repair_v2\\p07_profile.json",
+      "--model",
+      "baseline3",
+      "--record-timing",
+      "--output",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_repair_v2\\val_regression"
+    ],
+    "log": "results/baseline3_v2_experiment/size_repair_v2/val_regression/execution.log",
+    "started_at": "2026-11-26T02:32:48.656820+00:00",
+    "exit_code": 0,
+    "finished_at": "2026-11-26T02:34:44.977791+00:00"
+  },
+  "size_development": {
+    "directory": "results/baseline3_v2_experiment/size_development_v1",
+    "next_command": "No automatic experiments pending; physical measurements, Camo calibration and instructor confirmation required for formal acceptance",
+    "frozen_detector": "epoch69 / conf0.35 / NMS0.50 / unchanged",
+    "physical_acceptance": "PENDING_NOT_PASSED",
+    "status": "AUTOMATIC_DEVELOPMENT_COMPLETED",
+    "report": "size_development_v1/README.md",
+    "recommendation": "DO_NOT_REPLACE_DEFAULT: false rejection, incomplete foreground and unverified physical scale",
+    "validation": {
+      "images": 80,
+      "pass_outputs": 7,
+      "review": 27,
+      "false_pass": 0,
+      "false_fail": 6,
+      "all_input_accuracy": 0.5875,
+      "coverage": 0.6625
+    },
+    "software_unique_cases": 91,
+    "gui_display_change": "Actual empirical bands and provisional scale uncertainty only"
+  },
+  "size_repair_v2": {
+    "status": "SOFTWARE_REPAIR_COMPLETED_PHYSICAL_ACCEPTANCE_PENDING",
+    "report": "results/baseline3_v2_experiment/size_repair_v2/README.md",
+    "manual_actions": "results/baseline3_v2_experiment/size_repair_v2/manual_acceptance.md",
+    "val_scope": "Already-used regression, not independent validation",
+    "val_counts": {
+      "PASS": 23,
+      "FAIL": 42,
+      "REVIEW": 15,
+      "false_pass": 0,
+      "false_fail": 2
+    },
+    "geometry": {
+      "original_complete": 305,
+      "repaired_complete": 343,
+      "calls": 378
+    },
+    "software_tests": 98,
+    "remaining": "Washer aperture/ellipse failures, one new normal length rejection, unvalidated Camo/physical dimensions and tolerances",
+    "requested_information": "Public versus dimension M5 physical identity, head style, caliper underhead/overall length and major diameter",
+    "next_action": "Await actual measurements and camera/instructor confirmation; no automatic reruns pending"
+  },
+  "size_caliper_v3": {
+    "status": "COMPLETED_NOT_PROMOTED_PHYSICAL_ACCEPTANCE_PENDING",
+    "recommended": "A / frozen size_repair_v2",
+    "scope": "Train360 + development154 selection, once-only reused Val80 and retained66 regression",
+    "report": "results/baseline3_v2_experiment/size_caliper_v3/README.md",
+    "tests": 108,
+    "formal_test": "NOT_RUN",
+    "stage3": "NOT_OPENED",
+    "no_post_regression_algorithm_or_parameter_changes": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "version": "6.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "thick_screw",
+      "points": [
+        [
+          651.9999999999999,
+          1772.6666666666665
+        ],
+        [
+          1292.0,
+          2239.3333333333335
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "thick_screw",
+      "points": [
+        [
+          1625.3333333333333,
+          2226.0
+        ],
+        [
+          2138.6666666666665,
+          2866.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "thin_screw",
+      "points": [
+        [
+          2045.3333333333335,
+          1872.6666666666665
+        ],
+        [
+          2592.0,
+          2186.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "hex_nut",
+      "points": [
+        [
+          1385.3333333333333,
+          2092.6666666666665
+        ],
+        [
+          1638.6666666666665,
+          1726.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "flat_washer",
+      "points": [
+        [
+          1432.0,
+          1119.3333333333333
+        ],
+        [
+          2145.3333333333335,
+          1686.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "F01.jpg",
+  "imageData": null,
+  "imageHeight": 4032,
+  "imageWidth": 3024
+}

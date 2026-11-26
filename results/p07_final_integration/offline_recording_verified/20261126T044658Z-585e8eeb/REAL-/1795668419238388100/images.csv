@@ -1,0 +1,2 @@
+image_id,model_id,status,predicted_label,prediction_score,score_type,non_catalogue_count
+A001.jpg,baseline3,PASS,PASS,,none,0

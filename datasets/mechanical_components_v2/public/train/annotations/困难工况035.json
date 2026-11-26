@@ -1,0 +1,100 @@
+{
+  "version": "6.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "thin_screw",
+      "points": [
+        [
+          1078.6666666666665,
+          1972.6666666666665
+        ],
+        [
+          1572.0,
+          2406.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "hex_nut",
+      "points": [
+        [
+          1778.6666666666665,
+          1412.6666666666665
+        ],
+        [
+          2065.3333333333335,
+          1772.6666666666665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "long_screw",
+      "points": [
+        [
+          1878.6666666666665,
+          1692.6666666666665
+        ],
+        [
+          2438.6666666666665,
+          2626.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "thick_screw",
+      "points": [
+        [
+          2165.3333333333335,
+          2526.0
+        ],
+        [
+          2652.0,
+          3119.3333333333335
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "flat_washer",
+      "points": [
+        [
+          1572.0,
+          2039.3333333333335
+        ],
+        [
+          2132.0,
+          2612.6666666666665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "困难工况035.jpg",
+  "imageData": null,
+  "imageHeight": 4032,
+  "imageWidth": 3024
+}

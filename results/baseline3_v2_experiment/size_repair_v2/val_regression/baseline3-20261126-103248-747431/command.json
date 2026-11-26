@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+    "--input_dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\yolo\\images\\val",
+    "--model",
+    "baseline3",
+    "--output_dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_repair_v2\\val_regression\\baseline3-20261126-103248-747431\\predictions",
+    "--counts_file",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\configs\\expected_counts_val.json",
+    "--config",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_repair_v2\\p07_profile.json",
+    "--record-timing"
+  ],
+  "cwd": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project",
+  "dataset": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\evaluation\\validation",
+  "baseline3_mode": "size_verified",
+  "model_config": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_repair_v2\\p07_profile.json",
+  "model_config_sha256": "c463bff45d3ed0d9c05d3001b25734e6f6d8f3eaa8beda7d4a2e80d50d1cca30"
+}

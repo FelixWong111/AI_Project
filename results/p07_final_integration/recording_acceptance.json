@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\app.py",
+    "--model",
+    "baseline3",
+    "--image",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images\\A001.jpg",
+    "--headless",
+    "--max-frames",
+    "1",
+    "--record",
+    "--output-dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\offline_recording_verified"
+  ],
+  "exit_code": 0,
+  "mp4": "results/p07_final_integration/offline_recording_verified/20261126T044658Z-585e8eeb/real-1795668419225639300.mp4",
+  "decoded_shape": [
+    1000,
+    1600,
+    3
+  ],
+  "released": true,
+  "source": "Train A001 static image; software recording verification only; NOT live demo/backup evidence"
+}

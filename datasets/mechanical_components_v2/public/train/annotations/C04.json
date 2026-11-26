@@ -1,0 +1,118 @@
+{
+  "version": "6.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "long_screw",
+      "points": [
+        [
+          1738.6666666666667,
+          1466.0
+        ],
+        [
+          2458.666666666667,
+          312.6666666666665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "long_screw",
+      "points": [
+        [
+          138.66666666666652,
+          1172.6666666666665
+        ],
+        [
+          1171.9999999999998,
+          2066.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "hex_nut",
+      "points": [
+        [
+          1198.6666666666667,
+          1992.6666666666665
+        ],
+        [
+          1611.9999999999998,
+          1672.6666666666665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "thick_screw",
+      "points": [
+        [
+          2065.333333333333,
+          1806.0
+        ],
+        [
+          2785.333333333333,
+          2352.6666666666665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "thin_screw",
+      "points": [
+        [
+          1451.9999999999998,
+          2419.3333333333335
+        ],
+        [
+          1958.6666666666667,
+          3072.6666666666665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "flat_washer",
+      "points": [
+        [
+          565.3333333333333,
+          2306.0
+        ],
+        [
+          1298.6666666666667,
+          2966.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "C04.jpg",
+  "imageData": null,
+  "imageHeight": 4032,
+  "imageWidth": 3024
+}

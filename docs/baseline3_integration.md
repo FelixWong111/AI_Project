@@ -1,3 +1,5 @@
+> 历史来源说明：当前正式数据为datasets/mechanical_components_v2，生产模型由config/model_registry.json选择。正式操作与验收状态见docs/p07/final_handoff.md；下文旧路径/模式仅用于历史追溯。
+
 # Baseline3 真实模型集成
 
 > 2026-11-25更新：下文保留冻结YOLO对照及早期集成说明；当前默认已改为size_verified。最新入口、判定、界面、验证和人工标定步骤以[当前尺寸集成文档](baseline3_size_integration.md)为准。原冻结对照须显式指定config/p07_yolo_frozen.json，不能将旧的“未提供尺寸模块”描述当作当前代码状态。

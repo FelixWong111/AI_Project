@@ -12,6 +12,14 @@ from scripts import benchmark_live as b
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_full_size_benchmark_rejects_incompatible_calibration(self):
+        with self.assertRaisesRegex(ValueError,'skipped size branch'):
+            b.require_size_scope('baseline3',{'inspection':{'calibration_compatible':False}})
+
+    def test_size_scope_check_does_not_invent_a_classifier_capability(self):
+        b.require_size_scope('baseline1',{'status':'PASS'})
+        b.require_size_scope('baseline3',{'inspection':{'calibration_compatible':True}})
+
     def test_statistics_include_fail_review_exclude_warmup_errors(self):
         rows=[]
         for value,status in [(1,'PASS'),(2,'FAIL'),(3,'REVIEW')]:
@@ -24,7 +32,7 @@ class BenchmarkTests(unittest.TestCase):
         self.assertEqual(s['median_ms'],2);self.assertAlmostEqual(s['p95_ms'],2.9)
         self.assertEqual(s['coverage'],3/5);self.assertEqual(s['failed_frames'],2)
         self.assertEqual(s['processing_coverage'],.75);self.assertEqual(s['minimum_20_status'],'INSUFFICIENT')
-        self.assertEqual(s['processing_fps'],500)
+        self.assertIsNone(s['processing_fps']);self.assertEqual(s['theoretical_serial_capacity_fps'],500)
 
     def test_gpu_sync_boundaries_and_complete_infer(self):
         calls=[]
@@ -59,7 +67,7 @@ class BenchmarkTests(unittest.TestCase):
                 def start(self):return self
                 @property
                 def latest(self):
-                    image=np.full((2,2,3),len(calls),np.uint8)
+                    image=np.full((2,2,3),10+len(calls),np.uint8)
                     fid=self.journal.capture('camera',0,'SYNTHETIC_FIXTURE',image,1,30,True)
                     return SimpleNamespace(frame_id=fid,image=image,available_at=time.perf_counter())
                 def close(self):self.closed=True
@@ -68,7 +76,7 @@ class BenchmarkTests(unittest.TestCase):
                      prediction_score=.9,score_type='prob',objects=[],counts=None,non_catalogue_count=None)))
             with patch.object(b,'ROOT',root),patch.object(b,'FrameProvider',Camera),patch.object(b,'load_backend',return_value=backend),patch.object(
                     b,'environment',return_value={'cpu':'SYNTHETIC','gpu':[],'dependencies':{}}):
-                code=b.main(['--config',str(cfg),'--models','baseline1','--frames','2','--warmup','1'])
+                code=b.main(['--config',str(cfg),'--models','baseline1','--frames','2','--warmup','1','--no-display'])
             self.assertEqual(code,1)  # Does not meet 20; fixture data must never qualify as real evidence.
             self.assertTrue(cameras[0].closed);self.assertEqual(len(calls),3)
             out=next((root/'results/live_benchmark').iterdir())

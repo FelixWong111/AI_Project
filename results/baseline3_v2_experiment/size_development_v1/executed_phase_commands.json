@@ -1,0 +1,17 @@
+{
+  "commands": [
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase inventory",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase rulers",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase baseline",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase tune",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase foreground",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase holdout",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase validate",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase check",
+    ".venv311\\Scripts\\python.exe -u scripts/develop_baseline3_size.py --phase auto"
+  ],
+  "timing": "Earlier phase start timestamps were not separately logged; task_state.json has completion timestamps. Later execution_history.json records start/end. No invented times.",
+  "caveat": "Ruler extraction was corrected during development before final calibration; full original values/points and final six-model CV are preserved.",
+  "software_tests": "PowerShell UTF-8 here-string piped to .venv311/Scripts/python.exe -; selected 8 local test modules, 86 tests, see software_tests.json/log",
+  "recovered_command_error": "Initial python -m unittest tests.<module> resolved an installed tests package; corrected to local tests path and reran successfully. No model failure or successful physical test was inferred."
+}

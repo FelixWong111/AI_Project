@@ -1,134 +1,88 @@
 # Mechanical Component Inspection
 
-Stage 2实机延迟：激活`.venv311`后运行 `python scripts/benchmark_live.py`，默认Camo Camera0，依次对Baseline1/2/3做20新帧预热＋100新帧测量。记录在`results/live_benchmark/<run_id>/`，完整说明见[实时测试脚本](docs/live_benchmark.md)。Baseline3不允许退回YOLO-only；实际结果需用户连接实体工位运行，本次开发验证不冒充实机成绩。
+正式系统：新版Baseline1、新版Baseline2、Baseline3 **size_repair_v2**。唯一注册表为 [config/model_registry.json](config/model_registry.json)，GUI、CLI、P08共用同一加载入口并校验SHA；错误明确报错，没有生产Mock或其他模型回退。GUI仅显示三个Baseline，`final`为NOT_READY预留ID。
 
-工单规范：唯一公共参考位于 [`config/inspection.json`](config/inspection.json)，固定 ID1–ID5 各 1，ID0 恒为 0。实际数量属于 Ground Truth，不能反推工单。已归档 [训练工单](results/data_manifests/work_orders/train.json)（262条）与 [验证工单](results/data_manifests/work_orders/validation.json)（46条）。生成、GUI/批处理统一校验、UNSUPPORTED_COUNTS 和特殊工单功能测试说明见 [工单接口文档](docs/work_orders.md)。正式 Test 仍为 NOT_RUN。
+**整体NOT_READY：** 离线集成与303项软件测试通过；用户确认实机布置/标定未完成，Camera0探测的3帧全黑，真实工位延迟、Camo标定、教师容差确认、真实演示视频及原生窗口人工验收仍未完成；干净环境最小复现已通过。完整证据、指标、错误案例、Git交付及人工步骤见 [P07/P08完整交接](docs/p07/final_handoff.md)。
 
-正式实验资料随 Git 交付，入口为 [results/README.md](results/README.md)。包含当前模型的训练/验证预测、真实标签与分数、指标/误判、数据清单、泄漏审计和集成验收；P05/P08 可直接从 GitHub 查阅。原始数据和本机 outputs 仍不上传，缺项和 Test: NOT_RUN 明确保留。
+## 模型与工单
 
-Baseline1 实时异常输入修正：P07 现启用训练特征支持范围检查，超出范围返回 REVIEW（标签/分数为空），不强制 FAIL。原始 HOG+MLP 权重和验证成绩不变；predict.py 保留原始基线，门控不参与其基线指标。详情及诊断证据见 [实时诊断说明](docs/baseline1_live_diagnosis.md)。部署 Baseline1 到 P07 时还需携带 `models/baseline1/scene_guard.npz`。其他模型不变。
+|ID|方法/正式目录|能力|
+|---|---|---|
+|baseline1|HOG + StandardScaler + MLP；`models/release/baseline1/`|固定工单整图分类|
+|baseline2|冻结ResNet18 + StandardScaler + Logistic Regression；`models/release/baseline2/`|固定工单整图分类|
+|baseline3|YOLO11n + v2几何尺寸 + 前景检查 + 计数/判定；`models/release/baseline3/`|原图框、0–5类别/计数、尺寸证据、PASS/FAIL/REVIEW|
 
-机械零件视觉检测：实时摄像头、图片和视频输入，模型切换、记录和统一批处理。Baseline1/2 为实拍数据训练的固定工单分类器；Baseline3 默认已接入 P06 最新的检测、可选前景关联、几何候选、规格比较及测量策略，Final 尚未配置。当前真实标定仍未验证，策略记录为空；系统会报告具体 FAIL/REVIEW 原因，不能宣称物理尺寸和完整未知件拒识已验收。详见 [当前尺寸模式、判定及人工步骤](docs/baseline3_size_integration.md)。
+来源、SHA及参数见 [模型提升记录](results/p07_final_integration/model_promotion.json)。未重训或改变冻结阈值/预处理/数值尺寸范围/几何算法。历史权重保留用于复现；未选卡尺源码和checkpoint在 [archive/experiments/](archive/experiments/README.md)，不进入正式注册表。
 
-Baseline3 默认运行 `python app.py --model baseline3`（size_verified）；复现原冻结数量基线用 `python app.py --model baseline3 --config config/p07_yolo_frozen.json`（yolo_frozen）。两者在界面和run_config明确标识，失败不静默回退。点击 **Sizes / Reasons** 或D查看真实逐对象尺寸、参考/允许量、标定状态和失败原因；Prev/Next或[、]切换对象。候选毫米数值标为PROVISIONAL。快照和批处理增加diagnostics.json，四种课程输出字段保持不变。最新验证见 [2026-11-25集成记录](results/integration/baseline3_size_20261125/README.md)。
+固定工单为ID1–5各1，唯一公共定义在 [config/inspection.json](config/inspection.json)，ID0期望恒0。GT实际数量不能反推工单。Baseline1/2仅支持固定向量，其他合法向量返回`UNSUPPORTED_COUNTS`且标签/分数为空；无框、实际数量或ID0能力。两者GUI/CLI统一使用原始分类器，scene_guard关闭；未校准分数不能证明任意无关场景有效。
 
-**Official held-out test: NOT_RUN。** 本次只训练与验证，未读取正式测试图片、测试真值或计算测试成绩。验证结果不是正式测试结果。
+Baseline3支持任意合法五类向量，工单重判不运行YOLO、不改变框/类别/分数/观测数量。确认ID0强制FAIL，不可信尺寸或未解释前景保留非PASS及原因。对象分数不是整图PASS概率。
 
-## 环境
+## 数据
 
-Windows、Python 3.11.14，使用现有 `.venv311`，不需要 conda 环境列表中存在它。
+唯一正式根目录为 [datasets/mechanical_components_v2/](datasets/mechanical_components_v2/README.md)：Train360、Validation80、Stage2 Test30，冻结划分不变；尺寸开发154、已使用回归66、标尺10。专项220张只对应8件实物，66张不是新独立测试。Stage3的90图及真值仍本机封存，不交P08、不参加此次评价。原P03/原始数据集未改写。 **数据集图片不提交GitHub或Git LFS，改为网盘共享。** Git保留全部划分清单、GT标注、类别映射、SHA256、配置和README。P08先下载图片，按原目录和文件名放回`datasets/mechanical_components_v2/`，无需修改代码。网盘链接由P07另行提供。
 
-PowerShell：
+GT在`annotations/`及`public/`各分区；推理只读图像和工单。真实文件名工单位于`configs/expected_counts_{train,validation,stage2_test}.json`，只含`image_id`与五类要求数量。原始JSON、YOLO标签、GT CSV、split lists与SHA来源映射均在正式数据目录。
+
+## 环境与启动
+
+当前已运行Windows环境：Python3.11.14、PyTorch2.7.1+cu126、TorchVision0.22.1+cu126、Ultralytics8.3.236，其他精确版本见requirements。现有环境`pip check`和真实三模型运行通过；干净环境实际安装、pip check、三模型真实加载、每模型3张Train图片预测和8项核心接口测试均通过；没有重复完整303项测试。原`.venv311`未重新安装或改动依赖。
+
+以下克隆命令需要先由P07提交并push本次Git和LFS文件；本次未自动上传，远程LFS配额及新克隆仍未验证：
 
 ```powershell
+git lfs install
+git clone -b p07/system-integration https://github.com/FelixWong111/AI_Project.git
+cd AI_Project
+git lfs pull
+# 从网盘取得数据图片，按 datasets/mechanical_components_v2/README.md 合并到同名目录
+py -3.11 -m venv .venv311
 .\.venv311\Scripts\Activate.ps1
 python -m pip install torch==2.7.1+cu126 torchvision==0.22.1+cu126 --index-url https://download.pytorch.org/whl/cu126
 python -m pip install -r requirements.txt
 python -m pip check
-```
-
-CMD 激活命令为 `.venv311\Scripts\activate.bat`。也可直接调用 `.\.venv311\Scripts\python.exe`。完整三模型运行需要 PyTorch 2.7.1+cu126、TorchVision 0.22.1+cu126 与 Ultralytics 8.3.236；先按 docs/baseline3_integration.md 安装匹配CUDA构建，再安装 requirements.txt。Baseline1/2 原有依赖版本保留，历史训练CPU环境记录不改写。
-
-## 数据与固定工单
-
-新版测试集已整理为 [`data/test_20261124/`](data/test_20261124/README.md)：36 张照片全部直接用真实文件名，无原用例编号映射。统一工单为 expected_counts.json，真值为两份 ground_truth CSV；19 PASS、16 FAIL、1 REVIEW（34.jpg）。scene_id 等于图片名，独立场景依据用户本次确认。该目录只用于评估，不进入训练；整理不代表已执行正式 Test。具体命令和 REVIEW 规则见该目录 README。
-
-P03 总包保持完全只读。只使用其 `01_` 开发包，`images/train` 为 262 张，`images/validation` 为 46 张。脚本按元数据和明确分区读取，不递归扫描整个 P03 图片目录。可用 `--data-dir` 显式指定开发包目录；只有唯一来源时才自动定位。
-
-固定 expected_counts 为 `{"1":1,"2":1,"3":1,"4":1,"5":1}`。依据是 P03 的 `reference_label_all_one` 真值字段及逐类数量核对，不是把课程格式示例当成数量要求。ID 0 期望始终为 0。
-
-训练：124 PASS / 138 FAIL；验证：24 PASS / 22 FAIL。原始 scene_id 仍为 TBD。2026-11-24 用户明确确认每张图片为不同物理场景，因此训练/验证场景数分别按 262/46 记录，确认来源保存在 config/training.json 和外部清单；这不是哈希算法证明，也没有回写或编造拍摄 SceneID。
-
-清单校验、图片与像素哈希、排除记录、数量与框一致性记录保存在 [正式开发清单](results/data_manifests/development.json)。当前排除 0 张。之后如果数据或确认有变化，需重新审查和生成新版本清单。
-
-## 方法及候选模型
-
-| 模型 | 方法 | 文件 | 验证 Accuracy / FAIL F1 |
-|---|---|---|---|
-| baseline1 | 灰度 128×128 → HOG 1764维 → 训练集 StandardScaler → MLP(32) | models/baseline1/baseline1.joblib | 100% / 1.0000 |
-| baseline2 | RGB 等比例缩放+白边 224×224 → 冻结 ImageNet ResNet18 512维 → 训练集 StandardScaler → Logistic Regression | models/baseline2/baseline2.json + resnet18-f37072fd.pth | 80.43% / 0.7805 |
-| baseline3 | P06 冻结 YOLO11n，0–5类检测+P07计数判定 | models/baseline3/best.pt | 历史训练指标见training_record；集成验收与正式Test分开 |
-| final | Stage3研究改进入口 | 尚未交付 | NOT_RUN |
-
-Baseline1/2 均为图像级分类器，只支持上述固定工单。输出真实 PASS/FAIL 和未校准概率；Baseline1 分数为 P(预测类别)，Baseline2 分数为 P(FAIL)。不输出或虚构框、实际数量、ID 0 数量，界面显示 N/A。其他合法工单返回 UNSUPPORTED_COUNTS，标签和分数为空。文件缺失或推理失败明确 ERROR，无生产 Mock 回退。
-
-## 训练与复现
-
-当前候选已经真实训练，完整记录在 [results/baseline1/](results/baseline1/) 和 [results/baseline2/](results/baseline2/)，模型目录也附 training_record.json。重新实验使用新输出目录，防止覆盖冻结证据：
-
-```powershell
-python -m scripts.train_baseline1 --output-dir models/baseline1-rerun
-python -m scripts.train_baseline2 --output-dir models/baseline2-rerun
-```
-
-首次空模型目录的实际训练命令为 `python -m scripts.train_baseline1` 和 `python -m scripts.train_baseline2`。Baseline1 保存匹配的配置和 freeze，训练新版本时会更新 config/baseline1.json 的候选路径；Baseline2 新目录需显式更新 config/baseline2.json 的 baseline2_bundle 才用于部署。
-
-Baseline2 默认复用 `models/baseline2/resnet18-f37072fd.pth`，可用 `--weights` 指定同 SHA256 的本地官方权重。训练不联网下载，不微调骨干。StandardScaler 仅 fit 训练集；验证集仅比较 2 个 MLP 和 3 个逻辑回归候选，选择 FAIL F1，平局先减少 False PASS，再保留较简单候选；分类阈值固定 0.5，没有反复调阈值。特征缓存带数据、预处理、骨干和依赖版本签名，位于 P03 外部。
-
-## 启动软件
-
-```powershell
+python scripts/verify_models.py --load-models
+python scripts/check_dataset_v2.py
 python app.py --model baseline1
-python app.py --model baseline2 --camera 0 --capture-backend dshow
+python app.py --model baseline3 --camera 0 --capture-backend dshow
 ```
 
-本机用户先前确认 Camo 为 DSHOW camera 0；不同电脑需先执行 `python app.py --list-cameras`。可在顶部点击 Baseline1/2，或按 1/2 切换；Start/Pause、Image、Video、Camera、Snapshot、Record 均保留。当前先用验证集图片验收，不用测试图演示。图片模式：`python app.py --model baseline1 --image "允许的验证图片路径"`。
+已有`.venv311`不用重新创建。按钮或1/2/3切模型，Camera/Image/Video、Start/Pause、Snapshot、Record保留；操作见 [UI说明](docs/ui_operations.md)。本机DSHOW Camera0=Camo，需先在Camo Studio确认真实手机画面。
 
-完整键盘与控件说明见 docs/ui_operations.md。Baseline3 使用相同GUI及批处理入口，支持自定义工单；Final 未配置时明确 ERROR。Baseline3 权重、CUDA或依赖加载失败也明确ERROR，不回退模拟结果。
-
-## 课程批处理入口
-
-在 PowerShell 设置当前开发包（只枚举 `01_`，不读取测试）：
+## 批处理与评价
 
 ```powershell
-$data = Get-ChildItem -Directory -Filter 'P03_*' | ForEach-Object { Get-ChildItem -Directory -LiteralPath $_.FullName } | ForEach-Object { Get-ChildItem -Directory -LiteralPath $_.FullName -Filter '01_*' } | Select-Object -First 1
-$val = Join-Path $data.FullName 'images\validation'
-python predict.py --input_dir "$val" --model baseline1 --output_dir outputs/batch-baseline1 --counts_file results/data_manifests/work_orders/validation.json
-python predict.py --input_dir "$val" --model baseline2 --output_dir outputs/batch-baseline2 --counts_file results/data_manifests/work_orders/validation.json
+python predict.py --input_dir datasets/mechanical_components_v2/public/stage2_test/images --model baseline1 --output_dir outputs/baseline1_unique --counts_file datasets/mechanical_components_v2/configs/expected_counts_stage2_test.json
+python p08_run.py --evaluation-config datasets/mechanical_components_v2/configs/stage2_evaluation.json --check-data-only
+# 已有本次结果，优先复用。以下命令会另行执行正式Test，只在需要复现时运行：
+python p08_run.py --evaluation-config datasets/mechanical_components_v2/configs/stage2_evaluation.json --model all --output outputs/p08_reproduction
 ```
 
-每次运行使用新的输出目录。工单 JSON 是只含 image_id 与 expected_counts 的列表；不含真值、框或实际数量。输出 `images.csv` 和 `run_config.json`。images.csv 的字段顺序固定为：
+每次新输出目录，更换`--model`即可切三个模型。共同结果在 [results/p08_stage2_final/](results/p08_stage2_final/README.md)：Baseline1/2复用同SHA、同预处理、无门控的既有预测；Baseline3为完整v2首次Stage2运行。Stage2此前已用于其他基线对照，不能称全新未使用；没有据Test再次调参，Stage3保持NOT_RUN。
 
-```text
-image_id,model_id,status,predicted_label,prediction_score,score_type,non_catalogue_count
-```
+所有模型输出`images.csv`与`run_config.json`；仅Baseline3输出`objects.csv`、`counts.csv`及尺寸诊断。原图像素左上原点xyxy，计数覆盖0–5，difference=observed−expected，遵循原合同。继续复用P08 evaluator及object_observations，没有第二套Evaluator。完整指标、分母、REVIEW和逐图/对象错误均保留。
 
-图像级 non_catalogue_count 为空；不生成 objects.csv/counts.csv。GUI 与 CLI 使用同一注册表和 Adapter，推理不读取 ground truth。
-
-## 验证与资料
+## 实机与交付
 
 ```powershell
+# 仅在真实Camo工位及标定就绪后执行，独立运行，不需要同时开app.py
+python scripts/benchmark_live.py --camera 0 --warmup 20 --frames 100 --models baseline1 baseline2 baseline3
 python -m unittest discover -s tests -v
-python tests/test_p04.py
-python -m scripts.check_candidates
 ```
 
-check_candidates 在全部验证图上核对重新加载后的批处理结果与训练记录，检查工单限制、缺失权重、无头 app 和 P03 未变；输出新目录到 outputs/acceptance。实际 GUI 和相机验收状态见 docs/model_training.md，不把无头检查当成真实摄像头实测。
+主Live边界包含P07渲染和显示更新调用，结果在`results/live_benchmark/<run_id>/`，见 [计时说明](docs/live_benchmark.md)。旧离线时间不当作实机成绩；照片35.758446px/mm不用于不同镜头/变焦/机位的1280×720 Camo。尺寸模块未关闭，也没有伪造validated状态。
 
-P08 可从 [results/README.md](results/README.md) 获取数据清单、原始训练/验证预测、指标、误判与验收记录，并结合 docs/model_training.md、docs/data_leakage_audit.md 和模型目录核对版本。完整目标级评估器仍待 P08 提供；本次不覆盖其未来接口。新克隆无需原始数据即可运行 `python -m scripts.collect_results --verify --archive-only` 核对归档完整性。
+人工步骤见 [v2物理验收](results/baseline3_v2_experiment/size_repair_v2/manual_acceptance.md)、[拍摄清单](docs/p07/demo_recording_checklist.md)。原始研究决策未找到，缺项记录在 [review/decision_stage2.md](review/decision_stage2.md)，没有倒填计划。根`PROGRESS.md`/`task_state.json`支持恢复。提交清单、LFS体积与未完成项见完整交接；本次无commit/push/merge。
 
-## 工程目录
+## 提交本次交付
 
-```text
-app.py / predict.py          实时与课程批处理入口
-config/                     固定工单、数据确认、模型及 UI 配置
-src/data/                   开发数据只读校验
-src/models/baseline1/        P04 HOG/MLP 实现及共享工具
-src/adapters/               Baseline1/2/3 模型加载与推理
-src/inference/              批处理业务
-src/p07_*.py, camera.py      UI、输入、记录和后端注册
-scripts/                    正式训练与验收
-models/baseline1,baseline2,baseline3/  真实候选权重、配置及记录
-tests/                      单元测试与测试专用 Stub
-docs/                       当前交接、报告资料及 history 历史来源
-results/                    纳入 Git 的正式实验结果、清单与审计
-outputs/training/           清单、特征缓存、实验指标、原始预测
-outputs/refactor_backup_20261124/  重构前源码与未提交改动备份
-P03_*/                      权威原数据，完全只读，另行交付
+数据集图片、原始数据、虚拟环境和临时输出继续忽略；三个正式模型权重、源码、标注、预测CSV/JSON和指标保留。提交前核对 [Git清单](results/p07_final_integration/git_submission_files.csv)，本次未自动暂存、提交或推送。
+
+```powershell
+git lfs install
+git add -A
+git diff --cached --stat
+git lfs ls-files --size
+git commit -m "Finalize P07 Stage 2 handoff"
+git push -u origin p07/system-integration
 ```
-
-旧原始开发/验证/测试目录保留用于追溯，不是训练入口。旧合成训练器、P05 smoke handoff 和旧配置已归档至重构备份，不是部署模型。Project-Man、team_plan、成员贡献和建议记录保留。
-
-权重文件保留真实文件且不被 .gitignore 排除；交付时同时提供 models、config、src 和所需依赖。正式实验资料已复制到 results 并随 Git 交付；outputs 继续忽略，保留缓存、截图、备份和全部原始运行记录。归档来源及 SHA256 见 results/file_manifest.json，不再要求另发实验压缩包。本次不自动提交或推送 Git。
-
-P03 更新测试集后：先核定独立场景、标注和工单，封存测试版本，再用两个冻结模型调用同一批处理入口并由独立评估器读取真值；此前不进行正式测试集评估。

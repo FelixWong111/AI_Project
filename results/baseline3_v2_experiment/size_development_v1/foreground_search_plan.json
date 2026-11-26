@@ -1,0 +1,53 @@
+{
+  "images": [
+    "H002.jpg",
+    "H011.jpg",
+    "H026.jpg",
+    "H073.jpg",
+    "H089.jpg",
+    "H121.jpg",
+    "H036.jpg",
+    "H049.jpg",
+    "H056.jpg",
+    "H078.jpg",
+    "H097.jpg",
+    "H123.jpg",
+    "A001.jpg",
+    "A064.jpg",
+    "A134.jpg",
+    "B01.jpg",
+    "C30.jpg",
+    "E08.jpg",
+    "G01.jpg"
+  ],
+  "split": "Train only",
+  "trials": [
+    {
+      "threshold": 20,
+      "minimum_area": 10
+    },
+    {
+      "threshold": 20,
+      "minimum_area": 30
+    },
+    {
+      "threshold": 30,
+      "minimum_area": 10
+    },
+    {
+      "threshold": 30,
+      "minimum_area": 30
+    },
+    {
+      "threshold": 40,
+      "minimum_area": 10
+    },
+    {
+      "threshold": 40,
+      "minimum_area": 30
+    }
+  ],
+  "rule": "Maximize fully associated training frames; tie: fewer unmatched foreground candidates; then lower threshold/area",
+  "preprocessing": "Robust quadratic illumination fit outside detector boxes, 4 iterations, sample stride8, MAD trim4, 756x1008, fixed before evaluation",
+  "scope": "Ordinary P06 background association; no Highlight-Mask/Stage3 metal reconstruction. Unmatched foreground is REVIEW, not fabricated ID0"
+}

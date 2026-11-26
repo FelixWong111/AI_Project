@@ -1,0 +1,12 @@
+{
+  "files": {
+    "results/baseline3_v2_experiment/size_development_v1/candidate.json": "6b5a55db82a78f6a2923bb13193db182d566a456967ee961eeb8f052238c2e1c",
+    "results/baseline3_v2_experiment/size_development_v1/p07_profile.json": "880d97bfadf75720e3e440fa7e3157855a9a8e599285aea627e3bc3c3fb7fc42",
+    "results/baseline3_v2_experiment/size_development_v1/selection.json": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+    "results/baseline3_v2_experiment/size_development_v1/calibration.json": "ab81185188cb002f0b23fa4d292be990d9dcc964b0512f634059caaf9be6f232",
+    "src/models/baseline3/size_candidate.py": "a94e3f6dc3a982f7e2148c91390eaa31736dedcd1d6154870f08d963cad2f754",
+    "src/models/baseline3/metrology.py": "b76010e020fb431d933ab5eb5c1f8bdd0e2421f344692bb697c193853dca7c26"
+  },
+  "heldout_public_validation_used_for_selection": false,
+  "scope": "All dimensions/foreground rules frozen before public Train/Val comparison; post-selection UI evidence fields added without algorithm changes"
+}

@@ -1,0 +1,92 @@
+{
+  "specimens": [
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M4×10细螺丝_ID3_20",
+      "physical_sample_id": "DIM-SPECIMEN-01",
+      "photos": 20,
+      "official_class_id": 3
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M4×25长螺丝_ID1_20",
+      "physical_sample_id": "DIM-SPECIMEN-02",
+      "photos": 20,
+      "official_class_id": 1
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M4×40长螺丝_ID0_40",
+      "physical_sample_id": "DIM-SPECIMEN-03",
+      "photos": 40,
+      "official_class_id": 0
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M4六角螺母_ID4_20",
+      "physical_sample_id": "DIM-SPECIMEN-04",
+      "photos": 20,
+      "official_class_id": 4
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M4小垫片_ID0_40",
+      "physical_sample_id": "DIM-SPECIMEN-05",
+      "photos": 40,
+      "official_class_id": 0
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M5×10粗螺丝_ID2_20",
+      "physical_sample_id": "DIM-SPECIMEN-06",
+      "photos": 20,
+      "official_class_id": 2
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M5平垫圈_ID5_20",
+      "physical_sample_id": "DIM-SPECIMEN-07",
+      "photos": 20,
+      "official_class_id": 5
+    },
+    {
+      "folder": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40",
+      "physical_sample_id": "DIM-SPECIMEN-08",
+      "photos": 40,
+      "official_class_id": 0
+    }
+  ],
+  "photos": 220,
+  "physical_specimens": 8,
+  "splits": {
+    "development": 154,
+    "retained_scene_validation": 66
+  },
+  "seed": 42,
+  "validation_scope": "Different scenes of the same eight physical specimens, not unseen-specimen generalization",
+  "historical_use": "Prior workspace records show conversion/inventory only for this collection; external unrecorded use remains unknown",
+  "selection_protocol": "Measure existing body_profile first; finite segmentation/quality/range candidates on development only. Freeze before retained scenes. Public Train/Val only afterwards; no Test/Stage3.",
+  "protected": {
+    "app.py": "0a9aca7cb8eda4887bf6410c5a0317131af207e022c6e173f8087b18828ca515",
+    "config/baseline1.json": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+    "config/baseline2.json": "5ed22e638ad8b3c7827eab9c5b3a6f94909c8f63eb5e7e901b772da8fc1ab3c2",
+    "config/baseline3.json": "257f51db51a2f0b9595680b58fa9af1d0598cae9628968f6a0ea45a2a20fe517",
+    "config/inspection.json": "9de1a1223fe2dda866c99d5f32f3b13c665b6417f185b2487748c0b98610d0fc",
+    "config/p06_foreground_candidate.json": "e8bf98edfa722b1c5acad27cfe4ff3b8f3ec1424f31e843d3a117425dfe448ba",
+    "config/p06_measurement_policy.json": "246f867f77cfbe61fd392297925d4f498946eff28bcf3d66f62a6e22ed3c8209",
+    "config/p06_p07_pipeline_candidate.json": "6c583e29cf4df430d1f2121b52f46a017265f49e5807563510e1421c209a5a5a",
+    "config/p06_part_specs_candidate.json": "01f402be54887c14bac7f6b9b86e2d8d30cab3e0c72a69e55c004e73a243002b",
+    "config/p06_pipeline_candidate.json": "cacb0bae1c241b39f8ec5d7058800607e9473f98d1822bc7c8a764ffa56e21df",
+    "config/p06_size_calibration_candidate.json": "8318b7879e94f37e203749d41422dffd8f1857292dfc5302ff1c11c3ee210c59",
+    "config/p07.json": "6c583e29cf4df430d1f2121b52f46a017265f49e5807563510e1421c209a5a5a",
+    "config/p07_yolo_frozen.json": "f860395a5c1f408ac03d4e67fd33b14b4cd6f80808ee75e874d2b46e68251f81",
+    "config/training.json": "bd8077518418443f112e15c8bf1bbd631f60bfb7b792d4007d388bf131d00f62",
+    "models/baseline3_v2_candidate/best.pt": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "models/baseline3_v2_candidate/detector.json": "427a5e704deec0e0203da7c1898fa32664f255181363c33487836ceeafc2a36b",
+    "models/baseline3_v2_candidate/last.pt": "d1b2124af770272ddc66e2ed2d8ce8d826f966d09b8b1c55f33a0e3ef3f6ab64",
+    "models/baseline3_v2_candidate/resume_last.pt": "a0f47aaf3c94e96b5a9cc75673de354b0ce5db309dc25ebc2e026a8143abba19",
+    "models/baseline3_v2_candidate/training_record.json": "cb43eb4b4546eafead85b249bc9c7c6e7a18115192fdeba8753aebe2c106285e",
+    "src/p06_foreground.py": "b854324a93fa8f2f8affb5f01f53c8812140c56260ed3c02f5bca84d6fb8d6f1",
+    "src/p06_geometry.py": "148377289fb80d4077d657e0d0456f52709d1815aafdde570cbb474707df0e46",
+    "src/p06_measurement_policy.py": "222b05d9fb86c9e5756e4a3d271896e76b0d5b5752fa816ff3596cdcb036e6d8",
+    "src/p06_pipeline.py": "1ce4edb1ea18573df92251338c036f228c67b6c2e849e3961620272ecc7a3c8f",
+    "src/p06_screw_edges.py": "63e6fd8843a564f6272bdf787984de9f916088f76672942a25027a040e858d1f",
+    "src/p06_size_evidence.py": "1c9c19fd149001acf9f6f55247e6db860d23074ae1d0c44834302c60beaaa1c4",
+    "src/models/baseline3/candidate.py": "a78dbc752d9b16704c17bad61d7d17ccf8923938d9c30c83346ff2afe8721083",
+    "results/baseline3_v2_experiment/freeze.json": "884c50d0e777bb250504889052a58047f19de5d20ebe5fb94260f8095915ec6a",
+    "results/baseline3_v2_experiment/model_selection.md": "4efeab18750e1bc187a6fb73b1057bfb65d42a91a677025c314635a69347af23"
+  }
+}

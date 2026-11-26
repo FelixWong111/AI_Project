@@ -1,0 +1,2962 @@
+[
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3343.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            326.61813875396666,
+            316.554424497917
+          ],
+          [
+            640.054663722262,
+            347.89999540991573
+          ]
+        ],
+        "pixels": 315.0,
+        "mm_estimate": 8.809107534666014
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            510.7998434495491,
+            263.61956211565285
+          ],
+          [
+            496.669459101918,
+            404.914757498186
+          ]
+        ],
+        "pixels": 142.0,
+        "mm_estimate": 3.971089745785949
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 144.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 180,
+      "paired_edge_sections": 163,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5650793650793651,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3344.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            342.3366409565586,
+            330.13158780245357
+          ],
+          [
+            352.505399429958,
+            639.9647628355827
+          ]
+        ],
+        "pixels": 310.0,
+        "mm_estimate": 8.669280430941157
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            415.3516238828692,
+            481.81814708926237
+          ],
+          [
+            279.4248116102706,
+            486.2792798388828
+          ]
+        ],
+        "pixels": 136.0,
+        "mm_estimate": 3.8032972213161207
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 142.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 173,
+      "paired_edge_sections": 173,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4967741935483871,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3346.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            490.3552064884694,
+            467.1743918408499
+          ],
+          [
+            223.66739241370203,
+            210.70293178335677
+          ]
+        ],
+        "pixels": 369.99999999999994,
+        "mm_estimate": 10.347205675639444
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            347.03748234829357,
+            425.7705279235722
+          ],
+          [
+            443.3875713969194,
+            325.582403176565
+          ]
+        ],
+        "pixels": 139.00000000000003,
+        "mm_estimate": 3.887193483551036
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 121.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 213,
+      "paired_edge_sections": 209,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.3567567567567568,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3350.png",
+    "status": "UNMEASURABLE",
+    "reason": "SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+    "dimensions": {},
+    "dimension_status": {
+      "underhead_length": {
+        "status": "UNMEASURABLE",
+        "reason": "SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+      },
+      "thread_major_diameter": {
+        "status": "UNMEASURABLE",
+        "reason": "SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 126.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3355.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            343.9249223907524,
+            372.0548049189733
+          ],
+          [
+            284.4596615339666,
+            657.9356940165735
+          ]
+        ],
+        "pixels": 292.0,
+        "mm_estimate": 8.16590285753167
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            382.35728213463614,
+            526.1098396452577
+          ],
+          [
+            247.24919071179767,
+            498.0063944458178
+          ]
+        ],
+        "pixels": 138.0,
+        "mm_estimate": 3.859228062806063
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 137.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 151,
+      "paired_edge_sections": 151,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4897260273972603,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3359.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            337.4110181046637,
+            379.9379372013137
+          ],
+          [
+            617.00091821557,
+            241.46957346441704
+          ]
+        ],
+        "pixels": 312.0000000000001,
+        "mm_estimate": 8.725211272431103
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            439.6616008557793,
+            246.16174975729476
+          ],
+          [
+            505.78912071731,
+            379.68384948974676
+          ]
+        ],
+        "pixels": 149.0,
+        "mm_estimate": 4.16684769100075
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 133.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 169,
+      "paired_edge_sections": 169,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.483974358974359,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3365.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            599.2739503684735,
+            1157.4472810650502
+          ],
+          [
+            359.03407155805115,
+            319.19385838837945
+          ]
+        ],
+        "pixels": 871.9999999999998,
+        "mm_estimate": 24.385846889615124
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            433.61601351603434,
+            818.988350088494
+          ],
+          [
+            560.507586673512,
+            782.6217629291182
+          ]
+        ],
+        "pixels": 131.99999999999997,
+        "mm_estimate": 3.691435538336234
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 140.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 419,
+      "paired_edge_sections": 419,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.42545871559633025,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3372.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            441.9890447513953,
+            1090.983257230908
+          ],
+          [
+            530.5479505000498,
+            322.0662784792351
+          ]
+        ],
+        "pixels": 773.9999999999999,
+        "mm_estimate": 21.64523565660792
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            421.2767452026319,
+            707.0923213553625
+          ],
+          [
+            549.4295749945775,
+            721.8521389801383
+          ]
+        ],
+        "pixels": 129.00000000000006,
+        "mm_estimate": 3.6075392761013223
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 132.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 388,
+      "paired_edge_sections": 388,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4896640826873385,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3375.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            438.12721532038086,
+            439.00260760565527
+          ],
+          [
+            438.55836521738155,
+            1250.0024930000777
+          ]
+        ],
+        "pixels": 811.0000000000001,
+        "mm_estimate": 22.679956224171864
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            504.3457048933761,
+            849.9674621110876
+          ],
+          [
+            372.34572354681166,
+            850.0376369401924
+          ]
+        ],
+        "pixels": 132.0,
+        "mm_estimate": 3.691435538336234
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 121.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 397,
+      "paired_edge_sections": 397,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5067817509247842,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3376.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            448.3935997979498,
+            407.6647058653509
+          ],
+          [
+            1224.465975523184,
+            560.6113228145036
+          ]
+        ],
+        "pixels": 791.0,
+        "mm_estimate": 22.120647809272434
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            849.0876053150294,
+            417.3246200822907
+          ],
+          [
+            822.7908418446314,
+            550.7580500426344
+          ]
+        ],
+        "pixels": 136.0,
+        "mm_estimate": 3.8032972213161207
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 125.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 383,
+      "paired_edge_sections": 383,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4993678887484197,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3378.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            424.67084803864793,
+            329.1012610272598
+          ],
+          [
+            490.7432930929099,
+            1105.2941700418626
+          ]
+        ],
+        "pixels": 778.9999999999999,
+        "mm_estimate": 21.785062760332774
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            521.6143787305211,
+            719.2848099590335
+          ],
+          [
+            395.0720174405924,
+            730.0565692939389
+          ]
+        ],
+        "pixels": 126.99999999999991,
+        "mm_estimate": 3.5516084346113748
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 130.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 392,
+      "paired_edge_sections": 392,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5096277278562259,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3379.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            438.4167045386048,
+            431.7431014503294
+          ],
+          [
+            1248.8292911794092,
+            518.0937784260227
+          ]
+        ],
+        "pixels": 814.9999999999999,
+        "mm_estimate": 22.79181790715175
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            852.9020084573809,
+            401.9910790760465
+          ],
+          [
+            837.3271010764889,
+            548.1636560529769
+          ]
+        ],
+        "pixels": 147.0,
+        "mm_estimate": 4.110916849510806
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 128.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 398,
+      "paired_edge_sections": 397,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.501840490797546,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3384.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            557.3304907248241,
+            526.5716839608059
+          ],
+          [
+            1981.1155514686316,
+            551.3123549855131
+          ]
+        ],
+        "pixels": 1424.0,
+        "mm_estimate": 39.82275914083938
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            1260.4841503396024,
+            466.2792219912964
+          ],
+          [
+            1257.9649106636314,
+            611.257335620406
+          ]
+        ],
+        "pixels": 145.0,
+        "mm_estimate": 4.0549860080208635
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 139.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 642,
+      "paired_edge_sections": 459,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.49297752808988765,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3385.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            675.1407214241428,
+            647.9705130966547
+          ],
+          [
+            504.56283048447915,
+            2030.487125337743
+          ]
+        ],
+        "pixels": 1392.9999999999998,
+        "mm_estimate": 38.95583109774526
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            663.0469626347217,
+            1309.4678607847186
+          ],
+          [
+            526.0855179188063,
+            1292.569261395147
+          ]
+        ],
+        "pixels": 137.99999999999991,
+        "mm_estimate": 3.859228062806061
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 137.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 647,
+      "paired_edge_sections": 647,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4723618090452261,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3394.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            1810.8586151068416,
+            597.95475916795
+          ],
+          [
+            451.16762274453976,
+            466.8196941059319
+          ]
+        ],
+        "pixels": 1366.0000000000002,
+        "mm_estimate": 38.20076473763104
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            1108.2710651210052,
+            601.5233169859389
+          ],
+          [
+            1121.902967931259,
+            460.17915818985773
+          ]
+        ],
+        "pixels": 142.00000000000003,
+        "mm_estimate": 3.97108974578595
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 135.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 632,
+      "paired_edge_sections": 397,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5117130307467057,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3397.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            1511.2710911776448,
+            613.5322654658383
+          ],
+          [
+            145.68595811091066,
+            471.03228530053923
+          ]
+        ],
+        "pixels": 1373.0000000000002,
+        "mm_estimate": 38.39652268284584
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            801.7668285798532,
+            610.3776885426798
+          ],
+          [
+            816.4008396529101,
+            470.13915703327746
+          ]
+        ],
+        "pixels": 141.0,
+        "mm_estimate": 3.9431243250409778
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 140.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 619,
+      "paired_edge_sections": 536,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5142024763292061,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3399.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            513.035258854338,
+            1657.7830253507507
+          ],
+          [
+            456.9976456246887,
+            347.98121366185046
+          ]
+        ],
+        "pixels": 1311.0000000000005,
+        "mm_estimate": 36.662666596657616
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            417.01448457003227,
+            1004.290094321009
+          ],
+          [
+            552.8901873844414,
+            998.4768865412743
+          ]
+        ],
+        "pixels": 136.00000000000003,
+        "mm_estimate": 3.8032972213161216
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 123.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 610,
+      "paired_edge_sections": 610,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5011441647597255,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3402.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            574.98087239632,
+            1888.9839208469011
+          ],
+          [
+            637.2607138330278,
+            485.36494785222874
+          ]
+        ],
+        "pixels": 1405.0,
+        "mm_estimate": 39.291416146684924
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            535.756581133201,
+            1182.5508348614653
+          ],
+          [
+            676.6179869639832,
+            1188.8009826497755
+          ]
+        ],
+        "pixels": 141.00000000000009,
+        "mm_estimate": 3.94312432504098
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 133.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 668,
+      "paired_edge_sections": 641,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.501067615658363,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3403.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            572.3060196248382,
+            1854.0564037038246
+          ],
+          [
+            555.53167566304,
+            473.15828241295543
+          ]
+        ],
+        "pixels": 1381.0000000000002,
+        "mm_estimate": 38.62024604880561
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            497.55129192037367,
+            1174.914312027987
+          ],
+          [
+            630.5414802850989,
+            1173.298824883223
+          ]
+        ],
+        "pixels": 133.00000000000003,
+        "mm_estimate": 3.7194009590812067
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 141.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 656,
+      "paired_edge_sections": 649,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.49239681390296886,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3406.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            247.30564850632683,
+            626.3634856705913
+          ],
+          [
+            1544.8065045149165,
+            438.7134692651112
+          ]
+        ],
+        "pixels": 1311.0,
+        "mm_estimate": 36.662666596657594
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            674.2462674299146,
+            497.4256792942466
+          ],
+          [
+            693.2832256159778,
+            629.0562009183064
+          ]
+        ],
+        "pixels": 133.0,
+        "mm_estimate": 3.7194009590812063
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 138.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 616,
+      "paired_edge_sections": 337,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.33638443935926776,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3415.png",
+    "status": "UNMEASURABLE",
+    "reason": "TARGET_COMPONENT_AMBIGUOUS",
+    "dimensions": {},
+    "dimension_status": {
+      "underhead_length": {
+        "status": "UNMEASURABLE",
+        "reason": "TARGET_COMPONENT_AMBIGUOUS"
+      },
+      "thread_major_diameter": {
+        "status": "UNMEASURABLE",
+        "reason": "TARGET_COMPONENT_AMBIGUOUS"
+      }
+    },
+    "diagnostics": {}
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3417.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            1146.5909433642967,
+            603.2041157814393
+          ],
+          [
+            409.07953243391097,
+            1786.1296919473584
+          ]
+        ],
+        "pixels": 1394.0,
+        "mm_estimate": 38.98379651849024
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            810.8877977326349,
+            1273.0172598843355
+          ],
+          [
+            692.9346735668797,
+            1199.477743299455
+          ]
+        ],
+        "pixels": 138.99999999999997,
+        "mm_estimate": 3.8871934835510342
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 136.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 664,
+      "paired_edge_sections": 644,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5351506456241033,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3419.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            1128.270488713345,
+            545.7226726101633
+          ],
+          [
+            381.3012951580027,
+            1743.9634764051607
+          ]
+        ],
+        "pixels": 1412.0,
+        "mm_estimate": 39.487174091899725
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            797.4751730195696,
+            1211.5204715814841
+          ],
+          [
+            676.1235901989714,
+            1135.8713252086698
+          ]
+        ],
+        "pixels": 142.99999999999997,
+        "mm_estimate": 3.9990551665309204
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 127.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 655,
+      "paired_edge_sections": 616,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5240793201133145,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3420.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            480.1482223361052,
+            1201.9825210902486
+          ],
+          [
+            1643.1912549012604,
+            373.42057144396665
+          ]
+        ],
+        "pixels": 1428.0000000000002,
+        "mm_estimate": 39.93462082381927
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            1100.5246404740176,
+            671.6184010572524
+          ],
+          [
+            1184.0771059845672,
+            788.9000513999572
+          ]
+        ],
+        "pixels": 144.00000000000017,
+        "mm_estimate": 4.027020587275897
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 136.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 653,
+      "paired_edge_sections": 506,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.569327731092437,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3425.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "across_flats": {
+        "line_xy": [
+          [
+            406.7000159703921,
+            299.0999923337882
+          ],
+          [
+            160.80809446695716,
+            256.17635906393025
+          ]
+        ],
+        "pixels": 249.6102468925037,
+        "mm_estimate": 6.980455576605075
+      }
+    },
+    "dimension_status": {
+      "across_flats": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 124.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3427.png",
+    "status": "UNMEASURABLE",
+    "reason": "SIX_FLATS_NOT_RESOLVED",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "SIX_FLATS_NOT_RESOLVED"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 122.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3431.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "across_flats": {
+        "line_xy": [
+          [
+            430.5999999543748,
+            312.2000031030923
+          ],
+          [
+            167.68206801530965,
+            306.193155921318
+          ]
+        ],
+        "pixels": 262.9865417624638,
+        "mm_estimate": 7.354529290652311
+      }
+    },
+    "dimension_status": {
+      "across_flats": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 129.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3435.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "across_flats": {
+        "line_xy": [
+          [
+            377.09999970661545,
+            195.00000138111224
+          ],
+          [
+            174.28414701953756,
+            381.5655086712388
+          ]
+        ],
+        "pixels": 275.57387142399534,
+        "mm_estimate": 7.706539260692702
+      }
+    },
+    "dimension_status": {
+      "across_flats": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 125.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3437.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "across_flats": {
+        "line_xy": [
+          [
+            328.20000636428307,
+            408.2000226702372
+          ],
+          [
+            237.90419656114818,
+            178.164364869046
+          ]
+        ],
+        "pixels": 247.1229190666674,
+        "mm_estimate": 6.910896407424888
+      }
+    },
+    "dimension_status": {
+      "across_flats": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 141.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_43_IMG_3441.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "across_flats": {
+        "line_xy": [
+          [
+            344.00000191177884,
+            387.699999309511
+          ],
+          [
+            206.14568272837124,
+            181.82338066657098
+          ]
+        ],
+        "pixels": 247.76802743972308,
+        "mm_estimate": 6.928937134503493
+      }
+    },
+    "dimension_status": {
+      "across_flats": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 141.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_47_IMG_3445.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            292.74336221078966,
+            74.23346330953773
+          ],
+          [
+            256.1349248710522,
+            480.2363096663024
+          ]
+        ],
+        "pixels": 407.64995883018577,
+        "mm_estimate": 11.400102615356445
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            364.4321667126818,
+            270.67195094196865
+          ],
+          [
+            184.28741007085878,
+            285.74234715622566
+          ]
+        ],
+        "pixels": 180.77403073338917,
+        "mm_estimate": 5.055421829223632
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 146.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "outer_ellipse_rms_fraction": 0.006994610642597262,
+      "inner_ellipse_rms_fraction": 0.0044551857969072125,
+      "outer_full_contour_residual": 0.009480874636236562,
+      "inner_full_contour_residual": 0.006552018437348395,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8493150684931506,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3453.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            401.7901424710193,
+            467.058828912643
+          ],
+          [
+            170.2480147993536,
+            108.49346218225682
+          ]
+        ],
+        "pixels": 426.8265210893276,
+        "mm_estimate": 11.936383247375487
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            342.45101267929414,
+            212.72238409490237
+          ],
+          [
+            226.51514205522304,
+            358.70933887493516
+          ]
+        ],
+        "pixels": 186.4224156675068,
+        "mm_estimate": 5.21338129043579
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 110.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "outer_ellipse_rms_fraction": 0.0033592085426090122,
+      "inner_ellipse_rms_fraction": 0.003772510088913249,
+      "outer_full_contour_residual": 0.005059093252227109,
+      "inner_full_contour_residual": 0.005431945046479114,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8493150684931506,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3456.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            464.21303025518256,
+            187.1098190347198
+          ],
+          [
+            92.65871089015675,
+            362.54759442986574
+          ]
+        ],
+        "pixels": 410.8905271169016,
+        "mm_estimate": 11.490726470947264
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            338.56259718153075,
+            342.06258765749436
+          ],
+          [
+            215.63855503373375,
+            209.7525560830722
+          ]
+        ],
+        "pixels": 180.59973586131835,
+        "mm_estimate": 5.050547599792481
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 120.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "outer_ellipse_rms_fraction": 0.003082483991525651,
+      "inner_ellipse_rms_fraction": 0.0048205521718036205,
+      "outer_full_contour_residual": 0.004293329096731776,
+      "inner_full_contour_residual": 0.00667487292304565,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.848605577689243,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3458.png",
+    "status": "UNMEASURABLE",
+    "reason": "INNER_HOLE_NOT_UNAMBIGUOUS",
+    "dimensions": {},
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "UNMEASURABLE",
+        "reason": "INNER_HOLE_NOT_UNAMBIGUOUS"
+      },
+      "inner_diameter": {
+        "status": "UNMEASURABLE",
+        "reason": "INNER_HOLE_NOT_UNAMBIGUOUS"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 157.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "aperture_candidates": 0
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3460.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            327.57543104815625,
+            80.26144048272
+          ],
+          [
+            238.85357553781867,
+            496.37263146364364
+          ]
+        ],
+        "pixels": 425.46455892913093,
+        "mm_estimate": 11.898295402526857
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            372.1552675146138,
+            317.27457107764025
+          ],
+          [
+            195.80580156845667,
+            255.42243513196348
+          ]
+        ],
+        "pixels": 186.88183662554613,
+        "mm_estimate": 5.226229190826418
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 125.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "outer_ellipse_rms_fraction": 0.0026587247635563396,
+      "inner_ellipse_rms_fraction": 0.004529711471288294,
+      "outer_full_contour_residual": 0.003923078989150636,
+      "inner_full_contour_residual": 0.006838314492304301,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8486590038314177,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3463.png",
+    "status": "UNMEASURABLE",
+    "reason": "MULTIPLE_FOREGROUND_OBJECTS",
+    "dimensions": {}
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3465.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            525.0058193358625,
+            568.1837808739692
+          ],
+          [
+            286.49378125474277,
+            216.61866050535153
+          ]
+        ],
+        "pixels": 424.83646991449564,
+        "mm_estimate": 11.880730628967287
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            413.18234633113923,
+            482.4400546377964
+          ],
+          [
+            395.9678371363102,
+            299.165605309776
+          ]
+        ],
+        "pixels": 184.08113185035546,
+        "mm_estimate": 5.14790630340576
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 143.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.007069307040919603,
+      "inner_ellipse_rms_fraction": 0.005672284931485618,
+      "outer_full_contour_residual": 0.013565250120142187,
+      "inner_full_contour_residual": 0.00796737805207213,
+      "outer_edge_support_fraction": 0.9855653568564555,
+      "inner_edge_support_fraction": 0.85,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3466.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            387.9101013705827,
+            481.075722397792
+          ],
+          [
+            184.79079245698543,
+            98.36289078885865
+          ]
+        ],
+        "pixels": 433.2742377890303,
+        "mm_estimate": 12.116696357727049
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            329.9858374702079,
+            207.1627558474689
+          ],
+          [
+            240.4965905761634,
+            366.7057192420757
+          ]
+        ],
+        "pixels": 182.92698674169455,
+        "mm_estimate": 5.115630149841307
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 126.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "outer_ellipse_rms_fraction": 0.0031642095138041406,
+      "inner_ellipse_rms_fraction": 0.005189214269457179,
+      "outer_full_contour_residual": 0.005136891247335889,
+      "inner_full_contour_residual": 0.007606441728340514,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8485436893203884,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3470.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            476.910492184132,
+            578.5111889832675
+          ],
+          [
+            304.60827609174476,
+            210.72190920664477
+          ]
+        ],
+        "pixels": 406.1489972768056,
+        "mm_estimate": 11.35812759399414
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            420.48074527645383,
+            309.1340528202673
+          ],
+          [
+            361.58017519589765,
+            479.24185971040555
+          ]
+        ],
+        "pixels": 180.01650791187757,
+        "mm_estimate": 5.034237384796143
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 156.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "outer_ellipse_rms_fraction": 0.00904321250939242,
+      "inner_ellipse_rms_fraction": 0.00447708373071116,
+      "outer_full_contour_residual": 0.01810528186045698,
+      "inner_full_contour_residual": 0.006343545354986471,
+      "outer_edge_support_fraction": 0.9697452229299363,
+      "inner_edge_support_fraction": 0.849802371541502,
+      "aperture_hierarchy_depth": 3,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3471.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            571.3913286354887,
+            445.7283265988358
+          ],
+          [
+            190.99387989223854,
+            322.4398159566806
+          ]
+        ],
+        "pixels": 399.8778261753638,
+        "mm_estimate": 11.182751655578613
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            466.64609984130215,
+            408.2008985006806
+          ],
+          [
+            294.85907474616664,
+            360.0514757773979
+          ]
+        ],
+        "pixels": 178.40725573704137,
+        "mm_estimate": 4.989233970642089
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 146.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.0073259318220580336,
+      "inner_ellipse_rms_fraction": 0.005805752132575553,
+      "outer_full_contour_residual": 0.009876707373415465,
+      "inner_full_contour_residual": 0.00781939890189323,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.848605577689243,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3473.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            346.2471516668511,
+            409.6618111303493
+          ],
+          [
+            188.35604096307713,
+            41.276091695253605
+          ]
+        ],
+        "pixels": 400.79625886849846,
+        "mm_estimate": 11.208436012268065
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            287.41460262185615,
+            139.65678079802444
+          ],
+          [
+            247.2835979348163,
+            312.3812838095933
+          ]
+        ],
+        "pixels": 177.3252702741058,
+        "mm_estimate": 4.958975791931152
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 154.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.010450845174029466,
+      "inner_ellipse_rms_fraction": 0.005792992573214643,
+      "outer_full_contour_residual": 0.045836382175138635,
+      "inner_full_contour_residual": 0.008057832974858034,
+      "outer_edge_support_fraction": 0.9223227752639518,
+      "inner_edge_support_fraction": 0.8502994011976048,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_50_IMG_3483.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            561.8312589155628,
+            375.56209632713984
+          ],
+          [
+            154.35151981227386,
+            351.489234560344
+          ]
+        ],
+        "pixels": 408.1902013195903,
+        "mm_estimate": 11.415210723876953
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            397.90026279081087,
+            442.69283035962246
+          ],
+          [
+            314.64882080913736,
+            286.16399215512007
+          ]
+        ],
+        "pixels": 177.2909466997095,
+        "mm_estimate": 4.958015918731688
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 141.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.003299751020304829,
+      "inner_ellipse_rms_fraction": 0.004279136620387823,
+      "outer_full_contour_residual": 0.004733425770881186,
+      "inner_full_contour_residual": 0.006221253205990905,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8493975903614458,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3484.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            446.71892082879515,
+            488.7475928622721
+          ],
+          [
+            273.60139688248427,
+            230.38481902923996
+          ]
+        ],
+        "pixels": 311.00000000000006,
+        "mm_estimate": 8.69724585168613
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            287.3495116305981,
+            416.1776857945512
+          ],
+          [
+            440.2072299112345,
+            313.75445619287535
+          ]
+        ],
+        "pixels": 184.00000000000003,
+        "mm_estimate": 5.145637417074752
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 137.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 143,
+      "paired_edge_sections": 143,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4790996784565916,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3486.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            546.7880689582031,
+            417.92571886667616
+          ],
+          [
+            249.36415594103983,
+            448.58539866864055
+          ]
+        ],
+        "pixels": 299.00000000000017,
+        "mm_estimate": 8.361660802746474
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            408.3661170569665,
+            528.2008893804948
+          ],
+          [
+            388.78083664835384,
+            338.20768741969823
+          ]
+        ],
+        "pixels": 191.00000000000006,
+        "mm_estimate": 5.341395362289553
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 136.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 126,
+      "paired_edge_sections": 126,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.4983277591973244,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3488.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            394.13205228830327,
+            358.1015085087431
+          ],
+          [
+            367.3004601626777,
+            694.0316584863896
+          ]
+        ],
+        "pixels": 337.0,
+        "mm_estimate": 9.424346791055386
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            467.3620327962232,
+            546.53019516449
+          ],
+          [
+            291.9207675259984,
+            532.5172568436886
+          ]
+        ],
+        "pixels": 175.99999999999997,
+        "mm_estimate": 4.921914051114978
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 136.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 172,
+      "paired_edge_sections": 172,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5400593471810089,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3497.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            410.4009464402798,
+            506.8585312534448
+          ],
+          [
+            362.4721031771553,
+            212.73810356529728
+          ]
+        ],
+        "pixels": 297.99999999999994,
+        "mm_estimate": 8.333695382001498
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            299.3993642451958,
+            379.04754287534024
+          ],
+          [
+            475.0820358173107,
+            350.41890495307126
+          ]
+        ],
+        "pixels": 177.99999999999994,
+        "mm_estimate": 4.977844892604921
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 133.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 131,
+      "paired_edge_sections": 131,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.48322147651006714,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3501.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            410.5211072179917,
+            352.8643904017694
+          ],
+          [
+            463.8868822985994,
+            694.7241482704691
+          ]
+        ],
+        "pixels": 345.99999999999994,
+        "mm_estimate": 9.676035577760128
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            523.4401159462885,
+            515.3929954773647
+          ],
+          [
+            352.51023701193867,
+            542.0758830176686
+          ]
+        ],
+        "pixels": 173.0,
+        "mm_estimate": 4.838017788880065
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 133.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE",
+      "shaft_profile_columns": 185,
+      "paired_edge_sections": 185,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5144508670520231,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3502.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "underhead_length": {
+        "line_xy": [
+          [
+            378.37435385516625,
+            397.1789662390975
+          ],
+          [
+            478.96689704174855,
+            676.6250974616563
+          ]
+        ],
+        "pixels": 296.99999999999994,
+        "mm_estimate": 8.305729961256528
+      },
+      "thread_major_diameter": {
+        "line_xy": [
+          [
+            517.0206980466542,
+            507.75559687295026
+          ],
+          [
+            342.01403000828395,
+            570.7529471514158
+          ]
+        ],
+        "pixels": 185.99999999999997,
+        "mm_estimate": 5.201568258564693
+      }
+    },
+    "dimension_status": {
+      "underhead_length": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "thread_major_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 131.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "shaft_profile_columns": 73,
+      "paired_edge_sections": 73,
+      "diameter_method": "paired observed gradients on interior shaft; pooled profile seed",
+      "underhead_method": "silhouette shoulder transition",
+      "tip_method": "silhouette end",
+      "shaft_line_fraction": 0.5084175084175084,
+      "warning": "Candidate visible silhouette. Shoulder, tip and shadow require review."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3506.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            694.0925426144852,
+            613.6133578874089
+          ],
+          [
+            278.7283350653347,
+            319.98043147419935
+          ]
+        ],
+        "pixels": 508.672507992047,
+        "mm_estimate": 14.22524070739746
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            566.3566414136764,
+            511.2643975394958
+          ],
+          [
+            406.0861142662372,
+            421.4866653735476
+          ]
+        ],
+        "pixels": 183.70270293324145,
+        "mm_estimate": 5.137323379516603
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 146.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.008105973837800234,
+      "inner_ellipse_rms_fraction": 0.0030827570317610025,
+      "outer_full_contour_residual": 0.009565694332588639,
+      "inner_full_contour_residual": 0.004242906572300136,
+      "outer_edge_support_fraction": 0.999330655957162,
+      "inner_edge_support_fraction": 0.8494208494208494,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3507.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            717.1430756373636,
+            468.24558099772895
+          ],
+          [
+            231.1903103190807,
+            393.4814298585814
+          ]
+        ],
+        "pixels": 491.6703859457507,
+        "mm_estimate": 13.749769210815426
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            563.1608525367456,
+            437.98652131480804
+          ],
+          [
+            385.7431266107553,
+            423.8558222077797
+          ]
+        ],
+        "pixels": 177.9795666080889,
+        "mm_estimate": 4.977273464202881
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 144.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.002989878721533133,
+      "inner_ellipse_rms_fraction": 0.0040736471795106395,
+      "outer_full_contour_residual": 0.0038477897227094074,
+      "inner_full_contour_residual": 0.005650895325476184,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8497942386831275,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3509.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            610.6097552774402,
+            223.8178155184982
+          ],
+          [
+            395.60794323899,
+            694.2435759988309
+          ]
+        ],
+        "pixels": 517.2293256412637,
+        "mm_estimate": 14.4645357131958
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            575.2139387540165,
+            516.7127446840597
+          ],
+          [
+            432.19132474480375,
+            400.53033735367404
+          ]
+        ],
+        "pixels": 184.26562319410502,
+        "mm_estimate": 5.15306568145752
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 152.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.0026975539852841543,
+      "inner_ellipse_rms_fraction": 0.003449506135866211,
+      "outer_full_contour_residual": 0.0034818428606923657,
+      "inner_full_contour_residual": 0.004675679572043125,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8491295938104448,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3511.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            605.0138440618854,
+            764.6822046845648
+          ],
+          [
+            439.42023030583505,
+            244.5953219851483
+          ]
+        ],
+        "pixels": 545.8127980111722,
+        "mm_estimate": 15.263884544372557
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            538.423673093138,
+            409.36527597673825
+          ],
+          [
+            504.78518778137914,
+            594.3190597033781
+          ]
+        ],
+        "pixels": 187.9878980383314,
+        "mm_estimate": 5.257160663604735
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 132.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.0030775834378007146,
+      "inner_ellipse_rms_fraction": 0.0037869297380351647,
+      "outer_full_contour_residual": 0.0042996376888401406,
+      "inner_full_contour_residual": 0.0056114002164789865,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8500948766603416,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3514.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            724.6257673305292,
+            429.85877758838814
+          ],
+          [
+            232.0715217591262,
+            466.2362083535705
+          ]
+        ],
+        "pixels": 493.89574031316533,
+        "mm_estimate": 13.812002182006838
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            568.0894936317475,
+            445.6723593670367
+          ],
+          [
+            388.69952960110305,
+            451.3193704520449
+          ]
+        ],
+        "pixels": 179.47882306587067,
+        "mm_estimate": 5.019200801849364
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 134.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.0033418051997801757,
+      "inner_ellipse_rms_fraction": 0.003490709218949746,
+      "outer_full_contour_residual": 0.0042588933579987475,
+      "inner_full_contour_residual": 0.005294115438141064,
+      "outer_edge_support_fraction": 1.0,
+      "inner_edge_support_fraction": 0.8501026694045175,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3522.png",
+    "status": "MEASURED_CANDIDATE",
+    "reason": "",
+    "dimensions": {
+      "outer_diameter": {
+        "line_xy": [
+          [
+            568.6752994841773,
+            233.1272217686955
+          ],
+          [
+            424.8207489762389,
+            712.049009177708
+          ]
+        ],
+        "pixels": 500.0602065320578,
+        "mm_estimate": 13.984394073486328
+      },
+      "inner_diameter": {
+        "line_xy": [
+          [
+            568.5395980418217,
+            527.5762063976305
+          ],
+          [
+            424.96436206217123,
+            419.05835871219267
+          ]
+        ],
+        "pixels": 179.97214132440666,
+        "mm_estimate": 5.0329966545105
+      }
+    },
+    "dimension_status": {
+      "outer_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      },
+      "inner_diameter": {
+        "status": "CANDIDATE",
+        "reason": ""
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 151.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE",
+      "outer_ellipse_rms_fraction": 0.010270332691540037,
+      "inner_ellipse_rms_fraction": 0.003903318048451786,
+      "outer_full_contour_residual": 0.0236281552081242,
+      "inner_full_contour_residual": 0.005112073272615014,
+      "outer_edge_support_fraction": 0.952054794520548,
+      "inner_edge_support_fraction": 0.848605577689243,
+      "aperture_hierarchy_depth": 1,
+      "radial_aperture_supported_rays": null,
+      "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+      "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+      "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification."
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3536.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 142.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3537.png",
+    "status": "UNMEASURABLE",
+    "reason": "SIX_FLATS_NOT_RESOLVED",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "SIX_FLATS_NOT_RESOLVED"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 125.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3539.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 139.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3541.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 140.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3542.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 116.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3544.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 142.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3551.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 134.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3553.png",
+    "status": "UNMEASURABLE",
+    "reason": "SIX_FLATS_NOT_RESOLVED",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "SIX_FLATS_NOT_RESOLVED"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 143.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3555.png",
+    "status": "UNMEASURABLE",
+    "reason": "SIX_FLATS_NOT_RESOLVED",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "SIX_FLATS_NOT_RESOLVED"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 147.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3557.png",
+    "status": "UNMEASURABLE",
+    "reason": "SIX_FLATS_NOT_RESOLVED",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "SIX_FLATS_NOT_RESOLVED"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 145.0,
+      "silhouette_method": "OTSU_DARK_SILHOUETTE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3562.png",
+    "status": "UNMEASURABLE",
+    "reason": "SIX_FLATS_NOT_RESOLVED",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "SIX_FLATS_NOT_RESOLVED"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 143.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE"
+    }
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3563.png",
+    "status": "UNMEASURABLE",
+    "reason": "OPPOSITE_FLATS_NOT_PARALLEL",
+    "dimensions": {},
+    "dimension_status": {
+      "across_flats": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL"
+      }
+    },
+    "diagnostics": {
+      "segmentation_threshold": 144.0,
+      "silhouette_method": "CLOSED_STRONG_EDGE"
+    }
+  }
+]

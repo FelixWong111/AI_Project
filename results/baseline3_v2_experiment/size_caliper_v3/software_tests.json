@@ -1,0 +1,33 @@
+{
+  "run": 108,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": [
+    "test_vision_caliper",
+    "test_baseline3_geometry_repair",
+    "test_baseline3_metrology",
+    "test_baseline3_size_integration",
+    "test_baseline3_adapter",
+    "test_p06_geometry",
+    "test_p06_foreground",
+    "test_p06_measurement_policy",
+    "test_work_orders",
+    "test_p07_real_integration",
+    "test_p07_dashboard"
+  ],
+  "sources": {
+    "test_vision_caliper": "3f976a5ed56f0d86c8bcb844ea5d0b575b058bee9ea5cfb57f6385d0138e6997",
+    "test_baseline3_geometry_repair": "022c393d4bc4abe7b15015e02ad497ba39902379b5b8bf030e1a9a6eda5471d5",
+    "test_baseline3_metrology": "eaedc68dfb4749a40ac218196639dae66d190b7dd53ad30e22d15a959fbeb352",
+    "test_baseline3_size_integration": "4920b04afabc13e86d2642f9245386c9f8096805f89d74ded8f0610abb4917cc",
+    "test_baseline3_adapter": "d4c9b2bb142c383b2641476291ebccccb7a164e255fff2fa7f3fbb26c3d600e4",
+    "test_p06_geometry": "9aea73034432c0a8de41214bcb96af85839b0083e3726a28d688e8734783ace4",
+    "test_p06_foreground": "98bea8c62acc5fbcd3b1fce5c991550c17825e0ccdecee4ca4a7b12e463ebda7",
+    "test_p06_measurement_policy": "3c010e8745e23596e82cfa31a936c364e5796efe0df2dec2164a62ef315dabf4",
+    "test_work_orders": "409fceb53fa1ce28d1410de57b4adf807891fcdfc9e65acc03cf4f119b187430",
+    "test_p07_real_integration": "9513ae2e6095f28aea30f0a0c28c8b2a74ed92e3074792b7974bf21c9a8150e1",
+    "test_p07_dashboard": "32608f7735eca9ccde1caf7e23bbd3bba5484f9686da7df634f9171cc13309bd"
+  },
+  "synthetic_software_fixtures_are_not_physical_acceptance": true
+}

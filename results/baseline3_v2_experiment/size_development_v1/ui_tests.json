@@ -1,0 +1,11 @@
+{
+  "modules": [
+    "test_baseline3_metrology",
+    "test_p07_dashboard"
+  ],
+  "run": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "physical_acceptance": false
+}

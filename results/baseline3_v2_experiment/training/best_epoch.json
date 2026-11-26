@@ -1,0 +1,17 @@
+{
+  "serialized_epoch": -1,
+  "metric_keys": [
+    "metrics/precision(B)",
+    "metrics/recall(B)",
+    "metrics/mAP50(B)",
+    "metrics/mAP50-95(B)",
+    "val/box_loss",
+    "val/cls_loss",
+    "val/dfl_loss"
+  ],
+  "matching_epochs": [
+    69
+  ],
+  "selected_epoch": 69,
+  "evidence": "Unique match of checkpoint stored validation metric tuple against native results.csv; not inferred from filename"
+}

@@ -1,0 +1,13 @@
+{
+  "historical_proxy": "results/data_manifests/development.json (308 legacy development images, not a recovered exact P06 fit list)",
+  "new_development_manifest": "results/dataset_v2_baseline_comparison/training/baseline1/development_manifest.json",
+  "new_train_val_images": 440,
+  "proxy_cross_duplicates": {
+    "sha256": [],
+    "pixel_sha256": []
+  },
+  "exact_old_p06_training_membership": "UNKNOWN: missing original file-level P06 fit manifest",
+  "independence_basis": "New collection and collector confirmation, previous data audit; hashes do not establish physical independence",
+  "stage3_access": false,
+  "test_images_opened_for_this_audit": false
+}

@@ -1,0 +1,5 @@
+﻿image_id,event,class_id,detection_id,score,overlap_true_class,overlap_iou,object_id
+A198.jpg,FP,4,4,0.6628120541572571,,0.49640687905184044,
+A198.jpg,FN,4,,,,,5
+B04.jpg,FP,0,0,0.7554113268852234,2,0.849020904371286,
+B04.jpg,FN,2,,,,,2

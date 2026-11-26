@@ -1,0 +1,14 @@
+[
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+  "--input_dir",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\yolo\\images\\train",
+  "--model",
+  "baseline3",
+  "--counts_file",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_caliper_v3\\compatibility\\expected_counts.json",
+  "--config",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_caliper_v3\\configs\\B.json",
+  "--output_dir",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_caliper_v3\\compatibility\\B\\batch"
+]

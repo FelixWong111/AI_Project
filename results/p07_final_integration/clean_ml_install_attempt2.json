@@ -1,0 +1,43 @@
+{
+  "status": "INTERRUPTED_SLOW_REQUIREMENTS_DOWNLOAD",
+  "venv": "outputs/final_integration/clean_env",
+  "system_site_packages": false,
+  "previous_attempt": "results/p07_final_integration/clean_ml_install_attempt1.json",
+  "downloaded_packages": "results/p07_final_integration/clean_downloaded_wheels.json",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_wheelhouse\\torch-2.7.1+cu126-cp311-cp311-win_amd64.whl",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_wheelhouse\\torchvision-0.22.1+cu126-cp311-cp311-win_amd64.whl",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_wheelhouse\\pillow-13.0.0-cp311-cp311-win_amd64.whl",
+        "--disable-pip-version-check"
+      ],
+      "log": "results/p07_final_integration/clean_ml_install_retry_1.log",
+      "start_time": 1795672812.0428445,
+      "exit_code": 0,
+      "elapsed_seconds": 68.57637977600098
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt",
+        "--disable-pip-version-check"
+      ],
+      "log": "results/p07_final_integration/clean_ml_install_retry_2.log",
+      "start_time": 1795672880.6192243,
+      "exit_code": 15,
+      "elapsed_seconds": 551.1795918941498
+    }
+  ],
+  "reason": "NumPy partial download remained slow; same pinned wheel downloaded successfully from documented TUNA mirror in 6.8 seconds"
+}

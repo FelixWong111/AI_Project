@@ -1,0 +1,18 @@
+{
+  "camera_backend": "auto",
+  "width": 1280,
+  "height": 720,
+  "reconnect_seconds": 2.0,
+  "max_count": 1000,
+  "record_fps": 20.0,
+  "bridge": "src.models.baseline3.candidate:create_backend",
+  "model_config": {
+    "baseline1_config": "config/baseline1.json",
+    "device": "cpu",
+    "baseline2_bundle": "models/baseline2",
+    "baseline3_config": "results/baseline3_v2_experiment/configs/new_c0.2_n0.7_detector.json",
+    "baseline3_mode": "yolo_frozen",
+    "baseline3_pipeline_config": "config/p06_pipeline_candidate.json",
+    "baseline3_acceptance_approval": null
+  }
+}

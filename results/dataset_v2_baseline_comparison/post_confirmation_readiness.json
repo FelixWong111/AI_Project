@@ -1,0 +1,11 @@
+{
+  "status": "READY",
+  "frozen": true,
+  "human_confirmation": "human_confirmation.json",
+  "dataset_freeze": "dataset_freeze.json",
+  "training": "RUN",
+  "stage2": "RUN",
+  "stage3": "NOT_RUN",
+  "live": "NOT_MEASURED",
+  "original_guards_preserved": true
+}

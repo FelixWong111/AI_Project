@@ -1,0 +1,24 @@
+{
+  "curated_stage2": {
+    "train": {
+      "images": 360,
+      "annotations": 1805,
+      "status": "PASS"
+    },
+    "validation": {
+      "images": 80,
+      "annotations": 399,
+      "status": "PASS"
+    },
+    "stage2_test": {
+      "images": 30,
+      "annotations": 149,
+      "status": "PASS"
+    }
+  },
+  "migrated_files_sha256_verified": 1170,
+  "stage3": "EXCLUDED",
+  "formal_training": "NOT_RUN",
+  "inference": "NOT_RUN",
+  "physical_size": "NOT_VERIFIED"
+}

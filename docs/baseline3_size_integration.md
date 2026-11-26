@@ -1,3 +1,5 @@
+> 历史来源说明：当前正式数据为datasets/mechanical_components_v2，生产模型由config/model_registry.json选择。正式操作与验收状态见docs/p07/final_handoff.md；下文旧路径/模式仅用于历史追溯。
+
 # Baseline3 P07尺寸证据接入与判定（2026-11-25）
 
 ## 当前状态

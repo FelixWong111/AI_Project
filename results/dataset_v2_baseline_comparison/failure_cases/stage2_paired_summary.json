@@ -1,0 +1,14 @@
+{
+  "baseline1": {
+    "both_correct": 18,
+    "old_wrong_new_correct": 11,
+    "old_correct_new_wrong": 0,
+    "both_wrong": 1
+  },
+  "baseline2": {
+    "both_correct": 18,
+    "old_wrong_new_correct": 8,
+    "old_correct_new_wrong": 2,
+    "both_wrong": 2
+  }
+}

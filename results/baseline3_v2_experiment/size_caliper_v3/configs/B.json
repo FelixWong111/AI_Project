@@ -1,0 +1,19 @@
+{
+  "camera_backend": "auto",
+  "width": 1280,
+  "height": 720,
+  "reconnect_seconds": 2.0,
+  "max_count": 1000,
+  "record_fps": 20.0,
+  "bridge": "src.models.baseline3.size_caliper:create_backend",
+  "model_config": {
+    "baseline1_config": "config/baseline1.json",
+    "device": "cpu",
+    "baseline2_bundle": "models/baseline2",
+    "baseline3_config": "models/baseline3_v2_candidate/detector.json",
+    "baseline3_mode": "size_caliper_v3",
+    "baseline3_pipeline_config": "results/baseline3_v2_experiment/configs/new_pipeline.json",
+    "baseline3_acceptance_approval": null,
+    "size_candidate_config": "results/baseline3_v2_experiment/size_caliper_v3/configs/candidate_B.json"
+  }
+}

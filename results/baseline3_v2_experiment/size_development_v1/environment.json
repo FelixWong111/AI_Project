@@ -1,0 +1,18 @@
+{
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "ultralytics": "8.3.236",
+    "opencv-python": "4.10.0.84",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "timing": "Offline processing after decode through complete result and GPU synchronize; no real live latency measured",
+  "detector_hardware": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  }
+}

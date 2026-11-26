@@ -1,0 +1,302 @@
+[
+  {
+    "trial": 0,
+    "parameters": {
+      "background_offset": 25,
+      "close_kernel": 3,
+      "targeted": false
+    },
+    "family": {
+      "1": {
+        "complete": 67,
+        "total": 70,
+        "normalized_spread": 0.04396743575136271
+      },
+      "4": {
+        "complete": 12,
+        "total": 14,
+        "normalized_spread": 0.02137003718476122
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 1,
+    "parameters": {
+      "background_offset": 25,
+      "close_kernel": 3,
+      "targeted": true
+    },
+    "family": {
+      "1": {
+        "complete": 69,
+        "total": 70,
+        "normalized_spread": 0.042761521471055115
+      },
+      "4": {
+        "complete": 8,
+        "total": 14,
+        "normalized_spread": 0.012989128238753535
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 2,
+    "parameters": {
+      "background_offset": 25,
+      "close_kernel": 5,
+      "targeted": false
+    },
+    "family": {
+      "1": {
+        "complete": 67,
+        "total": 70,
+        "normalized_spread": 0.043915711200273086
+      },
+      "4": {
+        "complete": 12,
+        "total": 14,
+        "normalized_spread": 0.02137003718476122
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 3,
+    "parameters": {
+      "background_offset": 25,
+      "close_kernel": 5,
+      "targeted": true
+    },
+    "family": {
+      "1": {
+        "complete": 69,
+        "total": 70,
+        "normalized_spread": 0.042613066958199455
+      },
+      "4": {
+        "complete": 8,
+        "total": 14,
+        "normalized_spread": 0.012989128238753535
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 4,
+    "parameters": {
+      "background_offset": 35,
+      "close_kernel": 3,
+      "targeted": false
+    },
+    "family": {
+      "1": {
+        "complete": 67,
+        "total": 70,
+        "normalized_spread": 0.04396743575136271
+      },
+      "4": {
+        "complete": 12,
+        "total": 14,
+        "normalized_spread": 0.02137003718476122
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 5,
+    "parameters": {
+      "background_offset": 35,
+      "close_kernel": 3,
+      "targeted": true
+    },
+    "family": {
+      "1": {
+        "complete": 69,
+        "total": 70,
+        "normalized_spread": 0.042761521471055115
+      },
+      "4": {
+        "complete": 8,
+        "total": 14,
+        "normalized_spread": 0.012989128238753535
+      },
+      "5": {
+        "complete": 31,
+        "total": 42,
+        "normalized_spread": 0.020552068282686003
+      }
+    }
+  },
+  {
+    "trial": 6,
+    "parameters": {
+      "background_offset": 35,
+      "close_kernel": 5,
+      "targeted": false
+    },
+    "family": {
+      "1": {
+        "complete": 67,
+        "total": 70,
+        "normalized_spread": 0.043915711200273086
+      },
+      "4": {
+        "complete": 12,
+        "total": 14,
+        "normalized_spread": 0.02137003718476122
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 7,
+    "parameters": {
+      "background_offset": 35,
+      "close_kernel": 5,
+      "targeted": true
+    },
+    "family": {
+      "1": {
+        "complete": 69,
+        "total": 70,
+        "normalized_spread": 0.042613066958199455
+      },
+      "4": {
+        "complete": 8,
+        "total": 14,
+        "normalized_spread": 0.012989128238753535
+      },
+      "5": {
+        "complete": 31,
+        "total": 42,
+        "normalized_spread": 0.020552068282686003
+      }
+    }
+  },
+  {
+    "trial": 8,
+    "parameters": {
+      "background_offset": 45,
+      "close_kernel": 3,
+      "targeted": false
+    },
+    "family": {
+      "1": {
+        "complete": 67,
+        "total": 70,
+        "normalized_spread": 0.04410984363209885
+      },
+      "4": {
+        "complete": 12,
+        "total": 14,
+        "normalized_spread": 0.02137003718476122
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 9,
+    "parameters": {
+      "background_offset": 45,
+      "close_kernel": 3,
+      "targeted": true
+    },
+    "family": {
+      "1": {
+        "complete": 69,
+        "total": 70,
+        "normalized_spread": 0.04297357580662162
+      },
+      "4": {
+        "complete": 9,
+        "total": 14,
+        "normalized_spread": 0.015131679515627374
+      },
+      "5": {
+        "complete": 30,
+        "total": 42,
+        "normalized_spread": 0.020543186728486772
+      }
+    }
+  },
+  {
+    "trial": 10,
+    "parameters": {
+      "background_offset": 45,
+      "close_kernel": 5,
+      "targeted": false
+    },
+    "family": {
+      "1": {
+        "complete": 67,
+        "total": 70,
+        "normalized_spread": 0.043968214368828605
+      },
+      "4": {
+        "complete": 12,
+        "total": 14,
+        "normalized_spread": 0.02137003718476122
+      },
+      "5": {
+        "complete": 32,
+        "total": 42,
+        "normalized_spread": 0.02053614321675993
+      }
+    }
+  },
+  {
+    "trial": 11,
+    "parameters": {
+      "background_offset": 45,
+      "close_kernel": 5,
+      "targeted": true
+    },
+    "family": {
+      "1": {
+        "complete": 69,
+        "total": 70,
+        "normalized_spread": 0.04297397681689312
+      },
+      "4": {
+        "complete": 9,
+        "total": 14,
+        "normalized_spread": 0.015131679515627374
+      },
+      "5": {
+        "complete": 30,
+        "total": 42,
+        "normalized_spread": 0.020543186728486772
+      }
+    }
+  }
+]

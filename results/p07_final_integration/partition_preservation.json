@@ -1,0 +1,7 @@
+{
+  "splits_unchanged": true,
+  "no_cross_scene_groups": true,
+  "no_cross_byte_or_frozen_pixel_hashes": true,
+  "scene_independence": "Existing human confirmation, not established by hash uniqueness",
+  "stage3_images_used": false
+}

@@ -1,0 +1,17 @@
+image_id,truth,status,count_rule,scenario,non_catalogue_type,has_id0,run
+A019.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A026.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A061.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A084.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A099.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A102.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A109.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A131.jpg,PASS,FAIL,FAIL,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A147.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A154.jpg,PASS,FAIL,FAIL,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A162.jpg,PASS,FAIL,FAIL,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A170.jpg,PASS,FAIL,FAIL,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A194.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A198.jpg,PASS,FAIL,FAIL,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+A204.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247
+D37.jpg,FAIL,REVIEW,PASS,D,M4_small_washer,True,results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247

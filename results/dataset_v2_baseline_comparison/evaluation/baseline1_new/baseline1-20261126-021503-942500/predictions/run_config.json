@@ -1,0 +1,315 @@
+{
+  "model": "baseline1",
+  "model_version": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+  "deployment_stage": "candidate",
+  "output_capability": "image_level",
+  "supported_fixed_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "preprocessing": {
+    "color": "BGR -> grayscale",
+    "resize": "stretch to image_size, aspect ratio not preserved",
+    "denoise": "none",
+    "normalization": "HOG transform_sqrt handles gradient magnitude normalization",
+    "image_size": [
+      128,
+      128
+    ],
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        16,
+        16
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ],
+      "block_norm": "L2-Hys",
+      "transform_sqrt": true,
+      "channel_axis": null
+    }
+  },
+  "score_convention": "P(predicted label), uncalibrated MLP probability",
+  "class_catalogue": [
+    {
+      "class_id": 0,
+      "class_name": "non_catalogue",
+      "size": "type/spec not in catalogue (rejection label, not a sixth target class)"
+    },
+    {
+      "class_id": 1,
+      "class_name": "long_screw",
+      "size": "M4 x 25"
+    },
+    {
+      "class_id": 2,
+      "class_name": "thick_screw",
+      "size": "M5 x 10"
+    },
+    {
+      "class_id": 3,
+      "class_name": "thin_screw",
+      "size": "M4 x 10"
+    },
+    {
+      "class_id": 4,
+      "class_name": "hex_nut",
+      "size": "M4"
+    },
+    {
+      "class_id": 5,
+      "class_name": "flat_washer",
+      "size": "M5"
+    }
+  ],
+  "coordinate_convention": null,
+  "thresholds": {
+    "decision": "argmax in classifier.classes_ order"
+  },
+  "rejection": null,
+  "size_tolerance": null,
+  "calibration": null,
+  "model_file_size_bytes": 955515,
+  "bundle_file": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\models\\baseline1_v2_candidate\\baseline1.joblib",
+  "config_file": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\models\\baseline1_v2_candidate\\config.json",
+  "training_metadata": {
+    "trained_at": "2026-11-25T18:07:02.234432+00:00",
+    "sklearn_version": "1.9.1",
+    "numpy_version": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "random_state": 42,
+    "config_checksum": "ae2fad4356b07c41b95dd99d51cd8669beadb31bbebe2c88ba06adb7833bbe38",
+    "data_manifest_sha256": "378d2f517ff2d7d2f1e477040b2c1cf757e0d88b7aa6a2f6f156ca8fc5574441",
+    "scene_confirmation": {
+      "each_image_is_distinct_scene": true,
+      "source": "2026-11-26 collector/user confirmation; auto IDs, conservative empty background grouping",
+      "scope": "This new collection only"
+    },
+    "official_held_out_test": "NOT_RUN",
+    "trained_on": "New independent mechanical-component arrangements supplied on 2026-11-26; original source 数据集/"
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "per_image_expected_counts": {
+    "A019.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A026.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A061.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A084.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A099.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A102.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A109.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A131.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A147.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A154.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A162.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A170.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A194.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A198.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A204.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "B04.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "B16.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "B31.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "C03.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "C14.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "C33.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "D10.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "D37.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "D43.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "E11.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "E23.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "E30.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "F07.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "F09.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "G13.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    }
+  },
+  "load_error": null,
+  "evidence_mode": "batch_inference",
+  "offline_timing": "perf_counter: adapter preprocess/features/classifier/postprocess/result validation + GPU completion sync; excludes image decoding, weight load and export; not live latency"
+}

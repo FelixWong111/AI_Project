@@ -1,0 +1,320 @@
+{
+  "model": "baseline2",
+  "model_version": "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+  "status": "TRAINED_CANDIDATE",
+  "data": {
+    "summary": {
+      "train": {
+        "images": 360,
+        "PASS": 180,
+        "FAIL": 180
+      },
+      "validation": {
+        "images": 80,
+        "PASS": 40,
+        "FAIL": 40
+      }
+    },
+    "exclusions": [],
+    "expected_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "scene_confirmation": {
+      "each_image_is_distinct_scene": true,
+      "source": "2026-11-26 collector/user confirmation; auto IDs, conservative empty background grouping",
+      "scope": "This new collection only"
+    },
+    "source_files": {
+      "data/mechanical_components_v2/development/ground_truth_images.csv": "fdaa29fffa075687f6a92c112a77536b4ce72aebe353688585d3ba55bb8e939b",
+      "data/mechanical_components_v2/development/ground_truth_objects.csv": "af782eebb374b192299eb64174b463e09ef637beabf1191135e6e86b80f20b70",
+      "data/mechanical_components_v2/development/dataset_v2.json": "0807f8520a9a316391db08c31c62f87f51b330b72752e2eb67462d4f05258a62",
+      "data/mechanical_components_v2/dataset_status.json": "c8c5a8da278bbd0883503438fbbc1f2be5efab49f0e20733a24c576309f5c99b"
+    },
+    "dataset_status": "READY",
+    "official_held_out_test": "NOT_RUN",
+    "manifest_sha256": "378d2f517ff2d7d2f1e477040b2c1cf757e0d88b7aa6a2f6f156ca8fc5574441",
+    "settings_sha256": "1d05b80efa729f9e3a583551dae31f13b59cf2cb988cf9fa55cfeafe85ffe7a8"
+  },
+  "selection_rule": "Original selected hyperparameters only; no search",
+  "trials": [
+    {
+      "parameters": {
+        "C": 0.1
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8625,
+        "precision": 0.8372093023255814,
+        "recall": 0.9,
+        "f1": 0.8674698795180723,
+        "TP": 36,
+        "FP": 7,
+        "FN": 4,
+        "TN": 33,
+        "false_PASS": 4,
+        "false_FAIL": 7,
+        "confusion_matrix": [
+          [
+            33,
+            7
+          ],
+          [
+            4,
+            36
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 40,
+        "support_FAIL": 40,
+        "misclassified": [
+          {
+            "image_id": "A076.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5131452142708386
+          },
+          {
+            "image_id": "A197.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5857812225448256
+          },
+          {
+            "image_id": "B39.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.025865513188109257
+          },
+          {
+            "image_id": "B40.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.005186388295055466
+          },
+          {
+            "image_id": "G12.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.3785671997886134
+          },
+          {
+            "image_id": "H018.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.8838625688683375
+          },
+          {
+            "image_id": "H020.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.781711435731475
+          },
+          {
+            "image_id": "H021.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.6470990492766402
+          },
+          {
+            "image_id": "H039.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9497737310776714
+          },
+          {
+            "image_id": "H040.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7120791388380567
+          },
+          {
+            "image_id": "H076.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4627217192922555
+          }
+        ]
+      },
+      "warnings": [],
+      "n_iter": [
+        31
+      ],
+      "fit_seconds": 0.06602070003282279,
+      "loss_curve": null,
+      "scaler_fit_samples": 360,
+      "fit_split": "train only"
+    }
+  ],
+  "selected_parameters": {
+    "C": 0.1
+  },
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 180,
+      "FP": 0,
+      "FN": 0,
+      "TN": 180,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          180,
+          0
+        ],
+        [
+          0,
+          180
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 180,
+      "support_FAIL": 180,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 0.8625,
+      "precision": 0.8372093023255814,
+      "recall": 0.9,
+      "f1": 0.8674698795180723,
+      "TP": 36,
+      "FP": 7,
+      "FN": 4,
+      "TN": 33,
+      "false_PASS": 4,
+      "false_FAIL": 7,
+      "confusion_matrix": [
+        [
+          33,
+          7
+        ],
+        [
+          4,
+          36
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 40,
+      "support_FAIL": 40,
+      "misclassified": [
+        {
+          "image_id": "A076.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5131452142708386
+        },
+        {
+          "image_id": "A197.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5857812225448256
+        },
+        {
+          "image_id": "B39.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.025865513188109257
+        },
+        {
+          "image_id": "B40.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.005186388295055466
+        },
+        {
+          "image_id": "G12.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.3785671997886134
+        },
+        {
+          "image_id": "H018.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.883862568868338
+        },
+        {
+          "image_id": "H020.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.781711435731475
+        },
+        {
+          "image_id": "H021.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.6470990492766402
+        },
+        {
+          "image_id": "H039.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9497737310776714
+        },
+        {
+          "image_id": "H040.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.7120791388380567
+        },
+        {
+          "image_id": "H076.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.4627217192922555
+        }
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "device": "cpu",
+    "torch_threads": 4,
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.9.1",
+      "scikit-image": "0.26.0",
+      "Pillow": "13.0.0",
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "joblib": "1.5.3",
+      "opencv-python": "4.10.0.84"
+    },
+    "cuda_available": true
+  },
+  "command": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe -m scripts.train_baseline2 --dataset-config data/mechanical_components_v2/configs/training.json --output-dir models/baseline2_v2_candidate --original-only",
+  "training_seconds": 46.97735870000906,
+  "files": {
+    "baseline2.json": {
+      "sha256": "ef62957cc7addd49303d004b2269190da3a43199e9fb1519ea17518914e1c33b",
+      "size_bytes": 44420
+    },
+    "resnet18-f37072fd.pth": {
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "size_bytes": 46830571
+    }
+  },
+  "official_held_out_test": "NOT_RUN"
+}

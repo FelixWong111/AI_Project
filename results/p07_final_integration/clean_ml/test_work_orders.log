@@ -1,0 +1,10 @@
+test_generator_ignores_truth_and_rejects_guessing (test_work_orders.WorkOrderTests.test_generator_ignores_truth_and_rejects_guessing) ... ok
+test_gui_never_displays_obsolete_label_or_score (test_work_orders.WorkOrderTests.test_gui_never_displays_obsolete_label_or_score) ... ok
+test_object_inference_applies_id0_rule_before_validating_decision (test_work_orders.WorkOrderTests.test_object_inference_applies_id0_rule_before_validating_decision) ... ok
+test_object_rejudge_never_calls_detector_or_alters_observation (test_work_orders.WorkOrderTests.test_object_rejudge_never_calls_detector_or_alters_observation) ... ok
+test_shared_invalid_input_validation (test_work_orders.WorkOrderTests.test_shared_invalid_input_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.051s
+
+OK

@@ -1,0 +1,5 @@
+image_id,detection_id,detector_class_id,details
+H086.jpg,3,1,underhead_length
+E05.jpg,5,2,thread_major_diameter
+H005.jpg,1,2,underhead_length
+H034.jpg,2,2,underhead_length

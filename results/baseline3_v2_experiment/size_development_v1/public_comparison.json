@@ -1,0 +1,1216 @@
+{
+  "scope": "Public Train and reused/development Val only; no Stage2 Test or Stage3 images accessed",
+  "candidate_frozen_before_comparison": true,
+  "results": {
+    "validation_raw": {
+      "image_level": {
+        "input_cases": 80,
+        "ground_truth_eligible": 80,
+        "completed_eligible": 80,
+        "correct": 79,
+        "wrong_on_completed": 1,
+        "unresolved_eligible": 0,
+        "all_input_correct_fraction": 0.9875,
+        "all_eligible_correct_fraction": 0.9875,
+        "completed_accuracy": 0.9875,
+        "completed_balanced_accuracy": 0.9875,
+        "prediction_coverage": 1.0,
+        "eligible_coverage": 1.0,
+        "status_counts": {
+          "PASS": 39,
+          "FAIL": 41
+        },
+        "confusion_matrix": {
+          "positive_class": "FAIL",
+          "tp": 40,
+          "fp": 1,
+          "fn": 0,
+          "tn": 39,
+          "rows_truth_PASS_FAIL": [
+            [
+              39,
+              1
+            ],
+            [
+              0,
+              40
+            ]
+          ]
+        },
+        "fail": {
+          "precision": 0.975609756097561,
+          "recall": 1.0,
+          "f1": 0.9876543209876543,
+          "support_all": 40,
+          "support_scored": 40,
+          "recall_all_eligible": 1.0
+        },
+        "passed": {
+          "precision": 1.0,
+          "recall": 0.975,
+          "f1": 0.9873417721518988,
+          "support_all": 40,
+          "support_scored": 40,
+          "recall_all_eligible": 0.975
+        },
+        "false_pass": {
+          "count": 0,
+          "rate": 0.0,
+          "denominator": 40,
+          "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+        },
+        "false_fail": {
+          "count": 1,
+          "rate": 0.025,
+          "denominator": 40,
+          "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+        },
+        "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+      },
+      "object_level": {
+        "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+        "image_count": 80,
+        "prediction_status_counts": {
+          "PASS": 39,
+          "FAIL": 41
+        },
+        "five_class_vector_exact": 0.95,
+        "classes": {
+          "0": {
+            "support": 25,
+            "tp": 25,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9615384615384616,
+            "recall": 1.0,
+            "f1": 0.9803921568627451,
+            "count_mae": 0.0125
+          },
+          "1": {
+            "support": 72,
+            "tp": 72,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          },
+          "2": {
+            "support": 77,
+            "tp": 77,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          },
+          "3": {
+            "support": 78,
+            "tp": 77,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.9390243902439024,
+            "recall": 0.9871794871794872,
+            "f1": 0.9625,
+            "count_mae": 0.05
+          },
+          "4": {
+            "support": 73,
+            "tp": 72,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9863013698630136,
+            "recall": 0.9863013698630136,
+            "f1": 0.9863013698630136,
+            "count_mae": 0.0
+          },
+          "5": {
+            "support": 74,
+            "tp": 74,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          }
+        }
+      },
+      "measurement_calls": 0,
+      "complete_measurements": 0,
+      "measurement_success_rate": null,
+      "offline_processing_ms": {
+        "median": 22.840099991299212,
+        "p95": 40.527130020200275,
+        "mean": 31.4805050031282,
+        "n": 80
+      },
+      "source": "results/baseline3_v2_experiment/validation/new_c0.35_n0.5/baseline3-20261126-042936-521860"
+    },
+    "validation_previous_full": {
+      "image_level": {
+        "input_cases": 80,
+        "ground_truth_eligible": 80,
+        "completed_eligible": 41,
+        "correct": 40,
+        "wrong_on_completed": 1,
+        "unresolved_eligible": 39,
+        "all_input_correct_fraction": 0.5,
+        "all_eligible_correct_fraction": 0.5,
+        "completed_accuracy": 0.975609756097561,
+        "completed_balanced_accuracy": 0.5,
+        "prediction_coverage": 0.5125,
+        "eligible_coverage": 0.5125,
+        "status_counts": {
+          "REVIEW": 39,
+          "FAIL": 41
+        },
+        "confusion_matrix": {
+          "positive_class": "FAIL",
+          "tp": 40,
+          "fp": 1,
+          "fn": 0,
+          "tn": 0,
+          "rows_truth_PASS_FAIL": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              40
+            ]
+          ]
+        },
+        "fail": {
+          "precision": 0.975609756097561,
+          "recall": 1.0,
+          "f1": 0.9876543209876543,
+          "support_all": 40,
+          "support_scored": 40,
+          "recall_all_eligible": 1.0
+        },
+        "passed": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support_all": 40,
+          "support_scored": 1,
+          "recall_all_eligible": 0.0
+        },
+        "false_pass": {
+          "count": 0,
+          "rate": 0.0,
+          "denominator": 40,
+          "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+        },
+        "false_fail": {
+          "count": 1,
+          "rate": 0.025,
+          "denominator": 40,
+          "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+        },
+        "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+      },
+      "object_level": {
+        "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+        "image_count": 80,
+        "prediction_status_counts": {
+          "REVIEW": 39,
+          "FAIL": 41
+        },
+        "five_class_vector_exact": 0.95,
+        "classes": {
+          "0": {
+            "support": 25,
+            "tp": 25,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9615384615384616,
+            "recall": 1.0,
+            "f1": 0.9803921568627451,
+            "count_mae": 0.0125
+          },
+          "1": {
+            "support": 72,
+            "tp": 72,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          },
+          "2": {
+            "support": 77,
+            "tp": 77,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          },
+          "3": {
+            "support": 78,
+            "tp": 77,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.9390243902439024,
+            "recall": 0.9871794871794872,
+            "f1": 0.9625,
+            "count_mae": 0.05
+          },
+          "4": {
+            "support": 73,
+            "tp": 72,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9863013698630136,
+            "recall": 0.9863013698630136,
+            "f1": 0.9863013698630136,
+            "count_mae": 0.0
+          },
+          "5": {
+            "support": 74,
+            "tp": 74,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          }
+        }
+      },
+      "measurement_calls": 0,
+      "complete_measurements": 0,
+      "measurement_success_rate": null,
+      "offline_processing_ms": {
+        "median": 22.35279997694306,
+        "p95": 44.431255021481775,
+        "mean": 32.25105374585837,
+        "n": 80
+      },
+      "source": "results/baseline3_v2_experiment/validation/new_full/baseline3-20261126-043039-741041"
+    },
+    "validation_candidate": {
+      "image_level": {
+        "input_cases": 80,
+        "ground_truth_eligible": 80,
+        "completed_eligible": 53,
+        "correct": 47,
+        "wrong_on_completed": 6,
+        "unresolved_eligible": 27,
+        "all_input_correct_fraction": 0.5875,
+        "all_eligible_correct_fraction": 0.5875,
+        "completed_accuracy": 0.8867924528301887,
+        "completed_balanced_accuracy": 0.7692307692307692,
+        "prediction_coverage": 0.6625,
+        "eligible_coverage": 0.6625,
+        "status_counts": {
+          "REVIEW": 27,
+          "PASS": 7,
+          "FAIL": 46
+        },
+        "confusion_matrix": {
+          "positive_class": "FAIL",
+          "tp": 40,
+          "fp": 6,
+          "fn": 0,
+          "tn": 7,
+          "rows_truth_PASS_FAIL": [
+            [
+              7,
+              6
+            ],
+            [
+              0,
+              40
+            ]
+          ]
+        },
+        "fail": {
+          "precision": 0.8695652173913043,
+          "recall": 1.0,
+          "f1": 0.9302325581395349,
+          "support_all": 40,
+          "support_scored": 40,
+          "recall_all_eligible": 1.0
+        },
+        "passed": {
+          "precision": 1.0,
+          "recall": 0.5384615384615384,
+          "f1": 0.7,
+          "support_all": 40,
+          "support_scored": 13,
+          "recall_all_eligible": 0.175
+        },
+        "false_pass": {
+          "count": 0,
+          "rate": 0.0,
+          "denominator": 40,
+          "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+        },
+        "false_fail": {
+          "count": 6,
+          "rate": 0.15,
+          "denominator": 40,
+          "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+        },
+        "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+      },
+      "object_level": {
+        "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+        "image_count": 80,
+        "prediction_status_counts": {
+          "REVIEW": 27,
+          "PASS": 7,
+          "FAIL": 46
+        },
+        "five_class_vector_exact": 0.7875,
+        "classes": {
+          "0": {
+            "support": 25,
+            "tp": 25,
+            "fp": 19,
+            "fn": 0,
+            "precision": 0.5681818181818182,
+            "recall": 1.0,
+            "f1": 0.7246376811594203,
+            "count_mae": 0.2375
+          },
+          "1": {
+            "support": 72,
+            "tp": 70,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.9722222222222222,
+            "f1": 0.9859154929577465,
+            "count_mae": 0.025
+          },
+          "2": {
+            "support": 77,
+            "tp": 67,
+            "fp": 0,
+            "fn": 10,
+            "precision": 1.0,
+            "recall": 0.8701298701298701,
+            "f1": 0.9305555555555556,
+            "count_mae": 0.125
+          },
+          "3": {
+            "support": 78,
+            "tp": 75,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.9493670886075949,
+            "recall": 0.9615384615384616,
+            "f1": 0.9554140127388535,
+            "count_mae": 0.0625
+          },
+          "4": {
+            "support": 73,
+            "tp": 69,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.9857142857142858,
+            "recall": 0.9452054794520548,
+            "f1": 0.965034965034965,
+            "count_mae": 0.0375
+          },
+          "5": {
+            "support": 74,
+            "tp": 74,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          }
+        }
+      },
+      "measurement_calls": 378,
+      "complete_measurements": 305,
+      "measurement_success_rate": 0.8068783068783069,
+      "offline_processing_ms": {
+        "median": 771.8198499933351,
+        "p95": 1036.1102650058451,
+        "mean": 670.8485850038414,
+        "n": 80
+      },
+      "source": "results/baseline3_v2_experiment/size_development_v1/public_validation/baseline3-20261126-092746-093440"
+    },
+    "train_raw": {
+      "image_level": {
+        "input_cases": 360,
+        "ground_truth_eligible": 360,
+        "completed_eligible": 360,
+        "correct": 359,
+        "wrong_on_completed": 1,
+        "unresolved_eligible": 0,
+        "all_input_correct_fraction": 0.9972222222222222,
+        "all_eligible_correct_fraction": 0.9972222222222222,
+        "completed_accuracy": 0.9972222222222222,
+        "completed_balanced_accuracy": 0.9972222222222222,
+        "prediction_coverage": 1.0,
+        "eligible_coverage": 1.0,
+        "status_counts": {
+          "PASS": 179,
+          "FAIL": 181
+        },
+        "confusion_matrix": {
+          "positive_class": "FAIL",
+          "tp": 180,
+          "fp": 1,
+          "fn": 0,
+          "tn": 179,
+          "rows_truth_PASS_FAIL": [
+            [
+              179,
+              1
+            ],
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        "fail": {
+          "precision": 0.994475138121547,
+          "recall": 1.0,
+          "f1": 0.997229916897507,
+          "support_all": 180,
+          "support_scored": 180,
+          "recall_all_eligible": 1.0
+        },
+        "passed": {
+          "precision": 1.0,
+          "recall": 0.9944444444444445,
+          "f1": 0.9972144846796658,
+          "support_all": 180,
+          "support_scored": 180,
+          "recall_all_eligible": 0.9944444444444445
+        },
+        "false_pass": {
+          "count": 0,
+          "rate": 0.0,
+          "denominator": 180,
+          "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+        },
+        "false_fail": {
+          "count": 1,
+          "rate": 0.005555555555555556,
+          "denominator": 180,
+          "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+        },
+        "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+      },
+      "object_level": {
+        "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+        "image_count": 360,
+        "prediction_status_counts": {
+          "PASS": 179,
+          "FAIL": 181
+        },
+        "five_class_vector_exact": 0.9916666666666667,
+        "classes": {
+          "0": {
+            "support": 110,
+            "tp": 109,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.990909090909091,
+            "f1": 0.9954337899543378,
+            "count_mae": 0.002777777777777778
+          },
+          "1": {
+            "support": 325,
+            "tp": 324,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9969230769230769,
+            "recall": 0.9969230769230769,
+            "f1": 0.9969230769230769,
+            "count_mae": 0.0
+          },
+          "2": {
+            "support": 349,
+            "tp": 349,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          },
+          "3": {
+            "support": 353,
+            "tp": 353,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.9943661971830986,
+            "recall": 1.0,
+            "f1": 0.9971751412429378,
+            "count_mae": 0.005555555555555556
+          },
+          "4": {
+            "support": 332,
+            "tp": 324,
+            "fp": 9,
+            "fn": 8,
+            "precision": 0.972972972972973,
+            "recall": 0.9759036144578314,
+            "f1": 0.9744360902255639,
+            "count_mae": 0.002777777777777778
+          },
+          "5": {
+            "support": 336,
+            "tp": 336,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          }
+        }
+      },
+      "measurement_calls": 0,
+      "complete_measurements": 0,
+      "measurement_success_rate": null,
+      "offline_processing_ms": {
+        "median": 42.07975001190789,
+        "p95": 49.11123001656961,
+        "mean": 40.86185305414902,
+        "n": 360
+      },
+      "source": "results/baseline3_v2_experiment/size_development_v1/public_train/raw"
+    },
+    "train_previous_full": {
+      "image_level": {
+        "input_cases": 360,
+        "ground_truth_eligible": 360,
+        "completed_eligible": 181,
+        "correct": 180,
+        "wrong_on_completed": 1,
+        "unresolved_eligible": 179,
+        "all_input_correct_fraction": 0.5,
+        "all_eligible_correct_fraction": 0.5,
+        "completed_accuracy": 0.994475138121547,
+        "completed_balanced_accuracy": 0.5,
+        "prediction_coverage": 0.5027777777777778,
+        "eligible_coverage": 0.5027777777777778,
+        "status_counts": {
+          "REVIEW": 179,
+          "FAIL": 181
+        },
+        "confusion_matrix": {
+          "positive_class": "FAIL",
+          "tp": 180,
+          "fp": 1,
+          "fn": 0,
+          "tn": 0,
+          "rows_truth_PASS_FAIL": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        "fail": {
+          "precision": 0.994475138121547,
+          "recall": 1.0,
+          "f1": 0.997229916897507,
+          "support_all": 180,
+          "support_scored": 180,
+          "recall_all_eligible": 1.0
+        },
+        "passed": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support_all": 180,
+          "support_scored": 1,
+          "recall_all_eligible": 0.0
+        },
+        "false_pass": {
+          "count": 0,
+          "rate": 0.0,
+          "denominator": 180,
+          "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+        },
+        "false_fail": {
+          "count": 1,
+          "rate": 0.005555555555555556,
+          "denominator": 180,
+          "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+        },
+        "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+      },
+      "object_level": {
+        "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+        "image_count": 360,
+        "prediction_status_counts": {
+          "REVIEW": 179,
+          "FAIL": 181
+        },
+        "five_class_vector_exact": 0.9916666666666667,
+        "classes": {
+          "0": {
+            "support": 110,
+            "tp": 109,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.990909090909091,
+            "f1": 0.9954337899543378,
+            "count_mae": 0.002777777777777778
+          },
+          "1": {
+            "support": 325,
+            "tp": 324,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9969230769230769,
+            "recall": 0.9969230769230769,
+            "f1": 0.9969230769230769,
+            "count_mae": 0.0
+          },
+          "2": {
+            "support": 349,
+            "tp": 349,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          },
+          "3": {
+            "support": 353,
+            "tp": 353,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.9943661971830986,
+            "recall": 1.0,
+            "f1": 0.9971751412429378,
+            "count_mae": 0.005555555555555556
+          },
+          "4": {
+            "support": 332,
+            "tp": 324,
+            "fp": 9,
+            "fn": 8,
+            "precision": 0.972972972972973,
+            "recall": 0.9759036144578314,
+            "f1": 0.9744360902255639,
+            "count_mae": 0.002777777777777778
+          },
+          "5": {
+            "support": 336,
+            "tp": 336,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          }
+        }
+      },
+      "measurement_calls": 0,
+      "complete_measurements": 0,
+      "measurement_success_rate": null,
+      "offline_processing_ms": {
+        "median": 40.90159997576848,
+        "p95": 48.20397002622485,
+        "mean": 38.51826611191629,
+        "n": 360
+      },
+      "source": "results/baseline3_v2_experiment/size_development_v1/public_train/previous_full"
+    },
+    "train_candidate": {
+      "image_level": {
+        "input_cases": 360,
+        "ground_truth_eligible": 360,
+        "completed_eligible": 214,
+        "correct": 197,
+        "wrong_on_completed": 17,
+        "unresolved_eligible": 146,
+        "all_input_correct_fraction": 0.5472222222222223,
+        "all_eligible_correct_fraction": 0.5472222222222223,
+        "completed_accuracy": 0.9205607476635514,
+        "completed_balanced_accuracy": 0.75,
+        "prediction_coverage": 0.5944444444444444,
+        "eligible_coverage": 0.5944444444444444,
+        "status_counts": {
+          "PASS": 17,
+          "REVIEW": 146,
+          "FAIL": 197
+        },
+        "confusion_matrix": {
+          "positive_class": "FAIL",
+          "tp": 180,
+          "fp": 17,
+          "fn": 0,
+          "tn": 17,
+          "rows_truth_PASS_FAIL": [
+            [
+              17,
+              17
+            ],
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        "fail": {
+          "precision": 0.9137055837563451,
+          "recall": 1.0,
+          "f1": 0.9549071618037135,
+          "support_all": 180,
+          "support_scored": 180,
+          "recall_all_eligible": 1.0
+        },
+        "passed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support_all": 180,
+          "support_scored": 34,
+          "recall_all_eligible": 0.09444444444444444
+        },
+        "false_pass": {
+          "count": 0,
+          "rate": 0.0,
+          "denominator": 180,
+          "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+        },
+        "false_fail": {
+          "count": 17,
+          "rate": 0.09444444444444444,
+          "denominator": 180,
+          "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+        },
+        "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+      },
+      "object_level": {
+        "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+        "image_count": 360,
+        "prediction_status_counts": {
+          "PASS": 17,
+          "REVIEW": 146,
+          "FAIL": 197
+        },
+        "five_class_vector_exact": 0.8555555555555555,
+        "classes": {
+          "0": {
+            "support": 110,
+            "tp": 109,
+            "fp": 52,
+            "fn": 1,
+            "precision": 0.6770186335403726,
+            "recall": 0.990909090909091,
+            "f1": 0.8044280442804428,
+            "count_mae": 0.14722222222222223
+          },
+          "1": {
+            "support": 325,
+            "tp": 323,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9969135802469136,
+            "recall": 0.9938461538461538,
+            "f1": 0.9953775038520801,
+            "count_mae": 0.002777777777777778
+          },
+          "2": {
+            "support": 349,
+            "tp": 318,
+            "fp": 0,
+            "fn": 31,
+            "precision": 1.0,
+            "recall": 0.9111747851002865,
+            "f1": 0.9535232383808095,
+            "count_mae": 0.08611111111111111
+          },
+          "3": {
+            "support": 353,
+            "tp": 342,
+            "fp": 2,
+            "fn": 11,
+            "precision": 0.9941860465116279,
+            "recall": 0.9688385269121813,
+            "f1": 0.9813486370157819,
+            "count_mae": 0.03611111111111111
+          },
+          "4": {
+            "support": 332,
+            "tp": 315,
+            "fp": 9,
+            "fn": 17,
+            "precision": 0.9722222222222222,
+            "recall": 0.9487951807228916,
+            "f1": 0.9603658536585366,
+            "count_mae": 0.027777777777777776
+          },
+          "5": {
+            "support": 336,
+            "tp": 336,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "count_mae": 0.0
+          }
+        }
+      },
+      "measurement_calls": 1698,
+      "complete_measurements": 1409,
+      "measurement_success_rate": 0.8297997644287397,
+      "offline_processing_ms": {
+        "median": 271.27420000033453,
+        "p95": 335.4516549705295,
+        "mean": 259.1989433331441,
+        "n": 360
+      },
+      "source": "results/baseline3_v2_experiment/size_development_v1/public_train/candidate"
+    }
+  },
+  "regression_cases": [
+    {
+      "image_id": "A005.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A048.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A058.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A065.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A067.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A088.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "FAIL",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A091.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A095.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A100.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A111.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A115.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A116.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A133.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A136.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A163.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A164.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A165.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A180.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A191.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A192.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A195.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A197.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A207.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "A208.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H018.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "FAIL",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H020.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "FAIL",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H021.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H034.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H039.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "FAIL",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H040.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "FAIL",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H044.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    },
+    {
+      "image_id": "H059.jpg",
+      "true_label": "PASS",
+      "raw_status": "PASS",
+      "previous_full_status": "REVIEW",
+      "candidate_status": "REVIEW",
+      "regression_vs_raw": true,
+      "regression_vs_previous": false,
+      "recovered_pass": false
+    }
+  ],
+  "official_size_mae": "NOT_AVAILABLE: no independent caliper truth",
+  "live_latency": "NOT_RUN"
+}

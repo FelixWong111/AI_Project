@@ -1,0 +1,12 @@
+﻿image_id,ground_truth_label,predicted_label,prediction_status,prediction_score,score_type,score_meaning,decision_threshold,processing_ms,scenario_type,condition,non_catalogue_type,truth_id0_count,correct_target_counts,truth_target_count,image_path,error_type
+A076.jpg,PASS,FAIL,FAIL,0.5131452142708388,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,429.9640000099316,A,normal,,0,True,5,data/mechanical_components_v2/yolo/images/val/A076.jpg,FALSE_FAIL
+A197.jpg,PASS,FAIL,FAIL,0.5857812225448255,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,396.54350001364946,A,normal,,0,True,5,data/mechanical_components_v2/yolo/images/val/A197.jpg,FALSE_FAIL
+B39.jpg,FAIL,PASS,PASS,0.025865513188109184,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,379.5252999989316,B,normal,,0,False,3,data/mechanical_components_v2/yolo/images/val/B39.jpg,FALSE_PASS
+B40.jpg,FAIL,PASS,PASS,0.005186388295055514,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,464.222599985078,B,normal,,0,False,2,data/mechanical_components_v2/yolo/images/val/B40.jpg,FALSE_PASS
+G12.jpg,FAIL,PASS,PASS,0.37856719978861286,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,396.5930999838747,G,normal,M6_cap_nut,1,False,0,data/mechanical_components_v2/yolo/images/val/G12.jpg,FALSE_PASS
+H018.jpg,PASS,FAIL,FAIL,0.8838625688683381,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,418.4420000528917,A,crowded,,0,True,5,data/mechanical_components_v2/yolo/images/val/H018.jpg,FALSE_FAIL
+H020.jpg,PASS,FAIL,FAIL,0.781711435731475,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,474.9792999937199,A,crowded,,0,True,5,data/mechanical_components_v2/yolo/images/val/H020.jpg,FALSE_FAIL
+H021.jpg,PASS,FAIL,FAIL,0.6470990492766396,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,421.8041999847628,A,crowded,,0,True,5,data/mechanical_components_v2/yolo/images/val/H021.jpg,FALSE_FAIL
+H039.jpg,PASS,FAIL,FAIL,0.9497737310776714,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,451.6266999999061,A,edge,,0,True,5,data/mechanical_components_v2/yolo/images/val/H039.jpg,FALSE_FAIL
+H040.jpg,PASS,FAIL,FAIL,0.7120791388380566,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,404.2913999874145,A,edge,,0,True,5,data/mechanical_components_v2/yolo/images/val/H040.jpg,FALSE_FAIL
+H076.jpg,FAIL,PASS,PASS,0.46272171929225525,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,412.4653000035323,B,crowded,,0,False,3,data/mechanical_components_v2/yolo/images/val/H076.jpg,FALSE_PASS

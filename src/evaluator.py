@@ -81,6 +81,34 @@ def unique(rows, field, source):
     return result
 
 
+def image_level_details(rows):
+    """Add explicit denominators; preserve the original scored-subset metrics."""
+    eligible=[r for r in rows if r['ground_truth_label'] in ('PASS','FAIL')]
+    complete=[r for r in eligible if r['prediction_status'] in ('PASS','FAIL')]
+    positive=sum(r['ground_truth_label']=='FAIL' for r in eligible)
+    negative=len(eligible)-positive
+    tp=sum(r['ground_truth_label']=='FAIL' and r['predicted_label']=='FAIL' for r in complete)
+    fp=sum(r['ground_truth_label']=='PASS' and r['predicted_label']=='FAIL' for r in complete)
+    fn=sum(r['ground_truth_label']=='FAIL' and r['predicted_label']=='PASS' for r in complete)
+    tn=sum(r['ground_truth_label']=='PASS' and r['predicted_label']=='PASS' for r in complete)
+    fail=rates(tp,fp,fn);passed=rates(tn,fn,fp)
+    recall_fail,recall_pass=ratio(tp,tp+fn),ratio(tn,tn+fp)
+    balanced=(recall_fail+recall_pass)/2 if recall_fail is not None and recall_pass is not None else None
+    statuses=Counter(r['prediction_status'] for r in rows)
+    return dict(input_cases=len(rows),ground_truth_eligible=len(eligible),completed_eligible=len(complete),
+                correct=tp+tn,wrong_on_completed=fp+fn,unresolved_eligible=len(eligible)-len(complete),
+                all_input_correct_fraction=ratio(tp+tn,len(rows)),all_eligible_correct_fraction=ratio(tp+tn,len(eligible)),
+                completed_accuracy=ratio(tp+tn,len(complete)),completed_balanced_accuracy=balanced,
+                prediction_coverage=ratio(statuses['PASS']+statuses['FAIL'],len(rows)),
+                eligible_coverage=ratio(len(complete),len(eligible)),status_counts=dict(statuses),
+                confusion_matrix=dict(positive_class='FAIL',tp=tp,fp=fp,fn=fn,tn=tn,rows_truth_PASS_FAIL=[[tn,fp],[fn,tp]]),
+                fail=dict(**fail,support_all=positive,support_scored=tp+fn,recall_all_eligible=ratio(tp,positive)),
+                passed=dict(**passed,support_all=negative,support_scored=tn+fp,recall_all_eligible=ratio(tn,negative)),
+                false_pass=dict(count=fn,rate=ratio(fn,positive),denominator=positive,denominator_definition='All eligible true FAIL cases, including unresolved predictions'),
+                false_fail=dict(count=fp,rate=ratio(fp,negative),denominator=negative,denominator_definition='All eligible true PASS cases, including unresolved predictions'),
+                note='Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping.')
+
+
 def evaluate(images_path, objects_path, expected_path, predictions_dir, output_dir):
     pred_dir, out = Path(predictions_dir), Path(output_dir)
     if out.exists():
@@ -271,6 +299,7 @@ def evaluate(images_path, objects_path, expected_path, predictions_dir, output_d
                'exclusions': 'REVIEW ground truth and images containing ignored objects are excluded from image and count metrics; REVIEW, ERROR, UNSUPPORTED_COUNTS predictions excluded. Object metrics retain judgeable non-ignored objects in images with ignored objects.',
                'inputs': {'ground_truth_images': str(images_path), 'ground_truth_objects': str(objects_path), 'expected_counts': str(expected_path), 'predictions_dir': str(predictions_dir)},
                'note': 'Latency and independent test validity require separate evidence; zero-denominator metrics are null.'}
+    summary['image_level_details']=image_level_details(details)
     out.mkdir(parents=True)
     (out/'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     columns = ['image_id','scene_id','split','annotation_status','prediction_status','ground_truth_label','predicted_label','excluded_from_image_and_count_metrics'] + [f'{p}_{c}' for c in CLASSES for p in ('actual','predicted')]

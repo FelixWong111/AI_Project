@@ -1,0 +1,22 @@
+{
+  "status": "NOT_VERIFIED",
+  "reason": "No targetable P07 window returned by Windows Computer Use after launch and repeated list_windows observations",
+  "scope": "Train A001; no camera input",
+  "own_processes_stopped": [
+    34872,
+    55164
+  ],
+  "native_input_actions": 0,
+  "backend_controller_tests": "PASS separately; not native desktop acceptance",
+  "command": [
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\pythonw.exe",
+    "-u",
+    "app.py",
+    "--model",
+    "baseline1",
+    "--image",
+    "datasets/mechanical_components_v2/public/train/images/A001.jpg",
+    "--output-dir",
+    "outputs/final_integration/desktop_gui_visible"
+  ]
+}

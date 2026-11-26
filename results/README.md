@@ -1,3 +1,5 @@
+> 当前正式入口：[P08三模型最终结果](p08_stage2_final/README.md)、[P07完整交接](../docs/p07/final_handoff.md)。正式Stage2数据在datasets/mechanical_components_v2，采用Git LFS；原始及Stage3仍不上传。软件已集成，物理/实机/完整干净ML复现未验收，整体NOT_READY。以下旧档案说明保留历史时间与来源。
+
 # 正式实验结果索引
 
 2026-11-25新增：[Baseline3尺寸模式集成验证](integration/baseline3_size_20261125/README.md)。该子档案有独立来源/SHA清单；下述原冻结模型记录、预测和指标保持不变。接入成功不代表物理标定或Stage2验收通过。

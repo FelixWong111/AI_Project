@@ -1,0 +1,7 @@
+{
+  "tests": 303,
+  "failures": 0,
+  "errors": 0,
+  "source": "Full current unittest discovery after production integration; archived Caliper tests are historical only",
+  "initial_run": "308 tests, one assertion expected old final error wording; updated for NOT_READY, no algorithm changes"
+}

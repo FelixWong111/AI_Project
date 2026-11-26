@@ -1,0 +1,17 @@
+[
+  {
+    "group": [
+      "real_headless",
+      "baseline3",
+      "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+      "image:C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images\\A001.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 792.7432000287808,
+    "p95_ms": 792.7432000287808,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  }
+]

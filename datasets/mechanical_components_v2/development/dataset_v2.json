@@ -1,0 +1,4 @@
+{
+  "dataset_root": "datasets/mechanical_components_v2",
+  "status_file": "datasets/mechanical_components_v2/dataset_status.json"
+}

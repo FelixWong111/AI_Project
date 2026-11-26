@@ -1,0 +1,95 @@
+{
+  "scope": "Training diagnostic only, cached unchanged YOLO and actual v2 geometry; no timing claim",
+  "images": 360,
+  "frames": {
+    "PASS": 111,
+    "correct": 291,
+    "REVIEW": 60,
+    "FAIL": 189,
+    "false_fail": 9
+  },
+  "measurements": {
+    "calls": 1698,
+    "complete": 1570
+  },
+  "original_measurements": {
+    "calls": 1698,
+    "complete": 1409
+  },
+  "by_class": {
+    "2": {
+      "calls": 349,
+      "complete": 330,
+      "status:WITHIN_DEVELOPMENT_BAND": 282,
+      "status:SPEC_REFERENCE_CONFLICT": 14,
+      "status:BORDERLINE_MEASUREMENT": 21,
+      "status:OUTSIDE_DEVELOPMENT_BAND": 12,
+      "status:UNMEASURABLE": 19,
+      "reason:SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 2,
+      "reason:SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 4,
+      "reason:SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 3,
+      "reason:HEAD_SHAFT_SEPARATION_FAILED": 7,
+      "reason:SHAFT_PROFILE_OUTSIDE_CROP": 1,
+      "reason:HEAD_SHAFT_SEPARATION_FAILED;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "reason:SHAFT_EXTERIOR_EDGES_UNSUPPORTED;HEAD_SHAFT_SEPARATION_FAILED": 1,
+      "status:AMBIGUOUS_INSTANCE_SUPPORT": 1
+    },
+    "3": {
+      "calls": 355,
+      "complete": 341,
+      "status:WITHIN_DEVELOPMENT_BAND": 323,
+      "status:BORDERLINE_MEASUREMENT": 7,
+      "status:OUTSIDE_DEVELOPMENT_BAND": 4,
+      "status:SPEC_REFERENCE_CONFLICT": 6,
+      "status:UNMEASURABLE": 14,
+      "reason:HEAD_SHAFT_SEPARATION_FAILED": 5,
+      "reason:SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 2,
+      "reason:SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 4,
+      "reason:SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "status:AMBIGUOUS_INSTANCE_SUPPORT": 1,
+      "reason:HEAD_SHAFT_SEPARATION_FAILED;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "reason:SHAFT_PROFILE_OUTSIDE_CROP": 1
+    },
+    "5": {
+      "calls": 336,
+      "complete": 270,
+      "status:WITHIN_DEVELOPMENT_BAND": 270,
+      "status:UNMEASURABLE": 66,
+      "reason:INNER_HOLE_NOT_UNAMBIGUOUS": 22,
+      "reason:ELLIPSE_SUPPORT_DEGENERATE": 21,
+      "reason:CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW": 21,
+      "reason:ANNULAR_OUTER_BOUNDARY_NOT_RESOLVED": 2
+    },
+    "4": {
+      "calls": 333,
+      "complete": 319,
+      "status:WITHIN_DEVELOPMENT_BAND": 310,
+      "status:BORDERLINE_MEASUREMENT": 9,
+      "status:UNMEASURABLE": 14,
+      "reason:OPPOSITE_FLATS_NOT_PARALLEL": 8,
+      "reason:NUT_TILT_OR_SHADOW_ASYMMETRY": 1,
+      "reason:SIX_FLATS_NOT_RESOLVED;OPPOSITE_FLATS_NOT_PARALLEL": 2,
+      "reason:NUT_TILT_OR_SHADOW_ASYMMETRY;OPPOSITE_FLATS_NOT_PARALLEL": 1,
+      "reason:INSUFFICIENT_STRAIGHT_FLAT_EDGE;NUT_TILT_OR_SHADOW_ASYMMETRY": 1,
+      "reason:OPPOSITE_FLATS_NOT_PARALLEL;INSUFFICIENT_STRAIGHT_FLAT_EDGE": 1
+    },
+    "1": {
+      "calls": 325,
+      "complete": 310,
+      "status:WITHIN_DEVELOPMENT_BAND": 307,
+      "status:UNMEASURABLE": 15,
+      "reason:SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 6,
+      "reason:HEAD_SHAFT_SEPARATION_FAILED": 1,
+      "reason:TARGET_OUTLINE_UNRESOLVED_OR_CLIPPED": 3,
+      "reason:SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_WIDTH_SUPPORT_INCONSISTENT": 2,
+      "status:OUTSIDE_DEVELOPMENT_BAND": 3,
+      "reason:SCREW_AXIS_AMBIGUOUS": 2,
+      "reason:SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1
+    }
+  },
+  "geometry_sha256": "7e768a97e6b8efc0a13402e98fdf29a008bbf144f0527cee470a3e72b1a7d042",
+  "backend_sha256": "be330872842404e59ad3fc25d44cd0a9be409bdf6c09701ace1872ef1b476f88",
+  "bands_unchanged": true,
+  "reference_consistency_applied": true,
+  "note": "Final nominal-reference consistency guard replayed using native assess/rejudge; no PASS promotion or tolerance widening"
+}

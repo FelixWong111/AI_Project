@@ -1,0 +1,29 @@
+{
+  "images": {
+    "train": 360,
+    "validation": 80,
+    "stage2_test": 30
+  },
+  "labels": {
+    "train": {
+      "PASS": 180,
+      "FAIL": 180
+    },
+    "validation": {
+      "PASS": 40,
+      "FAIL": 40
+    },
+    "stage2_test": {
+      "PASS": 15,
+      "FAIL": 15
+    }
+  },
+  "size_special": {
+    "development": 154,
+    "regression_used": 66,
+    "physical_specimens": 8
+  },
+  "rulers": 10,
+  "stage3": "90 images EXCLUDED; sealed locally",
+  "scene_independence": "Existing human confirmation, not inferred from hash uniqueness"
+}

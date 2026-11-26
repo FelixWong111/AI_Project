@@ -1,0 +1,20 @@
+{
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+  "packages": {
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "ultralytics": "8.3.236",
+    "numpy": "1.26.4",
+    "opencv-python": "4.10.0.84"
+  },
+  "cuda_available": true,
+  "cuda_version": "12.6",
+  "disk_free": 239850307584,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "vram": 8585216000,
+  "cuda_probe": 8.0,
+  "processes": "",
+  "cpu": "Intel(R) Core(TM) i7-14650HX",
+  "logging_workaround": "Stdlib numeric CSV reader for native DetectionTrainer checkpoint metadata; no dependency/algorithm replacement"
+}

@@ -1,0 +1,28 @@
+{
+  "ready": false,
+  "status": "OFFLINE_COMPLETE_PHYSICAL_AND_GIT_PENDING",
+  "completed": [
+    "Dataset migrated/hash checked",
+    "Three genuine frozen models registered",
+    "Real offline GUI/batch/worker/video/rejudge",
+    "P08 Stage2 results",
+    "303 software tests",
+    "Clean CUDA installation, Train predictions and core interface tests"
+  ],
+  "not_run": [
+    "Real rig latency",
+    "Physical camera disconnect/reconnect acceptance",
+    "Real demo/backup recording"
+  ],
+  "not_verified": [
+    "Camo scale/caliper/instructor acceptance",
+    "Native desktop interaction",
+    "Remote LFS quota/upload/clone",
+    "Dataset cloud-drive delivery",
+    "Original pre-improvement Stage2 decision record"
+  ],
+  "p03": "NO_WRITES",
+  "stage3": "NOT_RUN_NOT_PUBLISHED",
+  "training": "NOT_RUN",
+  "commit_push_merge": "NOT_RUN"
+}

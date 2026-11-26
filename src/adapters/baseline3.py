@@ -11,8 +11,8 @@ from src.work_orders import judge_observed, validate_counts
 class FrozenYOLOBackend:
     is_mock = False
 
-    def __init__(self, config):
-        self.detector = load_detector(model_id='baseline3', config={'config_path': config})
+    def __init__(self, config, *, detector_factory=None):
+        self.detector = (detector_factory or load_detector)(model_id='baseline3', config={'config_path': config})
         self.metadata = copy.deepcopy(self.detector.metadata)
         self.metadata.update(model='baseline3', deployment_stage='real_detector_partial_rejection',
                              baseline3_mode='yolo_frozen', business_decision_owner='baseline3_adapter',
@@ -65,12 +65,12 @@ class SizeVerifiedBackend:
     """Business decisions over P06 evidence; never change detections on rejudge."""
     is_mock = False
 
-    def __init__(self, pipeline_path, approval_path=None):
+    def __init__(self, pipeline_path, approval_path=None, *, provider_factory=None):
         import hashlib
         import json
         from src.p06_pipeline import create_backend as load_pipeline
         from src.p07_bridge import repository_path
-        self.provider = load_pipeline(model_id='baseline3', config={'pipeline_config_path': str(pipeline_path)})
+        self.provider = (provider_factory or load_pipeline)(model_id='baseline3', config={'pipeline_config_path': str(pipeline_path)})
         self.settings = json.loads(Path(pipeline_path).read_text(encoding='utf-8-sig'))
         paths = [Path(pipeline_path), Path(self.provider.metadata['weights'])]
         for key in ('detector_config_path', 'specs_path', 'calibration_path',

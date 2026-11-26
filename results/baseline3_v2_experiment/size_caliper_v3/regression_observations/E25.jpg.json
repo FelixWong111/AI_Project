@@ -1,0 +1,81 @@
+{
+  "raw": {
+    "status": "REVIEW",
+    "predicted_label": null,
+    "prediction_score": null,
+    "score_type": null,
+    "non_catalogue_count": 1,
+    "counts": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "objects": [
+      {
+        "detection_id": 0,
+        "class_id": 3,
+        "xmin": 620.2740478515625,
+        "ymin": 2196.07470703125,
+        "xmax": 1092.66259765625,
+        "ymax": 2806.581787109375,
+        "score": 0.8268252015113831
+      },
+      {
+        "detection_id": 1,
+        "class_id": 1,
+        "xmin": 711.30859375,
+        "ymin": 1191.253662109375,
+        "xmax": 1495.5455322265625,
+        "ymax": 2141.794189453125,
+        "score": 0.812828004360199
+      },
+      {
+        "detection_id": 2,
+        "class_id": 5,
+        "xmin": 1638.0098876953125,
+        "ymin": 2543.6748046875,
+        "xmax": 2227.00537109375,
+        "ymax": 3183.27294921875,
+        "score": 0.8060188293457031
+      },
+      {
+        "detection_id": 3,
+        "class_id": 0,
+        "xmin": 2318.069091796875,
+        "ymin": 2700.0634765625,
+        "xmax": 2847.872802734375,
+        "ymax": 3205.77783203125,
+        "score": 0.7760019302368164
+      },
+      {
+        "detection_id": 4,
+        "class_id": 2,
+        "xmin": 1835.53076171875,
+        "ymin": 1868.248291015625,
+        "xmax": 2538.57177734375,
+        "ymax": 2406.00146484375,
+        "score": 0.7334932088851929
+      },
+      {
+        "detection_id": 5,
+        "class_id": 4,
+        "xmin": 1504.373291015625,
+        "ymin": 1088.9732666015625,
+        "xmax": 1877.987060546875,
+        "ymax": 1458.498779296875,
+        "score": 0.7019757032394409
+      }
+    ],
+    "frame_size": {
+      "width": 3024,
+      "height": 4032
+    },
+    "message": "P06 detection/counts only; PASS/FAIL, size checking and complete rejection are not evaluated."
+  },
+  "detector_ms": 49.147000012453645,
+  "scope": "Val reused regression",
+  "input_sha256": "0fab67de6b9450d25c668ce2240c96b30b46b800064581d0f5b95202558e9b38"
+}

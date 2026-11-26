@@ -1,0 +1,314 @@
+{
+  "app.py": {
+    "sha256": "0a9aca7cb8eda4887bf6410c5a0317131af207e022c6e173f8087b18828ca515",
+    "size_bytes": 23333
+  },
+  "config/baseline1.json": {
+    "sha256": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+    "size_bytes": 3301
+  },
+  "config/baseline2.json": {
+    "sha256": "5ed22e638ad8b3c7827eab9c5b3a6f94909c8f63eb5e7e901b772da8fc1ab3c2",
+    "size_bytes": 64
+  },
+  "config/baseline3.json": {
+    "sha256": "257f51db51a2f0b9595680b58fa9af1d0598cae9628968f6a0ea45a2a20fe517",
+    "size_bytes": 1562
+  },
+  "config/inspection.json": {
+    "sha256": "9de1a1223fe2dda866c99d5f32f3b13c665b6417f185b2487748c0b98610d0fc",
+    "size_bytes": 212
+  },
+  "config/p06_foreground_candidate.json": {
+    "sha256": "e8bf98edfa722b1c5acad27cfe4ff3b8f3ec1424f31e843d3a117425dfe448ba",
+    "size_bytes": 170
+  },
+  "config/p06_measurement_policy.json": {
+    "sha256": "246f867f77cfbe61fd392297925d4f498946eff28bcf3d66f62a6e22ed3c8209",
+    "size_bytes": 43
+  },
+  "config/p06_p07_pipeline_candidate.json": {
+    "sha256": "6c583e29cf4df430d1f2121b52f46a017265f49e5807563510e1421c209a5a5a",
+    "size_bytes": 494
+  },
+  "config/p06_part_specs_candidate.json": {
+    "sha256": "01f402be54887c14bac7f6b9b86e2d8d30cab3e0c72a69e55c004e73a243002b",
+    "size_bytes": 6233
+  },
+  "config/p06_pipeline_candidate.json": {
+    "sha256": "cacb0bae1c241b39f8ec5d7058800607e9473f98d1822bc7c8a764ffa56e21df",
+    "size_bytes": 456
+  },
+  "config/p06_size_calibration_candidate.json": {
+    "sha256": "8318b7879e94f37e203749d41422dffd8f1857292dfc5302ff1c11c3ee210c59",
+    "size_bytes": 250
+  },
+  "config/p07.json": {
+    "sha256": "6c583e29cf4df430d1f2121b52f46a017265f49e5807563510e1421c209a5a5a",
+    "size_bytes": 494
+  },
+  "config/p07_yolo_frozen.json": {
+    "sha256": "f860395a5c1f408ac03d4e67fd33b14b4cd6f80808ee75e874d2b46e68251f81",
+    "size_bytes": 492
+  },
+  "config/training.json": {
+    "sha256": "bd8077518418443f112e15c8bf1bbd631f60bfb7b792d4007d388bf131d00f62",
+    "size_bytes": 550
+  },
+  "data/mechanical_components_v2/configs/stage2_evaluation.json": {
+    "sha256": "84e2e04da583602f898240cfc7f17c23d55f6d75d19bbf9f28d31d263c68cc4d",
+    "size_bytes": 676
+  },
+  "data/mechanical_components_v2/configs/stage3_evaluation.json": {
+    "sha256": "396c95fa4f0142cb70c7c7514692d408226ea32ae9b37cf2c98b7961497832b7",
+    "size_bytes": 676
+  },
+  "data/mechanical_components_v2/configs/training.json": {
+    "sha256": "7dcfe1ac67ad6e718237cea0e1077296ecc30e0ae0a307bc625b8939a18c8ba0",
+    "size_bytes": 660
+  },
+  "data/mechanical_components_v2/dataset_status.json": {
+    "sha256": "d1f93feb2da43d10418615d3cefa178b139a47a996b34d81d038acaacfc74030",
+    "size_bytes": 336
+  },
+  "data/mechanical_components_v2/development/ground_truth_images.csv": {
+    "sha256": "fdaa29fffa075687f6a92c112a77536b4ce72aebe353688585d3ba55bb8e939b",
+    "size_bytes": 123024
+  },
+  "data/mechanical_components_v2/development/ground_truth_objects.csv": {
+    "sha256": "af782eebb374b192299eb64174b463e09ef637beabf1191135e6e86b80f20b70",
+    "size_bytes": 169903
+  },
+  "data/mechanical_components_v2/ground_truth_images.csv": {
+    "sha256": "c356d7a2a8d344768f40b91a84c29ddcc19b7f1ddb79b91efbfb4c422dc9ba51",
+    "size_bytes": 155750
+  },
+  "data/mechanical_components_v2/ground_truth_objects.csv": {
+    "sha256": "8c25e6165cab747e2abd5e5d8dc1d9f8d15c0169f9330493afa8a104d6d9eca3",
+    "size_bytes": 216385
+  },
+  "data/mechanical_components_v2/splits/stage2_test.csv": {
+    "sha256": "2ab5136e359af01c9177f92c286708f8f665f248a5ceb899cd57b4da3fa93819",
+    "size_bytes": 2657
+  },
+  "data/mechanical_components_v2/splits/stage2_test.txt": {
+    "sha256": "9f0caeca2c8e1e31b19334aa07575191e7baf02e48d3cca6ea771f47b15abe77",
+    "size_bytes": 1665
+  },
+  "data/mechanical_components_v2/splits/stage3_crowded.csv": {
+    "sha256": "cd4f78e42f97d713acc2164f5b70a9ab7055900c8741433d5c14942441c12aac",
+    "size_bytes": 2702
+  },
+  "data/mechanical_components_v2/splits/stage3_crowded.txt": {
+    "sha256": "2aceffb270266e3a003c6a25fb99f39977e0d3b2e29ae0cebaebbe520f46ecb1",
+    "size_bytes": 1680
+  },
+  "data/mechanical_components_v2/splits/stage3_edge.csv": {
+    "sha256": "9ccee9965a8650c346fbdbdf5df136230ca828ff5b189a4adad0404bef240bc1",
+    "size_bytes": 2702
+  },
+  "data/mechanical_components_v2/splits/stage3_edge.txt": {
+    "sha256": "6f0cbc16ec7864828fb988c548e2727d9b9138837cd8bca37dd164b18548fd7c",
+    "size_bytes": 1680
+  },
+  "data/mechanical_components_v2/splits/stage3_normal.csv": {
+    "sha256": "273e67efd4c57c5bf71ee81964aaf70ac99d4f720c38d3599bce5b14f35ed171",
+    "size_bytes": 2657
+  },
+  "data/mechanical_components_v2/splits/stage3_normal.txt": {
+    "sha256": "6a5508e2e162723bcc27f3a98f2b0c9dbf9480fd9451024c288e682140c6093b",
+    "size_bytes": 1665
+  },
+  "data/mechanical_components_v2/splits/stage3_test.csv": {
+    "sha256": "968cf80706d6a0d74a461ad882002eff975ea71bcebd9081bb09d3556fac9e2a",
+    "size_bytes": 7937
+  },
+  "data/mechanical_components_v2/splits/stage3_test.txt": {
+    "sha256": "ac7849c489aaaf79fa185086d61cb308dc1f1ff6325fe0934faafbf9c5b8e5ee",
+    "size_bytes": 5025
+  },
+  "data/mechanical_components_v2/splits/test.csv": {
+    "sha256": "802966f90c07ccb141000a6d255d5a82ee33be0148c5da2677ad68e9ac48d168",
+    "size_bytes": 10532
+  },
+  "data/mechanical_components_v2/splits/test.txt": {
+    "sha256": "dcdb51deb8987040b14189a0794b88c50e095c65c95279720f9b0a3f8bcfff2f",
+    "size_bytes": 6690
+  },
+  "data/mechanical_components_v2/splits/train.csv": {
+    "sha256": "c46b9795378c46baeffa26047b13ac1bf130bda2088f096c2fce285d6a8d7e9d",
+    "size_bytes": 31652
+  },
+  "data/mechanical_components_v2/splits/train.txt": {
+    "sha256": "5146fe3b7d419a96d356363682b46b328ba46638b79c6ee805b63b875e7c1c9d",
+    "size_bytes": 20370
+  },
+  "data/mechanical_components_v2/splits/val.csv": {
+    "sha256": "390db87d9e5b0e870f990c10dfc4e5694bc0fb5a10174ec6cc0c45f340c39433",
+    "size_bytes": 6932
+  },
+  "data/mechanical_components_v2/splits/val.txt": {
+    "sha256": "e78a4bebb7c2631ac96a0e4c3da74b193c548212bdce8e217fe108c434e87ee1",
+    "size_bytes": 4370
+  },
+  "models/baseline1/baseline1.joblib": {
+    "sha256": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+    "size_bytes": 955169
+  },
+  "models/baseline1/config.json": {
+    "sha256": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+    "size_bytes": 3301
+  },
+  "models/baseline1/freeze.json": {
+    "sha256": "d99060970307086363cb64d1e00b9d96c62887d6d28a11f3632081acd54dff73",
+    "size_bytes": 250
+  },
+  "models/baseline1/scene_guard.npz": {
+    "sha256": "edfb5b9b06843f8997bbbe810e31115daf19f65187d98bbcd3dbfd2c4baaf2ec",
+    "size_bytes": 1689304
+  },
+  "models/baseline1/training_record.json": {
+    "sha256": "df51f35835984108066bafe7b297c7efadf9c988581592bdfbc22b2f84a21a6e",
+    "size_bytes": 6499
+  },
+  "models/baseline2/baseline2.json": {
+    "sha256": "641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55",
+    "size_bytes": 44541
+  },
+  "models/baseline2/resnet18-f37072fd.pth": {
+    "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "size_bytes": 46830571
+  },
+  "models/baseline2/training_record.json": {
+    "sha256": "3bc35a4d4984b6d848c8e96d00790e99f94619472b20fc52d81da35d533089ee",
+    "size_bytes": 13318
+  },
+  "models/baseline3/best.pt": {
+    "sha256": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d",
+    "size_bytes": 5465242
+  },
+  "models/baseline3/provenance.json": {
+    "sha256": "5707c3687df517a1d61509d368a8fa607aa3c7b9dd6992686989b102b0c30a92",
+    "size_bytes": 988
+  },
+  "models/baseline3/training_record.json": {
+    "sha256": "12fd1742e0335fe308ed638a41c7349630ebbd6295c018a585a17c928714f7fc",
+    "size_bytes": 24934
+  },
+  "models/candidates.json": {
+    "sha256": "bcc19c146d1a17cc8518507faf0050f675c8f393da11bc9f491b5b0cfb8a59e9",
+    "size_bytes": 1541
+  },
+  "scripts/benchmark_live.py": {
+    "sha256": "06c0c01014b314d65b04bcf01a4a4d56544125165ad5435fd5442edc0c9e6ba4",
+    "size_bytes": 19513
+  },
+  "src/models/baseline3/__init__.py": {
+    "sha256": "81914d286f0cd1178fbf0cabe960d29f43bb798c1f0bf319cf9850efaaeee7c3",
+    "size_bytes": 69
+  },
+  "src/models/baseline3/inference.py": {
+    "sha256": "a4e1b2eab42e23b7a48c9e855cb407929b7394d4e234c6bfbaf5272e958ac342",
+    "size_bytes": 8507
+  },
+  "src/p06_foreground.py": {
+    "sha256": "b854324a93fa8f2f8affb5f01f53c8812140c56260ed3c02f5bca84d6fb8d6f1",
+    "size_bytes": 9201
+  },
+  "src/p06_geometry.py": {
+    "sha256": "148377289fb80d4077d657e0d0456f52709d1815aafdde570cbb474707df0e46",
+    "size_bytes": 40524
+  },
+  "src/p06_measurement_policy.py": {
+    "sha256": "222b05d9fb86c9e5756e4a3d271896e76b0d5b5752fa816ff3596cdcb036e6d8",
+    "size_bytes": 5349
+  },
+  "src/p06_pipeline.py": {
+    "sha256": "945930898363d98811ad49989571e18f72fa33c9880d49c4de0725e77a31171c",
+    "size_bytes": 11493
+  },
+  "src/p06_screw_edges.py": {
+    "sha256": "63e6fd8843a564f6272bdf787984de9f916088f76672942a25027a040e858d1f",
+    "size_bytes": 5249
+  },
+  "src/p06_size_evidence.py": {
+    "sha256": "1c9c19fd149001acf9f6f55247e6db860d23074ae1d0c44834302c60beaaa1c4",
+    "size_bytes": 12876
+  },
+  "src/p07_bridge.py": {
+    "sha256": "af48c0b3ec7259efa5368ece9e1186505e54212d021d14db3edb9cdcd275c99b",
+    "size_bytes": 12939
+  },
+  "tools/p06_accepted_data.py": {
+    "sha256": "30360e05241f0dc02302de2719e6f809d82afc9b3e0239973b6f20b071489581",
+    "size_bytes": 11779
+  },
+  "tools/p06_build_dataset.py": {
+    "sha256": "d903d0a6babb6da0130b035a1be06756de394fe4b994af59d3915fefe613db8e",
+    "size_bytes": 25060
+  },
+  "tools/p06_build_dataset_v2.py": {
+    "sha256": "9645ad12402b231af50f179d2eee57b112629b1d0de254e9a0fd04a0e8197bf1",
+    "size_bytes": 8785
+  },
+  "tools/p06_check_env.py": {
+    "sha256": "20ad4fca6d2e0e68d5580afc10b82928677d38e36513718ae0c99d360a26117b",
+    "size_bytes": 2578
+  },
+  "tools/p06_check_part_specs.py": {
+    "sha256": "fae4c41bb59e07dba6fac44432bb2eb78efbf31c318eb0cee7031c2b06196b09",
+    "size_bytes": 11394
+  },
+  "tools/p06_compare_resolution.py": {
+    "sha256": "095c16f1734022661592117f2bd2efb33b4599c89216d661db6768d25461590f",
+    "size_bytes": 8340
+  },
+  "tools/p06_edge_audit.py": {
+    "sha256": "d6f27609869c33d05d72078efe772d7d7fe8d39b542e129e66b6f819eba3607c",
+    "size_bytes": 5960
+  },
+  "tools/p06_geometry_stage1.py": {
+    "sha256": "509c41ea0d143ff028436f4c44fb1f1ad5f5686e89f97d841783177caebe16c7",
+    "size_bytes": 7099
+  },
+  "tools/p06_gpu_smoke.py": {
+    "sha256": "cea1dbdc662f858ffe55d8eae73f3e426bc45cb3ddbdc7839765be90468bf585",
+    "size_bytes": 9649
+  },
+  "tools/p06_measure_candidate.py": {
+    "sha256": "a247f363c4519d68827a7ac2cf12714192f04a3a4121e4ee1be2f76562994aa0",
+    "size_bytes": 21580
+  },
+  "tools/p06_measure_geometry.py": {
+    "sha256": "fbbe044545bbc601cec16ceec113816ccd483deb6badd46b0f2a2e6bda5043c6",
+    "size_bytes": 13768
+  },
+  "tools/p06_prepare.py": {
+    "sha256": "2a6036c7af1e20b7a1aa5b378917e9a9e06e418a4b70a6c1d9650288536751d6",
+    "size_bytes": 2517
+  },
+  "tools/p06_preview_annotations.py": {
+    "sha256": "6b9eb7dfafd1378332a1f37c581a9f10e7905f6fc2bc2b986c9ad3d707831066",
+    "size_bytes": 13623
+  },
+  "tools/p06_reference_v2.py": {
+    "sha256": "d65dab0ff1a8d8a3ff730fdd42d9eeadf2fd192c4d963d54d4f27536de589fbb",
+    "size_bytes": 10610
+  },
+  "tools/p06_report_geometry_stage1.py": {
+    "sha256": "74bacfb3a9f39995604cf52807202f0080d8234c59e330d54f2cf5a0153478ca",
+    "size_bytes": 14956
+  },
+  "tools/p06_screw_review.py": {
+    "sha256": "27651dac8907fb7bd3929968ecb2798c289e188bd5a7133fb6134f1094765e3a",
+    "size_bytes": 10388
+  },
+  "tools/p06_train_baseline.py": {
+    "sha256": "5b05935bf08d88560f0b5c539033768e4e30b7015fd07ed904ae51c0cf64e312",
+    "size_bytes": 19395
+  },
+  "tools/p06_verify_inference.py": {
+    "sha256": "ac597eba0413c69aac38918ee8790327c75cc7235a7f84c8f33c681d37792717",
+    "size_bytes": 8054
+  }
+}

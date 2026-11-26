@@ -1,0 +1,19 @@
+{
+  "run": 98,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": [
+    "test_baseline3_geometry_repair",
+    "test_baseline3_metrology",
+    "test_baseline3_size_integration",
+    "test_baseline3_adapter",
+    "test_p06_geometry",
+    "test_p06_foreground",
+    "test_p06_measurement_policy",
+    "test_work_orders",
+    "test_p07_real_integration",
+    "test_p07_dashboard"
+  ],
+  "synthetic_software_fixtures_are_not_physical_acceptance": true
+}

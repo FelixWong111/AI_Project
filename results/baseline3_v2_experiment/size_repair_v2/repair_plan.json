@@ -1,0 +1,22 @@
+{
+  "training_images": 360,
+  "dimension_development_images": 154,
+  "prohibited_for_development": [
+    "Val80 pixel/statistic tuning",
+    "dimension retained66",
+    "Stage2 Test",
+    "Stage3"
+  ],
+  "prior_val_use": "73 failure classification and A088 forensic diagnosis explicitly requested; already-used data, not independent",
+  "algorithm_changes": [
+    "35% ROI with peer ownership (old18%); do not reject target merely because shadows cross YOLO box",
+    "Hull-supported screw axis; real exterior gradients with sustained outside background, repeated thread-crest envelope",
+    "Try both observed dark/closed-edge outlines against unchanged nut/annulus fit quality",
+    "Only image-supported measurements can reject as ID0; local repeatability interval must clearly exclude frozen band"
+  ],
+  "no_tolerance_widening": true,
+  "acceptance_bands_sha256": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+  "yolo_weights_sha256": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+  "parameter_search": false,
+  "independent_validation_available": false
+}

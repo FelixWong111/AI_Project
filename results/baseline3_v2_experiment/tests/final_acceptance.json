@@ -1,0 +1,65 @@
+{
+  "checked_at_utc": "2026-11-26T00:22:56.696078+00:00",
+  "training_and_supervisor_exited": true,
+  "preserved_files": 235,
+  "frozen_prediction_files": 67,
+  "all_protected_hashes_match": true,
+  "new_best_last_resume_hashes_match": true,
+  "train_epochs": 99,
+  "best_epoch": 69,
+  "test_inference_runs_per_model": 1,
+  "no_new_training_or_inference_in_final_audit": true,
+  "test": {
+    "old": {
+      "images": 30,
+      "classes_checked": 6,
+      "counts_rows": 180,
+      "model_config_binding": true,
+      "arithmetic_consistent": true
+    },
+    "new": {
+      "images": 30,
+      "classes_checked": 6,
+      "counts_rows": 180,
+      "model_config_binding": true,
+      "arithmetic_consistent": true
+    }
+  },
+  "validation_paired": {
+    "both_correct": 56,
+    "old_wrong_new_correct": 23,
+    "both_wrong": 1
+  },
+  "stage3_access": false,
+  "physical_size_acceptance": "BLOCKED",
+  "live": "NOT_RUN",
+  "software_tests_reused": 74,
+  "stale_completed_training_error_removed": {
+    "reason": "AssertionError('Run exists without resumable checkpoint; inspect before restarting')",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py\", line 609, in main\n    {'prepare':prepare,'train':train,'validate':validate,'freeze':freeze,\n  File \"C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\experiment_baseline3_v2.py\", line 241, in train\n    assert not run_dir.exists(), 'Run exists without resumable checkpoint; inspect before restarting'\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: Run exists without resumable checkpoint; inspect before restarting\n"
+  },
+  "git_commit_push_merge": false,
+  "file_changes": {
+    "added": [
+      "scripts/experiment_baseline3_v2.py",
+      "src/models/baseline3/candidate.py",
+      "tests/test_baseline3_candidate.py",
+      "models/baseline3_v2_candidate/",
+      "results/baseline3_v2_experiment/"
+    ],
+    "modified": {
+      "src/adapters/baseline3.py": "Optional detector/provider injection; original defaults and decision rules unchanged",
+      "src/p06_pipeline.py": "Optional detector factory; reuse original geometry/evidence pipeline",
+      "scripts/benchmark_live.py": "Optional P07 display-update timing and independent size_verified candidate profile",
+      "docs/live_benchmark.md": "Document the new optional timing scope"
+    },
+    "preserved": [
+      "app.py",
+      "config/",
+      "Baseline1/2 weights, gates and results",
+      "models/baseline3/",
+      "P03 and source datasets",
+      "Stage 3 holdout"
+    ]
+  }
+}

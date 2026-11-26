@@ -1,0 +1,65 @@
+{
+  "images_scanned": 790,
+  "decode_errors": [],
+  "roots": [
+    "开发",
+    "验证",
+    "测试",
+    "P03_群交接总包_待SceneID确认_20261124"
+  ],
+  "matches": [],
+  "near_candidates": [
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/02_场景核查_测试仅照片/29.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/02_场景核查_测试仅照片/30.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/test_20261124/images/29.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/test_20261124/images/30.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "开发/开发/fail14.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "开发/开发/fail15.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "测试/测试/29.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    },
+    {
+      "new_path": "数据集/baseline3专用尺寸专项200/M6盖型螺母_ID0_40/2026_11_25_21_59_IMG_3561.HEIC",
+      "old_path": "测试/测试/30.jpg",
+      "phash_hamming": 6,
+      "decision": "CANDIDATE_ONLY_NOT_CONFIRMED"
+    }
+  ],
+  "scope": "All image files in explicit old raw/handoff roots; old Test read for hashing only, never evaluated",
+  "historical_usage": "Current frozen B1/B2 development manifest and B3 training records retained; new collection provenance is user supplied; unrecorded external use UNKNOWN",
+  "near_public_pairs": 0,
+  "near_specialized_pairs": 8
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "Use all three opposite-flat separations and ellipse residuals as uncertainty; do not attribute rejected size to an overlapping measured instance",
+  "old_replay_was_running_during_code_edit": true,
+  "old_recorded_end_sha_does_not_identify_loaded_code": true,
+  "resolution": "Old replay archived as nonfinal; recompute final Train decisions from unchanged actual geometry/YOLO cache using stable backend before freeze; no Val rerun or band changes"
+}

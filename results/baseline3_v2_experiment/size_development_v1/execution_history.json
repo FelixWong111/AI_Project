@@ -1,0 +1,28 @@
+[
+  {
+    "phase": "check",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\develop_baseline3_size.py",
+      "--phase",
+      "check"
+    ],
+    "pid": 54448,
+    "started_at_utc": "2026-11-26T01:34:41.726128+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T01:35:03.485791+00:00"
+  },
+  {
+    "phase": "foreground",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\develop_baseline3_size.py",
+      "--phase",
+      "foreground"
+    ],
+    "pid": 58960,
+    "started_at_utc": "2026-11-26T01:37:56.666111+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T01:37:56.669635+00:00"
+  }
+]

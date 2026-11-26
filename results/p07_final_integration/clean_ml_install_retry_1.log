@@ -1,0 +1,5 @@
+Processing c:\users\王以乐\desktop\大三上\ai\project\outputs\final_integration\clean_wheelhouse\torch-2.7.1+cu126-cp311-cp311-win_amd64.whl
+Processing c:\users\王以乐\desktop\大三上\ai\project\outputs\final_integration\clean_wheelhouse\torchvision-0.22.1+cu126-cp311-cp311-win_amd64.whl
+Processing c:\users\王以乐\desktop\大三上\ai\project\outputs\final_integration\clean_wheelhouse\pillow-13.0.0-cp311-cp311-win_amd64.whl
+Installing collected packages: torchvision, torch, pillow
+Successfully installed pillow-13.0.0 torch-2.7.1+cu126 torchvision-0.22.1+cu126

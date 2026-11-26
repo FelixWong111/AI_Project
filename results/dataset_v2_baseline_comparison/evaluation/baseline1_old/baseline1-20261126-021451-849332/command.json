@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+    "--input_dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\yolo\\images\\test",
+    "--model",
+    "baseline1",
+    "--output_dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\dataset_v2_baseline_comparison\\evaluation\\baseline1_old\\baseline1-20261126-021451-849332\\predictions",
+    "--counts_file",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+    "--config",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\dataset_v2_baseline_comparison\\configs\\old_raw.json",
+    "--record-timing"
+  ],
+  "cwd": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project",
+  "dataset": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\evaluation\\stage2",
+  "baseline3_mode": null,
+  "model_config": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\dataset_v2_baseline_comparison\\configs\\old_raw.json",
+  "model_config_sha256": "031821428dcaf12dbfbecca0c7c88be45ed9e7dc3a160f7b13773221c5cd9933"
+}

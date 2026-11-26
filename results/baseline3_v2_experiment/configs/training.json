@@ -1,0 +1,20 @@
+{
+  "epochs": 100,
+  "patience": 30,
+  "imgsz": 640,
+  "batch": 8,
+  "seed": 42,
+  "workers": 0,
+  "cache": false,
+  "deterministic": true,
+  "amp": true,
+  "val": true,
+  "save": true,
+  "save_period": 10,
+  "plots": false,
+  "pretrained": true,
+  "optimizer": "auto",
+  "project": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\training",
+  "name": "run01_csv_logging_retry",
+  "exist_ok": false
+}

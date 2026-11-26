@@ -1,0 +1,12 @@
+{
+  "schema": "inspection-evaluation/v2",
+  "dataset": "data/mechanical_components_v2/evaluation/validation",
+  "evaluation_stage": "validation",
+  "input_dir": "data/mechanical_components_v2/yolo/images/val",
+  "ground_truth_images": "data/mechanical_components_v2/evaluation/validation/ground_truth_images.csv",
+  "ground_truth_objects": "data/mechanical_components_v2/evaluation/validation/ground_truth_objects.csv",
+  "counts_file": "data/mechanical_components_v2/configs/expected_counts_val.json",
+  "split_list": "data/mechanical_components_v2/splits/val.txt",
+  "dataset_status": "data/mechanical_components_v2/dataset_status.json",
+  "formal_evaluation": "NOT_RUN"
+}

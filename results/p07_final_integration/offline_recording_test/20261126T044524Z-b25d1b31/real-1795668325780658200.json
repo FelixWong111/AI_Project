@@ -1,0 +1,10 @@
+{
+  "codec": "mp4v",
+  "fps": 20.0,
+  "size": [
+    1600,
+    1000
+  ],
+  "frames": 1,
+  "timing": "constant-rate encoding of submitted GUI frames; not original acquisition timestamps"
+}

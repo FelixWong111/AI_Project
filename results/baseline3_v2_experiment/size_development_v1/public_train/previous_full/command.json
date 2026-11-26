@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+    "--input_dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\yolo\\images\\train",
+    "--model",
+    "baseline3",
+    "--output_dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_development_v1\\public_train\\previous_full\\predictions",
+    "--counts_file",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\configs\\expected_counts_train.json",
+    "--config",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\configs\\new_full.json",
+    "--record-timing"
+  ],
+  "dataset": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_development_v1\\public_train_truth",
+  "split": "Train diagnostics only; no Test",
+  "model_config_sha256": "b1f303bc2365bdec92b51f43104763b9a1d8791fe6268ba247948244af744304",
+  "timing_excludes": "image decode, weight load, export and GUI"
+}

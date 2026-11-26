@@ -1,0 +1,6 @@
+{
+  "two_independent_batch_runs": true,
+  "boxes_scores_classes_and_observed_counts_identical": true,
+  "fixed": "PASS",
+  "zeros": "FAIL"
+}

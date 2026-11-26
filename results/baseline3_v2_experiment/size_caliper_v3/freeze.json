@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-11-26T03:40:14.807979+00:00",
+  "files": {
+    "src/models/baseline3/vision_caliper.py": "468b2257f7c731caf4a49bd9c77e730a24b27f94cdfa2a83c1b314cefde933d1",
+    "src/models/baseline3/size_caliper.py": "866375361d44ffea0780312d6b35a22a670362f9a30fd012e3d9c029f77a6fb6",
+    "results/baseline3_v2_experiment/size_caliper_v3/selection.json": "a2503e3cf5e4bcdd3a79fbc9e5de23c5d6f7b878bd7cbd6a78aee413b426a4be",
+    "results/baseline3_v2_experiment/size_caliper_v3/experiment_plan.json": "ee1e6f566b27fcd3051b88dda7dfba80aadc24361c7e90299a3fe7d35009cbc1",
+    "results/baseline3_v2_experiment/size_development_v1/selection.json": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+    "results/baseline3_v2_experiment/size_development_v1/calibration.json": "ab81185188cb002f0b23fa4d292be990d9dcc964b0512f634059caaf9be6f232",
+    "config/p06_part_specs_candidate.json": "01f402be54887c14bac7f6b9b86e2d8d30cab3e0c72a69e55c004e73a243002b",
+    "models/baseline3_v2_candidate/best.pt": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "models/baseline3_v2_candidate/detector.json": "427a5e704deec0e0203da7c1898fa32664f255181363c33487836ceeafc2a36b",
+    "results/baseline3_v2_experiment/size_caliper_v3/configs/A.json": "c463bff45d3ed0d9c05d3001b25734e6f6d8f3eaa8beda7d4a2e80d50d1cca30",
+    "results/baseline3_v2_experiment/size_caliper_v3/configs/B.json": "77ea8fef064fc7b62622acd3cbd6062b28dbbd57fdb38eb18b4da1e8b757f9e3",
+    "results/baseline3_v2_experiment/size_caliper_v3/configs/C.json": "4db294eafacb5e0a245a3e35a5db9cf7f9fc602fd359b4d397156cae1772860c",
+    "results/baseline3_v2_experiment/size_caliper_v3/configs/candidate_B.json": "537de0e058082970afb09680a401471388e09dd36ccd50ee66816b9563892b44",
+    "results/baseline3_v2_experiment/size_caliper_v3/configs/candidate_C.json": "842949400c3af6e01909090bbea7976d4afa223f16124d72546a80a2aa1e156d"
+  },
+  "recommended": "A",
+  "selection_scope": "Train360 + dimension development154 only",
+  "independent_validation": false,
+  "subsequent_regressions": {
+    "public_val": 80,
+    "dimension_retained": 66,
+    "runs_per_method": 1
+  },
+  "caliper_mae": null,
+  "instructor_approved": false,
+  "camo_transform": "NOT_VALIDATED",
+  "v2_reference_unchanged": true
+}

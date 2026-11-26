@@ -1,0 +1,25 @@
+{
+  "status": "INTERRUPTED_SLOW_DEPENDENCY_DOWNLOAD",
+  "venv": "outputs/final_integration/clean_env",
+  "system_site_packages": false,
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "torch==2.7.1+cu126",
+        "torchvision==0.22.1+cu126",
+        "--index-url",
+        "https://download.pytorch.org/whl/cu126",
+        "--disable-pip-version-check"
+      ],
+      "log": "results/p07_final_integration/clean_ml_install_1.log",
+      "start_time": 1795671351.3080804,
+      "exit_code": 15,
+      "elapsed_seconds": 1411.9603471755981
+    }
+  ],
+  "reason": "Completed official CUDA/Pillow wheels retained locally; install them without dependencies and resolve project pins from regular index"
+}

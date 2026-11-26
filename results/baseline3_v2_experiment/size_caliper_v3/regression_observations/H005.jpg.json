@@ -1,0 +1,81 @@
+{
+  "raw": {
+    "status": "REVIEW",
+    "predicted_label": null,
+    "prediction_score": null,
+    "score_type": null,
+    "non_catalogue_count": 1,
+    "counts": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "objects": [
+      {
+        "detection_id": 0,
+        "class_id": 5,
+        "xmin": 1356.0108642578125,
+        "ymin": 2800.011474609375,
+        "xmax": 1883.46630859375,
+        "ymax": 3308.55615234375,
+        "score": 0.8127214908599854
+      },
+      {
+        "detection_id": 1,
+        "class_id": 2,
+        "xmin": 1807.3504638671875,
+        "ymin": 3033.286376953125,
+        "xmax": 2232.70263671875,
+        "ymax": 3609.70263671875,
+        "score": 0.8107227087020874
+      },
+      {
+        "detection_id": 2,
+        "class_id": 4,
+        "xmin": 1065.65185546875,
+        "ymin": 2750.784912109375,
+        "xmax": 1399.822509765625,
+        "ymax": 3095.43408203125,
+        "score": 0.8005185723304749
+      },
+      {
+        "detection_id": 3,
+        "class_id": 1,
+        "xmin": 1729.5001220703125,
+        "ymin": 2077.379638671875,
+        "xmax": 2031.2933349609375,
+        "ymax": 3114.963134765625,
+        "score": 0.7085902690887451
+      },
+      {
+        "detection_id": 4,
+        "class_id": 3,
+        "xmin": 1260.5595703125,
+        "ymin": 2401.582275390625,
+        "xmax": 1765.9244384765625,
+        "ymax": 2850.080322265625,
+        "score": 0.4926295876502991
+      },
+      {
+        "detection_id": 5,
+        "class_id": 0,
+        "xmin": 1362.428955078125,
+        "ymin": 2798.411865234375,
+        "xmax": 1880.181396484375,
+        "ymax": 3316.575439453125,
+        "score": 0.429217666387558
+      }
+    ],
+    "frame_size": {
+      "width": 3024,
+      "height": 4032
+    },
+    "message": "P06 detection/counts only; PASS/FAIL, size checking and complete rejection are not evaluated."
+  },
+  "detector_ms": 42.060299951117486,
+  "scope": "Val reused regression",
+  "input_sha256": "7f94836b31c2010efdf92cd6a9ca1241816d0d3c6d67427fd4051377a287e921"
+}

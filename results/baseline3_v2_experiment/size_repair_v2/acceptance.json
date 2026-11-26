@@ -1,0 +1,70 @@
+{
+  "tests": {
+    "run": 98,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "modules": [
+      "test_baseline3_geometry_repair",
+      "test_baseline3_metrology",
+      "test_baseline3_size_integration",
+      "test_baseline3_adapter",
+      "test_p06_geometry",
+      "test_p06_foreground",
+      "test_p06_measurement_policy",
+      "test_work_orders",
+      "test_p07_real_integration",
+      "test_p07_dashboard"
+    ],
+    "synthetic_software_fixtures_are_not_physical_acceptance": true
+  },
+  "gui_batch": [
+    {
+      "status": "PASS",
+      "image_id": "A048.jpg",
+      "gui_worker_matches_batch": true,
+      "counts_rejudge_preserves_measurements": true
+    },
+    {
+      "status": "FAIL",
+      "image_id": "B09.jpg",
+      "gui_worker_matches_batch": true,
+      "counts_rejudge_preserves_measurements": true
+    },
+    {
+      "status": "REVIEW",
+      "image_id": "A005.jpg",
+      "gui_worker_matches_batch": true,
+      "counts_rejudge_preserves_measurements": true
+    }
+  ],
+  "video_measurement_calls": 5,
+  "camera_resolution_guard_passed": true,
+  "physical_camera": "NOT_RUN",
+  "baseline1_baseline2": [
+    {
+      "model": "baseline1",
+      "real_loaded": true,
+      "status": "PASS",
+      "variable_order": "UNSUPPORTED_COUNTS",
+      "scope": "Functional execution, not a new model accuracy evaluation"
+    },
+    {
+      "model": "baseline2",
+      "real_loaded": true,
+      "status": "PASS",
+      "variable_order": "UNSUPPORTED_COUNTS",
+      "scope": "Functional execution, not a new model accuracy evaluation"
+    }
+  ],
+  "frozen_v1_result_files_unchanged": 133,
+  "original_protected_files_unchanged": 281,
+  "full_size_pipeline_enabled": true,
+  "production_mock": false,
+  "old_weights_and_parameters_unchanged": true,
+  "frozen_v1_algorithm_hashes_match": true,
+  "p03": "NO_WRITES",
+  "formal_test": "NOT_RERUN",
+  "stage3": "NO_IMAGES_OR_DEDICATED_TRUTH_OPENED",
+  "physical_stage2_acceptance": "NOT_PASSED: caliper truth, Camo calibration, instructor tolerance approval and independent evaluation pending"
+}

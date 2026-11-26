@@ -1,0 +1,3988 @@
+{
+  "A": {
+    "status": "FAIL",
+    "predicted_label": "FAIL",
+    "prediction_score": null,
+    "score_type": "none",
+    "non_catalogue_count": 0,
+    "counts": {
+      "0": 0,
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "objects": [
+      {
+        "detection_id": 0,
+        "class_id": 3,
+        "xmin": 336.88714599609375,
+        "ymin": 77.22892761230469,
+        "xmax": 749.3328247070312,
+        "ymax": 607.1770629882812,
+        "score": 0.8307285308837891,
+        "detector_class_id": 3,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 3,
+            "dimensions": {
+              "underhead_length": {
+                "line_xy": [
+                  [
+                    413.43143156704184,
+                    385.30087128485576
+                  ],
+                  [
+                    499.47962385173395,
+                    154.84109474123278
+                  ]
+                ],
+                "pixels": 245.99999999999997,
+                "mm_estimate": 6.879493503262982,
+                "line_xy_original": [
+                  [
+                    564.4314315670418,
+                    385.30087128485576
+                  ],
+                  [
+                    650.479623851734,
+                    154.84109474123278
+                  ]
+                ]
+              },
+              "thread_major_diameter": {
+                "line_xy": [
+                  [
+                    397.4170862082568,
+                    235.2182582254825
+                  ],
+                  [
+                    523.8889147992694,
+                    282.43982716220376
+                  ]
+                ],
+                "pixels": 134.99999999999994,
+                "mm_estimate": 3.775331800571148,
+                "line_xy_original": [
+                  [
+                    548.4170862082568,
+                    235.2182582254825
+                  ],
+                  [
+                    674.8889147992694,
+                    282.43982716220376
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "underhead_length": {
+                "status": "CANDIDATE",
+                "reason": ""
+              },
+              "thread_major_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 169.0,
+              "segmentation_threshold": 123.0,
+              "isolated_peer_boxes": 1,
+              "silhouette_method": "target-owned observed boundary; hull used for axis only",
+              "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+              "underhead_method": "observed silhouette shoulder transition",
+              "tip_method": "observed silhouette end",
+              "rough_contour_width_px": 135.76708984375,
+              "diameter_sections": 129,
+              "eligible_sections": 129,
+              "exterior_rejected_internal_edges": 1016,
+              "diameter_p10_px": 129.0,
+              "diameter_p90_px": 135.0,
+              "diameter_repeatability_px": 2.0,
+              "shaft_line_fraction": 0.5487804878048781,
+              "axis_xy": [
+                0.3497893995312687,
+                -0.9368283599334268
+              ],
+              "quality_valid_for_rejection": true,
+              "measurement_uncertainty_mm": 0.05593084148994295,
+              "selected_contour_method": "DARK_SILHOUETTE",
+              "candidate_outlines": 2
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "thread_major_diameter": {
+              "min_mm": 3.3708934166735047,
+              "max_mm": 4.500133819637398,
+              "observed_min": 3.635504696846292,
+              "observed_max": 4.194813111745721,
+              "n": 13
+            },
+            "underhead_length": {
+              "min_mm": 6.81957668142409,
+              "max_mm": 10.290306000904181,
+              "observed_min": 7.354905655927498,
+              "observed_max": 9.592139315525214,
+              "n": 13
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 169.0,
+            "segmentation_threshold": 123.0,
+            "isolated_peer_boxes": 1,
+            "silhouette_method": "target-owned observed boundary; hull used for axis only",
+            "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+            "underhead_method": "observed silhouette shoulder transition",
+            "tip_method": "observed silhouette end",
+            "rough_contour_width_px": 135.76708984375,
+            "diameter_sections": 129,
+            "eligible_sections": 129,
+            "exterior_rejected_internal_edges": 1016,
+            "diameter_p10_px": 129.0,
+            "diameter_p90_px": 135.0,
+            "diameter_repeatability_px": 2.0,
+            "shaft_line_fraction": 0.5487804878048781,
+            "axis_xy": [
+              0.3497893995312687,
+              -0.9368283599334268
+            ],
+            "quality_valid_for_rejection": true,
+            "measurement_uncertainty_mm": 0.05593084148994295,
+            "selected_contour_method": "DARK_SILHOUETTE",
+            "candidate_outlines": 2,
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "thread_major_diameter": {
+              "local_repeatability_interval_mm": [
+                3.719400959081205,
+                3.831262642061091
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            },
+            "underhead_length": {
+              "local_repeatability_interval_mm": [
+                6.823562661773039,
+                6.935424344752924
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      },
+      {
+        "detection_id": 1,
+        "class_id": 5,
+        "xmin": 773.8897094726562,
+        "ymin": 65.31005859375,
+        "xmax": 1356.1778564453125,
+        "ymax": 603.998291015625,
+        "score": 0.8297685980796814,
+        "detector_class_id": 5,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 5,
+            "dimensions": {
+              "outer_diameter": {
+                "line_xy": [
+                  [
+                    732.6342310707741,
+                    296.69802683985677
+                  ],
+                  [
+                    265.50779594255596,
+                    372.7102284129063
+                  ]
+                ],
+                "pixels": 473.2704947316908,
+                "mm_estimate": 13.235208511352537,
+                "line_xy_original": [
+                  [
+                    1301.6342310707741,
+                    296.69802683985677
+                  ],
+                  [
+                    834.507795942556,
+                    372.7102284129063
+                  ]
+                ]
+              },
+              "inner_diameter": {
+                "line_xy": [
+                  [
+                    585.7429283584142,
+                    337.3245227822435
+                  ],
+                  [
+                    414.64552800392687,
+                    341.38366488344116
+                  ]
+                ],
+                "pixels": 171.14554344960746,
+                "mm_estimate": 4.786157131195068,
+                "line_xy_original": [
+                  [
+                    1154.7429283584142,
+                    337.3245227822435
+                  ],
+                  [
+                    983.6455280039269,
+                    341.38366488344116
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "outer_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              },
+              "inner_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 176.0,
+              "segmentation_threshold": 120.0,
+              "isolated_peer_boxes": 2,
+              "outer_ellipse_rms_fraction": 0.016291551190776715,
+              "inner_ellipse_rms_fraction": 0.004311972283635714,
+              "outer_ellipse_axes_mm": [
+                12.939868927001953,
+                13.235208511352539
+              ],
+              "inner_ellipse_axes_mm": [
+                4.479874610900879,
+                4.786157131195068
+              ],
+              "outer_full_contour_residual": 0.058879917015086644,
+              "inner_full_contour_residual": 0.005905377605592785,
+              "outer_edge_support_fraction": 0.8330143540669857,
+              "inner_edge_support_fraction": 0.8492569002123143,
+              "aperture_hierarchy_depth": 1,
+              "radial_aperture_supported_rays": null,
+              "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+              "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+              "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification.",
+              "quality_valid_for_rejection": true,
+              "measurement_uncertainty_mm": 0.05593084148994295,
+              "selected_contour_method": "DARK_SILHOUETTE",
+              "candidate_outlines": 2
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "inner_diameter": {
+              "min_mm": 4.669882798768669,
+              "max_mm": 5.629969196569283,
+              "observed_min": 5.036463260650636,
+              "observed_max": 5.247992515563967,
+              "n": 12
+            },
+            "outer_diameter": {
+              "min_mm": 12.810673361568805,
+              "max_mm": 16.245679443993232,
+              "observed_min": 13.816296577453613,
+              "observed_max": 15.143458366394047,
+              "n": 12
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 176.0,
+            "segmentation_threshold": 120.0,
+            "isolated_peer_boxes": 2,
+            "outer_ellipse_rms_fraction": 0.016291551190776715,
+            "inner_ellipse_rms_fraction": 0.004311972283635714,
+            "outer_ellipse_axes_mm": [
+              12.939868927001953,
+              13.235208511352539
+            ],
+            "inner_ellipse_axes_mm": [
+              4.479874610900879,
+              4.786157131195068
+            ],
+            "outer_full_contour_residual": 0.058879917015086644,
+            "inner_full_contour_residual": 0.005905377605592785,
+            "outer_edge_support_fraction": 0.8330143540669857,
+            "inner_edge_support_fraction": 0.8492569002123143,
+            "aperture_hierarchy_depth": 1,
+            "radial_aperture_supported_rays": null,
+            "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+            "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+            "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification.",
+            "quality_valid_for_rejection": true,
+            "measurement_uncertainty_mm": 0.05593084148994295,
+            "selected_contour_method": "DARK_SILHOUETTE",
+            "candidate_outlines": 2,
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "inner_diameter": {
+              "local_repeatability_interval_mm": [
+                4.730226289705126,
+                4.842087972685011
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            },
+            "outer_diameter": {
+              "local_repeatability_interval_mm": [
+                13.019586434369234,
+                13.45083058833584
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      },
+      {
+        "detection_id": 2,
+        "class_id": 2,
+        "xmin": 2174.83349609375,
+        "ymin": 57.45500564575195,
+        "xmax": 2692.758544921875,
+        "ymax": 679.6239013671875,
+        "score": 0.7605134844779968,
+        "detector_class_id": 2,
+        "size_evidence": {
+          "measurement": {
+            "status": "UNMEASURABLE",
+            "reason": "HEAD_SHAFT_SEPARATION_FAILED",
+            "class_id": 2,
+            "dimensions": {},
+            "dimension_status": {
+              "underhead_length": {
+                "status": "UNMEASURABLE",
+                "reason": "HEAD_SHAFT_SEPARATION_FAILED"
+              },
+              "thread_major_diameter": {
+                "status": "UNMEASURABLE",
+                "reason": "HEAD_SHAFT_SEPARATION_FAILED"
+              }
+            },
+            "diagnostics": {
+              "quality_valid_for_rejection": false
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "UNMEASURABLE",
+          "details": [],
+          "provisional": true,
+          "reason": "HEAD_SHAFT_SEPARATION_FAILED",
+          "development_acceptance_bands": {
+            "thread_major_diameter": {
+              "min_mm": 4.589601036547772,
+              "max_mm": 6.390190023885105,
+              "observed_min": 4.949879471859951,
+              "observed_max": 5.956634618678924,
+              "n": 14
+            },
+            "underhead_length": {
+              "min_mm": 7.3122457192456,
+              "max_mm": 10.080299755987769,
+              "observed_min": 7.886248650081953,
+              "observed_max": 9.396381370310413,
+              "n": 14
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "quality_valid_for_rejection": false,
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {}
+        }
+      },
+      {
+        "detection_id": 3,
+        "class_id": 4,
+        "xmin": 1547.4591064453125,
+        "ymin": 125.29631042480469,
+        "xmax": 1934.3685302734375,
+        "ymax": 499.2720031738281,
+        "score": 0.6349658370018005,
+        "detector_class_id": 4,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 4,
+            "dimensions": {
+              "across_flats": {
+                "line_xy": [
+                  [
+                    428.90001964274654,
+                    255.10000041646938
+                  ],
+                  [
+                    212.9253985920429,
+                    355.1865202986201
+                  ]
+                ],
+                "pixels": 238.03854393798326,
+                "mm_estimate": 6.656848034746081,
+                "line_xy_original": [
+                  [
+                    1840.9000196427464,
+                    255.10000041646938
+                  ],
+                  [
+                    1624.925398592043,
+                    355.1865202986201
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "across_flats": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 174.0,
+              "segmentation_threshold": 122.0,
+              "isolated_peer_boxes": 0,
+              "opposite_flats_mm": [
+                6.656847953796387,
+                6.184141159057617,
+                6.857240200042725
+              ],
+              "opposite_flat_lines_xy": [
+                [
+                  [
+                    428.90001964274654,
+                    255.10000041646938
+                  ],
+                  [
+                    212.9253985920429,
+                    355.1865202986201
+                  ]
+                ],
+                [
+                  [
+                    401.80001454537853,
+                    382.30002975312766
+                  ],
+                  [
+                    216.9446499366468,
+                    260.93569010207386
+                  ]
+                ],
+                [
+                  [
+                    321.9000191472279,
+                    430.3000054347882
+                  ],
+                  [
+                    334.382410188871,
+                    185.4136811114795
+                  ]
+                ]
+              ],
+              "hexagon_xy": [
+                [
+                  393.00001616191474,
+                  197.0000103142391
+                ],
+                [
+                  440.99999184357523,
+                  331.00001205027826
+                ],
+                [
+                  370.0000157366919,
+                  430.0000109152015
+                ],
+                [
+                  253.000004677451,
+                  424.000018217733
+                ],
+                [
+                  197.0000103142391,
+                  321.000001486556
+                ],
+                [
+                  275.00000063611037,
+                  188.00000421708026
+                ]
+              ],
+              "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter.",
+              "quality_valid_for_rejection": true,
+              "measurement_uncertainty_mm": 0.05593084148994295,
+              "selected_contour_method": "DARK_SILHOUETTE",
+              "candidate_outlines": 1
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "across_flats": {
+              "min_mm": 6.296979775621256,
+              "max_mm": 7.712315561245787,
+              "observed_min": 6.791285490363669,
+              "observed_max": 7.189057866914979,
+              "n": 12
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 174.0,
+            "segmentation_threshold": 122.0,
+            "isolated_peer_boxes": 0,
+            "opposite_flats_mm": [
+              6.656847953796387,
+              6.184141159057617,
+              6.857240200042725
+            ],
+            "opposite_flat_lines_xy": [
+              [
+                [
+                  428.90001964274654,
+                  255.10000041646938
+                ],
+                [
+                  212.9253985920429,
+                  355.1865202986201
+                ]
+              ],
+              [
+                [
+                  401.80001454537853,
+                  382.30002975312766
+                ],
+                [
+                  216.9446499366468,
+                  260.93569010207386
+                ]
+              ],
+              [
+                [
+                  321.9000191472279,
+                  430.3000054347882
+                ],
+                [
+                  334.382410188871,
+                  185.4136811114795
+                ]
+              ]
+            ],
+            "hexagon_xy": [
+              [
+                393.00001616191474,
+                197.0000103142391
+              ],
+              [
+                440.99999184357523,
+                331.00001205027826
+              ],
+              [
+                370.0000157366919,
+                430.0000109152015
+              ],
+              [
+                253.000004677451,
+                424.000018217733
+              ],
+              [
+                197.0000103142391,
+                321.000001486556
+              ],
+              [
+                275.00000063611037,
+                188.00000421708026
+              ]
+            ],
+            "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter.",
+            "quality_valid_for_rejection": true,
+            "measurement_uncertainty_mm": 0.05593084148994295,
+            "selected_contour_method": "DARK_SILHOUETTE",
+            "candidate_outlines": 1,
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "across_flats": {
+              "local_repeatability_interval_mm": [
+                6.1282103175676745,
+                6.913171041532667
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      }
+    ],
+    "frame_size": {
+      "width": 3024,
+      "height": 4032
+    },
+    "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. COUNT_MISMATCH; object 2: HEAD_SHAFT_SEPARATION_FAILED []; object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+    "inspection": {
+      "mode": "size_repaired_development",
+      "acceptance_confirmed": false,
+      "calibration_compatible": true,
+      "calibration": {
+        "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+        "validated": false,
+        "px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "instructor_approved": false
+      },
+      "specifications": [
+        {
+          "class_id": 1,
+          "class_name": "long_screw",
+          "supplier_spec": "M4×25",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/01_long_screw_M4x25.jpg",
+          "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 25.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 4.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.4,
+            "head_diameter_mm": 9.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "thick_screw",
+          "supplier_spec": "M5×10",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+          "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 10.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 5.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.9,
+            "head_diameter_mm": 11.4
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "thin_screw",
+          "supplier_spec": "M4×10",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+          "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 10.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 4.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.4,
+            "head_diameter_mm": 9.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hex_nut",
+          "supplier_spec": "M4",
+          "product_name_zh": "304六角螺母",
+          "iso_din_standard": null,
+          "source_image": "reference_images/04_hex_nut_M4.jpg",
+          "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+          "dimensions": {
+            "across_flats": {
+              "supplier_field": "across_flats_mm",
+              "reference_mm": 7.0,
+              "provisional_allowance_mm": 0.5
+            }
+          },
+          "reference_only_dimensions": {
+            "thread_nominal_diameter_mm": 4.0,
+            "thickness_mm": 3.1,
+            "wrench_size_mm": 7.0
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "thread_nominal_diameter_mm",
+            "thickness_mm"
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "flat_washer",
+          "supplier_spec": "5×15×1.2",
+          "product_name_zh": "304平垫片",
+          "iso_din_standard": null,
+          "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+          "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+          "dimensions": {
+            "outer_diameter": {
+              "supplier_field": "outer_diameter_mm",
+              "reference_mm": 15.0,
+              "provisional_allowance_mm": 0.75
+            },
+            "inner_diameter": {
+              "supplier_field": "inner_diameter_mm",
+              "reference_mm": 5.0,
+              "provisional_allowance_mm": 0.5
+            }
+          },
+          "reference_only_dimensions": {
+            "thickness_mm": 1.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "thickness_mm"
+          ]
+        }
+      ],
+      "measurement_calls": 4,
+      "measurement_complete": 3,
+      "geometry_execution": "REPLAY_DEVELOPMENT_MEASUREMENTS",
+      "failure_reasons": [],
+      "review_reasons": [
+        "object 2: HEAD_SHAFT_SEPARATION_FAILED []",
+        "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+      ],
+      "caliper_mae": null,
+      "foreground": {
+        "status": "REVIEW",
+        "background_reference_id": "G01.jpg",
+        "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+        "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+        "frame_size": {
+          "width": 756,
+          "height": 1008
+        },
+        "roi": [
+          0,
+          0,
+          756,
+          1008
+        ],
+        "parameters": {
+          "difference_threshold": 40,
+          "minimum_area": 30,
+          "kernel_size": 3,
+          "association_fraction": 0.25,
+          "duplicate_iou": 0.8,
+          "maximum_foreground_fraction": 0.45
+        },
+        "foreground_fraction": 0.030579438565549677,
+        "background_usable": true,
+        "regions": [
+          {
+            "region_id": 0,
+            "component_label": 1,
+            "xmin": 208,
+            "ymin": 26,
+            "xmax": 327,
+            "ymax": 144,
+            "area_pixels": 9385,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 1,
+            "component_label": 2,
+            "xmin": 99,
+            "ymin": 37,
+            "xmax": 173,
+            "ymax": 140,
+            "area_pixels": 4592,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 2,
+            "component_label": 3,
+            "xmin": 552,
+            "ymin": 37,
+            "xmax": 648,
+            "ymax": 151,
+            "area_pixels": 6825,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 3,
+            "component_label": 4,
+            "xmin": 402,
+            "ymin": 46,
+            "xmax": 465,
+            "ymax": 108,
+            "area_pixels": 2486,
+            "touches_roi_edge": false
+          }
+        ],
+        "associations": [
+          {
+            "region_id": 1,
+            "detection_id": 0,
+            "overlap_pixels": 4592,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 0,
+            "detection_id": 1,
+            "overlap_pixels": 9385,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 2,
+            "detection_id": 2,
+            "overlap_pixels": 6825,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 3,
+            "detection_id": 3,
+            "overlap_pixels": 2486,
+            "association_fraction": 1.0
+          }
+        ],
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "region_ids": [
+              0
+            ],
+            "detection_ids": [
+              1
+            ],
+            "class_id": 5,
+            "retained_detection_id": 1,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 1,
+            "region_ids": [
+              1
+            ],
+            "detection_ids": [
+              0
+            ],
+            "class_id": 3,
+            "retained_detection_id": 0,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 2,
+            "region_ids": [
+              2
+            ],
+            "detection_ids": [
+              2
+            ],
+            "class_id": 2,
+            "retained_detection_id": 2,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 3,
+            "region_ids": [
+              3
+            ],
+            "detection_ids": [
+              3
+            ],
+            "class_id": 4,
+            "retained_detection_id": 3,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          }
+        ],
+        "raw_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "proposed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "counts_complete": false,
+        "suppressed_detection_ids": [],
+        "scope": "foreground candidates and proposed counts; final classification and decision pending",
+        "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+        "illumination_coefficients": [
+          -14.621407508850098,
+          -16.699155807495117,
+          -3.411806106567383,
+          7.976870059967041,
+          2.3565874099731445,
+          12.965299606323242
+        ],
+        "background_fit_rms": 5.169283390045166,
+        "reason": "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+        "physical_unknown_validation": false,
+        "original_component_association_complete": true,
+        "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+        "measured_shape_support": [
+          {
+            "detection_id": 0,
+            "shape_pixels": 5594,
+            "foreground_pixels": 4591
+          },
+          {
+            "detection_id": 1,
+            "shape_pixels": 11199,
+            "foreground_pixels": 9379
+          },
+          {
+            "detection_id": 2,
+            "shape_pixels": 0,
+            "foreground_pixels": 0
+          },
+          {
+            "detection_id": 3,
+            "shape_pixels": 3134,
+            "foreground_pixels": 2498
+          }
+        ],
+        "residual_regions": [
+          {
+            "xmin": 552,
+            "ymin": 37,
+            "xmax": 648,
+            "ymax": 151,
+            "area_pixels": 6825,
+            "reason": "UNMATCHED_FOREGROUND"
+          }
+        ],
+        "ambiguous_detection_ids": [],
+        "unexplained_foreground_pixels": 6825
+      },
+      "decision_failure_reasons": [
+        "COUNT_MISMATCH"
+      ],
+      "decision_review_reasons": [
+        "object 2: HEAD_SHAFT_SEPARATION_FAILED []",
+        "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+      ],
+      "comparison_method": "A"
+    },
+    "expected_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "difference": {
+      "1": -1,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "baseline3_mode": "size_repaired_development"
+  },
+  "B": {
+    "status": "FAIL",
+    "predicted_label": "FAIL",
+    "prediction_score": null,
+    "score_type": "none",
+    "non_catalogue_count": 0,
+    "counts": {
+      "0": 0,
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "objects": [
+      {
+        "detection_id": 0,
+        "class_id": 3,
+        "xmin": 336.88714599609375,
+        "ymin": 77.22892761230469,
+        "xmax": 749.3328247070312,
+        "ymax": 607.1770629882812,
+        "score": 0.8307285308837891,
+        "detector_class_id": 3,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 3,
+            "dimensions": {
+              "thread_major_diameter": {
+                "line_xy": [
+                  [
+                    376.5251939815754,
+                    293.85037867898285
+                  ],
+                  [
+                    502.9866887923708,
+                    339.4247582695278
+                  ]
+                ],
+                "pixels": 134.42296583859437,
+                "mm_estimate": 3.759194797463219,
+                "line_xy_original": [
+                  [
+                    527.5251939815754,
+                    293.85037867898285
+                  ],
+                  [
+                    653.9866887923708,
+                    339.4247582695278
+                  ]
+                ]
+              },
+              "underhead_length": {
+                "line_xy": [
+                  [
+                    413.194705301724,
+                    389.0115600865713
+                  ],
+                  [
+                    507.4746776907537,
+                    157.52628439582867
+                  ]
+                ],
+                "pixels": 249.9482867620727,
+                "mm_estimate": 6.989909003786146,
+                "line_xy_original": [
+                  [
+                    564.1947053017241,
+                    389.0115600865713
+                  ],
+                  [
+                    658.4746776907537,
+                    157.52628439582867
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "underhead_length": {
+                "status": "CANDIDATE",
+                "reason": ""
+              },
+              "thread_major_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 169.0,
+              "segmentation_threshold": 123.0,
+              "isolated_peer_boxes": 1,
+              "method": "rotated finite-strip vision caliper",
+              "valid_gauges": 18,
+              "attempted_gauges": 24,
+              "subpixel_edges": 36,
+              "minimum_edge_amplitude": 9.666431427001953,
+              "diameter_regions_px": [
+                133.58951177710838,
+                134.42296583859434,
+                134.1757222076006,
+                134.56094063727016,
+                134.18918710479423,
+                134.00394574129336,
+                134.3320219557283,
+                133.86827796300258,
+                134.21086600048238,
+                135.97287935332542,
+                134.16077889336796,
+                131.56060331746528,
+                132.60370773195788,
+                133.83576197634687,
+                132.16396165129177,
+                132.89026688691536,
+                132.2425713637033,
+                129.88868663813645
+              ],
+              "measurement_rectangles": [
+                [
+                  [
+                    314.4524987045093,
+                    273.1759481989152
+                  ],
+                  [
+                    568.6002071819304,
+                    364.7660733634676
+                  ],
+                  [
+                    565.8879099606198,
+                    372.2922572426504
+                  ],
+                  [
+                    311.74020148319863,
+                    280.702132078098
+                  ]
+                ],
+                [
+                  [
+                    316.74000955442403,
+                    268.05308316852665
+                  ],
+                  [
+                    570.5687610377423,
+                    359.5282621421927
+                  ],
+                  [
+                    567.8564638164318,
+                    367.0544460213755
+                  ],
+                  [
+                    314.02771233311336,
+                    275.57926704770944
+                  ]
+                ],
+                [
+                  [
+                    318.14246659522524,
+                    262.6112611440353
+                  ],
+                  [
+                    571.9712180785435,
+                    354.0864401177014
+                  ],
+                  [
+                    569.258920857233,
+                    361.61262399688417
+                  ],
+                  [
+                    315.43016937391457,
+                    270.1374450232181
+                  ]
+                ],
+                [
+                  [
+                    323.6025421041683,
+                    252.68448807736115
+                  ],
+                  [
+                    577.4312935874866,
+                    344.1596670510272
+                  ],
+                  [
+                    574.718996366176,
+                    351.68585093021
+                  ],
+                  [
+                    320.89024488285764,
+                    260.21067195654393
+                  ]
+                ],
+                [
+                  [
+                    324.6860421508667,
+                    247.12771986198345
+                  ],
+                  [
+                    578.5147936341849,
+                    338.6028988356495
+                  ],
+                  [
+                    575.8024964128743,
+                    346.1290827148323
+                  ],
+                  [
+                    321.973744929556,
+                    254.65390374116623
+                  ]
+                ],
+                [
+                  [
+                    328.14165521740046,
+                    242.425817227306
+                  ],
+                  [
+                    581.2448313886565,
+                    333.6395123023124
+                  ],
+                  [
+                    578.532534167346,
+                    341.1656961814952
+                  ],
+                  [
+                    325.4293579960898,
+                    249.95200110648878
+                  ]
+                ],
+                [
+                  [
+                    330.1461176598098,
+                    237.20094679530928
+                  ],
+                  [
+                    583.9748691431281,
+                    328.67612576897534
+                  ],
+                  [
+                    581.2625719218175,
+                    336.2023096481581
+                  ],
+                  [
+                    327.43382043849914,
+                    244.72713067449206
+                  ]
+                ],
+                [
+                  [
+                    332.11467151562175,
+                    231.96313557403434
+                  ],
+                  [
+                    584.1733153807129,
+                    322.80040055949473
+                  ],
+                  [
+                    581.4610181594023,
+                    330.3265844386775
+                  ],
+                  [
+                    329.4023742943111,
+                    239.48931945321712
+                  ]
+                ],
+                [
+                  [
+                    336.68969321545114,
+                    221.71740551325732
+                  ],
+                  [
+                    588.7483370805422,
+                    312.55467049871777
+                  ],
+                  [
+                    586.0360398592317,
+                    320.08085437790055
+                  ],
+                  [
+                    333.97739599414047,
+                    229.2435893924401
+                  ]
+                ],
+                [
+                  [
+                    337.7731932621496,
+                    216.16063729787962
+                  ],
+                  [
+                    592.8059555486843,
+                    308.0697194565349
+                  ],
+                  [
+                    590.0936583273738,
+                    315.5959033357177
+                  ],
+                  [
+                    335.06089604083894,
+                    223.6868211770624
+                  ]
+                ],
+                [
+                  [
+                    340.06070411206434,
+                    211.03777226749114
+                  ],
+                  [
+                    593.004401786269,
+                    302.1939942470544
+                  ],
+                  [
+                    590.2921045649584,
+                    309.72017812623716
+                  ],
+                  [
+                    337.34840689075367,
+                    218.56395614667392
+                  ]
+                ],
+                [
+                  [
+                    343.2332687710927,
+                    206.2338642312054
+                  ],
+                  [
+                    593.2028480238539,
+                    296.31826903757377
+                  ],
+                  [
+                    590.4905508025433,
+                    303.84445291675655
+                  ],
+                  [
+                    340.520971549782,
+                    213.76004811038817
+                  ]
+                ],
+                [
+                  [
+                    344.63572581189385,
+                    200.79204220671417
+                  ],
+                  [
+                    596.694369676985,
+                    291.6293071921746
+                  ],
+                  [
+                    593.9820724556745,
+                    299.1554910713574
+                  ],
+                  [
+                    341.92342859058317,
+                    208.31822608589695
+                  ]
+                ],
+                [
+                  [
+                    346.60427966770584,
+                    195.55423098543923
+                  ],
+                  [
+                    599.5479773419105,
+                    286.71045296500245
+                  ],
+                  [
+                    596.8356801205999,
+                    294.2366368441852
+                  ],
+                  [
+                    343.89198244639516,
+                    203.080414864622
+                  ]
+                ],
+                [
+                  [
+                    349.77684432673414,
+                    190.7503229491536
+                  ],
+                  [
+                    599.7464235794953,
+                    280.83472775552195
+                  ],
+                  [
+                    597.0341263581847,
+                    288.36091163470473
+                  ],
+                  [
+                    347.06454710542346,
+                    198.27650682833638
+                  ]
+                ],
+                [
+                  [
+                    353.1478552233473,
+                    180.07068970338736
+                  ],
+                  [
+                    605.2064990884384,
+                    270.9079546888478
+                  ],
+                  [
+                    602.4942018671278,
+                    278.43413856803056
+                  ],
+                  [
+                    350.4355580020366,
+                    187.59687358257014
+                  ]
+                ],
+                [
+                  [
+                    355.75432306736485,
+                    175.06277086388525
+                  ],
+                  [
+                    606.6089561292395,
+                    265.46613266435645
+                  ],
+                  [
+                    603.8966589079289,
+                    272.99231654353923
+                  ],
+                  [
+                    353.0420258460542,
+                    182.58895474306803
+                  ]
+                ],
+                [
+                  [
+                    357.7228769231768,
+                    169.82495964261037
+                  ],
+                  [
+                    606.8074023668244,
+                    259.59040745487596
+                  ],
+                  [
+                    604.0951051455138,
+                    267.11659133405874
+                  ],
+                  [
+                    355.0105797018661,
+                    177.35114352179315
+                  ]
+                ],
+                [
+                  [
+                    299.4595564355391,
+                    444.01564916902754
+                  ],
+                  [
+                    372.98044679346407,
+                    263.50007261256445
+                  ],
+                  [
+                    380.3895082017895,
+                    266.5176559250286
+                  ],
+                  [
+                    306.86861784386457,
+                    447.03323248149167
+                  ]
+                ],
+                [
+                  [
+                    451.21335020849364,
+                    498.70490467768144
+                  ],
+                  [
+                    524.7342405664185,
+                    318.18932812121835
+                  ],
+                  [
+                    532.143301974744,
+                    321.2069114336825
+                  ],
+                  [
+                    458.6224116168191,
+                    501.72248799014557
+                  ]
+                ],
+                [
+                  [
+                    284.2841770582437,
+                    438.54672361816216
+                  ],
+                  [
+                    357.80506741616864,
+                    258.0311470616991
+                  ],
+                  [
+                    365.2141288244941,
+                    261.0487303741632
+                  ],
+                  [
+                    291.69323846656914,
+                    441.5643069306263
+                  ]
+                ],
+                [
+                  [
+                    466.388729585789,
+                    504.1738302285468
+                  ],
+                  [
+                    539.9096199437139,
+                    323.65825367208373
+                  ],
+                  [
+                    547.3186813520393,
+                    326.67583698454786
+                  ],
+                  [
+                    473.79779099411445,
+                    507.19141354101095
+                  ]
+                ],
+                [
+                  [
+                    269.1087976809482,
+                    433.0777980672967
+                  ],
+                  [
+                    342.62968803887316,
+                    252.5622215108336
+                  ],
+                  [
+                    350.0387494471986,
+                    255.5798048232978
+                  ],
+                  [
+                    276.51785908927366,
+                    436.09538137976085
+                  ]
+                ],
+                [
+                  [
+                    481.56410896308444,
+                    509.64275577941225
+                  ],
+                  [
+                    555.0849993210094,
+                    329.12717922294917
+                  ],
+                  [
+                    562.4940607293348,
+                    332.1447625354133
+                  ],
+                  [
+                    488.9731703714099,
+                    512.6603390918764
+                  ]
+                ],
+                [
+                  [
+                    463.10451970530517,
+                    198.89168756083217
+                  ],
+                  [
+                    508.73817578953447,
+                    86.84753659475165
+                  ],
+                  [
+                    516.1472371978599,
+                    89.8651199072158
+                  ],
+                  [
+                    470.5135811136306,
+                    201.90927087329635
+                  ]
+                ],
+                [
+                  [
+                    483.33835887503244,
+                    206.18358829531937
+                  ],
+                  [
+                    528.9720149592617,
+                    94.13943732923885
+                  ],
+                  [
+                    536.3810763675872,
+                    97.157020641703
+                  ],
+                  [
+                    490.7474202833579,
+                    209.20117160778355
+                  ]
+                ],
+                [
+                  [
+                    503.57219804475966,
+                    213.47548902980657
+                  ],
+                  [
+                    549.2058541289889,
+                    101.43133806372605
+                  ],
+                  [
+                    556.6149155373143,
+                    104.4489213761902
+                  ],
+                  [
+                    510.9812594530851,
+                    216.49307234227075
+                  ]
+                ]
+              ],
+              "axis_xy": [
+                0.37719791405802017,
+                -0.9261326760406839
+              ],
+              "diameter_repeatability_px": 1.0751498826848709,
+              "measurement_uncertainty_mm": 0.030067018833189133,
+              "dimension_failures": {},
+              "head_definition": "underhead_visible",
+              "quality_valid_for_rejection": true,
+              "contour_required_for_measurement": false,
+              "profile": "wide_projection"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "independent Vision Caliper; provisional original-pixel metrology"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "thread_major_diameter": {
+              "min_mm": 3.3708934166735047,
+              "max_mm": 4.500133819637398,
+              "observed_min": 3.635504696846292,
+              "observed_max": 4.194813111745721,
+              "n": 13
+            },
+            "underhead_length": {
+              "min_mm": 6.81957668142409,
+              "max_mm": 10.290306000904181,
+              "observed_min": 7.354905655927498,
+              "observed_max": 9.592139315525214,
+              "n": 13
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 169.0,
+            "segmentation_threshold": 123.0,
+            "isolated_peer_boxes": 1,
+            "method": "rotated finite-strip vision caliper",
+            "valid_gauges": 18,
+            "attempted_gauges": 24,
+            "subpixel_edges": 36,
+            "minimum_edge_amplitude": 9.666431427001953,
+            "diameter_regions_px": [
+              133.58951177710838,
+              134.42296583859434,
+              134.1757222076006,
+              134.56094063727016,
+              134.18918710479423,
+              134.00394574129336,
+              134.3320219557283,
+              133.86827796300258,
+              134.21086600048238,
+              135.97287935332542,
+              134.16077889336796,
+              131.56060331746528,
+              132.60370773195788,
+              133.83576197634687,
+              132.16396165129177,
+              132.89026688691536,
+              132.2425713637033,
+              129.88868663813645
+            ],
+            "measurement_rectangles": [
+              [
+                [
+                  314.4524987045093,
+                  273.1759481989152
+                ],
+                [
+                  568.6002071819304,
+                  364.7660733634676
+                ],
+                [
+                  565.8879099606198,
+                  372.2922572426504
+                ],
+                [
+                  311.74020148319863,
+                  280.702132078098
+                ]
+              ],
+              [
+                [
+                  316.74000955442403,
+                  268.05308316852665
+                ],
+                [
+                  570.5687610377423,
+                  359.5282621421927
+                ],
+                [
+                  567.8564638164318,
+                  367.0544460213755
+                ],
+                [
+                  314.02771233311336,
+                  275.57926704770944
+                ]
+              ],
+              [
+                [
+                  318.14246659522524,
+                  262.6112611440353
+                ],
+                [
+                  571.9712180785435,
+                  354.0864401177014
+                ],
+                [
+                  569.258920857233,
+                  361.61262399688417
+                ],
+                [
+                  315.43016937391457,
+                  270.1374450232181
+                ]
+              ],
+              [
+                [
+                  323.6025421041683,
+                  252.68448807736115
+                ],
+                [
+                  577.4312935874866,
+                  344.1596670510272
+                ],
+                [
+                  574.718996366176,
+                  351.68585093021
+                ],
+                [
+                  320.89024488285764,
+                  260.21067195654393
+                ]
+              ],
+              [
+                [
+                  324.6860421508667,
+                  247.12771986198345
+                ],
+                [
+                  578.5147936341849,
+                  338.6028988356495
+                ],
+                [
+                  575.8024964128743,
+                  346.1290827148323
+                ],
+                [
+                  321.973744929556,
+                  254.65390374116623
+                ]
+              ],
+              [
+                [
+                  328.14165521740046,
+                  242.425817227306
+                ],
+                [
+                  581.2448313886565,
+                  333.6395123023124
+                ],
+                [
+                  578.532534167346,
+                  341.1656961814952
+                ],
+                [
+                  325.4293579960898,
+                  249.95200110648878
+                ]
+              ],
+              [
+                [
+                  330.1461176598098,
+                  237.20094679530928
+                ],
+                [
+                  583.9748691431281,
+                  328.67612576897534
+                ],
+                [
+                  581.2625719218175,
+                  336.2023096481581
+                ],
+                [
+                  327.43382043849914,
+                  244.72713067449206
+                ]
+              ],
+              [
+                [
+                  332.11467151562175,
+                  231.96313557403434
+                ],
+                [
+                  584.1733153807129,
+                  322.80040055949473
+                ],
+                [
+                  581.4610181594023,
+                  330.3265844386775
+                ],
+                [
+                  329.4023742943111,
+                  239.48931945321712
+                ]
+              ],
+              [
+                [
+                  336.68969321545114,
+                  221.71740551325732
+                ],
+                [
+                  588.7483370805422,
+                  312.55467049871777
+                ],
+                [
+                  586.0360398592317,
+                  320.08085437790055
+                ],
+                [
+                  333.97739599414047,
+                  229.2435893924401
+                ]
+              ],
+              [
+                [
+                  337.7731932621496,
+                  216.16063729787962
+                ],
+                [
+                  592.8059555486843,
+                  308.0697194565349
+                ],
+                [
+                  590.0936583273738,
+                  315.5959033357177
+                ],
+                [
+                  335.06089604083894,
+                  223.6868211770624
+                ]
+              ],
+              [
+                [
+                  340.06070411206434,
+                  211.03777226749114
+                ],
+                [
+                  593.004401786269,
+                  302.1939942470544
+                ],
+                [
+                  590.2921045649584,
+                  309.72017812623716
+                ],
+                [
+                  337.34840689075367,
+                  218.56395614667392
+                ]
+              ],
+              [
+                [
+                  343.2332687710927,
+                  206.2338642312054
+                ],
+                [
+                  593.2028480238539,
+                  296.31826903757377
+                ],
+                [
+                  590.4905508025433,
+                  303.84445291675655
+                ],
+                [
+                  340.520971549782,
+                  213.76004811038817
+                ]
+              ],
+              [
+                [
+                  344.63572581189385,
+                  200.79204220671417
+                ],
+                [
+                  596.694369676985,
+                  291.6293071921746
+                ],
+                [
+                  593.9820724556745,
+                  299.1554910713574
+                ],
+                [
+                  341.92342859058317,
+                  208.31822608589695
+                ]
+              ],
+              [
+                [
+                  346.60427966770584,
+                  195.55423098543923
+                ],
+                [
+                  599.5479773419105,
+                  286.71045296500245
+                ],
+                [
+                  596.8356801205999,
+                  294.2366368441852
+                ],
+                [
+                  343.89198244639516,
+                  203.080414864622
+                ]
+              ],
+              [
+                [
+                  349.77684432673414,
+                  190.7503229491536
+                ],
+                [
+                  599.7464235794953,
+                  280.83472775552195
+                ],
+                [
+                  597.0341263581847,
+                  288.36091163470473
+                ],
+                [
+                  347.06454710542346,
+                  198.27650682833638
+                ]
+              ],
+              [
+                [
+                  353.1478552233473,
+                  180.07068970338736
+                ],
+                [
+                  605.2064990884384,
+                  270.9079546888478
+                ],
+                [
+                  602.4942018671278,
+                  278.43413856803056
+                ],
+                [
+                  350.4355580020366,
+                  187.59687358257014
+                ]
+              ],
+              [
+                [
+                  355.75432306736485,
+                  175.06277086388525
+                ],
+                [
+                  606.6089561292395,
+                  265.46613266435645
+                ],
+                [
+                  603.8966589079289,
+                  272.99231654353923
+                ],
+                [
+                  353.0420258460542,
+                  182.58895474306803
+                ]
+              ],
+              [
+                [
+                  357.7228769231768,
+                  169.82495964261037
+                ],
+                [
+                  606.8074023668244,
+                  259.59040745487596
+                ],
+                [
+                  604.0951051455138,
+                  267.11659133405874
+                ],
+                [
+                  355.0105797018661,
+                  177.35114352179315
+                ]
+              ],
+              [
+                [
+                  299.4595564355391,
+                  444.01564916902754
+                ],
+                [
+                  372.98044679346407,
+                  263.50007261256445
+                ],
+                [
+                  380.3895082017895,
+                  266.5176559250286
+                ],
+                [
+                  306.86861784386457,
+                  447.03323248149167
+                ]
+              ],
+              [
+                [
+                  451.21335020849364,
+                  498.70490467768144
+                ],
+                [
+                  524.7342405664185,
+                  318.18932812121835
+                ],
+                [
+                  532.143301974744,
+                  321.2069114336825
+                ],
+                [
+                  458.6224116168191,
+                  501.72248799014557
+                ]
+              ],
+              [
+                [
+                  284.2841770582437,
+                  438.54672361816216
+                ],
+                [
+                  357.80506741616864,
+                  258.0311470616991
+                ],
+                [
+                  365.2141288244941,
+                  261.0487303741632
+                ],
+                [
+                  291.69323846656914,
+                  441.5643069306263
+                ]
+              ],
+              [
+                [
+                  466.388729585789,
+                  504.1738302285468
+                ],
+                [
+                  539.9096199437139,
+                  323.65825367208373
+                ],
+                [
+                  547.3186813520393,
+                  326.67583698454786
+                ],
+                [
+                  473.79779099411445,
+                  507.19141354101095
+                ]
+              ],
+              [
+                [
+                  269.1087976809482,
+                  433.0777980672967
+                ],
+                [
+                  342.62968803887316,
+                  252.5622215108336
+                ],
+                [
+                  350.0387494471986,
+                  255.5798048232978
+                ],
+                [
+                  276.51785908927366,
+                  436.09538137976085
+                ]
+              ],
+              [
+                [
+                  481.56410896308444,
+                  509.64275577941225
+                ],
+                [
+                  555.0849993210094,
+                  329.12717922294917
+                ],
+                [
+                  562.4940607293348,
+                  332.1447625354133
+                ],
+                [
+                  488.9731703714099,
+                  512.6603390918764
+                ]
+              ],
+              [
+                [
+                  463.10451970530517,
+                  198.89168756083217
+                ],
+                [
+                  508.73817578953447,
+                  86.84753659475165
+                ],
+                [
+                  516.1472371978599,
+                  89.8651199072158
+                ],
+                [
+                  470.5135811136306,
+                  201.90927087329635
+                ]
+              ],
+              [
+                [
+                  483.33835887503244,
+                  206.18358829531937
+                ],
+                [
+                  528.9720149592617,
+                  94.13943732923885
+                ],
+                [
+                  536.3810763675872,
+                  97.157020641703
+                ],
+                [
+                  490.7474202833579,
+                  209.20117160778355
+                ]
+              ],
+              [
+                [
+                  503.57219804475966,
+                  213.47548902980657
+                ],
+                [
+                  549.2058541289889,
+                  101.43133806372605
+                ],
+                [
+                  556.6149155373143,
+                  104.4489213761902
+                ],
+                [
+                  510.9812594530851,
+                  216.49307234227075
+                ]
+              ]
+            ],
+            "axis_xy": [
+              0.37719791405802017,
+              -0.9261326760406839
+            ],
+            "diameter_repeatability_px": 1.0751498826848709,
+            "measurement_uncertainty_mm": 0.030067018833189133,
+            "dimension_failures": {},
+            "head_definition": "underhead_visible",
+            "quality_valid_for_rejection": true,
+            "contour_required_for_measurement": false,
+            "profile": "wide_projection",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "thread_major_diameter": {
+              "local_repeatability_interval_mm": [
+                3.72912777863003,
+                3.789261816296408
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            },
+            "underhead_length": {
+              "local_repeatability_interval_mm": [
+                6.959841984952957,
+                7.0199760226193355
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      },
+      {
+        "detection_id": 1,
+        "class_id": 5,
+        "xmin": 773.8897094726562,
+        "ymin": 65.31005859375,
+        "xmax": 1356.1778564453125,
+        "ymax": 603.998291015625,
+        "score": 0.8297685980796814,
+        "detector_class_id": 5,
+        "size_evidence": {
+          "measurement": {
+            "status": "UNMEASURABLE",
+            "reason": "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW",
+            "class_id": 5,
+            "dimensions": {},
+            "dimension_status": {
+              "outer_diameter": {
+                "status": "UNMEASURABLE",
+                "reason": "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW"
+              },
+              "inner_diameter": {
+                "status": "UNMEASURABLE",
+                "reason": "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW"
+              }
+            },
+            "diagnostics": {
+              "quality_valid_for_rejection": false,
+              "profile": "wide_projection"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "independent Vision Caliper; provisional original-pixel metrology"
+          },
+          "conclusion": "UNMEASURABLE",
+          "details": [],
+          "provisional": true,
+          "reason": "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW",
+          "development_acceptance_bands": {
+            "inner_diameter": {
+              "min_mm": 4.669882798768669,
+              "max_mm": 5.629969196569283,
+              "observed_min": 5.036463260650636,
+              "observed_max": 5.247992515563967,
+              "n": 12
+            },
+            "outer_diameter": {
+              "min_mm": 12.810673361568805,
+              "max_mm": 16.245679443993232,
+              "observed_min": 13.816296577453613,
+              "observed_max": 15.143458366394047,
+              "n": 12
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "quality_valid_for_rejection": false,
+            "profile": "wide_projection",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {}
+        }
+      },
+      {
+        "detection_id": 2,
+        "class_id": 2,
+        "xmin": 2174.83349609375,
+        "ymin": 57.45500564575195,
+        "xmax": 2692.758544921875,
+        "ymax": 679.6239013671875,
+        "score": 0.7605134844779968,
+        "detector_class_id": 2,
+        "size_evidence": {
+          "measurement": {
+            "status": "UNMEASURABLE",
+            "reason": "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED",
+            "class_id": 2,
+            "dimensions": {},
+            "dimension_status": {
+              "underhead_length": {
+                "status": "UNMEASURABLE",
+                "reason": "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED"
+              },
+              "thread_major_diameter": {
+                "status": "UNMEASURABLE",
+                "reason": "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED"
+              }
+            },
+            "diagnostics": {
+              "quality_valid_for_rejection": false,
+              "profile": "wide_projection"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "independent Vision Caliper; provisional original-pixel metrology"
+          },
+          "conclusion": "UNMEASURABLE",
+          "details": [],
+          "provisional": true,
+          "reason": "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED",
+          "development_acceptance_bands": {
+            "thread_major_diameter": {
+              "min_mm": 4.589601036547772,
+              "max_mm": 6.390190023885105,
+              "observed_min": 4.949879471859951,
+              "observed_max": 5.956634618678924,
+              "n": 14
+            },
+            "underhead_length": {
+              "min_mm": 7.3122457192456,
+              "max_mm": 10.080299755987769,
+              "observed_min": 7.886248650081953,
+              "observed_max": 9.396381370310413,
+              "n": 14
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "quality_valid_for_rejection": false,
+            "profile": "wide_projection",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {}
+        }
+      },
+      {
+        "detection_id": 3,
+        "class_id": 4,
+        "xmin": 1547.4591064453125,
+        "ymin": 125.29631042480469,
+        "xmax": 1934.3685302734375,
+        "ymax": 499.2720031738281,
+        "score": 0.6349658370018005,
+        "detector_class_id": 4,
+        "size_evidence": {
+          "measurement": {
+            "status": "UNMEASURABLE",
+            "reason": "CALIPER_OPPOSITE_FLATS_UNSUPPORTED",
+            "class_id": 4,
+            "dimensions": {},
+            "dimension_status": {
+              "across_flats": {
+                "status": "UNMEASURABLE",
+                "reason": "CALIPER_OPPOSITE_FLATS_UNSUPPORTED"
+              }
+            },
+            "diagnostics": {
+              "quality_valid_for_rejection": false,
+              "profile": "wide_projection"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "independent Vision Caliper; provisional original-pixel metrology"
+          },
+          "conclusion": "UNMEASURABLE",
+          "details": [],
+          "provisional": true,
+          "reason": "CALIPER_OPPOSITE_FLATS_UNSUPPORTED",
+          "development_acceptance_bands": {
+            "across_flats": {
+              "min_mm": 6.296979775621256,
+              "max_mm": 7.712315561245787,
+              "observed_min": 6.791285490363669,
+              "observed_max": 7.189057866914979,
+              "n": 12
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "quality_valid_for_rejection": false,
+            "profile": "wide_projection",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {}
+        }
+      }
+    ],
+    "frame_size": {
+      "width": 3024,
+      "height": 4032
+    },
+    "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. COUNT_MISMATCH; object 1: CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW []; object 2: CALIPER_HEAD_SHAFT_SEED_UNRESOLVED []; object 3: CALIPER_OPPOSITE_FLATS_UNSUPPORTED []; object 1: NO_TRUSTED_GEOMETRIC_SUPPORT; object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; object 3: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+    "inspection": {
+      "mode": "size_repaired_development",
+      "acceptance_confirmed": false,
+      "calibration_compatible": true,
+      "calibration": {
+        "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+        "validated": false,
+        "px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "instructor_approved": false
+      },
+      "specifications": [
+        {
+          "class_id": 1,
+          "class_name": "long_screw",
+          "supplier_spec": "M4×25",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/01_long_screw_M4x25.jpg",
+          "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 25.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 4.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.4,
+            "head_diameter_mm": 9.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "thick_screw",
+          "supplier_spec": "M5×10",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+          "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 10.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 5.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.9,
+            "head_diameter_mm": 11.4
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "thin_screw",
+          "supplier_spec": "M4×10",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+          "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 10.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 4.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.4,
+            "head_diameter_mm": 9.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hex_nut",
+          "supplier_spec": "M4",
+          "product_name_zh": "304六角螺母",
+          "iso_din_standard": null,
+          "source_image": "reference_images/04_hex_nut_M4.jpg",
+          "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+          "dimensions": {
+            "across_flats": {
+              "supplier_field": "across_flats_mm",
+              "reference_mm": 7.0,
+              "provisional_allowance_mm": 0.5
+            }
+          },
+          "reference_only_dimensions": {
+            "thread_nominal_diameter_mm": 4.0,
+            "thickness_mm": 3.1,
+            "wrench_size_mm": 7.0
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "thread_nominal_diameter_mm",
+            "thickness_mm"
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "flat_washer",
+          "supplier_spec": "5×15×1.2",
+          "product_name_zh": "304平垫片",
+          "iso_din_standard": null,
+          "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+          "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+          "dimensions": {
+            "outer_diameter": {
+              "supplier_field": "outer_diameter_mm",
+              "reference_mm": 15.0,
+              "provisional_allowance_mm": 0.75
+            },
+            "inner_diameter": {
+              "supplier_field": "inner_diameter_mm",
+              "reference_mm": 5.0,
+              "provisional_allowance_mm": 0.5
+            }
+          },
+          "reference_only_dimensions": {
+            "thickness_mm": 1.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "thickness_mm"
+          ]
+        }
+      ],
+      "measurement_calls": 4,
+      "measurement_complete": 1,
+      "geometry_execution": "REPLAY_DEVELOPMENT_MEASUREMENTS",
+      "failure_reasons": [],
+      "review_reasons": [
+        "object 1: CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW []",
+        "object 2: CALIPER_HEAD_SHAFT_SEED_UNRESOLVED []",
+        "object 3: CALIPER_OPPOSITE_FLATS_UNSUPPORTED []",
+        "object 1: NO_TRUSTED_GEOMETRIC_SUPPORT; object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; object 3: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+      ],
+      "caliper_mae": null,
+      "foreground": {
+        "status": "REVIEW",
+        "background_reference_id": "G01.jpg",
+        "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+        "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+        "frame_size": {
+          "width": 756,
+          "height": 1008
+        },
+        "roi": [
+          0,
+          0,
+          756,
+          1008
+        ],
+        "parameters": {
+          "difference_threshold": 40,
+          "minimum_area": 30,
+          "kernel_size": 3,
+          "association_fraction": 0.25,
+          "duplicate_iou": 0.8,
+          "maximum_foreground_fraction": 0.45
+        },
+        "foreground_fraction": 0.030579438565549677,
+        "background_usable": true,
+        "regions": [
+          {
+            "region_id": 0,
+            "component_label": 1,
+            "xmin": 208,
+            "ymin": 26,
+            "xmax": 327,
+            "ymax": 144,
+            "area_pixels": 9385,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 1,
+            "component_label": 2,
+            "xmin": 99,
+            "ymin": 37,
+            "xmax": 173,
+            "ymax": 140,
+            "area_pixels": 4592,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 2,
+            "component_label": 3,
+            "xmin": 552,
+            "ymin": 37,
+            "xmax": 648,
+            "ymax": 151,
+            "area_pixels": 6825,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 3,
+            "component_label": 4,
+            "xmin": 402,
+            "ymin": 46,
+            "xmax": 465,
+            "ymax": 108,
+            "area_pixels": 2486,
+            "touches_roi_edge": false
+          }
+        ],
+        "associations": [
+          {
+            "region_id": 1,
+            "detection_id": 0,
+            "overlap_pixels": 4592,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 0,
+            "detection_id": 1,
+            "overlap_pixels": 9385,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 2,
+            "detection_id": 2,
+            "overlap_pixels": 6825,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 3,
+            "detection_id": 3,
+            "overlap_pixels": 2486,
+            "association_fraction": 1.0
+          }
+        ],
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "region_ids": [
+              0
+            ],
+            "detection_ids": [
+              1
+            ],
+            "class_id": 5,
+            "retained_detection_id": 1,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 1,
+            "region_ids": [
+              1
+            ],
+            "detection_ids": [
+              0
+            ],
+            "class_id": 3,
+            "retained_detection_id": 0,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 2,
+            "region_ids": [
+              2
+            ],
+            "detection_ids": [
+              2
+            ],
+            "class_id": 2,
+            "retained_detection_id": 2,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 3,
+            "region_ids": [
+              3
+            ],
+            "detection_ids": [
+              3
+            ],
+            "class_id": 4,
+            "retained_detection_id": 3,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          }
+        ],
+        "raw_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "proposed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "counts_complete": false,
+        "suppressed_detection_ids": [],
+        "scope": "foreground candidates and proposed counts; final classification and decision pending",
+        "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+        "illumination_coefficients": [
+          -14.621407508850098,
+          -16.699155807495117,
+          -3.411806106567383,
+          7.976870059967041,
+          2.3565874099731445,
+          12.965299606323242
+        ],
+        "background_fit_rms": 5.169283390045166,
+        "reason": "object 1: NO_TRUSTED_GEOMETRIC_SUPPORT; object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; object 3: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+        "physical_unknown_validation": false,
+        "original_component_association_complete": true,
+        "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+        "measured_shape_support": [
+          {
+            "detection_id": 0,
+            "shape_pixels": 5570,
+            "foreground_pixels": 4591
+          },
+          {
+            "detection_id": 1,
+            "shape_pixels": 0,
+            "foreground_pixels": 0
+          },
+          {
+            "detection_id": 2,
+            "shape_pixels": 0,
+            "foreground_pixels": 0
+          },
+          {
+            "detection_id": 3,
+            "shape_pixels": 0,
+            "foreground_pixels": 0
+          }
+        ],
+        "residual_regions": [
+          {
+            "xmin": 208,
+            "ymin": 26,
+            "xmax": 327,
+            "ymax": 144,
+            "area_pixels": 9385,
+            "reason": "UNMATCHED_FOREGROUND"
+          },
+          {
+            "xmin": 552,
+            "ymin": 37,
+            "xmax": 648,
+            "ymax": 151,
+            "area_pixels": 6825,
+            "reason": "UNMATCHED_FOREGROUND"
+          },
+          {
+            "xmin": 402,
+            "ymin": 46,
+            "xmax": 465,
+            "ymax": 108,
+            "area_pixels": 2486,
+            "reason": "UNMATCHED_FOREGROUND"
+          }
+        ],
+        "ambiguous_detection_ids": [],
+        "unexplained_foreground_pixels": 18696
+      },
+      "decision_failure_reasons": [
+        "COUNT_MISMATCH"
+      ],
+      "decision_review_reasons": [
+        "object 1: CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW []",
+        "object 2: CALIPER_HEAD_SHAFT_SEED_UNRESOLVED []",
+        "object 3: CALIPER_OPPOSITE_FLATS_UNSUPPORTED []",
+        "object 1: NO_TRUSTED_GEOMETRIC_SUPPORT; object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; object 3: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+      ],
+      "comparison_method": "B"
+    },
+    "expected_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "difference": {
+      "1": -1,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "baseline3_mode": "size_repaired_development"
+  },
+  "C": {
+    "status": "FAIL",
+    "predicted_label": "FAIL",
+    "prediction_score": null,
+    "score_type": "none",
+    "non_catalogue_count": 0,
+    "counts": {
+      "0": 0,
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "objects": [
+      {
+        "detection_id": 0,
+        "class_id": 3,
+        "xmin": 336.88714599609375,
+        "ymin": 77.22892761230469,
+        "xmax": 749.3328247070312,
+        "ymax": 607.1770629882812,
+        "score": 0.8307285308837891,
+        "detector_class_id": 3,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 3,
+            "dimensions": {
+              "underhead_length": {
+                "line_xy": [
+                  [
+                    413.43143156704184,
+                    385.30087128485576
+                  ],
+                  [
+                    499.47962385173395,
+                    154.84109474123278
+                  ]
+                ],
+                "pixels": 245.99999999999997,
+                "mm_estimate": 6.879493503262982,
+                "line_xy_original": [
+                  [
+                    564.4314315670418,
+                    385.30087128485576
+                  ],
+                  [
+                    650.479623851734,
+                    154.84109474123278
+                  ]
+                ]
+              },
+              "thread_major_diameter": {
+                "line_xy": [
+                  [
+                    397.4170862082568,
+                    235.2182582254825
+                  ],
+                  [
+                    523.8889147992694,
+                    282.43982716220376
+                  ]
+                ],
+                "pixels": 134.99999999999994,
+                "mm_estimate": 3.775331800571148,
+                "line_xy_original": [
+                  [
+                    548.4170862082568,
+                    235.2182582254825
+                  ],
+                  [
+                    674.8889147992694,
+                    282.43982716220376
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "underhead_length": {
+                "status": "CANDIDATE",
+                "reason": ""
+              },
+              "thread_major_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 169.0,
+              "segmentation_threshold": 123.0,
+              "isolated_peer_boxes": 1,
+              "silhouette_method": "target-owned observed boundary; hull used for axis only",
+              "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+              "underhead_method": "observed silhouette shoulder transition",
+              "tip_method": "observed silhouette end",
+              "rough_contour_width_px": 135.76708984375,
+              "diameter_sections": 129,
+              "eligible_sections": 129,
+              "exterior_rejected_internal_edges": 1016,
+              "diameter_p10_px": 129.0,
+              "diameter_p90_px": 135.0,
+              "diameter_repeatability_px": 2.0,
+              "shaft_line_fraction": 0.5487804878048781,
+              "axis_xy": [
+                0.3497893995312687,
+                -0.9368283599334268
+              ],
+              "quality_valid_for_rejection": true,
+              "measurement_uncertainty_mm": 0.05593084148994295,
+              "selected_contour_method": "DARK_SILHOUETTE",
+              "candidate_outlines": 2,
+              "strategy": "Hybrid",
+              "attempted_methods": [
+                "A"
+              ],
+              "selected_method": "A"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "thread_major_diameter": {
+              "min_mm": 3.3708934166735047,
+              "max_mm": 4.500133819637398,
+              "observed_min": 3.635504696846292,
+              "observed_max": 4.194813111745721,
+              "n": 13
+            },
+            "underhead_length": {
+              "min_mm": 6.81957668142409,
+              "max_mm": 10.290306000904181,
+              "observed_min": 7.354905655927498,
+              "observed_max": 9.592139315525214,
+              "n": 13
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 169.0,
+            "segmentation_threshold": 123.0,
+            "isolated_peer_boxes": 1,
+            "silhouette_method": "target-owned observed boundary; hull used for axis only",
+            "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+            "underhead_method": "observed silhouette shoulder transition",
+            "tip_method": "observed silhouette end",
+            "rough_contour_width_px": 135.76708984375,
+            "diameter_sections": 129,
+            "eligible_sections": 129,
+            "exterior_rejected_internal_edges": 1016,
+            "diameter_p10_px": 129.0,
+            "diameter_p90_px": 135.0,
+            "diameter_repeatability_px": 2.0,
+            "shaft_line_fraction": 0.5487804878048781,
+            "axis_xy": [
+              0.3497893995312687,
+              -0.9368283599334268
+            ],
+            "quality_valid_for_rejection": true,
+            "measurement_uncertainty_mm": 0.05593084148994295,
+            "selected_contour_method": "DARK_SILHOUETTE",
+            "candidate_outlines": 2,
+            "strategy": "Hybrid",
+            "attempted_methods": [
+              "A"
+            ],
+            "selected_method": "A",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "thread_major_diameter": {
+              "local_repeatability_interval_mm": [
+                3.719400959081205,
+                3.831262642061091
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            },
+            "underhead_length": {
+              "local_repeatability_interval_mm": [
+                6.823562661773039,
+                6.935424344752924
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      },
+      {
+        "detection_id": 1,
+        "class_id": 5,
+        "xmin": 773.8897094726562,
+        "ymin": 65.31005859375,
+        "xmax": 1356.1778564453125,
+        "ymax": 603.998291015625,
+        "score": 0.8297685980796814,
+        "detector_class_id": 5,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 5,
+            "dimensions": {
+              "outer_diameter": {
+                "line_xy": [
+                  [
+                    732.6342310707741,
+                    296.69802683985677
+                  ],
+                  [
+                    265.50779594255596,
+                    372.7102284129063
+                  ]
+                ],
+                "pixels": 473.2704947316908,
+                "mm_estimate": 13.235208511352537,
+                "line_xy_original": [
+                  [
+                    1301.6342310707741,
+                    296.69802683985677
+                  ],
+                  [
+                    834.507795942556,
+                    372.7102284129063
+                  ]
+                ]
+              },
+              "inner_diameter": {
+                "line_xy": [
+                  [
+                    585.7429283584142,
+                    337.3245227822435
+                  ],
+                  [
+                    414.64552800392687,
+                    341.38366488344116
+                  ]
+                ],
+                "pixels": 171.14554344960746,
+                "mm_estimate": 4.786157131195068,
+                "line_xy_original": [
+                  [
+                    1154.7429283584142,
+                    337.3245227822435
+                  ],
+                  [
+                    983.6455280039269,
+                    341.38366488344116
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "outer_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              },
+              "inner_diameter": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 176.0,
+              "segmentation_threshold": 120.0,
+              "isolated_peer_boxes": 2,
+              "outer_ellipse_rms_fraction": 0.016291551190776715,
+              "inner_ellipse_rms_fraction": 0.004311972283635714,
+              "outer_ellipse_axes_mm": [
+                12.939868927001953,
+                13.235208511352539
+              ],
+              "inner_ellipse_axes_mm": [
+                4.479874610900879,
+                4.786157131195068
+              ],
+              "outer_full_contour_residual": 0.058879917015086644,
+              "inner_full_contour_residual": 0.005905377605592785,
+              "outer_edge_support_fraction": 0.8330143540669857,
+              "inner_edge_support_fraction": 0.8492569002123143,
+              "aperture_hierarchy_depth": 1,
+              "radial_aperture_supported_rays": null,
+              "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+              "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+              "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification.",
+              "quality_valid_for_rejection": true,
+              "measurement_uncertainty_mm": 0.05593084148994295,
+              "selected_contour_method": "DARK_SILHOUETTE",
+              "candidate_outlines": 2,
+              "strategy": "Hybrid",
+              "attempted_methods": [
+                "A"
+              ],
+              "selected_method": "A"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "inner_diameter": {
+              "min_mm": 4.669882798768669,
+              "max_mm": 5.629969196569283,
+              "observed_min": 5.036463260650636,
+              "observed_max": 5.247992515563967,
+              "n": 12
+            },
+            "outer_diameter": {
+              "min_mm": 12.810673361568805,
+              "max_mm": 16.245679443993232,
+              "observed_min": 13.816296577453613,
+              "observed_max": 15.143458366394047,
+              "n": 12
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 176.0,
+            "segmentation_threshold": 120.0,
+            "isolated_peer_boxes": 2,
+            "outer_ellipse_rms_fraction": 0.016291551190776715,
+            "inner_ellipse_rms_fraction": 0.004311972283635714,
+            "outer_ellipse_axes_mm": [
+              12.939868927001953,
+              13.235208511352539
+            ],
+            "inner_ellipse_axes_mm": [
+              4.479874610900879,
+              4.786157131195068
+            ],
+            "outer_full_contour_residual": 0.058879917015086644,
+            "inner_full_contour_residual": 0.005905377605592785,
+            "outer_edge_support_fraction": 0.8330143540669857,
+            "inner_edge_support_fraction": 0.8492569002123143,
+            "aperture_hierarchy_depth": 1,
+            "radial_aperture_supported_rays": null,
+            "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+            "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+            "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification.",
+            "quality_valid_for_rejection": true,
+            "measurement_uncertainty_mm": 0.05593084148994295,
+            "selected_contour_method": "DARK_SILHOUETTE",
+            "candidate_outlines": 2,
+            "strategy": "Hybrid",
+            "attempted_methods": [
+              "A"
+            ],
+            "selected_method": "A",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "inner_diameter": {
+              "local_repeatability_interval_mm": [
+                4.730226289705126,
+                4.842087972685011
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            },
+            "outer_diameter": {
+              "local_repeatability_interval_mm": [
+                13.019586434369234,
+                13.45083058833584
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      },
+      {
+        "detection_id": 2,
+        "class_id": 2,
+        "xmin": 2174.83349609375,
+        "ymin": 57.45500564575195,
+        "xmax": 2692.758544921875,
+        "ymax": 679.6239013671875,
+        "score": 0.7605134844779968,
+        "detector_class_id": 2,
+        "size_evidence": {
+          "measurement": {
+            "status": "UNMEASURABLE",
+            "reason": "HEAD_SHAFT_SEPARATION_FAILED",
+            "class_id": 2,
+            "dimensions": {},
+            "dimension_status": {
+              "underhead_length": {
+                "status": "UNMEASURABLE",
+                "reason": "HEAD_SHAFT_SEPARATION_FAILED"
+              },
+              "thread_major_diameter": {
+                "status": "UNMEASURABLE",
+                "reason": "HEAD_SHAFT_SEPARATION_FAILED"
+              }
+            },
+            "diagnostics": {
+              "quality_valid_for_rejection": false,
+              "strategy": "Hybrid",
+              "attempted_methods": [
+                "A",
+                "B"
+              ],
+              "selected_method": null,
+              "alternative_reason": "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "UNMEASURABLE",
+          "details": [],
+          "provisional": true,
+          "reason": "HEAD_SHAFT_SEPARATION_FAILED",
+          "development_acceptance_bands": {
+            "thread_major_diameter": {
+              "min_mm": 4.589601036547772,
+              "max_mm": 6.390190023885105,
+              "observed_min": 4.949879471859951,
+              "observed_max": 5.956634618678924,
+              "n": 14
+            },
+            "underhead_length": {
+              "min_mm": 7.3122457192456,
+              "max_mm": 10.080299755987769,
+              "observed_min": 7.886248650081953,
+              "observed_max": 9.396381370310413,
+              "n": 14
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "quality_valid_for_rejection": false,
+            "strategy": "Hybrid",
+            "attempted_methods": [
+              "A",
+              "B"
+            ],
+            "selected_method": null,
+            "alternative_reason": "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {}
+        }
+      },
+      {
+        "detection_id": 3,
+        "class_id": 4,
+        "xmin": 1547.4591064453125,
+        "ymin": 125.29631042480469,
+        "xmax": 1934.3685302734375,
+        "ymax": 499.2720031738281,
+        "score": 0.6349658370018005,
+        "detector_class_id": 4,
+        "size_evidence": {
+          "measurement": {
+            "status": "MEASURED_CANDIDATE",
+            "reason": "",
+            "class_id": 4,
+            "dimensions": {
+              "across_flats": {
+                "line_xy": [
+                  [
+                    428.90001964274654,
+                    255.10000041646938
+                  ],
+                  [
+                    212.9253985920429,
+                    355.1865202986201
+                  ]
+                ],
+                "pixels": 238.03854393798326,
+                "mm_estimate": 6.656848034746081,
+                "line_xy_original": [
+                  [
+                    1840.9000196427464,
+                    255.10000041646938
+                  ],
+                  [
+                    1624.925398592043,
+                    355.1865202986201
+                  ]
+                ]
+              }
+            },
+            "dimension_status": {
+              "across_flats": {
+                "status": "CANDIDATE",
+                "reason": ""
+              }
+            },
+            "diagnostics": {
+              "background_intensity": 174.0,
+              "segmentation_threshold": 122.0,
+              "isolated_peer_boxes": 0,
+              "opposite_flats_mm": [
+                6.656847953796387,
+                6.184141159057617,
+                6.857240200042725
+              ],
+              "opposite_flat_lines_xy": [
+                [
+                  [
+                    428.90001964274654,
+                    255.10000041646938
+                  ],
+                  [
+                    212.9253985920429,
+                    355.1865202986201
+                  ]
+                ],
+                [
+                  [
+                    401.80001454537853,
+                    382.30002975312766
+                  ],
+                  [
+                    216.9446499366468,
+                    260.93569010207386
+                  ]
+                ],
+                [
+                  [
+                    321.9000191472279,
+                    430.3000054347882
+                  ],
+                  [
+                    334.382410188871,
+                    185.4136811114795
+                  ]
+                ]
+              ],
+              "hexagon_xy": [
+                [
+                  393.00001616191474,
+                  197.0000103142391
+                ],
+                [
+                  440.99999184357523,
+                  331.00001205027826
+                ],
+                [
+                  370.0000157366919,
+                  430.0000109152015
+                ],
+                [
+                  253.000004677451,
+                  424.000018217733
+                ],
+                [
+                  197.0000103142391,
+                  321.000001486556
+                ],
+                [
+                  275.00000063611037,
+                  188.00000421708026
+                ]
+              ],
+              "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter.",
+              "quality_valid_for_rejection": true,
+              "measurement_uncertainty_mm": 0.05593084148994295,
+              "selected_contour_method": "DARK_SILHOUETTE",
+              "candidate_outlines": 1,
+              "strategy": "Hybrid",
+              "attempted_methods": [
+                "A"
+              ],
+              "selected_method": "A"
+            },
+            "scale_px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+          },
+          "conclusion": "WITHIN_DEVELOPMENT_BAND",
+          "details": [],
+          "provisional": true,
+          "reason": "",
+          "development_acceptance_bands": {
+            "across_flats": {
+              "min_mm": 6.296979775621256,
+              "max_mm": 7.712315561245787,
+              "observed_min": 6.791285490363669,
+              "observed_max": 7.189057866914979,
+              "n": 12
+            }
+          },
+          "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+          "quality": {
+            "background_intensity": 174.0,
+            "segmentation_threshold": 122.0,
+            "isolated_peer_boxes": 0,
+            "opposite_flats_mm": [
+              6.656847953796387,
+              6.184141159057617,
+              6.857240200042725
+            ],
+            "opposite_flat_lines_xy": [
+              [
+                [
+                  428.90001964274654,
+                  255.10000041646938
+                ],
+                [
+                  212.9253985920429,
+                  355.1865202986201
+                ]
+              ],
+              [
+                [
+                  401.80001454537853,
+                  382.30002975312766
+                ],
+                [
+                  216.9446499366468,
+                  260.93569010207386
+                ]
+              ],
+              [
+                [
+                  321.9000191472279,
+                  430.3000054347882
+                ],
+                [
+                  334.382410188871,
+                  185.4136811114795
+                ]
+              ]
+            ],
+            "hexagon_xy": [
+              [
+                393.00001616191474,
+                197.0000103142391
+              ],
+              [
+                440.99999184357523,
+                331.00001205027826
+              ],
+              [
+                370.0000157366919,
+                430.0000109152015
+              ],
+              [
+                253.000004677451,
+                424.000018217733
+              ],
+              [
+                197.0000103142391,
+                321.000001486556
+              ],
+              [
+                275.00000063611037,
+                188.00000421708026
+              ]
+            ],
+            "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter.",
+            "quality_valid_for_rejection": true,
+            "measurement_uncertainty_mm": 0.05593084148994295,
+            "selected_contour_method": "DARK_SILHOUETTE",
+            "candidate_outlines": 1,
+            "strategy": "Hybrid",
+            "attempted_methods": [
+              "A"
+            ],
+            "selected_method": "A",
+            "independent_error_bound_mm": null,
+            "ruler_scale_envelope": 0.07278529454310165
+          },
+          "dimension_evidence": {
+            "across_flats": {
+              "local_repeatability_interval_mm": [
+                6.1282103175676745,
+                6.913171041532667
+              ],
+              "absolute_physical_error_bound_mm": null,
+              "provisional": true
+            }
+          }
+        }
+      }
+    ],
+    "frame_size": {
+      "width": 3024,
+      "height": 4032
+    },
+    "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. COUNT_MISMATCH; object 2: HEAD_SHAFT_SEPARATION_FAILED []; object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+    "inspection": {
+      "mode": "size_repaired_development",
+      "acceptance_confirmed": false,
+      "calibration_compatible": true,
+      "calibration": {
+        "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+        "validated": false,
+        "px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "instructor_approved": false
+      },
+      "specifications": [
+        {
+          "class_id": 1,
+          "class_name": "long_screw",
+          "supplier_spec": "M4×25",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/01_long_screw_M4x25.jpg",
+          "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 25.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 4.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.4,
+            "head_diameter_mm": 9.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "thick_screw",
+          "supplier_spec": "M5×10",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+          "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 10.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 5.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.9,
+            "head_diameter_mm": 11.4
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "thin_screw",
+          "supplier_spec": "M4×10",
+          "product_name_zh": "304大扁头十字螺钉",
+          "iso_din_standard": null,
+          "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+          "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+          "dimensions": {
+            "underhead_length": {
+              "supplier_field": "under_head_length_mm",
+              "reference_mm": 10.0,
+              "provisional_allowance_mm": 1.0
+            },
+            "thread_major_diameter": {
+              "supplier_field": "thread_major_diameter_mm",
+              "reference_mm": 4.0,
+              "provisional_allowance_mm": 0.3
+            }
+          },
+          "reference_only_dimensions": {
+            "head_thickness_mm": 2.4,
+            "head_diameter_mm": 9.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "head_thickness_mm"
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hex_nut",
+          "supplier_spec": "M4",
+          "product_name_zh": "304六角螺母",
+          "iso_din_standard": null,
+          "source_image": "reference_images/04_hex_nut_M4.jpg",
+          "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+          "dimensions": {
+            "across_flats": {
+              "supplier_field": "across_flats_mm",
+              "reference_mm": 7.0,
+              "provisional_allowance_mm": 0.5
+            }
+          },
+          "reference_only_dimensions": {
+            "thread_nominal_diameter_mm": 4.0,
+            "thickness_mm": 3.1,
+            "wrench_size_mm": 7.0
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "thread_nominal_diameter_mm",
+            "thickness_mm"
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "flat_washer",
+          "supplier_spec": "5×15×1.2",
+          "product_name_zh": "304平垫片",
+          "iso_din_standard": null,
+          "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+          "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+          "dimensions": {
+            "outer_diameter": {
+              "supplier_field": "outer_diameter_mm",
+              "reference_mm": 15.0,
+              "provisional_allowance_mm": 0.75
+            },
+            "inner_diameter": {
+              "supplier_field": "inner_diameter_mm",
+              "reference_mm": 5.0,
+              "provisional_allowance_mm": 0.5
+            }
+          },
+          "reference_only_dimensions": {
+            "thickness_mm": 1.2
+          },
+          "unsupported_for_automatic_overhead_measurement": [
+            "thickness_mm"
+          ]
+        }
+      ],
+      "measurement_calls": 4,
+      "measurement_complete": 3,
+      "geometry_execution": "REPLAY_DEVELOPMENT_MEASUREMENTS",
+      "failure_reasons": [],
+      "review_reasons": [
+        "object 2: HEAD_SHAFT_SEPARATION_FAILED []",
+        "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+      ],
+      "caliper_mae": null,
+      "foreground": {
+        "status": "REVIEW",
+        "background_reference_id": "G01.jpg",
+        "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+        "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+        "frame_size": {
+          "width": 756,
+          "height": 1008
+        },
+        "roi": [
+          0,
+          0,
+          756,
+          1008
+        ],
+        "parameters": {
+          "difference_threshold": 40,
+          "minimum_area": 30,
+          "kernel_size": 3,
+          "association_fraction": 0.25,
+          "duplicate_iou": 0.8,
+          "maximum_foreground_fraction": 0.45
+        },
+        "foreground_fraction": 0.030579438565549677,
+        "background_usable": true,
+        "regions": [
+          {
+            "region_id": 0,
+            "component_label": 1,
+            "xmin": 208,
+            "ymin": 26,
+            "xmax": 327,
+            "ymax": 144,
+            "area_pixels": 9385,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 1,
+            "component_label": 2,
+            "xmin": 99,
+            "ymin": 37,
+            "xmax": 173,
+            "ymax": 140,
+            "area_pixels": 4592,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 2,
+            "component_label": 3,
+            "xmin": 552,
+            "ymin": 37,
+            "xmax": 648,
+            "ymax": 151,
+            "area_pixels": 6825,
+            "touches_roi_edge": false
+          },
+          {
+            "region_id": 3,
+            "component_label": 4,
+            "xmin": 402,
+            "ymin": 46,
+            "xmax": 465,
+            "ymax": 108,
+            "area_pixels": 2486,
+            "touches_roi_edge": false
+          }
+        ],
+        "associations": [
+          {
+            "region_id": 1,
+            "detection_id": 0,
+            "overlap_pixels": 4592,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 0,
+            "detection_id": 1,
+            "overlap_pixels": 9385,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 2,
+            "detection_id": 2,
+            "overlap_pixels": 6825,
+            "association_fraction": 1.0
+          },
+          {
+            "region_id": 3,
+            "detection_id": 3,
+            "overlap_pixels": 2486,
+            "association_fraction": 1.0
+          }
+        ],
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "region_ids": [
+              0
+            ],
+            "detection_ids": [
+              1
+            ],
+            "class_id": 5,
+            "retained_detection_id": 1,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 1,
+            "region_ids": [
+              1
+            ],
+            "detection_ids": [
+              0
+            ],
+            "class_id": 3,
+            "retained_detection_id": 0,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 2,
+            "region_ids": [
+              2
+            ],
+            "detection_ids": [
+              2
+            ],
+            "class_id": 2,
+            "retained_detection_id": 2,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          },
+          {
+            "candidate_id": 3,
+            "region_ids": [
+              3
+            ],
+            "detection_ids": [
+              3
+            ],
+            "class_id": 4,
+            "retained_detection_id": 3,
+            "suppressed_detection_ids": [],
+            "status": "REVIEW",
+            "reason": "ASSOCIATED"
+          }
+        ],
+        "raw_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "proposed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "counts_complete": false,
+        "suppressed_detection_ids": [],
+        "scope": "foreground candidates and proposed counts; final classification and decision pending",
+        "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+        "illumination_coefficients": [
+          -14.621407508850098,
+          -16.699155807495117,
+          -3.411806106567383,
+          7.976870059967041,
+          2.3565874099731445,
+          12.965299606323242
+        ],
+        "background_fit_rms": 5.169283390045166,
+        "reason": "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+        "physical_unknown_validation": false,
+        "original_component_association_complete": true,
+        "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+        "measured_shape_support": [
+          {
+            "detection_id": 0,
+            "shape_pixels": 5594,
+            "foreground_pixels": 4591
+          },
+          {
+            "detection_id": 1,
+            "shape_pixels": 11199,
+            "foreground_pixels": 9379
+          },
+          {
+            "detection_id": 2,
+            "shape_pixels": 0,
+            "foreground_pixels": 0
+          },
+          {
+            "detection_id": 3,
+            "shape_pixels": 3134,
+            "foreground_pixels": 2498
+          }
+        ],
+        "residual_regions": [
+          {
+            "xmin": 552,
+            "ymin": 37,
+            "xmax": 648,
+            "ymax": 151,
+            "area_pixels": 6825,
+            "reason": "UNMATCHED_FOREGROUND"
+          }
+        ],
+        "ambiguous_detection_ids": [],
+        "unexplained_foreground_pixels": 6825
+      },
+      "decision_failure_reasons": [
+        "COUNT_MISMATCH"
+      ],
+      "decision_review_reasons": [
+        "object 2: HEAD_SHAFT_SEPARATION_FAILED []",
+        "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+      ],
+      "comparison_method": "C"
+    },
+    "expected_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "difference": {
+      "1": -1,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "baseline3_mode": "size_repaired_development"
+  }
+}

@@ -13,7 +13,7 @@ import cv2
 
 from src.camera import FrameProvider, Rate
 from src.p07_devices import list_cameras, select_camera
-from src.p07_bridge import CLASSES, MODELS, SCENARIOS, UnavailableBackend, load_backend, validate_counts
+from src.p07_bridge import CLASSES, MODELS, PRODUCTION_MODELS, UnavailableBackend, load_backend, validate_counts
 from src.p07_output import Journal, Recorder, dump, export_result
 from src.p07_ui import InferenceWorker, present, current_result
 from src.work_orders import load_cases, reference_counts
@@ -53,9 +53,9 @@ def load_expected(path: str, image_id: str) -> dict:
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, default=Path(__file__).resolve().parent / "config/p07.json")
-    parser.add_argument("--backend", choices=("auto", "mock", "real"), default="real",
+    parser.add_argument("--backend", choices=("auto", "real"), default="real",
                         help="All production models use real inference; unavailable models report ERROR")
-    parser.add_argument("--model", choices=MODELS, default="baseline1")
+    parser.add_argument("--model", choices=PRODUCTION_MODELS, default="baseline1")
     source = parser.add_mutually_exclusive_group()
     source.add_argument("--camera", type=int)
     source.add_argument("--camera-name", help="Select a camera by friendly name, e.g. Camo")
@@ -66,7 +66,6 @@ def main(argv=None) -> int:
     parser.add_argument("--counts-file", type=Path)
     parser.add_argument("--image-id", help="Dataset ID for camera/video; otherwise snapshot filename is used")
     parser.add_argument("--output-dir", type=Path, default=Path("output/p07"))
-    parser.add_argument("--scenario", choices=SCENARIOS, default="pass")
     parser.add_argument("--headless", action="store_true", help="Offline smoke run, no display latency claim")
     parser.add_argument("--max-frames", type=int, default=0)
     parser.add_argument("--record", action="store_true", help="Start annotated MP4 recording on the first displayed result")
@@ -113,7 +112,6 @@ def main(argv=None) -> int:
             # Reread deployment settings on every explicit model selection/reload.
             fresh = json.loads(args.config.read_text(encoding="utf-8-sig"))
             fresh["_p07_config_path"] = str(args.config.resolve())
-            fresh['_live_scene_guard'] = True
             return load_backend(mode, selected, fresh)
         except Exception as exc:
             logging.error("%s unavailable (no MOCK fallback): %s", selected, exc)
@@ -137,7 +135,6 @@ def main(argv=None) -> int:
     last_submitted = None
     processing_rate = Rate()
     last_processing_ms = None
-    scenario_index = SCENARIOS.index(args.scenario)
     camera_index = args.camera if args.camera is not None else 0
     message = "Select camera (c), image (i), or video (v)"
     last_progress = time.perf_counter()
@@ -244,10 +241,10 @@ def main(argv=None) -> int:
             latest = provider.latest if provider else None
             if not loading and not requested_model and not worker.busy and cached and dirty_counts:
                 # The bridge's shared rejudge handles count-only changes without inference.
-                worker.submit(backend, model, cached["packet"], dict(expected), SCENARIOS[scenario_index], generation, cached["result"])
+                worker.submit(backend, model, cached["packet"], dict(expected), 'pass', generation, cached["result"])
                 dirty_counts = False
             elif not loading and not requested_model and detecting and latest and not worker.busy and latest.frame_id != last_submitted:
-                worker.submit(backend, model, latest, dict(expected), SCENARIOS[scenario_index], generation)
+                worker.submit(backend, model, latest, dict(expected), 'pass', generation)
                 last_submitted = latest.frame_id
             if not detecting and not cached:
                 displayed = latest
@@ -263,7 +260,7 @@ def main(argv=None) -> int:
                             processing_ms=f'{last_processing_ms:.2f}' if last_processing_ms is not None else "N/A",
                             pending_counts=dirty_counts or bool(cached and expected != cached['expected']),
                             source_status=provider.error if provider else "Choose Camera, Image or Video above",
-                            message=message + (" | MOCK case: " + SCENARIOS[scenario_index] if backend.is_mock else ""),
+                            message=message,
                             score_meaning=("P(FAIL), uncalibrated" if model == "baseline2" else "P(label), uncalibrated") if model in MODELS[:2] else "",
                             version=str(backend.metadata.get("model_version", ""))[:16],
                             deployment=backend.metadata.get("deployment_stage", ""),
@@ -352,8 +349,8 @@ def main(argv=None) -> int:
                         detecting = not detecting
                     else:
                         message = "Choose Camera, Image or Video before starting"
-                elif key in map(ord, "1234l"):
-                    selected = model if key == ord("l") else MODELS[key-ord("1")]
+                elif key in map(ord, "123l"):
+                    selected = model if key == ord("l") else PRODUCTION_MODELS[key-ord("1")]
                     stop_recording()
                     generation += 1
                     model = selected
@@ -363,10 +360,6 @@ def main(argv=None) -> int:
                     processing_rate = Rate()
                     requested_model = selected
                     message = "Requested " + selected
-                elif key == ord("n") and model in MODELS[2:] and backend.is_mock and not pending:
-                    scenario_index = (scenario_index+1) % len(SCENARIOS)
-                    generation += 1
-                    cached = displayed = last_submitted = None
                 elif key == ord("c"):
                     switch_source("camera", camera_index)
                 elif key == ord("x"):

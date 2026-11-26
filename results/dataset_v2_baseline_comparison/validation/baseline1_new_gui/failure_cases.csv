@@ -1,0 +1,9 @@
+﻿image_id,ground_truth_label,predicted_label,prediction_status,prediction_score,score_type,score_meaning,decision_threshold,processing_ms,scenario_type,condition,non_catalogue_type,truth_id0_count,correct_target_counts,truth_target_count,image_path,error_type
+A191.jpg,PASS,FAIL,FAIL,0.745388388633728,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),61.40979996416718,A,normal,,0,True,5,data/mechanical_components_v2/yolo/images/val/A191.jpg,FALSE_FAIL
+F14.jpg,FAIL,,REVIEW,,none,"P(predicted label), uncalibrated",argmax (binary boundary .5),57.77489999309182,F,normal,,1,False,6,data/mechanical_components_v2/yolo/images/val/F14.jpg,REVIEW
+F16.jpg,FAIL,,REVIEW,,none,"P(predicted label), uncalibrated",argmax (binary boundary .5),78.34070001263171,F,normal,,1,False,5,data/mechanical_components_v2/yolo/images/val/F16.jpg,REVIEW
+H021.jpg,PASS,FAIL,FAIL,0.7091284394264221,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),56.75989994779229,A,crowded,,0,True,5,data/mechanical_components_v2/yolo/images/val/H021.jpg,FALSE_FAIL
+H039.jpg,PASS,FAIL,FAIL,0.9798055291175842,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),61.35029997676611,A,edge,,0,True,5,data/mechanical_components_v2/yolo/images/val/H039.jpg,FALSE_FAIL
+H040.jpg,PASS,FAIL,FAIL,0.9342983961105347,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),65.33840001793578,A,edge,,0,True,5,data/mechanical_components_v2/yolo/images/val/H040.jpg,FALSE_FAIL
+H043.jpg,PASS,FAIL,FAIL,0.6582109332084656,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),62.463900016155094,A,edge,,0,True,5,data/mechanical_components_v2/yolo/images/val/H043.jpg,FALSE_FAIL
+H059.jpg,PASS,FAIL,FAIL,0.9958177208900452,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),77.88719999371096,A,edge,,0,True,5,data/mechanical_components_v2/yolo/images/val/H059.jpg,FALSE_FAIL

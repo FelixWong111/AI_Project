@@ -1,0 +1,11 @@
+{
+  "full_pipeline": {
+    "both_wrong_or_unresolved": 15,
+    "both_correct": 14,
+    "old_wrong_new_correct": 1
+  },
+  "count_rule_auxiliary": {
+    "both_correct": 24,
+    "old_wrong_new_correct": 6
+  }
+}

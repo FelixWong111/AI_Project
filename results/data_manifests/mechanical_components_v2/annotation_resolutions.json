@@ -1,0 +1,24 @@
+{
+  "D18.jpg": {
+    "decision": "USE_ORIGINAL_JSON",
+    "annotation_sha256": "2d94338332adf4dc5451a3c68e958ec575efbea07177eae21b07422260239e41",
+    "resolved_issues": [
+      "CAPTURE_COUNTS_CONFLICT"
+    ],
+    "confirmed_on": "2026-11-26",
+    "confirmed_by": "project owner/user",
+    "source": "User reply: 已核实，两张都以JSON为准",
+    "scope": "Resolve count/class discrepancy against capture spreadsheet; does not certify all boxes or other images"
+  },
+  "F21.jpg": {
+    "decision": "USE_ORIGINAL_JSON",
+    "annotation_sha256": "c8e46014bbd63d277f30f2a10279ea7eaedde410b25ef322cf9ee8d66f278db4",
+    "resolved_issues": [
+      "CAPTURE_COUNTS_CONFLICT"
+    ],
+    "confirmed_on": "2026-11-26",
+    "confirmed_by": "project owner/user",
+    "source": "User reply: 已核实，两张都以JSON为准",
+    "scope": "Resolve count/class discrepancy against capture spreadsheet; does not certify all boxes or other images"
+  }
+}

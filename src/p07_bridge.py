@@ -9,6 +9,7 @@ from typing import Any
 
 import numpy as np
 from src.work_orders import REFERENCE_CONFIG, validate_counts, reference_counts, unsupported_counts, judge_observed
+from src.model_registry import PRODUCTION_MODELS
 
 MODELS = ("baseline1", "baseline2", "baseline3", "final")
 CLASSES = ("non_catalogue", "long_screw", "thick_screw", "thin_screw", "hex_nut", "flat_washer")
@@ -210,7 +211,7 @@ class ObjectBackend:
         return judge_observed(result, expected_counts)
 
 
-def load_backend(mode: str, model: str, config: dict) -> Any:
+def _load_backend(mode: str, model: str, config: dict) -> Any:
     if model not in MODELS:
         raise ValueError("unknown model ID")
     if model in MODELS[:2]:
@@ -225,7 +226,7 @@ def load_backend(mode: str, model: str, config: dict) -> Any:
             native = Baseline1Backend(path, REPO_ROOT, bundle)
             if config.get('_live_scene_guard'):
                 from src.models.baseline1.scene_guard import SceneGuard
-                guard_path = repository_path('models/baseline1/scene_guard.npz')
+                guard_path = bundle.parent / 'scene_guard.npz'
                 native.scene_guard = SceneGuard(guard_path, native.metadata['model_version'])
                 native.metadata['system_scene_guard'] = dict(enabled=True,
                     rule='nearest standardized HOG distance; threshold=max training leave-one-out distance',
@@ -256,3 +257,18 @@ def load_backend(mode: str, model: str, config: dict) -> Any:
         raise TypeError("P08 bridge must supply metadata")
     backend.is_mock = False
     return ObjectBackend(backend, model)
+
+
+def load_backend(mode: str, model: str, config: dict) -> Any:
+    from src.model_registry import resolve
+    settings,registered_files=resolve(model,config)
+    backend=_load_backend(mode,model,settings)
+    if registered_files:
+        metadata=settings['_registry_metadata']
+        backend.metadata['registry']=metadata
+        backend.native.metadata['registry']=metadata
+        if isinstance(backend,ImageBackend):
+            backend.files.extend(registered_files);backend.signature=file_signature(backend.files)
+        elif hasattr(backend.native,'files'):
+            backend.native.files.extend(registered_files);backend.native.signature=backend.native._signature()
+    return backend

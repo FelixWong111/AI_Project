@@ -1,0 +1,189 @@
+{
+  "model_id": "baseline3",
+  "capability": "object_level",
+  "input_cases": 80,
+  "input_scenes": 80,
+  "scored_image_cases": 65,
+  "scored_scenes": 65,
+  "prediction_status_counts": {
+    "REVIEW": 15,
+    "PASS": 23,
+    "FAIL": 42
+  },
+  "image_level": {
+    "positive_class": "FAIL",
+    "tp": 40,
+    "fp": 2,
+    "fn": 0,
+    "tn": 23,
+    "fail_support": 40,
+    "pass_support": 25,
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1": 0.975609756097561,
+    "false_pass": 0,
+    "false_fail": 2
+  },
+  "object_classes": {
+    "0": {
+      "name": "non_catalogue",
+      "support": 25,
+      "tp": 25,
+      "fp": 5,
+      "fn": 0,
+      "ignored_predictions": 0,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1": 0.9090909090909091,
+      "count_mae": 0.07692307692307693,
+      "count_image_support": 65
+    },
+    "1": {
+      "name": "long_screw",
+      "support": 57,
+      "tp": 56,
+      "fp": 0,
+      "fn": 1,
+      "ignored_predictions": 0,
+      "precision": 1.0,
+      "recall": 0.9824561403508771,
+      "f1": 0.9911504424778761,
+      "count_mae": 0.015384615384615385,
+      "count_image_support": 65
+    },
+    "2": {
+      "name": "thick_screw",
+      "support": 62,
+      "tp": 59,
+      "fp": 0,
+      "fn": 3,
+      "ignored_predictions": 0,
+      "precision": 1.0,
+      "recall": 0.9516129032258065,
+      "f1": 0.9752066115702479,
+      "count_mae": 0.046153846153846156,
+      "count_image_support": 65
+    },
+    "3": {
+      "name": "thin_screw",
+      "support": 63,
+      "tp": 62,
+      "fp": 5,
+      "fn": 1,
+      "ignored_predictions": 0,
+      "precision": 0.9253731343283582,
+      "recall": 0.9841269841269841,
+      "f1": 0.9538461538461539,
+      "count_mae": 0.06153846153846154,
+      "count_image_support": 65
+    },
+    "4": {
+      "name": "hex_nut",
+      "support": 58,
+      "tp": 57,
+      "fp": 1,
+      "fn": 1,
+      "ignored_predictions": 0,
+      "precision": 0.9827586206896551,
+      "recall": 0.9827586206896551,
+      "f1": 0.9827586206896551,
+      "count_mae": 0.0,
+      "count_image_support": 65
+    },
+    "5": {
+      "name": "flat_washer",
+      "support": 59,
+      "tp": 59,
+      "fp": 0,
+      "fn": 0,
+      "ignored_predictions": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0,
+      "count_image_support": 65
+    }
+  },
+  "count_vector_exact_rate": 0.8923076923076924,
+  "count_vector_support": 65,
+  "critical_errors": {
+    "class0_predictions_overlapping_valid_target": 5,
+    "count_difference_error_class_3": 4,
+    "count_difference_error_class_2": 3,
+    "count_difference_error_class_1": 1
+  },
+  "matching": "Same class, score descending, detection_id numeric ascending; highest IoU >= 0.50, object_id lexical tie-break. Unmatched predictions overlapping same-class ignored ground truth at IoU >= 0.50 are neutral.",
+  "exclusions": "REVIEW ground truth and images containing ignored objects are excluded from image and count metrics; REVIEW, ERROR, UNSUPPORTED_COUNTS predictions excluded. Object metrics retain judgeable non-ignored objects in images with ignored objects.",
+  "inputs": {
+    "ground_truth_images": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\evaluation\\validation\\ground_truth_images.csv",
+    "ground_truth_objects": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\evaluation\\validation\\ground_truth_objects.csv",
+    "expected_counts": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\configs\\expected_counts_val.json",
+    "predictions_dir": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\size_caliper_v3\\regression\\A\\predictions"
+  },
+  "note": "Latency and independent test validity require separate evidence; zero-denominator metrics are null.",
+  "image_level_details": {
+    "input_cases": 80,
+    "ground_truth_eligible": 80,
+    "completed_eligible": 65,
+    "correct": 63,
+    "wrong_on_completed": 2,
+    "unresolved_eligible": 15,
+    "all_input_correct_fraction": 0.7875,
+    "all_eligible_correct_fraction": 0.7875,
+    "completed_accuracy": 0.9692307692307692,
+    "completed_balanced_accuracy": 0.96,
+    "prediction_coverage": 0.8125,
+    "eligible_coverage": 0.8125,
+    "status_counts": {
+      "REVIEW": 15,
+      "PASS": 23,
+      "FAIL": 42
+    },
+    "confusion_matrix": {
+      "positive_class": "FAIL",
+      "tp": 40,
+      "fp": 2,
+      "fn": 0,
+      "tn": 23,
+      "rows_truth_PASS_FAIL": [
+        [
+          23,
+          2
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    "fail": {
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1": 0.975609756097561,
+      "support_all": 40,
+      "support_scored": 40,
+      "recall_all_eligible": 1.0
+    },
+    "passed": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1": 0.9583333333333334,
+      "support_all": 40,
+      "support_scored": 25,
+      "recall_all_eligible": 0.575
+    },
+    "false_pass": {
+      "count": 0,
+      "rate": 0.0,
+      "denominator": 40,
+      "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+    },
+    "false_fail": {
+      "count": 2,
+      "rate": 0.05,
+      "denominator": 40,
+      "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+    },
+    "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+  }
+}

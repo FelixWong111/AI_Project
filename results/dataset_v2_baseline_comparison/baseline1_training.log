@@ -1,0 +1,21 @@
+TRIAL baseline1 {'hidden_layer_sizes': (32,), 'alpha': 0.01} F1 0.9047619047619048 accuracy 0.9
+.\.venv311\Scripts\python.exe : Traceback (most recent call last):
+所在位置 行:37 字符: 1
++ .\.venv311\Scripts\python.exe -m scripts.train_baseline1 --dataset-co ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\train_baseline1.py", line 5, in <module>
+    main('baseline1')
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\train_candidates.py", line 232, in main
+    train(args)
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\train_candidates.py", line 174, in train
+    config['freeze']['bundle_file']=(dest/'baseline1.joblib').relative_to(ROOT).as_posix()
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\env_new\Lib\pathlib.py", line 730, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'models\\baseline1_v2_candidate\\baseline1.joblib' is not in the subpath of 'C:\\Users\\王以乐\\Desktop\\大三上\\
+ai\\Project' OR one path is relative and the other is absolute.

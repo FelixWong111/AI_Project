@@ -55,6 +55,9 @@ def discover_development():
 def prepare(data_dir, settings):
     """Return audited records and evidence without altering the source package."""
     data_dir = Path(data_dir).resolve()
+    if (data_dir/'dataset_v2.json').is_file():
+        from src.data.dataset_v2 import prepare_development
+        return prepare_development(data_dir, settings)
     fixed = reference_counts()
     if 'expected_counts' in settings and validate_counts(settings['expected_counts']) != fixed:
         raise ValueError('Training settings conflict with the common fixed reference')

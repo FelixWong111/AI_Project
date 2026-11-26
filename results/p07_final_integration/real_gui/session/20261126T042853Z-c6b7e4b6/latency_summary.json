@@ -1,0 +1,47 @@
+[
+  {
+    "group": [
+      "real",
+      "baseline1",
+      "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+      "image:C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images\\A001.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 68.5677999863401,
+    "p95_ms": 68.5677999863401,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  },
+  {
+    "group": [
+      "real",
+      "baseline2",
+      "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+      "image:C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images\\A001.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 697.4632000201382,
+    "p95_ms": 697.4632000201382,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  },
+  {
+    "group": [
+      "real",
+      "baseline3",
+      "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+      "image:C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images\\A001.jpg",
+      3024,
+      4032
+    ],
+    "frames": 1,
+    "failed_or_unsupported": 0,
+    "median_ms": 1748.8977999892086,
+    "p95_ms": 1748.8977999892086,
+    "evidence": "INSUFFICIENT_LIVE_EVIDENCE"
+  }
+]

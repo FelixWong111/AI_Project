@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "model_id": "baseline3",
+  "architecture": "YOLO11n",
+  "release_status": "independent_candidate_not_active",
+  "weights": "models/baseline3_v2_candidate/best.pt",
+  "weights_sha256": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+  "ultralytics_version": "8.3.236",
+  "class_names": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "inference": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "device": 0,
+    "batch": 1,
+    "half": false,
+    "agnostic_nms": false,
+    "augment": false,
+    "max_det": 300
+  },
+  "input_contract": "uint8 BGR image; preserve original frame coordinate system",
+  "output_coordinates": "original image pixel xyxy",
+  "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability",
+  "counting_contract": "Count retained objects for IDs 0 through 5; ID 0 is not an empty-background label; expected counts are supplied externally",
+  "decision_owner": "P08 shared decision/rejudge implementation; P06 does not duplicate final PASS/FAIL rules",
+  "calibration": null,
+  "size_tolerance": null,
+  "rejection_scope": "Only learned non_catalogue detection; complete open-set rejection not validated",
+  "evaluation_evidence": "output/p06_runs/p03_baseline3_gtfix01_revalidation/review_report_zh.md",
+  "resolution_evidence": "output/p06_runs/p03_baseline3_resolution_640_960/review_report_zh.md",
+  "candidate_schema": "yolo11n-candidate/v1",
+  "candidate_version": "p07-v2-yolo11n-standard-trial01",
+  "initialization": {
+    "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "bytes": 5613764,
+    "path": "outputs/baseline3_v2/pretrained/yolo11n.pt",
+    "source": "Official Ultralytics COCO-pretrained YOLO11n; same initialization SHA as historical P06 trainer",
+    "local_mechanical_training": false
+  }
+}

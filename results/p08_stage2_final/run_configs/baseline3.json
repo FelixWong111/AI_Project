@@ -1,0 +1,36 @@
+{
+  "registry": "config/model_registry.json",
+  "entry": {
+    "version": "size_repair_v2 / 1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "output_capability": "object_level",
+    "bridge": "src.models.baseline3.size_repaired:create_backend",
+    "model_config": {
+      "baseline3_mode": "size_repaired_development",
+      "size_candidate_config": "models/release/baseline3/size.json"
+    },
+    "scene_guard": false,
+    "arbitrary_counts": true,
+    "origin": "results/baseline3_v2_experiment/size_repair_v2/candidate_freeze.json",
+    "physical_acceptance": "NOT_VERIFIED",
+    "files": {
+      "models/release/baseline3/best.pt": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+      "models/release/baseline3/calibration.json": "ab81185188cb002f0b23fa4d292be990d9dcc964b0512f634059caaf9be6f232",
+      "models/release/baseline3/detector.json": "6269179ca8dbb1d1e3c5e00dc65c47c6f75eb8caea5c5520923841470904b9a8",
+      "models/release/baseline3/selection.json": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+      "models/release/baseline3/size.json": "82c2b143c809f1a20b7e6c3decc8892d6826a6c04d3e9a5b907ef96037cc853b",
+      "models/release/baseline3/training_record.json": "cb43eb4b4546eafead85b249bc9c7c6e7a18115192fdeba8753aebe2c106285e"
+    }
+  },
+  "prediction_provenance": {
+    "status": "FIRST_FULL_SIZE_REPAIR_V2_STAGE2_RUN",
+    "formal_freeze": "results/p07_final_integration/release_freeze.json",
+    "historical_test": "This same Stage2 set was previously used for raw YOLO and B1/B2 comparison. Not a new untouched dataset.",
+    "physical_size": "Provisional; no teacher/caliper/Camo acceptance",
+    "no_post_test_tuning": true
+  },
+  "original_run_config_sha256": "58711607d0c8d230fdcbce73a876b33eee1f656eac39b5c3589b0993b484d2a3",
+  "input_order": "datasets/mechanical_components_v2/configs/expected_counts_stage2_test.json",
+  "image_manifest": "datasets/mechanical_components_v2/public/stage2_test/ground_truth_images.csv",
+  "coordinate_convention": "Original image pixels, top-left xyxy",
+  "score_convention": "Raw uncalibrated classifier probability; B3 rule label has null image score"
+}

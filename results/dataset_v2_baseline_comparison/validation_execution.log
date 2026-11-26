@@ -1,0 +1,19 @@
+正在运行 baseline1，请稍候……
+完成：baseline1，80 张图片参与 PASS/FAIL 评分。
+结果保存在：C:\Users\王以乐\Desktop\大三上\ai\Project\results\dataset_v2_baseline_comparison\validation\baseline1_old\baseline1-20261126-021001-698957
+正在运行 baseline1，请稍候……
+完成：baseline1，80 张图片参与 PASS/FAIL 评分。
+结果保存在：C:\Users\王以乐\Desktop\大三上\ai\Project\results\dataset_v2_baseline_comparison\validation\baseline1_new\baseline1-20261126-021013-805338
+正在运行 baseline2，请稍候……
+完成：baseline2，80 张图片参与 PASS/FAIL 评分。
+结果保存在：C:\Users\王以乐\Desktop\大三上\ai\Project\results\dataset_v2_baseline_comparison\validation\baseline2_old\baseline2-20261126-021026-022356
+正在运行 baseline2，请稍候……
+完成：baseline2，80 张图片参与 PASS/FAIL 评分。
+结果保存在：C:\Users\王以乐\Desktop\大三上\ai\Project\results\dataset_v2_baseline_comparison\validation\baseline2_new\baseline2-20261126-021140-948183
+正在运行 baseline1，请稍候……
+完成：baseline1，70 张图片参与 PASS/FAIL 评分。
+结果保存在：C:\Users\王以乐\Desktop\大三上\ai\Project\results\dataset_v2_baseline_comparison\validation\baseline1_old_gui\baseline1-20261126-021255-534038
+正在运行 baseline1，请稍候……
+完成：baseline1，78 张图片参与 PASS/FAIL 评分。
+结果保存在：C:\Users\王以乐\Desktop\大三上\ai\Project\results\dataset_v2_baseline_comparison\validation\baseline1_new_gui\baseline1-20261126-021330-135842
+Pre-test selection: {'baseline1': 'baseline1_new', 'baseline2': 'baseline2_new'}

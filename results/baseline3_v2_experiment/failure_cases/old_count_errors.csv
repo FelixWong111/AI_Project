@@ -1,0 +1,17 @@
+image_id,class_id,actual_count,observed_count,expected_count,reported_difference,true_difference,count_error,status
+A131.jpg,2,1,2,1,1,0,1,FAIL
+A154.jpg,2,1,2,1,1,0,1,FAIL
+A162.jpg,2,1,2,1,1,0,1,FAIL
+A162.jpg,3,1,2,1,1,0,1,FAIL
+A170.jpg,2,1,2,1,1,0,1,FAIL
+A198.jpg,2,1,2,1,1,0,1,FAIL
+C14.jpg,3,1,2,1,1,0,1,FAIL
+D37.jpg,0,1,0,0,0,1,-1,REVIEW
+D37.jpg,5,0,1,1,0,-1,1,REVIEW
+D43.jpg,1,0,1,1,0,-1,1,FAIL
+D43.jpg,2,1,0,1,-1,0,-1,FAIL
+D43.jpg,3,1,2,1,1,0,1,FAIL
+E23.jpg,0,1,0,0,0,1,-1,FAIL
+E23.jpg,3,1,2,1,1,0,1,FAIL
+E23.jpg,5,1,2,1,1,0,1,FAIL
+F09.jpg,1,1,2,1,1,0,1,FAIL

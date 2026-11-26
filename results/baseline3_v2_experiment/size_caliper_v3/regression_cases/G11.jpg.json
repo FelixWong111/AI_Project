@@ -1,0 +1,3197 @@
+{
+  "image_id": "G11.jpg",
+  "expected_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "methods": {
+    "A": {
+      "result": {
+        "status": "FAIL",
+        "predicted_label": "FAIL",
+        "prediction_score": null,
+        "score_type": "none",
+        "non_catalogue_count": 1,
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "objects": [
+          {
+            "detection_id": 0,
+            "class_id": 0,
+            "xmin": 1308.1304931640625,
+            "ymin": 2181.702880859375,
+            "xmax": 1926.760498046875,
+            "ymax": 2816.689453125,
+            "score": 0.40563634037971497,
+            "detector_class_id": 0,
+            "size_evidence": {
+              "conclusion": "DETECTOR_NON_CATALOGUE",
+              "provisional": true
+            }
+          }
+        ],
+        "frame_size": {
+          "width": 3024,
+          "height": 4032
+        },
+        "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. NON_CATALOGUE_DETECTED; COUNT_MISMATCH; object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+        "inspection": {
+          "mode": "size_repaired_development",
+          "acceptance_confirmed": false,
+          "calibration_compatible": true,
+          "calibration": {
+            "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+            "validated": false,
+            "px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "instructor_approved": false
+          },
+          "specifications": [
+            {
+              "class_id": 1,
+              "class_name": "long_screw",
+              "supplier_spec": "M4×25",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/01_long_screw_M4x25.jpg",
+              "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 25.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 2,
+              "class_name": "thick_screw",
+              "supplier_spec": "M5×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+              "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.9,
+                "head_diameter_mm": 11.4
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 3,
+              "class_name": "thin_screw",
+              "supplier_spec": "M4×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+              "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 4,
+              "class_name": "hex_nut",
+              "supplier_spec": "M4",
+              "product_name_zh": "304六角螺母",
+              "iso_din_standard": null,
+              "source_image": "reference_images/04_hex_nut_M4.jpg",
+              "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+              "dimensions": {
+                "across_flats": {
+                  "supplier_field": "across_flats_mm",
+                  "reference_mm": 7.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thread_nominal_diameter_mm": 4.0,
+                "thickness_mm": 3.1,
+                "wrench_size_mm": 7.0
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thread_nominal_diameter_mm",
+                "thickness_mm"
+              ]
+            },
+            {
+              "class_id": 5,
+              "class_name": "flat_washer",
+              "supplier_spec": "5×15×1.2",
+              "product_name_zh": "304平垫片",
+              "iso_din_standard": null,
+              "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+              "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+              "dimensions": {
+                "outer_diameter": {
+                  "supplier_field": "outer_diameter_mm",
+                  "reference_mm": 15.0,
+                  "provisional_allowance_mm": 0.75
+                },
+                "inner_diameter": {
+                  "supplier_field": "inner_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thickness_mm": 1.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thickness_mm"
+              ]
+            }
+          ],
+          "measurement_calls": 0,
+          "measurement_complete": 0,
+          "geometry_execution": "FRESH_A_B_C_COMPARISON_ON_IDENTICAL_YOLO",
+          "failure_reasons": [],
+          "review_reasons": [
+            "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+          ],
+          "caliper_mae": null,
+          "foreground": {
+            "status": "REVIEW",
+            "background_reference_id": "G01.jpg",
+            "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+            "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+            "frame_size": {
+              "width": 756,
+              "height": 1008
+            },
+            "roi": [
+              0,
+              0,
+              756,
+              1008
+            ],
+            "parameters": {
+              "difference_threshold": 40,
+              "minimum_area": 30,
+              "kernel_size": 3,
+              "association_fraction": 0.25,
+              "duplicate_iou": 0.8,
+              "maximum_foreground_fraction": 0.45
+            },
+            "foreground_fraction": 0.013014928193499623,
+            "background_usable": true,
+            "regions": [
+              {
+                "region_id": 0,
+                "component_label": 2,
+                "xmin": 709,
+                "ymin": 0,
+                "xmax": 717,
+                "ymax": 4,
+                "area_pixels": 32,
+                "touches_roi_edge": true
+              },
+              {
+                "region_id": 1,
+                "component_label": 3,
+                "xmin": 604,
+                "ymin": 3,
+                "xmax": 613,
+                "ymax": 7,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 2,
+                "component_label": 10,
+                "xmin": 446,
+                "ymin": 5,
+                "xmax": 455,
+                "ymax": 9,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 3,
+                "component_label": 11,
+                "xmin": 464,
+                "ymin": 5,
+                "xmax": 478,
+                "ymax": 9,
+                "area_pixels": 56,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 4,
+                "component_label": 12,
+                "xmin": 481,
+                "ymin": 5,
+                "xmax": 496,
+                "ymax": 9,
+                "area_pixels": 52,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 5,
+                "component_label": 13,
+                "xmin": 499,
+                "ymin": 5,
+                "xmax": 525,
+                "ymax": 8,
+                "area_pixels": 78,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 6,
+                "component_label": 15,
+                "xmin": 534,
+                "ymin": 4,
+                "xmax": 542,
+                "ymax": 8,
+                "area_pixels": 32,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 7,
+                "component_label": 17,
+                "xmin": 551,
+                "ymin": 4,
+                "xmax": 560,
+                "ymax": 8,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 8,
+                "component_label": 22,
+                "xmin": 7,
+                "ymin": 6,
+                "xmax": 29,
+                "ymax": 11,
+                "area_pixels": 84,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 9,
+                "component_label": 23,
+                "xmin": 32,
+                "ymin": 6,
+                "xmax": 60,
+                "ymax": 11,
+                "area_pixels": 95,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 10,
+                "component_label": 25,
+                "xmin": 69,
+                "ymin": 7,
+                "xmax": 78,
+                "ymax": 11,
+                "area_pixels": 30,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 11,
+                "component_label": 26,
+                "xmin": 81,
+                "ymin": 7,
+                "xmax": 96,
+                "ymax": 10,
+                "area_pixels": 45,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 12,
+                "component_label": 28,
+                "xmin": 106,
+                "ymin": 7,
+                "xmax": 115,
+                "ymax": 11,
+                "area_pixels": 30,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 13,
+                "component_label": 30,
+                "xmin": 124,
+                "ymin": 7,
+                "xmax": 133,
+                "ymax": 11,
+                "area_pixels": 32,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 14,
+                "component_label": 32,
+                "xmin": 142,
+                "ymin": 6,
+                "xmax": 169,
+                "ymax": 10,
+                "area_pixels": 85,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 15,
+                "component_label": 35,
+                "xmin": 190,
+                "ymin": 7,
+                "xmax": 205,
+                "ymax": 10,
+                "area_pixels": 45,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 16,
+                "component_label": 36,
+                "xmin": 209,
+                "ymin": 7,
+                "xmax": 242,
+                "ymax": 10,
+                "area_pixels": 99,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 17,
+                "component_label": 39,
+                "xmin": 262,
+                "ymin": 6,
+                "xmax": 277,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 18,
+                "component_label": 41,
+                "xmin": 287,
+                "ymin": 6,
+                "xmax": 295,
+                "ymax": 10,
+                "area_pixels": 31,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 19,
+                "component_label": 42,
+                "xmin": 298,
+                "ymin": 6,
+                "xmax": 313,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 20,
+                "component_label": 43,
+                "xmin": 316,
+                "ymin": 6,
+                "xmax": 331,
+                "ymax": 10,
+                "area_pixels": 50,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 21,
+                "component_label": 45,
+                "xmin": 340,
+                "ymin": 6,
+                "xmax": 349,
+                "ymax": 10,
+                "area_pixels": 34,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 22,
+                "component_label": 47,
+                "xmin": 358,
+                "ymin": 6,
+                "xmax": 373,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 23,
+                "component_label": 48,
+                "xmin": 376,
+                "ymin": 6,
+                "xmax": 402,
+                "ymax": 10,
+                "area_pixels": 88,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 24,
+                "component_label": 54,
+                "xmin": 344,
+                "ymin": 564,
+                "xmax": 457,
+                "ymax": 679,
+                "area_pixels": 8211,
+                "touches_roi_edge": false
+              }
+            ],
+            "associations": [
+              {
+                "region_id": 24,
+                "detection_id": 0,
+                "overlap_pixels": 8211,
+                "association_fraction": 1.0
+              }
+            ],
+            "candidates": [
+              {
+                "candidate_id": 0,
+                "region_ids": [
+                  0
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 1,
+                "region_ids": [
+                  1
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 2,
+                "region_ids": [
+                  2
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 3,
+                "region_ids": [
+                  3
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 4,
+                "region_ids": [
+                  4
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 5,
+                "region_ids": [
+                  5
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 6,
+                "region_ids": [
+                  6
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 7,
+                "region_ids": [
+                  7
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 8,
+                "region_ids": [
+                  8
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 9,
+                "region_ids": [
+                  9
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 10,
+                "region_ids": [
+                  10
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 11,
+                "region_ids": [
+                  11
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 12,
+                "region_ids": [
+                  12
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 13,
+                "region_ids": [
+                  13
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 14,
+                "region_ids": [
+                  14
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 15,
+                "region_ids": [
+                  15
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 16,
+                "region_ids": [
+                  16
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 17,
+                "region_ids": [
+                  17
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 18,
+                "region_ids": [
+                  18
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 19,
+                "region_ids": [
+                  19
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 20,
+                "region_ids": [
+                  20
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 21,
+                "region_ids": [
+                  21
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 22,
+                "region_ids": [
+                  22
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 23,
+                "region_ids": [
+                  23
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 24,
+                "region_ids": [
+                  24
+                ],
+                "detection_ids": [
+                  0
+                ],
+                "class_id": 0,
+                "retained_detection_id": 0,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              }
+            ],
+            "raw_counts": {
+              "0": 1,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "proposed_counts": {
+              "0": 1,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "counts_complete": false,
+            "suppressed_detection_ids": [],
+            "scope": "foreground candidates and proposed counts; final classification and decision pending",
+            "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+            "illumination_coefficients": [
+              -5.073262691497803,
+              -19.59823989868164,
+              -5.010200023651123,
+              4.919765949249268,
+              5.792173385620117,
+              6.99504280090332
+            ],
+            "background_fit_rms": 4.80811882019043,
+            "reason": "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+            "physical_unknown_validation": false,
+            "original_component_association_complete": false,
+            "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+            "measured_shape_support": [
+              {
+                "detection_id": 0,
+                "shape_pixels": 0,
+                "foreground_pixels": 0
+              }
+            ],
+            "residual_regions": [
+              {
+                "xmin": 709,
+                "ymin": 0,
+                "xmax": 717,
+                "ymax": 4,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 604,
+                "ymin": 3,
+                "xmax": 613,
+                "ymax": 7,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 446,
+                "ymin": 5,
+                "xmax": 455,
+                "ymax": 9,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 464,
+                "ymin": 5,
+                "xmax": 478,
+                "ymax": 9,
+                "area_pixels": 56,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 481,
+                "ymin": 5,
+                "xmax": 496,
+                "ymax": 9,
+                "area_pixels": 52,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 499,
+                "ymin": 5,
+                "xmax": 525,
+                "ymax": 8,
+                "area_pixels": 78,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 534,
+                "ymin": 4,
+                "xmax": 542,
+                "ymax": 8,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 551,
+                "ymin": 4,
+                "xmax": 560,
+                "ymax": 8,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 7,
+                "ymin": 6,
+                "xmax": 29,
+                "ymax": 11,
+                "area_pixels": 84,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 32,
+                "ymin": 6,
+                "xmax": 60,
+                "ymax": 11,
+                "area_pixels": 95,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 69,
+                "ymin": 7,
+                "xmax": 78,
+                "ymax": 11,
+                "area_pixels": 30,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 81,
+                "ymin": 7,
+                "xmax": 96,
+                "ymax": 10,
+                "area_pixels": 45,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 106,
+                "ymin": 7,
+                "xmax": 115,
+                "ymax": 11,
+                "area_pixels": 30,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 124,
+                "ymin": 7,
+                "xmax": 133,
+                "ymax": 11,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 142,
+                "ymin": 6,
+                "xmax": 169,
+                "ymax": 10,
+                "area_pixels": 85,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 190,
+                "ymin": 7,
+                "xmax": 205,
+                "ymax": 10,
+                "area_pixels": 45,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 209,
+                "ymin": 7,
+                "xmax": 242,
+                "ymax": 10,
+                "area_pixels": 99,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 262,
+                "ymin": 6,
+                "xmax": 277,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 287,
+                "ymin": 6,
+                "xmax": 295,
+                "ymax": 10,
+                "area_pixels": 31,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 298,
+                "ymin": 6,
+                "xmax": 313,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 316,
+                "ymin": 6,
+                "xmax": 331,
+                "ymax": 10,
+                "area_pixels": 50,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 340,
+                "ymin": 6,
+                "xmax": 349,
+                "ymax": 10,
+                "area_pixels": 34,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 358,
+                "ymin": 6,
+                "xmax": 373,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 376,
+                "ymin": 6,
+                "xmax": 402,
+                "ymax": 10,
+                "area_pixels": 88,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 344,
+                "ymin": 564,
+                "xmax": 457,
+                "ymax": 679,
+                "area_pixels": 8211,
+                "reason": "UNMATCHED_FOREGROUND"
+              }
+            ],
+            "ambiguous_detection_ids": [],
+            "unexplained_foreground_pixels": 9467
+          },
+          "decision_failure_reasons": [
+            "NON_CATALOGUE_DETECTED",
+            "COUNT_MISMATCH"
+          ],
+          "decision_review_reasons": [
+            "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+          ],
+          "comparison_method": "A",
+          "actual_fresh_measurement_calls": 0,
+          "size_module_ms": 0.5145000177435577
+        },
+        "expected_counts": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "difference": {
+          "1": -1,
+          "2": -1,
+          "3": -1,
+          "4": -1,
+          "5": -1
+        },
+        "baseline3_mode": "size_repaired_development"
+      },
+      "size_ms": 0.5145000177435577,
+      "post_ms": 66.55599997611716,
+      "processing_sum_ms": 107.27100004442036,
+      "detector_ms": 40.20050005055964
+    },
+    "B": {
+      "result": {
+        "status": "FAIL",
+        "predicted_label": "FAIL",
+        "prediction_score": null,
+        "score_type": "none",
+        "non_catalogue_count": 1,
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "objects": [
+          {
+            "detection_id": 0,
+            "class_id": 0,
+            "xmin": 1308.1304931640625,
+            "ymin": 2181.702880859375,
+            "xmax": 1926.760498046875,
+            "ymax": 2816.689453125,
+            "score": 0.40563634037971497,
+            "detector_class_id": 0,
+            "size_evidence": {
+              "conclusion": "DETECTOR_NON_CATALOGUE",
+              "provisional": true
+            }
+          }
+        ],
+        "frame_size": {
+          "width": 3024,
+          "height": 4032
+        },
+        "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. NON_CATALOGUE_DETECTED; COUNT_MISMATCH; object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+        "inspection": {
+          "mode": "size_caliper_v3_B",
+          "acceptance_confirmed": false,
+          "calibration_compatible": true,
+          "calibration": {
+            "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+            "validated": false,
+            "px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "instructor_approved": false
+          },
+          "specifications": [
+            {
+              "class_id": 1,
+              "class_name": "long_screw",
+              "supplier_spec": "M4×25",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/01_long_screw_M4x25.jpg",
+              "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 25.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 2,
+              "class_name": "thick_screw",
+              "supplier_spec": "M5×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+              "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.9,
+                "head_diameter_mm": 11.4
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 3,
+              "class_name": "thin_screw",
+              "supplier_spec": "M4×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+              "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 4,
+              "class_name": "hex_nut",
+              "supplier_spec": "M4",
+              "product_name_zh": "304六角螺母",
+              "iso_din_standard": null,
+              "source_image": "reference_images/04_hex_nut_M4.jpg",
+              "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+              "dimensions": {
+                "across_flats": {
+                  "supplier_field": "across_flats_mm",
+                  "reference_mm": 7.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thread_nominal_diameter_mm": 4.0,
+                "thickness_mm": 3.1,
+                "wrench_size_mm": 7.0
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thread_nominal_diameter_mm",
+                "thickness_mm"
+              ]
+            },
+            {
+              "class_id": 5,
+              "class_name": "flat_washer",
+              "supplier_spec": "5×15×1.2",
+              "product_name_zh": "304平垫片",
+              "iso_din_standard": null,
+              "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+              "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+              "dimensions": {
+                "outer_diameter": {
+                  "supplier_field": "outer_diameter_mm",
+                  "reference_mm": 15.0,
+                  "provisional_allowance_mm": 0.75
+                },
+                "inner_diameter": {
+                  "supplier_field": "inner_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thickness_mm": 1.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thickness_mm"
+              ]
+            }
+          ],
+          "measurement_calls": 0,
+          "measurement_complete": 0,
+          "geometry_execution": "FRESH_A_B_C_COMPARISON_ON_IDENTICAL_YOLO",
+          "failure_reasons": [],
+          "review_reasons": [
+            "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+          ],
+          "caliper_mae": null,
+          "foreground": {
+            "status": "REVIEW",
+            "background_reference_id": "G01.jpg",
+            "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+            "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+            "frame_size": {
+              "width": 756,
+              "height": 1008
+            },
+            "roi": [
+              0,
+              0,
+              756,
+              1008
+            ],
+            "parameters": {
+              "difference_threshold": 40,
+              "minimum_area": 30,
+              "kernel_size": 3,
+              "association_fraction": 0.25,
+              "duplicate_iou": 0.8,
+              "maximum_foreground_fraction": 0.45
+            },
+            "foreground_fraction": 0.013014928193499623,
+            "background_usable": true,
+            "regions": [
+              {
+                "region_id": 0,
+                "component_label": 2,
+                "xmin": 709,
+                "ymin": 0,
+                "xmax": 717,
+                "ymax": 4,
+                "area_pixels": 32,
+                "touches_roi_edge": true
+              },
+              {
+                "region_id": 1,
+                "component_label": 3,
+                "xmin": 604,
+                "ymin": 3,
+                "xmax": 613,
+                "ymax": 7,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 2,
+                "component_label": 10,
+                "xmin": 446,
+                "ymin": 5,
+                "xmax": 455,
+                "ymax": 9,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 3,
+                "component_label": 11,
+                "xmin": 464,
+                "ymin": 5,
+                "xmax": 478,
+                "ymax": 9,
+                "area_pixels": 56,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 4,
+                "component_label": 12,
+                "xmin": 481,
+                "ymin": 5,
+                "xmax": 496,
+                "ymax": 9,
+                "area_pixels": 52,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 5,
+                "component_label": 13,
+                "xmin": 499,
+                "ymin": 5,
+                "xmax": 525,
+                "ymax": 8,
+                "area_pixels": 78,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 6,
+                "component_label": 15,
+                "xmin": 534,
+                "ymin": 4,
+                "xmax": 542,
+                "ymax": 8,
+                "area_pixels": 32,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 7,
+                "component_label": 17,
+                "xmin": 551,
+                "ymin": 4,
+                "xmax": 560,
+                "ymax": 8,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 8,
+                "component_label": 22,
+                "xmin": 7,
+                "ymin": 6,
+                "xmax": 29,
+                "ymax": 11,
+                "area_pixels": 84,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 9,
+                "component_label": 23,
+                "xmin": 32,
+                "ymin": 6,
+                "xmax": 60,
+                "ymax": 11,
+                "area_pixels": 95,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 10,
+                "component_label": 25,
+                "xmin": 69,
+                "ymin": 7,
+                "xmax": 78,
+                "ymax": 11,
+                "area_pixels": 30,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 11,
+                "component_label": 26,
+                "xmin": 81,
+                "ymin": 7,
+                "xmax": 96,
+                "ymax": 10,
+                "area_pixels": 45,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 12,
+                "component_label": 28,
+                "xmin": 106,
+                "ymin": 7,
+                "xmax": 115,
+                "ymax": 11,
+                "area_pixels": 30,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 13,
+                "component_label": 30,
+                "xmin": 124,
+                "ymin": 7,
+                "xmax": 133,
+                "ymax": 11,
+                "area_pixels": 32,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 14,
+                "component_label": 32,
+                "xmin": 142,
+                "ymin": 6,
+                "xmax": 169,
+                "ymax": 10,
+                "area_pixels": 85,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 15,
+                "component_label": 35,
+                "xmin": 190,
+                "ymin": 7,
+                "xmax": 205,
+                "ymax": 10,
+                "area_pixels": 45,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 16,
+                "component_label": 36,
+                "xmin": 209,
+                "ymin": 7,
+                "xmax": 242,
+                "ymax": 10,
+                "area_pixels": 99,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 17,
+                "component_label": 39,
+                "xmin": 262,
+                "ymin": 6,
+                "xmax": 277,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 18,
+                "component_label": 41,
+                "xmin": 287,
+                "ymin": 6,
+                "xmax": 295,
+                "ymax": 10,
+                "area_pixels": 31,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 19,
+                "component_label": 42,
+                "xmin": 298,
+                "ymin": 6,
+                "xmax": 313,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 20,
+                "component_label": 43,
+                "xmin": 316,
+                "ymin": 6,
+                "xmax": 331,
+                "ymax": 10,
+                "area_pixels": 50,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 21,
+                "component_label": 45,
+                "xmin": 340,
+                "ymin": 6,
+                "xmax": 349,
+                "ymax": 10,
+                "area_pixels": 34,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 22,
+                "component_label": 47,
+                "xmin": 358,
+                "ymin": 6,
+                "xmax": 373,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 23,
+                "component_label": 48,
+                "xmin": 376,
+                "ymin": 6,
+                "xmax": 402,
+                "ymax": 10,
+                "area_pixels": 88,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 24,
+                "component_label": 54,
+                "xmin": 344,
+                "ymin": 564,
+                "xmax": 457,
+                "ymax": 679,
+                "area_pixels": 8211,
+                "touches_roi_edge": false
+              }
+            ],
+            "associations": [
+              {
+                "region_id": 24,
+                "detection_id": 0,
+                "overlap_pixels": 8211,
+                "association_fraction": 1.0
+              }
+            ],
+            "candidates": [
+              {
+                "candidate_id": 0,
+                "region_ids": [
+                  0
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 1,
+                "region_ids": [
+                  1
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 2,
+                "region_ids": [
+                  2
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 3,
+                "region_ids": [
+                  3
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 4,
+                "region_ids": [
+                  4
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 5,
+                "region_ids": [
+                  5
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 6,
+                "region_ids": [
+                  6
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 7,
+                "region_ids": [
+                  7
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 8,
+                "region_ids": [
+                  8
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 9,
+                "region_ids": [
+                  9
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 10,
+                "region_ids": [
+                  10
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 11,
+                "region_ids": [
+                  11
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 12,
+                "region_ids": [
+                  12
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 13,
+                "region_ids": [
+                  13
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 14,
+                "region_ids": [
+                  14
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 15,
+                "region_ids": [
+                  15
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 16,
+                "region_ids": [
+                  16
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 17,
+                "region_ids": [
+                  17
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 18,
+                "region_ids": [
+                  18
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 19,
+                "region_ids": [
+                  19
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 20,
+                "region_ids": [
+                  20
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 21,
+                "region_ids": [
+                  21
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 22,
+                "region_ids": [
+                  22
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 23,
+                "region_ids": [
+                  23
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 24,
+                "region_ids": [
+                  24
+                ],
+                "detection_ids": [
+                  0
+                ],
+                "class_id": 0,
+                "retained_detection_id": 0,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              }
+            ],
+            "raw_counts": {
+              "0": 1,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "proposed_counts": {
+              "0": 1,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "counts_complete": false,
+            "suppressed_detection_ids": [],
+            "scope": "foreground candidates and proposed counts; final classification and decision pending",
+            "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+            "illumination_coefficients": [
+              -5.073262691497803,
+              -19.59823989868164,
+              -5.010200023651123,
+              4.919765949249268,
+              5.792173385620117,
+              6.99504280090332
+            ],
+            "background_fit_rms": 4.80811882019043,
+            "reason": "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+            "physical_unknown_validation": false,
+            "original_component_association_complete": false,
+            "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+            "measured_shape_support": [
+              {
+                "detection_id": 0,
+                "shape_pixels": 0,
+                "foreground_pixels": 0
+              }
+            ],
+            "residual_regions": [
+              {
+                "xmin": 709,
+                "ymin": 0,
+                "xmax": 717,
+                "ymax": 4,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 604,
+                "ymin": 3,
+                "xmax": 613,
+                "ymax": 7,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 446,
+                "ymin": 5,
+                "xmax": 455,
+                "ymax": 9,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 464,
+                "ymin": 5,
+                "xmax": 478,
+                "ymax": 9,
+                "area_pixels": 56,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 481,
+                "ymin": 5,
+                "xmax": 496,
+                "ymax": 9,
+                "area_pixels": 52,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 499,
+                "ymin": 5,
+                "xmax": 525,
+                "ymax": 8,
+                "area_pixels": 78,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 534,
+                "ymin": 4,
+                "xmax": 542,
+                "ymax": 8,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 551,
+                "ymin": 4,
+                "xmax": 560,
+                "ymax": 8,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 7,
+                "ymin": 6,
+                "xmax": 29,
+                "ymax": 11,
+                "area_pixels": 84,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 32,
+                "ymin": 6,
+                "xmax": 60,
+                "ymax": 11,
+                "area_pixels": 95,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 69,
+                "ymin": 7,
+                "xmax": 78,
+                "ymax": 11,
+                "area_pixels": 30,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 81,
+                "ymin": 7,
+                "xmax": 96,
+                "ymax": 10,
+                "area_pixels": 45,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 106,
+                "ymin": 7,
+                "xmax": 115,
+                "ymax": 11,
+                "area_pixels": 30,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 124,
+                "ymin": 7,
+                "xmax": 133,
+                "ymax": 11,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 142,
+                "ymin": 6,
+                "xmax": 169,
+                "ymax": 10,
+                "area_pixels": 85,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 190,
+                "ymin": 7,
+                "xmax": 205,
+                "ymax": 10,
+                "area_pixels": 45,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 209,
+                "ymin": 7,
+                "xmax": 242,
+                "ymax": 10,
+                "area_pixels": 99,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 262,
+                "ymin": 6,
+                "xmax": 277,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 287,
+                "ymin": 6,
+                "xmax": 295,
+                "ymax": 10,
+                "area_pixels": 31,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 298,
+                "ymin": 6,
+                "xmax": 313,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 316,
+                "ymin": 6,
+                "xmax": 331,
+                "ymax": 10,
+                "area_pixels": 50,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 340,
+                "ymin": 6,
+                "xmax": 349,
+                "ymax": 10,
+                "area_pixels": 34,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 358,
+                "ymin": 6,
+                "xmax": 373,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 376,
+                "ymin": 6,
+                "xmax": 402,
+                "ymax": 10,
+                "area_pixels": 88,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 344,
+                "ymin": 564,
+                "xmax": 457,
+                "ymax": 679,
+                "area_pixels": 8211,
+                "reason": "UNMATCHED_FOREGROUND"
+              }
+            ],
+            "ambiguous_detection_ids": [],
+            "unexplained_foreground_pixels": 9467
+          },
+          "decision_failure_reasons": [
+            "NON_CATALOGUE_DETECTED",
+            "COUNT_MISMATCH"
+          ],
+          "decision_review_reasons": [
+            "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+          ],
+          "strategy": "B",
+          "comparison_method": "B",
+          "actual_fresh_measurement_calls": 0,
+          "size_module_ms": 0.006600050255656242
+        },
+        "expected_counts": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "difference": {
+          "1": -1,
+          "2": -1,
+          "3": -1,
+          "4": -1,
+          "5": -1
+        },
+        "baseline3_mode": "size_caliper_v3_B"
+      },
+      "size_ms": 0.006600050255656242,
+      "post_ms": 64.48859994998202,
+      "processing_sum_ms": 104.69570005079731,
+      "detector_ms": 40.20050005055964
+    },
+    "C": {
+      "result": {
+        "status": "FAIL",
+        "predicted_label": "FAIL",
+        "prediction_score": null,
+        "score_type": "none",
+        "non_catalogue_count": 1,
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "objects": [
+          {
+            "detection_id": 0,
+            "class_id": 0,
+            "xmin": 1308.1304931640625,
+            "ymin": 2181.702880859375,
+            "xmax": 1926.760498046875,
+            "ymax": 2816.689453125,
+            "score": 0.40563634037971497,
+            "detector_class_id": 0,
+            "size_evidence": {
+              "conclusion": "DETECTOR_NON_CATALOGUE",
+              "provisional": true
+            }
+          }
+        ],
+        "frame_size": {
+          "width": 3024,
+          "height": 4032
+        },
+        "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. NON_CATALOGUE_DETECTED; COUNT_MISMATCH; object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+        "inspection": {
+          "mode": "size_caliper_v3_C",
+          "acceptance_confirmed": false,
+          "calibration_compatible": true,
+          "calibration": {
+            "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+            "validated": false,
+            "px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "instructor_approved": false
+          },
+          "specifications": [
+            {
+              "class_id": 1,
+              "class_name": "long_screw",
+              "supplier_spec": "M4×25",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/01_long_screw_M4x25.jpg",
+              "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 25.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 2,
+              "class_name": "thick_screw",
+              "supplier_spec": "M5×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+              "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.9,
+                "head_diameter_mm": 11.4
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 3,
+              "class_name": "thin_screw",
+              "supplier_spec": "M4×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+              "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 4,
+              "class_name": "hex_nut",
+              "supplier_spec": "M4",
+              "product_name_zh": "304六角螺母",
+              "iso_din_standard": null,
+              "source_image": "reference_images/04_hex_nut_M4.jpg",
+              "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+              "dimensions": {
+                "across_flats": {
+                  "supplier_field": "across_flats_mm",
+                  "reference_mm": 7.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thread_nominal_diameter_mm": 4.0,
+                "thickness_mm": 3.1,
+                "wrench_size_mm": 7.0
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thread_nominal_diameter_mm",
+                "thickness_mm"
+              ]
+            },
+            {
+              "class_id": 5,
+              "class_name": "flat_washer",
+              "supplier_spec": "5×15×1.2",
+              "product_name_zh": "304平垫片",
+              "iso_din_standard": null,
+              "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+              "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+              "dimensions": {
+                "outer_diameter": {
+                  "supplier_field": "outer_diameter_mm",
+                  "reference_mm": 15.0,
+                  "provisional_allowance_mm": 0.75
+                },
+                "inner_diameter": {
+                  "supplier_field": "inner_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thickness_mm": 1.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thickness_mm"
+              ]
+            }
+          ],
+          "measurement_calls": 0,
+          "measurement_complete": 0,
+          "geometry_execution": "FRESH_A_B_C_COMPARISON_ON_IDENTICAL_YOLO",
+          "failure_reasons": [],
+          "review_reasons": [
+            "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+          ],
+          "caliper_mae": null,
+          "foreground": {
+            "status": "REVIEW",
+            "background_reference_id": "G01.jpg",
+            "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+            "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+            "frame_size": {
+              "width": 756,
+              "height": 1008
+            },
+            "roi": [
+              0,
+              0,
+              756,
+              1008
+            ],
+            "parameters": {
+              "difference_threshold": 40,
+              "minimum_area": 30,
+              "kernel_size": 3,
+              "association_fraction": 0.25,
+              "duplicate_iou": 0.8,
+              "maximum_foreground_fraction": 0.45
+            },
+            "foreground_fraction": 0.013014928193499623,
+            "background_usable": true,
+            "regions": [
+              {
+                "region_id": 0,
+                "component_label": 2,
+                "xmin": 709,
+                "ymin": 0,
+                "xmax": 717,
+                "ymax": 4,
+                "area_pixels": 32,
+                "touches_roi_edge": true
+              },
+              {
+                "region_id": 1,
+                "component_label": 3,
+                "xmin": 604,
+                "ymin": 3,
+                "xmax": 613,
+                "ymax": 7,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 2,
+                "component_label": 10,
+                "xmin": 446,
+                "ymin": 5,
+                "xmax": 455,
+                "ymax": 9,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 3,
+                "component_label": 11,
+                "xmin": 464,
+                "ymin": 5,
+                "xmax": 478,
+                "ymax": 9,
+                "area_pixels": 56,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 4,
+                "component_label": 12,
+                "xmin": 481,
+                "ymin": 5,
+                "xmax": 496,
+                "ymax": 9,
+                "area_pixels": 52,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 5,
+                "component_label": 13,
+                "xmin": 499,
+                "ymin": 5,
+                "xmax": 525,
+                "ymax": 8,
+                "area_pixels": 78,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 6,
+                "component_label": 15,
+                "xmin": 534,
+                "ymin": 4,
+                "xmax": 542,
+                "ymax": 8,
+                "area_pixels": 32,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 7,
+                "component_label": 17,
+                "xmin": 551,
+                "ymin": 4,
+                "xmax": 560,
+                "ymax": 8,
+                "area_pixels": 33,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 8,
+                "component_label": 22,
+                "xmin": 7,
+                "ymin": 6,
+                "xmax": 29,
+                "ymax": 11,
+                "area_pixels": 84,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 9,
+                "component_label": 23,
+                "xmin": 32,
+                "ymin": 6,
+                "xmax": 60,
+                "ymax": 11,
+                "area_pixels": 95,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 10,
+                "component_label": 25,
+                "xmin": 69,
+                "ymin": 7,
+                "xmax": 78,
+                "ymax": 11,
+                "area_pixels": 30,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 11,
+                "component_label": 26,
+                "xmin": 81,
+                "ymin": 7,
+                "xmax": 96,
+                "ymax": 10,
+                "area_pixels": 45,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 12,
+                "component_label": 28,
+                "xmin": 106,
+                "ymin": 7,
+                "xmax": 115,
+                "ymax": 11,
+                "area_pixels": 30,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 13,
+                "component_label": 30,
+                "xmin": 124,
+                "ymin": 7,
+                "xmax": 133,
+                "ymax": 11,
+                "area_pixels": 32,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 14,
+                "component_label": 32,
+                "xmin": 142,
+                "ymin": 6,
+                "xmax": 169,
+                "ymax": 10,
+                "area_pixels": 85,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 15,
+                "component_label": 35,
+                "xmin": 190,
+                "ymin": 7,
+                "xmax": 205,
+                "ymax": 10,
+                "area_pixels": 45,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 16,
+                "component_label": 36,
+                "xmin": 209,
+                "ymin": 7,
+                "xmax": 242,
+                "ymax": 10,
+                "area_pixels": 99,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 17,
+                "component_label": 39,
+                "xmin": 262,
+                "ymin": 6,
+                "xmax": 277,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 18,
+                "component_label": 41,
+                "xmin": 287,
+                "ymin": 6,
+                "xmax": 295,
+                "ymax": 10,
+                "area_pixels": 31,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 19,
+                "component_label": 42,
+                "xmin": 298,
+                "ymin": 6,
+                "xmax": 313,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 20,
+                "component_label": 43,
+                "xmin": 316,
+                "ymin": 6,
+                "xmax": 331,
+                "ymax": 10,
+                "area_pixels": 50,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 21,
+                "component_label": 45,
+                "xmin": 340,
+                "ymin": 6,
+                "xmax": 349,
+                "ymax": 10,
+                "area_pixels": 34,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 22,
+                "component_label": 47,
+                "xmin": 358,
+                "ymin": 6,
+                "xmax": 373,
+                "ymax": 10,
+                "area_pixels": 53,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 23,
+                "component_label": 48,
+                "xmin": 376,
+                "ymin": 6,
+                "xmax": 402,
+                "ymax": 10,
+                "area_pixels": 88,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 24,
+                "component_label": 54,
+                "xmin": 344,
+                "ymin": 564,
+                "xmax": 457,
+                "ymax": 679,
+                "area_pixels": 8211,
+                "touches_roi_edge": false
+              }
+            ],
+            "associations": [
+              {
+                "region_id": 24,
+                "detection_id": 0,
+                "overlap_pixels": 8211,
+                "association_fraction": 1.0
+              }
+            ],
+            "candidates": [
+              {
+                "candidate_id": 0,
+                "region_ids": [
+                  0
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 1,
+                "region_ids": [
+                  1
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 2,
+                "region_ids": [
+                  2
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 3,
+                "region_ids": [
+                  3
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 4,
+                "region_ids": [
+                  4
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 5,
+                "region_ids": [
+                  5
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 6,
+                "region_ids": [
+                  6
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 7,
+                "region_ids": [
+                  7
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 8,
+                "region_ids": [
+                  8
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 9,
+                "region_ids": [
+                  9
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 10,
+                "region_ids": [
+                  10
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 11,
+                "region_ids": [
+                  11
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 12,
+                "region_ids": [
+                  12
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 13,
+                "region_ids": [
+                  13
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 14,
+                "region_ids": [
+                  14
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 15,
+                "region_ids": [
+                  15
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 16,
+                "region_ids": [
+                  16
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 17,
+                "region_ids": [
+                  17
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 18,
+                "region_ids": [
+                  18
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 19,
+                "region_ids": [
+                  19
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 20,
+                "region_ids": [
+                  20
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 21,
+                "region_ids": [
+                  21
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 22,
+                "region_ids": [
+                  22
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 23,
+                "region_ids": [
+                  23
+                ],
+                "detection_ids": [],
+                "class_id": null,
+                "retained_detection_id": null,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "candidate_id": 24,
+                "region_ids": [
+                  24
+                ],
+                "detection_ids": [
+                  0
+                ],
+                "class_id": 0,
+                "retained_detection_id": 0,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              }
+            ],
+            "raw_counts": {
+              "0": 1,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "proposed_counts": {
+              "0": 1,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "counts_complete": false,
+            "suppressed_detection_ids": [],
+            "scope": "foreground candidates and proposed counts; final classification and decision pending",
+            "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+            "illumination_coefficients": [
+              -5.073262691497803,
+              -19.59823989868164,
+              -5.010200023651123,
+              4.919765949249268,
+              5.792173385620117,
+              6.99504280090332
+            ],
+            "background_fit_rms": 4.80811882019043,
+            "reason": "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND",
+            "physical_unknown_validation": false,
+            "original_component_association_complete": false,
+            "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+            "measured_shape_support": [
+              {
+                "detection_id": 0,
+                "shape_pixels": 0,
+                "foreground_pixels": 0
+              }
+            ],
+            "residual_regions": [
+              {
+                "xmin": 709,
+                "ymin": 0,
+                "xmax": 717,
+                "ymax": 4,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 604,
+                "ymin": 3,
+                "xmax": 613,
+                "ymax": 7,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 446,
+                "ymin": 5,
+                "xmax": 455,
+                "ymax": 9,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 464,
+                "ymin": 5,
+                "xmax": 478,
+                "ymax": 9,
+                "area_pixels": 56,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 481,
+                "ymin": 5,
+                "xmax": 496,
+                "ymax": 9,
+                "area_pixels": 52,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 499,
+                "ymin": 5,
+                "xmax": 525,
+                "ymax": 8,
+                "area_pixels": 78,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 534,
+                "ymin": 4,
+                "xmax": 542,
+                "ymax": 8,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 551,
+                "ymin": 4,
+                "xmax": 560,
+                "ymax": 8,
+                "area_pixels": 33,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 7,
+                "ymin": 6,
+                "xmax": 29,
+                "ymax": 11,
+                "area_pixels": 84,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 32,
+                "ymin": 6,
+                "xmax": 60,
+                "ymax": 11,
+                "area_pixels": 95,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 69,
+                "ymin": 7,
+                "xmax": 78,
+                "ymax": 11,
+                "area_pixels": 30,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 81,
+                "ymin": 7,
+                "xmax": 96,
+                "ymax": 10,
+                "area_pixels": 45,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 106,
+                "ymin": 7,
+                "xmax": 115,
+                "ymax": 11,
+                "area_pixels": 30,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 124,
+                "ymin": 7,
+                "xmax": 133,
+                "ymax": 11,
+                "area_pixels": 32,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 142,
+                "ymin": 6,
+                "xmax": 169,
+                "ymax": 10,
+                "area_pixels": 85,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 190,
+                "ymin": 7,
+                "xmax": 205,
+                "ymax": 10,
+                "area_pixels": 45,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 209,
+                "ymin": 7,
+                "xmax": 242,
+                "ymax": 10,
+                "area_pixels": 99,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 262,
+                "ymin": 6,
+                "xmax": 277,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 287,
+                "ymin": 6,
+                "xmax": 295,
+                "ymax": 10,
+                "area_pixels": 31,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 298,
+                "ymin": 6,
+                "xmax": 313,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 316,
+                "ymin": 6,
+                "xmax": 331,
+                "ymax": 10,
+                "area_pixels": 50,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 340,
+                "ymin": 6,
+                "xmax": 349,
+                "ymax": 10,
+                "area_pixels": 34,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 358,
+                "ymin": 6,
+                "xmax": 373,
+                "ymax": 10,
+                "area_pixels": 53,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 376,
+                "ymin": 6,
+                "xmax": 402,
+                "ymax": 10,
+                "area_pixels": 88,
+                "reason": "UNMATCHED_FOREGROUND"
+              },
+              {
+                "xmin": 344,
+                "ymin": 564,
+                "xmax": 457,
+                "ymax": 679,
+                "area_pixels": 8211,
+                "reason": "UNMATCHED_FOREGROUND"
+              }
+            ],
+            "ambiguous_detection_ids": [],
+            "unexplained_foreground_pixels": 9467
+          },
+          "decision_failure_reasons": [
+            "NON_CATALOGUE_DETECTED",
+            "COUNT_MISMATCH"
+          ],
+          "decision_review_reasons": [
+            "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+          ],
+          "strategy": "C",
+          "comparison_method": "C",
+          "actual_fresh_measurement_calls": 0,
+          "size_module_ms": 0.00890000956133008
+        },
+        "expected_counts": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "difference": {
+          "1": -1,
+          "2": -1,
+          "3": -1,
+          "4": -1,
+          "5": -1
+        },
+        "baseline3_mode": "size_caliper_v3_C"
+      },
+      "size_ms": 0.00890000956133008,
+      "post_ms": 64.84100001398474,
+      "processing_sum_ms": 105.05040007410571,
+      "detector_ms": 40.20050005055964
+    }
+  }
+}

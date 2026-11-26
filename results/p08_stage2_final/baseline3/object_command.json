@@ -1,0 +1,10 @@
+[
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\p08_object_observations.py",
+  "--dataset",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test",
+  "--predictions-dir",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline3\\predictions",
+  "--output",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline3\\metrics\\object_observations.json"
+]

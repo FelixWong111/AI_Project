@@ -1,0 +1,11 @@
+{
+  "schema": "inspection-evaluation/v2",
+  "dataset": "datasets/mechanical_components_v2/public/stage2_test",
+  "evaluation_stage": "stage2",
+  "input_dir": "datasets/mechanical_components_v2/public/stage2_test/images",
+  "ground_truth_images": "datasets/mechanical_components_v2/public/stage2_test/ground_truth_images.csv",
+  "ground_truth_objects": "datasets/mechanical_components_v2/public/stage2_test/ground_truth_objects.csv",
+  "counts_file": "datasets/mechanical_components_v2/configs/expected_counts_stage2_test.json",
+  "split_list": "datasets/mechanical_components_v2/manifests/stage2_test.txt",
+  "dataset_status": "datasets/mechanical_components_v2/dataset_status.json"
+}

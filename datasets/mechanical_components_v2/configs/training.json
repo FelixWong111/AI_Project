@@ -1,0 +1,15 @@
+{
+  "schema": "mechanical-dataset/v2",
+  "data_dir": "datasets/mechanical_components_v2/development",
+  "reference_label_field": "reference_label_all_one",
+  "scene_confirmation": {
+    "each_image_is_distinct_scene": true,
+    "source": "2026-11-26 collector/user confirmation; auto IDs, conservative empty background grouping",
+    "scope": "This new collection only"
+  },
+  "seed": 42,
+  "official_held_out_test": "NOT_RUN",
+  "prepared_dir": "outputs/training_v2/prepared",
+  "report_root": "outputs/training_v2",
+  "data_description": "New independent mechanical-component arrangements supplied on 2026-11-26; original source 数据集/"
+}

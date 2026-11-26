@@ -1,0 +1,7 @@
+{
+  "relative_yaml_argument": true,
+  "train": "datasets/mechanical_components_v2/public/train/images",
+  "validation": "datasets/mechanical_components_v2/public/validation/images",
+  "test": "datasets/mechanical_components_v2/public/stage2_test/images",
+  "no_training_or_inference": true
+}

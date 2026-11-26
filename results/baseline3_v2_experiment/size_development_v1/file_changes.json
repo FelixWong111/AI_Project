@@ -1,0 +1,26 @@
+{
+  "added_code": {
+    "scripts/develop_baseline3_size.py": "fcccd76205b1182146378edc6ae8034c473a9b37eed45b5cc1eb5a8167ea7177",
+    "src/models/baseline3/metrology.py": "b76010e020fb431d933ab5eb5c1f8bdd0e2421f344692bb697c193853dca7c26",
+    "src/models/baseline3/size_candidate.py": "a94e3f6dc3a982f7e2148c91390eaa31736dedcd1d6154870f08d963cad2f754",
+    "tests/test_baseline3_metrology.py": "eaedc68dfb4749a40ac218196639dae66d190b7dd53ad30e22d15a959fbeb352"
+  },
+  "added_results_directory": "results/baseline3_v2_experiment/size_development_v1",
+  "modified_progress_files": [
+    "results/baseline3_v2_experiment/PROGRESS.md",
+    "results/baseline3_v2_experiment/task_state.json"
+  ],
+  "existing_worktree_changes": "Preserved; git diff also contains older work from previous tasks",
+  "no_edits": [
+    "app.py",
+    "config/",
+    "P03/",
+    "existing P06 source",
+    "Baseline1/2 artifacts",
+    "new/old Baseline3 weights",
+    "old experiment predictions"
+  ],
+  "modified_display_source": {
+    "src/p07_dashboard.py": "69141ab5db13a0c69472c6e7eb4a617fbea74e01e4cd94552afd178e418e8bd3"
+  }
+}

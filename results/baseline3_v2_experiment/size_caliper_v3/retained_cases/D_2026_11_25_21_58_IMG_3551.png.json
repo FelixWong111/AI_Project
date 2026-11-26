@@ -1,0 +1,100 @@
+{
+  "image_id": "D_2026_11_25_21_58_IMG_3551.png",
+  "physical_sample_id": "DIM-SPECIMEN-08",
+  "official_class_id": 0,
+  "challenged_class": 4,
+  "scope": "Known-family measurement challenge, not GT-assisted production inference",
+  "methods": {
+    "A": {
+      "measurement": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED",
+        "class_id": 4,
+        "dimensions": {},
+        "dimension_status": {
+          "across_flats": {
+            "status": "UNMEASURABLE",
+            "reason": "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED"
+          }
+        },
+        "diagnostics": {
+          "quality_valid_for_rejection": false
+        },
+        "contours_xy": [],
+        "scale_px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+      },
+      "conclusion": "UNMEASURABLE",
+      "details": [],
+      "size_ms": 15.599300037138164
+    },
+    "B": {
+      "measurement": {
+        "status": "UNMEASURABLE",
+        "reason": "CALIPER_FLAT_EDGE_NOT_PARALLEL",
+        "class_id": 4,
+        "dimensions": {},
+        "dimension_status": {
+          "across_flats": {
+            "status": "UNMEASURABLE",
+            "reason": "CALIPER_FLAT_EDGE_NOT_PARALLEL"
+          }
+        },
+        "contours_xy": [],
+        "diagnostics": {
+          "quality_valid_for_rejection": false,
+          "profile": "wide_projection",
+          "strategy": "B",
+          "attempted_methods": [
+            "B"
+          ],
+          "selected_method": "B"
+        },
+        "scale_px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "scope": "independent Vision Caliper; provisional original-pixel metrology"
+      },
+      "conclusion": "UNMEASURABLE",
+      "details": [],
+      "size_ms": 103.21519995341077
+    },
+    "C": {
+      "measurement": {
+        "status": "UNMEASURABLE",
+        "reason": "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED",
+        "class_id": 4,
+        "dimensions": {},
+        "dimension_status": {
+          "across_flats": {
+            "status": "UNMEASURABLE",
+            "reason": "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED"
+          }
+        },
+        "diagnostics": {
+          "quality_valid_for_rejection": false,
+          "strategy": "Hybrid",
+          "attempted_methods": [
+            "A",
+            "B"
+          ],
+          "selected_method": null,
+          "alternative_reason": "CALIPER_FLAT_EDGE_NOT_PARALLEL"
+        },
+        "contours_xy": [],
+        "scale_px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+      },
+      "conclusion": "UNMEASURABLE",
+      "details": [],
+      "size_ms": 116.38839996885508
+    }
+  }
+}

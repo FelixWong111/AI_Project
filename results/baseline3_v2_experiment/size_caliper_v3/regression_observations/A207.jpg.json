@@ -1,0 +1,72 @@
+{
+  "raw": {
+    "status": "REVIEW",
+    "predicted_label": null,
+    "prediction_score": null,
+    "score_type": null,
+    "non_catalogue_count": 0,
+    "counts": {
+      "0": 0,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "objects": [
+      {
+        "detection_id": 0,
+        "class_id": 5,
+        "xmin": 888.9930419921875,
+        "ymin": 1246.4796142578125,
+        "xmax": 1510.1156005859375,
+        "ymax": 1852.1649169921875,
+        "score": 0.8199048638343811
+      },
+      {
+        "detection_id": 1,
+        "class_id": 1,
+        "xmin": 292.5348815917969,
+        "ymin": 2658.752197265625,
+        "xmax": 1178.1883544921875,
+        "ymax": 3728.940673828125,
+        "score": 0.7865065932273865
+      },
+      {
+        "detection_id": 2,
+        "class_id": 2,
+        "xmin": 307.7448425292969,
+        "ymin": 845.1791381835938,
+        "xmax": 822.7282104492188,
+        "ymax": 1499.715576171875,
+        "score": 0.782780647277832
+      },
+      {
+        "detection_id": 3,
+        "class_id": 3,
+        "xmin": 1755.7720947265625,
+        "ymin": 2063.220703125,
+        "xmax": 2371.63330078125,
+        "ymax": 2577.094482421875,
+        "score": 0.752348005771637
+      },
+      {
+        "detection_id": 4,
+        "class_id": 4,
+        "xmin": 953.4569091796875,
+        "ymin": 1987.546875,
+        "xmax": 1316.2392578125,
+        "ymax": 2331.95361328125,
+        "score": 0.6866600513458252
+      }
+    ],
+    "frame_size": {
+      "width": 3024,
+      "height": 4032
+    },
+    "message": "P06 detection/counts only; PASS/FAIL, size checking and complete rejection are not evaluated."
+  },
+  "detector_ms": 39.263100014068186,
+  "scope": "Val reused regression",
+  "input_sha256": "7ce00cb01958e9891bf6e5783944984df8027324b0d18aa78039ba0d7564d1a6"
+}

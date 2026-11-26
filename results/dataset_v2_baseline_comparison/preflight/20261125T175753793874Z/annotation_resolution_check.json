@@ -1,0 +1,12 @@
+{
+  "D18.jpg": {
+    "scope": "Resolve count/class discrepancy against capture spreadsheet; does not certify all boxes or other images",
+    "source": "User reply: 已核实，两张都以JSON为准",
+    "sha256_matches": true
+  },
+  "F21.jpg": {
+    "scope": "Resolve count/class discrepancy against capture spreadsheet; does not certify all boxes or other images",
+    "source": "User reply: 已核实，两张都以JSON为准",
+    "sha256_matches": true
+  }
+}

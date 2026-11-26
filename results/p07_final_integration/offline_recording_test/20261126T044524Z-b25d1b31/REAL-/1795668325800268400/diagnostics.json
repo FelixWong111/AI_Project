@@ -1,0 +1,2698 @@
+{
+  "schema_version": 1,
+  "model": {
+    "model_id": "baseline3",
+    "model_version": "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+    "model_file_size_bytes": 5494161,
+    "weights": "models/release/baseline3/best.pt",
+    "weights_sha256": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "output_capability": "object_level",
+    "class_catalogue": {
+      "0": "non_catalogue",
+      "1": "long_screw",
+      "2": "thick_screw",
+      "3": "thin_screw",
+      "4": "hex_nut",
+      "5": "flat_washer"
+    },
+    "thresholds": {
+      "imgsz": 640,
+      "conf": 0.35,
+      "iou": 0.5,
+      "device": 0,
+      "batch": 1,
+      "half": false,
+      "agnostic_nms": false,
+      "augment": false,
+      "max_det": 300
+    },
+    "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability; reassigned ID0 retains original detector score, not a calibrated ID0 probability",
+    "preprocessing": "uint8 BGR -> Ultralytics aspect-preserving letterbox imgsz=640; original-pixel xyxy output; no EXIF transform on incoming frames",
+    "coordinate_convention": "original image pixels, top-left xyxy",
+    "hardware": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "",
+      "python": "3.11.14",
+      "opencv": "4.10.0",
+      "numpy": "1.26.4",
+      "inference_device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+      }
+    },
+    "rejection": "Only learned non_catalogue detection; complete open-set rejection not validated",
+    "size_tolerance": {
+      "3": {
+        "thread_major_diameter": {
+          "min_mm": 3.3708934166735047,
+          "max_mm": 4.500133819637398,
+          "observed_min": 3.635504696846292,
+          "observed_max": 4.194813111745721,
+          "n": 13
+        },
+        "underhead_length": {
+          "min_mm": 6.81957668142409,
+          "max_mm": 10.290306000904181,
+          "observed_min": 7.354905655927498,
+          "observed_max": 9.592139315525214,
+          "n": 13
+        }
+      },
+      "1": {
+        "thread_major_diameter": {
+          "min_mm": 3.293103568596423,
+          "max_mm": 4.320128466851901,
+          "observed_min": 3.5516084346113765,
+          "observed_max": 4.027020587275891,
+          "n": 14
+        },
+        "underhead_length": {
+          "min_mm": 20.899539183375733,
+          "max_mm": 26.280781506682406,
+          "observed_min": 22.540129120447013,
+          "observed_max": 24.497708572595013,
+          "n": 14
+        }
+      },
+      "4": {
+        "across_flats": {
+          "min_mm": 6.296979775621256,
+          "max_mm": 7.712315561245787,
+          "observed_min": 6.791285490363669,
+          "observed_max": 7.189057866914979,
+          "n": 12
+        }
+      },
+      "2": {
+        "thread_major_diameter": {
+          "min_mm": 4.589601036547772,
+          "max_mm": 6.390190023885105,
+          "observed_min": 4.949879471859951,
+          "observed_max": 5.956634618678924,
+          "n": 14
+        },
+        "underhead_length": {
+          "min_mm": 7.3122457192456,
+          "max_mm": 10.080299755987769,
+          "observed_min": 7.886248650081953,
+          "observed_max": 9.396381370310413,
+          "n": 14
+        }
+      },
+      "5": {
+        "inner_diameter": {
+          "min_mm": 4.669882798768669,
+          "max_mm": 5.629969196569283,
+          "observed_min": 5.036463260650636,
+          "observed_max": 5.247992515563967,
+          "n": 12
+        },
+        "outer_diameter": {
+          "min_mm": 12.810673361568805,
+          "max_mm": 16.245679443993232,
+          "observed_min": 13.816296577453613,
+          "observed_max": 15.143458366394047,
+          "n": 12
+        }
+      }
+    },
+    "calibration": {
+      "schema": "ruler-scale-development/v1",
+      "status": "IMAGE_RULER_FIT_WITH_PHOTO_CROSS_VALIDATION",
+      "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+      "frame_size": [
+        3024,
+        4032
+      ],
+      "px_per_mm": [
+        35.7584464442507,
+        35.7584464442507
+      ],
+      "selected_model": "global",
+      "model_selection_rule": "Leave-one-photo-out 10mm interval RMS; retain global unless correction improves >=20%",
+      "models": [
+        {
+          "mode": "global",
+          "matrix_pixel_to_mm": [
+            [
+              0.02796542074497147,
+              0.0,
+              -42.283716166396864
+            ],
+            [
+              0.0,
+              0.02796542074497147,
+              -56.37828822186248
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameters": [
+            -3.5767865054088768,
+            -3.5767865054088768,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.13413160891997847,
+              "rms_error_mm": 0.16355850764335234,
+              "p95_absolute_error_mm": 0.2554395093291159,
+              "max_absolute_error_mm": 0.26213192773962746
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.09953515650108595,
+              "rms_error_mm": 0.14338194881339064,
+              "p95_absolute_error_mm": 0.224470242773751,
+              "max_absolute_error_mm": 0.25676494880763556
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.13509119765828073,
+              "rms_error_mm": 0.16422744482322066,
+              "p95_absolute_error_mm": 0.26131708204991727,
+              "max_absolute_error_mm": 0.3471513895407412
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.042065085971954554,
+              "rms_error_mm": 0.054326831546951476,
+              "p95_absolute_error_mm": 0.08756473957124467,
+              "max_absolute_error_mm": 0.09951899437225897
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08670674162138654,
+              "rms_error_mm": 0.09855536848743364,
+              "p95_absolute_error_mm": 0.14720917743593195,
+              "max_absolute_error_mm": 0.2066775790669979
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.06933462339212634,
+              "rms_error_mm": 0.07488423800665288,
+              "p95_absolute_error_mm": 0.11686642504497646,
+              "max_absolute_error_mm": 0.13777233167398428
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.28790436007906284,
+              "rms_error_mm": 0.29406141810164865,
+              "p95_absolute_error_mm": 0.42930677938217104,
+              "max_absolute_error_mm": 0.45092955126190226
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03233886340254321,
+              "rms_error_mm": 0.07143935382271056,
+              "p95_absolute_error_mm": 0.12551293260025745,
+              "max_absolute_error_mm": 0.14018647171112342
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.08870892721690633,
+              "rms_error_mm": 0.11626416015069642,
+              "p95_absolute_error_mm": 0.26120345017483154,
+              "max_absolute_error_mm": 0.2865979323879042
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.41957763557777983,
+              "rms_error_mm": 0.4567580102643674,
+              "p95_absolute_error_mm": 0.7122291715075514,
+              "max_absolute_error_mm": 0.7380383081946338
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.14611888174979962,
+              "rms_error_mm": 0.1734633966596894,
+              "p95_absolute_error_mm": 0.2672793900753426,
+              "max_absolute_error_mm": 0.27396367703283175
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.1082936199707289,
+              "rms_error_mm": 0.14953196058392332,
+              "p95_absolute_error_mm": 0.23311818220169553,
+              "max_absolute_error_mm": 0.2653843186676266
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.14713731945185873,
+              "rms_error_mm": 0.17421000862086217,
+              "p95_absolute_error_mm": 0.27320906837124925,
+              "max_absolute_error_mm": 0.35893856287871095
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.05337042929199158,
+              "rms_error_mm": 0.06346379828844717,
+              "p95_absolute_error_mm": 0.09881842667849394,
+              "max_absolute_error_mm": 0.1107591096942162
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10514147808659974,
+              "rms_error_mm": 0.11507247980632962,
+              "p95_absolute_error_mm": 0.16553140371601716,
+              "max_absolute_error_mm": 0.22488921804944084
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08625878732257809,
+              "rms_error_mm": 0.09076459562878385,
+              "p95_absolute_error_mm": 0.1337095837282841,
+              "max_absolute_error_mm": 0.15457986182913963
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.322060616504242,
+              "rms_error_mm": 0.3276126828737725,
+              "p95_absolute_error_mm": 0.46393249752898397,
+              "max_absolute_error_mm": 0.4856270578813806
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03689667982205869,
+              "rms_error_mm": 0.07363988054743442,
+              "p95_absolute_error_mm": 0.13011307915915324,
+              "max_absolute_error_mm": 0.14479328464148722
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.11005043690956645,
+              "rms_error_mm": 0.1333532933420372,
+              "p95_absolute_error_mm": 0.28290985229924565,
+              "max_absolute_error_mm": 0.30835805363455826
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.43477457757275306,
+              "rms_error_mm": 0.4708572324163906,
+              "p95_absolute_error_mm": 0.7278529454310165,
+              "max_absolute_error_mm": 0.75369972471427
+            }
+          ],
+          "cv_mean_rms_mm": 0.17719693287676702
+        },
+        {
+          "mode": "anisotropic",
+          "matrix_pixel_to_mm": [
+            [
+              0.02806415393271117,
+              0.0,
+              -42.43300074625929
+            ],
+            [
+              0.0,
+              0.027914400478378617,
+              -56.27543136441129
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameters": [
+            -3.573262177747859,
+            -3.5786125771339936,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.09930031971685144,
+              "rms_error_mm": 0.1366843603240988,
+              "p95_absolute_error_mm": 0.2210364957114983,
+              "max_absolute_error_mm": 0.22775254159725122
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.0645829673546127,
+              "rms_error_mm": 0.12205504062359357,
+              "p95_absolute_error_mm": 0.1899591192575714,
+              "max_absolute_error_mm": 0.22236783717792896
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.10028963324067663,
+              "rms_error_mm": 0.13726133217218073,
+              "p95_absolute_error_mm": 0.2269608190876852,
+              "max_absolute_error_mm": 0.3130979340591651
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.06023141610212849,
+              "rms_error_mm": 0.06932133992869832,
+              "p95_absolute_error_mm": 0.10564806436595849,
+              "max_absolute_error_mm": 0.11758051093654842
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.1047797124592256,
+              "rms_error_mm": 0.11474272636721085,
+              "p95_absolute_error_mm": 0.16517184600291238,
+              "max_absolute_error_mm": 0.2245318305156303
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08745083409612552,
+              "rms_error_mm": 0.0918971708327651,
+              "p95_absolute_error_mm": 0.13489592492937888,
+              "max_absolute_error_mm": 0.155763693548991
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.2862328408245505,
+              "rms_error_mm": 0.29242310437137226,
+              "p95_absolute_error_mm": 0.42761228587963107,
+              "max_absolute_error_mm": 0.4492315446163282
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.0376641601384958,
+              "rms_error_mm": 0.0740315955202928,
+              "p95_absolute_error_mm": 0.13088768735127337,
+              "max_absolute_error_mm": 0.14556901536868772
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.08722266847055639,
+              "rms_error_mm": 0.11512693449264345,
+              "p95_absolute_error_mm": 0.2596917797038184,
+              "max_absolute_error_mm": 0.28508252082656504
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.42113390409586343,
+              "rms_error_mm": 0.45819863226852064,
+              "p95_absolute_error_mm": 0.7138291504703433,
+              "max_absolute_error_mm": 0.7396421420110766
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.15033734849269542,
+              "rms_error_mm": 0.177010339005051,
+              "p95_absolute_error_mm": 0.271445987755806,
+              "max_absolute_error_mm": 0.27812741315632117
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.09647262883080449,
+              "rms_error_mm": 0.14129647719089447,
+              "p95_absolute_error_mm": 0.22144636148671934,
+              "max_absolute_error_mm": 0.253751057297082
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.1517709448681889,
+              "rms_error_mm": 0.17811786911229913,
+              "p95_absolute_error_mm": 0.2777834044948115,
+              "max_absolute_error_mm": 0.3634725819515374
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.09822356096113675,
+              "rms_error_mm": 0.10400243985822234,
+              "p95_absolute_error_mm": 0.14346661606076996,
+              "max_absolute_error_mm": 0.1553534540002488
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.15493685700080337,
+              "rms_error_mm": 0.16177273828910121,
+              "p95_absolute_error_mm": 0.21502287336030051,
+              "max_absolute_error_mm": 0.27408197247211596
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.13522823040321055,
+              "rms_error_mm": 0.13811751259278415,
+              "p95_absolute_error_mm": 0.18244464111900882,
+              "max_absolute_error_mm": 0.203211829389927
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.32171573827641403,
+              "rms_error_mm": 0.3272732871791089,
+              "p95_absolute_error_mm": 0.4635828791116985,
+              "max_absolute_error_mm": 0.48527671461062916
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.04343420866585846,
+              "rms_error_mm": 0.07715756671054813,
+              "p95_absolute_error_mm": 0.13671132446929235,
+              "max_absolute_error_mm": 0.15140109189789186
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.1093335167117927,
+              "rms_error_mm": 0.13275923946898444,
+              "p95_absolute_error_mm": 0.2821806743578449,
+              "max_absolute_error_mm": 0.3076270711196294
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.4368749929408346,
+              "rms_error_mm": 0.4728112902014906,
+              "p95_absolute_error_mm": 0.7300123545323343,
+              "max_absolute_error_mm": 0.7558643365127917
+            }
+          ],
+          "cv_mean_rms_mm": 0.19103187596084847
+        },
+        {
+          "mode": "affine",
+          "matrix_pixel_to_mm": [
+            [
+              0.02806713822354303,
+              -9.447029066705337e-05,
+              -42.24706088801228
+            ],
+            [
+              0.0,
+              0.02791032838512074,
+              -56.26722202440341
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameters": [
+            -3.5731558452292216,
+            -3.578758465644265,
+            -9.447029066705337e-05,
+            0.0,
+            0.0
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.09813439545978091,
+              "rms_error_mm": 0.1358473347531927,
+              "p95_absolute_error_mm": 0.21988490732614635,
+              "max_absolute_error_mm": 0.22660174410558653
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.06372444712791922,
+              "rms_error_mm": 0.12161057627557112,
+              "p95_absolute_error_mm": 0.18911143279477768,
+              "max_absolute_error_mm": 0.22152295115519216
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.09999161121358789,
+              "rms_error_mm": 0.13704566349861314,
+              "p95_absolute_error_mm": 0.22666661038464023,
+              "max_absolute_error_mm": 0.3128063184378078
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.0614795511535116,
+              "rms_error_mm": 0.07040642132778419,
+              "p95_absolute_error_mm": 0.10689049645653129,
+              "max_absolute_error_mm": 0.11882144467183409
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10564183809352753,
+              "rms_error_mm": 0.11552887941306847,
+              "p95_absolute_error_mm": 0.16602870994470464,
+              "max_absolute_error_mm": 0.22538352269136475
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08900973559631055,
+              "rms_error_mm": 0.09338053251923295,
+              "p95_absolute_error_mm": 0.13644736495603443,
+              "max_absolute_error_mm": 0.15731185179662255
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.26943754814726506,
+              "rms_error_mm": 0.27598358151583385,
+              "p95_absolute_error_mm": 0.41058614978327795,
+              "max_absolute_error_mm": 0.4321701087378784
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.020464316627901814,
+              "rms_error_mm": 0.06683537487448968,
+              "p95_absolute_error_mm": 0.11352810248511566,
+              "max_absolute_error_mm": 0.12818427359944273
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.10243870665471128,
+              "rms_error_mm": 0.12711079127551284,
+              "p95_absolute_error_mm": 0.2751679783571635,
+              "max_absolute_error_mm": 0.30059702006065336
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.43764569576599427,
+              "rms_error_mm": 0.47352860518889306,
+              "p95_absolute_error_mm": 0.7308047038554145,
+              "max_absolute_error_mm": 0.7566585948551392
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.1491334091173721,
+              "rms_error_mm": 0.1759950286198016,
+              "p95_absolute_error_mm": 0.2702568516752383,
+              "max_absolute_error_mm": 0.27693909375663317
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.09536460447708489,
+              "rms_error_mm": 0.1405507704869638,
+              "p95_absolute_error_mm": 0.2203523194177101,
+              "max_absolute_error_mm": 0.25266062953521207
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.15141621345337353,
+              "rms_error_mm": 0.177817466620275,
+              "p95_absolute_error_mm": 0.277433212025813,
+              "max_absolute_error_mm": 0.36312547599108314
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.10193603776603902,
+              "rms_error_mm": 0.10751148409049009,
+              "p95_absolute_error_mm": 0.14716212986981708,
+              "max_absolute_error_mm": 0.15904451107263284
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.15807531876289332,
+              "rms_error_mm": 0.16477686574472555,
+              "p95_absolute_error_mm": 0.2181421805814808,
+              "max_absolute_error_mm": 0.2771824525185327
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.13984411096661106,
+              "rms_error_mm": 0.14263733535647968,
+              "p95_absolute_error_mm": 0.18703842838744178,
+              "max_absolute_error_mm": 0.2077958993670901
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.4456373960083053,
+              "rms_error_mm": 0.449762829116053,
+              "p95_absolute_error_mm": 0.5892077818966128,
+              "max_absolute_error_mm": 0.6111620717740358
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.044985015623324645,
+              "rms_error_mm": 0.07804913351721966,
+              "p95_absolute_error_mm": 0.13827653434882237,
+              "max_absolute_error_mm": 0.15296857002481445
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.31050180332141936,
+              "rms_error_mm": 0.31986015483520586,
+              "p95_absolute_error_mm": 0.4867884920197955,
+              "max_absolute_error_mm": 0.5127412533236679
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.5159841997087513,
+              "rms_error_mm": 0.5472000608965775,
+              "p95_absolute_error_mm": 0.8113434777422199,
+              "max_absolute_error_mm": 0.8373914120349539
+            }
+          ],
+          "cv_mean_rms_mm": 0.23041611292837913
+        },
+        {
+          "mode": "projective",
+          "matrix_pixel_to_mm": [
+            [
+              0.0281214178091599,
+              -6.702131116045017e-05,
+              -42.384468764150306
+            ],
+            [
+              0.0,
+              0.027815360289623333,
+              -56.07576634388064
+            ],
+            [
+              7.543104695324395e-06,
+              1.0696061065085726e-06,
+              0.9864384997899482
+            ]
+          ],
+          "parameters": [
+            -3.5712237933548163,
+            -3.5821668824694437,
+            -6.702131116045017e-05,
+            0.011405174299330485,
+            0.0021563259107212824
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.06791790055800569,
+              "rms_error_mm": 0.07849759909343579,
+              "p95_absolute_error_mm": 0.12491319896043364,
+              "max_absolute_error_mm": 0.13942963886156434
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.03382268353142464,
+              "rms_error_mm": 0.04655431976546216,
+              "p95_absolute_error_mm": 0.07818043144264042,
+              "max_absolute_error_mm": 0.0903380069560118
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.09499589529272293,
+              "rms_error_mm": 0.10146323125961688,
+              "p95_absolute_error_mm": 0.1509638885809682,
+              "max_absolute_error_mm": 0.16887378980300483
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.1334321124092163,
+              "rms_error_mm": 0.13515358773926497,
+              "p95_absolute_error_mm": 0.1698511983023609,
+              "max_absolute_error_mm": 0.17661347473592137
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10306623606681413,
+              "rms_error_mm": 0.10914442368223937,
+              "p95_absolute_error_mm": 0.15449103398772965,
+              "max_absolute_error_mm": 0.25684458419151746
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.01821704291826675,
+              "rms_error_mm": 0.03840055242440523,
+              "p95_absolute_error_mm": 0.06093352834063852,
+              "max_absolute_error_mm": 0.12747705387653419
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.2623459464130959,
+              "rms_error_mm": 0.3192146116041965,
+              "p95_absolute_error_mm": 0.6225144218624067,
+              "max_absolute_error_mm": 0.6479837019879877
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.013236906946398175,
+              "rms_error_mm": 0.04584173273623639,
+              "p95_absolute_error_mm": 0.0853582719364148,
+              "max_absolute_error_mm": 0.12671628835171234
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.08322909339479383,
+              "rms_error_mm": 0.0938227054397965,
+              "p95_absolute_error_mm": 0.15817459416998503,
+              "max_absolute_error_mm": 0.1831670950045492
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.36509501847447123,
+              "rms_error_mm": 0.3867637306088428,
+              "p95_absolute_error_mm": 0.5750305792328211,
+              "max_absolute_error_mm": 0.5909746209618447
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.11464592311759217,
+              "rms_error_mm": 0.12030011362987501,
+              "p95_absolute_error_mm": 0.16714440562912322,
+              "max_absolute_error_mm": 0.18112016888761673
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.05621644536221823,
+              "rms_error_mm": 0.06447367565910254,
+              "p95_absolute_error_mm": 0.09989520758208635,
+              "max_absolute_error_mm": 0.1123364934122204
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.1683453188870855,
+              "rms_error_mm": 0.17212529880705513,
+              "p95_absolute_error_mm": 0.2243525402517676,
+              "max_absolute_error_mm": 0.2426326380858388
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.20021623488225204,
+              "rms_error_mm": 0.20128454221133835,
+              "p95_absolute_error_mm": 0.23415583462953363,
+              "max_absolute_error_mm": 0.2403354223505776
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.14875628705924818,
+              "rms_error_mm": 0.152962968538679,
+              "p95_absolute_error_mm": 0.19969814201963032,
+              "max_absolute_error_mm": 0.30244016871617063
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.052478130652631697,
+              "rms_error_mm": 0.0625489040274054,
+              "p95_absolute_error_mm": 0.09182201715711588,
+              "max_absolute_error_mm": 0.16240029509941145
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.42137073358855404,
+              "rms_error_mm": 0.45336118885179727,
+              "p95_absolute_error_mm": 0.7585838127905704,
+              "max_absolute_error_mm": 0.7824405583127554
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.030174904559068804,
+              "rms_error_mm": 0.06115923074955113,
+              "p95_absolute_error_mm": 0.11715908088021897,
+              "max_absolute_error_mm": 0.16085825549191846
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.27478699179312976,
+              "rms_error_mm": 0.2785329302536382,
+              "p95_absolute_error_mm": 0.3864001204042424,
+              "max_absolute_error_mm": 0.41638842172455703
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.4517386181834597,
+              "rms_error_mm": 0.47098115352622527,
+              "p95_absolute_error_mm": 0.670556290098675,
+              "max_absolute_error_mm": 0.6874367570218016
+            }
+          ],
+          "cv_mean_rms_mm": 0.20377300062546672
+        },
+        {
+          "mode": "radial1",
+          "parameters": [
+            -3.5774588907813083,
+            0.0009228184176863974
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.14760925873718003,
+              "rms_error_mm": 0.17468890970166873,
+              "p95_absolute_error_mm": 0.25515608478000296,
+              "max_absolute_error_mm": 0.26805285971952486
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.12172972803495553,
+              "rms_error_mm": 0.15903108524641088,
+              "p95_absolute_error_mm": 0.2277620899435843,
+              "max_absolute_error_mm": 0.2433190931248621
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.15969152027921948,
+              "rms_error_mm": 0.18477848204971034,
+              "p95_absolute_error_mm": 0.29829657003809906,
+              "max_absolute_error_mm": 0.3905409698160476
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.050312920353005476,
+              "rms_error_mm": 0.06527123452215597,
+              "p95_absolute_error_mm": 0.10815980278169997,
+              "max_absolute_error_mm": 0.11686376581091729
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10069698067968602,
+              "rms_error_mm": 0.11547117387677516,
+              "p95_absolute_error_mm": 0.17666950897106037,
+              "max_absolute_error_mm": 0.1823197336034692
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.11037612782570817,
+              "rms_error_mm": 0.11350924088995731,
+              "p95_absolute_error_mm": 0.14398350384032527,
+              "max_absolute_error_mm": 0.2386101372135272
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.3265108552956732,
+              "rms_error_mm": 0.33325324248388954,
+              "p95_absolute_error_mm": 0.49274831837463057,
+              "max_absolute_error_mm": 0.5116625235994725
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03645857044387185,
+              "rms_error_mm": 0.07632301686546585,
+              "p95_absolute_error_mm": 0.13010315912131742,
+              "max_absolute_error_mm": 0.14756699435312726
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.1268178521835089,
+              "rms_error_mm": 0.15838471236362733,
+              "p95_absolute_error_mm": 0.35373879191558294,
+              "max_absolute_error_mm": 0.37216477851998064
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.4347547748938233,
+              "rms_error_mm": 0.47098260183926405,
+              "p95_absolute_error_mm": 0.7279091157750127,
+              "max_absolute_error_mm": 0.7535960095848857
+            }
+          ],
+          "cv_mean_rms_mm": 0.1851693699838925
+        },
+        {
+          "mode": "radial2",
+          "parameters": [
+            -3.579717643164656,
+            0.008990130693849864,
+            -0.0055188929459964375
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.14595265601471494,
+              "rms_error_mm": 0.17347819243019907,
+              "p95_absolute_error_mm": 0.2517329496076425,
+              "max_absolute_error_mm": 0.2645502889608622
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.12135623928134999,
+              "rms_error_mm": 0.16361853871463242,
+              "p95_absolute_error_mm": 0.21769865338586092,
+              "max_absolute_error_mm": 0.22200350448158268
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.16911825146600482,
+              "rms_error_mm": 0.194597425667893,
+              "p95_absolute_error_mm": 0.34517564916200844,
+              "max_absolute_error_mm": 0.45683959042794164
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.046589523734513416,
+              "rms_error_mm": 0.06623360770876331,
+              "p95_absolute_error_mm": 0.11214368106391799,
+              "max_absolute_error_mm": 0.1166387673106577
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.09816524362602565,
+              "rms_error_mm": 0.11533082033281761,
+              "p95_absolute_error_mm": 0.17889592040881164,
+              "max_absolute_error_mm": 0.1891085302115254
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.15083782037146143,
+              "rms_error_mm": 0.1860955482992036,
+              "p95_absolute_error_mm": 0.39442779888404506,
+              "max_absolute_error_mm": 0.5626936225975694
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.3255294606327383,
+              "rms_error_mm": 0.33184710879434876,
+              "p95_absolute_error_mm": 0.4684108464335387,
+              "max_absolute_error_mm": 0.4945050405194795
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03953604815340343,
+              "rms_error_mm": 0.07781254059605842,
+              "p95_absolute_error_mm": 0.13937642384290427,
+              "max_absolute_error_mm": 0.15196033276946075
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.12446809121159105,
+              "rms_error_mm": 0.15515219356729,
+              "p95_absolute_error_mm": 0.3411088929419101,
+              "max_absolute_error_mm": 0.36329677063554655
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.44441174797813726,
+              "rms_error_mm": 0.47981775300208834,
+              "p95_absolute_error_mm": 0.7487666447228395,
+              "max_absolute_error_mm": 0.7795434645225363
+            }
+          ],
+          "cv_mean_rms_mm": 0.19439837291132944
+        }
+      ],
+      "photo_scales": [
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+          "px_per_mm": 35.237931036932345,
+          "tick_count": 79,
+          "span_mm": 82,
+          "residual_rms_px": 3.9539707507694235,
+          "residual_p95_px": 6.674451171553526
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+          "px_per_mm": 35.390261053279815,
+          "tick_count": 82,
+          "span_mm": 81,
+          "residual_rms_px": 4.431706835188251,
+          "residual_p95_px": 7.438647104334178
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+          "px_per_mm": 35.26923389383935,
+          "tick_count": 85,
+          "span_mm": 84,
+          "residual_rms_px": 4.078661276425299,
+          "residual_p95_px": 6.963884131380995
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+          "px_per_mm": 35.592989151857786,
+          "tick_count": 113,
+          "span_mm": 112,
+          "residual_rms_px": 1.8661243405072938,
+          "residual_p95_px": 3.230831633648537
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+          "px_per_mm": 35.4301712495484,
+          "tick_count": 114,
+          "span_mm": 113,
+          "residual_rms_px": 2.5369973232942136,
+          "residual_p95_px": 4.204950099916435
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+          "px_per_mm": 35.491918375679354,
+          "tick_count": 114,
+          "span_mm": 113,
+          "residual_rms_px": 1.1893104198857123,
+          "residual_p95_px": 1.887009846315635
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+          "px_per_mm": 36.7517595573722,
+          "tick_count": 129,
+          "span_mm": 128,
+          "residual_rms_px": 2.9453016717994607,
+          "residual_p95_px": 6.191401000097979
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+          "px_per_mm": 35.869592705891755,
+          "tick_count": 95,
+          "span_mm": 94,
+          "residual_rms_px": 3.2202539474804404,
+          "residual_p95_px": 5.410382679239092
+        },
+        {
+          "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+          "px_per_mm": 36.03690886227196,
+          "tick_count": 135,
+          "span_mm": 134,
+          "residual_rms_px": 4.584955074076872,
+          "residual_p95_px": 9.377365145586191
+        },
+        {
+          "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+          "px_per_mm": 37.25365727236672,
+          "tick_count": 73,
+          "span_mm": 72,
+          "residual_rms_px": 7.006784391889837,
+          "residual_p95_px": 13.045507670716278
+        }
+      ],
+      "total_detected_ticks": 1019,
+      "ruler_validation_worst_photo_p95_mm_per_10mm": 0.7278529454310165,
+      "relative_conservative_scale_envelope": 0.07278529454310165,
+      "independent_caliper_validation": false,
+      "instructor_approved": false,
+      "uncertainty_scope": "Ruler interval/image-position consistency only; repeated overlapping intervals are not independent samples. No caliper MAE or height-parallax bound.",
+      "supported_input": "Original fixed-collection 3024x4032 pixels; geometry runs on original-frame ROIs, not letterboxed network input",
+      "camo_transform": "NOT_CONFIRMED: photo EXIF has 1.57mm ultrawide + digital zoom 2.5802; do not infer Camo field of view from resolution",
+      "height_difference": "Ruler surface/part measurement planes may differ; distance and specimen heights are not recorded, so no invented parallax correction"
+    },
+    "decision_stage": "detection_only_REVIEW; no PASS/FAIL decision",
+    "ultralytics_version": "8.3.236",
+    "candidate_config_sha256": "6269179ca8dbb1d1e3c5e00dc65c47c6f75eb8caea5c5520923841470904b9a8",
+    "initialization": {
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "bytes": 5613764,
+      "path": "outputs/baseline3_v2/pretrained/yolo11n.pt",
+      "source": "Official Ultralytics COCO-pretrained YOLO11n; same initialization SHA as historical P06 trainer",
+      "local_mechanical_training": false
+    },
+    "selection_scope": "Train/Validation only",
+    "model": "baseline3",
+    "baseline3_mode": "size_repaired_development",
+    "business_decision_owner": "baseline3_adapter",
+    "deployment_stage": "DEVELOPMENT_ONLY_NOT_PHYSICALLY_ACCEPTED",
+    "size_verification": "Measured original pixels + empirical same-specimen development bands; provisional millimetres",
+    "acceptance_confirmed": false,
+    "independent_caliper_validation": false,
+    "instructor_approved": false,
+    "measurement_strategy": "Stage2 exterior-supported screw cross-sections; target-owned nut/annulus contours; quality-gated size rejection",
+    "foreground": "P06 threshold + illumination correction + measured-shape foreground conservation",
+    "size_bands": "Unchanged frozen v1 numerical ranges; no widening or new fit",
+    "count_decision_score": "none: decision derived from observed vs expected counts; object scores unchanged",
+    "registry": {
+      "path": "config/model_registry.json",
+      "sha256": "c7032745438eb3661b7bb6029e83cd9bbdd073e7d1c778fad930e2478eed7a5a",
+      "frozen_version": "size_repair_v2 / 1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+      "physical_acceptance": "NOT_VERIFIED",
+      "scene_guard": false,
+      "no_fallback": true
+    },
+    "evidence_mode": "real",
+    "frame_id": 1,
+    "scene_id": null
+  },
+  "images": [
+    {
+      "image_id": "A001.jpg",
+      "expected_counts": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "result": {
+        "status": "PASS",
+        "predicted_label": "PASS",
+        "prediction_score": null,
+        "score_type": "none",
+        "non_catalogue_count": 0,
+        "counts": {
+          "0": 0,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "objects": [
+          {
+            "detection_id": 0,
+            "class_id": 2,
+            "xmin": 1675.7176513671875,
+            "ymin": 2025.0380859375,
+            "xmax": 2183.890380859375,
+            "ymax": 2559.43994140625,
+            "score": 0.8938747644424438,
+            "detector_class_id": 2,
+            "size_evidence": {
+              "measurement": {
+                "status": "MEASURED_CANDIDATE",
+                "reason": "",
+                "class_id": 2,
+                "dimensions": {
+                  "underhead_length": {
+                    "line_xy": [
+                      [
+                        445.0538908139826,
+                        422.9558717666418
+                      ],
+                      [
+                        251.26354270512022,
+                        658.4772104598608
+                      ]
+                    ],
+                    "pixels": 305.00000000000006,
+                    "mm_estimate": 8.5294533272163,
+                    "line_xy_original": [
+                      [
+                        1933.0538908139827,
+                        2260.955871766642
+                      ],
+                      [
+                        1739.2635427051202,
+                        2496.4772104598605
+                      ]
+                    ]
+                  },
+                  "thread_major_diameter": {
+                    "line_xy": [
+                      [
+                        413.59996307726124,
+                        614.6350319013135
+                      ],
+                      [
+                        263.020746535695,
+                        490.7362847497458
+                      ]
+                    ],
+                    "pixels": 194.99999999999997,
+                    "mm_estimate": 5.453257045269437,
+                    "line_xy_original": [
+                      [
+                        1901.5999630772612,
+                        2452.6350319013136
+                      ],
+                      [
+                        1751.020746535695,
+                        2328.7362847497457
+                      ]
+                    ]
+                  }
+                },
+                "dimension_status": {
+                  "underhead_length": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  },
+                  "thread_major_diameter": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  }
+                },
+                "diagnostics": {
+                  "background_intensity": 193.0,
+                  "segmentation_threshold": 128.0,
+                  "isolated_peer_boxes": 0,
+                  "silhouette_method": "target-owned observed boundary; hull used for axis only",
+                  "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+                  "underhead_method": "observed silhouette shoulder transition",
+                  "tip_method": "observed silhouette end",
+                  "rough_contour_width_px": 197.0079788208008,
+                  "diameter_sections": 142,
+                  "eligible_sections": 146,
+                  "exterior_rejected_internal_edges": 1884,
+                  "diameter_p10_px": 183.0,
+                  "diameter_p90_px": 195.0,
+                  "diameter_repeatability_px": 3.7064999999999997,
+                  "shaft_line_fraction": 0.5508196721311476,
+                  "axis_xy": [
+                    -0.6353781905208603,
+                    0.7722011104695703
+                  ],
+                  "quality_valid_for_rejection": true,
+                  "measurement_uncertainty_mm": 0.10365383199123676,
+                  "selected_contour_method": "DARK_SILHOUETTE",
+                  "candidate_outlines": 2
+                },
+                "scale_px_per_mm": [
+                  35.7584464442507,
+                  35.7584464442507
+                ],
+                "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+              },
+              "conclusion": "WITHIN_DEVELOPMENT_BAND",
+              "details": [],
+              "provisional": true,
+              "reason": "",
+              "development_acceptance_bands": {
+                "thread_major_diameter": {
+                  "min_mm": 4.589601036547772,
+                  "max_mm": 6.390190023885105,
+                  "observed_min": 4.949879471859951,
+                  "observed_max": 5.956634618678924,
+                  "n": 14
+                },
+                "underhead_length": {
+                  "min_mm": 7.3122457192456,
+                  "max_mm": 10.080299755987769,
+                  "observed_min": 7.886248650081953,
+                  "observed_max": 9.396381370310413,
+                  "n": 14
+                }
+              },
+              "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+              "quality": {
+                "background_intensity": 193.0,
+                "segmentation_threshold": 128.0,
+                "isolated_peer_boxes": 0,
+                "silhouette_method": "target-owned observed boundary; hull used for axis only",
+                "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+                "underhead_method": "observed silhouette shoulder transition",
+                "tip_method": "observed silhouette end",
+                "rough_contour_width_px": 197.0079788208008,
+                "diameter_sections": 142,
+                "eligible_sections": 146,
+                "exterior_rejected_internal_edges": 1884,
+                "diameter_p10_px": 183.0,
+                "diameter_p90_px": 195.0,
+                "diameter_repeatability_px": 3.7064999999999997,
+                "shaft_line_fraction": 0.5508196721311476,
+                "axis_xy": [
+                  -0.6353781905208603,
+                  0.7722011104695703
+                ],
+                "quality_valid_for_rejection": true,
+                "measurement_uncertainty_mm": 0.10365383199123676,
+                "selected_contour_method": "DARK_SILHOUETTE",
+                "candidate_outlines": 2,
+                "independent_error_bound_mm": null,
+                "ruler_scale_envelope": 0.07278529454310165
+              },
+              "dimension_evidence": {
+                "thread_major_diameter": {
+                  "local_repeatability_interval_mm": [
+                    5.3496032132782005,
+                    5.556910877260673
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                },
+                "underhead_length": {
+                  "local_repeatability_interval_mm": [
+                    8.425799495225064,
+                    8.633107159207537
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                }
+              }
+            }
+          },
+          {
+            "detection_id": 1,
+            "class_id": 3,
+            "xmin": 883.0568237304688,
+            "ymin": 1528.607666015625,
+            "xmax": 1418.804443359375,
+            "ymax": 1923.7802734375,
+            "score": 0.8754751682281494,
+            "detector_class_id": 3,
+            "size_evidence": {
+              "measurement": {
+                "status": "MEASURED_CANDIDATE",
+                "reason": "",
+                "class_id": 3,
+                "dimensions": {
+                  "underhead_length": {
+                    "line_xy": [
+                      [
+                        347.12924870008015,
+                        386.7908779946578
+                      ],
+                      [
+                        681.3597306183083,
+                        409.48415798475526
+                      ]
+                    ],
+                    "pixels": 334.99999999999994,
+                    "mm_estimate": 9.368415949565442,
+                    "line_xy_original": [
+                      [
+                        1042.12924870008,
+                        1726.7908779946579
+                      ],
+                      [
+                        1376.3597306183083,
+                        1749.4841579847553
+                      ]
+                    ]
+                  },
+                  "thread_major_diameter": {
+                    "line_xy": [
+                      [
+                        525.911755485197,
+                        322.2535611335608
+                      ],
+                      [
+                        515.5473619374808,
+                        474.9021095917366
+                      ]
+                    ],
+                    "pixels": 152.99999999999991,
+                    "mm_estimate": 4.278709373980633,
+                    "line_xy_original": [
+                      [
+                        1220.9117554851969,
+                        1662.2535611335609
+                      ],
+                      [
+                        1210.5473619374807,
+                        1814.9021095917365
+                      ]
+                    ]
+                  }
+                },
+                "dimension_status": {
+                  "underhead_length": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  },
+                  "thread_major_diameter": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  }
+                },
+                "diagnostics": {
+                  "background_intensity": 207.0,
+                  "segmentation_threshold": 137.0,
+                  "isolated_peer_boxes": 1,
+                  "silhouette_method": "target-owned observed boundary; hull used for axis only",
+                  "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+                  "underhead_method": "observed silhouette shoulder transition",
+                  "tip_method": "observed silhouette end",
+                  "rough_contour_width_px": 154.32366943359375,
+                  "diameter_sections": 180,
+                  "eligible_sections": 191,
+                  "exterior_rejected_internal_edges": 1710,
+                  "diameter_p10_px": 143.0,
+                  "diameter_p90_px": 153.0,
+                  "diameter_repeatability_px": 2.9652,
+                  "shaft_line_fraction": 0.5194029850746269,
+                  "axis_xy": [
+                    0.9977029310991884,
+                    0.06774113429879833
+                  ],
+                  "quality_valid_for_rejection": true,
+                  "measurement_uncertainty_mm": 0.08292306559298941,
+                  "selected_contour_method": "CLOSED_OBSERVED_EDGES",
+                  "candidate_outlines": 2
+                },
+                "scale_px_per_mm": [
+                  35.7584464442507,
+                  35.7584464442507
+                ],
+                "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+              },
+              "conclusion": "WITHIN_DEVELOPMENT_BAND",
+              "details": [],
+              "provisional": true,
+              "reason": "",
+              "development_acceptance_bands": {
+                "thread_major_diameter": {
+                  "min_mm": 3.3708934166735047,
+                  "max_mm": 4.500133819637398,
+                  "observed_min": 3.635504696846292,
+                  "observed_max": 4.194813111745721,
+                  "n": 13
+                },
+                "underhead_length": {
+                  "min_mm": 6.81957668142409,
+                  "max_mm": 10.290306000904181,
+                  "observed_min": 7.354905655927498,
+                  "observed_max": 9.592139315525214,
+                  "n": 13
+                }
+              },
+              "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+              "quality": {
+                "background_intensity": 207.0,
+                "segmentation_threshold": 137.0,
+                "isolated_peer_boxes": 1,
+                "silhouette_method": "target-owned observed boundary; hull used for axis only",
+                "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+                "underhead_method": "observed silhouette shoulder transition",
+                "tip_method": "observed silhouette end",
+                "rough_contour_width_px": 154.32366943359375,
+                "diameter_sections": 180,
+                "eligible_sections": 191,
+                "exterior_rejected_internal_edges": 1710,
+                "diameter_p10_px": 143.0,
+                "diameter_p90_px": 153.0,
+                "diameter_repeatability_px": 2.9652,
+                "shaft_line_fraction": 0.5194029850746269,
+                "axis_xy": [
+                  0.9977029310991884,
+                  0.06774113429879833
+                ],
+                "quality_valid_for_rejection": true,
+                "measurement_uncertainty_mm": 0.08292306559298941,
+                "selected_contour_method": "CLOSED_OBSERVED_EDGES",
+                "candidate_outlines": 2,
+                "independent_error_bound_mm": null,
+                "ruler_scale_envelope": 0.07278529454310165
+              },
+              "dimension_evidence": {
+                "thread_major_diameter": {
+                  "local_repeatability_interval_mm": [
+                    4.195786308387643,
+                    4.361632439573623
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                },
+                "underhead_length": {
+                  "local_repeatability_interval_mm": [
+                    9.285492883972452,
+                    9.451339015158432
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                }
+              }
+            }
+          },
+          {
+            "detection_id": 2,
+            "class_id": 5,
+            "xmin": 209.06961059570312,
+            "ymin": 1343.3470458984375,
+            "xmax": 801.393310546875,
+            "ymax": 1962.06982421875,
+            "score": 0.8639960885047913,
+            "detector_class_id": 5,
+            "size_evidence": {
+              "measurement": {
+                "status": "MEASURED_CANDIDATE",
+                "reason": "",
+                "class_id": 5,
+                "dimensions": {
+                  "outer_diameter": {
+                    "line_xy": [
+                      [
+                        584.1188137231679,
+                        789.5008944414175
+                      ],
+                      [
+                        425.2326570949731,
+                        273.52254930534906
+                      ]
+                    ],
+                    "pixels": 539.8874543990025,
+                    "mm_estimate": 15.098179817199703,
+                    "line_xy_original": [
+                      [
+                        584.1188137231679,
+                        1915.5008944414176
+                      ],
+                      [
+                        425.2326570949731,
+                        1399.522549305349
+                      ]
+                    ]
+                  },
+                  "inner_diameter": {
+                    "line_xy": [
+                      [
+                        589.9396001389808,
+                        576.7698816538259
+                      ],
+                      [
+                        419.99419492793385,
+                        482.67531667391296
+                      ]
+                    ],
+                    "pixels": 194.25557369379655,
+                    "mm_estimate": 5.432438850402834,
+                    "line_xy_original": [
+                      [
+                        589.9396001389808,
+                        1702.769881653826
+                      ],
+                      [
+                        419.99419492793385,
+                        1608.675316673913
+                      ]
+                    ]
+                  }
+                },
+                "dimension_status": {
+                  "outer_diameter": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  },
+                  "inner_diameter": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  }
+                },
+                "diagnostics": {
+                  "background_intensity": 198.0,
+                  "segmentation_threshold": 147.0,
+                  "isolated_peer_boxes": 1,
+                  "outer_ellipse_rms_fraction": 0.0024725887943485066,
+                  "inner_ellipse_rms_fraction": 0.0030335892491392727,
+                  "outer_ellipse_axes_mm": [
+                    15.007317543029785,
+                    15.098179817199707
+                  ],
+                  "inner_ellipse_axes_mm": [
+                    5.394518852233887,
+                    5.432438850402832
+                  ],
+                  "outer_full_contour_residual": 0.003453477463545335,
+                  "inner_full_contour_residual": 0.0041406766019493595,
+                  "outer_edge_support_fraction": 1.0,
+                  "inner_edge_support_fraction": 0.850091407678245,
+                  "aperture_hierarchy_depth": 1,
+                  "radial_aperture_supported_rays": null,
+                  "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+                  "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+                  "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification.",
+                  "quality_valid_for_rejection": true,
+                  "measurement_uncertainty_mm": 0.05593084148994295,
+                  "selected_contour_method": "DARK_SILHOUETTE",
+                  "candidate_outlines": 2
+                },
+                "scale_px_per_mm": [
+                  35.7584464442507,
+                  35.7584464442507
+                ],
+                "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+              },
+              "conclusion": "WITHIN_DEVELOPMENT_BAND",
+              "details": [],
+              "provisional": true,
+              "reason": "",
+              "development_acceptance_bands": {
+                "inner_diameter": {
+                  "min_mm": 4.669882798768669,
+                  "max_mm": 5.629969196569283,
+                  "observed_min": 5.036463260650636,
+                  "observed_max": 5.247992515563967,
+                  "n": 12
+                },
+                "outer_diameter": {
+                  "min_mm": 12.810673361568805,
+                  "max_mm": 16.245679443993232,
+                  "observed_min": 13.816296577453613,
+                  "observed_max": 15.143458366394047,
+                  "n": 12
+                }
+              },
+              "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+              "quality": {
+                "background_intensity": 198.0,
+                "segmentation_threshold": 147.0,
+                "isolated_peer_boxes": 1,
+                "outer_ellipse_rms_fraction": 0.0024725887943485066,
+                "inner_ellipse_rms_fraction": 0.0030335892491392727,
+                "outer_ellipse_axes_mm": [
+                  15.007317543029785,
+                  15.098179817199707
+                ],
+                "inner_ellipse_axes_mm": [
+                  5.394518852233887,
+                  5.432438850402832
+                ],
+                "outer_full_contour_residual": 0.003453477463545335,
+                "inner_full_contour_residual": 0.0041406766019493595,
+                "outer_edge_support_fraction": 1.0,
+                "inner_edge_support_fraction": 0.850091407678245,
+                "aperture_hierarchy_depth": 1,
+                "radial_aperture_supported_rays": null,
+                "diameter_definition": "visible fitted ellipse major axis; minor axis retained; not pose-corrected physical diameter",
+                "aperture_method": "centred odd-depth descendant aperture; robust observed-perimeter ellipse fit",
+                "warning": "Visible projected axes only. Hole wall, chamfer, shadow and projection require caliper verification.",
+                "quality_valid_for_rejection": true,
+                "measurement_uncertainty_mm": 0.05593084148994295,
+                "selected_contour_method": "DARK_SILHOUETTE",
+                "candidate_outlines": 2,
+                "independent_error_bound_mm": null,
+                "ruler_scale_envelope": 0.07278529454310165
+              },
+              "dimension_evidence": {
+                "inner_diameter": {
+                  "local_repeatability_interval_mm": [
+                    5.376508008912891,
+                    5.4883696918927765
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                },
+                "outer_diameter": {
+                  "local_repeatability_interval_mm": [
+                    15.04224897570976,
+                    15.154110658689646
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                }
+              }
+            }
+          },
+          {
+            "detection_id": 3,
+            "class_id": 4,
+            "xmin": 1096.4661865234375,
+            "ymin": 2181.205810546875,
+            "xmax": 1442.8521728515625,
+            "ymax": 2537.26708984375,
+            "score": 0.7936381101608276,
+            "detector_class_id": 4,
+            "size_evidence": {
+              "measurement": {
+                "status": "MEASURED_CANDIDATE",
+                "reason": "",
+                "class_id": 4,
+                "dimensions": {
+                  "across_flats": {
+                    "line_xy": [
+                      [
+                        392.0000116953513,
+                        404.4000125176786
+                      ],
+                      [
+                        210.19518246889118,
+                        225.66646968692285
+                      ]
+                    ],
+                    "pixels": 254.94837764319254,
+                    "mm_estimate": 7.129738649039759,
+                    "line_xy_original": [
+                      [
+                        1363.0000116953513,
+                        2460.4000125176785
+                      ],
+                      [
+                        1181.1951824688913,
+                        2281.666469686923
+                      ]
+                    ]
+                  }
+                },
+                "dimension_status": {
+                  "across_flats": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  }
+                },
+                "diagnostics": {
+                  "background_intensity": 202.0,
+                  "segmentation_threshold": 133.0,
+                  "isolated_peer_boxes": 0,
+                  "opposite_flats_mm": [
+                    7.716893672943115,
+                    6.999723434448242,
+                    7.129738807678223
+                  ],
+                  "opposite_flat_lines_xy": [
+                    [
+                      [
+                        337.20001246144193,
+                        172.9000015656053
+                      ],
+                      [
+                        268.50981000505107,
+                        440.1579474332498
+                      ]
+                    ],
+                    [
+                      [
+                        416.6383020734514,
+                        266.50001382318925
+                      ],
+                      [
+                        175.7305114118563,
+                        334.42012690350816
+                      ]
+                    ],
+                    [
+                      [
+                        392.0000116953513,
+                        404.4000125176786
+                      ],
+                      [
+                        210.19518246889118,
+                        225.66646968692285
+                      ]
+                    ]
+                  ],
+                  "hexagon_xy": [
+                    [
+                      288.9999949641744,
+                      162.00000744312314
+                    ],
+                    [
+                      391.0000072287879,
+                      201.0000111295368
+                    ],
+                    [
+                      434.9999991461067,
+                      333.9999913480566
+                    ],
+                    [
+                      327.999998650588,
+                      449.9999979407341
+                    ],
+                    [
+                      212.0000091088665,
+                      421.0000048180427
+                    ],
+                    [
+                      162.9999948587306,
+                      310.0000205581823
+                    ]
+                  ],
+                  "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter.",
+                  "quality_valid_for_rejection": true,
+                  "measurement_uncertainty_mm": 0.05593084148994295,
+                  "selected_contour_method": "CLOSED_OBSERVED_EDGES",
+                  "candidate_outlines": 2
+                },
+                "scale_px_per_mm": [
+                  35.7584464442507,
+                  35.7584464442507
+                ],
+                "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+              },
+              "conclusion": "WITHIN_DEVELOPMENT_BAND",
+              "details": [],
+              "provisional": true,
+              "reason": "",
+              "development_acceptance_bands": {
+                "across_flats": {
+                  "min_mm": 6.296979775621256,
+                  "max_mm": 7.712315561245787,
+                  "observed_min": 6.791285490363669,
+                  "observed_max": 7.189057866914979,
+                  "n": 12
+                }
+              },
+              "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+              "quality": {
+                "background_intensity": 202.0,
+                "segmentation_threshold": 133.0,
+                "isolated_peer_boxes": 0,
+                "opposite_flats_mm": [
+                  7.716893672943115,
+                  6.999723434448242,
+                  7.129738807678223
+                ],
+                "opposite_flat_lines_xy": [
+                  [
+                    [
+                      337.20001246144193,
+                      172.9000015656053
+                    ],
+                    [
+                      268.50981000505107,
+                      440.1579474332498
+                    ]
+                  ],
+                  [
+                    [
+                      416.6383020734514,
+                      266.50001382318925
+                    ],
+                    [
+                      175.7305114118563,
+                      334.42012690350816
+                    ]
+                  ],
+                  [
+                    [
+                      392.0000116953513,
+                      404.4000125176786
+                    ],
+                    [
+                      210.19518246889118,
+                      225.66646968692285
+                    ]
+                  ]
+                ],
+                "hexagon_xy": [
+                  [
+                    288.9999949641744,
+                    162.00000744312314
+                  ],
+                  [
+                    391.0000072287879,
+                    201.0000111295368
+                  ],
+                  [
+                    434.9999991461067,
+                    333.9999913480566
+                  ],
+                  [
+                    327.999998650588,
+                    449.9999979407341
+                  ],
+                  [
+                    212.0000091088665,
+                    421.0000048180427
+                  ],
+                  [
+                    162.9999948587306,
+                    310.0000205581823
+                  ]
+                ],
+                "warning": "Visible parallel-flat separation, not across-corners or thread-hole diameter.",
+                "quality_valid_for_rejection": true,
+                "measurement_uncertainty_mm": 0.05593084148994295,
+                "selected_contour_method": "CLOSED_OBSERVED_EDGES",
+                "candidate_outlines": 2,
+                "independent_error_bound_mm": null,
+                "ruler_scale_envelope": 0.07278529454310165
+              },
+              "dimension_evidence": {
+                "across_flats": {
+                  "local_repeatability_interval_mm": [
+                    6.9437925929582995,
+                    7.772824514433058
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                }
+              }
+            }
+          },
+          {
+            "detection_id": 4,
+            "class_id": 1,
+            "xmin": 1735.6317138671875,
+            "ymin": 648.677734375,
+            "xmax": 2231.913818359375,
+            "ymax": 1806.02001953125,
+            "score": 0.7920398116111755,
+            "detector_class_id": 1,
+            "size_evidence": {
+              "measurement": {
+                "status": "MEASURED_CANDIDATE",
+                "reason": "",
+                "class_id": 1,
+                "dimensions": {
+                  "underhead_length": {
+                    "line_xy": [
+                      [
+                        577.0250453037479,
+                        602.0969562871732
+                      ],
+                      [
+                        774.614869914255,
+                        1503.6995634320222
+                      ]
+                    ],
+                    "pixels": 922.9999999999999,
+                    "mm_estimate": 25.81208334760867,
+                    "line_xy_original": [
+                      [
+                        1907.025045303748,
+                        845.0969562871732
+                      ],
+                      [
+                        2104.614869914255,
+                        1746.6995634320222
+                      ]
+                    ]
+                  },
+                  "thread_major_diameter": {
+                    "line_xy": [
+                      [
+                        749.1280494766261,
+                        1039.3918292901278
+                      ],
+                      [
+                        603.5822331553017,
+                        1071.288778225085
+                      ]
+                    ],
+                    "pixels": 148.99999999999991,
+                    "mm_estimate": 4.166847691000747,
+                    "line_xy_original": [
+                      [
+                        2079.128049476626,
+                        1282.3918292901278
+                      ],
+                      [
+                        1933.5822331553018,
+                        1314.288778225085
+                      ]
+                    ]
+                  }
+                },
+                "dimension_status": {
+                  "underhead_length": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  },
+                  "thread_major_diameter": {
+                    "status": "CANDIDATE",
+                    "reason": ""
+                  }
+                },
+                "diagnostics": {
+                  "background_intensity": 182.0,
+                  "segmentation_threshold": 141.0,
+                  "isolated_peer_boxes": 3,
+                  "silhouette_method": "target-owned observed boundary; hull used for axis only",
+                  "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+                  "underhead_method": "observed silhouette shoulder transition",
+                  "tip_method": "observed silhouette end",
+                  "rough_contour_width_px": 146.32118225097656,
+                  "diameter_sections": 391,
+                  "eligible_sections": 535,
+                  "exterior_rejected_internal_edges": 4225,
+                  "diameter_p10_px": 141.0,
+                  "diameter_p90_px": 149.0,
+                  "diameter_repeatability_px": 2.9652,
+                  "shaft_line_fraction": 0.5027085590465872,
+                  "axis_xy": [
+                    0.21407348278494806,
+                    0.9768175592035201
+                  ],
+                  "quality_valid_for_rejection": true,
+                  "measurement_uncertainty_mm": 0.08292306559298941,
+                  "selected_contour_method": "DARK_SILHOUETTE",
+                  "candidate_outlines": 2
+                },
+                "scale_px_per_mm": [
+                  35.7584464442507,
+                  35.7584464442507
+                ],
+                "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+              },
+              "conclusion": "WITHIN_DEVELOPMENT_BAND",
+              "details": [],
+              "provisional": true,
+              "reason": "",
+              "development_acceptance_bands": {
+                "thread_major_diameter": {
+                  "min_mm": 3.293103568596423,
+                  "max_mm": 4.320128466851901,
+                  "observed_min": 3.5516084346113765,
+                  "observed_max": 4.027020587275891,
+                  "n": 14
+                },
+                "underhead_length": {
+                  "min_mm": 20.899539183375733,
+                  "max_mm": 26.280781506682406,
+                  "observed_min": 22.540129120447013,
+                  "observed_max": 24.497708572595013,
+                  "n": 14
+                }
+              },
+              "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+              "quality": {
+                "background_intensity": 182.0,
+                "segmentation_threshold": 141.0,
+                "isolated_peer_boxes": 3,
+                "silhouette_method": "target-owned observed boundary; hull used for axis only",
+                "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+                "underhead_method": "observed silhouette shoulder transition",
+                "tip_method": "observed silhouette end",
+                "rough_contour_width_px": 146.32118225097656,
+                "diameter_sections": 391,
+                "eligible_sections": 535,
+                "exterior_rejected_internal_edges": 4225,
+                "diameter_p10_px": 141.0,
+                "diameter_p90_px": 149.0,
+                "diameter_repeatability_px": 2.9652,
+                "shaft_line_fraction": 0.5027085590465872,
+                "axis_xy": [
+                  0.21407348278494806,
+                  0.9768175592035201
+                ],
+                "quality_valid_for_rejection": true,
+                "measurement_uncertainty_mm": 0.08292306559298941,
+                "selected_contour_method": "DARK_SILHOUETTE",
+                "candidate_outlines": 2,
+                "independent_error_bound_mm": null,
+                "ruler_scale_envelope": 0.07278529454310165
+              },
+              "dimension_evidence": {
+                "thread_major_diameter": {
+                  "local_repeatability_interval_mm": [
+                    4.083924625407757,
+                    4.249770756593737
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                },
+                "underhead_length": {
+                  "local_repeatability_interval_mm": [
+                    25.72916028201568,
+                    25.89500641320166
+                  ],
+                  "absolute_physical_error_bound_mm": null,
+                  "provisional": true
+                }
+              }
+            }
+          }
+        ],
+        "frame_size": {
+          "width": 3024,
+          "height": 4032
+        },
+        "message": "DEVELOPMENT CANDIDATE / provisional dimensions / physical acceptance pending. Count, size-band and foreground checks passed.",
+        "inspection": {
+          "mode": "size_repaired_development",
+          "acceptance_confirmed": false,
+          "calibration_compatible": true,
+          "calibration": {
+            "calibration_id": "ruler10-fixed-collection-size-dev-v1",
+            "validated": false,
+            "px_per_mm": [
+              35.7584464442507,
+              35.7584464442507
+            ],
+            "instructor_approved": false
+          },
+          "specifications": [
+            {
+              "class_id": 1,
+              "class_name": "long_screw",
+              "supplier_spec": "M4×25",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/01_long_screw_M4x25.jpg",
+              "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 25.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 2,
+              "class_name": "thick_screw",
+              "supplier_spec": "M5×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+              "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.9,
+                "head_diameter_mm": 11.4
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 3,
+              "class_name": "thin_screw",
+              "supplier_spec": "M4×10",
+              "product_name_zh": "304大扁头十字螺钉",
+              "iso_din_standard": null,
+              "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+              "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+              "dimensions": {
+                "underhead_length": {
+                  "supplier_field": "under_head_length_mm",
+                  "reference_mm": 10.0,
+                  "provisional_allowance_mm": 1.0
+                },
+                "thread_major_diameter": {
+                  "supplier_field": "thread_major_diameter_mm",
+                  "reference_mm": 4.0,
+                  "provisional_allowance_mm": 0.3
+                }
+              },
+              "reference_only_dimensions": {
+                "head_thickness_mm": 2.4,
+                "head_diameter_mm": 9.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "head_thickness_mm"
+              ]
+            },
+            {
+              "class_id": 4,
+              "class_name": "hex_nut",
+              "supplier_spec": "M4",
+              "product_name_zh": "304六角螺母",
+              "iso_din_standard": null,
+              "source_image": "reference_images/04_hex_nut_M4.jpg",
+              "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+              "dimensions": {
+                "across_flats": {
+                  "supplier_field": "across_flats_mm",
+                  "reference_mm": 7.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thread_nominal_diameter_mm": 4.0,
+                "thickness_mm": 3.1,
+                "wrench_size_mm": 7.0
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thread_nominal_diameter_mm",
+                "thickness_mm"
+              ]
+            },
+            {
+              "class_id": 5,
+              "class_name": "flat_washer",
+              "supplier_spec": "5×15×1.2",
+              "product_name_zh": "304平垫片",
+              "iso_din_standard": null,
+              "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+              "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+              "dimensions": {
+                "outer_diameter": {
+                  "supplier_field": "outer_diameter_mm",
+                  "reference_mm": 15.0,
+                  "provisional_allowance_mm": 0.75
+                },
+                "inner_diameter": {
+                  "supplier_field": "inner_diameter_mm",
+                  "reference_mm": 5.0,
+                  "provisional_allowance_mm": 0.5
+                }
+              },
+              "reference_only_dimensions": {
+                "thickness_mm": 1.2
+              },
+              "unsupported_for_automatic_overhead_measurement": [
+                "thickness_mm"
+              ]
+            }
+          ],
+          "measurement_calls": 5,
+          "measurement_complete": 5,
+          "geometry_execution": "FRESH",
+          "failure_reasons": [],
+          "review_reasons": [],
+          "caliper_mae": null,
+          "foreground": {
+            "status": "REVIEW",
+            "background_reference_id": "G01.jpg",
+            "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+            "background_pixel_sha256": "da350a221e50498b6b82cafd8e7ffa62e06e35ff8acab372101ce51c6e493df7",
+            "frame_size": {
+              "width": 756,
+              "height": 1008
+            },
+            "roi": [
+              0,
+              0,
+              756,
+              1008
+            ],
+            "parameters": {
+              "difference_threshold": 40,
+              "minimum_area": 30,
+              "kernel_size": 3,
+              "association_fraction": 0.25,
+              "duplicate_iou": 0.8,
+              "maximum_foreground_fraction": 0.45
+            },
+            "foreground_fraction": 0.04523468337952465,
+            "background_usable": true,
+            "regions": [
+              {
+                "region_id": 0,
+                "component_label": 1,
+                "xmin": 433,
+                "ymin": 180,
+                "xmax": 541,
+                "ymax": 438,
+                "area_pixels": 9619,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 1,
+                "component_label": 2,
+                "xmin": 60,
+                "ymin": 347,
+                "xmax": 194,
+                "ymax": 482,
+                "area_pixels": 8450,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 2,
+                "component_label": 11,
+                "xmin": 228,
+                "ymin": 388,
+                "xmax": 344,
+                "ymax": 476,
+                "area_pixels": 5341,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 3,
+                "component_label": 14,
+                "xmin": 425,
+                "ymin": 508,
+                "xmax": 542,
+                "ymax": 632,
+                "area_pixels": 7912,
+                "touches_roi_edge": false
+              },
+              {
+                "region_id": 4,
+                "component_label": 15,
+                "xmin": 284,
+                "ymin": 556,
+                "xmax": 352,
+                "ymax": 627,
+                "area_pixels": 3009,
+                "touches_roi_edge": false
+              }
+            ],
+            "associations": [
+              {
+                "region_id": 3,
+                "detection_id": 0,
+                "overlap_pixels": 7912,
+                "association_fraction": 1.0
+              },
+              {
+                "region_id": 2,
+                "detection_id": 1,
+                "overlap_pixels": 5341,
+                "association_fraction": 1.0
+              },
+              {
+                "region_id": 1,
+                "detection_id": 2,
+                "overlap_pixels": 8450,
+                "association_fraction": 1.0
+              },
+              {
+                "region_id": 4,
+                "detection_id": 3,
+                "overlap_pixels": 3009,
+                "association_fraction": 1.0
+              },
+              {
+                "region_id": 0,
+                "detection_id": 4,
+                "overlap_pixels": 9619,
+                "association_fraction": 1.0
+              }
+            ],
+            "candidates": [
+              {
+                "candidate_id": 0,
+                "region_ids": [
+                  0
+                ],
+                "detection_ids": [
+                  4
+                ],
+                "class_id": 1,
+                "retained_detection_id": 4,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              },
+              {
+                "candidate_id": 1,
+                "region_ids": [
+                  1
+                ],
+                "detection_ids": [
+                  2
+                ],
+                "class_id": 5,
+                "retained_detection_id": 2,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              },
+              {
+                "candidate_id": 2,
+                "region_ids": [
+                  2
+                ],
+                "detection_ids": [
+                  1
+                ],
+                "class_id": 3,
+                "retained_detection_id": 1,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              },
+              {
+                "candidate_id": 3,
+                "region_ids": [
+                  3
+                ],
+                "detection_ids": [
+                  0
+                ],
+                "class_id": 2,
+                "retained_detection_id": 0,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              },
+              {
+                "candidate_id": 4,
+                "region_ids": [
+                  4
+                ],
+                "detection_ids": [
+                  3
+                ],
+                "class_id": 4,
+                "retained_detection_id": 3,
+                "suppressed_detection_ids": [],
+                "status": "REVIEW",
+                "reason": "ASSOCIATED"
+              }
+            ],
+            "raw_counts": {
+              "0": 0,
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 1,
+              "5": 1
+            },
+            "proposed_counts": {
+              "0": 0,
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 1,
+              "5": 1
+            },
+            "counts_complete": true,
+            "suppressed_detection_ids": [],
+            "scope": "foreground candidates and proposed counts; final classification and decision pending",
+            "coordinate_space": "756x1008 foreground diagnostic only; main objects remain original pixels",
+            "illumination_coefficients": [
+              -12.448214530944824,
+              -20.613550186157227,
+              -16.719074249267578,
+              7.437353610992432,
+              3.625347375869751,
+              12.533308029174805
+            ],
+            "background_fit_rms": 5.130173683166504,
+            "reason": "",
+            "physical_unknown_validation": false,
+            "original_component_association_complete": true,
+            "resolution_method": "Conserve foreground outside disjoint, image-measured part shapes; unchanged area/contrast limits",
+            "measured_shape_support": [
+              {
+                "detection_id": 0,
+                "shape_pixels": 9703,
+                "foreground_pixels": 7891
+              },
+              {
+                "detection_id": 1,
+                "shape_pixels": 7223,
+                "foreground_pixels": 5341
+              },
+              {
+                "detection_id": 2,
+                "shape_pixels": 14614,
+                "foreground_pixels": 8589
+              },
+              {
+                "detection_id": 3,
+                "shape_pixels": 3897,
+                "foreground_pixels": 3009
+              },
+              {
+                "detection_id": 4,
+                "shape_pixels": 15972,
+                "foreground_pixels": 9614
+              }
+            ],
+            "residual_regions": [],
+            "ambiguous_detection_ids": [],
+            "unexplained_foreground_pixels": 0
+          },
+          "decision_failure_reasons": [],
+          "decision_review_reasons": []
+        },
+        "expected_counts": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "difference": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "baseline3_mode": "size_repaired_development",
+        "model_id": "baseline3",
+        "model_version": "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+        "inference_time_ms": 735.6919000158086,
+        "error_message": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,1329 @@
+{
+  "real_loaded": true,
+  "metadata": {
+    "model_id": "baseline3",
+    "model_version": "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+    "model_file_size_bytes": 5494161,
+    "weights": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\models\\release\\baseline3\\best.pt",
+    "weights_sha256": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "output_capability": "object_level",
+    "class_catalogue": {
+      "0": "non_catalogue",
+      "1": "long_screw",
+      "2": "thick_screw",
+      "3": "thin_screw",
+      "4": "hex_nut",
+      "5": "flat_washer"
+    },
+    "thresholds": {
+      "imgsz": 640,
+      "conf": 0.35,
+      "iou": 0.5,
+      "device": 0,
+      "batch": 1,
+      "half": false,
+      "agnostic_nms": false,
+      "augment": false,
+      "max_det": 300
+    },
+    "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability; reassigned ID0 retains original detector score, not a calibrated ID0 probability",
+    "preprocessing": "uint8 BGR -> Ultralytics aspect-preserving letterbox imgsz=640; original-pixel xyxy output; no EXIF transform on incoming frames",
+    "coordinate_convention": "continuous original-image pixels, top-left xyxy; 0<=xmin<xmax<=width, 0<=ymin<ymax<=height",
+    "hardware": {
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    "rejection": "Only learned non_catalogue detection; complete open-set rejection not validated",
+    "size_tolerance": {
+      "3": {
+        "thread_major_diameter": {
+          "min_mm": 3.3708934166735047,
+          "max_mm": 4.500133819637398,
+          "observed_min": 3.635504696846292,
+          "observed_max": 4.194813111745721,
+          "n": 13
+        },
+        "underhead_length": {
+          "min_mm": 6.81957668142409,
+          "max_mm": 10.290306000904181,
+          "observed_min": 7.354905655927498,
+          "observed_max": 9.592139315525214,
+          "n": 13
+        }
+      },
+      "1": {
+        "thread_major_diameter": {
+          "min_mm": 3.293103568596423,
+          "max_mm": 4.320128466851901,
+          "observed_min": 3.5516084346113765,
+          "observed_max": 4.027020587275891,
+          "n": 14
+        },
+        "underhead_length": {
+          "min_mm": 20.899539183375733,
+          "max_mm": 26.280781506682406,
+          "observed_min": 22.540129120447013,
+          "observed_max": 24.497708572595013,
+          "n": 14
+        }
+      },
+      "4": {
+        "across_flats": {
+          "min_mm": 6.296979775621256,
+          "max_mm": 7.712315561245787,
+          "observed_min": 6.791285490363669,
+          "observed_max": 7.189057866914979,
+          "n": 12
+        }
+      },
+      "2": {
+        "thread_major_diameter": {
+          "min_mm": 4.589601036547772,
+          "max_mm": 6.390190023885105,
+          "observed_min": 4.949879471859951,
+          "observed_max": 5.956634618678924,
+          "n": 14
+        },
+        "underhead_length": {
+          "min_mm": 7.3122457192456,
+          "max_mm": 10.080299755987769,
+          "observed_min": 7.886248650081953,
+          "observed_max": 9.396381370310413,
+          "n": 14
+        }
+      },
+      "5": {
+        "inner_diameter": {
+          "min_mm": 4.669882798768669,
+          "max_mm": 5.629969196569283,
+          "observed_min": 5.036463260650636,
+          "observed_max": 5.247992515563967,
+          "n": 12
+        },
+        "outer_diameter": {
+          "min_mm": 12.810673361568805,
+          "max_mm": 16.245679443993232,
+          "observed_min": 13.816296577453613,
+          "observed_max": 15.143458366394047,
+          "n": 12
+        }
+      }
+    },
+    "calibration": {
+      "schema": "ruler-scale-development/v1",
+      "status": "IMAGE_RULER_FIT_WITH_PHOTO_CROSS_VALIDATION",
+      "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+      "frame_size": [
+        3024,
+        4032
+      ],
+      "px_per_mm": [
+        35.7584464442507,
+        35.7584464442507
+      ],
+      "selected_model": "global",
+      "model_selection_rule": "Leave-one-photo-out 10mm interval RMS; retain global unless correction improves >=20%",
+      "models": [
+        {
+          "mode": "global",
+          "matrix_pixel_to_mm": [
+            [
+              0.02796542074497147,
+              0.0,
+              -42.283716166396864
+            ],
+            [
+              0.0,
+              0.02796542074497147,
+              -56.37828822186248
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameters": [
+            -3.5767865054088768,
+            -3.5767865054088768,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.13413160891997847,
+              "rms_error_mm": 0.16355850764335234,
+              "p95_absolute_error_mm": 0.2554395093291159,
+              "max_absolute_error_mm": 0.26213192773962746
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.09953515650108595,
+              "rms_error_mm": 0.14338194881339064,
+              "p95_absolute_error_mm": 0.224470242773751,
+              "max_absolute_error_mm": 0.25676494880763556
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.13509119765828073,
+              "rms_error_mm": 0.16422744482322066,
+              "p95_absolute_error_mm": 0.26131708204991727,
+              "max_absolute_error_mm": 0.3471513895407412
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.042065085971954554,
+              "rms_error_mm": 0.054326831546951476,
+              "p95_absolute_error_mm": 0.08756473957124467,
+              "max_absolute_error_mm": 0.09951899437225897
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08670674162138654,
+              "rms_error_mm": 0.09855536848743364,
+              "p95_absolute_error_mm": 0.14720917743593195,
+              "max_absolute_error_mm": 0.2066775790669979
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.06933462339212634,
+              "rms_error_mm": 0.07488423800665288,
+              "p95_absolute_error_mm": 0.11686642504497646,
+              "max_absolute_error_mm": 0.13777233167398428
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.28790436007906284,
+              "rms_error_mm": 0.29406141810164865,
+              "p95_absolute_error_mm": 0.42930677938217104,
+              "max_absolute_error_mm": 0.45092955126190226
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03233886340254321,
+              "rms_error_mm": 0.07143935382271056,
+              "p95_absolute_error_mm": 0.12551293260025745,
+              "max_absolute_error_mm": 0.14018647171112342
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.08870892721690633,
+              "rms_error_mm": 0.11626416015069642,
+              "p95_absolute_error_mm": 0.26120345017483154,
+              "max_absolute_error_mm": 0.2865979323879042
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.41957763557777983,
+              "rms_error_mm": 0.4567580102643674,
+              "p95_absolute_error_mm": 0.7122291715075514,
+              "max_absolute_error_mm": 0.7380383081946338
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.14611888174979962,
+              "rms_error_mm": 0.1734633966596894,
+              "p95_absolute_error_mm": 0.2672793900753426,
+              "max_absolute_error_mm": 0.27396367703283175
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.1082936199707289,
+              "rms_error_mm": 0.14953196058392332,
+              "p95_absolute_error_mm": 0.23311818220169553,
+              "max_absolute_error_mm": 0.2653843186676266
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.14713731945185873,
+              "rms_error_mm": 0.17421000862086217,
+              "p95_absolute_error_mm": 0.27320906837124925,
+              "max_absolute_error_mm": 0.35893856287871095
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.05337042929199158,
+              "rms_error_mm": 0.06346379828844717,
+              "p95_absolute_error_mm": 0.09881842667849394,
+              "max_absolute_error_mm": 0.1107591096942162
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10514147808659974,
+              "rms_error_mm": 0.11507247980632962,
+              "p95_absolute_error_mm": 0.16553140371601716,
+              "max_absolute_error_mm": 0.22488921804944084
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08625878732257809,
+              "rms_error_mm": 0.09076459562878385,
+              "p95_absolute_error_mm": 0.1337095837282841,
+              "max_absolute_error_mm": 0.15457986182913963
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.322060616504242,
+              "rms_error_mm": 0.3276126828737725,
+              "p95_absolute_error_mm": 0.46393249752898397,
+              "max_absolute_error_mm": 0.4856270578813806
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03689667982205869,
+              "rms_error_mm": 0.07363988054743442,
+              "p95_absolute_error_mm": 0.13011307915915324,
+              "max_absolute_error_mm": 0.14479328464148722
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.11005043690956645,
+              "rms_error_mm": 0.1333532933420372,
+              "p95_absolute_error_mm": 0.28290985229924565,
+              "max_absolute_error_mm": 0.30835805363455826
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.43477457757275306,
+              "rms_error_mm": 0.4708572324163906,
+              "p95_absolute_error_mm": 0.7278529454310165,
+              "max_absolute_error_mm": 0.75369972471427
+            }
+          ],
+          "cv_mean_rms_mm": 0.17719693287676702
+        },
+        {
+          "mode": "anisotropic",
+          "matrix_pixel_to_mm": [
+            [
+              0.02806415393271117,
+              0.0,
+              -42.43300074625929
+            ],
+            [
+              0.0,
+              0.027914400478378617,
+              -56.27543136441129
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameters": [
+            -3.573262177747859,
+            -3.5786125771339936,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.09930031971685144,
+              "rms_error_mm": 0.1366843603240988,
+              "p95_absolute_error_mm": 0.2210364957114983,
+              "max_absolute_error_mm": 0.22775254159725122
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.0645829673546127,
+              "rms_error_mm": 0.12205504062359357,
+              "p95_absolute_error_mm": 0.1899591192575714,
+              "max_absolute_error_mm": 0.22236783717792896
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.10028963324067663,
+              "rms_error_mm": 0.13726133217218073,
+              "p95_absolute_error_mm": 0.2269608190876852,
+              "max_absolute_error_mm": 0.3130979340591651
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.06023141610212849,
+              "rms_error_mm": 0.06932133992869832,
+              "p95_absolute_error_mm": 0.10564806436595849,
+              "max_absolute_error_mm": 0.11758051093654842
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.1047797124592256,
+              "rms_error_mm": 0.11474272636721085,
+              "p95_absolute_error_mm": 0.16517184600291238,
+              "max_absolute_error_mm": 0.2245318305156303
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08745083409612552,
+              "rms_error_mm": 0.0918971708327651,
+              "p95_absolute_error_mm": 0.13489592492937888,
+              "max_absolute_error_mm": 0.155763693548991
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.2862328408245505,
+              "rms_error_mm": 0.29242310437137226,
+              "p95_absolute_error_mm": 0.42761228587963107,
+              "max_absolute_error_mm": 0.4492315446163282
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.0376641601384958,
+              "rms_error_mm": 0.0740315955202928,
+              "p95_absolute_error_mm": 0.13088768735127337,
+              "max_absolute_error_mm": 0.14556901536868772
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.08722266847055639,
+              "rms_error_mm": 0.11512693449264345,
+              "p95_absolute_error_mm": 0.2596917797038184,
+              "max_absolute_error_mm": 0.28508252082656504
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.42113390409586343,
+              "rms_error_mm": 0.45819863226852064,
+              "p95_absolute_error_mm": 0.7138291504703433,
+              "max_absolute_error_mm": 0.7396421420110766
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.15033734849269542,
+              "rms_error_mm": 0.177010339005051,
+              "p95_absolute_error_mm": 0.271445987755806,
+              "max_absolute_error_mm": 0.27812741315632117
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.09647262883080449,
+              "rms_error_mm": 0.14129647719089447,
+              "p95_absolute_error_mm": 0.22144636148671934,
+              "max_absolute_error_mm": 0.253751057297082
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.1517709448681889,
+              "rms_error_mm": 0.17811786911229913,
+              "p95_absolute_error_mm": 0.2777834044948115,
+              "max_absolute_error_mm": 0.3634725819515374
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.09822356096113675,
+              "rms_error_mm": 0.10400243985822234,
+              "p95_absolute_error_mm": 0.14346661606076996,
+              "max_absolute_error_mm": 0.1553534540002488
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.15493685700080337,
+              "rms_error_mm": 0.16177273828910121,
+              "p95_absolute_error_mm": 0.21502287336030051,
+              "max_absolute_error_mm": 0.27408197247211596
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.13522823040321055,
+              "rms_error_mm": 0.13811751259278415,
+              "p95_absolute_error_mm": 0.18244464111900882,
+              "max_absolute_error_mm": 0.203211829389927
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.32171573827641403,
+              "rms_error_mm": 0.3272732871791089,
+              "p95_absolute_error_mm": 0.4635828791116985,
+              "max_absolute_error_mm": 0.48527671461062916
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.04343420866585846,
+              "rms_error_mm": 0.07715756671054813,
+              "p95_absolute_error_mm": 0.13671132446929235,
+              "max_absolute_error_mm": 0.15140109189789186
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.1093335167117927,
+              "rms_error_mm": 0.13275923946898444,
+              "p95_absolute_error_mm": 0.2821806743578449,
+              "max_absolute_error_mm": 0.3076270711196294
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.4368749929408346,
+              "rms_error_mm": 0.4728112902014906,
+              "p95_absolute_error_mm": 0.7300123545323343,
+              "max_absolute_error_mm": 0.7558643365127917
+            }
+          ],
+          "cv_mean_rms_mm": 0.19103187596084847
+        },
+        {
+          "mode": "affine",
+          "matrix_pixel_to_mm": [
+            [
+              0.02806713822354303,
+              -9.447029066705337e-05,
+              -42.24706088801228
+            ],
+            [
+              0.0,
+              0.02791032838512074,
+              -56.26722202440341
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameters": [
+            -3.5731558452292216,
+            -3.578758465644265,
+            -9.447029066705337e-05,
+            0.0,
+            0.0
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.09813439545978091,
+              "rms_error_mm": 0.1358473347531927,
+              "p95_absolute_error_mm": 0.21988490732614635,
+              "max_absolute_error_mm": 0.22660174410558653
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.06372444712791922,
+              "rms_error_mm": 0.12161057627557112,
+              "p95_absolute_error_mm": 0.18911143279477768,
+              "max_absolute_error_mm": 0.22152295115519216
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.09999161121358789,
+              "rms_error_mm": 0.13704566349861314,
+              "p95_absolute_error_mm": 0.22666661038464023,
+              "max_absolute_error_mm": 0.3128063184378078
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.0614795511535116,
+              "rms_error_mm": 0.07040642132778419,
+              "p95_absolute_error_mm": 0.10689049645653129,
+              "max_absolute_error_mm": 0.11882144467183409
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10564183809352753,
+              "rms_error_mm": 0.11552887941306847,
+              "p95_absolute_error_mm": 0.16602870994470464,
+              "max_absolute_error_mm": 0.22538352269136475
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.08900973559631055,
+              "rms_error_mm": 0.09338053251923295,
+              "p95_absolute_error_mm": 0.13644736495603443,
+              "max_absolute_error_mm": 0.15731185179662255
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.26943754814726506,
+              "rms_error_mm": 0.27598358151583385,
+              "p95_absolute_error_mm": 0.41058614978327795,
+              "max_absolute_error_mm": 0.4321701087378784
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.020464316627901814,
+              "rms_error_mm": 0.06683537487448968,
+              "p95_absolute_error_mm": 0.11352810248511566,
+              "max_absolute_error_mm": 0.12818427359944273
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.10243870665471128,
+              "rms_error_mm": 0.12711079127551284,
+              "p95_absolute_error_mm": 0.2751679783571635,
+              "max_absolute_error_mm": 0.30059702006065336
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.43764569576599427,
+              "rms_error_mm": 0.47352860518889306,
+              "p95_absolute_error_mm": 0.7308047038554145,
+              "max_absolute_error_mm": 0.7566585948551392
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.1491334091173721,
+              "rms_error_mm": 0.1759950286198016,
+              "p95_absolute_error_mm": 0.2702568516752383,
+              "max_absolute_error_mm": 0.27693909375663317
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.09536460447708489,
+              "rms_error_mm": 0.1405507704869638,
+              "p95_absolute_error_mm": 0.2203523194177101,
+              "max_absolute_error_mm": 0.25266062953521207
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.15141621345337353,
+              "rms_error_mm": 0.177817466620275,
+              "p95_absolute_error_mm": 0.277433212025813,
+              "max_absolute_error_mm": 0.36312547599108314
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.10193603776603902,
+              "rms_error_mm": 0.10751148409049009,
+              "p95_absolute_error_mm": 0.14716212986981708,
+              "max_absolute_error_mm": 0.15904451107263284
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.15807531876289332,
+              "rms_error_mm": 0.16477686574472555,
+              "p95_absolute_error_mm": 0.2181421805814808,
+              "max_absolute_error_mm": 0.2771824525185327
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.13984411096661106,
+              "rms_error_mm": 0.14263733535647968,
+              "p95_absolute_error_mm": 0.18703842838744178,
+              "max_absolute_error_mm": 0.2077958993670901
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.4456373960083053,
+              "rms_error_mm": 0.449762829116053,
+              "p95_absolute_error_mm": 0.5892077818966128,
+              "max_absolute_error_mm": 0.6111620717740358
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.044985015623324645,
+              "rms_error_mm": 0.07804913351721966,
+              "p95_absolute_error_mm": 0.13827653434882237,
+              "max_absolute_error_mm": 0.15296857002481445
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.31050180332141936,
+              "rms_error_mm": 0.31986015483520586,
+              "p95_absolute_error_mm": 0.4867884920197955,
+              "max_absolute_error_mm": 0.5127412533236679
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.5159841997087513,
+              "rms_error_mm": 0.5472000608965775,
+              "p95_absolute_error_mm": 0.8113434777422199,
+              "max_absolute_error_mm": 0.8373914120349539
+            }
+          ],
+          "cv_mean_rms_mm": 0.23041611292837913
+        },
+        {
+          "mode": "projective",
+          "matrix_pixel_to_mm": [
+            [
+              0.0281214178091599,
+              -6.702131116045017e-05,
+              -42.384468764150306
+            ],
+            [
+              0.0,
+              0.027815360289623333,
+              -56.07576634388064
+            ],
+            [
+              7.543104695324395e-06,
+              1.0696061065085726e-06,
+              0.9864384997899482
+            ]
+          ],
+          "parameters": [
+            -3.5712237933548163,
+            -3.5821668824694437,
+            -6.702131116045017e-05,
+            0.011405174299330485,
+            0.0021563259107212824
+          ],
+          "fit_success": true,
+          "ruler_errors": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.06791790055800569,
+              "rms_error_mm": 0.07849759909343579,
+              "p95_absolute_error_mm": 0.12491319896043364,
+              "max_absolute_error_mm": 0.13942963886156434
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.03382268353142464,
+              "rms_error_mm": 0.04655431976546216,
+              "p95_absolute_error_mm": 0.07818043144264042,
+              "max_absolute_error_mm": 0.0903380069560118
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.09499589529272293,
+              "rms_error_mm": 0.10146323125961688,
+              "p95_absolute_error_mm": 0.1509638885809682,
+              "max_absolute_error_mm": 0.16887378980300483
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.1334321124092163,
+              "rms_error_mm": 0.13515358773926497,
+              "p95_absolute_error_mm": 0.1698511983023609,
+              "max_absolute_error_mm": 0.17661347473592137
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10306623606681413,
+              "rms_error_mm": 0.10914442368223937,
+              "p95_absolute_error_mm": 0.15449103398772965,
+              "max_absolute_error_mm": 0.25684458419151746
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.01821704291826675,
+              "rms_error_mm": 0.03840055242440523,
+              "p95_absolute_error_mm": 0.06093352834063852,
+              "max_absolute_error_mm": 0.12747705387653419
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.2623459464130959,
+              "rms_error_mm": 0.3192146116041965,
+              "p95_absolute_error_mm": 0.6225144218624067,
+              "max_absolute_error_mm": 0.6479837019879877
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.013236906946398175,
+              "rms_error_mm": 0.04584173273623639,
+              "p95_absolute_error_mm": 0.0853582719364148,
+              "max_absolute_error_mm": 0.12671628835171234
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.08322909339479383,
+              "rms_error_mm": 0.0938227054397965,
+              "p95_absolute_error_mm": 0.15817459416998503,
+              "max_absolute_error_mm": 0.1831670950045492
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.36509501847447123,
+              "rms_error_mm": 0.3867637306088428,
+              "p95_absolute_error_mm": 0.5750305792328211,
+              "max_absolute_error_mm": 0.5909746209618447
+            }
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.11464592311759217,
+              "rms_error_mm": 0.12030011362987501,
+              "p95_absolute_error_mm": 0.16714440562912322,
+              "max_absolute_error_mm": 0.18112016888761673
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.05621644536221823,
+              "rms_error_mm": 0.06447367565910254,
+              "p95_absolute_error_mm": 0.09989520758208635,
+              "max_absolute_error_mm": 0.1123364934122204
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.1683453188870855,
+              "rms_error_mm": 0.17212529880705513,
+              "p95_absolute_error_mm": 0.2243525402517676,
+              "max_absolute_error_mm": 0.2426326380858388
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.20021623488225204,
+              "rms_error_mm": 0.20128454221133835,
+              "p95_absolute_error_mm": 0.23415583462953363,
+              "max_absolute_error_mm": 0.2403354223505776
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.14875628705924818,
+              "rms_error_mm": 0.152962968538679,
+              "p95_absolute_error_mm": 0.19969814201963032,
+              "max_absolute_error_mm": 0.30244016871617063
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.052478130652631697,
+              "rms_error_mm": 0.0625489040274054,
+              "p95_absolute_error_mm": 0.09182201715711588,
+              "max_absolute_error_mm": 0.16240029509941145
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.42137073358855404,
+              "rms_error_mm": 0.45336118885179727,
+              "p95_absolute_error_mm": 0.7585838127905704,
+              "max_absolute_error_mm": 0.7824405583127554
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.030174904559068804,
+              "rms_error_mm": 0.06115923074955113,
+              "p95_absolute_error_mm": 0.11715908088021897,
+              "max_absolute_error_mm": 0.16085825549191846
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.27478699179312976,
+              "rms_error_mm": 0.2785329302536382,
+              "p95_absolute_error_mm": 0.3864001204042424,
+              "max_absolute_error_mm": 0.41638842172455703
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.4517386181834597,
+              "rms_error_mm": 0.47098115352622527,
+              "p95_absolute_error_mm": 0.670556290098675,
+              "max_absolute_error_mm": 0.6874367570218016
+            }
+          ],
+          "cv_mean_rms_mm": 0.20377300062546672
+        },
+        {
+          "mode": "radial1",
+          "parameters": [
+            -3.5774588907813083,
+            0.0009228184176863974
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.14760925873718003,
+              "rms_error_mm": 0.17468890970166873,
+              "p95_absolute_error_mm": 0.25515608478000296,
+              "max_absolute_error_mm": 0.26805285971952486
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.12172972803495553,
+              "rms_error_mm": 0.15903108524641088,
+              "p95_absolute_error_mm": 0.2277620899435843,
+              "max_absolute_error_mm": 0.2433190931248621
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.15969152027921948,
+              "rms_error_mm": 0.18477848204971034,
+              "p95_absolute_error_mm": 0.29829657003809906,
+              "max_absolute_error_mm": 0.3905409698160476
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.050312920353005476,
+              "rms_error_mm": 0.06527123452215597,
+              "p95_absolute_error_mm": 0.10815980278169997,
+              "max_absolute_error_mm": 0.11686376581091729
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.10069698067968602,
+              "rms_error_mm": 0.11547117387677516,
+              "p95_absolute_error_mm": 0.17666950897106037,
+              "max_absolute_error_mm": 0.1823197336034692
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.11037612782570817,
+              "rms_error_mm": 0.11350924088995731,
+              "p95_absolute_error_mm": 0.14398350384032527,
+              "max_absolute_error_mm": 0.2386101372135272
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.3265108552956732,
+              "rms_error_mm": 0.33325324248388954,
+              "p95_absolute_error_mm": 0.49274831837463057,
+              "max_absolute_error_mm": 0.5116625235994725
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03645857044387185,
+              "rms_error_mm": 0.07632301686546585,
+              "p95_absolute_error_mm": 0.13010315912131742,
+              "max_absolute_error_mm": 0.14756699435312726
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.1268178521835089,
+              "rms_error_mm": 0.15838471236362733,
+              "p95_absolute_error_mm": 0.35373879191558294,
+              "max_absolute_error_mm": 0.37216477851998064
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.4347547748938233,
+              "rms_error_mm": 0.47098260183926405,
+              "p95_absolute_error_mm": 0.7279091157750127,
+              "max_absolute_error_mm": 0.7535960095848857
+            }
+          ],
+          "cv_mean_rms_mm": 0.1851693699838925
+        },
+        {
+          "mode": "radial2",
+          "parameters": [
+            -3.579717643164656,
+            0.008990130693849864,
+            -0.0055188929459964375
+          ],
+          "leave_one_photo_out": [
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+              "interval_mm": 10,
+              "intervals": 65,
+              "mean_error_mm": -0.14595265601471494,
+              "rms_error_mm": 0.17347819243019907,
+              "p95_absolute_error_mm": 0.2517329496076425,
+              "max_absolute_error_mm": 0.2645502889608622
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+              "interval_mm": 10,
+              "intervals": 72,
+              "mean_error_mm": -0.12135623928134999,
+              "rms_error_mm": 0.16361853871463242,
+              "p95_absolute_error_mm": 0.21769865338586092,
+              "max_absolute_error_mm": 0.22200350448158268
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+              "interval_mm": 10,
+              "intervals": 75,
+              "mean_error_mm": -0.16911825146600482,
+              "rms_error_mm": 0.194597425667893,
+              "p95_absolute_error_mm": 0.34517564916200844,
+              "max_absolute_error_mm": 0.45683959042794164
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+              "interval_mm": 10,
+              "intervals": 103,
+              "mean_error_mm": -0.046589523734513416,
+              "rms_error_mm": 0.06623360770876331,
+              "p95_absolute_error_mm": 0.11214368106391799,
+              "max_absolute_error_mm": 0.1166387673106577
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.09816524362602565,
+              "rms_error_mm": 0.11533082033281761,
+              "p95_absolute_error_mm": 0.17889592040881164,
+              "max_absolute_error_mm": 0.1891085302115254
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+              "interval_mm": 10,
+              "intervals": 104,
+              "mean_error_mm": -0.15083782037146143,
+              "rms_error_mm": 0.1860955482992036,
+              "p95_absolute_error_mm": 0.39442779888404506,
+              "max_absolute_error_mm": 0.5626936225975694
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+              "interval_mm": 10,
+              "intervals": 119,
+              "mean_error_mm": 0.3255294606327383,
+              "rms_error_mm": 0.33184710879434876,
+              "p95_absolute_error_mm": 0.4684108464335387,
+              "max_absolute_error_mm": 0.4945050405194795
+            },
+            {
+              "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+              "interval_mm": 10,
+              "intervals": 85,
+              "mean_error_mm": 0.03953604815340343,
+              "rms_error_mm": 0.07781254059605842,
+              "p95_absolute_error_mm": 0.13937642384290427,
+              "max_absolute_error_mm": 0.15196033276946075
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+              "interval_mm": 10,
+              "intervals": 125,
+              "mean_error_mm": 0.12446809121159105,
+              "rms_error_mm": 0.15515219356729,
+              "p95_absolute_error_mm": 0.3411088929419101,
+              "max_absolute_error_mm": 0.36329677063554655
+            },
+            {
+              "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+              "interval_mm": 10,
+              "intervals": 63,
+              "mean_error_mm": 0.44441174797813726,
+              "rms_error_mm": 0.47981775300208834,
+              "p95_absolute_error_mm": 0.7487666447228395,
+              "max_absolute_error_mm": 0.7795434645225363
+            }
+          ],
+          "cv_mean_rms_mm": 0.19439837291132944
+        }
+      ],
+      "photo_scales": [
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+          "px_per_mm": 35.237931036932345,
+          "tick_count": 79,
+          "span_mm": 82,
+          "residual_rms_px": 3.9539707507694235,
+          "residual_p95_px": 6.674451171553526
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+          "px_per_mm": 35.390261053279815,
+          "tick_count": 82,
+          "span_mm": 81,
+          "residual_rms_px": 4.431706835188251,
+          "residual_p95_px": 7.438647104334178
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+          "px_per_mm": 35.26923389383935,
+          "tick_count": 85,
+          "span_mm": 84,
+          "residual_rms_px": 4.078661276425299,
+          "residual_p95_px": 6.963884131380995
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+          "px_per_mm": 35.592989151857786,
+          "tick_count": 113,
+          "span_mm": 112,
+          "residual_rms_px": 1.8661243405072938,
+          "residual_p95_px": 3.230831633648537
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+          "px_per_mm": 35.4301712495484,
+          "tick_count": 114,
+          "span_mm": 113,
+          "residual_rms_px": 2.5369973232942136,
+          "residual_p95_px": 4.204950099916435
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+          "px_per_mm": 35.491918375679354,
+          "tick_count": 114,
+          "span_mm": 113,
+          "residual_rms_px": 1.1893104198857123,
+          "residual_p95_px": 1.887009846315635
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+          "px_per_mm": 36.7517595573722,
+          "tick_count": 129,
+          "span_mm": 128,
+          "residual_rms_px": 2.9453016717994607,
+          "residual_p95_px": 6.191401000097979
+        },
+        {
+          "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+          "px_per_mm": 35.869592705891755,
+          "tick_count": 95,
+          "span_mm": 94,
+          "residual_rms_px": 3.2202539474804404,
+          "residual_p95_px": 5.410382679239092
+        },
+        {
+          "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+          "px_per_mm": 36.03690886227196,
+          "tick_count": 135,
+          "span_mm": 134,
+          "residual_rms_px": 4.584955074076872,
+          "residual_p95_px": 9.377365145586191
+        },
+        {
+          "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+          "px_per_mm": 37.25365727236672,
+          "tick_count": 73,
+          "span_mm": 72,
+          "residual_rms_px": 7.006784391889837,
+          "residual_p95_px": 13.045507670716278
+        }
+      ],
+      "total_detected_ticks": 1019,
+      "ruler_validation_worst_photo_p95_mm_per_10mm": 0.7278529454310165,
+      "relative_conservative_scale_envelope": 0.07278529454310165,
+      "independent_caliper_validation": false,
+      "instructor_approved": false,
+      "uncertainty_scope": "Ruler interval/image-position consistency only; repeated overlapping intervals are not independent samples. No caliper MAE or height-parallax bound.",
+      "supported_input": "Original fixed-collection 3024x4032 pixels; geometry runs on original-frame ROIs, not letterboxed network input",
+      "camo_transform": "NOT_CONFIRMED: photo EXIF has 1.57mm ultrawide + digital zoom 2.5802; do not infer Camo field of view from resolution",
+      "height_difference": "Ruler surface/part measurement planes may differ; distance and specimen heights are not recorded, so no invented parallax correction"
+    },
+    "decision_stage": "detection_only_REVIEW; no PASS/FAIL decision",
+    "ultralytics_version": "8.3.236",
+    "candidate_config_sha256": "6269179ca8dbb1d1e3c5e00dc65c47c6f75eb8caea5c5520923841470904b9a8",
+    "initialization": {
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "bytes": 5613764,
+      "path": "outputs/baseline3_v2/pretrained/yolo11n.pt",
+      "source": "Official Ultralytics COCO-pretrained YOLO11n; same initialization SHA as historical P06 trainer",
+      "local_mechanical_training": false
+    },
+    "selection_scope": "Train/Validation only",
+    "model": "baseline3",
+    "baseline3_mode": "size_repaired_development",
+    "business_decision_owner": "baseline3_adapter",
+    "deployment_stage": "DEVELOPMENT_ONLY_NOT_PHYSICALLY_ACCEPTED",
+    "size_verification": "Measured original pixels + empirical same-specimen development bands; provisional millimetres",
+    "acceptance_confirmed": false,
+    "independent_caliper_validation": false,
+    "instructor_approved": false,
+    "measurement_strategy": "Stage2 exterior-supported screw cross-sections; target-owned nut/annulus contours; quality-gated size rejection",
+    "foreground": "P06 threshold + illumination correction + measured-shape foreground conservation",
+    "size_bands": "Unchanged frozen v1 numerical ranges; no widening or new fit",
+    "count_decision_score": "none: decision derived from observed vs expected counts; object scores unchanged",
+    "registry": {
+      "path": "config/model_registry.json",
+      "sha256": "c7032745438eb3661b7bb6029e83cd9bbdd073e7d1c778fad930e2478eed7a5a",
+      "frozen_version": "size_repair_v2 / 1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+      "physical_acceptance": "NOT_VERIFIED",
+      "scene_guard": false,
+      "no_fallback": true
+    }
+  },
+  "cases": [
+    {
+      "image_id": "A001.jpg",
+      "status": "PASS",
+      "gui_worker_batch_consistent": true
+    },
+    {
+      "image_id": "A200.jpg",
+      "status": "FAIL",
+      "gui_worker_batch_consistent": true
+    },
+    {
+      "image_id": "A004.jpg",
+      "status": "REVIEW",
+      "gui_worker_batch_consistent": true
+    }
+  ],
+  "invalid_frames": [
+    "REJECTED",
+    "REJECTED",
+    "REJECTED"
+  ],
+  "no_production_mock": true
+}

@@ -1,0 +1,26 @@
+{
+  "status": "NOT_VERIFIED",
+  "top_level_pinned_metadata": "All requested versions located online",
+  "resolution": "pip --dry-run started downloading full wheel payloads; stopped before installation",
+  "reason": "Avoid duplicating large CUDA dependency downloads for a metadata check; full clean install and prediction remain unverified",
+  "stopped_processes": [
+    {
+      "pid": 53948,
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--dry-run",
+        "--ignore-installed",
+        "--no-deps",
+        "-r",
+        "requirements.txt",
+        "--report",
+        "outputs/final_integration/clean_dependency_resolution.json"
+      ]
+    }
+  ],
+  "offline_install": "FAILED_NO_LOCAL_WHEELS",
+  "packages_installed_into_clean_env": false
+}

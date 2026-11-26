@@ -1,0 +1,1032 @@
+{
+  "exact_groups": [],
+  "near_candidates": [
+    {
+      "image_a": "A004.jpg",
+      "image_b": "A005.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 15.11123,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A007.jpg",
+      "image_b": "A008.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 21.39392,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A015.jpg",
+      "image_b": "A032.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 24.84994,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A019.jpg",
+      "image_b": "A020.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.07634,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A022.jpg",
+      "image_b": "A023.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 9.9667,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A026.jpg",
+      "image_b": "A027.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 10.52785,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A032.jpg",
+      "image_b": "A033.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 9.84432,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A032.jpg",
+      "image_b": "C05.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 27.45717,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A039.jpg",
+      "image_b": "A040.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 8.04176,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A039.jpg",
+      "image_b": "A041.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 11.58747,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A040.jpg",
+      "image_b": "A041.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 7.85408,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A044.jpg",
+      "image_b": "A045.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 10.23765,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A059.jpg",
+      "image_b": "A060.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 6.36628,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A061.jpg",
+      "image_b": "A062.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 16.18393,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A066.jpg",
+      "image_b": "A067.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 8.09241,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A068.jpg",
+      "image_b": "A069.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.21444,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A071.jpg",
+      "image_b": "A072.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 10.11443,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A088.jpg",
+      "image_b": "A089.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 6.25709,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A092.jpg",
+      "image_b": "A093.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 6.40099,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A100.jpg",
+      "image_b": "A102.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 15.19392,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A101.jpg",
+      "image_b": "A102.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 8.85736,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A105.jpg",
+      "image_b": "A106.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 16.18081,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A110.jpg",
+      "image_b": "A111.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 11.9876,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A110.jpg",
+      "image_b": "A114.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 18.9899,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A111.jpg",
+      "image_b": "A114.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 17.77383,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A111.jpg",
+      "image_b": "B02.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 22.49199,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A112.jpg",
+      "image_b": "A113.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 9.51686,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A113.jpg",
+      "image_b": "A114.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 9.43478,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A123.jpg",
+      "image_b": "A124.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 15.40184,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A124.jpg",
+      "image_b": "A125.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 9.70065,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A135.jpg",
+      "image_b": "A136.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 12.57452,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A137.jpg",
+      "image_b": "A138.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.55568,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A141.jpg",
+      "image_b": "A142.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 7.90101,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A141.jpg",
+      "image_b": "A143.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 7.90282,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A142.jpg",
+      "image_b": "A143.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 7.69602,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A143.jpg",
+      "image_b": "A144.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 13.30167,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A146.jpg",
+      "image_b": "A147.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 8.40756,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A149.jpg",
+      "image_b": "A151.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 16.50123,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A149.jpg",
+      "image_b": "A152.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 17.04157,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A161.jpg",
+      "image_b": "A162.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 9.14689,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A165.jpg",
+      "image_b": "A166.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 12.71358,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A169.jpg",
+      "image_b": "A170.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 13.86549,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A169.jpg",
+      "image_b": "A171.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 17.1098,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A169.jpg",
+      "image_b": "A173.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 17.53993,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A170.jpg",
+      "image_b": "A171.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 11.83208,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A170.jpg",
+      "image_b": "A172.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 13.4881,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A171.jpg",
+      "image_b": "A172.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 9.42515,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A171.jpg",
+      "image_b": "A173.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 15.50517,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A176.jpg",
+      "image_b": "A177.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 6.98242,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A180.jpg",
+      "image_b": "A181.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.37579,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A180.jpg",
+      "image_b": "A182.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 6.88972,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A180.jpg",
+      "image_b": "A183.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.12918,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A180.jpg",
+      "image_b": "A185.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 16.66529,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A181.jpg",
+      "image_b": "A182.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 6.826,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A181.jpg",
+      "image_b": "A183.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.13862,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A181.jpg",
+      "image_b": "A185.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.3775,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A182.jpg",
+      "image_b": "A183.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 6.64656,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A183.jpg",
+      "image_b": "A185.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 14.67852,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A183.jpg",
+      "image_b": "A186.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 11.96906,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A184.jpg",
+      "image_b": "A185.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 7.20638,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A184.jpg",
+      "image_b": "A186.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 11.19565,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A184.jpg",
+      "image_b": "A187.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 10.51257,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A185.jpg",
+      "image_b": "A186.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 8.73593,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A186.jpg",
+      "image_b": "A187.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 7.08457,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A189.jpg",
+      "image_b": "A190.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 6.42849,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A195.jpg",
+      "image_b": "A196.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 9.996,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A197.jpg",
+      "image_b": "A198.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.27959,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A197.jpg",
+      "image_b": "A199.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 10.19112,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A198.jpg",
+      "image_b": "A199.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 9.42418,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "A208.jpg",
+      "image_b": "A209.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.39871,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "B04.jpg",
+      "image_b": "B05.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.00522,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "B16.jpg",
+      "image_b": "B39.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 19.55494,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "B27.jpg",
+      "image_b": "B28.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 11.723,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "B28.jpg",
+      "image_b": "B29.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 9.2452,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "B28.jpg",
+      "image_b": "B30.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 13.88199,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "B29.jpg",
+      "image_b": "B30.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 10.64292,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "C03.jpg",
+      "image_b": "C04.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 16.85328,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "C05.jpg",
+      "image_b": "C06.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.26649,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "C17.jpg",
+      "image_b": "C18.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 16.64474,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "C23.jpg",
+      "image_b": "C25.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 19.33893,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "C28.jpg",
+      "image_b": "C29.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 6.88011,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "D07.jpg",
+      "image_b": "D08.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 12.41717,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "D26.jpg",
+      "image_b": "D27.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 15.58861,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "D27.jpg",
+      "image_b": "D28.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 12.2198,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "D46.jpg",
+      "image_b": "D47.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 18.04665,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "D46.jpg",
+      "image_b": "D48.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 24.27846,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E05.jpg",
+      "image_b": "E06.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.16098,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E06.jpg",
+      "image_b": "E07.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 19.26057,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E17.jpg",
+      "image_b": "E18.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 6.75994,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E17.jpg",
+      "image_b": "E19.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 12.77614,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E18.jpg",
+      "image_b": "E19.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 11.07233,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E30.jpg",
+      "image_b": "E31.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 12.73624,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "E41.jpg",
+      "image_b": "E42.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 24.88033,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G03.jpg",
+      "image_b": "G04.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 0.63103,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G03.jpg",
+      "image_b": "G05.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 1.27829,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G03.jpg",
+      "image_b": "G06.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 1.07017,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G03.jpg",
+      "image_b": "G07.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 1.28506,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G04.jpg",
+      "image_b": "G05.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 1.34611,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G04.jpg",
+      "image_b": "G06.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 0.97778,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G04.jpg",
+      "image_b": "G07.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 1.29725,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G05.jpg",
+      "image_b": "G06.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 1.09017,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G05.jpg",
+      "image_b": "G07.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 0.6542,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G06.jpg",
+      "image_b": "G07.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 0.90638,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "G12.jpg",
+      "image_b": "H072.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 19.64617,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H003.jpg",
+      "image_b": "H004.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 16.82616,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H007.jpg",
+      "image_b": "H008.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 14.42909,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H010.jpg",
+      "image_b": "H014.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 25.27679,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H012.jpg",
+      "image_b": "H013.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 11.74712,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H013.jpg",
+      "image_b": "H018.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 20.96927,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H014.jpg",
+      "image_b": "H017.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 24.21789,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H016.jpg",
+      "image_b": "H017.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 10.10738,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H016.jpg",
+      "image_b": "H018.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 17.93819,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H019.jpg",
+      "image_b": "H020.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 16.36135,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H022.jpg",
+      "image_b": "H023.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 12.96866,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H024.jpg",
+      "image_b": "H025.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 10.17926,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H031.jpg",
+      "image_b": "H072.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 20.19754,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H033.jpg",
+      "image_b": "H034.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 8.52288,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H036.jpg",
+      "image_b": "H037.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 18.90662,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H040.jpg",
+      "image_b": "H041.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 6.59081,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H044.jpg",
+      "image_b": "H045.jpg",
+      "phash_hamming": 2,
+      "gray64_rmse": 7.89363,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H046.jpg",
+      "image_b": "H048.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 20.72925,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H055.jpg",
+      "image_b": "H056.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 11.97681,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H067.jpg",
+      "image_b": "H068.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 19.61145,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H092.jpg",
+      "image_b": "H093.jpg",
+      "phash_hamming": 4,
+      "gray64_rmse": 18.97333,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H092.jpg",
+      "image_b": "H095.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 16.86368,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H096.jpg",
+      "image_b": "H098.jpg",
+      "phash_hamming": 6,
+      "gray64_rmse": 18.93137,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    },
+    {
+      "image_a": "H117.jpg",
+      "image_b": "H118.jpg",
+      "phash_hamming": 8,
+      "gray64_rmse": 17.8735,
+      "decision": "CANDIDATE_ONLY_NOT_PROOF",
+      "reason": "Background/identical counts do not establish shared scene"
+    }
+  ],
+  "empty_background_group": [
+    "G01.jpg",
+    "G02.jpg",
+    "G03.jpg",
+    "G04.jpg",
+    "G05.jpg",
+    "G06.jpg",
+    "G07.jpg"
+  ],
+  "phash_method": "32x32 grayscale DCT, upper 8x8, median of 63 AC coefficients; Hamming <=8",
+  "cropped_derivatives": "pHash can find rescaling/recompression; arbitrary crops and moved objects require visual review"
+}

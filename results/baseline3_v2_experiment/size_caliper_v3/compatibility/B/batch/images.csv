@@ -1,0 +1,4 @@
+image_id,model_id,status,predicted_label,prediction_score,score_type,non_catalogue_count
+A001.jpg,baseline3,REVIEW,,,none,0
+A200.jpg,baseline3,REVIEW,,,none,0
+A004.jpg,baseline3,REVIEW,,,none,0

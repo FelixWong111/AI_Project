@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--dataset', required=True, type=Path)
 parser.add_argument('--predictions-dir', required=True, type=Path)
 parser.add_argument('--output', required=True, type=Path)
+parser.add_argument('--details-output',type=Path,help='Additional saved-prediction errors/count differences; does not run inference')
 args = parser.parse_args()
 data = args.dataset
 out = args.predictions_dir
@@ -43,6 +44,7 @@ stats = {c: Counter() for c in range(6)}
 mae = {c: [] for c in range(6)}
 vector_ok = []
 status_counts = Counter()
+errors=[];count_differences=[]
 for image in sorted(manifest):
     if manifest[image]['annotation_status'].upper() == 'REVIEW':
         continue
@@ -57,6 +59,7 @@ for image in sorted(manifest):
     if any(counts[image][c] != pr_counts[c] for c in range(6)):
         raise ValueError(f'Objects and counts disagree: {image}')
     vector_ok.append(all(gt_counts[c] == pr_counts[c] for c in range(1,6)))
+    for c in range(6):count_differences.append(dict(image_id=image,class_id=c,truth_count=gt_counts[c],observed_count=pr_counts[c],difference=pr_counts[c]-gt_counts[c],status=status))
     for c in range(6):
         gt = [r for r in truth[image] if int(r['class_id']) == c]
         ds = sorted((r for r in pred[image] if int(r['class_id']) == c),
@@ -72,7 +75,12 @@ for image in sorted(manifest):
                 matched.add(candidates[0][1]); stats[c]['tp'] += 1
             else:
                 stats[c]['fp'] += 1
+                overlaps=[(iou(b,tuple(float(g[k]) for k in ('xmin','ymin','xmax','ymax'))),g) for g in truth[image]]
+                best=max(overlaps,key=lambda x:x[0]) if overlaps else (0,None)
+                errors.append(dict(image_id=image,event='FP',class_id=c,detection_id=det['detection_id'],score=float(det['score']),
+                    overlap_true_class=int(best[1]['class_id']) if best[0]>=.5 else None,overlap_iou=best[0]))
         stats[c]['fn'] += len(gt) - len(matched)
+        errors.extend(dict(image_id=image,event='FN',class_id=c,object_id=g['object_id']) for n,g in enumerate(gt) if n not in matched)
         mae[c].append(abs(gt_counts[c]-pr_counts[c]))
 report = {'scope': 'Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes',
           'image_count': sum(status_counts.values()), 'prediction_status_counts': dict(status_counts),
@@ -82,6 +90,13 @@ for c, s in stats.items():
     report['classes'][str(c)].update(rates(s['tp'],s['fp'],s['fn']))
     report['classes'][str(c)]['count_mae'] = sum(mae[c])/len(mae[c])
 if args.output.exists():
-    raise ValueError('Output already exists; use a new path')
-args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    if not args.details_output or json.loads(args.output.read_text(encoding='utf8'))!=report:
+        raise ValueError('Output already exists; use a new path')
+else:args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+if args.details_output:
+    if args.details_output.exists():raise ValueError('Details already exist; preserve previous evidence')
+    args.details_output.write_text(json.dumps(dict(scope='Postprocess saved predictions only; existing summary unchanged',
+        errors=errors,count_differences=count_differences,
+        permitted_rejected_as_id0=[e for e in errors if e['event']=='FP' and e['class_id']==0 and e['overlap_true_class'] in (1,2,3,4,5)],
+        non_catalogue_misses=[e for e in errors if e['event']=='FN' and e['class_id']==0]),ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 print(json.dumps(report, ensure_ascii=False, indent=2))

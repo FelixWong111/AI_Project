@@ -1,0 +1,453 @@
+{
+  "records": [
+    {
+      "version": "old",
+      "mode": "raw",
+      "image_id": "A005.jpg",
+      "status": "PASS",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "raw",
+      "image_id": "B09.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "raw",
+      "image_id": "D02.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "raw",
+      "image_id": "E04.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 2,
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "raw",
+      "image_id": "G11.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "raw",
+      "image_id": "G01.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "zero_order_status": "PASS",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "full",
+      "image_id": "A005.jpg",
+      "status": "REVIEW",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "full",
+      "image_id": "B09.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "full",
+      "image_id": "D02.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "full",
+      "image_id": "E04.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 2,
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "full",
+      "image_id": "G11.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "old",
+      "mode": "full",
+      "image_id": "G01.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "zero_order_status": "REVIEW",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "raw",
+      "image_id": "A005.jpg",
+      "status": "PASS",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "raw",
+      "image_id": "B09.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "raw",
+      "image_id": "D02.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "raw",
+      "image_id": "E04.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "raw",
+      "image_id": "G11.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "raw",
+      "image_id": "G01.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "zero_order_status": "PASS",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "full",
+      "image_id": "A005.jpg",
+      "status": "REVIEW",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "full",
+      "image_id": "B09.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "full",
+      "image_id": "D02.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "full",
+      "image_id": "E04.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "full",
+      "image_id": "G11.jpg",
+      "status": "FAIL",
+      "id0": 1,
+      "observed": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "zero_order_status": "FAIL",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    },
+    {
+      "version": "new",
+      "mode": "full",
+      "image_id": "G01.jpg",
+      "status": "FAIL",
+      "id0": 0,
+      "observed": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "zero_order_status": "REVIEW",
+      "observations_unchanged": true,
+      "physical_size_acceptance": false
+    }
+  ],
+  "worker_and_render": true,
+  "batch_dynamic_counts": true,
+  "app_image_video": true,
+  "camera": "NOT_RUN",
+  "baseline12": {
+    "baseline1": {
+      "real_load": true,
+      "normal_status": "FAIL",
+      "unsupported_counts": true
+    },
+    "baseline2": {
+      "real_load": true,
+      "normal_status": "FAIL",
+      "unsupported_counts": true
+    }
+  },
+  "synthetic_or_training_diagnostics_not_performance": true
+}

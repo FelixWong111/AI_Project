@@ -1,0 +1,17 @@
+{
+  "modules": [
+    "test_baseline3_metrology",
+    "test_baseline3_size_integration",
+    "test_baseline3_adapter",
+    "test_p06_geometry",
+    "test_p06_foreground",
+    "test_p06_measurement_policy",
+    "test_work_orders",
+    "test_p07_real_integration"
+  ],
+  "run": 86,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "physical_acceptance": false
+}

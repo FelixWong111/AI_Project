@@ -1,0 +1,1489 @@
+{
+  "scope": "Postprocess saved predictions only; existing summary unchanged",
+  "errors": [
+    {
+      "image_id": "A198.jpg",
+      "event": "FP",
+      "class_id": 4,
+      "detection_id": "4",
+      "score": 0.6628120541572571,
+      "overlap_true_class": null,
+      "overlap_iou": 0.49640687905184044
+    },
+    {
+      "image_id": "A198.jpg",
+      "event": "FN",
+      "class_id": 4,
+      "object_id": "5"
+    },
+    {
+      "image_id": "B04.jpg",
+      "event": "FP",
+      "class_id": 0,
+      "detection_id": "0",
+      "score": 0.7554113268852234,
+      "overlap_true_class": 2,
+      "overlap_iou": 0.849020904371286
+    },
+    {
+      "image_id": "B04.jpg",
+      "event": "FN",
+      "class_id": 2,
+      "object_id": "2"
+    }
+  ],
+  "count_differences": [
+    {
+      "image_id": "A019.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A019.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A019.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A019.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A019.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A019.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A026.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A026.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A026.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A026.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A026.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A026.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A061.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A061.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A061.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A061.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A061.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A061.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A084.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A084.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A084.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A084.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A084.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A084.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A099.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A099.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A099.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A099.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A099.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A099.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A102.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A102.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A102.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A102.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A102.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A102.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A109.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A109.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A109.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A109.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A109.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A109.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A131.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A131.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A131.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A131.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A131.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A131.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A147.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A147.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A147.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A147.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A147.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A147.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A154.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A154.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A154.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A154.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A154.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A154.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "REVIEW"
+    },
+    {
+      "image_id": "A162.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A162.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A162.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A162.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A162.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A162.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A170.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A170.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A170.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A170.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A170.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A170.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A194.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A194.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A194.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A194.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A194.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A194.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A198.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A198.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A198.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A198.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A198.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A198.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A204.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A204.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A204.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A204.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A204.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "A204.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "image_id": "B04.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 1,
+      "difference": 1,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B04.jpg",
+      "class_id": 1,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B04.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 0,
+      "difference": -1,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B04.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B04.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B04.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B16.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B16.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B16.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B16.jpg",
+      "class_id": 3,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B16.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B16.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B31.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B31.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B31.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B31.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B31.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "B31.jpg",
+      "class_id": 5,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C03.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C03.jpg",
+      "class_id": 1,
+      "truth_count": 2,
+      "observed_count": 2,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C03.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C03.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C03.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C03.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C14.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C14.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C14.jpg",
+      "class_id": 2,
+      "truth_count": 2,
+      "observed_count": 2,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C14.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C14.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C14.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C33.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C33.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C33.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C33.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C33.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "C33.jpg",
+      "class_id": 5,
+      "truth_count": 2,
+      "observed_count": 2,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D10.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D10.jpg",
+      "class_id": 1,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D10.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D10.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D10.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D10.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D37.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D37.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D37.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D37.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D37.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D37.jpg",
+      "class_id": 5,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D43.jpg",
+      "class_id": 0,
+      "truth_count": 2,
+      "observed_count": 2,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D43.jpg",
+      "class_id": 1,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D43.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D43.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D43.jpg",
+      "class_id": 4,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "D43.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E11.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E11.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E11.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E11.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E11.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E11.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E23.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E23.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E23.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E23.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E23.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E23.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E30.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E30.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E30.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E30.jpg",
+      "class_id": 3,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E30.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "E30.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F07.jpg",
+      "class_id": 0,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F07.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F07.jpg",
+      "class_id": 2,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F07.jpg",
+      "class_id": 3,
+      "truth_count": 2,
+      "observed_count": 2,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F07.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F07.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F09.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F09.jpg",
+      "class_id": 1,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F09.jpg",
+      "class_id": 2,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F09.jpg",
+      "class_id": 3,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F09.jpg",
+      "class_id": 4,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "F09.jpg",
+      "class_id": 5,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "G13.jpg",
+      "class_id": 0,
+      "truth_count": 1,
+      "observed_count": 1,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "G13.jpg",
+      "class_id": 1,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "G13.jpg",
+      "class_id": 2,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "G13.jpg",
+      "class_id": 3,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "G13.jpg",
+      "class_id": 4,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    },
+    {
+      "image_id": "G13.jpg",
+      "class_id": 5,
+      "truth_count": 0,
+      "observed_count": 0,
+      "difference": 0,
+      "status": "FAIL"
+    }
+  ],
+  "permitted_rejected_as_id0": [
+    {
+      "image_id": "B04.jpg",
+      "event": "FP",
+      "class_id": 0,
+      "detection_id": "0",
+      "score": 0.7554113268852234,
+      "overlap_true_class": 2,
+      "overlap_iou": 0.849020904371286
+    }
+  ],
+  "non_catalogue_misses": []
+}

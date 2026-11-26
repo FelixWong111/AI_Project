@@ -1,0 +1,96 @@
+{
+  "scope": "New collection data audit only; not model performance",
+  "dataset_status": "CANDIDATE_NOT_READY",
+  "files": [
+    {
+      "path": "annotation_resolutions.json",
+      "sha256": "483b6a67794067a01d1105c6a806782b302c618eb0cf56d7bb24bd8261f28821",
+      "size_bytes": 949,
+      "source": "task verification or user confirmation"
+    },
+    {
+      "path": "baseline1_data_check.log",
+      "sha256": "b1985afe04613826c2485c183f867736864d45470c79407576083cbf06a1f2fe",
+      "size_bytes": 2746,
+      "source": "task verification or user confirmation"
+    },
+    {
+      "path": "baseline2_data_check.log",
+      "sha256": "b1985afe04613826c2485c183f867736864d45470c79407576083cbf06a1f2fe",
+      "size_bytes": 2746,
+      "source": "task verification or user confirmation"
+    },
+    {
+      "path": "dataset_statistics.json",
+      "sha256": "4d34c92d095655a9b70e971cceedd7abe504a80cb6f26f71c5a8278f38036cb3",
+      "size_bytes": 6746,
+      "source": "data/mechanical_components_v2/manifests/dataset_statistics.json"
+    },
+    {
+      "path": "duplicates.json",
+      "sha256": "4d2da566b75cc271f8d37ba8a1160e419f7e9651b6bb9fd6eb22940a25857e62",
+      "size_bytes": 32025,
+      "source": "data/mechanical_components_v2/audit/duplicates.json"
+    },
+    {
+      "path": "executed_commands.json",
+      "sha256": "7af8ae37e2d625b160c3fd921b141f50a59e88fb3c09068116423d0e33e16567",
+      "size_bytes": 1680,
+      "source": "data/mechanical_components_v2/audit/executed_commands.json"
+    },
+    {
+      "path": "file_pairing.json",
+      "sha256": "0161c6de52c2c97dde0f7736a23a9e3f967eae06c0b7048a2ab81669efb6406f",
+      "size_bytes": 108,
+      "source": "data/mechanical_components_v2/audit/file_pairing.json"
+    },
+    {
+      "path": "format_acceptance.json",
+      "sha256": "8236ab8213b6ef6a79fb3d8a5facb400cfb03a618d69096bb9b26359c949ada0",
+      "size_bytes": 830,
+      "source": "data/mechanical_components_v2/audit/acceptance.json"
+    },
+    {
+      "path": "interface_acceptance.json",
+      "sha256": "cc76e896290431fc909cd859388b44e46848039fd0c510182581901f6bc8d5f2",
+      "size_bytes": 3159,
+      "source": "data/mechanical_components_v2/audit/interface_acceptance.json"
+    },
+    {
+      "path": "old_data_comparison.json",
+      "sha256": "01f137ed72d37a5b7ae8f0027ac6d5a8ee1285f21627186cb0cde8e379a60596",
+      "size_bytes": 2940,
+      "source": "data/mechanical_components_v2/audit/old_data_comparison.json"
+    },
+    {
+      "path": "p08_data_checks.json",
+      "sha256": "11e984252a3cf8247d431099d245446f18de61cef117e61cd77d340564445a06",
+      "size_bytes": 323,
+      "source": "task verification or user confirmation"
+    },
+    {
+      "path": "protection.json",
+      "sha256": "b65647b1cc628e86571c938838c94feb94c78ce9ebdd0215aaff4468c77dfba8",
+      "size_bytes": 745,
+      "source": "data/mechanical_components_v2/audit/protection.json"
+    },
+    {
+      "path": "README.md",
+      "sha256": "cda84faa5883980f88b71636ddd0ddc67fabbda452007861a1d08cfb025f31ea",
+      "size_bytes": 9868,
+      "source": "data/mechanical_components_v2/README.md"
+    },
+    {
+      "path": "source_inventory.json",
+      "sha256": "b54e7ab75fba06849e2e1cde644097c319f6641e765aab639bf311fa531bc665",
+      "size_bytes": 243733,
+      "source": "data/mechanical_components_v2/audit/source_files.json"
+    },
+    {
+      "path": "unit_tests.log",
+      "sha256": "e47e0773e1b55738ff317359bb4742e079a14eed1e97220f23f1b97a551480c0",
+      "size_bytes": 92326,
+      "source": "task verification or user confirmation"
+    }
+  ]
+}

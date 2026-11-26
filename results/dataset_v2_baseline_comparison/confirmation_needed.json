@@ -1,0 +1,33 @@
+{
+  "status": "PENDING_NOT_A_CONFIRMATION",
+  "dataset_version": {
+    "data/mechanical_components_v2/development/ground_truth_images.csv": "fdaa29fffa075687f6a92c112a77536b4ce72aebe353688585d3ba55bb8e939b",
+    "data/mechanical_components_v2/ground_truth_objects.csv": "8c25e6165cab747e2abd5e5d8dc1d9f8d15c0169f9330493afa8a104d6d9eca3",
+    "data/mechanical_components_v2/splits/train.txt": "5146fe3b7d419a96d356363682b46b328ba46638b79c6ee805b63b875e7c1c9d",
+    "data/mechanical_components_v2/splits/val.txt": "e78a4bebb7c2631ac96a0e4c3da74b193c548212bdce8e217fe108c434e87ee1",
+    "data/mechanical_components_v2/splits/stage2_test.txt": "9f0caeca2c8e1e31b19334aa07575191e7baf02e48d3cca6ea771f47b15abe77",
+    "data/mechanical_components_v2/splits/stage3_test.txt": "ac7849c489aaaf79fa185086d61cb308dc1f1ff6325fe0934faafbf9c5b8e5ee"
+  },
+  "annotation_quality": {
+    "reviewer": "",
+    "role": "",
+    "date": "",
+    "review_scope": "",
+    "evidence_file": "",
+    "negative_scenes_verified": null,
+    "outcome": null
+  },
+  "near_duplicate_review": {
+    "reviewer": "",
+    "decision": "",
+    "evidence": "",
+    "existing_scene_independence_confirmation": "Already present; not requested again"
+  },
+  "held_out_history": {
+    "responsible_person": "",
+    "stage2_unused_for_fit_or_selection": null,
+    "stage3_unused_for_fit_tuning_or_improvement_design": null,
+    "evidence": ""
+  },
+  "instructions": "Fill only after actual verification. This template grants no READY/freeze override. Calibration/size measurement is not a B1/B2 classifier prerequisite."
+}

@@ -1,0 +1,11 @@
+﻿image_id,ground_truth_label,predicted_label,prediction_status,prediction_score,score_type,score_meaning,decision_threshold,processing_ms,scenario_type,condition,non_catalogue_type,truth_id0_count,correct_target_counts,truth_target_count,image_path,error_type
+A147.jpg,PASS,FAIL,FAIL,0.8740441939544329,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,88.1101000122726,A,normal,,0,True,5,data/mechanical_components_v2/yolo/images/test/A147.jpg,FALSE_FAIL
+B04.jpg,FAIL,PASS,PASS,0.0008707527100729466,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,87.21550001064315,B,normal,,0,False,4,data/mechanical_components_v2/yolo/images/test/B04.jpg,FALSE_PASS
+B16.jpg,FAIL,PASS,PASS,0.001036700586181117,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,90.51989996805787,B,normal,,0,False,4,data/mechanical_components_v2/yolo/images/test/B16.jpg,FALSE_PASS
+B31.jpg,FAIL,PASS,PASS,0.003910442417955681,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,83.91029998892918,B,normal,,0,False,4,data/mechanical_components_v2/yolo/images/test/B31.jpg,FALSE_PASS
+C03.jpg,FAIL,PASS,PASS,0.22259051728305385,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,86.89770003547892,C,normal,,0,False,6,data/mechanical_components_v2/yolo/images/test/C03.jpg,FALSE_PASS
+C14.jpg,FAIL,PASS,PASS,0.11582784400283277,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,87.02070004073903,C,normal,,0,False,6,data/mechanical_components_v2/yolo/images/test/C14.jpg,FALSE_PASS
+D10.jpg,FAIL,PASS,PASS,0.05542059270713481,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,88.62910000607371,D,normal,M4x40_screw,1,False,4,data/mechanical_components_v2/yolo/images/test/D10.jpg,FALSE_PASS
+D37.jpg,FAIL,PASS,PASS,0.0013184115738441443,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,87.83209999091923,D,normal,M4_small_washer,1,False,4,data/mechanical_components_v2/yolo/images/test/D37.jpg,FALSE_PASS
+E11.jpg,FAIL,PASS,PASS,0.01622252478159334,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,86.22439997270703,E,normal,M4x40_screw,1,True,5,data/mechanical_components_v2/yolo/images/test/E11.jpg,FALSE_PASS
+G13.jpg,FAIL,PASS,PASS,0.0011458318710455368,prob,"P(FAIL), uncalibrated",P(FAIL) >= .5,97.58870000950992,G,normal,,1,False,0,data/mechanical_components_v2/yolo/images/test/G13.jpg,FALSE_PASS

@@ -1,0 +1,12 @@
+[
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+  "--input_dir",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+  "--model",
+  "baseline1",
+  "--counts_file",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+  "--output_dir",
+  "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\baseline1\\predictions"
+]

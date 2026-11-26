@@ -74,7 +74,8 @@ def audited_manifest(data_dir, settings, directory):
         if digest(ROOT/name)!=sha:raise ValueError('Source annotations changed; re-audit')
     for r in records:
         p=(ROOT/r['path']).resolve()
-        if r['split'] not in ('train','validation') or not p.is_relative_to(data_dir.resolve()/'images'/r['split']):
+        from src.data.dataset_v2 import approved_development_path
+        if r['split'] not in ('train','validation') or not approved_development_path(data_dir, r, p):
             raise ValueError('Prepared manifest escaped approved development partition')
         if digest(p)!=r['sha256']:raise ValueError(f'Image changed: {r["image_id"]}')
     return records,evidence
@@ -84,24 +85,38 @@ def train(args):
     started=time.perf_counter()
     import torch
     torch.set_num_threads(4);torch.manual_seed(42)
-    settings=json.loads((ROOT/'config/training.json').read_text(encoding='utf-8'))
+    settings_path=getattr(args,'dataset_config',None) or ROOT/'datasets/mechanical_components_v2/configs/training.json'
+    settings=json.loads(Path(settings_path).read_text(encoding='utf-8'))
+    data_description=settings.get('data_description','P03 real mechanical component images')
     settings['expected_counts']=reference_counts()
-    data_dir=args.data_dir or discover_development()
-    prepared=ROOT/'outputs/training/data'
+    data_dir=args.data_dir or (ROOT/settings['data_dir'] if 'data_dir' in settings else discover_development())
+    if getattr(args,'audit_candidate',False):
+        if not args.prepare_only:raise ValueError('--audit-candidate is data validation only; requires --prepare-only')
+        settings['allow_candidate_annotations']=True
+    if (Path(data_dir)/'dataset_v2.json').exists() and not args.prepare_only:
+        marker=json.loads((Path(data_dir)/'dataset_v2.json').read_text(encoding='utf-8'))
+        state=json.loads((ROOT/marker['status_file']).read_text(encoding='utf-8'))
+        if state.get('status')!='READY' or state.get('frozen') is not True:
+            raise ValueError('Formal training blocked: new dataset is not READY and frozen')
+    prepared=ROOT/settings.get('prepared_dir','outputs/training/data')
+    if getattr(args,'dataset_config',None):prepared=prepared/canonical(settings)[:12]
     records,evidence=audited_manifest(data_dir,settings,prepared)
     if args.prepare_only:
         print(json.dumps(evidence,ensure_ascii=False,indent=2));return
     name=args.model
-    dest=args.output_dir or ROOT/'models'/name
+    if getattr(args,'dataset_config',None) and args.output_dir is None:
+        raise ValueError('A new dataset requires an explicit NEW --output-dir; frozen model paths are protected')
+    dest=Path(args.output_dir or ROOT/'models'/name).resolve()
     if dest.exists() and any(dest.iterdir()):raise FileExistsError(f'Use an empty candidate directory: {dest}')
-    report=ROOT/'outputs/training'/name
+    report=ROOT/settings.get('report_root','outputs/training')/name
+    if getattr(args,'dataset_config',None):report=report/dest.name
     report.mkdir(parents=True,exist_ok=True)
     config=json.loads((ROOT/'config/baseline1.json').read_text(encoding='utf-8'))
     cache_spec=dict(manifest=evidence['manifest_sha256'],model=name,
                     preprocessing=PREPROCESSING if name=='baseline2' else dict(size=config['image_size'],hog=config['hog']),
                     backbone=WEIGHT_SHA256 if name=='baseline2' else None,
                     versions=environment()['dependencies'])
-    cache=ROOT/'outputs/training/features'/f'{name}-{canonical(cache_spec)[:16]}.npz'
+    cache=prepared.parent/'features'/f'{name}-{canonical(cache_spec)[:16]}.npz'
     cache.parent.mkdir(parents=True,exist_ok=True)
     if cache.exists():
         with np.load(cache,allow_pickle=False) as f:X=f['X']
@@ -122,11 +137,13 @@ def train(args):
     trials=[];best=None
     candidates=([dict(hidden_layer_sizes=(32,),alpha=.01),dict(hidden_layer_sizes=(64,),alpha=.01)]
                 if name=='baseline1' else [dict(C=.1),dict(C=1.0),dict(C=10.0)])
+    if getattr(args,'original_only',False):candidates=candidates[:1]
     for params in candidates:
         classifier=(MLPClassifier(**params,solver='adam',activation='relu',max_iter=1000,
                                   early_stopping=False,n_iter_no_change=30,random_state=42)
                     if name=='baseline1' else LogisticRegression(**params,solver='lbfgs',max_iter=3000,random_state=42))
         estimator=make_pipeline(StandardScaler(),classifier)
+        fit_started=time.perf_counter()
         with warnings.catch_warnings(record=True) as captured,threadpool_limits(limits=4):
             warnings.simplefilter('always')
             fitargs={'mlpclassifier__sample_weight':model.balanced_sample_weights(y[mask])} if name=='baseline1' else {}
@@ -135,6 +152,9 @@ def train(args):
         predicted=estimator.predict(X[~mask])
         result=metrics([r for r in records if r['split']=='validation'],y[~mask],predicted,probs)
         trial=dict(parameters=params,validation=result,warnings=[str(w.message) for w in captured],n_iter=classifier.n_iter_)
+        trial.update(fit_seconds=time.perf_counter()-fit_started,
+                     loss_curve=getattr(classifier,'loss_curve_',None),
+                     scaler_fit_samples=int(estimator.steps[0][1].n_samples_seen_),fit_split='train only')
         trial['n_iter']=np.asarray(trial['n_iter']).tolist();trials.append(trial)
         print('TRIAL',name,params,'F1',result['f1'],'accuracy',result['accuracy'],flush=True)
         # F1 first, then fewer false PASS; ties retain simpler first candidate.
@@ -150,13 +170,14 @@ def train(args):
     if name=='baseline1':
         config['mlp'].update(selected,hidden_layer_sizes=list(selected['hidden_layer_sizes']),max_iter=1000,
                              n_iter_no_change=30,class_weight='balanced',solver='adam')
-        config['supported_counts_note']='P03 reference_label_all_one; verified counts and labels. Fixed counts only.'
+        config['supported_counts_note']='Fixed reference_counts; audited object counts and reference_label_all_one.'
         config['freeze']['bundle_file']=(dest/'baseline1.joblib').relative_to(ROOT).as_posix()
-        write_json(ROOT/'config/baseline1.json',config)
-        checksum=digest(ROOT/'config/baseline1.json')
+        config_path=dest/'config.json' if getattr(args,'dataset_config',None) else ROOT/'config/baseline1.json'
+        write_json(config_path,config)
+        checksum=digest(config_path)
         bundle=model.make_bundle(config,estimator,X.shape[1],checksum,
                                  dict(data_manifest_sha256=evidence['manifest_sha256'],scene_confirmation=evidence['scene_confirmation'],
-                                      official_held_out_test='NOT_RUN',trained_on='P03 real mechanical component images'))
+                                      official_held_out_test='NOT_RUN',trained_on=data_description))
         model.save_bundle(bundle,str(dest/'baseline1.joblib'))
         version=digest(dest/'baseline1.joblib')
         write_json(dest/'config.json',config)
@@ -171,7 +192,7 @@ def train(args):
                       preprocessing=PREPROCESSING,backbone='torchvision ResNet18 IMAGENET1K_V1',
                       backbone_sha256=WEIGHT_SHA256,development_set_sha256=evidence['manifest_sha256'],
                       training=dict(seed=42,**selected,solver='lbfgs',max_iter=3000,backbone_frozen=True,
-                                    source='P03 real images',scene_confirmation=evidence['scene_confirmation'],official_held_out_test='NOT_RUN'),
+                                    source=data_description,scene_confirmation=evidence['scene_confirmation'],official_held_out_test='NOT_RUN'),
                       versions=environment()['dependencies'],classifier=dict(mean=scaler.mean_.tolist(),scale=scaler.scale_.tolist(),
                             coef=(sign*clf.coef_[0]).tolist(),intercept=float(sign*clf.intercept_[0]),fail_probability_threshold=.5))
         manifest['model_version']=model_version(manifest);version=manifest['model_version']
@@ -181,7 +202,8 @@ def train(args):
         shutil.copy2(weights,dest/WEIGHT_FILE)
     files={p.name:dict(sha256=digest(p),size_bytes=p.stat().st_size) for p in dest.iterdir() if p.is_file()}
     info=dict(model=name,model_version=version,status='TRAINED_CANDIDATE',data=evidence,
-              selection_rule='validation FAIL F1, then fewer false PASS; exact ties keep first candidate',
+              selection_rule=('Original selected hyperparameters only; no search' if getattr(args,'original_only',False)
+                              else 'validation FAIL F1, then fewer false PASS; exact ties keep first candidate'),
               trials=trials,selected_parameters=selected,metrics=results,environment=environment(),
               command=subprocess.list2cmdline([sys.executable,'-m','scripts.train_'+name,*sys.argv[1:]]),
               training_seconds=time.perf_counter()-started,files=files,official_held_out_test='NOT_RUN')
@@ -198,6 +220,9 @@ def main(model_id=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--model',choices=('baseline1','baseline2'),default=model_id,required=model_id is None)
     parser.add_argument('--data-dir',type=Path)
+    parser.add_argument('--dataset-config',type=Path,help='Explicit versioned data/settings; never replace the frozen default dataset')
+    parser.add_argument('--audit-candidate',action='store_true',help='Data checks only with --prepare-only; cannot enable training')
+    parser.add_argument('--original-only',action='store_true',help='Retrain only the original selected parameters: MLP32 alpha=.01 or LR C=.1')
     parser.add_argument('--output-dir',type=Path)
     parser.add_argument('--weights',type=Path)
     parser.add_argument('--batch-size',type=int,default=8)

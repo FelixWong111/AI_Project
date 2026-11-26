@@ -1,0 +1,50 @@
+{
+  "models": {
+    "old": {
+      "processing": {
+        "median_ms": 181.04409996885806,
+        "p95_ms": 233.6188199929893,
+        "mean_ms": 181.92253500164952
+      },
+      "inference": {
+        "median_ms": 6.781050004065037,
+        "p95_ms": 10.754790023202078,
+        "mean_ms": 7.577435008715838
+      },
+      "peak_cuda_allocated_bytes": 62417408,
+      "device": "cuda:0",
+      "warmup": 3,
+      "images": 20,
+      "geometry_attempts": 109,
+      "live_latency": "NOT_MEASURED",
+      "capture_fps": "NOT_MEASURED",
+      "processing_fps": "NOT_MEASURED",
+      "limitation": "Old pipeline computes provisional geometry with unverified old scale; new calibration missing so measurements cannot run. Full processing times are not an isolated detector speedup comparison."
+    },
+    "new": {
+      "processing": {
+        "median_ms": 38.88510001706891,
+        "p95_ms": 42.308540007798,
+        "mean_ms": 38.42755000223406
+      },
+      "inference": {
+        "median_ms": 20.801649981876835,
+        "p95_ms": 23.711580006056465,
+        "mean_ms": 20.302600000286475
+      },
+      "peak_cuda_allocated_bytes": 72847872,
+      "device": "cuda:0",
+      "warmup": 3,
+      "images": 20,
+      "geometry_attempts": 0,
+      "live_latency": "NOT_MEASURED",
+      "capture_fps": "NOT_MEASURED",
+      "processing_fps": "NOT_MEASURED",
+      "limitation": "Old pipeline computes provisional geometry with unverified old scale; new calibration missing so measurements cannot run. Full processing times are not an isolated detector speedup comparison."
+    }
+  },
+  "boundaries": "Decoded frame -> preprocess/model/postprocess/size-work-order decision/result validation/GPU complete; excludes decode/load/render",
+  "forward_source": "Ultralytics Results.speed[inference], ops.Profile synchronizes CUDA",
+  "percentile_method": "linear",
+  "live": "NOT_RUN"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "FIRST_FULL_SIZE_REPAIR_V2_STAGE2_RUN",
+  "formal_freeze": "results/p07_final_integration/release_freeze.json",
+  "historical_test": "This same Stage2 set was previously used for raw YOLO and B1/B2 comparison. Not a new untouched dataset.",
+  "physical_size": "Provisional; no teacher/caliper/Camo acceptance",
+  "no_post_test_tuning": true
+}

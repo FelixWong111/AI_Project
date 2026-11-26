@@ -1,0 +1,42 @@
+{
+  "directory": "results/p08_stage2_final",
+  "models": {
+    "baseline1": {
+      "status": "REUSED_NOT_RERUN",
+      "source": "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500",
+      "source_predictions": {
+        "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500/predictions/images.csv": "d3b67ea21a474e757492da48a62db0707caf7b7fa6811993407425ff38e9ca2a",
+        "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500/predictions/run_config.json": "cc6fabca845c6dc9027304b199a7ecb34dcefe7137224f8cec7509d9131f40c2",
+        "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500/predictions/timing.csv": "42bda5dbcd33222bcabe373e944cfb56eed90a30d60a1f73c60cde021882ba9b"
+      },
+      "original_run_config_preserved": true,
+      "current_registry": "config/model_registry.json",
+      "identity": "Same weight SHA/preprocessing/fixed order/raw classifier; no scene_guard"
+    },
+    "baseline2": {
+      "status": "REUSED_NOT_RERUN",
+      "source": "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160",
+      "source_predictions": {
+        "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160/predictions/images.csv": "8d25c64dde79b4632eef6284f3eb769ab50490b2e159f0038c2729fcd78ff3cf",
+        "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160/predictions/run_config.json": "59bb7a57f0ba1975aa4cf70ee3a63ca04d52b801fadfb807f31e64ca73ced17e",
+        "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160/predictions/timing.csv": "d9153f55a33d961ab5fac27a9e8ed85426ad0ddccb2640d9637399305de21a4d"
+      },
+      "original_run_config_preserved": true,
+      "current_registry": "config/model_registry.json",
+      "identity": "Same weight SHA/preprocessing/fixed order/raw classifier; no scene_guard"
+    },
+    "baseline3": {
+      "status": "FIRST_FULL_SIZE_REPAIR_V2_STAGE2_RUN",
+      "formal_freeze": "results/p07_final_integration/release_freeze.json",
+      "historical_test": "This same Stage2 set was previously used for raw YOLO and B1/B2 comparison. Not a new untouched dataset.",
+      "physical_size": "Provisional; no teacher/caliper/Camo acceptance",
+      "no_post_test_tuning": true
+    }
+  },
+  "source_ground_truth_sha256": {
+    "datasets/mechanical_components_v2/public/stage2_test/ground_truth_images.csv": "94a2229c37e652687c348f956a0ab1ab406f92a4cd0b7462ba4e668d79c8f040",
+    "datasets/mechanical_components_v2/public/stage2_test/ground_truth_objects.csv": "28174a4117f7e9f16c885c27b3248e20d01a8f816e59561ea083c147555d4500"
+  },
+  "stage3": "NOT_RUN",
+  "model_selection": "Fixed before this task; do not select/tune from results"
+}

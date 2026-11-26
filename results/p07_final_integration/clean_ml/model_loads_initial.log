@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\verify_models.py", line 18, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\verify_models.py", line 16, in main
+    backend=load_backend('real',model,config);result[model].update(loaded=True,model_version=backend.metadata['model_version'],is_mock=backend.is_mock)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\p07_bridge.py", line 265, in load_backend
+    backend=_load_backend(mode,model,settings)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\p07_bridge.py", line 252, in _load_backend
+    backend = getattr(importlib.import_module(module), factory)(model_id=model, config=config.get("model_config", {}))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\models\baseline3\size_repaired.py", line 204, in create_backend
+    return RepairedSizeBackend(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\models\baseline3\size_repaired.py", line 109, in __init__
+    super().__init__(path,**kwargs)
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\models\baseline3\size_candidate.py", line 107, in __init__
+    self.detector=(detector_factory or frozen_factory)(model_id='baseline3',config={'config_path':ROOT/self.config['detector_config']})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\models\baseline3\candidate.py", line 33, in detector_factory
+    runtime=_cuda_runtime();model=_load_model(weights)
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\src\models\baseline3\inference.py", line 63, in _load_model
+    from ultralytics import YOLO
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\outputs\final_integration\clean_env\Lib\site-packages\ultralytics\__init__.py", line 13, in <module>
+    from ultralytics.utils import ASSETS, SETTINGS
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\outputs\final_integration\clean_env\Lib\site-packages\ultralytics\utils\__init__.py", line 911, in <module>
+    USER_CONFIG_DIR = get_user_config_dir()  # Ultralytics settings dir
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\outputs\final_integration\clean_env\Lib\site-packages\ultralytics\utils\__init__.py", line 886, in get_user_config_dir
+    alt.mkdir(parents=True, exist_ok=True)
+  File "D:\Anaconda\envs\env_new\Lib\pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [WinError 5] 拒绝访问。: '\\tmp\\Ultralytics'

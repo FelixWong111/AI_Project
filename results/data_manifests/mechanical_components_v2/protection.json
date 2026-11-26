@@ -1,0 +1,19 @@
+{
+  "global_image_ids_unique": true,
+  "total_image_ids": 790,
+  "legacy_p03_annotation_hashes_unchanged": {
+    "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/01_P06训练验证_含标注与真值/ground_truth_images.csv": true,
+    "P03_群交接总包_待SceneID确认_20261124/P03_群交接总包_待SceneID确认_20261124/01_P06训练验证_含标注与真值/ground_truth_objects.csv": true
+  },
+  "old_raw_images_unchanged": true,
+  "tracked_raw_dataset_files": [],
+  "model_and_config_diff_exit": 0,
+  "full_regression": {
+    "tests": 273,
+    "result": "PASS",
+    "source": "tmp/dataset_v2_regression_final.log"
+  },
+  "training": "NOT_RUN",
+  "test": "NOT_RUN",
+  "commit_push": false
+}

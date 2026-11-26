@@ -1,0 +1,61 @@
+{
+  "camera": 0,
+  "name": "Camo / DSHOW enumeration",
+  "frames": [
+    {
+      "frame_id": 1,
+      "resolution": [
+        1280,
+        720
+      ],
+      "pixel_sha256": "822e3a311bc34185394aeb709bb83310f1243089b95cdadc218eee179b1d6f78"
+    },
+    {
+      "frame_id": 2,
+      "resolution": [
+        1280,
+        720
+      ],
+      "pixel_sha256": "822e3a311bc34185394aeb709bb83310f1243089b95cdadc218eee179b1d6f78"
+    },
+    {
+      "frame_id": 3,
+      "resolution": [
+        1280,
+        720
+      ],
+      "pixel_sha256": "822e3a311bc34185394aeb709bb83310f1243089b95cdadc218eee179b1d6f78"
+    }
+  ],
+  "error": "",
+  "released": true,
+  "live_benchmark": "NOT_RUN",
+  "physical_white_matte_rig": "NOT_VERIFIED",
+  "calibration": "NOT_VERIFIED",
+  "capture_events": [
+    {
+      "backend": "DSHOW",
+      "ok": true,
+      "read_ms": 999.6120000141673,
+      "fps": 0.0
+    },
+    {
+      "backend": "DSHOW",
+      "ok": true,
+      "read_ms": 1000.2172000240535,
+      "fps": 0.9997408671726112
+    },
+    {
+      "backend": "DSHOW",
+      "ok": true,
+      "read_ms": 1000.1006999518722,
+      "fps": 0.9997951419868017
+    },
+    {
+      "backend": "DSHOW",
+      "ok": true,
+      "read_ms": 1000.5689999670722,
+      "fps": 0.9996620475901091
+    }
+  ]
+}

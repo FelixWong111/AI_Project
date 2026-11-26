@@ -1,0 +1,10 @@
+{
+  "before": {
+    "src/p07_dashboard.py": "47a8439b5d1a51af943ae8e882ef2c8773bde7e160ac44c473bbd2a22302cc50"
+  },
+  "after": {
+    "src/p07_dashboard.py": "cf3aa63263bc45e542a0259e462db9f369feaf795a6c9a7355b83fc3afe5770c"
+  },
+  "reason": "Display numeric class ID alongside class name; rendering only, no prediction/decision changes",
+  "test_runtime_archive": "archive/experiments/stage2_test_runtime/source_snapshot.zip"
+}

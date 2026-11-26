@@ -1,0 +1,6 @@
+{
+  "geometry_sha256": "7e768a97e6b8efc0a13402e98fdf29a008bbf144f0527cee470a3e72b1a7d042",
+  "jobs_sha256": "3f2c659961d1c45abce668c9d4dccc43bdb908da84d118abc414e0e4b112c4a3",
+  "stage": "Train+dimension development only",
+  "interrupted_attempt": "Initial scalar gradient scan interrupted before producing results; reused ROI cache and replaced scan with equivalent vectorized local maxima, no threshold change"
+}

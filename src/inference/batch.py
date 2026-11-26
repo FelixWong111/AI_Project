@@ -5,6 +5,7 @@ import csv
 import json
 import platform
 import sys
+import time
 from pathlib import Path
 
 from src.adapters.baseline2 import IMAGE_FIELDS
@@ -12,6 +13,7 @@ from src.work_orders import load_cases
 from src.models.baseline1.features import load_image_bgr
 from src.p07_bridge import MODELS, UnavailableBackend, load_backend, validate_counts, validate_result
 from src.p07_output import write_diagnostics
+from src.model_registry import portable
 
 
 
@@ -24,6 +26,7 @@ def main(argv=None):
     parser.add_argument('--counts_file',required=True,type=Path)
     parser.add_argument('--config',type=Path,default=Path(__file__).resolve().parents[2]/'config/p07.json')
     parser.add_argument('--bundle',type=str,help='Override model bundle path')
+    parser.add_argument('--record-timing',action='store_true',help='Offline adapter processing time; excludes decoding/loading and is not live latency')
     args=parser.parse_args(argv)
     try:
         cases=load_cases(args.counts_file)
@@ -36,15 +39,21 @@ def main(argv=None):
     try:backend=load_backend('real',args.model,config)
     except Exception as exc:
         load_error=str(exc);backend=UnavailableBackend(args.model,exc)
-    rows=[];objects=[];counts=[];diagnostics=[]
+    rows=[];objects=[];counts=[];diagnostics=[];timing=[]
     for case in cases:
+        started=None
         try:
             if load_error:raise RuntimeError(load_error)
             frame=load_image_bgr(str(args.input_dir/case['image_id']))
+            if args.record_timing:
+                backend.synchronize();started=time.perf_counter()
             result=validate_result(backend.infer(frame,case['expected_counts']),args.model,frame.shape)
+            if args.record_timing:backend.synchronize()
         except Exception as exc:
             result=UnavailableBackend(args.model,exc).infer()
             print(f'{case["image_id"]}: {exc}',file=sys.stderr)
+        if args.record_timing:
+            timing.append(dict(image_id=case['image_id'],status=result['status'],processing_ms=None if started is None else (time.perf_counter()-started)*1000))
         row=dict(result,image_id=case['image_id'],model_id=args.model)
         rows.append({k:row.get(k) for k in IMAGE_FIELDS})
         if args.model == 'baseline3':
@@ -63,13 +72,15 @@ def main(argv=None):
         with (args.output_dir/name).open('w',newline='',encoding='utf-8') as f:
             writer=csv.DictWriter(f,fieldnames=fields);writer.writeheader();writer.writerows(values)
     write('images.csv',IMAGE_FIELDS,rows)
+    if args.record_timing:write('timing.csv',['image_id','status','processing_ms'],timing)
     if args.model in ('baseline3','final') and not load_error:
         write('objects.csv',['image_id','model_id','detection_id','class_id','xmin','ymin','xmax','ymax','score'],objects)
         write('counts.csv',['image_id','class_id','observed_count','expected_count','difference'],counts)
-    metadata=dict(backend.metadata)
+    metadata=portable(dict(backend.metadata))
     metadata.setdefault('hardware',dict(platform=platform.platform(),python=sys.version))
     metadata.update(per_image_expected_counts={c['image_id']:c['expected_counts'] for c in cases},
                     load_error=load_error,evidence_mode='batch_inference')
+    if args.record_timing:metadata['offline_timing']='perf_counter: adapter preprocess/features/classifier/postprocess/result validation + GPU completion sync; excludes image decoding, weight load and export; not live latency'
     (args.output_dir/'run_config.json').write_text(json.dumps(metadata,indent=2,ensure_ascii=False),encoding='utf-8')
     if args.model == 'baseline3':
         write_diagnostics(args.output_dir, diagnostics, metadata)

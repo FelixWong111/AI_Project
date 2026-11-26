@@ -1,0 +1,231 @@
+{
+  "DIM-SPECIMEN-01": {
+    "specification": "M4×10细螺丝_ID3_20",
+    "images": 20,
+    "complete": 18,
+    "partial": 0,
+    "failed": 2,
+    "reasons": {
+      "SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW": 2
+    },
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 18,
+        "mean": 3.904283462895185,
+        "median": 3.9011761939235217,
+        "std": 0.1509266144541558,
+        "min": 3.6355046968462896,
+        "max": 4.194813111745721,
+        "p05": 3.7068165197459684,
+        "p95": 4.1710425041124966
+      },
+      "underhead_length": {
+        "n": 18,
+        "mean": 8.908540141759246,
+        "median": 8.767159403548556,
+        "std": 0.6904572600419848,
+        "min": 7.243043972947612,
+        "max": 10.347205675639447,
+        "p05": 8.003703417210836,
+        "p95": 9.91933473824138
+      }
+    }
+  },
+  "DIM-SPECIMEN-02": {
+    "specification": "M4×25长螺丝_ID1_20",
+    "images": 20,
+    "complete": 19,
+    "partial": 0,
+    "failed": 1,
+    "reasons": {
+      "SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW": 1
+    },
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 19,
+        "mean": 3.7856348503192963,
+        "median": 3.7753318005711485,
+        "std": 0.13736523526585123,
+        "min": 3.5516084346113748,
+        "max": 4.110916849510807,
+        "p05": 3.5767773132818523,
+        "p95": 4.01024133482891
+      },
+      "underhead_length": {
+        "n": 19,
+        "mean": 23.130346684590876,
+        "median": 23.043506693856493,
+        "std": 0.8179911224516939,
+        "min": 21.64523565660792,
+        "max": 24.525673993339982,
+        "p05": 21.77108004996029,
+        "p95": 24.500505114669505
+      }
+    }
+  },
+  "DIM-SPECIMEN-03": {
+    "specification": "M4×40长螺丝_ID0_40",
+    "images": 40,
+    "complete": 38,
+    "partial": 0,
+    "failed": 2,
+    "reasons": {
+      "MULTIPLE_FOREGROUND_OBJECTS": 2
+    },
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 38,
+        "mean": 3.9755053385351564,
+        "median": 3.9710897457859504,
+        "std": 0.17029157692652114,
+        "min": 3.663470117591262,
+        "max": 4.418536477705491,
+        "p05": 3.7152061459694594,
+        "p95": 4.226973345602439
+      },
+      "underhead_length": {
+        "n": 38,
+        "mean": 38.81526806189554,
+        "median": 39.12362362221509,
+        "std": 1.3820822939159936,
+        "min": 35.34829182164394,
+        "max": 40.88544512914828,
+        "p05": 36.61232883931666,
+        "p95": 40.59040994028884
+      }
+    }
+  },
+  "DIM-SPECIMEN-04": {
+    "specification": "M4六角螺母_ID4_20",
+    "images": 20,
+    "complete": 17,
+    "partial": 0,
+    "failed": 3,
+    "reasons": {
+      "SIX_FLATS_NOT_RESOLVED": 1,
+      "OPPOSITE_FLATS_NOT_PARALLEL": 1,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY": 1
+    },
+    "dimensions": {
+      "across_flats": {
+        "n": 17,
+        "mean": 7.0647575142599885,
+        "median": 7.047168075714878,
+        "std": 0.22240900933915267,
+        "min": 6.791285490363669,
+        "max": 7.706539260692702,
+        "p05": 6.802548452562889,
+        "p95": 7.424931284660389
+      }
+    }
+  },
+  "DIM-SPECIMEN-05": {
+    "specification": "M4小垫片_ID0_40",
+    "images": 40,
+    "complete": 30,
+    "partial": 0,
+    "failed": 10,
+    "reasons": {
+      "MULTIPLE_FOREGROUND_OBJECTS": 7,
+      "INNER_HOLE_NOT_UNAMBIGUOUS": 2,
+      "FOREGROUND_TOUCHES_CROP": 1
+    },
+    "dimensions": {
+      "inner_diameter": {
+        "n": 30,
+        "mean": 5.09566953976949,
+        "median": 5.106433391571043,
+        "std": 0.07773017291595086,
+        "min": 4.958015918731688,
+        "max": 5.226229190826418,
+        "p05": 4.96540880203247,
+        "p95": 5.20617730617523
+      },
+      "outer_diameter": {
+        "n": 30,
+        "mean": 11.584895928700766,
+        "median": 11.599974155426025,
+        "std": 0.3450754704427403,
+        "min": 10.94790840148926,
+        "max": 12.116696357727049,
+        "p05": 11.026323652267457,
+        "p95": 11.996371603012083
+      }
+    }
+  },
+  "DIM-SPECIMEN-06": {
+    "specification": "M5×10粗螺丝_ID2_20",
+    "images": 20,
+    "complete": 20,
+    "partial": 0,
+    "failed": 0,
+    "reasons": {},
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 20,
+        "mean": 5.187585548192208,
+        "median": 5.159620127447239,
+        "std": 0.23588960869883493,
+        "min": 4.838017788880067,
+        "max": 5.956634618678926,
+        "p05": 4.891152088295509,
+        "p95": 5.531560223355356
+      },
+      "underhead_length": {
+        "n": 20,
+        "mean": 8.711228562058613,
+        "median": 8.613349589451214,
+        "std": 0.5032610373335157,
+        "min": 7.914214070826928,
+        "max": 9.676035577760132,
+        "p05": 8.047049819365542,
+        "p95": 9.436931230390623
+      }
+    }
+  },
+  "DIM-SPECIMEN-07": {
+    "specification": "M5平垫圈_ID5_20",
+    "images": 20,
+    "complete": 18,
+    "partial": 0,
+    "failed": 2,
+    "reasons": {
+      "MULTIPLE_FOREGROUND_OBJECTS": 2
+    },
+    "dimensions": {
+      "inner_diameter": {
+        "n": 18,
+        "mean": 5.103195852703518,
+        "median": 5.101735115051271,
+        "std": 0.07303951904505067,
+        "min": 4.977273464202881,
+        "max": 5.257160663604735,
+        "p05": 5.012911701202392,
+        "p95": 5.249367737770082
+      },
+      "outer_diameter": {
+        "n": 18,
+        "mean": 14.288232326507568,
+        "median": 14.225672721862791,
+        "std": 0.432795677801867,
+        "min": 13.749769210815426,
+        "max": 15.263884544372557,
+        "p05": 13.802667236328126,
+        "p95": 15.161522293090822
+      }
+    }
+  },
+  "DIM-SPECIMEN-08": {
+    "specification": "M6盖型螺母_ID0_40",
+    "images": 40,
+    "complete": 0,
+    "partial": 0,
+    "failed": 40,
+    "reasons": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 23,
+      "SIX_FLATS_NOT_RESOLVED": 16,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY": 1
+    },
+    "dimensions": {}
+  }
+}

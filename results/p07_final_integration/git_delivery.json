@@ -1,0 +1,77 @@
+{
+  "lfs_installed": "git-lfs/3.7.0 (GitHub; windows amd64; go 1.24.4; git 92dddf56)",
+  "attributes": "models/release/baseline3/best.pt: filter: lfs\n",
+  "candidate_files": 3009,
+  "candidate_bytes": 471919815,
+  "curated_image_files": 700,
+  "dataset_bytes": 2439607624,
+  "dataset_images_in_git": false,
+  "dataset_image_delivery": "Separate cloud drive; restore datasets/mechanical_components_v2 paths",
+  "largest_files": [
+    {
+      "path": "results/baseline3_v2_experiment/validation/old_full/baseline3-20261126-043009-365460/predictions/diagnostics.json",
+      "bytes": 77637868
+    },
+    {
+      "path": "models/baseline2_v2_candidate/resnet18-f37072fd.pth",
+      "bytes": 46830571
+    },
+    {
+      "path": "models/release/baseline2/resnet18-f37072fd.pth",
+      "bytes": 46830571
+    },
+    {
+      "path": "models/baseline2/resnet18-f37072fd.pth",
+      "bytes": 46830571
+    },
+    {
+      "path": "results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247/predictions/diagnostics.json",
+      "bytes": 33799341
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_development_v1/public_train/candidate/predictions/diagnostics.json",
+      "bytes": 32315210
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_repair_v2/train_replay_cases.json",
+      "bytes": 17345683
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_repair_v2/development_measurements.json.gz",
+      "bytes": 13670156
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_repair_v2/development_revisions/r01_measurements.json.gz",
+      "bytes": 12713000
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_caliper_v3/development/C_selected.json.gz",
+      "bytes": 8778425
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_caliper_v3/train/B/predictions/diagnostics.json.gz",
+      "bytes": 7249476
+    },
+    {
+      "path": "results/baseline3_v2_experiment/size_development_v1/public_validation/baseline3-20261126-092746-093440/predictions/diagnostics.json",
+      "bytes": 7209745
+    }
+  ],
+  "raw_and_sealed_tracked": false,
+  "git_add": "NOT_RUN",
+  "commit_push_merge": "NOT_RUN",
+  "remote_lfs_quota": "NOT_VERIFIED",
+  "remote_clone": "NOT_VERIFIED until user commits and pushes Git and LFS objects",
+  "local_dataset_images": 700,
+  "ignored_dataset_images": 700,
+  "tracked_dataset_images": 0,
+  "dataset_metadata_git_files": 978,
+  "metadata_bytes": 3405978,
+  "image_delivery": "Cloud drive; restore datasets/mechanical_components_v2 without renaming or resizing",
+  "image_cloud_link": "NOT_PROVIDED",
+  "git_rm_cached": "NOT_NEEDED: zero tracked dataset images",
+  "formal_weights_and_p08_outputs_in_candidates": true,
+  "embedded_image_data_in_annotations": 0,
+  "git_diff_check": "PASS",
+  "unused_resume_checkpoints": "Ignored locally, not deleted"
+}

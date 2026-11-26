@@ -1,0 +1,23 @@
+{
+  "cpu": "Intel(R) Core(TM) i7-14650HX",
+  "gpu": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    }
+  ],
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": ".venv311/Scripts/python.exe",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "opencv-python": "4.10.0.84",
+    "ultralytics": "8.3.236",
+    "scikit-learn": "1.9.1"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": "f6307e85117391b59ad08da086518a33e6317d23",
+  "git_worktree_before_run": "M .gitattributes\n M .gitignore\n M README.md\n M app.py\n M config/p07.json\n M docs/baseline3_integration.md\n M docs/baseline3_size_integration.md\n M docs/live_benchmark.md\n M docs/p07/advice_record.md\n M docs/ui_operations.md\n M p08_object_observations.py\n M p08_run.py\n M requirements-p07.txt\n M results/README.md\n M scripts/benchmark_live.py\n M scripts/train_candidates.py\n M src/adapters/baseline3.py\n M src/data/development.py\n M src/evaluator.py\n M src/inference/batch.py\n M src/p06_pipeline.py\n M src/p07_bridge.py\n M src/p07_dashboard.py\n M src/p07_output.py\n M tests/test_benchmark_live.py\n M tests/test_p07.py\n M tests/test_p07_dashboard.py\n M tests/test_p07_real_integration.py\n?? .python-version\n?? PROGRESS.md\n?? archive/\n?? config/model_registry.json\n?? datasets/\n?? docs/dataset_v2.md\n?? docs/p07/demo_recording_checklist.md\n?? docs/p07/final_handoff.md\n?? models/baseline1_v2_candidate/\n?? models/baseline2_v2_candidate/\n?? models/baseline3_v2_candidate/\n?? models/release/\n?? results/baseline3_v2_experiment/\n?? results/data_manifests/mechanical_components_v2/\n?? results/dataset_v2_baseline_comparison/\n?? results/p07_final_integration/\n?? results/p08_stage2_final/\n?? review/\n?? scripts/check_dataset_v2.py\n?? scripts/finalize_stage2.py\n?? scripts/prepare_dataset_v2.py\n?? scripts/verify_models.py\n?? src/data/dataset_v2.py\n?? src/model_registry.py\n?? src/models/baseline3/candidate.py\n?? src/models/baseline3/geometry_repair.py\n?? src/models/baseline3/metrology.py\n?? src/models/baseline3/size_candidate.py\n?? src/models/baseline3/size_repaired.py\n?? task_state.json\n?? tests/test_baseline3_candidate.py\n?? tests/test_baseline3_geometry_repair.py\n?? tests/test_baseline3_metrology.py\n?? tests/test_comparison_preparation.py\n?? tests/test_dataset_v2.py\n?? tests/test_model_registry.py",
+  "cuda_runtime": "12.6"
+}

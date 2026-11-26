@@ -1,0 +1,30 @@
+config\model_registry.json:84:    "src/models/baseline3/geometry_repair.py": "7e768a97e6b8efc0a13402e98fdf29a008bbf144f0527cee470a3e72b1a7d042",
+config\model_registry.json:85:    "src/models/baseline3/size_repaired.py": "be330872842404e59ad3fc25d44cd0a9be409bdf6c09701ace1872ef1b476f88",
+config\model_registry.json:86:    "src/models/baseline3/size_candidate.py": "a94e3f6dc3a982f7e2148c91390eaa31736dedcd1d6154870f08d963cad2f754",
+config\model_registry.json:87:    "src/models/baseline3/candidate.py": "a78dbc752d9b16704c17bad61d7d17ccf8923938d9c30c83346ff2afe8721083"
+scripts\train_candidates.py:127:        weights=args.weights or ROOT/'models/baseline2'/WEIGHT_FILE
+scripts\train_candidates.py:187:        weights=args.weights or ROOT/'models/baseline2'/WEIGHT_FILE
+config\baseline3.json:6:  "weights": "models/baseline3/best.pt",
+config\baseline2.json:2:  "baseline2_bundle": "models/baseline2",
+scripts\check_baseline3.py:70:    write_json(ROOT/'models/baseline3/training_record.json',record)
+scripts\check_dataset_v2.py:99:                protected_weights={relative(p):digest(p) for p in (ROOT/'models/baseline1/baseline1.joblib',ROOT/'models/baseline2/baseline2.json',ROOT/'models/baseline2/resnet18-f37072fd.pth',ROOT/'models/baseline3/best.pt')})
+scripts\collect_results.py:139:    versions['baseline3'] = read('models/baseline3/provenance.json')['weights_sha256']
+scripts\collect_results.py:145:    assert sha(ROOT / 'models/baseline3/best.pt') == versions['baseline3']
+scripts\collect_results.py:173:    select('models/baseline3/training_record.json', 'baseline3/training_record.json',
+scripts\collect_results.py:175:    select('models/baseline3/provenance.json', 'baseline3/provenance.json',
+scripts\finalize_stage2.py:169:    source=ROOT/'models/baseline3_v2_candidate';target=release/'baseline3'
+scripts\finalize_stage2.py:192:    shared=['config/inspection.json','config/p06_part_specs_candidate.json','src/models/baseline3/geometry_repair.py',
+scripts\finalize_stage2.py:193:        'src/models/baseline3/size_repaired.py','src/models/baseline3/size_candidate.py','src/models/baseline3/candidate.py']
+scripts\finalize_stage2.py:204:    paths=['scripts/develop_caliper_v3.py','src/models/baseline3/size_caliper.py',
+scripts\finalize_stage2.py:205:        'src/models/baseline3/vision_caliper.py','tests/test_vision_caliper.py']
+scripts\finalize_stage2.py:217:        source=ROOT/'models/baseline3_v2_candidate'/name;dest=ARCHIVE/'baseline3_training_checkpoints'/name
+scripts\finalize_stage2.py:221:        old_frozen_models_retained_in_place=['models/baseline1','models/baseline2','models/baseline3','models/baseline1_v2_candidate','models/baseline2_v2_candidate','models/baseline3_v2_candidate'],
+scripts\finalize_stage2.py:224:    (ARCHIVE/'README.md').write_text('# Historical experiments\n\nvision_caliper_v3/source_snapshot.zip保留原目录路径和精确源码字节，原始A/B/C实验仍在results/baseline3_v2_experiment/。解压到独立历史工作副本，按results/p07_final_integration/dataset_migration.json恢复当时数据路径后可复现；不进入正式GUI/CLI。baseline3_training_checkpoints保留未选中的训练checkpoint，严禁替代best.pt。\n\n已发表旧冻结权重为避免破坏历史配置保留在models/baseline1、baseline2、baseline3及*_v2_candidate，只有models/release被正式注册表加载。旧参数/预测/失败证据没有改写。\n',encoding='utf8')
+config\baseline1.json:103:    "bundle_file": "models/baseline1/baseline1.joblib",
+scripts\audit_model_leakage.py:112:    sources=['src/data/development.py','scripts/train_candidates.py','src/models/baseline1/features.py',
+scripts\audit_model_leakage.py:113:             'src/models/baseline1/model.py','src/adapters/baseline1.py','src/adapters/baseline2.py',
+scripts\diagnose_baseline1.py:27:    guard_path=ROOT/'models/baseline1/scene_guard.npz'
+config\p07_yolo_frozen.json:12:    "baseline2_bundle": "models/baseline2",
+config\p06_p07_pipeline_candidate.json:12:    "baseline2_bundle": "models/baseline2",
+src\models\baseline3\size_repaired.py:110:        self.files.extend([Path(__file__),ROOT/'src/models/baseline3/geometry_repair.py'])
+src\adapters\baseline3.py:89:                         'src/models/baseline3/inference.py', 'src/p07_bridge.py'):

@@ -1,0 +1,391 @@
+{
+  "status": "BLOCKED_PENDING_HUMAN_EVIDENCE",
+  "dataset_status": {
+    "status": "CANDIDATE_NOT_READY",
+    "frozen": false,
+    "formal_training_allowed": false,
+    "blockers": [
+      "Human visual annotation sign-off scope absent",
+      "Review residual near-duplicate candidates before sealing",
+      "Confirm no prior unrecorded training/tuning use before sealing Stage 3"
+    ],
+    "formal_test": "NOT_RUN"
+  },
+  "checks": {
+    "requested_checks_passed": true,
+    "protected_files_unchanged": true,
+    "original_json_confirmations_bound": true,
+    "ready_status_unchanged": true
+  },
+  "gate_probes": {
+    "formal_development_loader": {
+      "blocked": true,
+      "reason": "Dataset is CANDIDATE_NOT_READY: resolve human annotation/duplicate review before formal training"
+    },
+    "formal_stage2_entry": {
+      "blocked": true,
+      "reason": "Dataset is not READY/frozen; formal evaluation remains NOT_RUN"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        ".venv311/Scripts/python.exe",
+        "scripts/prepare_dataset_v2.py",
+        "--verify-only"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 53.24529369996162,
+      "log": "results/dataset_v2_baseline_comparison/preflight/20261125T175753793874Z/01.log",
+      "log_sha256": "b7f876f19b57d5406517de217f326f99013dc6027995ece7867ee4e06da470ee"
+    },
+    {
+      "command": [
+        ".venv311/Scripts/python.exe",
+        "scripts/check_dataset_v2.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 144.83820350002497,
+      "log": "results/dataset_v2_baseline_comparison/preflight/20261125T175753793874Z/02.log",
+      "log_sha256": "6c17c34ab1f36ea4a9044266e4a537475f961cf4eebbb36b1c7df6a274eb57d6"
+    },
+    {
+      "command": [
+        ".venv311/Scripts/python.exe",
+        "-m",
+        "scripts.train_baseline1",
+        "--dataset-config",
+        "data/mechanical_components_v2/configs/training.json",
+        "--prepare-only",
+        "--audit-candidate"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 8.72477200004505,
+      "log": "results/dataset_v2_baseline_comparison/preflight/20261125T175753793874Z/03.log",
+      "log_sha256": "e0bb4ec0021fadb37871a89ea2a72d0c4d0e02f495312a5f16f6dd7fce01a8af"
+    },
+    {
+      "command": [
+        ".venv311/Scripts/python.exe",
+        "-m",
+        "scripts.train_baseline2",
+        "--dataset-config",
+        "data/mechanical_components_v2/configs/training.json",
+        "--prepare-only",
+        "--audit-candidate"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 7.845905900001526,
+      "log": "results/dataset_v2_baseline_comparison/preflight/20261125T175753793874Z/04.log",
+      "log_sha256": "e0bb4ec0021fadb37871a89ea2a72d0c4d0e02f495312a5f16f6dd7fce01a8af"
+    },
+    {
+      "command": [
+        ".venv311/Scripts/python.exe",
+        "p08_run.py",
+        "--evaluation-config",
+        "data/mechanical_components_v2/configs/stage2_evaluation.json",
+        "--check-data-only"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.12826600001426414,
+      "log": "results/dataset_v2_baseline_comparison/preflight/20261125T175753793874Z/05.log",
+      "log_sha256": "673e2402a109c476079b75f82c12240710959cb46f3ff816fb8a6df7d7002383"
+    },
+    {
+      "command": [
+        ".venv311/Scripts/python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 30.630216700024903,
+      "log": "results/dataset_v2_baseline_comparison/preflight/20261125T175753793874Z/06.log",
+      "log_sha256": "8620ec42f4cc55586c578737f17c64d8747a0a001ddcdd87d3ab5576981d05d2"
+    }
+  ],
+  "environment": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "scikit-image": "0.26.0",
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "opencv-python": "4.10.0.84",
+      "ultralytics": "8.3.236"
+    }
+  },
+  "git_commit": "f6307e85117391b59ad08da086518a33e6317d23",
+  "actual_support": {
+    "train": {
+      "images": 360,
+      "scene_ids": 360,
+      "scene_groups": 354,
+      "labels": {
+        "PASS": 180,
+        "FAIL": 180
+      },
+      "conditions": {
+        "normal": 300,
+        "crowded": 30,
+        "edge": 30
+      },
+      "scenarios": {
+        "A": 180,
+        "B": 36,
+        "C": 35,
+        "F": 18,
+        "D": 44,
+        "E": 37,
+        "G": 10
+      },
+      "class_instances": {
+        "0": 110,
+        "1": 325,
+        "2": 349,
+        "3": 353,
+        "4": 332,
+        "5": 336
+      },
+      "declared_non_catalogue_types": {
+        "M4x40_screw": 32,
+        "UNKNOWN": 12,
+        "M6_cap_nut": 21,
+        "M4_small_washer": 22,
+        "M4_small_washer;M4x40_screw": 2,
+        "M4x40_screw;M6_cap_nut": 1,
+        "M4_small_washer;M4x40_screw;M6_cap_nut": 4,
+        "M4_small_washer;M6_cap_nut": 1
+      },
+      "declared_subtype_image_presence": {
+        "M4x40_screw": 39,
+        "M4_small_washer": 29,
+        "M6_cap_nut": 27
+      },
+      "independent_scene_note": "scene IDs follow collector confirmation; scene groups conservatively collapse repeated empty backgrounds; not independent physical specimens"
+    },
+    "validation": {
+      "images": 80,
+      "scene_ids": 80,
+      "scene_groups": 80,
+      "labels": {
+        "PASS": 40,
+        "FAIL": 40
+      },
+      "conditions": {
+        "normal": 60,
+        "crowded": 10,
+        "edge": 10
+      },
+      "scenarios": {
+        "A": 40,
+        "B": 8,
+        "C": 8,
+        "D": 11,
+        "E": 8,
+        "F": 3,
+        "G": 2
+      },
+      "class_instances": {
+        "0": 25,
+        "1": 72,
+        "2": 77,
+        "3": 78,
+        "4": 73,
+        "5": 74
+      },
+      "declared_non_catalogue_types": {
+        "M4x40_screw": 7,
+        "M6_cap_nut": 5,
+        "M4_small_washer": 6,
+        "M4_small_washer;M6_cap_nut": 1,
+        "M4x40_screw;M6_cap_nut": 1,
+        "UNKNOWN": 3
+      },
+      "declared_subtype_image_presence": {
+        "M4x40_screw": 8,
+        "M4_small_washer": 7,
+        "M6_cap_nut": 7
+      },
+      "independent_scene_note": "scene IDs follow collector confirmation; scene groups conservatively collapse repeated empty backgrounds; not independent physical specimens"
+    },
+    "test": {
+      "images": 120,
+      "scene_ids": 120,
+      "scene_groups": 120,
+      "labels": {
+        "PASS": 60,
+        "FAIL": 60
+      },
+      "conditions": {
+        "normal": 60,
+        "crowded": 30,
+        "edge": 30
+      },
+      "scenarios": {
+        "A": 60,
+        "B": 12,
+        "C": 12,
+        "D": 16,
+        "E": 13,
+        "F": 5,
+        "G": 2
+      },
+      "class_instances": {
+        "0": 36,
+        "1": 109,
+        "2": 119,
+        "3": 117,
+        "4": 113,
+        "5": 113
+      },
+      "declared_non_catalogue_types": {
+        "M4x40_screw": 12,
+        "M6_cap_nut": 7,
+        "M4_small_washer": 9,
+        "M4x40_screw;M6_cap_nut": 1,
+        "M4_small_washer;M4x40_screw": 1,
+        "UNKNOWN": 4
+      },
+      "declared_subtype_image_presence": {
+        "M4x40_screw": 14,
+        "M4_small_washer": 10,
+        "M6_cap_nut": 8
+      },
+      "independent_scene_note": "scene IDs follow collector confirmation; scene groups conservatively collapse repeated empty backgrounds; not independent physical specimens"
+    },
+    "quarantine": {
+      "images": 0,
+      "scene_ids": 0,
+      "scene_groups": 0,
+      "labels": {},
+      "conditions": {},
+      "scenarios": {},
+      "class_instances": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "declared_non_catalogue_types": {},
+      "declared_subtype_image_presence": {
+        "M4x40_screw": 0,
+        "M4_small_washer": 0,
+        "M6_cap_nut": 0
+      },
+      "independent_scene_note": "scene IDs follow collector confirmation; scene groups conservatively collapse repeated empty backgrounds; not independent physical specimens"
+    },
+    "stage2": {
+      "images": 30,
+      "scene_ids": 30,
+      "scene_groups": 30,
+      "labels": {
+        "PASS": 15,
+        "FAIL": 15
+      },
+      "conditions": {
+        "normal": 30
+      },
+      "scenarios": {
+        "A": 15,
+        "B": 3,
+        "C": 3,
+        "D": 3,
+        "E": 3,
+        "F": 2,
+        "G": 1
+      },
+      "class_instances": {
+        "0": 9,
+        "1": 27,
+        "2": 29,
+        "3": 28,
+        "4": 28,
+        "5": 28
+      },
+      "declared_non_catalogue_types": {
+        "M4x40_screw": 2,
+        "M4_small_washer": 2,
+        "M4x40_screw;M6_cap_nut": 1,
+        "M6_cap_nut": 1,
+        "UNKNOWN": 2
+      },
+      "declared_subtype_image_presence": {
+        "M4x40_screw": 3,
+        "M4_small_washer": 2,
+        "M6_cap_nut": 2
+      },
+      "independent_scene_note": "scene IDs follow collector confirmation; scene groups conservatively collapse repeated empty backgrounds; not independent physical specimens"
+    },
+    "stage3": {
+      "images": 90,
+      "scene_ids": 90,
+      "scene_groups": 90,
+      "labels": {
+        "PASS": 45,
+        "FAIL": 45
+      },
+      "conditions": {
+        "normal": 30,
+        "crowded": 30,
+        "edge": 30
+      },
+      "scenarios": {
+        "A": 45,
+        "B": 9,
+        "C": 9,
+        "D": 13,
+        "E": 10,
+        "F": 3,
+        "G": 1
+      },
+      "class_instances": {
+        "0": 27,
+        "1": 82,
+        "2": 90,
+        "3": 89,
+        "4": 85,
+        "5": 85
+      },
+      "declared_non_catalogue_types": {
+        "M4x40_screw": 10,
+        "M6_cap_nut": 6,
+        "M4_small_washer;M4x40_screw": 1,
+        "M4_small_washer": 7,
+        "UNKNOWN": 2
+      },
+      "declared_subtype_image_presence": {
+        "M4x40_screw": 11,
+        "M4_small_washer": 8,
+        "M6_cap_nut": 6
+      },
+      "independent_scene_note": "scene IDs follow collector confirmation; scene groups conservatively collapse repeated empty backgrounds; not independent physical specimens"
+    }
+  },
+  "annotation_resolution_check": {
+    "D18.jpg": {
+      "scope": "Resolve count/class discrepancy against capture spreadsheet; does not certify all boxes or other images",
+      "source": "User reply: 已核实，两张都以JSON为准",
+      "sha256_matches": true
+    },
+    "F21.jpg": {
+      "scope": "Resolve count/class discrepancy against capture spreadsheet; does not certify all boxes or other images",
+      "source": "User reply: 已核实，两张都以JSON为准",
+      "sha256_matches": true
+    }
+  },
+  "near_duplicate_pairs": 127,
+  "cross_partition_candidates": 65,
+  "scope": "Data-format/hash/metadata audit only; no classifier fit, new dataset prediction, or formal scoring",
+  "stage3_usage": "No model inference, evaluation, selection or algorithm debugging; requested integrity checker performs existing read-only annotation/hash/list checks",
+  "trained": false,
+  "formal_test": "NOT_RUN",
+  "live_latency": "NOT_MEASURED"
+}

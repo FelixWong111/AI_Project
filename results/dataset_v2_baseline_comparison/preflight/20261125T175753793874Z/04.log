@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "train": {
+      "images": 360,
+      "PASS": 180,
+      "FAIL": 180
+    },
+    "validation": {
+      "images": 80,
+      "PASS": 40,
+      "FAIL": 40
+    }
+  },
+  "exclusions": [],
+  "expected_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "scene_confirmation": {
+    "each_image_is_distinct_scene": true,
+    "source": "2026-11-26 collector/user confirmation; auto IDs, conservative empty background grouping",
+    "scope": "This new collection only"
+  },
+  "source_files": {
+    "data/mechanical_components_v2/development/ground_truth_images.csv": "fdaa29fffa075687f6a92c112a77536b4ce72aebe353688585d3ba55bb8e939b",
+    "data/mechanical_components_v2/development/ground_truth_objects.csv": "af782eebb374b192299eb64174b463e09ef637beabf1191135e6e86b80f20b70",
+    "data/mechanical_components_v2/development/dataset_v2.json": "0807f8520a9a316391db08c31c62f87f51b330b72752e2eb67462d4f05258a62",
+    "data/mechanical_components_v2/dataset_status.json": "d1f93feb2da43d10418615d3cefa178b139a47a996b34d81d038acaacfc74030"
+  },
+  "dataset_status": "CANDIDATE_NOT_READY",
+  "official_held_out_test": "NOT_RUN",
+  "manifest_sha256": "378d2f517ff2d7d2f1e477040b2c1cf757e0d88b7aa6a2f6f156ca8fc5574441",
+  "settings_sha256": "3730e6c8608954497809c2d1df909c36e4ea151096219a0d505fe7eb1c905952"
+}

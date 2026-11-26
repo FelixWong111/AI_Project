@@ -4,7 +4,7 @@ from __future__ import annotations
 import cv2
 import numpy as np
 
-from .p07_bridge import CLASSES, MODELS
+from .p07_bridge import CLASSES, MODELS, PRODUCTION_MODELS
 from .work_orders import reference_counts
 
 WIDTH, HEIGHT = 1600, 1000
@@ -19,7 +19,7 @@ AMBER = (81, 194, 248)
 
 
 def regions():
-    controls = [("model:" + m, (150+i*140, 82, 282+i*140, 126)) for i, m in enumerate(MODELS)]
+    controls = [("model:" + m, (150+i*140, 82, 282+i*140, 126)) for i, m in enumerate(PRODUCTION_MODELS)]
     controls += [(name, rect) for name, rect in [
         ("camera", (150, 144, 260, 184)), ("image", (270, 144, 380, 184)),
         ("video", (390, 144, 500, 184)), ("close", (510, 144, 600, 184)),
@@ -96,7 +96,7 @@ def render(packet, result, expected, model, mode, state):
             x1, y1, x2, y2 = [int(obj[k]*scale) for k in ("xmin", "ymin", "xmax", "ymax")]
             color = RED if obj["class_id"] == 0 or obj.get('inspection_rejection') else GREEN
             cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
-            label = f'{CLASSES[obj["class_id"]]} {obj["score"]:.3f}'
+            label = f'ID{obj["class_id"]} {CLASSES[obj["class_id"]]} {obj["score"]:.3f}'
             if obj.get('class_assignment') == 'size_rule_non_catalogue':
                 label = 'non_catalogue (confirmed size rule)'
             text(image, label, max(2, x1), max(18, y1-6), .5, color, 1)
@@ -132,7 +132,7 @@ def render(packet, result, expected, model, mode, state):
         cv2.line(canvas, (1112, y+34), (1558, y+34), (63, 53, 43), 1)
         obs = counts[str(c)] if counts is not None else None
         diff = obs-expected[str(c)] if obs is not None else None
-        text(canvas, CLASSES[c], 1112, y+21, .48)
+        text(canvas, f'{c} {CLASSES[c]}', 1112, y+21, .48)
         text(canvas, obs if obs is not None else "N/A", 1310, y+21, .5)
         for action, rect in regions():
             if action not in (f"count-:{c}", f"count:{c}", f"count+:{c}"):
@@ -156,7 +156,7 @@ def render(packet, result, expected, model, mode, state):
     text(canvas, (f"Fixed counts: {fixed_text} | " if model in MODELS[:2] else "") + "Source status: " + str(state.get("source_status") or "Ready"), 24, 926, .5, AMBER, max_width=1040)
     text(canvas, result.get("message") or state.get("message", ""), 24, 950, .46, MUTED, max_width=1040)
     cv2.line(canvas, (24, 963), (1576, 963), (65, 53, 42), 1)
-    text(canvas, "1-4 Models   Space Start/Pause   C Camera   I Image   V Video   S Snapshot   R Record   L Reload   Q Quit", 24, 988, .48, MUTED)
+    text(canvas, "1-3 Models   Space Start/Pause   C Camera   I Image   V Video   S Snapshot   R Record   L Reload   Q Quit", 24, 988, .48, MUTED)
     if state.get("loading"):
         text(canvas, "Loading " + state["loading"] + "...", 730, 109, .47, AMBER)
     if state.get("pending_counts"):
@@ -184,7 +184,7 @@ def draw_diagnostics(canvas, result, page=0):
         measurement = ev.get('measurement', {})
         cal = ev.get('calibration') or inspection.get('calibration') or {}
         detector_class = obj.get('detector_class_id', obj['class_id'])
-        lines.append((f"Object {obj['detection_id']} / {len(objects)}: {CLASSES[obj['class_id']]} | detector {CLASSES[detector_class]} {obj['score']:.3f}", BLUE))
+        lines.append((f"Object {obj['detection_id']} / {len(objects)}: ID{obj['class_id']} {CLASSES[obj['class_id']]} | detector ID{detector_class} {CLASSES[detector_class]} {obj['score']:.3f}", BLUE))
         trusted = bool(cal.get('validated') and inspection.get('acceptance_confirmed')
                        and ev.get('measurement_policy_reason') == 'VALIDATED_SCOPE_MATCHED')
         lines.append((f"Calibration: {cal.get('calibration_id', 'unavailable')} / validated={cal.get('validated', False)}", AMBER))
@@ -206,6 +206,14 @@ def draw_diagnostics(canvas, result, page=0):
                 if spec['class_id'] == detector_class:
                     for key, value in spec['dimensions'].items():
                         lines.append((f"{key}: reference {value['reference_mm']:g} +/- {value['provisional_allowance_mm']:g} mm; UNVERIFIED", MUTED))
+        # The independent development candidate uses empirical visible-size
+        # ranges. Show the actual decision range alongside supplier references
+        # so a provisional PASS is not mistaken for nominal-tolerance acceptance.
+        for key, value in ev.get('development_acceptance_bands', {}).items():
+            lines.append((f"Development band {key}: {value['min_mm']:.3f}..{value['max_mm']:.3f} mm / NOT approved tolerance", AMBER))
+        quality = ev.get('quality', {})
+        if quality.get('ruler_scale_envelope') is not None:
+            lines.append((f"Scale-position envelope: {100*quality['ruler_scale_envelope']:.2f}% / physical error bound NOT VALIDATED", AMBER))
         if obj.get('inspection_rejection'):
             lines.append((obj['inspection_rejection'], RED))
     else:

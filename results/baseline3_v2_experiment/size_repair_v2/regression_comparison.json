@@ -1,0 +1,293 @@
+{
+  "scope": "80 already-used Val cases; reused regression diagnosis, NOT independent validation",
+  "run": "results/baseline3_v2_experiment/size_repair_v2/val_regression/baseline3-20261126-103248-747431",
+  "original": {
+    "input_cases": 80,
+    "ground_truth_eligible": 80,
+    "completed_eligible": 53,
+    "correct": 47,
+    "wrong_on_completed": 6,
+    "unresolved_eligible": 27,
+    "all_input_correct_fraction": 0.5875,
+    "all_eligible_correct_fraction": 0.5875,
+    "completed_accuracy": 0.8867924528301887,
+    "completed_balanced_accuracy": 0.7692307692307692,
+    "prediction_coverage": 0.6625,
+    "eligible_coverage": 0.6625,
+    "status_counts": {
+      "REVIEW": 27,
+      "PASS": 7,
+      "FAIL": 46
+    },
+    "confusion_matrix": {
+      "positive_class": "FAIL",
+      "tp": 40,
+      "fp": 6,
+      "fn": 0,
+      "tn": 7,
+      "rows_truth_PASS_FAIL": [
+        [
+          7,
+          6
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    "fail": {
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1": 0.9302325581395349,
+      "support_all": 40,
+      "support_scored": 40,
+      "recall_all_eligible": 1.0
+    },
+    "passed": {
+      "precision": 1.0,
+      "recall": 0.5384615384615384,
+      "f1": 0.7,
+      "support_all": 40,
+      "support_scored": 13,
+      "recall_all_eligible": 0.175
+    },
+    "false_pass": {
+      "count": 0,
+      "rate": 0.0,
+      "denominator": 40,
+      "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+    },
+    "false_fail": {
+      "count": 6,
+      "rate": 0.15,
+      "denominator": 40,
+      "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+    },
+    "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+  },
+  "repaired": {
+    "input_cases": 80,
+    "ground_truth_eligible": 80,
+    "completed_eligible": 65,
+    "correct": 63,
+    "wrong_on_completed": 2,
+    "unresolved_eligible": 15,
+    "all_input_correct_fraction": 0.7875,
+    "all_eligible_correct_fraction": 0.7875,
+    "completed_accuracy": 0.9692307692307692,
+    "completed_balanced_accuracy": 0.96,
+    "prediction_coverage": 0.8125,
+    "eligible_coverage": 0.8125,
+    "status_counts": {
+      "REVIEW": 15,
+      "PASS": 23,
+      "FAIL": 42
+    },
+    "confusion_matrix": {
+      "positive_class": "FAIL",
+      "tp": 40,
+      "fp": 2,
+      "fn": 0,
+      "tn": 23,
+      "rows_truth_PASS_FAIL": [
+        [
+          23,
+          2
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    "fail": {
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1": 0.975609756097561,
+      "support_all": 40,
+      "support_scored": 40,
+      "recall_all_eligible": 1.0
+    },
+    "passed": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1": 0.9583333333333334,
+      "support_all": 40,
+      "support_scored": 25,
+      "recall_all_eligible": 0.575
+    },
+    "false_pass": {
+      "count": 0,
+      "rate": 0.0,
+      "denominator": 40,
+      "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+    },
+    "false_fail": {
+      "count": 2,
+      "rate": 0.05,
+      "denominator": 40,
+      "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+    },
+    "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+  },
+  "objects": {
+    "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+    "image_count": 80,
+    "prediction_status_counts": {
+      "REVIEW": 15,
+      "PASS": 23,
+      "FAIL": 42
+    },
+    "five_class_vector_exact": 0.9125,
+    "classes": {
+      "0": {
+        "support": 25,
+        "tp": 25,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091,
+        "count_mae": 0.0625
+      },
+      "1": {
+        "support": 72,
+        "tp": 71,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.9861111111111112,
+        "f1": 0.993006993006993,
+        "count_mae": 0.0125
+      },
+      "2": {
+        "support": 77,
+        "tp": 74,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.961038961038961,
+        "f1": 0.9801324503311258,
+        "count_mae": 0.0375
+      },
+      "3": {
+        "support": 78,
+        "tp": 77,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.9390243902439024,
+        "recall": 0.9871794871794872,
+        "f1": 0.9625,
+        "count_mae": 0.05
+      },
+      "4": {
+        "support": 73,
+        "tp": 72,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9863013698630136,
+        "recall": 0.9863013698630136,
+        "f1": 0.9863013698630136,
+        "count_mae": 0.0
+      },
+      "5": {
+        "support": 74,
+        "tp": 74,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "count_mae": 0.0
+      }
+    }
+  },
+  "by_class": {
+    "1": {
+      "calls": 72,
+      "complete": 68,
+      "failures": {
+        "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+        "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 1,
+        "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+        "HEAD_SHAFT_SEPARATION_FAILED": 1
+      },
+      "size_conclusions": {
+        "WITHIN_DEVELOPMENT_BAND": 66,
+        "UNMEASURABLE": 4,
+        "OUTSIDE_DEVELOPMENT_BAND": 1,
+        "AMBIGUOUS_INSTANCE_SUPPORT": 1
+      }
+    },
+    "2": {
+      "calls": 77,
+      "complete": 74,
+      "failures": {
+        "HEAD_SHAFT_SEPARATION_FAILED": 2,
+        "SHAFT_EXTERIOR_EDGES_UNSUPPORTED;SHAFT_PROFILE_OUTSIDE_CROP": 1
+      },
+      "size_conclusions": {
+        "SPEC_REFERENCE_CONFLICT": 2,
+        "WITHIN_DEVELOPMENT_BAND": 60,
+        "BORDERLINE_MEASUREMENT": 8,
+        "OUTSIDE_DEVELOPMENT_BAND": 3,
+        "UNMEASURABLE": 3,
+        "AMBIGUOUS_INSTANCE_SUPPORT": 1
+      }
+    },
+    "3": {
+      "calls": 82,
+      "complete": 75,
+      "failures": {
+        "SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+        "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 2,
+        "HEAD_SHAFT_SEPARATION_FAILED": 3,
+        "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1
+      },
+      "size_conclusions": {
+        "WITHIN_DEVELOPMENT_BAND": 69,
+        "BORDERLINE_MEASUREMENT": 4,
+        "SPEC_REFERENCE_CONFLICT": 1,
+        "AMBIGUOUS_INSTANCE_SUPPORT": 1,
+        "UNMEASURABLE": 7
+      }
+    },
+    "4": {
+      "calls": 73,
+      "complete": 70,
+      "failures": {
+        "OPPOSITE_FLATS_NOT_PARALLEL": 2,
+        "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED": 1
+      },
+      "size_conclusions": {
+        "WITHIN_DEVELOPMENT_BAND": 68,
+        "BORDERLINE_MEASUREMENT": 2,
+        "UNMEASURABLE": 3
+      }
+    },
+    "5": {
+      "calls": 74,
+      "complete": 56,
+      "failures": {
+        "INNER_HOLE_NOT_UNAMBIGUOUS": 3,
+        "ELLIPSE_SUPPORT_DEGENERATE": 6,
+        "CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW": 9
+      },
+      "size_conclusions": {
+        "WITHIN_DEVELOPMENT_BAND": 56,
+        "UNMEASURABLE": 18
+      }
+    }
+  },
+  "measurement_calls": 378,
+  "complete": 343,
+  "foreground_complete": 37,
+  "recovered": 16,
+  "regressions": 0,
+  "no_code_updates_based_on_this_regression": true,
+  "independent_validation": false,
+  "dimension_retained66": "NOT_RERUN; already-used scenes, not independent evidence",
+  "formal_stage2_test": "NOT_RERUN",
+  "stage3": "NOT_OPENED"
+}

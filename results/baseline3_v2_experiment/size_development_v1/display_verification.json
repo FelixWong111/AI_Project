@@ -1,0 +1,19 @@
+{
+  "display_source_sha256": "69141ab5db13a0c69472c6e7eb4a617fbea74e01e4cd94552afd178e418e8bd3",
+  "ui_tests": {
+    "modules": [
+      "test_baseline3_metrology",
+      "test_p07_dashboard"
+    ],
+    "run": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "physical_acceptance": false
+  },
+  "rendered_from": "Existing saved Val diagnostics and original permitted Val pixels; no inference rerun",
+  "actual_development_bands_visible": true,
+  "nominal_reference_visible": true,
+  "provisional_error_warning_visible": true,
+  "default_gui_configuration_and_app_unchanged": true
+}

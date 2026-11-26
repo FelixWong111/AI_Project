@@ -1,0 +1,8 @@
+﻿model,event,image_id,truth,prediction
+baseline1,False PASS,F07.jpg,FAIL,PASS
+baseline2,False FAIL,A198.jpg,PASS,FAIL
+baseline2,False PASS,B04.jpg,FAIL,PASS
+baseline2,False PASS,F07.jpg,FAIL,PASS
+baseline2,False PASS,G13.jpg,FAIL,PASS
+baseline3,REVIEW,A084.jpg,PASS,REVIEW
+baseline3,REVIEW,A154.jpg,PASS,REVIEW

@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-11-25T18:29:49.191242+00:00",
+  "stage2": {
+    "status": "RUN",
+    "runs": "results/dataset_v2_baseline_comparison/evaluation/runs.json",
+    "sha256": "0d922a30b51094dd504e1e04e58f136ab5edab2dcb376ef994098ab2ea70adb2"
+  },
+  "stage3": {
+    "status": "NOT_RUN",
+    "model_inference": false,
+    "selection": false
+  },
+  "note": "Frozen data/config/training NOT_RUN fields describe their creation-time state. This ledger records later actual evaluation without changing frozen metadata."
+}

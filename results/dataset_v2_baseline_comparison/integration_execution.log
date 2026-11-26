@@ -1,0 +1,9 @@
+{
+  "data_ready_and_frozen": true,
+  "pre_test_model_freeze_unchanged": true,
+  "old_models_configs_app_and_baseline3_unchanged": true,
+  "original_raw_files_unchanged": true,
+  "all_model_contracts_passed": true,
+  "inference_scope_passed": true,
+  "new_headless_apps_passed": true
+}

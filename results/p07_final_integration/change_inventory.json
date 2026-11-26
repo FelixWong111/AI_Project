@@ -1,0 +1,233 @@
+{
+  "code_compared_with": "archive/experiments/pre_final_integration/source_snapshot.zip",
+  "code": [
+    {
+      "path": ".gitattributes",
+      "action": "MODIFIED",
+      "before_sha256": "f8d503bd5ab8ab022d52e2e8bf4b3a2b64b6a0fabd516ed9f210be26187ecbc8",
+      "after_sha256": "2ad45d9356affe1190143c06e3963ad538eb41eb1c28727e7c84a3c38a1ef79a"
+    },
+    {
+      "path": ".gitignore",
+      "action": "MODIFIED",
+      "before_sha256": "ac2d234679d851bea78fb609413d1c49fba078a8e6aae826806d94f5eaedbb25",
+      "after_sha256": "7307171da4e5950eb55d1eaf0cc721ac112707c503eed1c18d4e67cef6549c80"
+    },
+    {
+      "path": "README.md",
+      "action": "MODIFIED",
+      "before_sha256": "19c96669dfede3368e420ab48a322892c33ba4b912718b06e18abd8ac1362238",
+      "after_sha256": "e35b3907898ce5ab2f6fff1d6952ce08d148ddf9dca7ad8497f5239959e380cd"
+    },
+    {
+      "path": "app.py",
+      "action": "MODIFIED",
+      "before_sha256": "0a9aca7cb8eda4887bf6410c5a0317131af207e022c6e173f8087b18828ca515",
+      "after_sha256": "908527b878047c47413811d7b862782273ad28694b05f46dd038c3e7309a6d8b"
+    },
+    {
+      "path": "config/model_registry.json",
+      "action": "ADDED",
+      "before_sha256": null,
+      "after_sha256": "c7032745438eb3661b7bb6029e83cd9bbdd073e7d1c778fad930e2478eed7a5a"
+    },
+    {
+      "path": "config/p07.json",
+      "action": "MODIFIED",
+      "before_sha256": "6c583e29cf4df430d1f2121b52f46a017265f49e5807563510e1421c209a5a5a",
+      "after_sha256": "715cf81436b415b11284b2c41a8b0e02efebfdb8d960b8cc3f7ed78ea3b2f287"
+    },
+    {
+      "path": "p08_object_observations.py",
+      "action": "MODIFIED",
+      "before_sha256": "160fc6c9ef60aece4670b7d19c6f8e6ee0686e312ba203ababe3a02aef8497f0",
+      "after_sha256": "ecfdb2efa5b890c9d581d41ac8c728cfc05c006423695e55007a61d2bbd9b89d"
+    },
+    {
+      "path": "p08_run.py",
+      "action": "MODIFIED",
+      "before_sha256": "700b17cd9d6dbe7ee68a4516619e42f4743df533e17b9c2747ecf10912e7cc37",
+      "after_sha256": "a41058ca6b694a1cb65fe9d5c43d0344136a7b872aa0aa469163323a92b1201a"
+    },
+    {
+      "path": "scripts/audit_retraining_readiness.py",
+      "action": "ARCHIVED",
+      "before_sha256": "4435dec38461e90e62460585aae969cf73ca8ad4b6cbdae501a498e70c8d341c",
+      "after_sha256": null
+    },
+    {
+      "path": "scripts/benchmark_live.py",
+      "action": "MODIFIED",
+      "before_sha256": "985f63ed02bed21750378ba05f63a86dd688e2ff059601e40ffe4b9165f59df8",
+      "after_sha256": "cd99be18e11ae5309c0ef39e8f41cfd1c588740baf1232ce976baab43f7ffa0c"
+    },
+    {
+      "path": "scripts/check_dataset_v2.py",
+      "action": "MODIFIED",
+      "before_sha256": "ea2a6e7a4aa19ead17553e4e75234f115ca4c075a7997ab7d2fa0127479380d3",
+      "after_sha256": "2fe892282482049d6e260ece854840656a5b63eb60687e13e569a1cda684847c"
+    },
+    {
+      "path": "scripts/compare_baselines_v2.py",
+      "action": "ARCHIVED",
+      "before_sha256": "016703402d666d29e8ba3bc55f7cbb892a99f955833a56825d17b11b7b76739e",
+      "after_sha256": null
+    },
+    {
+      "path": "scripts/develop_baseline3_size.py",
+      "action": "ARCHIVED",
+      "before_sha256": "fcccd76205b1182146378edc6ae8034c473a9b37eed45b5cc1eb5a8167ea7177",
+      "after_sha256": null
+    },
+    {
+      "path": "scripts/develop_caliper_v3.py",
+      "action": "ARCHIVED",
+      "before_sha256": "f19e3acb62bcef8b092ea6824d55278125edfd944f504d909ca06adc67fb6a0a",
+      "after_sha256": null
+    },
+    {
+      "path": "scripts/experiment_baseline3_v2.py",
+      "action": "ARCHIVED",
+      "before_sha256": "1c4d92868d550fb1179c4fbf035cb3207f6e47f3e50cef79e62b95cfe90f1781",
+      "after_sha256": null
+    },
+    {
+      "path": "scripts/finalize_stage2.py",
+      "action": "MODIFIED",
+      "before_sha256": "c7f8ee9adcfac5e1c107233175c9b98b4bc87f44847f818c9f0865a0733a2b71",
+      "after_sha256": "e25f37a08126bc9ecbd7fbab94eafb642739e2b46ef596070532e3a8482638e6"
+    },
+    {
+      "path": "scripts/prepare_dataset_v2.py",
+      "action": "MODIFIED",
+      "before_sha256": "5ba0b4dad20a33fe5c7aa667afa409361d5b960911dab2905caff8095574f3bf",
+      "after_sha256": "7563bb154c7d0c0256edbe9e5a775f3b72614dc8d19d49d6debc32147b2aaee9"
+    },
+    {
+      "path": "scripts/repair_baseline3_size.py",
+      "action": "ARCHIVED",
+      "before_sha256": "9e87838cc623d5957585cf9aefb2f4addaeaa5fcaa5d014fa86a06e6eaf4781d",
+      "after_sha256": null
+    },
+    {
+      "path": "scripts/train_candidates.py",
+      "action": "MODIFIED",
+      "before_sha256": "558eda6f20b659f78e25189785a7093df2625ea660c37af3e307682556fc7d9c",
+      "after_sha256": "3f9dc0b935f060265e9918ca07c2f8850e15d31570382fd5b7f94bfdd1e0dcbb"
+    },
+    {
+      "path": "scripts/verify_models.py",
+      "action": "ADDED",
+      "before_sha256": null,
+      "after_sha256": "40741aa02716d7b8d8791b9d1de91176b12dbfc094e5c886e809ad680b294d54"
+    },
+    {
+      "path": "src/data/dataset_v2.py",
+      "action": "MODIFIED",
+      "before_sha256": "37511d976139d85a785fd3faac3eb9fcf5a9b0824d3d81d1cc2f78f72f2f904a",
+      "after_sha256": "b33c03277d3b8b8d41861b54a8b57ae05c89dc224f26cc230570cc8674f47675"
+    },
+    {
+      "path": "src/inference/batch.py",
+      "action": "MODIFIED",
+      "before_sha256": "6792891d02ee11542852d772a9b5ee7197b951b75bbf9fa3c58a2fee110dd03d",
+      "after_sha256": "6d4dd2adba0c3dc7affb13406ab6d47f7aa094a659a24c95acc76d30aff2a871"
+    },
+    {
+      "path": "src/model_registry.py",
+      "action": "ADDED",
+      "before_sha256": null,
+      "after_sha256": "34ddf9d7f8a9a7e72ae0255dbe7ba3cf9ecfa9f22dd8957e5d45c30a4d4636a5"
+    },
+    {
+      "path": "src/models/baseline3/size_caliper.py",
+      "action": "ARCHIVED",
+      "before_sha256": "866375361d44ffea0780312d6b35a22a670362f9a30fd012e3d9c029f77a6fb6",
+      "after_sha256": null
+    },
+    {
+      "path": "src/models/baseline3/vision_caliper.py",
+      "action": "ARCHIVED",
+      "before_sha256": "468b2257f7c731caf4a49bd9c77e730a24b27f94cdfa2a83c1b314cefde933d1",
+      "after_sha256": null
+    },
+    {
+      "path": "src/p07_bridge.py",
+      "action": "MODIFIED",
+      "before_sha256": "af48c0b3ec7259efa5368ece9e1186505e54212d021d14db3edb9cdcd275c99b",
+      "after_sha256": "b83d750583ace0c77760dadb1f4391051d24240d55836acc3c6905804d29279c"
+    },
+    {
+      "path": "src/p07_dashboard.py",
+      "action": "MODIFIED",
+      "before_sha256": "69141ab5db13a0c69472c6e7eb4a617fbea74e01e4cd94552afd178e418e8bd3",
+      "after_sha256": "cf3aa63263bc45e542a0259e462db9f369feaf795a6c9a7355b83fc3afe5770c"
+    },
+    {
+      "path": "src/p07_output.py",
+      "action": "MODIFIED",
+      "before_sha256": "31b098a86a8ff0b44215557c598c9bffbcf741ae8c1ebf3d2d94262966eb56b6",
+      "after_sha256": "5872b00c099d3c113e8f9c0e7054304a4c9409a7d5470437232db8334d46b2da"
+    },
+    {
+      "path": "tests/test_benchmark_live.py",
+      "action": "MODIFIED",
+      "before_sha256": "578d64c221caea680e95ac642e01f809d693ce39aae236710372f495253d2e90",
+      "after_sha256": "b5ac09fbc562424c11b36a77f1ab1ca8ed73138783c87d47e6ddef10319929fc"
+    },
+    {
+      "path": "tests/test_model_registry.py",
+      "action": "ADDED",
+      "before_sha256": null,
+      "after_sha256": "f25aa80c6d42ea031d967a38290c338fc504f370ce51712fb0b63c43f83c95c2"
+    },
+    {
+      "path": "tests/test_p07.py",
+      "action": "MODIFIED",
+      "before_sha256": "4879456d77786fc41225357e83bdb3b26ea11960b4a89dfdcf96b0a66b7b5392",
+      "after_sha256": "88e40ece62f479061559295f159915ba8317aca9a26da144d89bc8fa17a4a945"
+    },
+    {
+      "path": "tests/test_p07_dashboard.py",
+      "action": "MODIFIED",
+      "before_sha256": "32608f7735eca9ccde1caf7e23bbd3bba5484f9686da7df634f9171cc13309bd",
+      "after_sha256": "0f1631c597dac18289fb03a2b99c101605d244e7cc80b98350b694a605986d5f"
+    },
+    {
+      "path": "tests/test_p07_real_integration.py",
+      "action": "MODIFIED",
+      "before_sha256": "9513ae2e6095f28aea30f0a0c28c8b2a74ed92e3074792b7974bf21c9a8150e1",
+      "after_sha256": "2b36a1b1153ce49e018b8327d105d6a10e06747fbde923d73cef1ad419c7a968"
+    },
+    {
+      "path": "tests/test_vision_caliper.py",
+      "action": "ARCHIVED",
+      "before_sha256": "3f976a5ed56f0d86c8bcb844ea5d0b575b058bee9ea5cfb57f6385d0138e6997",
+      "after_sha256": null
+    }
+  ],
+  "formal_models": "model_promotion.json",
+  "derived_data": "dataset_migration.json",
+  "history": [
+    "cleanup.json",
+    "historical_runner_archive.json"
+  ],
+  "new_output_roots": [
+    "results/p07_final_integration",
+    "results/p08_stage2_final"
+  ],
+  "documentation": [
+    "README.md",
+    "docs/p07/final_handoff.md",
+    "docs/p07/demo_recording_checklist.md",
+    "docs/p07/advice_record.md",
+    "docs/live_benchmark.md",
+    "docs/ui_operations.md",
+    "docs/dataset_v2.md",
+    "docs/baseline3_integration.md",
+    "docs/baseline3_size_integration.md",
+    "results/README.md",
+    "review/decision_stage2.md"
+  ],
+  "note": "Git status may also include pre-existing members work; dataset movement and historical artifacts are listed separately"
+}

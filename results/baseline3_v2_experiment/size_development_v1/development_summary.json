@@ -1,0 +1,226 @@
+{
+  "DIM-SPECIMEN-01": {
+    "specification": "M4×10细螺丝_ID3_20",
+    "images": 14,
+    "complete": 13,
+    "partial": 0,
+    "failed": 1,
+    "reasons": {
+      "SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW": 1
+    },
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 13,
+        "mean": 3.902251787029097,
+        "median": 3.887193483551036,
+        "std": 0.15458634261186557,
+        "min": 3.635504696846292,
+        "max": 4.194813111745721,
+        "p05": 3.702621706634223,
+        "p95": 4.178033859298739
+      },
+      "underhead_length": {
+        "n": 13,
+        "mean": 8.882247865845171,
+        "median": 8.89300379690093,
+        "std": 0.5847112486174861,
+        "min": 7.354905655927498,
+        "max": 9.592139315525214,
+        "p05": 7.992517248912847,
+        "p95": 9.5082430532903
+      }
+    }
+  },
+  "DIM-SPECIMEN-02": {
+    "specification": "M4×25长螺丝_ID1_20",
+    "images": 14,
+    "complete": 14,
+    "partial": 0,
+    "failed": 0,
+    "reasons": {},
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 14,
+        "mean": 3.819277461741819,
+        "median": 3.8032972213161207,
+        "std": 0.11898305829087111,
+        "min": 3.5516084346113765,
+        "max": 4.027020587275891,
+        "p05": 3.642496052032534,
+        "p95": 4.008843063791662
+      },
+      "underhead_length": {
+        "n": 14,
+        "mean": 23.42103987391361,
+        "median": 23.365109032423675,
+        "std": 0.5596828264653358,
+        "min": 22.540129120447013,
+        "max": 24.497708572595013,
+        "p05": 22.631016737868173,
+        "p95": 24.20686819684731
+      }
+    }
+  },
+  "DIM-SPECIMEN-03": {
+    "specification": "M4×40长螺丝_ID0_40",
+    "images": 28,
+    "complete": 28,
+    "partial": 0,
+    "failed": 0,
+    "reasons": {},
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 28,
+        "mean": 3.997057636477709,
+        "median": 3.999055166530921,
+        "std": 0.1766995710323853,
+        "min": 3.635504696846292,
+        "max": 4.418536477705495,
+        "p05": 3.738976753602685,
+        "p95": 4.240956055974925
+      },
+      "underhead_length": {
+        "n": 28,
+        "mean": 39.066694015698545,
+        "median": 39.59903577487961,
+        "std": 1.4444210809655653,
+        "min": 35.37625724238892,
+        "max": 40.85747970840331,
+        "p05": 36.573177250273694,
+        "p95": 40.6323580714063
+      }
+    }
+  },
+  "DIM-SPECIMEN-04": {
+    "specification": "M4六角螺母_ID4_20",
+    "images": 14,
+    "complete": 12,
+    "partial": 0,
+    "failed": 2,
+    "reasons": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 1,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY": 1
+    },
+    "dimensions": {
+      "across_flats": {
+        "n": 12,
+        "mean": 7.018293339378444,
+        "median": 7.084222155634596,
+        "std": 0.14998118963607937,
+        "min": 6.791285490363669,
+        "max": 7.189057866914979,
+        "p05": 6.799028776875633,
+        "p95": 7.175088693921722
+      }
+    }
+  },
+  "DIM-SPECIMEN-05": {
+    "specification": "M4小垫片_ID0_40",
+    "images": 28,
+    "complete": 20,
+    "partial": 0,
+    "failed": 8,
+    "reasons": {
+      "MULTIPLE_FOREGROUND_OBJECTS": 6,
+      "INNER_HOLE_NOT_UNAMBIGUOUS": 1,
+      "FOREGROUND_TOUCHES_CROP": 1
+    },
+    "dimensions": {
+      "inner_diameter": {
+        "n": 20,
+        "mean": 5.106025338172913,
+        "median": 5.126107692718505,
+        "std": 0.06659337440078951,
+        "min": 4.97327136993408,
+        "max": 5.197372436523436,
+        "p05": 4.990564918518069,
+        "p95": 5.193257880210877
+      },
+      "outer_diameter": {
+        "n": 20,
+        "mean": 11.58297085762024,
+        "median": 11.617352962493896,
+        "std": 0.35731431349790477,
+        "min": 10.94790840148926,
+        "max": 12.0022497177124,
+        "p05": 11.009078168869019,
+        "p95": 11.989840364456175
+      }
+    }
+  },
+  "DIM-SPECIMEN-06": {
+    "specification": "M5×10粗螺丝_ID2_20",
+    "images": 14,
+    "complete": 14,
+    "partial": 0,
+    "failed": 0,
+    "reasons": {},
+    "dimensions": {
+      "thread_major_diameter": {
+        "n": 14,
+        "mean": 5.24351638968215,
+        "median": 5.21555096893718,
+        "std": 0.24050958643390602,
+        "min": 4.949879471859951,
+        "max": 5.956634618678924,
+        "p05": 4.986234518828414,
+        "p95": 5.665794242931223
+      },
+      "underhead_length": {
+        "n": 14,
+        "mean": 8.675273021100795,
+        "median": 8.669280430941154,
+        "std": 0.462931630125904,
+        "min": 7.886248650081953,
+        "max": 9.396381370310413,
+        "p05": 8.013491314471574,
+        "p95": 9.323671276373489
+      }
+    }
+  },
+  "DIM-SPECIMEN-07": {
+    "specification": "M5平垫圈_ID5_20",
+    "images": 14,
+    "complete": 12,
+    "partial": 0,
+    "failed": 2,
+    "reasons": {
+      "MULTIPLE_FOREGROUND_OBJECTS": 2
+    },
+    "dimensions": {
+      "inner_diameter": {
+        "n": 12,
+        "mean": 5.106708725293479,
+        "median": 5.101735115051271,
+        "std": 0.05822471271802845,
+        "min": 5.036463260650636,
+        "max": 5.247992515563967,
+        "p05": 5.038057017326356,
+        "p95": 5.193045806884766
+      },
+      "outer_diameter": {
+        "n": 12,
+        "mean": 14.307362953821817,
+        "median": 14.243213653564453,
+        "std": 0.3841899016396443,
+        "min": 13.816296577453613,
+        "max": 15.143458366394047,
+        "p05": 13.823290014266966,
+        "p95": 14.985837745666506
+      }
+    }
+  },
+  "DIM-SPECIMEN-08": {
+    "specification": "M6盖型螺母_ID0_40",
+    "images": 28,
+    "complete": 0,
+    "partial": 0,
+    "failed": 28,
+    "reasons": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 16,
+      "SIX_FLATS_NOT_RESOLVED": 11,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY": 1
+    },
+    "dimensions": {}
+  }
+}

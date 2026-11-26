@@ -1,0 +1,16 @@
+image_id,truth,status,count_rule,scenario,non_catalogue_type,has_id0,run
+A019.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A026.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A061.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A084.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A099.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A102.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A109.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A131.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A147.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A154.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A162.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A170.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A194.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A198.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734
+A204.jpg,PASS,REVIEW,PASS,A,,False,results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734

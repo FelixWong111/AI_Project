@@ -1,0 +1,71 @@
+{
+  "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+  "image_count": 30,
+  "prediction_status_counts": {
+    "REVIEW": 15,
+    "FAIL": 15
+  },
+  "five_class_vector_exact": 1.0,
+  "classes": {
+    "0": {
+      "support": 9,
+      "tp": 9,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    },
+    "1": {
+      "support": 27,
+      "tp": 27,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    },
+    "2": {
+      "support": 29,
+      "tp": 29,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    },
+    "3": {
+      "support": 28,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    },
+    "4": {
+      "support": 28,
+      "tp": 27,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.9642857142857143,
+      "recall": 0.9642857142857143,
+      "f1": 0.9642857142857143,
+      "count_mae": 0.0
+    },
+    "5": {
+      "support": 28,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "code_sha256": "468b2257f7c731caf4a49bd9c77e730a24b27f94cdfa2a83c1b314cefde933d1",
+  "settings": {
+    "sigma": 1.2,
+    "half_width": 2,
+    "minimum_gradient": 2.0
+  },
+  "summary": {
+    "public_train": {
+      "1": {
+        "n": 325,
+        "complete": 122,
+        "partial": 187,
+        "reasons": {
+          "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 119,
+          "CALIPER_TIP_UNRESOLVED": 68,
+          "CALIPER_SHAFT_REGIONS_INCONSISTENT": 7,
+          "CALIPER_TOO_FEW_SHAFT_REGIONS": 6,
+          "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 2,
+          "CALIPER_AXIS_AMBIGUOUS": 1
+        }
+      },
+      "2": {
+        "n": 349,
+        "complete": 74,
+        "partial": 243,
+        "reasons": {
+          "CALIPER_SHAFT_REGIONS_INCONSISTENT": 16,
+          "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 173,
+          "CALIPER_TIP_UNRESOLVED": 70,
+          "CALIPER_TOO_FEW_SHAFT_REGIONS": 8,
+          "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 8
+        }
+      },
+      "3": {
+        "n": 355,
+        "complete": 94,
+        "partial": 235,
+        "reasons": {
+          "CALIPER_TIP_UNRESOLVED": 93,
+          "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 142,
+          "CALIPER_SHAFT_REGIONS_INCONSISTENT": 10,
+          "CALIPER_TOO_FEW_SHAFT_REGIONS": 12,
+          "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 3,
+          "CALIPER_SHAFT_AXIAL_COVERAGE_LOW": 1
+        }
+      },
+      "4": {
+        "n": 333,
+        "complete": 53,
+        "partial": 0,
+        "reasons": {
+          "CALIPER_FLAT_EDGE_NOT_PARALLEL": 199,
+          "CALIPER_OPPOSITE_FLATS_UNSUPPORTED": 46,
+          "CALIPER_HEXAGON_STRAIGHT_EDGES_INSUFFICIENT": 34,
+          "CALIPER_HEXAGON_POSE_OR_SHADOW": 1
+        }
+      },
+      "5": {
+        "n": 336,
+        "complete": 4,
+        "partial": 0,
+        "reasons": {
+          "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW": 52,
+          "CALIPER_CIRCULAR_FIT_RESIDUAL_HIGH": 97,
+          "CALIPER_CIRCULAR_OUTLIER_SUPPORT_TOO_SMALL": 140,
+          "CALIPER_CIRCULAR_FACE_TILTED": 6,
+          "CALIPER_TOO_FEW_ANNULAR_PAIRS": 37
+        }
+      }
+    },
+    "dimension_development": {
+      "1": {
+        "n": 42,
+        "complete": 18,
+        "partial": 23,
+        "reasons": {
+          "CALIPER_TIP_UNRESOLVED": 8,
+          "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 15,
+          "CALIPER_SHAFT_REGIONS_INCONSISTENT": 1
+        }
+      },
+      "2": {
+        "n": 14,
+        "complete": 2,
+        "partial": 10,
+        "reasons": {
+          "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 10,
+          "CALIPER_SHAFT_REGIONS_INCONSISTENT": 2
+        }
+      },
+      "3": {
+        "n": 14,
+        "complete": 3,
+        "partial": 11,
+        "reasons": {
+          "CALIPER_TIP_UNRESOLVED": 3,
+          "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 8
+        }
+      },
+      "4": {
+        "n": 42,
+        "complete": 2,
+        "partial": 0,
+        "reasons": {
+          "CALIPER_HEXAGON_STRAIGHT_EDGES_INSUFFICIENT": 30,
+          "CALIPER_FLAT_EDGE_NOT_PARALLEL": 6,
+          "CALIPER_OPPOSITE_FLATS_UNSUPPORTED": 1,
+          "CALIPER_HEXAGON_DIRECTIONS_INCONSISTENT": 3
+        }
+      },
+      "5": {
+        "n": 42,
+        "complete": 0,
+        "partial": 0,
+        "reasons": {
+          "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW": 6,
+          "CALIPER_CIRCULAR_OUTLIER_SUPPORT_TOO_SMALL": 10,
+          "CALIPER_CIRCULAR_FIT_RESIDUAL_HIGH": 21,
+          "CALIPER_TOO_FEW_ANNULAR_PAIRS": 4,
+          "CALIPER_CIRCULAR_FACE_TILTED": 1
+        }
+      }
+    }
+  },
+  "data_scope": "Train + dimension development only",
+  "timing": "Concurrent diagnostic only; not pipeline latency"
+}

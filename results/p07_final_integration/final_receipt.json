@@ -1,0 +1,75 @@
+{
+  "status": "NOT_READY",
+  "software_tests": 303,
+  "failures": 0,
+  "errors": 0,
+  "model_ids": [
+    "baseline1",
+    "baseline2",
+    "baseline3"
+  ],
+  "model_registry_sha256": "c7032745438eb3661b7bb6029e83cd9bbdd073e7d1c778fad930e2478eed7a5a",
+  "inference_and_parameter_freeze_verified": true,
+  "final_gui_and_entrypoint_freeze_verified": true,
+  "physical_confirmation": {
+    "recorded_at_utc": "2026-11-26T05:17:55.732109+00:00",
+    "source": "User reply in current task",
+    "statement": "尚未完成实机布置或标定",
+    "rig": "NOT_READY",
+    "camo_calibration": "NOT_VERIFIED",
+    "teacher_tolerance_record": "NOT_PROVIDED",
+    "live_benchmark": "NOT_RUN",
+    "no_further_camera_sampling_in_this_task": true
+  },
+  "public_images": {
+    "train": 360,
+    "validation": 80,
+    "stage2_test": 30,
+    "size_development": 154,
+    "size_regression_used": 66,
+    "ruler": 10
+  },
+  "source_provenance": {
+    "source_images_sha256_verified": 700,
+    "original_annotations_sha256_verified": 470,
+    "mapping": "datasets/mechanical_components_v2/manifests/provenance.csv",
+    "source_reads_only": true,
+    "stage3_images_excluded": true,
+    "dimension_and_ruler_conversion": "HEIC source and PNG derived have separate SHA; no claim of identical file encoding"
+  },
+  "clean_evaluator": "PASS: original three prediction scores/object observations and weight hashes match in clean stdlib-only venv",
+  "clean_ml_install_and_prediction": "PASS",
+  "p08_test": "B1/B2 reused; B3 full v2 first run once; no post-Test tuning",
+  "real_live_latency": "NOT_RUN",
+  "p03": "NO_WRITES",
+  "stage3": "90 sealed images/GT excluded from Git and evaluation",
+  "git_branch": "p07/system-integration",
+  "unmerged_entries": 0,
+  "git_diff_check": "PASS",
+  "commit_push_merge": "NOT_RUN",
+  "remote_lfs_clone": "NOT_VERIFIED",
+  "documents": "docs/p07/final_handoff.md",
+  "required_manual_actions": [
+    "Camo/caliper/instructor physical acceptance and real live latency",
+    "Native GUI/real demonstration recording",
+    "Upload dataset image package to cloud drive and share link with P08",
+    "Commit/push models/code/metadata/results and verify remote LFS clone",
+    "Provide original pre-improvement Stage2 decision record"
+  ],
+  "finalized_at_utc": "2026-11-26T06:23:36.335215+00:00",
+  "clean_core_interface_tests": 8,
+  "full_303_suite": "Previously passed; NOT_REPEATED in final clean environment",
+  "clean_acceptance": "results/p07_final_integration/clean_ml_acceptance.json",
+  "git_dataset_images": {
+    "local_images": 700,
+    "ignored_images": 700,
+    "tracked_images": 0,
+    "untracking_needed": false,
+    "local_images_deleted": false,
+    "delivery": "Separate cloud drive; link not yet provided"
+  },
+  "dataset_metadata_git_files": 978,
+  "formal_weights_and_p08_artifacts_git_eligible": true,
+  "original_venv_dependencies": "UNCHANGED",
+  "final_scope": "Git delivery, final indexes and receipt only; no more experiments or Computer Use"
+}

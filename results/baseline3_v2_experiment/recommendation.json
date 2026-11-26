@@ -1,0 +1,19 @@
+{
+  "pre_test_detector_choice": "new",
+  "after_test_parameters_changed": false,
+  "formal_replacement": false,
+  "complete_stage2_compliance": false,
+  "recommendation": "Detector candidate selection only; neither full system has verified physical size acceptance. Do not replace GUI defaults until calibration/physical validation and user approval.",
+  "physical_blockers": [
+    "No verified calibration matching new collection/live geometry",
+    "No specimen IDs/caliper measurements/error bounds",
+    "No instructor-confirmed tolerances/support geometry",
+    "Empty validated measurement registry",
+    "No validated foreground background reference"
+  ],
+  "live": "NOT_RUN",
+  "metrics": "comparison_metrics.csv",
+  "timing": "benchmarks/offline_summary.json",
+  "source_snapshot": "old_source_snapshot.zip",
+  "resume_command": "python scripts/experiment_baseline3_v2.py --phase auto"
+}

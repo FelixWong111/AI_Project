@@ -1,0 +1,40 @@
+{
+  "checks_passed": true,
+  "protected_old_files": 346,
+  "frozen_candidate_files": 14,
+  "phase_status": {
+    "size_caliper_v3_audit": "COMPLETED",
+    "size_caliper_v3_develop": "COMPLETED",
+    "size_caliper_v3_select": "COMPLETED",
+    "size_caliper_v3_freeze": "COMPLETED",
+    "size_caliper_v3_regress": "COMPLETED",
+    "size_caliper_v3_check": "COMPLETED",
+    "size_caliper_v3_benchmark": "COMPLETED",
+    "size_caliper_v3_report": "COMPLETED",
+    "size_caliper_v3_archive": "COMPLETED"
+  },
+  "development_measurements_per_profile": 1852,
+  "train_images_per_method": 360,
+  "val_once_only_cases": 80,
+  "val_shared_yolo_observations": 80,
+  "retained_once_only_cases": 66,
+  "methods_per_case": 3,
+  "offline_timing_frames_per_method": 20,
+  "freeze_before_regression": true,
+  "all_lossless_archives_sha256_verified": 478,
+  "files": 775,
+  "bytes": 51983004,
+  "source_sha256": {
+    "scripts/develop_caliper_v3.py": "f19e3acb62bcef8b092ea6824d55278125edfd944f504d909ca06adc67fb6a0a",
+    "src/models/baseline3/size_caliper.py": "866375361d44ffea0780312d6b35a22a670362f9a30fd012e3d9c029f77a6fb6",
+    "src/models/baseline3/vision_caliper.py": "468b2257f7c731caf4a49bd9c77e730a24b27f94cdfa2a83c1b314cefde933d1",
+    "tests/test_vision_caliper.py": "3f976a5ed56f0d86c8bcb844ea5d0b575b058bee9ea5cfb57f6385d0138e6997"
+  },
+  "recommendation": "A / size_repair_v2",
+  "formal_test": "NOT_RUN",
+  "stage3": "NOT_OPENED",
+  "p03": "NO_WRITES",
+  "no_post_regression_measurement_or_config_changes": true,
+  "physical_acceptance": "PENDING",
+  "commit_push_merge": "NOT_RUN"
+}

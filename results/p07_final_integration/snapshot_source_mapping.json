@@ -1,0 +1,37 @@
+[
+  {
+    "generated_snapshot": "results/p07_final_integration/real_gui/session/20261126T042853Z-c6b7e4b6/REAL-/1795667333325932400/source.png",
+    "snapshot_sha256": "49e393db7060c06750f86fd65be822567710f15dee1a755414c455231dd1ee5a",
+    "canonical_source": "datasets/mechanical_components_v2/public/train/images/A001.jpg",
+    "canonical_sha256": "ff2a848967e04d2a900483e0a4e2de18ebb326cc3e58b96332a2801433b0a57d",
+    "decoded_pixels_identical": true
+  },
+  {
+    "generated_snapshot": "results/p07_final_integration/real_gui/session/20261126T042853Z-c6b7e4b6/REAL-/1795667333961505600/source.png",
+    "snapshot_sha256": "49e393db7060c06750f86fd65be822567710f15dee1a755414c455231dd1ee5a",
+    "canonical_source": "datasets/mechanical_components_v2/public/train/images/A001.jpg",
+    "canonical_sha256": "ff2a848967e04d2a900483e0a4e2de18ebb326cc3e58b96332a2801433b0a57d",
+    "decoded_pixels_identical": true
+  },
+  {
+    "generated_snapshot": "results/p07_final_integration/real_gui/session/20261126T042853Z-c6b7e4b6/REAL-/1795667335016276400/source.png",
+    "snapshot_sha256": "49e393db7060c06750f86fd65be822567710f15dee1a755414c455231dd1ee5a",
+    "canonical_source": "datasets/mechanical_components_v2/public/train/images/A001.jpg",
+    "canonical_sha256": "ff2a848967e04d2a900483e0a4e2de18ebb326cc3e58b96332a2801433b0a57d",
+    "decoded_pixels_identical": true
+  },
+  {
+    "generated_snapshot": "results/p07_final_integration/offline_recording_test/20261126T044524Z-b25d1b31/REAL-/1795668325800268400/source.png",
+    "snapshot_sha256": "49e393db7060c06750f86fd65be822567710f15dee1a755414c455231dd1ee5a",
+    "canonical_source": "datasets/mechanical_components_v2/public/train/images/A001.jpg",
+    "canonical_sha256": "ff2a848967e04d2a900483e0a4e2de18ebb326cc3e58b96332a2801433b0a57d",
+    "decoded_pixels_identical": true
+  },
+  {
+    "generated_snapshot": "results/p07_final_integration/offline_recording_verified/20261126T044658Z-585e8eeb/REAL-/1795668419238388100/source.png",
+    "snapshot_sha256": "49e393db7060c06750f86fd65be822567710f15dee1a755414c455231dd1ee5a",
+    "canonical_source": "datasets/mechanical_components_v2/public/train/images/A001.jpg",
+    "canonical_sha256": "ff2a848967e04d2a900483e0a4e2de18ebb326cc3e58b96332a2801433b0a57d",
+    "decoded_pixels_identical": true
+  }
+]

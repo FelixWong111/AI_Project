@@ -142,7 +142,7 @@ class IntegratedBackend:
         return output
 
 
-def create_backend(*,model_id,config):
+def create_backend(*,model_id,config,detector_factory=None):
     if model_id!='baseline3' or not isinstance(config,dict) or set(config)!={'pipeline_config_path'}:
         raise ValueError('Expected baseline3 with pipeline_config_path')
     def path(value):
@@ -174,5 +174,5 @@ def create_backend(*,model_id,config):
                                         capture_geometry_id=settings['capture_geometry_id'],roi=background['roi'],config=params)
     pipeline=EvidencePipeline(SizeEvidenceProcessor(specs,calibration,policy=policy),
                               capture_geometry_id=settings['capture_geometry_id'],foreground=foreground,foreground_enabled=enabled)
-    detector=create_detector(model_id=model_id,config={'config_path':str(path(settings['detector_config_path']))})
+    detector=(detector_factory or create_detector)(model_id=model_id,config={'config_path':str(path(settings['detector_config_path']))})
     return IntegratedBackend(detector,pipeline,dict(path=str(config_path),file_sha256=hashlib.sha256(config_path.read_bytes()).hexdigest()))

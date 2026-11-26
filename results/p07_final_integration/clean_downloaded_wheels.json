@@ -1,0 +1,17 @@
+[
+  {
+    "file": "outputs/final_integration/clean_wheelhouse/pillow-13.0.0-cp311-cp311-win_amd64.whl",
+    "bytes": 7278471,
+    "sha256": "d7710eb676e9bb68965cb045be0d333b4c0d7f9dfbaa7fbf121385b1588683d3"
+  },
+  {
+    "file": "outputs/final_integration/clean_wheelhouse/torch-2.7.1+cu126-cp311-cp311-win_amd64.whl",
+    "bytes": 2716982502,
+    "sha256": "f3af23387ac106b5b01dbef0eb021883e0c00ff4073477b7ce1cbade5ef5038d"
+  },
+  {
+    "file": "outputs/final_integration/clean_wheelhouse/torchvision-0.22.1+cu126-cp311-cp311-win_amd64.whl",
+    "bytes": 6334229,
+    "sha256": "a2f2dec920c2f023e406caf342fae0d9071eeaca54fc0367ef66136765e6de5b"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "initial_failure": "Ultralytics get_user_config_dir fell back to unwritable \\tmp\\Ultralytics because the requested cache directory did not exist",
+  "log": "results/p07_final_integration/clean_ml/model_loads_initial.log",
+  "action": "Use the already existing writable outputs/final_integration directory",
+  "YOLO_CONFIG_DIR": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration",
+  "MPLCONFIGDIR": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration",
+  "dependency_reinstallation": false,
+  "maximum_additional_attempts": 1
+}

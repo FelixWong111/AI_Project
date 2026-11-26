@@ -1,0 +1,183 @@
+{
+  "scope": "Post-freeze reused forensic regression, not selection",
+  "image_id": "A088.jpg",
+  "result_status": "REVIEW",
+  "object": {
+    "detection_id": 0,
+    "class_id": 2,
+    "xmin": 1846.0313720703125,
+    "ymin": 690.0142822265625,
+    "xmax": 2593.23388671875,
+    "ymax": 1240.8291015625,
+    "score": 0.7745830416679382,
+    "detector_class_id": 2,
+    "size_evidence": {
+      "measurement": {
+        "status": "MEASURED_CANDIDATE",
+        "reason": "",
+        "class_id": 2,
+        "dimensions": {
+          "underhead_length": {
+            "line_xy": [
+              [
+                711.5764205336073,
+                535.2880113126773
+              ],
+              [
+                370.33947190909976,
+                472.3090871123135
+              ]
+            ],
+            "pixels": 347.0,
+            "mm_estimate": 9.704000998505101,
+            "line_xy_original": [
+              [
+                2295.5764205336072,
+                963.2880113126773
+              ],
+              [
+                1954.3394719090998,
+                900.3090871123135
+              ]
+            ]
+          },
+          "thread_major_diameter": {
+            "line_xy": [
+              [
+                527.974478440526,
+                593.4307396598131
+              ],
+              [
+                560.825156481638,
+                415.4368269767125
+              ]
+            ],
+            "pixels": 181.00000000000009,
+            "mm_estimate": 5.061741154839839,
+            "line_xy_original": [
+              [
+                2111.974478440526,
+                1021.4307396598131
+              ],
+              [
+                2144.8251564816383,
+                843.4368269767125
+              ]
+            ]
+          }
+        },
+        "dimension_status": {
+          "underhead_length": {
+            "status": "CANDIDATE",
+            "reason": ""
+          },
+          "thread_major_diameter": {
+            "status": "CANDIDATE",
+            "reason": ""
+          }
+        },
+        "diagnostics": {
+          "background_intensity": 185.0,
+          "segmentation_threshold": 131.0,
+          "isolated_peer_boxes": 0,
+          "silhouette_method": "target-owned observed boundary; hull used for axis only",
+          "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+          "underhead_method": "observed silhouette shoulder transition",
+          "tip_method": "observed silhouette end",
+          "rough_contour_width_px": 177.9014129638672,
+          "diameter_sections": 110,
+          "eligible_sections": 189,
+          "exterior_rejected_internal_edges": 2047,
+          "diameter_p10_px": 162.9,
+          "diameter_p90_px": 181.10000000000002,
+          "diameter_repeatability_px": 8.8956,
+          "shaft_line_fraction": 0.4899135446685879,
+          "axis_xy": [
+            -0.9833917827795607,
+            -0.18149545879067394
+          ],
+          "quality_valid_for_rejection": true,
+          "measurement_uncertainty_mm": 0.24876919677896825,
+          "selected_contour_method": "DARK_SILHOUETTE",
+          "candidate_outlines": 2
+        },
+        "scale_px_per_mm": [
+          35.7584464442507,
+          35.7584464442507
+        ],
+        "scope": "repaired Stage2 visible geometry; provisional mm, not caliper truth"
+      },
+      "conclusion": "WITHIN_DEVELOPMENT_BAND",
+      "details": [],
+      "provisional": true,
+      "reason": "",
+      "development_acceptance_bands": {
+        "thread_major_diameter": {
+          "min_mm": 4.589601036547772,
+          "max_mm": 6.390190023885105,
+          "observed_min": 4.949879471859951,
+          "observed_max": 5.956634618678924,
+          "n": 14
+        },
+        "underhead_length": {
+          "min_mm": 7.3122457192456,
+          "max_mm": 10.080299755987769,
+          "observed_min": 7.886248650081953,
+          "observed_max": 9.396381370310413,
+          "n": 14
+        }
+      },
+      "measurement_policy_reason": "EXTERIOR_IMAGE_SUPPORT / DEVELOPMENT_ONLY / NOT_INSTRUCTOR_APPROVED",
+      "quality": {
+        "background_intensity": 185.0,
+        "segmentation_threshold": 131.0,
+        "isolated_peer_boxes": 0,
+        "silhouette_method": "target-owned observed boundary; hull used for axis only",
+        "diameter_method": "90th-percentile envelope of repeated background-connected exterior edges",
+        "underhead_method": "observed silhouette shoulder transition",
+        "tip_method": "observed silhouette end",
+        "rough_contour_width_px": 177.9014129638672,
+        "diameter_sections": 110,
+        "eligible_sections": 189,
+        "exterior_rejected_internal_edges": 2047,
+        "diameter_p10_px": 162.9,
+        "diameter_p90_px": 181.10000000000002,
+        "diameter_repeatability_px": 8.8956,
+        "shaft_line_fraction": 0.4899135446685879,
+        "axis_xy": [
+          -0.9833917827795607,
+          -0.18149545879067394
+        ],
+        "quality_valid_for_rejection": true,
+        "measurement_uncertainty_mm": 0.24876919677896825,
+        "selected_contour_method": "DARK_SILHOUETTE",
+        "candidate_outlines": 2,
+        "independent_error_bound_mm": null,
+        "ruler_scale_envelope": 0.07278529454310165
+      },
+      "dimension_evidence": {
+        "thread_major_diameter": {
+          "local_repeatability_interval_mm": [
+            4.812971958060871,
+            5.310510351618808
+          ],
+          "absolute_physical_error_bound_mm": null,
+          "provisional": true
+        },
+        "underhead_length": {
+          "local_repeatability_interval_mm": [
+            9.455231801726134,
+            9.952770195284069
+          ],
+          "absolute_physical_error_bound_mm": null,
+          "provisional": true
+        }
+      }
+    }
+  },
+  "frame_review_reasons": [
+    "object 2: ELLIPSE_SUPPORT_DEGENERATE []",
+    "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+  ],
+  "target_size_conclusion": "WITHIN_DEVELOPMENT_BAND"
+}

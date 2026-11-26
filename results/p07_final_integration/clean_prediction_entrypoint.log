@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\������\Desktop\������\ai\Project\predict.py", line 2, in <module>
+    from src.inference.batch import main, load_cases, validate_counts
+  File "C:\Users\������\Desktop\������\ai\Project\src\inference\batch.py", line 11, in <module>
+    from src.adapters.baseline2 import IMAGE_FIELDS
+  File "C:\Users\������\Desktop\������\ai\Project\src\adapters\baseline2.py", line 12, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

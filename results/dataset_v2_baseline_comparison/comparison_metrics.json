@@ -1,0 +1,1248 @@
+{
+  "validation": {
+    "baseline1_old": {
+      "input_cases": 80,
+      "ground_truth_eligible": 80,
+      "completed_eligible": 80,
+      "correct": 38,
+      "wrong_on_completed": 42,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.475,
+      "all_eligible_correct_fraction": 0.475,
+      "completed_accuracy": 0.475,
+      "completed_balanced_accuracy": 0.475,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 60,
+        "FAIL": 20
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 9,
+        "fp": 11,
+        "fn": 31,
+        "tn": 29,
+        "rows_truth_PASS_FAIL": [
+          [
+            29,
+            11
+          ],
+          [
+            31,
+            9
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.45,
+        "recall": 0.225,
+        "f1": 0.3,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.225
+      },
+      "passed": {
+        "precision": 0.48333333333333334,
+        "recall": 0.725,
+        "f1": 0.58,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.725
+      },
+      "false_pass": {
+        "count": 31,
+        "rate": 0.775,
+        "denominator": 40,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 11,
+        "rate": 0.275,
+        "denominator": 40,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline1_new": {
+      "input_cases": 80,
+      "ground_truth_eligible": 80,
+      "completed_eligible": 80,
+      "correct": 72,
+      "wrong_on_completed": 8,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.9,
+      "all_eligible_correct_fraction": 0.9,
+      "completed_accuracy": 0.9,
+      "completed_balanced_accuracy": 0.8999999999999999,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 36,
+        "FAIL": 44
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 38,
+        "fp": 6,
+        "fn": 2,
+        "tn": 34,
+        "rows_truth_PASS_FAIL": [
+          [
+            34,
+            6
+          ],
+          [
+            2,
+            38
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.8636363636363636,
+        "recall": 0.95,
+        "f1": 0.9047619047619048,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.95
+      },
+      "passed": {
+        "precision": 0.9444444444444444,
+        "recall": 0.85,
+        "f1": 0.8947368421052632,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.85
+      },
+      "false_pass": {
+        "count": 2,
+        "rate": 0.05,
+        "denominator": 40,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 6,
+        "rate": 0.15,
+        "denominator": 40,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline2_old": {
+      "input_cases": 80,
+      "ground_truth_eligible": 80,
+      "completed_eligible": 80,
+      "correct": 45,
+      "wrong_on_completed": 35,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.5625,
+      "all_eligible_correct_fraction": 0.5625,
+      "completed_accuracy": 0.5625,
+      "completed_balanced_accuracy": 0.5625,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 67,
+        "FAIL": 13
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 9,
+        "fp": 4,
+        "fn": 31,
+        "tn": 36,
+        "rows_truth_PASS_FAIL": [
+          [
+            36,
+            4
+          ],
+          [
+            31,
+            9
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.6923076923076923,
+        "recall": 0.225,
+        "f1": 0.33962264150943394,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.225
+      },
+      "passed": {
+        "precision": 0.5373134328358209,
+        "recall": 0.9,
+        "f1": 0.6728971962616822,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.9
+      },
+      "false_pass": {
+        "count": 31,
+        "rate": 0.775,
+        "denominator": 40,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 4,
+        "rate": 0.1,
+        "denominator": 40,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline2_new": {
+      "input_cases": 80,
+      "ground_truth_eligible": 80,
+      "completed_eligible": 80,
+      "correct": 69,
+      "wrong_on_completed": 11,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.8625,
+      "all_eligible_correct_fraction": 0.8625,
+      "completed_accuracy": 0.8625,
+      "completed_balanced_accuracy": 0.8625,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 37,
+        "FAIL": 43
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 36,
+        "fp": 7,
+        "fn": 4,
+        "tn": 33,
+        "rows_truth_PASS_FAIL": [
+          [
+            33,
+            7
+          ],
+          [
+            4,
+            36
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.8372093023255814,
+        "recall": 0.9,
+        "f1": 0.8674698795180723,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.9
+      },
+      "passed": {
+        "precision": 0.8918918918918919,
+        "recall": 0.825,
+        "f1": 0.8571428571428571,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.825
+      },
+      "false_pass": {
+        "count": 4,
+        "rate": 0.1,
+        "denominator": 40,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 7,
+        "rate": 0.175,
+        "denominator": 40,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline1_old_gui": {
+      "input_cases": 80,
+      "ground_truth_eligible": 80,
+      "completed_eligible": 70,
+      "correct": 35,
+      "wrong_on_completed": 35,
+      "unresolved_eligible": 10,
+      "all_input_correct_fraction": 0.4375,
+      "all_eligible_correct_fraction": 0.4375,
+      "completed_accuracy": 0.5,
+      "completed_balanced_accuracy": 0.4934640522875817,
+      "prediction_coverage": 0.875,
+      "eligible_coverage": 0.875,
+      "status_counts": {
+        "PASS": 51,
+        "FAIL": 19,
+        "REVIEW": 10
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 9,
+        "fp": 10,
+        "fn": 25,
+        "tn": 26,
+        "rows_truth_PASS_FAIL": [
+          [
+            26,
+            10
+          ],
+          [
+            25,
+            9
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.47368421052631576,
+        "recall": 0.2647058823529412,
+        "f1": 0.33962264150943394,
+        "support_all": 40,
+        "support_scored": 34,
+        "recall_all_eligible": 0.225
+      },
+      "passed": {
+        "precision": 0.5098039215686274,
+        "recall": 0.7222222222222222,
+        "f1": 0.5977011494252874,
+        "support_all": 40,
+        "support_scored": 36,
+        "recall_all_eligible": 0.65
+      },
+      "false_pass": {
+        "count": 25,
+        "rate": 0.625,
+        "denominator": 40,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 10,
+        "rate": 0.25,
+        "denominator": 40,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline1_new_gui": {
+      "input_cases": 80,
+      "ground_truth_eligible": 80,
+      "completed_eligible": 78,
+      "correct": 72,
+      "wrong_on_completed": 6,
+      "unresolved_eligible": 2,
+      "all_input_correct_fraction": 0.9,
+      "all_eligible_correct_fraction": 0.9,
+      "completed_accuracy": 0.9230769230769231,
+      "completed_balanced_accuracy": 0.925,
+      "prediction_coverage": 0.975,
+      "eligible_coverage": 0.975,
+      "status_counts": {
+        "PASS": 34,
+        "FAIL": 44,
+        "REVIEW": 2
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 38,
+        "fp": 6,
+        "fn": 0,
+        "tn": 34,
+        "rows_truth_PASS_FAIL": [
+          [
+            34,
+            6
+          ],
+          [
+            0,
+            38
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.8636363636363636,
+        "recall": 1.0,
+        "f1": 0.926829268292683,
+        "support_all": 40,
+        "support_scored": 38,
+        "recall_all_eligible": 0.95
+      },
+      "passed": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1": 0.918918918918919,
+        "support_all": 40,
+        "support_scored": 40,
+        "recall_all_eligible": 0.85
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 40,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 6,
+        "rate": 0.15,
+        "denominator": 40,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    }
+  },
+  "test": {
+    "baseline1_old": {
+      "input_cases": 30,
+      "ground_truth_eligible": 30,
+      "completed_eligible": 30,
+      "correct": 18,
+      "wrong_on_completed": 12,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.6,
+      "all_eligible_correct_fraction": 0.6,
+      "completed_accuracy": 0.6,
+      "completed_balanced_accuracy": 0.6,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 5,
+        "PASS": 25
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 4,
+        "fp": 1,
+        "fn": 11,
+        "tn": 14,
+        "rows_truth_PASS_FAIL": [
+          [
+            14,
+            1
+          ],
+          [
+            11,
+            4
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.8,
+        "recall": 0.26666666666666666,
+        "f1": 0.4,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.26666666666666666
+      },
+      "passed": {
+        "precision": 0.56,
+        "recall": 0.9333333333333333,
+        "f1": 0.7,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.9333333333333333
+      },
+      "false_pass": {
+        "count": 11,
+        "rate": 0.7333333333333333,
+        "denominator": 15,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 1,
+        "rate": 0.06666666666666667,
+        "denominator": 15,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline1_new": {
+      "input_cases": 30,
+      "ground_truth_eligible": 30,
+      "completed_eligible": 30,
+      "correct": 29,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.9666666666666667,
+      "all_eligible_correct_fraction": 0.9666666666666667,
+      "completed_accuracy": 0.9666666666666667,
+      "completed_balanced_accuracy": 0.9666666666666667,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 16,
+        "FAIL": 14
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 15,
+        "rows_truth_PASS_FAIL": [
+          [
+            15,
+            0
+          ],
+          [
+            1,
+            14
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.9333333333333333
+      },
+      "passed": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 1.0
+      },
+      "false_pass": {
+        "count": 1,
+        "rate": 0.06666666666666667,
+        "denominator": 15,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 15,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline2_old": {
+      "input_cases": 30,
+      "ground_truth_eligible": 30,
+      "completed_eligible": 30,
+      "correct": 20,
+      "wrong_on_completed": 10,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.6666666666666666,
+      "all_eligible_correct_fraction": 0.6666666666666666,
+      "completed_accuracy": 0.6666666666666666,
+      "completed_balanced_accuracy": 0.6666666666666667,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 23,
+        "FAIL": 7
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 6,
+        "fp": 1,
+        "fn": 9,
+        "tn": 14,
+        "rows_truth_PASS_FAIL": [
+          [
+            14,
+            1
+          ],
+          [
+            9,
+            6
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.8571428571428571,
+        "recall": 0.4,
+        "f1": 0.5454545454545454,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.4
+      },
+      "passed": {
+        "precision": 0.6086956521739131,
+        "recall": 0.9333333333333333,
+        "f1": 0.7368421052631579,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.9333333333333333
+      },
+      "false_pass": {
+        "count": 9,
+        "rate": 0.6,
+        "denominator": 15,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 1,
+        "rate": 0.06666666666666667,
+        "denominator": 15,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "baseline2_new": {
+      "input_cases": 30,
+      "ground_truth_eligible": 30,
+      "completed_eligible": 30,
+      "correct": 26,
+      "wrong_on_completed": 4,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.8666666666666667,
+      "all_eligible_correct_fraction": 0.8666666666666667,
+      "completed_accuracy": 0.8666666666666667,
+      "completed_balanced_accuracy": 0.8666666666666667,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 17,
+        "FAIL": 13
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 12,
+        "fp": 1,
+        "fn": 3,
+        "tn": 14,
+        "rows_truth_PASS_FAIL": [
+          [
+            14,
+            1
+          ],
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1": 0.8571428571428571,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.8
+      },
+      "passed": {
+        "precision": 0.8235294117647058,
+        "recall": 0.9333333333333333,
+        "f1": 0.875,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.9333333333333333
+      },
+      "false_pass": {
+        "count": 3,
+        "rate": 0.2,
+        "denominator": 15,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 1,
+        "rate": 0.06666666666666667,
+        "denominator": 15,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    }
+  },
+  "training": {
+    "baseline1_old": {
+      "train": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 138,
+        "FP": 0,
+        "FN": 0,
+        "TN": 124,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            124,
+            0
+          ],
+          [
+            0,
+            138
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 124,
+        "support_FAIL": 138,
+        "misclassified": []
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 22,
+        "FP": 0,
+        "FN": 0,
+        "TN": 24,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            24,
+            0
+          ],
+          [
+            0,
+            22
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": []
+      }
+    },
+    "baseline1_new": {
+      "train": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 180,
+        "FP": 0,
+        "FN": 0,
+        "TN": 180,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            180,
+            0
+          ],
+          [
+            0,
+            180
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 180,
+        "support_FAIL": 180,
+        "misclassified": []
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.9,
+        "precision": 0.8636363636363636,
+        "recall": 0.95,
+        "f1": 0.9047619047619048,
+        "TP": 38,
+        "FP": 6,
+        "FN": 2,
+        "TN": 34,
+        "false_PASS": 2,
+        "false_FAIL": 6,
+        "confusion_matrix": [
+          [
+            34,
+            6
+          ],
+          [
+            2,
+            38
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 40,
+        "support_FAIL": 40,
+        "misclassified": [
+          {
+            "image_id": "A191.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7453886866569519
+          },
+          {
+            "image_id": "F14.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.0
+          },
+          {
+            "image_id": "F16.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.0001550912857055664
+          },
+          {
+            "image_id": "H021.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7091284990310669
+          },
+          {
+            "image_id": "H039.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9798055291175842
+          },
+          {
+            "image_id": "H040.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9342983961105347
+          },
+          {
+            "image_id": "H043.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.6582109332084656
+          },
+          {
+            "image_id": "H059.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9958177208900452
+          }
+        ]
+      }
+    },
+    "baseline2_old": {
+      "train": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 138,
+        "FP": 0,
+        "FN": 0,
+        "TN": 124,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            124,
+            0
+          ],
+          [
+            0,
+            138
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 124,
+        "support_FAIL": 138,
+        "misclassified": []
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8043478260869565,
+        "precision": 0.8421052631578947,
+        "recall": 0.7272727272727273,
+        "f1": 0.7804878048780488,
+        "TP": 16,
+        "FP": 3,
+        "FN": 6,
+        "TN": 21,
+        "false_PASS": 6,
+        "false_FAIL": 3,
+        "confusion_matrix": [
+          [
+            21,
+            3
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": [
+          {
+            "image_id": "fail171.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.49262000204085055
+          },
+          {
+            "image_id": "fail27.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.21626966291959004
+          },
+          {
+            "image_id": "fail29.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.3419569768466413
+          },
+          {
+            "image_id": "fail35.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.48957698255603954
+          },
+          {
+            "image_id": "fail38.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.16069720899129591
+          },
+          {
+            "image_id": "fail43.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4264881247910357
+          },
+          {
+            "image_id": "pass102.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5221739649614705
+          },
+          {
+            "image_id": "pass133.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5418803494803698
+          },
+          {
+            "image_id": "pass15.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5192240570758013
+          }
+        ]
+      }
+    },
+    "baseline2_new": {
+      "train": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 180,
+        "FP": 0,
+        "FN": 0,
+        "TN": 180,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            180,
+            0
+          ],
+          [
+            0,
+            180
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 180,
+        "support_FAIL": 180,
+        "misclassified": []
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8625,
+        "precision": 0.8372093023255814,
+        "recall": 0.9,
+        "f1": 0.8674698795180723,
+        "TP": 36,
+        "FP": 7,
+        "FN": 4,
+        "TN": 33,
+        "false_PASS": 4,
+        "false_FAIL": 7,
+        "confusion_matrix": [
+          [
+            33,
+            7
+          ],
+          [
+            4,
+            36
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 40,
+        "support_FAIL": 40,
+        "misclassified": [
+          {
+            "image_id": "A076.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5131452142708386
+          },
+          {
+            "image_id": "A197.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5857812225448256
+          },
+          {
+            "image_id": "B39.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.025865513188109257
+          },
+          {
+            "image_id": "B40.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.005186388295055466
+          },
+          {
+            "image_id": "G12.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.3785671997886134
+          },
+          {
+            "image_id": "H018.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.883862568868338
+          },
+          {
+            "image_id": "H020.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.781711435731475
+          },
+          {
+            "image_id": "H021.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.6470990492766402
+          },
+          {
+            "image_id": "H039.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9497737310776714
+          },
+          {
+            "image_id": "H040.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7120791388380567
+          },
+          {
+            "image_id": "H076.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4627217192922555
+          }
+        ]
+      }
+    }
+  },
+  "model_bytes": {
+    "baseline1_old": 955169,
+    "baseline1_new": 955515,
+    "baseline2_old": 46875112,
+    "baseline2_new": 46874991
+  },
+  "comparison_rows": [
+    {
+      "metric": "Train Accuracy (own cohort)",
+      "baseline1_old": 1.0,
+      "baseline1_new": 1.0,
+      "baseline2_old": 1.0,
+      "baseline2_new": 1.0
+    },
+    {
+      "metric": "Val Accuracy (80 shared)",
+      "baseline1_old": 0.475,
+      "baseline1_new": 0.9,
+      "baseline2_old": 0.5625,
+      "baseline2_new": 0.8625
+    },
+    {
+      "metric": "Val FAIL F1",
+      "baseline1_old": 0.3,
+      "baseline1_new": 0.9047619047619048,
+      "baseline2_old": 0.33962264150943394,
+      "baseline2_new": 0.8674698795180723
+    },
+    {
+      "metric": "Test Accuracy (30 shared)",
+      "baseline1_old": 0.6,
+      "baseline1_new": 0.9666666666666667,
+      "baseline2_old": 0.6666666666666666,
+      "baseline2_new": 0.8666666666666667
+    },
+    {
+      "metric": "Test Balanced Accuracy",
+      "baseline1_old": 0.6,
+      "baseline1_new": 0.9666666666666667,
+      "baseline2_old": 0.6666666666666667,
+      "baseline2_new": 0.8666666666666667
+    },
+    {
+      "metric": "Test FAIL Precision",
+      "baseline1_old": 0.8,
+      "baseline1_new": 1.0,
+      "baseline2_old": 0.8571428571428571,
+      "baseline2_new": 0.9230769230769231
+    },
+    {
+      "metric": "Test FAIL Recall",
+      "baseline1_old": 0.26666666666666666,
+      "baseline1_new": 0.9333333333333333,
+      "baseline2_old": 0.4,
+      "baseline2_new": 0.8
+    },
+    {
+      "metric": "Test FAIL F1",
+      "baseline1_old": 0.4,
+      "baseline1_new": 0.9655172413793104,
+      "baseline2_old": 0.5454545454545454,
+      "baseline2_new": 0.8571428571428571
+    },
+    {
+      "metric": "Test PASS Precision",
+      "baseline1_old": 0.56,
+      "baseline1_new": 0.9375,
+      "baseline2_old": 0.6086956521739131,
+      "baseline2_new": 0.8235294117647058
+    },
+    {
+      "metric": "Test PASS Recall",
+      "baseline1_old": 0.9333333333333333,
+      "baseline1_new": 1.0,
+      "baseline2_old": 0.9333333333333333,
+      "baseline2_new": 0.9333333333333333
+    },
+    {
+      "metric": "Test PASS F1",
+      "baseline1_old": 0.7,
+      "baseline1_new": 0.967741935483871,
+      "baseline2_old": 0.7368421052631579,
+      "baseline2_new": 0.875
+    },
+    {
+      "metric": "Test False PASS",
+      "baseline1_old": 11,
+      "baseline1_new": 1,
+      "baseline2_old": 9,
+      "baseline2_new": 3
+    },
+    {
+      "metric": "Test False PASS Rate (true FAIL denominator)",
+      "baseline1_old": 0.7333333333333333,
+      "baseline1_new": 0.06666666666666667,
+      "baseline2_old": 0.6,
+      "baseline2_new": 0.2
+    },
+    {
+      "metric": "Test False FAIL",
+      "baseline1_old": 1,
+      "baseline1_new": 0,
+      "baseline2_old": 1,
+      "baseline2_new": 1
+    },
+    {
+      "metric": "Test False FAIL Rate (true PASS denominator)",
+      "baseline1_old": 0.06666666666666667,
+      "baseline1_new": 0.0,
+      "baseline2_old": 0.06666666666666667,
+      "baseline2_new": 0.06666666666666667
+    },
+    {
+      "metric": "Test Coverage",
+      "baseline1_old": 1.0,
+      "baseline1_new": 1.0,
+      "baseline2_old": 1.0,
+      "baseline2_new": 1.0
+    },
+    {
+      "metric": "Test REVIEW",
+      "baseline1_old": 0,
+      "baseline1_new": 0,
+      "baseline2_old": 0,
+      "baseline2_new": 0
+    },
+    {
+      "metric": "Test ERROR",
+      "baseline1_old": 0,
+      "baseline1_new": 0,
+      "baseline2_old": 0,
+      "baseline2_new": 0
+    },
+    {
+      "metric": "Test Other non-success",
+      "baseline1_old": 0,
+      "baseline1_new": 0,
+      "baseline2_old": 0,
+      "baseline2_new": 0
+    },
+    {
+      "metric": "Live Median latency (ms)",
+      "baseline1_old": "NOT_MEASURED",
+      "baseline1_new": "NOT_MEASURED",
+      "baseline2_old": "NOT_MEASURED",
+      "baseline2_new": "NOT_MEASURED"
+    },
+    {
+      "metric": "Live P95 latency (ms)",
+      "baseline1_old": "NOT_MEASURED",
+      "baseline1_new": "NOT_MEASURED",
+      "baseline2_old": "NOT_MEASURED",
+      "baseline2_new": "NOT_MEASURED"
+    },
+    {
+      "metric": "Inference-only latency",
+      "baseline1_old": "NOT_MEASURED",
+      "baseline1_new": "NOT_MEASURED",
+      "baseline2_old": "NOT_MEASURED",
+      "baseline2_new": "NOT_MEASURED"
+    },
+    {
+      "metric": "Model bytes (required deployment weights)",
+      "baseline1_old": 955169,
+      "baseline1_new": 955515,
+      "baseline2_old": 46875112,
+      "baseline2_new": 46874991
+    },
+    {
+      "metric": "Offline processing median (ms)",
+      "baseline1_old": 59.44325000746176,
+      "baseline1_new": 16.04805001989007,
+      "baseline2_old": 87.11810002569109,
+      "baseline2_new": 86.86454998678528
+    }
+  ],
+  "live_latency": "NOT_MEASURED",
+  "object_metrics": "N/A: image-only models, no boxes/counts fabricated",
+  "stage3": "NOT_RUN"
+}

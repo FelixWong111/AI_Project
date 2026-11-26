@@ -1,0 +1,8582 @@
+[
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3342.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3343.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3344.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3345.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3346.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3347.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_30_IMG_3348.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3349.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3350.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3351.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3352.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3353.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3354.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3355.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3356.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3357.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3358.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3359.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3360.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_31_IMG_3361.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3362.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3363.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3364.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3365.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3366.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_33_IMG_3367.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3368.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3369.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3370.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3371.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3372.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3373.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3374.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3375.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3376.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3377.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3378.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3379.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3380.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_34_IMG_3381.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5033112582781456
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3382.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3383.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3384.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3385.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3386.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_36_IMG_3387.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3388.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3389.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3390.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3391.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3392.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3394.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3395.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3396.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3397.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_37_IMG_3398.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3399.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3400.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3401.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3402.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3403.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3404.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3405.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3406.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3407.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3408.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3409.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_38_IMG_3410.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3411.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3412.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3413.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3414.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3415.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3416.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3417.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3418.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3419.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3420.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3421.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_39_IMG_3422.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D_2026_11_25_21_41_IMG_3423.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3425.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3426.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3427.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3428.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3429.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3430.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3431.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3432.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3433.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3434.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3435.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3436.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3437.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3438.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_42_IMG_3439.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_43_IMG_3440.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_43_IMG_3441.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_43_IMG_3442.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_43_IMG_3443.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "D_2026_11_25_21_47_IMG_3444.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_47_IMG_3445.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_47_IMG_3446.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_47_IMG_3447.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3448.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3449.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3450.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3451.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3452.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3453.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3454.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3455.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3456.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3457.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3458.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3459.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3460.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3461.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3462.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3463.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_48_IMG_3464.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3465.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3466.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3467.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3468.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3469.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3470.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3471.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3472.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3473.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3474.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3475.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3476.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3477.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3478.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3479.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3480.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_49_IMG_3481.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_50_IMG_3482.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_50_IMG_3483.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.580204778156997
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3484.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3485.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3486.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3487.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3488.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3489.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3490.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3491.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_51_IMG_3492.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3493.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3494.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3495.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3497.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3498.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3499.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3500.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3501.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3502.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3503.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_52_IMG_3504.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3506.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3507.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3508.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3509.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3510.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3511.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3512.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3513.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_54_IMG_3514.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3515.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3516.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3517.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3518.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3519.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3520.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3521.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3522.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3523.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3524.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_55_IMG_3525.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "D_2026_11_25_21_56_IMG_3526.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3527.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3528.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3529.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3530.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3531.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3532.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3533.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3534.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3535.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3536.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3537.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3538.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3539.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3540.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_57_IMG_3541.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3542.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3543.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3544.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3545.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3546.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3547.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3548.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3549.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3550.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3551.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3552.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3553.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3554.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3555.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_58_IMG_3556.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3557.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3558.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3559.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3560.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3561.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3562.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3563.png",
+    "subset": "retained_scene_validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3564.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "D_2026_11_25_21_59_IMG_3565.png",
+    "subset": "development",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6341463414634148
+  },
+  {
+    "image_id": "A001.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A002.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A003.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A004.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A005.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A006.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A008.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A009.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A010.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A011.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A012.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A014.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A015.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A016.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A017.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A018.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A020.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A021.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A022.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A023.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A024.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A025.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A027.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A028.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A029.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A030.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A031.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A032.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A033.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A036.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A037.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A038.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A039.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A040.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A041.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A042.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A043.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A044.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A045.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A048.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A049.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A050.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A052.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A053.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A054.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A055.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A056.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A057.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A058.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A059.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A060.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A062.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A063.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A064.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A065.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A066.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A067.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A068.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A069.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A070.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A071.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A072.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A073.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A074.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A075.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A076.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A077.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A078.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A079.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A080.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A081.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A082.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A083.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A085.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A086.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A087.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A088.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A089.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A090.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A091.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A092.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A093.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A094.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A095.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A096.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A097.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A098.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A100.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A101.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A103.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A104.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A105.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A106.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A107.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A108.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A110.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A111.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A112.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A113.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A114.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A115.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A116.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A117.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A118.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A119.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A120.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A121.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A122.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A123.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A124.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A125.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A126.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A127.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A128.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A129.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A130.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A132.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A133.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A134.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A135.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A136.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A137.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A139.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A140.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A141.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A143.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A144.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A145.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A146.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A148.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A149.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A150.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A151.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A153.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A156.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A158.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A159.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A160.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A161.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A163.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A164.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A165.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A166.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A167.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A168.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A171.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A172.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A173.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A174.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A175.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A176.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A177.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A178.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A180.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A181.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A182.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A183.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A184.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A185.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A186.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A187.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A188.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A189.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A190.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A191.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A192.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A193.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A195.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A196.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A197.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A199.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A200.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A201.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A202.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A203.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A206.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A207.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A208.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A209.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "A210.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": null,
+    "camera": null,
+    "lens": null,
+    "focal_mm": null,
+    "digital_zoom": null
+  },
+  {
+    "image_id": "B01.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B02.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B03.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B05.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B06.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B07.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B08.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B09.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B10.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B11.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B12.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B13.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B14.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B15.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B18.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B19.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B20.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B21.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B22.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B23.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B24.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B25.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B26.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B27.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B29.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B30.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B33.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B34.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B35.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.625
+  },
+  {
+    "image_id": "B36.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "B37.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "B38.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "B39.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "B40.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "B41.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "B42.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "C01.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "C02.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "C04.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "C05.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "C06.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "C07.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "C08.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C09.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C10.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C12.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C13.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C15.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C16.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C17.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C18.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C19.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C21.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "C22.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C23.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C24.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C25.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C26.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C28.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C29.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C30.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C31.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C32.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C34.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C35.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "C36.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "C37.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "C38.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "C39.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "C40.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "C41.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "C42.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "D01.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6204506065857887
+  },
+  {
+    "image_id": "D02.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D03.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D04.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D06.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D07.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D08.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D09.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D11.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D12.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D13.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D14.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D15.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D16.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D17.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D18.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D20.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D21.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D22.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D23.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D24.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D25.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D26.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D27.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D29.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D30.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D31.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D32.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D33.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D34.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D35.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D36.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D38.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D39.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D40.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D41.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D42.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "D44.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D45.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D46.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D48.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "D49.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.615916955017301
+  },
+  {
+    "image_id": "E01.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E02.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E03.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E04.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E05.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E06.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E07.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E08.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E09.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E10.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E12.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E13.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E15.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5158069883527454
+  },
+  {
+    "image_id": "E16.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E17.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E18.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E19.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E20.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E22.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E25.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E26.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4909390444810544
+  },
+  {
+    "image_id": "E27.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "E28.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E29.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E31.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E32.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E33.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E34.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E35.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E36.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E37.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6387434554973823
+  },
+  {
+    "image_id": "E38.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "E39.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "E40.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "E41.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "E42.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.602409638554217
+  },
+  {
+    "image_id": "F01.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.554054054054054
+  },
+  {
+    "image_id": "F02.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5627118644067797
+  },
+  {
+    "image_id": "F03.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5627118644067797
+  },
+  {
+    "image_id": "F04.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5627118644067797
+  },
+  {
+    "image_id": "F05.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5627118644067797
+  },
+  {
+    "image_id": "F06.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5627118644067797
+  },
+  {
+    "image_id": "F08.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F10.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F12.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F13.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F14.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F15.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F16.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F17.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F18.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F19.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F20.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5758091993185688
+  },
+  {
+    "image_id": "F21.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4786885245901638
+  },
+  {
+    "image_id": "G01.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G02.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G03.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G04.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G05.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G06.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G07.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G08.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G10.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G11.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G12.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "G14.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5326633165829144
+  },
+  {
+    "image_id": "H002.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H004.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H005.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H008.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H009.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H010.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H011.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H016.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H017.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H018.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H019.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H020.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H021.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H022.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H026.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H029.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H032.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 5.7mm f/1.5",
+    "focal_mm": 5.7,
+    "digital_zoom": 1.3113616652211622
+  },
+  {
+    "image_id": "H033.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H034.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H035.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H036.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H037.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H039.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H040.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H043.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H044.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H046.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H047.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H048.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H049.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H050.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H051.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H052.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H054.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H056.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H057.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H059.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H066.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H068.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H069.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6295652173913044
+  },
+  {
+    "image_id": "H073.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H074.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H075.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H076.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H078.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H079.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H081.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H084.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H085.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H086.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H088.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H089.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.495049504950495
+  },
+  {
+    "image_id": "H094.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "H095.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "H096.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "H097.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.511627906976744
+  },
+  {
+    "image_id": "H099.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.589041095890411
+  },
+  {
+    "image_id": "H100.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.589041095890411
+  },
+  {
+    "image_id": "H103.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.589041095890411
+  },
+  {
+    "image_id": "H104.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.589041095890411
+  },
+  {
+    "image_id": "H105.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.589041095890411
+  },
+  {
+    "image_id": "H108.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "H109.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5454545454545454
+  },
+  {
+    "image_id": "H111.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6666666666666665
+  },
+  {
+    "image_id": "H112.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.6666666666666665
+  },
+  {
+    "image_id": "H114.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "H115.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.486842105263158
+  },
+  {
+    "image_id": "H116.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4991735537190083
+  },
+  {
+    "image_id": "H119.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4991735537190083
+  },
+  {
+    "image_id": "H121.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.4991735537190083
+  },
+  {
+    "image_id": "H123.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.5583756345177666
+  },
+  {
+    "image_id": "H125.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H127.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H130.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H131.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H133.jpg",
+    "subset": "validation",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H134.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H136.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H138.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  },
+  {
+    "image_id": "H139.jpg",
+    "subset": "train",
+    "frame_size": [
+      3024,
+      4032
+    ],
+    "orientation": 1,
+    "camera": "iPhone 13 Pro Max",
+    "lens": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+    "focal_mm": 1.57,
+    "digital_zoom": 2.657293497363796
+  }
+]

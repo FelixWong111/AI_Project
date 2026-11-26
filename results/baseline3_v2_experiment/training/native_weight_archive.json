@@ -1,0 +1,62 @@
+[
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/best.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/best.pt",
+    "sha256": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch0.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch0.pt",
+    "sha256": "6df6b79c38316e793eb65144150c0affa068b6a3b151fbe6294e19d16bc85bc4"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch10.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch10.pt",
+    "sha256": "f1cbb83f95b54d116b2eef5e88194a16c409b72cf56918c46fb1a3f68e76b837"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch20.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch20.pt",
+    "sha256": "5cdefa5ada8a53ddffc6a7431022d408a501d89e82556ef8050448b40ff7057e"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch30.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch30.pt",
+    "sha256": "1e17fe57d3c15dd5dbf5f9302008a62906576d91fadefb8c736799b01ff5bfac"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch40.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch40.pt",
+    "sha256": "da6b16bcabfd221261ccac37f00d56e08e02a72a5e96ab078c3236e8ab618e59"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch50.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch50.pt",
+    "sha256": "010cf382c19af90cf671a46dff45478df2a0a9204cdcc53a89bfb9aa1a52855b"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch60.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch60.pt",
+    "sha256": "6fa5ab37f826dd2720fb063da6108b88421918315a49e78760c49ad58f34e45e"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch70.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch70.pt",
+    "sha256": "8fe476cfb7c7955f0660487be8c1e0629e6ee8c77a1f0037494efb987dd43877"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch80.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch80.pt",
+    "sha256": "5c1d7caddc991f0d76ae31dea8783670a01aab3fc0cd9ea5245f5cb9a618503a"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/epoch90.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/epoch90.pt",
+    "sha256": "1364916729eff77688e115033dc2cb27dde8cdf0c2c9ed101264fdd0da842e50"
+  },
+  {
+    "original": "results/baseline3_v2_experiment/training/run01_csv_logging_retry/weights/last.pt",
+    "preserved_local_path": "outputs/baseline3_v2/native_checkpoint_archive/last.pt",
+    "sha256": "d1b2124af770272ddc66e2ed2d8ce8d826f966d09b8b1c55f33a0e3ef3f6ab64"
+  }
+]

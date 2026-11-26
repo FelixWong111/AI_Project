@@ -1,0 +1,296 @@
+{
+  "selection_sha256": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+  "results": {
+    "baseline": {
+      "development": {
+        "DIM-SPECIMEN-01": {
+          "n": 14,
+          "measured": 13,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 13,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-02": {
+          "n": 14,
+          "measured": 13,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 13,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-03": {
+          "n": 28,
+          "measured": 27,
+          "contours": 27,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 27,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-04": {
+          "n": 14,
+          "measured": 12,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 12,
+            "UNMEASURABLE": 2
+          }
+        },
+        "DIM-SPECIMEN-05": {
+          "n": 28,
+          "measured": 20,
+          "contours": 21,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 20,
+            "UNMEASURABLE": 8
+          }
+        },
+        "DIM-SPECIMEN-06": {
+          "n": 14,
+          "measured": 14,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 14
+          }
+        },
+        "DIM-SPECIMEN-07": {
+          "n": 14,
+          "measured": 12,
+          "contours": 12,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 12,
+            "UNMEASURABLE": 2
+          }
+        },
+        "DIM-SPECIMEN-08": {
+          "n": 28,
+          "measured": 0,
+          "contours": 28,
+          "conclusions": {
+            "UNMEASURABLE": 28
+          }
+        }
+      },
+      "retained_scene_validation": {
+        "DIM-SPECIMEN-01": {
+          "n": 6,
+          "measured": 5,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 4,
+            "OUTSIDE_DEVELOPMENT_BAND": 1,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-02": {
+          "n": 6,
+          "measured": 6,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 6
+          }
+        },
+        "DIM-SPECIMEN-03": {
+          "n": 12,
+          "measured": 11,
+          "contours": 11,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 11,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-04": {
+          "n": 6,
+          "measured": 5,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 5,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-05": {
+          "n": 12,
+          "measured": 10,
+          "contours": 11,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 10,
+            "UNMEASURABLE": 2
+          }
+        },
+        "DIM-SPECIMEN-06": {
+          "n": 6,
+          "measured": 6,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 6
+          }
+        },
+        "DIM-SPECIMEN-07": {
+          "n": 6,
+          "measured": 6,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 6
+          }
+        },
+        "DIM-SPECIMEN-08": {
+          "n": 12,
+          "measured": 0,
+          "contours": 12,
+          "conclusions": {
+            "UNMEASURABLE": 12
+          }
+        }
+      }
+    },
+    "optimized": {
+      "development": {
+        "DIM-SPECIMEN-01": {
+          "n": 14,
+          "measured": 13,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 13,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-02": {
+          "n": 14,
+          "measured": 14,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 14
+          }
+        },
+        "DIM-SPECIMEN-03": {
+          "n": 28,
+          "measured": 28,
+          "contours": 28,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 28
+          }
+        },
+        "DIM-SPECIMEN-04": {
+          "n": 14,
+          "measured": 12,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 12,
+            "UNMEASURABLE": 2
+          }
+        },
+        "DIM-SPECIMEN-05": {
+          "n": 28,
+          "measured": 20,
+          "contours": 21,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 20,
+            "UNMEASURABLE": 8
+          }
+        },
+        "DIM-SPECIMEN-06": {
+          "n": 14,
+          "measured": 14,
+          "contours": 14,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 14
+          }
+        },
+        "DIM-SPECIMEN-07": {
+          "n": 14,
+          "measured": 12,
+          "contours": 12,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 12,
+            "UNMEASURABLE": 2
+          }
+        },
+        "DIM-SPECIMEN-08": {
+          "n": 28,
+          "measured": 0,
+          "contours": 28,
+          "conclusions": {
+            "UNMEASURABLE": 28
+          }
+        }
+      },
+      "retained_scene_validation": {
+        "DIM-SPECIMEN-01": {
+          "n": 6,
+          "measured": 5,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 4,
+            "OUTSIDE_DEVELOPMENT_BAND": 1,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-02": {
+          "n": 6,
+          "measured": 6,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 6
+          }
+        },
+        "DIM-SPECIMEN-03": {
+          "n": 12,
+          "measured": 11,
+          "contours": 11,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 11,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-04": {
+          "n": 6,
+          "measured": 5,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 5,
+            "UNMEASURABLE": 1
+          }
+        },
+        "DIM-SPECIMEN-05": {
+          "n": 12,
+          "measured": 10,
+          "contours": 11,
+          "conclusions": {
+            "OUTSIDE_DEVELOPMENT_BAND": 10,
+            "UNMEASURABLE": 2
+          }
+        },
+        "DIM-SPECIMEN-06": {
+          "n": 6,
+          "measured": 6,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 6
+          }
+        },
+        "DIM-SPECIMEN-07": {
+          "n": 6,
+          "measured": 6,
+          "contours": 6,
+          "conclusions": {
+            "WITHIN_DEVELOPMENT_BAND": 6
+          }
+        },
+        "DIM-SPECIMEN-08": {
+          "n": 12,
+          "measured": 0,
+          "contours": 12,
+          "conclusions": {
+            "UNMEASURABLE": 12
+          }
+        }
+      }
+    }
+  },
+  "no_parameter_updates_after_holdout": true,
+  "independent_specimens": false,
+  "caveat": "Baseline and optimized use the same frozen empirical bands for paired comparison; original supplier nominal tolerance comparison is separate. Cap-nut failures are not size-confirmed rejection."
+}

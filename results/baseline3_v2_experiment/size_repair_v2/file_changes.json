@@ -1,0 +1,25 @@
+{
+  "added_code": {
+    "scripts/repair_baseline3_size.py": "9e87838cc623d5957585cf9aefb2f4addaeaa5fcaa5d014fa86a06e6eaf4781d",
+    "src/models/baseline3/geometry_repair.py": "7e768a97e6b8efc0a13402e98fdf29a008bbf144f0527cee470a3e72b1a7d042",
+    "src/models/baseline3/size_repaired.py": "be330872842404e59ad3fc25d44cd0a9be409bdf6c09701ace1872ef1b476f88",
+    "tests/test_baseline3_geometry_repair.py": "022c393d4bc4abe7b15015e02ad497ba39902379b5b8bf030e1a9a6eda5471d5"
+  },
+  "added_results_directory": "results/baseline3_v2_experiment/size_repair_v2",
+  "modified_progress_files": [
+    "results/baseline3_v2_experiment/PROGRESS.md",
+    "results/baseline3_v2_experiment/task_state.json"
+  ],
+  "existing_worktree_changes": "Predate this repair and were preserved; do not attribute all git status entries to this task",
+  "unchanged": [
+    "all old/new YOLO weights",
+    "YOLO conf0.35 / NMS0.50",
+    "v1 source/config/results",
+    "src/p06_geometry.py and other P06 code",
+    "app.py and default GUI config",
+    "Baseline1/2 artifacts",
+    "P03 and original images/annotations"
+  ],
+  "no_training_or_sealed_test_evaluation": true,
+  "no_commit_push_merge": true
+}

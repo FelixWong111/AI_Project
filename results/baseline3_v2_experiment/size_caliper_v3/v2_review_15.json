@@ -1,0 +1,108 @@
+[
+  {
+    "image_id": "A005.jpg",
+    "reasons": [
+      "object 2: SPEC_REFERENCE_CONFLICT ['underhead_length']"
+    ]
+  },
+  {
+    "image_id": "A067.jpg",
+    "reasons": [
+      "object 2: INNER_HOLE_NOT_UNAMBIGUOUS []",
+      "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A088.jpg",
+    "reasons": [
+      "object 2: ELLIPSE_SUPPORT_DEGENERATE []",
+      "object 2: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A091.jpg",
+    "reasons": [
+      "object 0: INNER_HOLE_NOT_UNAMBIGUOUS []",
+      "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A136.jpg",
+    "reasons": [
+      "object 1: ELLIPSE_SUPPORT_DEGENERATE []",
+      "object 1: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A164.jpg",
+    "reasons": [
+      "object 0: ELLIPSE_SUPPORT_DEGENERATE []",
+      "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A165.jpg",
+    "reasons": [
+      "object 0: ELLIPSE_SUPPORT_DEGENERATE []",
+      "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A207.jpg",
+    "reasons": [
+      "object 0: ELLIPSE_SUPPORT_DEGENERATE []",
+      "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "A208.jpg",
+    "reasons": [
+      "object 0: ELLIPSE_SUPPORT_DEGENERATE []",
+      "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "H018.jpg",
+    "reasons": [
+      "object 0: SHAFT_EXTERIOR_EDGES_UNSUPPORTED []",
+      "object 1: CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW []",
+      "object 2: BORDERLINE_MEASUREMENT ['thread_major_diameter']",
+      "object 0: NO_TRUSTED_GEOMETRIC_SUPPORT; object 1: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "H020.jpg",
+    "reasons": [
+      "object 3: SHAFT_EXTERIOR_TRACK_DISCONTINUOUS []",
+      "object 4: BORDERLINE_MEASUREMENT ['thread_major_diameter']",
+      "object 3: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "H021.jpg",
+    "reasons": [
+      "object 2: BORDERLINE_MEASUREMENT ['thread_major_diameter']",
+      "object 3: SHAFT_EXTERIOR_EDGES_UNSUPPORTED []",
+      "object 3: NO_TRUSTED_GEOMETRIC_SUPPORT; UNMATCHED_FOREGROUND"
+    ]
+  },
+  {
+    "image_id": "H039.jpg",
+    "reasons": [
+      "object 4: BORDERLINE_MEASUREMENT ['across_flats']"
+    ]
+  },
+  {
+    "image_id": "H040.jpg",
+    "reasons": [
+      "object 3: BORDERLINE_MEASUREMENT ['thread_major_diameter']",
+      "object 4: BORDERLINE_MEASUREMENT ['across_flats']"
+    ]
+  },
+  {
+    "image_id": "H059.jpg",
+    "reasons": [
+      "UNMATCHED_FOREGROUND"
+    ]
+  }
+]

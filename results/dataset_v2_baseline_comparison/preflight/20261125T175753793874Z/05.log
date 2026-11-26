@@ -1,0 +1,7 @@
+{
+  "stage": "stage2",
+  "images": 30,
+  "dataset_status": "CANDIDATE_NOT_READY",
+  "predictions": "NOT_RUN",
+  "metrics": "NOT_RUN"
+}

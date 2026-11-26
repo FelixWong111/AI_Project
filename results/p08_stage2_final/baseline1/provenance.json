@@ -1,0 +1,12 @@
+{
+  "status": "REUSED_NOT_RERUN",
+  "source": "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500",
+  "source_predictions": {
+    "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500/predictions/images.csv": "d3b67ea21a474e757492da48a62db0707caf7b7fa6811993407425ff38e9ca2a",
+    "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500/predictions/run_config.json": "cc6fabca845c6dc9027304b199a7ecb34dcefe7137224f8cec7509d9131f40c2",
+    "results/dataset_v2_baseline_comparison/evaluation/baseline1_new/baseline1-20261126-021503-942500/predictions/timing.csv": "42bda5dbcd33222bcabe373e944cfb56eed90a30d60a1f73c60cde021882ba9b"
+  },
+  "original_run_config_preserved": true,
+  "current_registry": "config/model_registry.json",
+  "identity": "Same weight SHA/preprocessing/fixed order/raw classifier; no scene_guard"
+}

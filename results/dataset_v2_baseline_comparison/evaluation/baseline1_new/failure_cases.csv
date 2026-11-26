@@ -1,0 +1,2 @@
+﻿image_id,ground_truth_label,predicted_label,prediction_status,prediction_score,score_type,score_meaning,decision_threshold,processing_ms,scenario_type,condition,non_catalogue_type,truth_id0_count,correct_target_counts,truth_target_count,image_path,error_type
+F07.jpg,FAIL,PASS,PASS,0.7911044359207153,prob,"P(predicted label), uncalibrated",argmax (binary boundary .5),15.45030000852421,F,normal,,0,False,5,data/mechanical_components_v2/yolo/images/test/F07.jpg,FALSE_PASS

@@ -1,0 +1,43 @@
+{
+  "registry": "config/model_registry.json",
+  "entry": {
+    "version": "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+    "output_capability": "image_level",
+    "bridge": null,
+    "model_config": {
+      "baseline2_bundle": "models/release/baseline2",
+      "device": "cpu"
+    },
+    "scene_guard": false,
+    "fixed_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "origin": "results/dataset_v2_baseline_comparison/selection.json",
+    "files": {
+      "models/release/baseline2/baseline2.json": "ef62957cc7addd49303d004b2269190da3a43199e9fb1519ea17518914e1c33b",
+      "models/release/baseline2/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "models/release/baseline2/training_record.json": "909b442d9ac5b755713e09217ca4b6e6aebbfd988386202b57708caac3166c01"
+    }
+  },
+  "prediction_provenance": {
+    "status": "REUSED_NOT_RERUN",
+    "source": "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160",
+    "source_predictions": {
+      "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160/predictions/images.csv": "8d25c64dde79b4632eef6284f3eb769ab50490b2e159f0038c2729fcd78ff3cf",
+      "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160/predictions/run_config.json": "59bb7a57f0ba1975aa4cf70ee3a63ca04d52b801fadfb807f31e64ca73ced17e",
+      "results/dataset_v2_baseline_comparison/evaluation/baseline2_new/baseline2-20261126-021521-812160/predictions/timing.csv": "d9153f55a33d961ab5fac27a9e8ed85426ad0ddccb2640d9637399305de21a4d"
+    },
+    "original_run_config_preserved": true,
+    "current_registry": "config/model_registry.json",
+    "identity": "Same weight SHA/preprocessing/fixed order/raw classifier; no scene_guard"
+  },
+  "original_run_config_sha256": "59bb7a57f0ba1975aa4cf70ee3a63ca04d52b801fadfb807f31e64ca73ced17e",
+  "input_order": "datasets/mechanical_components_v2/configs/expected_counts_stage2_test.json",
+  "image_manifest": "datasets/mechanical_components_v2/public/stage2_test/ground_truth_images.csv",
+  "coordinate_convention": "Original image pixels, top-left xyxy",
+  "score_convention": "Raw uncalibrated classifier probability; B3 rule label has null image score"
+}

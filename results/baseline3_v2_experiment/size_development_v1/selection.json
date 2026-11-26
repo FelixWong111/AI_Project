@@ -1,0 +1,164 @@
+{
+  "schema": "size-development-selection/v1",
+  "selected": {
+    "1": {
+      "trial": 3,
+      "parameters": {
+        "background_offset": 25,
+        "close_kernel": 5,
+        "targeted": true
+      },
+      "family": {
+        "1": {
+          "complete": 69,
+          "total": 70,
+          "normalized_spread": 0.042613066958199455
+        },
+        "4": {
+          "complete": 8,
+          "total": 14,
+          "normalized_spread": 0.012989128238753535
+        },
+        "5": {
+          "complete": 32,
+          "total": 42,
+          "normalized_spread": 0.02053614321675993
+        }
+      }
+    },
+    "4": {
+      "trial": 0,
+      "parameters": {
+        "background_offset": 25,
+        "close_kernel": 3,
+        "targeted": false
+      },
+      "family": {
+        "1": {
+          "complete": 67,
+          "total": 70,
+          "normalized_spread": 0.04396743575136271
+        },
+        "4": {
+          "complete": 12,
+          "total": 14,
+          "normalized_spread": 0.02137003718476122
+        },
+        "5": {
+          "complete": 32,
+          "total": 42,
+          "normalized_spread": 0.02053614321675993
+        }
+      }
+    },
+    "5": {
+      "trial": 0,
+      "parameters": {
+        "background_offset": 25,
+        "close_kernel": 3,
+        "targeted": false
+      },
+      "family": {
+        "1": {
+          "complete": 67,
+          "total": 70,
+          "normalized_spread": 0.04396743575136271
+        },
+        "4": {
+          "complete": 12,
+          "total": 14,
+          "normalized_spread": 0.02137003718476122
+        },
+        "5": {
+          "complete": 32,
+          "total": 42,
+          "normalized_spread": 0.02053614321675993
+        }
+      }
+    }
+  },
+  "bands": {
+    "3": {
+      "thread_major_diameter": {
+        "min_mm": 3.3708934166735047,
+        "max_mm": 4.500133819637398,
+        "observed_min": 3.635504696846292,
+        "observed_max": 4.194813111745721,
+        "n": 13
+      },
+      "underhead_length": {
+        "min_mm": 6.81957668142409,
+        "max_mm": 10.290306000904181,
+        "observed_min": 7.354905655927498,
+        "observed_max": 9.592139315525214,
+        "n": 13
+      }
+    },
+    "1": {
+      "thread_major_diameter": {
+        "min_mm": 3.293103568596423,
+        "max_mm": 4.320128466851901,
+        "observed_min": 3.5516084346113765,
+        "observed_max": 4.027020587275891,
+        "n": 14
+      },
+      "underhead_length": {
+        "min_mm": 20.899539183375733,
+        "max_mm": 26.280781506682406,
+        "observed_min": 22.540129120447013,
+        "observed_max": 24.497708572595013,
+        "n": 14
+      }
+    },
+    "4": {
+      "across_flats": {
+        "min_mm": 6.296979775621256,
+        "max_mm": 7.712315561245787,
+        "observed_min": 6.791285490363669,
+        "observed_max": 7.189057866914979,
+        "n": 12
+      }
+    },
+    "2": {
+      "thread_major_diameter": {
+        "min_mm": 4.589601036547772,
+        "max_mm": 6.390190023885105,
+        "observed_min": 4.949879471859951,
+        "observed_max": 5.956634618678924,
+        "n": 14
+      },
+      "underhead_length": {
+        "min_mm": 7.3122457192456,
+        "max_mm": 10.080299755987769,
+        "observed_min": 7.886248650081953,
+        "observed_max": 9.396381370310413,
+        "n": 14
+      }
+    },
+    "5": {
+      "inner_diameter": {
+        "min_mm": 4.669882798768669,
+        "max_mm": 5.629969196569283,
+        "observed_min": 5.036463260650636,
+        "observed_max": 5.247992515563967,
+        "n": 12
+      },
+      "outer_diameter": {
+        "min_mm": 12.810673361568805,
+        "max_mm": 16.245679443993232,
+        "observed_min": 13.816296577453613,
+        "observed_max": 15.143458366394047,
+        "n": 12
+      }
+    }
+  },
+  "calibration_sha256": "ab81185188cb002f0b23fa4d292be990d9dcc964b0512f634059caaf9be6f232",
+  "search_plan_sha256": "b18bb0200a67be58025124e36e6f1988bb645d2ae0201447965230611ce8f005",
+  "development_predictions_sha256": "235c48c052aae727d8464c1e96b2e4db31ac151906bd8f9f4227d417f040715e",
+  "scope": "Development candidate only; one physical specimen per specification; no independent specimen generalization",
+  "validated": false,
+  "instructor_approved": false,
+  "caliper_mae": null,
+  "nominal_specs_path": "config/p06_part_specs_candidate.json",
+  "nominal_specification_warning": "Supplier nominal dimensions are not caliper truth; empirical bands are not manufacturing tolerances"
+}

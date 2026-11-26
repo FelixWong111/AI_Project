@@ -1,0 +1,445 @@
+[
+  {
+    "stage": "Train",
+    "method": "A",
+    "class_id": 1,
+    "calls": 325,
+    "complete": 310,
+    "rate": 0.9538461538461539,
+    "failures": {
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 6,
+      "HEAD_SHAFT_SEPARATION_FAILED": 1,
+      "TARGET_OUTLINE_UNRESOLVED_OR_CLIPPED": 3,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_WIDTH_SUPPORT_INCONSISTENT": 2,
+      "SCREW_AXIS_AMBIGUOUS": 2,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "A",
+    "class_id": 2,
+    "calls": 349,
+    "complete": 330,
+    "rate": 0.9455587392550143,
+    "failures": {
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 2,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 4,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 3,
+      "HEAD_SHAFT_SEPARATION_FAILED": 7,
+      "SHAFT_PROFILE_OUTSIDE_CROP": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED;HEAD_SHAFT_SEPARATION_FAILED": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "A",
+    "class_id": 3,
+    "calls": 355,
+    "complete": 341,
+    "rate": 0.9605633802816902,
+    "failures": {
+      "HEAD_SHAFT_SEPARATION_FAILED": 5,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 2,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 4,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "SHAFT_PROFILE_OUTSIDE_CROP": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "A",
+    "class_id": 4,
+    "calls": 333,
+    "complete": 319,
+    "rate": 0.9579579579579579,
+    "failures": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 8,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY": 1,
+      "SIX_FLATS_NOT_RESOLVED;OPPOSITE_FLATS_NOT_PARALLEL": 2,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY;OPPOSITE_FLATS_NOT_PARALLEL": 1,
+      "INSUFFICIENT_STRAIGHT_FLAT_EDGE;NUT_TILT_OR_SHADOW_ASYMMETRY": 1,
+      "OPPOSITE_FLATS_NOT_PARALLEL;INSUFFICIENT_STRAIGHT_FLAT_EDGE": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "A",
+    "class_id": 5,
+    "calls": 336,
+    "complete": 270,
+    "rate": 0.8035714285714286,
+    "failures": {
+      "INNER_HOLE_NOT_UNAMBIGUOUS": 22,
+      "ELLIPSE_SUPPORT_DEGENERATE": 21,
+      "CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW": 21,
+      "ANNULAR_OUTER_BOUNDARY_NOT_RESOLVED": 2
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "B",
+    "class_id": 1,
+    "calls": 325,
+    "complete": 179,
+    "rate": 0.5507692307692308,
+    "failures": {
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 73,
+      "CALIPER_TIP_UNRESOLVED": 56,
+      "CALIPER_TOO_FEW_SHAFT_REGIONS": 8,
+      "CALIPER_SHAFT_REGIONS_INCONSISTENT": 6,
+      "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 2,
+      "CALIPER_AXIS_AMBIGUOUS": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "B",
+    "class_id": 2,
+    "calls": 349,
+    "complete": 141,
+    "rate": 0.4040114613180516,
+    "failures": {
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 86,
+      "CALIPER_TIP_UNRESOLVED": 91,
+      "CALIPER_SHAFT_REGIONS_INCONSISTENT": 14,
+      "CALIPER_TOO_FEW_SHAFT_REGIONS": 9,
+      "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 8
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "B",
+    "class_id": 3,
+    "calls": 355,
+    "complete": 150,
+    "rate": 0.4225352112676056,
+    "failures": {
+      "CALIPER_TIP_UNRESOLVED": 92,
+      "CALIPER_SHAFT_REGIONS_INCONSISTENT": 9,
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 86,
+      "CALIPER_TOO_FEW_SHAFT_REGIONS": 14,
+      "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 3,
+      "CALIPER_SHAFT_AXIAL_COVERAGE_LOW": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "B",
+    "class_id": 4,
+    "calls": 333,
+    "complete": 85,
+    "rate": 0.2552552552552553,
+    "failures": {
+      "CALIPER_FLAT_EDGE_NOT_PARALLEL": 159,
+      "CALIPER_OPPOSITE_FLATS_UNSUPPORTED": 55,
+      "CALIPER_HEXAGON_STRAIGHT_EDGES_INSUFFICIENT": 34
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "B",
+    "class_id": 5,
+    "calls": 336,
+    "complete": 54,
+    "rate": 0.16071428571428573,
+    "failures": {
+      "CALIPER_CIRCULAR_OUTLIER_SUPPORT_TOO_SMALL": 68,
+      "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW": 138,
+      "CALIPER_CIRCULAR_FIT_RESIDUAL_HIGH": 27,
+      "CALIPER_TOO_FEW_ANNULAR_PAIRS": 46,
+      "CALIPER_CIRCULAR_FACE_TILTED": 3
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "C",
+    "class_id": 1,
+    "calls": 325,
+    "complete": 307,
+    "rate": 0.9446153846153846,
+    "failures": {
+      "HYBRID_METHOD_DISAGREEMENT": 3,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 4,
+      "HEAD_SHAFT_SEPARATION_FAILED": 1,
+      "TARGET_OUTLINE_UNRESOLVED_OR_CLIPPED": 1,
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 6,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+      "SCREW_AXIS_AMBIGUOUS": 2
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "C",
+    "class_id": 2,
+    "calls": 349,
+    "complete": 320,
+    "rate": 0.9169054441260746,
+    "failures": {
+      "HYBRID_METHOD_DISAGREEMENT": 10,
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 5,
+      "CALIPER_TIP_UNRESOLVED": 2,
+      "HEAD_SHAFT_SEPARATION_FAILED": 6,
+      "SHAFT_PROFILE_OUTSIDE_CROP": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 2,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED;HEAD_SHAFT_SEPARATION_FAILED": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "C",
+    "class_id": 3,
+    "calls": 355,
+    "complete": 338,
+    "rate": 0.952112676056338,
+    "failures": {
+      "HYBRID_METHOD_DISAGREEMENT": 3,
+      "HEAD_SHAFT_SEPARATION_FAILED": 5,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 2,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 3,
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 1,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "SHAFT_PROFILE_OUTSIDE_CROP": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "C",
+    "class_id": 4,
+    "calls": 333,
+    "complete": 319,
+    "rate": 0.9579579579579579,
+    "failures": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 8,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY": 1,
+      "SIX_FLATS_NOT_RESOLVED;OPPOSITE_FLATS_NOT_PARALLEL": 2,
+      "NUT_TILT_OR_SHADOW_ASYMMETRY;OPPOSITE_FLATS_NOT_PARALLEL": 1,
+      "INSUFFICIENT_STRAIGHT_FLAT_EDGE;NUT_TILT_OR_SHADOW_ASYMMETRY": 1,
+      "OPPOSITE_FLATS_NOT_PARALLEL;INSUFFICIENT_STRAIGHT_FLAT_EDGE": 1
+    }
+  },
+  {
+    "stage": "Train",
+    "method": "C",
+    "class_id": 5,
+    "calls": 336,
+    "complete": 270,
+    "rate": 0.8035714285714286,
+    "failures": {
+      "INNER_HOLE_NOT_UNAMBIGUOUS": 22,
+      "ELLIPSE_SUPPORT_DEGENERATE": 21,
+      "CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW": 21,
+      "ANNULAR_OUTER_BOUNDARY_NOT_RESOLVED": 2
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "A",
+    "class_id": 1,
+    "calls": 72,
+    "complete": 68,
+    "rate": 0.9444444444444444,
+    "failures": {
+      "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "A",
+    "class_id": 2,
+    "calls": 77,
+    "complete": 74,
+    "rate": 0.961038961038961,
+    "failures": {
+      "HEAD_SHAFT_SEPARATION_FAILED": 2,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED;SHAFT_PROFILE_OUTSIDE_CROP": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "A",
+    "class_id": 3,
+    "calls": 82,
+    "complete": 75,
+    "rate": 0.9146341463414634,
+    "failures": {
+      "SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 2,
+      "HEAD_SHAFT_SEPARATION_FAILED": 3,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "A",
+    "class_id": 4,
+    "calls": 73,
+    "complete": 70,
+    "rate": 0.958904109589041,
+    "failures": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 2,
+      "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "A",
+    "class_id": 5,
+    "calls": 74,
+    "complete": 56,
+    "rate": 0.7567567567567568,
+    "failures": {
+      "INNER_HOLE_NOT_UNAMBIGUOUS": 3,
+      "ELLIPSE_SUPPORT_DEGENERATE": 6,
+      "CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW": 9
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "B",
+    "class_id": 1,
+    "calls": 72,
+    "complete": 31,
+    "rate": 0.4305555555555556,
+    "failures": {
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 15,
+      "CALIPER_TIP_UNRESOLVED": 16,
+      "CALIPER_SHAFT_REGIONS_INCONSISTENT": 4,
+      "CALIPER_TOO_FEW_SHAFT_REGIONS": 2,
+      "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 3,
+      "CALIPER_SHAFT_AXIAL_COVERAGE_LOW": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "B",
+    "class_id": 2,
+    "calls": 77,
+    "complete": 23,
+    "rate": 0.2987012987012987,
+    "failures": {
+      "CALIPER_TIP_UNRESOLVED": 30,
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 18,
+      "CALIPER_SHAFT_REGIONS_INCONSISTENT": 2,
+      "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 2,
+      "CALIPER_TOO_FEW_SHAFT_REGIONS": 2
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "B",
+    "class_id": 3,
+    "calls": 82,
+    "complete": 27,
+    "rate": 0.32926829268292684,
+    "failures": {
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 17,
+      "CALIPER_TIP_UNRESOLVED": 27,
+      "CALIPER_TOO_FEW_SHAFT_REGIONS": 7,
+      "CALIPER_HEAD_SHAFT_SEED_UNRESOLVED": 4
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "B",
+    "class_id": 4,
+    "calls": 73,
+    "complete": 20,
+    "rate": 0.273972602739726,
+    "failures": {
+      "CALIPER_FLAT_EDGE_NOT_PARALLEL": 35,
+      "CALIPER_OPPOSITE_FLATS_UNSUPPORTED": 16,
+      "CALIPER_HEXAGON_STRAIGHT_EDGES_INSUFFICIENT": 2
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "B",
+    "class_id": 5,
+    "calls": 74,
+    "complete": 14,
+    "rate": 0.1891891891891892,
+    "failures": {
+      "CALIPER_CIRCULAR_OUTLIER_SUPPORT_TOO_SMALL": 16,
+      "CALIPER_CIRCULAR_ANGULAR_COVERAGE_LOW": 27,
+      "CALIPER_CIRCULAR_FIT_RESIDUAL_HIGH": 3,
+      "CALIPER_TOO_FEW_ANNULAR_PAIRS": 12,
+      "CALIPER_CIRCULAR_FACE_TILTED": 2
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "C",
+    "class_id": 1,
+    "calls": 72,
+    "complete": 68,
+    "rate": 0.9444444444444444,
+    "failures": {
+      "HYBRID_METHOD_DISAGREEMENT": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED;SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "C",
+    "class_id": 2,
+    "calls": 77,
+    "complete": 73,
+    "rate": 0.948051948051948,
+    "failures": {
+      "HYBRID_METHOD_DISAGREEMENT": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED": 2,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED;SHAFT_PROFILE_OUTSIDE_CROP": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "C",
+    "class_id": 3,
+    "calls": 82,
+    "complete": 75,
+    "rate": 0.9146341463414634,
+    "failures": {
+      "SHAFT_WIDTH_SUPPORT_INCONSISTENT": 1,
+      "SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "HEAD_SHAFT_SEPARATION_FAILED": 3,
+      "SHAFT_EXTERIOR_TRACK_DISCONTINUOUS;SHAFT_EXTERIOR_EDGES_UNSUPPORTED": 1,
+      "CALIPER_HEAD_SEATING_PLANE_UNRESOLVED": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "C",
+    "class_id": 4,
+    "calls": 73,
+    "complete": 70,
+    "rate": 0.958904109589041,
+    "failures": {
+      "OPPOSITE_FLATS_NOT_PARALLEL": 2,
+      "OPPOSITE_FLATS_NOT_PARALLEL;SIX_FLATS_NOT_RESOLVED": 1
+    }
+  },
+  {
+    "stage": "Reused Val",
+    "method": "C",
+    "class_id": 5,
+    "calls": 74,
+    "complete": 56,
+    "rate": 0.7567567567567568,
+    "failures": {
+      "INNER_HOLE_NOT_UNAMBIGUOUS": 3,
+      "ELLIPSE_SUPPORT_DEGENERATE": 6,
+      "CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW": 9
+    }
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "frozen_at_utc": "2026-11-26T05:08:05.272789+00:00",
+  "test_inference_freeze": "results/p07_final_integration/release_freeze.json",
+  "files": {
+    "config/model_registry.json": "c7032745438eb3661b7bb6029e83cd9bbdd073e7d1c778fad930e2478eed7a5a",
+    "config/p07.json": "715cf81436b415b11284b2c41a8b0e02efebfdb8d960b8cc3f7ed78ea3b2f287",
+    "config/inspection.json": "9de1a1223fe2dda866c99d5f32f3b13c665b6417f185b2487748c0b98610d0fc",
+    "src/camera.py": "2f44444fca8f1d4dc642c8b2426c284438b4960dddec62f58e5cdf934b750ca2",
+    "src/evaluator.py": "f8c5330895a577c4cd80bc353aeb81f2e86579a51971a85370acca39a7533248",
+    "src/model_registry.py": "34ddf9d7f8a9a7e72ae0255dbe7ba3cf9ecfa9f22dd8957e5d45c30a4d4636a5",
+    "src/p05_bridge.py": "8377cde2c4242f99a80278825478a964a3df0333cc5430b0e4ceb774361bf720",
+    "src/p06_foreground.py": "b854324a93fa8f2f8affb5f01f53c8812140c56260ed3c02f5bca84d6fb8d6f1",
+    "src/p06_geometry.py": "148377289fb80d4077d657e0d0456f52709d1815aafdde570cbb474707df0e46",
+    "src/p06_measurement_policy.py": "222b05d9fb86c9e5756e4a3d271896e76b0d5b5752fa816ff3596cdcb036e6d8",
+    "src/p06_pipeline.py": "1ce4edb1ea18573df92251338c036f228c67b6c2e849e3961620272ecc7a3c8f",
+    "src/p06_screw_edges.py": "63e6fd8843a564f6272bdf787984de9f916088f76672942a25027a040e858d1f",
+    "src/p06_size_evidence.py": "1c9c19fd149001acf9f6f55247e6db860d23074ae1d0c44834302c60beaaa1c4",
+    "src/p07_bridge.py": "b83d750583ace0c77760dadb1f4391051d24240d55836acc3c6905804d29279c",
+    "src/p07_dashboard.py": "cf3aa63263bc45e542a0259e462db9f369feaf795a6c9a7355b83fc3afe5770c",
+    "src/p07_devices.py": "3270b777bbe4498dea3520f5b9705561cf6f406ba0cde1b63d0cb4134efb4659",
+    "src/p07_output.py": "5872b00c099d3c113e8f9c0e7054304a4c9409a7d5470437232db8334d46b2da",
+    "src/p07_ui.py": "6ae8acb6bd98a86084fb0d0dddbb48d5c489e488e7235c384d28808bf4b8c48f",
+    "src/stage3_clahe.py": "54d697c027c6326bc6c7fe45bea8b02b3ffcb488cdf929f9a8012a9292613f87",
+    "src/work_orders.py": "ed06f95bf85b99da16167dc924510310a04acf3a647068123a62109cd9543507",
+    "src/__init__.py": "4cae02d2ef1ca72f19a89342c2e73757603102897918eb3fdf8c68ae574aee11",
+    "src/adapters/baseline1.py": "00ac4151d8a822638cc8cf4db9cfee85318de0f39c027ccfff28c9e69a12a547",
+    "src/adapters/baseline2.py": "2112bdd6c9d65853d5b611fcb5b2a8243c254457fd70a8a5e117ac9abde6852b",
+    "src/adapters/baseline3.py": "65804851f56d75bb088adfea4918ea61d6d0fd3c9fd319f0b062afb8490a05d8",
+    "src/data/dataset_v2.py": "b33c03277d3b8b8d41861b54a8b57ae05c89dc224f26cc230570cc8674f47675",
+    "src/data/development.py": "efaec441bf6a16ae422cd5db66ed68de6ece9e0ea11ff6081a87fbd932db956b",
+    "src/data/p06_labelme.py": "b34801deb293d2a1a693eed7753c6dcfbe3665b6bec2fc2b95ac053f3ff3c7e0",
+    "src/data/__init__.py": "60466e456143a316756cced962ee5ca54f4b25b1e081d60fe968c050a8909e6f",
+    "src/inference/batch.py": "6d4dd2adba0c3dc7affb13406ab6d47f7aa094a659a24c95acc76d30aff2a871",
+    "src/inference/__init__.py": "f42058852d31e16c56df04b6862b3366deeed96a78446ad68520b3a00e9a2120",
+    "src/models/__init__.py": "4692c248bdb76a14d49083999158f47d4934ba03a76b68677ca62af9b2cdbca1",
+    "src/models/baseline1/catalogue.py": "d4ab04276ccaaaa8fe62c5fe478a95752189ddd7ce86749a6d989a0fb1add19e",
+    "src/models/baseline1/features.py": "68d47a25e9fcd342671f05d6a870e30cd52492b0be78cc896896d253c724ba21",
+    "src/models/baseline1/model.py": "b9344c37e5b2ab09faf7f308d2cc0cca3f44b17e354fe5669c6f8b9bac131810",
+    "src/models/baseline1/scene_guard.py": "f962d36fb538ad8e973f6b5e9577497840fb832e310f73dc76ff2b011d5f11d4",
+    "src/models/baseline1/__init__.py": "49a7e9d0438756e06d1954f270ffade1fa3bcabd814b730ad19568a2adc59666",
+    "src/models/baseline3/candidate.py": "a78dbc752d9b16704c17bad61d7d17ccf8923938d9c30c83346ff2afe8721083",
+    "src/models/baseline3/geometry_repair.py": "7e768a97e6b8efc0a13402e98fdf29a008bbf144f0527cee470a3e72b1a7d042",
+    "src/models/baseline3/inference.py": "a4e1b2eab42e23b7a48c9e855cb407929b7394d4e234c6bfbaf5272e958ac342",
+    "src/models/baseline3/metrology.py": "b76010e020fb431d933ab5eb5c1f8bdd0e2421f344692bb697c193853dca7c26",
+    "src/models/baseline3/size_candidate.py": "a94e3f6dc3a982f7e2148c91390eaa31736dedcd1d6154870f08d963cad2f754",
+    "src/models/baseline3/size_repaired.py": "be330872842404e59ad3fc25d44cd0a9be409bdf6c09701ace1872ef1b476f88",
+    "src/models/baseline3/__init__.py": "81914d286f0cd1178fbf0cabe960d29f43bb798c1f0bf319cf9850efaaeee7c3",
+    "datasets/mechanical_components_v2/configs/stage2_evaluation.json": "4fcd298eaa85ba11e8197b98352696361dc5fe7c6409c5c09c09da24d8c70a54",
+    "datasets/mechanical_components_v2/public/stage2_test/ground_truth_images.csv": "94a2229c37e652687c348f956a0ab1ab406f92a4cd0b7462ba4e668d79c8f040",
+    "datasets/mechanical_components_v2/public/stage2_test/ground_truth_objects.csv": "28174a4117f7e9f16c885c27b3248e20d01a8f816e59561ea083c147555d4500"
+  },
+  "entry_points": {
+    "app.py": "908527b878047c47413811d7b862782273ad28694b05f46dd038c3e7309a6d8b",
+    "predict.py": "395a6bd91571cf06e23a9e0b2cc8ace4d373df079ffcfbe55eaac36eab278b8c",
+    "p08_run.py": "a41058ca6b694a1cb65fe9d5c43d0344136a7b872aa0aa469163323a92b1201a",
+    "p08_object_observations.py": "ecfdb2efa5b890c9d581d41ac8c728cfc05c006423695e55007a61d2bbd9b89d",
+    "scripts/benchmark_live.py": "cd99be18e11ae5309c0ef39e8f41cfd1c588740baf1232ce976baab43f7ffa0c",
+    "scripts/verify_models.py": "40741aa02716d7b8d8791b9d1de91176b12dbfc094e5c886e809ad680b294d54"
+  },
+  "ui_only_change": {
+    "before": {
+      "src/p07_dashboard.py": "47a8439b5d1a51af943ae8e882ef2c8773bde7e160ac44c473bbd2a22302cc50"
+    },
+    "after": {
+      "src/p07_dashboard.py": "cf3aa63263bc45e542a0259e462db9f369feaf795a6c9a7355b83fc3afe5770c"
+    },
+    "reason": "Display numeric class ID alongside class name; rendering only, no prediction/decision changes",
+    "test_runtime_archive": "archive/experiments/stage2_test_runtime/source_snapshot.zip"
+  },
+  "app_cleanup": "Removed unreachable Mock scenario CLI/keyboard path; real inference arguments unchanged",
+  "weights_thresholds_and_decisions_unchanged": true,
+  "no_new_test_inference": true
+}

@@ -1,0 +1,21 @@
+{
+  "images": 440,
+  "summary": {
+    "train": {
+      "images": 360,
+      "PASS": 180,
+      "FAIL": 180
+    },
+    "validation": {
+      "images": 80,
+      "PASS": 40,
+      "FAIL": 40
+    }
+  },
+  "pixel_hashes_checked": true,
+  "fitted_operations": false,
+  "input_roots": [
+    "datasets/mechanical_components_v2/public/train/images",
+    "datasets/mechanical_components_v2/public/validation/images"
+  ]
+}

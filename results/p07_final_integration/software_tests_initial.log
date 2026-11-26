@@ -1,0 +1,737 @@
+.venv311/Scripts/python.exe : test_support_check_and_checkpoint_binding (test_baseline1_scene_guard.SceneGuardTests.tes
+t_support_check_and_checkpoint_binding) ... ok
+所在位置 行:2 字符: 1
++ .venv311/Scripts/python.exe -m unittest discover -s tests -v > output ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_support_ch...binding) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_cap_does_not_hide_a_detected_id0_fail (test_baseline3_adapter.Baseline3AdapterTests.test_cap_does_not_hide_a_detec
+ted_id0_fail) ... ok
+test_changed_checkpoint_is_an_error_not_a_fallback (test_baseline3_adapter.Baseline3AdapterTests.test_changed_checkpoin
+t_is_an_error_not_a_fallback) ... ok
+test_count_rule_and_rejudge_preserve_all_observations (test_baseline3_adapter.Baseline3AdapterTests.test_count_rule_and
+_rejudge_preserve_all_observations) ... ok
+test_detection_cap_is_genuine_review_not_count_pass (test_baseline3_adapter.Baseline3AdapterTests.test_detection_cap_is
+_genuine_review_not_count_pass) ... ok
+test_learned_id0_forces_fail_and_warning_for_any_requirement (test_baseline3_adapter.Baseline3AdapterTests.test_learned
+_id0_forces_fail_and_warning_for_any_requirement) ... ok
+test_bridge_has_explicit_modes_without_fallback (test_baseline3_candidate.CandidateTests.test_bridge_has_explicit_modes
+_without_fallback) ... ok
+test_candidate_does_not_relax_resolution_augmentation_or_type_validation (test_baseline3_candidate.CandidateTests.test_
+candidate_does_not_relax_resolution_augmentation_or_type_validation) ... ok
+test_display_timing_keeps_processing_timing_and_observed_throughput_separate (test_baseline3_candidate.CandidateTests.t
+est_display_timing_keeps_processing_timing_and_observed_throughput_separate) ... ok
+test_original_factory_still_refuses_candidate_thresholds (test_baseline3_candidate.CandidateTests.test_original_factory
+_still_refuses_candidate_thresholds) ... ok
+test_render_and_event_update_order (test_baseline3_candidate.CandidateTests.test_render_and_event_update_order) ... ok
+test_selected_thresholds_load_without_changing_original_parameter_contract (test_baseline3_candidate.CandidateTests.tes
+t_selected_thresholds_load_without_changing_original_parameter_contract) ... ok
+test_wrong_mapping_and_tampered_weights_fail_before_gpu_load (test_baseline3_candidate.CandidateTests.test_wrong_mappin
+g_and_tampered_weights_fail_before_gpu_load) ... ok
+test_ambiguous_instance_identity_prevents_size_relabelling (test_baseline3_geometry_repair.RepairTests.test_ambiguous_i
+nstance_identity_prevents_size_relabelling) ... ok
+test_bright_internal_stripe_is_not_the_screw_diameter (test_baseline3_geometry_repair.RepairTests.test_bright_internal_
+stripe_is_not_the_screw_diameter) ... ok
+test_conflicting_existing_nominal_does_not_widen_pass_range (test_baseline3_geometry_repair.RepairTests.test_conflictin
+g_existing_nominal_does_not_widen_pass_range) ... ok
+test_overlapping_detection_ownership_cannot_silently_erase_target (test_baseline3_geometry_repair.RepairTests.test_over
+lapping_detection_ownership_cannot_silently_erase_target) ... ok
+test_projected_flat_disagreement_is_not_confirmed_wrong_size (test_baseline3_geometry_repair.RepairTests.test_projected
+_flat_disagreement_is_not_confirmed_wrong_size) ... ok
+test_unmatched_foreground_remains_review_after_fragment_grouping (test_baseline3_geometry_repair.RepairTests.test_unmat
+ched_foreground_remains_review_after_fragment_grouping) ... ok
+test_untrusted_and_borderline_values_do_not_reject_as_id0 (test_baseline3_geometry_repair.RepairTests.test_untrusted_an
+d_borderline_values_do_not_reject_as_id0) ... ok
+test_dashboard_shows_actual_development_band_and_unvalidated_error (test_baseline3_metrology.MetrologyContracts.test_da
+shboard_shows_actual_development_band_and_unvalidated_error) ... ok
+test_expected_changes_only_business_decision_and_differences (test_baseline3_metrology.MetrologyContracts.test_expected
+_changes_only_business_decision_and_differences) ... ok
+test_foreground_does_not_fabricate_unknown_classification (test_baseline3_metrology.MetrologyContracts.test_foreground_
+does_not_fabricate_unknown_classification) ... ok
+test_genuine_uncertainty_prevents_pass (test_baseline3_metrology.MetrologyContracts.test_genuine_uncertainty_prevents_p
+ass) ... ok
+test_id0_forces_fail_even_when_all_catalogue_counts_match (test_baseline3_metrology.MetrologyContracts.test_id0_forces_
+fail_even_when_all_catalogue_counts_match) ... ok
+test_measured_dimensions_are_required_for_size_pass (test_baseline3_metrology.MetrologyContracts.test_measured_dimensio
+ns_are_required_for_size_pass) ... ok
+test_metric_interval_is_independent_of_arbitrary_ruler_zero (test_baseline3_metrology.MetrologyContracts.test_metric_in
+terval_is_independent_of_arbitrary_ruler_zero) ... ok
+test_calibration_resolution_geometry_and_validation_gates (test_baseline3_size_integration.SizeIntegrationTests.test_ca
+libration_resolution_geometry_and_validation_gates) ... ok
+test_change_counts_preserves_size_boxes_counts_without_reinfer (test_baseline3_size_integration.SizeIntegrationTests.te
+st_change_counts_preserves_size_boxes_counts_without_reinfer) ... ok
+test_changed_files_and_corrupt_approval_are_errors (test_baseline3_size_integration.SizeIntegrationTests.test_changed_f
+iles_and_corrupt_approval_are_errors) ... ok
+test_confirmed_wrong_size_not_overwritten_by_outer_count_rule (test_baseline3_size_integration.SizeIntegrationTests.tes
+t_confirmed_wrong_size_not_overwritten_by_outer_count_rule) ... ok
+test_details_render_error_and_provisional_measurement (test_baseline3_size_integration.SizeIntegrationTests.test_detail
+s_render_error_and_provisional_measurement) ... ok
+test_detection_cap_cannot_pass (test_baseline3_size_integration.SizeIntegrationTests.test_detection_cap_cannot_pass) ..
+. ok
+test_foreground_disabled_missing_or_unresolved_cannot_pass (test_baseline3_size_integration.SizeIntegrationTests.test_f
+oreground_disabled_missing_or_unresolved_cannot_pass) ... ok
+test_id0_fail_precedes_unknown_size_and_truncation (test_baseline3_size_integration.SizeIntegrationTests.test_id0_fail_
+precedes_unknown_size_and_truncation) ... ok
+test_invalid_mode_and_pipeline_error_have_no_frozen_fallback (test_baseline3_size_integration.SizeIntegrationTests.test
+_invalid_mode_and_pipeline_error_have_no_frozen_fallback) ... ok
+test_missing_and_extra_counts_are_fail_even_without_validated_scale (test_baseline3_size_integration.SizeIntegrationTes
+ts.test_missing_and_extra_counts_are_fail_even_without_validated_scale) ... ok
+test_missing_failed_or_uncertain_measurement_is_review (test_baseline3_size_integration.SizeIntegrationTests.test_missi
+ng_failed_or_uncertain_measurement_is_review) ... ok
+test_pass_requires_every_gate_not_blanket_review (test_baseline3_size_integration.SizeIntegrationTests.test_pass_requir
+es_every_gate_not_blanket_review) ... ok
+test_review_can_be_rejudged_to_count_failure (test_baseline3_size_integration.SizeIntegrationTests.test_review_can_be_r
+ejudged_to_count_failure) ... ok
+test_snapshot_contract_and_full_diagnostic_sidecar (test_baseline3_size_integration.SizeIntegrationTests.test_snapshot_
+contract_and_full_diagnostic_sidecar) ... ok
+test_unapproved_wrong_size_candidate_is_review_not_confirmed_rejection (test_baseline3_size_integration.SizeIntegration
+Tests.test_unapproved_wrong_size_candidate_is_review_not_confirmed_rejection) ... ok
+test_validated_family_conflict_is_fail_without_relabelling_yolo (test_baseline3_size_integration.SizeIntegrationTests.t
+est_validated_family_conflict_is_fail_without_relabelling_yolo) ... ok
+Output: C:\Users\������\AppData\Local\Temp\tmplwd56iky\results\live_benchmark\20261126T041720Z-5209c685
+baseline1: device=cpu, mode=image_level
+baseline1: warmup 1 fresh camera reads
+baseline1 TimeoutError: SYNTHETIC read failure
+baseline1 {"model": "baseline1", "requested_frames": 1, "acquired_new_frames": 0, "successful_frames": 0, "failed_frames": 0, "processing_errors": 0, "capture_failures": 0, "capture_timeouts": 0, "coverage": 0.0, "processing_coverage": 0.0, "warmup_acquired": 0, "median_ms": null, "p95_ms": null, "mean_ms": null, "min_ms": null, "max_ms": null, "std_ms": null, "processing_fps": null, "repeated_pixel_hashes": 0, "geometry_measured_frames": 0, "geometry_attempted_frames": 0, "minimum_20_status": "INSUFFICIENT", "requested_protocol_complete": false, "live_median_ms": null, "live_p95_ms": null, "observed_sample_fps": null, "live_minimum_20_status": "NOT_MEASURED"}
+Saved: C:\Users\������\AppData\Local\Temp\tmplwd56iky\results\live_benchmark\20261126T041720Z-5209c685
+Output: C:\Users\������\AppData\Local\Temp\tmpco9_vs5a\results\live_benchmark\20261126T041721Z-71336b29
+baseline1: device=cpu, mode=image_level
+baseline1: warmup 1 fresh camera reads
+Saved: C:\Users\������\AppData\Local\Temp\tmpco9_vs5a\results\live_benchmark\20261126T041721Z-71336b29
+test_capture_failure_and_interrupt_export_partial_results_and_release (test_benchmark_live.BenchmarkTests.test_capture_
+failure_and_interrupt_export_partial_results_and_release) ... ok
+Output: C:\Users\������\AppData\Local\Temp\tmp5ze2sccp\results\live_benchmark\20261126T041721Z-9fbdcbb5
+baseline1: device=cpu, mode=image_level
+baseline1: warmup 1 fresh camera reads
+baseline1: measure 2 fresh camera reads
+baseline1 {"model": "baseline1", "requested_frames": 2, "acquired_new_frames": 2, "successful_frames": 2, "failed_frames": 0, "processing_errors": 0, "capture_failures": 0, "capture_timeouts": 0, "coverage": 1.0, "processing_coverage": 1.0, "warmup_acquired": 1, "median_ms": 0.0024999899324029684, "p95_ms": 0.0028599664801731706, "mean_ms": 0.0024999899324029684, "min_ms": 0.002100015990436077, "max_ms": 0.0028999638743698597, "std_ms": 0.0003999739419668913, "processing_fps": 400001.6108220119, "repeated_pixel_hashes": 0, "geometry_measured_frames": 0, "geometry_attempted_frames": 0, "minimum_20_status": "INSUFFICIENT", "requested_protocol_complete": true, "live_median_ms": null, "live_p95_ms": null, "observed_sample_fps": null, "live_minimum_20_status": "NOT_MEASURED"}
+Saved: C:\Users\������\AppData\Local\Temp\tmp5ze2sccp\results\live_benchmark\20261126T041721Z-9fbdcbb5
+test_cli_exports_and_camera_release_in_temporary_workspace (test_benchmark_live.BenchmarkTests.test_cli_exports_and_cam
+era_release_in_temporary_workspace) ... ok
+test_freshness_rejects_old_packet (test_benchmark_live.BenchmarkTests.test_freshness_rejects_old_packet) ... ok
+test_gpu_sync_boundaries_and_complete_infer (test_benchmark_live.BenchmarkTests.test_gpu_sync_boundaries_and_complete_i
+nfer) ... ok
+test_minimum_twenty_and_identical_stream_warning (test_benchmark_live.BenchmarkTests.test_minimum_twenty_and_identical_
+stream_warning) ... ok
+test_reject_yolo_only_before_environment_or_capture (test_benchmark_live.BenchmarkTests.test_reject_yolo_only_before_en
+vironment_or_capture) ... usage: python.exe -m unittest [-h] [--camera CAMERA] [--frames FRAMES]
+                              [--warmup WARMUP]
+                              [--models {baseline1,baseline2,baseline3} [{baseline1,baseline2,baseline3} ...]]
+                              [--config CONFIG]
+                              [--frame-timeout FRAME_TIMEOUT] [--display]
+                              [--no-display]
+python.exe -m unittest: error: Baseline3 benchmark requires full size verification; no YOLO-only mode
+ok
+test_statistics_include_fail_review_exclude_warmup_errors (test_benchmark_live.BenchmarkTests.test_statistics_include_f
+ail_review_exclude_warmup_errors) ... ok
+test_all_fail_predictor_retains_zero_pass_recall (test_comparison_preparation.ComparisonPreparationTests.test_all_fail_
+predictor_retains_zero_pass_recall) ... ok
+test_false_pass_denominator_and_unresolved_coverage (test_comparison_preparation.ComparisonPreparationTests.test_false_
+pass_denominator_and_unresolved_coverage) ... ok
+�������� baseline1�����Ժ򡭡�
+��ɣ�baseline1��0 ��ͼƬ���� PASS/FAIL ���֡�
+��������ڣ�C:\Users\������\AppData\Local\Temp\tmphadvvlx5\out\baseline1-20261126-121721-423637
+test_p08_explicit_config_reaches_batch_command (test_comparison_preparation.ComparisonPreparationTests.test_p08_explici
+t_config_reaches_batch_command) ... ok
+test_unknown_ground_truth_does_not_become_a_class_label (test_comparison_preparation.ComparisonPreparationTests.test_un
+known_ground_truth_does_not_become_a_class_label) ... ok
+test_invalid_counts_are_not_coerced (test_data_contract.DataContractTests.test_invalid_counts_are_not_coerced) ... ok
+test_review_and_test_never_opened_and_scene_confirmation_required (test_data_contract.DataContractTests.test_review_and
+_test_never_opened_and_scene_confirmation_required) ... ok
+test_candidate_cannot_enter_formal_data_loader (test_dataset_v2.DataV2Tests.test_candidate_cannot_enter_formal_data_loa
+der) ... ok
+test_duplicate_box_not_double_counted (test_dataset_v2.DataV2Tests.test_duplicate_box_not_double_counted) ... ok
+test_invalid_class_and_outside_box_are_reported (test_dataset_v2.DataV2Tests.test_invalid_class_and_outside_box_are_rep
+orted) ... ok
+test_label_uses_counts_and_zero_not_filename (test_dataset_v2.DataV2Tests.test_label_uses_counts_and_zero_not_filename)
+ ... ok
+test_legacy_path_guard_still_excludes_test (test_dataset_v2.DataV2Tests.test_legacy_path_guard_still_excludes_test) ...
+ ok
+test_missing_json_is_not_empty_scene (test_dataset_v2.DataV2Tests.test_missing_json_is_not_empty_scene) ... ok
+test_p08_checks_only_explicit_stage_and_blocks_unfrozen_evaluation (test_dataset_v2.DataV2Tests.test_p08_checks_only_ex
+plicit_stage_and_blocks_unfrozen_evaluation) ... ok
+test_polygon_is_tight_aabb_with_official_zero (test_dataset_v2.DataV2Tests.test_polygon_is_tight_aabb_with_official_zer
+o) ... ok
+test_cached_results_are_bound_to_their_own_frame (test_p05_bridge.BridgeTests.test_cached_results_are_bound_to_their_ow
+n_frame) ... ok
+test_factory_and_validation_errors (test_p05_bridge.BridgeTests.test_factory_and_validation_errors) ... ok
+test_gpu_synchronization (test_p05_bridge.BridgeTests.test_gpu_synchronization) ... ok
+test_load_protocol_and_metadata (test_p05_bridge.BridgeTests.test_load_protocol_and_metadata) ... ok
+test_p07_export_contains_only_image_outputs (test_p05_bridge.BridgeTests.test_p07_export_contains_only_image_outputs) .
+.. ok
+test_preserve_worker_error (test_p05_bridge.BridgeTests.test_preserve_worker_error) ... ok
+test_source_and_cached_results_are_immutable (test_p05_bridge.BridgeTests.test_source_and_cached_results_are_immutable)
+ ... ok
+test_unsupported_first_can_restore_without_inference (test_p05_bridge.BridgeTests.test_unsupported_first_can_restore_wi
+thout_inference) ... ok
+test_accepted_plan_and_runtime_no_source_cache_or_reencoding (test_p06_accepted_data.AcceptedTests.test_accepted_plan_a
+nd_runtime_no_source_cache_or_reencoding) ... ok
+test_changed_manifest_and_bad_scene_rejected (test_p06_accepted_data.AcceptedTests.test_changed_manifest_and_bad_scene_
+rejected) ... ok
+test_changed_source_and_test_yaml_rejected (test_p06_accepted_data.AcceptedTests.test_changed_source_and_test_yaml_reje
+cted) ... ok
+test_precision_aware_boundary_preserves_strict_source_rules (test_p06_accepted_data.AcceptedTests.test_precision_aware_
+boundary_preserves_strict_source_rules) ... ok
+test_runtime_tamper_and_source_change_fail (test_p06_accepted_data.AcceptedTests.test_runtime_tamper_and_source_change_
+fail) ... ok
+test_bad_coordinates (test_p06_data.DataTests.test_bad_coordinates) ... ok
+test_bad_inverse (test_p06_data.DataTests.test_bad_inverse) ... ok
+test_cli_help_success_failure_and_no_overwrite (test_p06_data.DataTests.test_cli_help_success_failure_and_no_overwrite)
+ ... Exception in thread Thread-12 (_readerthread):
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\env_new\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\Anaconda\envs\env_new\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Anaconda\envs\env_new\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 49: invalid continuation byte
+Exception in thread Thread-16 (_readerthread):
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\env_new\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\Anaconda\envs\env_new\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Anaconda\envs\env_new\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 49: invalid continuation byte
+ok
+test_cli_invalid_does_not_create_output (test_p06_data.DataTests.test_cli_invalid_does_not_create_output) ... ok
+test_cli_write_failure_does_not_publish_partial_output (test_p06_data.DataTests.test_cli_write_failure_does_not_publish
+_partial_output) ... OSError: injected disk failure after label write
+ok
+test_duplicate_image_id_and_content_leakage (test_p06_data.DataTests.test_duplicate_image_id_and_content_leakage) ... o
+k
+test_empty_export_and_source_unchanged (test_p06_data.DataTests.test_empty_export_and_source_unchanged) ... ok
+test_empty_requires_explicit_confirmation (test_p06_data.DataTests.test_empty_requires_explicit_confirmation) ... ok
+test_incomplete_partition (test_p06_data.DataTests.test_incomplete_partition) ... ok
+test_invalid_report_cannot_export (test_p06_data.DataTests.test_invalid_report_cannot_export) ... ok
+test_invalid_schema_and_exif (test_p06_data.DataTests.test_invalid_schema_and_exif) ... ok
+test_malformed_json_paths_and_image (test_p06_data.DataTests.test_malformed_json_paths_and_image) ... ok
+test_manifest_extra_and_missing_columns (test_p06_data.DataTests.test_manifest_extra_and_missing_columns) ... ok
+test_missing_image_and_annotation (test_p06_data.DataTests.test_missing_image_and_annotation) ... ok
+test_nested_input_and_ambiguous_stems (test_p06_data.DataTests.test_nested_input_and_ambiguous_stems) ... ok
+test_rectangle_and_hand_calculation (test_p06_data.DataTests.test_rectangle_and_hand_calculation) ... ok
+test_refuse_nested_output_and_report_source_overwrite (test_p06_data.DataTests.test_refuse_nested_output_and_report_sou
+rce_overwrite) ... Exception in thread Thread-20 (_readerthread):
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\env_new\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\Anaconda\envs\env_new\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Anaconda\envs\env_new\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 49: invalid continuation byte
+ok
+test_round_trip_reverse_drag_and_edges (test_p06_data.DataTests.test_round_trip_reverse_drag_and_edges) ... ok
+test_scene_leakage (test_p06_data.DataTests.test_scene_leakage) ... ok
+test_serialized_round_trip_1000_boxes (test_p06_data.DataTests.test_serialized_round_trip_1000_boxes) ... ok
+test_six_classes (test_p06_data.DataTests.test_six_classes) ... ok
+test_test_isolation_and_output_contents (test_p06_data.DataTests.test_test_isolation_and_output_contents) ... ok
+test_unagreed_metadata_and_duplicates (test_p06_data.DataTests.test_unagreed_metadata_and_duplicates) ... ok
+test_unknown_label_shape_dimensions (test_p06_data.DataTests.test_unknown_label_shape_dimensions) ... ok
+test_bad_partitions_and_id0_val_rejected (test_p06_dataset.DatasetTests.test_bad_partitions_and_id0_val_rejected) ... o
+k
+test_build_corrected_png_txt_empty_and_roundtrip (test_p06_dataset.DatasetTests.test_build_corrected_png_txt_empty_and_
+roundtrip) ... ok
+test_failed_official_check_never_publishes (test_p06_dataset.DatasetTests.test_failed_official_check_never_publishes) .
+.. ok
+test_fixed_plan_and_provisional_scene_provenance (test_p06_dataset.DatasetTests.test_fixed_plan_and_provisional_scene_p
+rovenance) ... ok
+test_missing_json_and_unknown_validation_name_rejected (test_p06_dataset.DatasetTests.test_missing_json_and_unknown_val
+idation_name_rejected) ... ok
+test_post_build_corrupt_label_rejected (test_p06_dataset.DatasetTests.test_post_build_corrupt_label_rejected) ... ok
+test_source_change_and_txt_corruption_rejected (test_p06_dataset.DatasetTests.test_source_change_and_txt_corruption_rej
+ected) ... ok
+test_approved_manifest_file_change_after_plan_rejected (test_p06_dataset_v2.V2Tests.test_approved_manifest_file_change_
+after_plan_rejected) ... ok
+test_manifest_counts_hash_and_scene_rejected (test_p06_dataset_v2.V2Tests.test_manifest_counts_hash_and_scene_rejected)
+ ... ok
+test_manifest_test_duplicate_and_missing_rejected (test_p06_dataset_v2.V2Tests.test_manifest_test_duplicate_and_missing
+_rejected) ... ok
+test_old_validation_cannot_move (test_p06_dataset_v2.V2Tests.test_old_validation_cannot_move) ... ok
+test_scene_leakage_and_post_plan_split_tamper (test_p06_dataset_v2.V2Tests.test_scene_leakage_and_post_plan_split_tampe
+r) ... ok
+test_source_change_and_failed_loader_never_publish (test_p06_dataset_v2.V2Tests.test_source_change_and_failed_loader_ne
+ver_publish) ... ok
+test_v2_allows_id0_val_preserves_old_policy_and_roundtrip (test_p06_dataset_v2.V2Tests.test_v2_allows_id0_val_preserves
+_old_policy_and_roundtrip) ... ok
+test_blank_and_tiny_noise (test_p06_foreground.ForegroundTests.test_blank_and_tiny_noise) ... ok
+test_cross_class_duplicate_retains_class_ambiguity (test_p06_foreground.ForegroundTests.test_cross_class_duplicate_reta
+ins_class_ambiguity) ... ok
+test_detection_without_support_is_preserved (test_p06_foreground.ForegroundTests.test_detection_without_support_is_pres
+erved) ... ok
+test_duplicate_same_class_is_grouped_once (test_p06_foreground.ForegroundTests.test_duplicate_same_class_is_grouped_onc
+e) ... ok
+test_global_lighting_change_requests_review (test_p06_foreground.ForegroundTests.test_global_lighting_change_requests_r
+eview) ... ok
+test_inputs_not_modified_and_bad_observations_rejected (test_p06_foreground.ForegroundTests.test_inputs_not_modified_an
+d_bad_observations_rejected) ... ok
+test_one_box_covering_two_regions_is_ambiguous (test_p06_foreground.ForegroundTests.test_one_box_covering_two_regions_i
+s_ambiguous) ... ok
+test_reference_and_geometry_guards (test_p06_foreground.ForegroundTests.test_reference_and_geometry_guards) ... ok
+test_roi_border_object_requests_review (test_p06_foreground.ForegroundTests.test_roi_border_object_requests_review) ...
+ ok
+test_single_object_and_raw_counts_preserved (test_p06_foreground.ForegroundTests.test_single_object_and_raw_counts_pres
+erved) ... ok
+test_touching_objects_are_not_automatically_suppressed (test_p06_foreground.ForegroundTests.test_touching_objects_are_n
+ot_automatically_suppressed) ... ok
+test_two_separate_objects_counted_separately (test_p06_foreground.ForegroundTests.test_two_separate_objects_counted_sep
+arately) ... ok
+test_unmatched_foreground_stays_unknown_instead_of_id0 (test_p06_foreground.ForegroundTests.test_unmatched_foreground_s
+tays_unknown_instead_of_id0) ... ok
+test_anisotropic_scale_and_input_unchanged (test_p06_geometry.GeometryTests.test_anisotropic_scale_and_input_unchanged)
+ ... ok
+test_audited_endpoints_and_non_nominal_shaft_with_highlight (test_p06_geometry.GeometryTests.test_audited_endpoints_and
+_non_nominal_shaft_with_highlight) ... ok
+test_audited_shoulder_fails_when_only_one_side_is_visible (test_p06_geometry.GeometryTests.test_audited_shoulder_fails_
+when_only_one_side_is_visible) ... ok
+test_bright_offcentre_highlight_is_not_selected_as_hole (test_p06_geometry.GeometryTests.test_bright_offcentre_highligh
+t_is_not_selected_as_hole) ... ok
+test_bright_washer_with_nested_dark_rims (test_p06_geometry.GeometryTests.test_bright_washer_with_nested_dark_rims) ...
+ ok
+test_crop_origin_translation_preserves_measurement (test_p06_geometry.GeometryTests.test_crop_origin_translation_preser
+ves_measurement) ... ok
+test_degenerate_washer_hull_is_reported_without_opencv_exception (test_p06_geometry.GeometryTests.test_degenerate_washe
+r_hull_is_reported_without_opencv_exception) ... ok
+test_diameter_failure_does_not_discard_valid_length (test_p06_geometry.GeometryTests.test_diameter_failure_does_not_dis
+card_valid_length) ... ok
+test_empty_touching_and_unknown_class_fail_explicitly (test_p06_geometry.GeometryTests.test_empty_touching_and_unknown_
+class_fail_explicitly) ... ok
+test_head_at_opposite_end (test_p06_geometry.GeometryTests.test_head_at_opposite_end) ... ok
+test_hidden_underhead_edge_keeps_only_reviewable_diameter_candidate (test_p06_geometry.GeometryTests.test_hidden_underh
+ead_edge_keeps_only_reviewable_diameter_candidate) ... ok
+test_internal_bright_band_near_tip_does_not_shorten_shaft (test_p06_geometry.GeometryTests.test_internal_bright_band_ne
+ar_tip_does_not_shorten_shaft) ... ok
+test_invalid_parameters_rejected_without_mutating_defaults (test_p06_geometry.GeometryTests.test_invalid_parameters_rej
+ected_without_mutating_defaults) ... ok
+test_large_head_short_body_does_not_become_shaft_diameter (test_p06_geometry.GeometryTests.test_large_head_short_body_d
+oes_not_become_shaft_diameter) ... ok
+test_multiple_objects_and_excessive_tilt_rejected (test_p06_geometry.GeometryTests.test_multiple_objects_and_excessive_
+tilt_rejected) ... ok
+test_no_head_no_hole_and_not_hexagon_rejected (test_p06_geometry.GeometryTests.test_no_head_no_hole_and_not_hexagon_rej
+ected) ... ok
+test_no_test_argument_output_guard_and_changed_freeze_refusal (test_p06_geometry.GeometryTests.test_no_test_argument_ou
+tput_guard_and_changed_freeze_refusal) ... ok
+test_nut_opposite_flats_not_corner_diameter (test_p06_geometry.GeometryTests.test_nut_opposite_flats_not_corner_diamete
+r) ... ok
+test_radial_ambiguous_concentric_rims_and_dark_core_refused (test_p06_geometry.GeometryTests.test_radial_ambiguous_conc
+entric_rims_and_dark_core_refused) ... ok
+test_radial_aperture_separates_bright_face_from_background (test_p06_geometry.GeometryTests.test_radial_aperture_separa
+tes_bright_face_from_background) ... ok
+test_rotated_screw_and_original_pixel_lines (test_p06_geometry.GeometryTests.test_rotated_screw_and_original_pixel_line
+s) ... ok
+test_ruler_example_is_cropped_around_object_not_background_center (test_p06_geometry.GeometryTests.test_ruler_example_i
+s_cropped_around_object_not_background_center) ... ok
+test_screw_underhead_length_excludes_head (test_p06_geometry.GeometryTests.test_screw_underhead_length_excludes_head) .
+.. ok
+test_separate_neighbour_removed_without_changing_input (test_p06_geometry.GeometryTests.test_separate_neighbour_removed
+_without_changing_input) ... ok
+test_serrated_thread_crest_with_internal_bright_stripe_and_shadow (test_p06_geometry.GeometryTests.test_serrated_thread
+_crest_with_internal_bright_stripe_and_shadow) ... ok
+test_soft_shadow_does_not_define_thread_diameter (test_p06_geometry.GeometryTests.test_soft_shadow_does_not_define_thre
+ad_diameter) ... ok
+test_stage1_selection_cannot_access_a_non_train_image (test_p06_geometry.GeometryTests.test_stage1_selection_cannot_acc
+ess_a_non_train_image) ... ok
+test_target_isolation_and_independent_dimension_failures (test_p06_geometry.GeometryTests.test_target_isolation_and_ind
+ependent_dimension_failures) ... ok
+test_washer_inner_outer_and_bright_material (test_p06_geometry.GeometryTests.test_washer_inner_outer_and_bright_materia
+l) ... ok
+test_boolean_cached_count_rejected (test_p06_inference.InferenceTests.test_boolean_cached_count_rejected) ... ok
+test_cuda_unavailable_rejected (test_p06_inference.InferenceTests.test_cuda_unavailable_rejected) ... ok
+test_empty_results_are_zero_counts_without_id0_object (test_p06_inference.InferenceTests.test_empty_results_are_zero_co
+unts_without_id0_object) ... ok
+test_expected_counts_do_not_change_detection (test_p06_inference.InferenceTests.test_expected_counts_do_not_change_dete
+ction) ... ok
+test_frozen_class_or_inference_mismatch_rejected (test_p06_inference.InferenceTests.test_frozen_class_or_inference_mism
+atch_rejected) ... ok
+test_id0_count_and_overlapping_cross_class_boxes_are_preserved (test_p06_inference.InferenceTests.test_id0_count_and_ov
+erlapping_cross_class_boxes_are_preserved) ... ok
+test_invalid_frame_or_expected_rejected_before_detection (test_p06_inference.InferenceTests.test_invalid_frame_or_expec
+ted_rejected_before_detection) ... ok
+test_invalid_prediction_rejected_without_clipping_or_class_coercion (test_p06_inference.InferenceTests.test_invalid_pre
+diction_rejected_without_clipping_or_class_coercion) ... ok
+test_missing_weight_and_hash_mismatch (test_p06_inference.InferenceTests.test_missing_weight_and_hash_mismatch) ... ok
+test_model_class_mismatch_rejected (test_p06_inference.InferenceTests.test_model_class_mismatch_rejected) ... ok
+test_noncontiguous_input_supported (test_p06_inference.InferenceTests.test_noncontiguous_input_supported) ... ok
+test_predict_failure_is_not_converted_to_empty_counts (test_p06_inference.InferenceTests.test_predict_failure_is_not_co
+nverted_to_empty_counts) ... ok
+test_rejudge_does_not_detect_and_does_not_alias_objects (test_p06_inference.InferenceTests.test_rejudge_does_not_detect
+_and_does_not_alias_objects) ... ok
+test_six_counts_original_coords_and_input_not_mutated (test_p06_inference.InferenceTests.test_six_counts_original_coord
+s_and_input_not_mutated) ... ok
+test_sync_and_actual_p07_factory_loading (test_p06_inference.InferenceTests.test_sync_and_actual_p07_factory_loading) .
+.. ok
+test_tampered_rejudge_counts_rejected (test_p06_inference.InferenceTests.test_tampered_rejudge_counts_rejected) ... ok
+test_version_mismatch_rejected_before_load (test_p06_inference.InferenceTests.test_version_mismatch_rejected_before_loa
+d) ... ok
+test_wrong_device_or_original_shape_rejected (test_p06_inference.InferenceTests.test_wrong_device_or_original_shape_rej
+ected) ... ok
+test_wrong_model_or_factory_options_rejected (test_p06_inference.InferenceTests.test_wrong_model_or_factory_options_rej
+ected) ... ok
+test_bad_input_does_not_publish_a_partial_experiment (test_p06_measure_candidate.MeasureCandidateTests.test_bad_input_d
+oes_not_publish_a_partial_experiment) ... ok
+test_detect_horizontal_and_vertical_tick_strokes (test_p06_measure_candidate.MeasureCandidateTests.test_detect_horizont
+al_and_vertical_tick_strokes) ... ok
+test_empty_multiple_and_boundary_contours (test_p06_measure_candidate.MeasureCandidateTests.test_empty_multiple_and_bou
+ndary_contours) ... ok
+test_exif6_and_no_exif_preserve_source_and_known_pixel_position (test_p06_measure_candidate.MeasureCandidateTests.test_
+exif6_and_no_exif_preserve_source_and_known_pixel_position) ... ok
+test_existing_output_and_source_overlap_are_rejected_before_writes (test_p06_measure_candidate.MeasureCandidateTests.te
+st_existing_output_and_source_overlap_are_rejected_before_writes) ... ok
+test_invalid_and_missing_ticks_are_not_silently_renumbered (test_p06_measure_candidate.MeasureCandidateTests.test_inval
+id_and_missing_ticks_are_not_silently_renumbered) ... ok
+test_known_scale_with_alternating_holdout (test_p06_measure_candidate.MeasureCandidateTests.test_known_scale_with_alter
+nating_holdout) ... ok
+test_metric_envelope_anisotropic_scale (test_p06_measure_candidate.MeasureCandidateTests.test_metric_envelope_anisotrop
+ic_scale) ... ok
+test_factory_wires_scope_and_disables_foreground (test_p06_measurement_policy.PolicyTests.test_factory_wires_scope_and_
+disables_foreground) ... ok
+test_no_evidence_and_conflicting_evidence (test_p06_measurement_policy.PolicyTests.test_no_evidence_and_conflicting_evi
+dence) ... ok
+test_scope_and_error_bound (test_p06_measurement_policy.PolicyTests.test_scope_and_error_bound) ... ok
+test_difference_is_not_measurement_error_or_product_decision (test_p06_part_specs.PartSpecsTests.test_difference_is_not
+_measurement_error_or_product_decision) ... ok
+test_failed_measurement_has_no_zero_substitution (test_p06_part_specs.PartSpecsTests.test_failed_measurement_has_no_zer
+o_substitution) ... ok
+test_image_tampering_missing_and_unsafe_path_rejected (test_p06_part_specs.PartSpecsTests.test_image_tampering_missing_
+and_unsafe_path_rejected) ... ok
+test_mapping_and_all_nine_user_provisional_tolerances (test_p06_part_specs.PartSpecsTests.test_mapping_and_all_nine_use
+r_provisional_tolerances) ... ok
+test_missing_nonfinite_and_class_zero_are_explicit (test_p06_part_specs.PartSpecsTests.test_missing_nonfinite_and_class
+_zero_are_explicit) ... ok
+test_reference_value_mismatch_and_invalid_allowance_rejected (test_p06_part_specs.PartSpecsTests.test_reference_value_m
+ismatch_and_invalid_allowance_rejected) ... ok
+test_unknown_mapping_and_invented_unsupported_dimension_rejected (test_p06_part_specs.PartSpecsTests.test_unknown_mappi
+ng_and_invented_unsupported_dimension_rejected) ... ok
+test_actual_association_and_size_guard_validate_p07 (test_p06_pipeline.PipelineTests.test_actual_association_and_size_g
+uard_validate_p07) ... ok
+test_cross_class_duplicates_and_unknown_foreground_stay_review (test_p06_pipeline.PipelineTests.test_cross_class_duplic
+ates_and_unknown_foreground_stay_review) ... ok
+test_dedup_reindex_and_preserve_original_evidence (test_p06_pipeline.PipelineTests.test_dedup_reindex_and_preserve_orig
+inal_evidence) ... ok
+test_factory_rejects_bad_background_before_gpu_load (test_p06_pipeline.PipelineTests.test_factory_rejects_bad_backgroun
+d_before_gpu_load) ... ok
+test_factory_through_p07_loader (test_p06_pipeline.PipelineTests.test_factory_through_p07_loader) ... ok
+test_id0_is_distinguished_from_unmatched_region (test_p06_pipeline.PipelineTests.test_id0_is_distinguished_from_unmatch
+ed_region) ... ok
+test_no_background_is_explicit_and_raw_validation_still_runs (test_p06_pipeline.PipelineTests.test_no_background_is_exp
+licit_and_raw_validation_still_runs) ... ok
+test_real_geometry_runs_inside_integrated_synthetic_chain (test_p06_pipeline.PipelineTests.test_real_geometry_runs_insi
+de_integrated_synthetic_chain) ... ok
+test_rejudge_uses_cache_and_rejects_changed_evidence (test_p06_pipeline.PipelineTests.test_rejudge_uses_cache_and_rejec
+ts_changed_evidence) ... ok
+test_size_outside_family_becomes_rejection_evidence (test_p06_pipeline.PipelineTests.test_size_outside_family_becomes_r
+ejection_evidence) ... ok
+test_confirmed_empty_has_no_id0_or_drawn_pixels (test_p06_preview.PreviewTests.test_confirmed_empty_has_no_id0_or_drawn
+_pixels) ... ok
+test_dimension_mismatch_refused (test_p06_preview.PreviewTests.test_dimension_mismatch_refused) ... ok
+test_no_exif (test_p06_preview.PreviewTests.test_no_exif) ... ok
+test_one_mismatch_is_reported_without_guessing (test_p06_preview.PreviewTests.test_one_mismatch_is_reported_without_gue
+ssing) ... ok
+test_orientation6_size_pixel_mapping_and_direct_box (test_p06_preview.PreviewTests.test_orientation6_size_pixel_mapping
+_and_direct_box) ... ok
+test_outputs_preserve_sources_and_refuse_overwrite (test_p06_preview.PreviewTests.test_outputs_preserve_sources_and_ref
+use_overwrite) ... ok
+test_empty_group_has_no_fabricated_mae (test_p06_reference_v2.ReferenceTests.test_empty_group_has_no_fabricated_mae) ..
+. ok
+test_groups_exclude_train_and_partition_validation (test_p06_reference_v2.ReferenceTests.test_groups_exclude_train_and_
+partition_validation) ... ok
+test_id0_empty_and_count_metrics (test_p06_reference_v2.ReferenceTests.test_id0_empty_and_count_metrics) ... ok
+test_official_support_uses_callback_seen_not_model_attribute (test_p06_reference_v2.ReferenceTests.test_official_suppor
+t_uses_callback_seen_not_model_attribute) ... ok
+test_comparison_rejects_missing_or_reordered_images (test_p06_resolution.ResolutionTests.test_comparison_rejects_missin
+g_or_reordered_images) ... ok
+test_diagnostics_keep_class_confusion_and_extra_prediction_separate (test_p06_resolution.ResolutionTests.test_diagnosti
+cs_keep_class_confusion_and_extra_prediction_separate) ... ok
+test_existing_output_refused_before_environment_and_data_checks (test_p06_resolution.ResolutionTests.test_existing_outp
+ut_refused_before_environment_and_data_checks) ... ok
+test_validation_forwards_only_requested_resolution (test_p06_resolution.ResolutionTests.test_validation_forwards_only_r
+equested_resolution) ... ok
+test_empty_image_has_no_fabricated_dimensions (test_p06_screw_edges.BoundedRefinementTests.test_empty_image_has_no_fabr
+icated_dimensions) ... ok
+test_non_nominal_dimensions_are_not_snapped_to_class (test_p06_screw_edges.BoundedRefinementTests.test_non_nominal_dime
+nsions_are_not_snapped_to_class) ... ok
+test_invalid_origin_and_foreign_queue_rejected (test_p06_screw_review.ScrewReviewTests.test_invalid_origin_and_foreign_
+queue_rejected) ... ok
+test_lines_use_original_coordinates_and_separate_xy_scale (test_p06_screw_review.ScrewReviewTests.test_lines_use_origin
+al_coordinates_and_separate_xy_scale) ... ok
+test_missing_and_half_lines_are_pending (test_p06_screw_review.ScrewReviewTests.test_missing_and_half_lines_are_pending
+) ... ok
+test_selection_is_stratified_disjoint_and_repeatable (test_p06_screw_review.ScrewReviewTests.test_selection_is_stratifi
+ed_disjoint_and_repeatable) ... ok
+test_boundary_and_uncertainty_overlap (test_p06_size_evidence.SizeEvidenceTests.test_boundary_and_uncertainty_overlap) 
+... ok
+test_calibration_resolution_and_geometry_guard (test_p06_size_evidence.SizeEvidenceTests.test_calibration_resolution_an
+d_geometry_guard) ... ok
+test_complete_measurement_can_match_other_class_without_relabelling (test_p06_size_evidence.SizeEvidenceTests.test_comp
+lete_measurement_can_match_other_class_without_relabelling) ... ok
+test_enrichment_preserves_detections_counts_and_frame (test_p06_size_evidence.SizeEvidenceTests.test_enrichment_preserv
+es_detections_counts_and_frame) ... ok
+test_excluding_predicted_class_preserves_other_legal_classes (test_p06_size_evidence.SizeEvidenceTests.test_excluding_p
+redicted_class_preserves_other_legal_classes) ... ok
+test_geometric_candidate_alone_does_not_authorize_exclusion (test_p06_size_evidence.SizeEvidenceTests.test_geometric_ca
+ndidate_alone_does_not_authorize_exclusion) ... ok
+test_invalid_specs_measurements_and_quality (test_p06_size_evidence.SizeEvidenceTests.test_invalid_specs_measurements_a
+nd_quality) ... ok
+test_one_reliable_diameter_excludes_all_screw_sizes (test_p06_size_evidence.SizeEvidenceTests.test_one_reliable_diamete
+r_excludes_all_screw_sizes) ... ok
+test_real_geometry_entry_and_empty_or_id0_objects (test_p06_size_evidence.SizeEvidenceTests.test_real_geometry_entry_an
+d_empty_or_id0_objects) ... ok
+test_synthetic_frame_through_crop_geometry_and_comparison (test_p06_size_evidence.SizeEvidenceTests.test_synthetic_fram
+e_through_crop_geometry_and_comparison) ... ok
+test_washer_checks_its_own_two_dimensions (test_p06_size_evidence.SizeEvidenceTests.test_washer_checks_its_own_two_dime
+nsions) ... ok
+test_ascii_console_and_disabled_utf8_mode_do_not_damage_report (test_p06_stage1_report.Stage1ReportTests.test_ascii_con
+sole_and_disabled_utf8_mode_do_not_damage_report) ... ok
+test_existing_report_requires_explicit_replace (test_p06_stage1_report.Stage1ReportTests.test_existing_report_requires_
+explicit_replace) ... ok
+test_lossy_template_is_detected (test_p06_stage1_report.Stage1ReportTests.test_lossy_template_is_detected) ... ok
+test_non_train_records_are_refused (test_p06_stage1_report.Stage1ReportTests.test_non_train_records_are_refused) ... ok
+test_reads_json_and_bom_csv_without_any_image_access (test_p06_stage1_report.Stage1ReportTests.test_reads_json_and_bom_
+csv_without_any_image_access) ... ok
+test_replaces_corruption_from_evidence_not_from_old_markdown (test_p06_stage1_report.Stage1ReportTests.test_replaces_co
+rruption_from_evidence_not_from_old_markdown) ... ok
+test_wrong_csv_value_is_refused (test_p06_stage1_report.Stage1ReportTests.test_wrong_csv_value_is_refused) ... ok
+test_wrong_summary_is_refused_without_overwriting (test_p06_stage1_report.Stage1ReportTests.test_wrong_summary_is_refus
+ed_without_overwriting) ... ok
+test_bad_path_and_existing_output (test_p06_train_baseline.BaselineTests.test_bad_path_and_existing_output) ... ok
+test_check_data_never_calls_train (test_p06_train_baseline.BaselineTests.test_check_data_never_calls_train) ... ok
+test_cuda_unavailable_stops_preflight (test_p06_train_baseline.BaselineTests.test_cuda_unavailable_stops_preflight) ...
+ ok
+test_dry_run_does_not_train_or_configure_or_create_output (test_p06_train_baseline.BaselineTests.test_dry_run_does_not_
+train_or_configure_or_create_output) ... ok
+test_no_mode_cannot_start_default_long_training (test_p06_train_baseline.BaselineTests.test_no_mode_cannot_start_defaul
+t_long_training) ... ok
+{
+  "ok": true,
+  "input_dir": "C:\\Users\\\u738b\u4ee5\u4e50\\AppData\\Local\\Temp\\tmpc60rh93w\\input",
+  "partition_verified": false,
+  "evidence": "SYNTHETIC_OR_USER_SUPPLIED_ANNOTATIONS_NOT_MODEL_PREDICTIONS",
+  "records": [
+    {
+      "image_id": "a.png",
+      "source_json": "C:\\Users\\\u738b\u4ee5\u4e50\\AppData\\Local\\Temp\\tmpc60rh93w\\input\\a.json",
+      "source_image": "C:\\Users\\\u738b\u4ee5\u4e50\\AppData\\Local\\Temp\\tmpc60rh93w\\input\\a.png",
+      "width": 200,
+      "height": 100,
+      "pixel_sha256": "58cc94612c882315b354eacb9b318ed9c921c8415769ebfb576bc56f8c0decb6",
+      "scene_id": null,
+      "split": null,
+      "objects": [
+        {
+          "object_id": 0,
+          "class_id": 1,
+          "xyxy": [
+            20,
+            10,
+            100,
+            60
+          ],
+          "ignore": 0
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
+{
+  "parameters": {
+    "epochs": 100,
+    "imgsz": 640,
+    "batch": 8,
+    "patience": 30,
+    "device": 0,
+    "seed": 42,
+    "workers": 4,
+    "cache": false,
+    "deterministic": true,
+    "amp": true,
+    "val": true,
+    "save": true,
+    "plots": true,
+    "pretrained": true
+  },
+  "run": "C:\\Users\\\u738b\u4ee5\u4e50\\Desktop\\\u5927\u4e09\u4e0a\\ai\\Project\\output\\p06_runs\\unit_check_data_nonexistent",
+  "smoke": false
+}
+{
+  "status": "PASS"
+}
+{
+  "parameters": {
+    "epochs": 1,
+    "imgsz": 640,
+    "batch": 8,
+    "patience": 30,
+    "device": 0,
+    "seed": 42,
+    "workers": 4,
+    "cache": false,
+    "deterministic": true,
+    "amp": true,
+    "val": true,
+    "save": true,
+    "plots": true,
+    "pretrained": true
+  },
+  "run": "C:\\Users\\\u738b\u4ee5\u4e50\\Desktop\\\u5927\u4e09\u4e0a\\ai\\Project\\output\\p06_runs\\test_dry_run_nonexistent",
+  "smoke": true
+}
+Creating new Ultralytics Settings v0.0.6 file  
+View Ultralytics Settings with 'yolo settings' or at 'C:\Users\\AppData\Local\Temp\tmpt0sne5z0\config\Ultralytics\settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+Fast image access  (ping: 0.10.0 ms, read: 0.00.0 MB/s, size: 0.2 KB)
+
+[KScanning C:\Users\王以乐\AppData\Local\Temp\tmpt0sne5z0\labels\train... 1 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1/1 179.9it/s 0.0s
+[KScanning C:\Users\王以乐\AppData\Local\Temp\tmpt0sne5z0\labels\train... 1 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1/1 179.9it/s 0.0s
+New cache created: C:\Users\\AppData\Local\Temp\tmpt0sne5z0\labels\train.cache
+Fast image access  (ping: 0.10.0 ms, read: 1.80.0 MB/s, size: 0.2 KB)
+
+[KScanning C:\Users\王以乐\AppData\Local\Temp\tmpt0sne5z0\labels\train.cache... 1 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1/1  0.0s
+[KScanning C:\Users\王以乐\AppData\Local\Temp\tmpt0sne5z0\labels\train.cache... 1 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1/1  0.0s
+Fast image access  (ping: 0.10.0 ms, read: 1.60.0 MB/s, size: 0.2 KB)
+
+[KScanning C:\Users\王以乐\AppData\Local\Temp\tmpt0sne5z0\labels\train... 1 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1/1 1.3Kit/s 0.0s
+[KScanning C:\Users\王以乐\AppData\Local\Temp\tmpt0sne5z0\labels\train... 1 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1/1 1.3Kit/s 0.0s
+New cache created: C:\Users\\AppData\Local\Temp\tmpt0sne5z0\labels\train.cache
+test_official_label_cache_create_reuse_and_invalid_version_rebuild (test_p06_train_baseline.BaselineTests.test_official
+_label_cache_create_reuse_and_invalid_version_rebuild) ... ok
+test_prediction_diagnostic_tracks_confusion_and_duplicate (test_p06_train_baseline.BaselineTests.test_prediction_diagno
+stic_tracks_confusion_and_duplicate) ... ok
+test_smoke_changes_only_epochs (test_p06_train_baseline.BaselineTests.test_smoke_changes_only_epochs) ... ok
+test_snapshot_allows_only_official_cache_changes (test_p06_train_baseline.BaselineTests.test_snapshot_allows_only_offic
+ial_cache_changes) ... ok
+test_test_path_refused_before_environment_or_data_read (test_p06_train_baseline.BaselineTests.test_test_path_refused_be
+fore_environment_or_data_read) ... ok
+test_yaml_rejects_mapping_and_test_path (test_p06_train_baseline.BaselineTests.test_yaml_rejects_mapping_and_test_path)
+ ... ok
+test_bad_image (test_p07.InputOutputTests.test_bad_image) ... ok
+test_camera_open_failure (test_p07.InputOutputTests.test_camera_open_failure) ... ok
+test_counts_file (test_p07.InputOutputTests.test_counts_file) ... ok
+test_exports (test_p07.InputOutputTests.test_exports) ... ok
+test_fake_camera_disconnect_reconnect_and_release (test_p07.InputOutputTests.test_fake_camera_disconnect_reconnect_and_
+release) ... ok
+test_image_video_and_csv (test_p07.InputOutputTests.test_image_video_and_csv) ... ok
+test_latency_evidence_boundaries_and_unique_frames (test_p07.InputOutputTests.test_latency_evidence_boundaries_and_uniq
+ue_frames) ... ok
+test_recording (test_p07.InputOutputTests.test_recording) ... ok
+test_U01 (test_p07.MockIntegrationTests.test_U01) ... ok
+test_U02 (test_p07.MockIntegrationTests.test_U02) ... ok
+test_U03 (test_p07.MockIntegrationTests.test_U03) ... ok
+test_U04_no_reinfer_or_observation_change (test_p07.MockIntegrationTests.test_U04_no_reinfer_or_observation_change) ...
+ ok
+test_U05 (test_p07.MockIntegrationTests.test_U05) ... ok
+test_U06 (test_p07.MockIntegrationTests.test_U06) ... ok
+test_camera_selection_matches_name_and_backend (test_p07.MockIntegrationTests.test_camera_selection_matches_name_and_ba
+ckend) ... ok
+test_image_models_cannot_construct_mock (test_p07.MockIntegrationTests.test_image_models_cannot_construct_mock) ... ok
+test_invalid_counts (test_p07.MockIntegrationTests.test_invalid_counts) ... ok
+test_invalid_frame (test_p07.MockIntegrationTests.test_invalid_frame) ... ok
+test_invalid_result (test_p07.MockIntegrationTests.test_invalid_result) ... ok
+test_real_never_falls_back (test_p07.MockIntegrationTests.test_real_never_falls_back) ... FAIL
+test_review_without_reliable_counts (test_p07.MockIntegrationTests.test_review_without_reliable_counts) ... ok
+test_ui_for_all_models (test_p07.MockIntegrationTests.test_ui_for_all_models) ... ok
+test_worker_error_and_rejudge (test_p07.MockIntegrationTests.test_worker_error_and_rejudge) ... ok
+test_controls_have_distinct_hit_regions (test_p07_dashboard.DashboardTests.test_controls_have_distinct_hit_regions) ...
+ ok
+test_missing_models_clear_old_predictions_and_reload_can_recover (test_p07_dashboard.DashboardTests.test_missing_models
+_clear_old_predictions_and_reload_can_recover)
+STUB_PASS for recovery; real missing-file errors use the actual loader. ... ERROR baseline1 unavailable (no MOCK fallba
+ck): baseline1 missing artifacts: C:\Users\������\AppData\Local\Temp\tmph5pttmrs\missing.joblib, C:\Users\������\AppDat
+a\Local\Temp\tmph5pttmrs\freeze.json
+INFO Session: C:\Users\������\AppData\Local\Temp\tmph5pttmrs\out\20261126T041735Z-4bf059a4
+ERROR baseline1 unavailable (no MOCK fallback): baseline1 missing artifacts: C:\Users\������\AppData\Local\Temp\tmph5pt
+tmrs\missing.joblib, C:\Users\������\AppData\Local\Temp\tmph5pttmrs\freeze.json
+ERROR baseline2 unavailable (no MOCK fallback): baseline2 missing artifacts: C:\Users\������\AppData\Local\Temp\tmph5pt
+tmrs\missing-bundle\baseline2.json, C:\Users\������\AppData\Local\Temp\tmph5pttmrs\missing-bundle\resnet18-f37072fd.pth
+ERROR baseline3 unavailable (no MOCK fallback): [Errno 2] No such file or directory: 'C:\\Users\\������\\AppData\\Local
+\\Temp\\tmph5pttmrs\\missing-pipeline.json'
+ok
+test_mouse_controls_reach_real_model_loader_and_exports (test_p07_dashboard.DashboardTests.test_mouse_controls_reach_re
+al_model_loader_and_exports) ... INFO Session: C:\Users\������\AppData\Local\Temp\tmpl3v4bx3v\out\20261126T041736Z-9552
+25dd
+INFO Saved C:\Users\������\AppData\Local\Temp\tmpl3v4bx3v\out\20261126T041736Z-955225dd\REAL-\1795666656858250900
+INFO Saved C:\Users\������\AppData\Local\Temp\tmpl3v4bx3v\out\20261126T041736Z-955225dd\REAL-\1795666657166958400
+INFO Saved C:\Users\������\AppData\Local\Temp\tmpl3v4bx3v\out\20261126T041736Z-955225dd\MOCK-\1795666657466579800
+INFO Saved C:\Users\������\AppData\Local\Temp\tmpl3v4bx3v\out\20261126T041736Z-955225dd\MOCK-\1795666657780173400
+INFO Saved C:\Users\������\AppData\Local\Temp\tmpl3v4bx3v\out\20261126T041736Z-955225dd\MOCK-\1795666658080728300
+ok
+test_status_colors_and_fixed_recording_size (test_p07_dashboard.DashboardTests.test_status_colors_and_fixed_recording_s
+ize) ... ok
+test_counts_skip_first_inference_and_cache_supported_result (test_p07_real_integration.DeploymentContractTests.test_cou
+nts_skip_first_inference_and_cache_supported_result) ... ok
+test_cross_model_results_are_rejected (test_p07_real_integration.DeploymentContractTests.test_cross_model_results_are_r
+ejected) ... ok
+test_every_mode_routes_images_to_real_loaders_or_missing_error (test_p07_real_integration.DeploymentContractTests.test_
+every_mode_routes_images_to_real_loaders_or_missing_error) ... ok
+test_invalid_frames_do_not_reach_native_model (test_p07_real_integration.DeploymentContractTests.test_invalid_frames_do
+_not_reach_native_model) ... ok
+test_p04_reuses_owner_hog_and_classifier_mapping_and_updated_config (test_p07_real_integration.DeploymentContractTests.
+test_p04_reuses_owner_hog_and_classifier_mapping_and_updated_config) ... ok
+test_p05_route_uses_owner_factory_and_reuses_instance (test_p07_real_integration.DeploymentContractTests.test_p05_route
+_uses_owner_factory_and_reuses_instance) ... ok
+test_runtime_artifact_change_blocks_old_instance (test_p07_real_integration.DeploymentContractTests.test_runtime_artifa
+ct_change_blocks_old_instance) ... ok
+test_unavailable_model_has_no_predictions (test_p07_real_integration.DeploymentContractTests.test_unavailable_model_has
+_no_predictions) ... ok
+test_worker_times_first_prediction_after_unsupported_counts (test_p07_real_integration.DeploymentContractTests.test_wor
+ker_times_first_prediction_after_unsupported_counts) ... ok
+test_detection_matching_and_ignore (test_p08_evaluator.EvaluatorTest.test_detection_matching_and_ignore) ... ok
+test_image_level_confusion_and_exclusions (test_p08_evaluator.EvaluatorTest.test_image_level_confusion_and_exclusions) 
+... ok
+test_rejects_missing_prediction (test_p08_evaluator.EvaluatorTest.test_rejects_missing_prediction) ... ok
+test_annulus_measures_actual_inner_and_outer_edges (test_vision_caliper.VisionCaliperTests.test_annulus_measures_actual
+_inner_and_outer_edges) ... ok
+test_disk_without_a_visible_hole_is_not_completed_from_a_nominal (test_vision_caliper.VisionCaliperTests.test_disk_with
+out_a_visible_hole_is_not_completed_from_a_nominal) ... ok
+test_hexagon_distance_is_across_flats_not_corners (test_vision_caliper.VisionCaliperTests.test_hexagon_distance_is_acro
+ss_flats_not_corners) ... ok
+test_hybrid_disagreement_is_not_resolved_by_nominal_closeness (test_vision_caliper.VisionCaliperTests.test_hybrid_disag
+reement_is_not_resolved_by_nominal_closeness) ... ok
+test_hybrid_does_not_run_an_unneeded_second_method (test_vision_caliper.VisionCaliperTests.test_hybrid_does_not_run_an_
+unneeded_second_method) ... ok
+test_hybrid_recovers_only_from_actual_secondary_evidence (test_vision_caliper.VisionCaliperTests.test_hybrid_recovers_o
+nly_from_actual_secondary_evidence) ... ok
+test_partial_observed_arc_can_fit_without_nominal_completion (test_vision_caliper.VisionCaliperTests.test_partial_obser
+ved_arc_can_fit_without_nominal_completion) ... ok
+test_rotated_annulus_is_fitted_in_its_own_axis_frame (test_vision_caliper.VisionCaliperTests.test_rotated_annulus_is_fi
+tted_in_its_own_axis_frame) ... ok
+test_rotated_projection_interpolates_a_known_linear_image (test_vision_caliper.VisionCaliperTests.test_rotated_projecti
+on_interpolates_a_known_linear_image) ... ok
+test_screw_rejects_internal_glare_and_uses_multiple_gauges (test_vision_caliper.VisionCaliperTests.test_screw_rejects_i
+nternal_glare_and_uses_multiple_gauges) ... ok
+test_generator_ignores_truth_and_rejects_guessing (test_work_orders.WorkOrderTests.test_generator_ignores_truth_and_rej
+ects_guessing) ... ok
+test_gui_never_displays_obsolete_label_or_score (test_work_orders.WorkOrderTests.test_gui_never_displays_obsolete_label
+_or_score) ... ok
+test_object_inference_applies_id0_rule_before_validating_decision (test_work_orders.WorkOrderTests.test_object_inferenc
+e_applies_id0_rule_before_validating_decision) ... ok
+test_object_rejudge_never_calls_detector_or_alters_observation (test_work_orders.WorkOrderTests.test_object_rejudge_nev
+er_calls_detector_or_alters_observation) ... ok
+test_shared_invalid_input_validation (test_work_orders.WorkOrderTests.test_shared_invalid_input_validation) ... ok
+
+======================================================================
+FAIL: test_real_never_falls_back (test_p07.MockIntegrationTests.test_real_never_falls_back)
+----------------------------------------------------------------------
+RuntimeError: final NOT_READY: no independent Stage3 improved model has been delivered
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\������\Desktop\������\ai\Project\tests\test_p07.py", line 89, in test_real_never_falls_back
+    with self.assertRaisesRegex(RuntimeError, "no MOCK fallback"):
+AssertionError: "no MOCK fallback" does not match "final NOT_READY: no independent Stage3 improved model has been deliv
+ered"
+
+----------------------------------------------------------------------
+Ran 308 tests in 18.924s
+
+FAILED (failures=1)

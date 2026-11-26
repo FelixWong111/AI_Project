@@ -1,0 +1,34 @@
+test_capture_failure_and_interrupt_export_partial_results_and_release (test_benchmark_live.BenchmarkTests.test_capture_failure_and_interrupt_export_partial_results_and_release) ... Output: C:\Users\王以乐\AppData\Local\Temp\tmpi6nc7v9n\results\live_benchmark\20261125T200057Z-50d57b0f
+baseline1: device=cpu, mode=image_level
+baseline1: warmup 1 fresh camera reads
+baseline1 TimeoutError: SYNTHETIC read failure
+baseline1 {"model": "baseline1", "requested_frames": 1, "acquired_new_frames": 0, "successful_frames": 0, "failed_frames": 0, "processing_errors": 0, "capture_failures": 0, "capture_timeouts": 0, "coverage": 0.0, "processing_coverage": 0.0, "warmup_acquired": 0, "median_ms": null, "p95_ms": null, "mean_ms": null, "min_ms": null, "max_ms": null, "std_ms": null, "processing_fps": null, "repeated_pixel_hashes": 0, "geometry_measured_frames": 0, "geometry_attempted_frames": 0, "minimum_20_status": "INSUFFICIENT", "requested_protocol_complete": false, "live_median_ms": null, "live_p95_ms": null, "observed_sample_fps": null, "live_minimum_20_status": "NOT_MEASURED"}
+Saved: C:\Users\王以乐\AppData\Local\Temp\tmpi6nc7v9n\results\live_benchmark\20261125T200057Z-50d57b0f
+Output: C:\Users\王以乐\AppData\Local\Temp\tmp7pprtg8s\results\live_benchmark\20261125T200057Z-bdd93fd8
+baseline1: device=cpu, mode=image_level
+baseline1: warmup 1 fresh camera reads
+Saved: C:\Users\王以乐\AppData\Local\Temp\tmp7pprtg8s\results\live_benchmark\20261125T200057Z-bdd93fd8
+ok
+test_cli_exports_and_camera_release_in_temporary_workspace (test_benchmark_live.BenchmarkTests.test_cli_exports_and_camera_release_in_temporary_workspace) ... Output: C:\Users\王以乐\AppData\Local\Temp\tmpypcbywz4\results\live_benchmark\20261125T200057Z-72c7cbe0
+baseline1: device=cpu, mode=image_level
+baseline1: warmup 1 fresh camera reads
+baseline1: measure 2 fresh camera reads
+baseline1 {"model": "baseline1", "requested_frames": 2, "acquired_new_frames": 2, "successful_frames": 2, "failed_frames": 0, "processing_errors": 0, "capture_failures": 0, "capture_timeouts": 0, "coverage": 1.0, "processing_coverage": 1.0, "warmup_acquired": 1, "median_ms": 0.002749991836026311, "p95_ms": 0.0031549687264487147, "mean_ms": 0.002749991836026311, "min_ms": 0.002300017513334751, "max_ms": 0.0031999661587178707, "std_ms": 0.0004499743226915598, "processing_fps": 363637.4431732794, "repeated_pixel_hashes": 0, "geometry_measured_frames": 0, "geometry_attempted_frames": 0, "minimum_20_status": "INSUFFICIENT", "requested_protocol_complete": true, "live_median_ms": null, "live_p95_ms": null, "observed_sample_fps": null, "live_minimum_20_status": "NOT_MEASURED"}
+Saved: C:\Users\王以乐\AppData\Local\Temp\tmpypcbywz4\results\live_benchmark\20261125T200057Z-72c7cbe0
+ok
+test_freshness_rejects_old_packet (test_benchmark_live.BenchmarkTests.test_freshness_rejects_old_packet) ... ok
+test_gpu_sync_boundaries_and_complete_infer (test_benchmark_live.BenchmarkTests.test_gpu_sync_boundaries_and_complete_infer) ... ok
+test_minimum_twenty_and_identical_stream_warning (test_benchmark_live.BenchmarkTests.test_minimum_twenty_and_identical_stream_warning) ... ok
+test_reject_yolo_only_before_environment_or_capture (test_benchmark_live.BenchmarkTests.test_reject_yolo_only_before_environment_or_capture) ... usage: python.exe -m unittest [-h] [--camera CAMERA] [--frames FRAMES]
+                              [--warmup WARMUP]
+                              [--models {baseline1,baseline2,baseline3} [{baseline1,baseline2,baseline3} ...]]
+                              [--config CONFIG]
+                              [--frame-timeout FRAME_TIMEOUT] [--display]
+python.exe -m unittest: error: Baseline3 benchmark requires the current integrated size_verified adapter; no YOLO-only mode
+ok
+test_statistics_include_fail_review_exclude_warmup_errors (test_benchmark_live.BenchmarkTests.test_statistics_include_fail_review_exclude_warmup_errors) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.113s
+
+OK

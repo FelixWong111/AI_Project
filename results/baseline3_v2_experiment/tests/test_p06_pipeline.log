@@ -1,0 +1,15 @@
+test_actual_association_and_size_guard_validate_p07 (test_p06_pipeline.PipelineTests.test_actual_association_and_size_guard_validate_p07) ... ok
+test_cross_class_duplicates_and_unknown_foreground_stay_review (test_p06_pipeline.PipelineTests.test_cross_class_duplicates_and_unknown_foreground_stay_review) ... ok
+test_dedup_reindex_and_preserve_original_evidence (test_p06_pipeline.PipelineTests.test_dedup_reindex_and_preserve_original_evidence) ... ok
+test_factory_rejects_bad_background_before_gpu_load (test_p06_pipeline.PipelineTests.test_factory_rejects_bad_background_before_gpu_load) ... ok
+test_factory_through_p07_loader (test_p06_pipeline.PipelineTests.test_factory_through_p07_loader) ... ok
+test_id0_is_distinguished_from_unmatched_region (test_p06_pipeline.PipelineTests.test_id0_is_distinguished_from_unmatched_region) ... ok
+test_no_background_is_explicit_and_raw_validation_still_runs (test_p06_pipeline.PipelineTests.test_no_background_is_explicit_and_raw_validation_still_runs) ... ok
+test_real_geometry_runs_inside_integrated_synthetic_chain (test_p06_pipeline.PipelineTests.test_real_geometry_runs_inside_integrated_synthetic_chain) ... ok
+test_rejudge_uses_cache_and_rejects_changed_evidence (test_p06_pipeline.PipelineTests.test_rejudge_uses_cache_and_rejects_changed_evidence) ... ok
+test_size_outside_family_becomes_rejection_evidence (test_p06_pipeline.PipelineTests.test_size_outside_family_becomes_rejection_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.086s
+
+OK

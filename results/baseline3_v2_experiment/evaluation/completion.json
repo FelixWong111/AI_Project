@@ -1,0 +1,11 @@
+{
+  "completed_at": "2026-11-25T20:32:04.446575+00:00",
+  "runs": {
+    "old": "results/baseline3_v2_experiment/evaluation/baseline3_old/baseline3-20261126-043140-985247",
+    "new": "results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734"
+  },
+  "test_images": 30,
+  "inference_runs_per_model": 1,
+  "stage3_access": false,
+  "freeze_sha256": "884c50d0e777bb250504889052a58047f19de5d20ebe5fb94260f8095915ec6a"
+}

@@ -1,0 +1,470 @@
+{
+  "model_id": "baseline3",
+  "model_version": "p07-v2-yolo11n-standard-trial01-1c16259c7b18",
+  "model_file_size_bytes": 5494161,
+  "weights": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\models\\baseline3_v2_candidate\\best.pt",
+  "weights_sha256": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+  "output_capability": "object_level",
+  "class_catalogue": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "thresholds": {
+    "imgsz": 640,
+    "conf": 0.35,
+    "iou": 0.5,
+    "device": 0,
+    "batch": 1,
+    "half": false,
+    "agnostic_nms": false,
+    "augment": false,
+    "max_det": 300
+  },
+  "score_convention": "Ultralytics detector confidence; not a calibrated image-level PASS probability",
+  "preprocessing": "uint8 BGR -> Ultralytics aspect-preserving letterbox imgsz=640; original-pixel xyxy output; no EXIF transform on incoming frames",
+  "coordinate_convention": "continuous original-image pixels, top-left xyxy; 0<=xmin<xmax<=width, 0<=ymin<ymax<=height",
+  "hardware": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "rejection": "Only learned non_catalogue detection; complete open-set rejection not validated",
+  "size_tolerance": {
+    "schema_version": 1,
+    "catalogue_version": "p06_supplier_candidate_2026-11-24_v1",
+    "units": "mm",
+    "status": "SUPPLIER_REFERENCE_AND_USER_PROVISIONAL_ALLOWANCES",
+    "formal_decision_enabled": false,
+    "teacher_confirmation": "PENDING_NOT_RECORDED",
+    "physical_caliper_validation": "NOT_RUN",
+    "source": {
+      "package": "data/p06_part_specs_handoff",
+      "supplier_json": "p06_supplier_specs.json",
+      "supplier_json_sha256": "80016dbe92296ab03a232a499c617c0a2d935c32d5d5735be460b112dd2a870f",
+      "readme": "README_for_Codex.md",
+      "readme_sha256": "19b64c2f93bb2492d206c8d798c6fc1a5570bc33bcd507eb24ce12d430ee0b92",
+      "catalogue_version": "supplier_reference_2026-11-24_v1"
+    },
+    "allowance_basis": "Explicit user proposal in this session; not supplier manufacturing tolerance or confirmed measurement uncertainty",
+    "iso_din_assignment": "UNCONFIRMED; do not infer standards from generic M4/M5 or image dimensions",
+    "class_zero": {
+      "class_id": 0,
+      "class_name": "non_catalogue",
+      "meaning": "outside five permitted classes and/or sizes",
+      "dimensions": null
+    },
+    "items": [
+      {
+        "class_id": 1,
+        "class_name": "long_screw",
+        "supplier_spec": "M4×25",
+        "product_name_zh": "304大扁头十字螺钉",
+        "iso_din_standard": null,
+        "source_image": "reference_images/01_long_screw_M4x25.jpg",
+        "source_image_sha256": "9b0f1efeaf246497728b41fa064502bc2da45ff19f3554d9bcbfa10d7d75f94e",
+        "dimensions": {
+          "underhead_length": {
+            "supplier_field": "under_head_length_mm",
+            "reference_mm": 25.0,
+            "provisional_allowance_mm": 1.0
+          },
+          "thread_major_diameter": {
+            "supplier_field": "thread_major_diameter_mm",
+            "reference_mm": 4.0,
+            "provisional_allowance_mm": 0.3
+          }
+        },
+        "reference_only_dimensions": {
+          "head_thickness_mm": 2.4,
+          "head_diameter_mm": 9.2
+        },
+        "unsupported_for_automatic_overhead_measurement": [
+          "head_thickness_mm"
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "thick_screw",
+        "supplier_spec": "M5×10",
+        "product_name_zh": "304大扁头十字螺钉",
+        "iso_din_standard": null,
+        "source_image": "reference_images/02_thick_screw_M5x10.jpg",
+        "source_image_sha256": "cca6e57053a8bbf2b436385ad5274743ebe627150f0acc265a6edf91fc392175",
+        "dimensions": {
+          "underhead_length": {
+            "supplier_field": "under_head_length_mm",
+            "reference_mm": 10.0,
+            "provisional_allowance_mm": 1.0
+          },
+          "thread_major_diameter": {
+            "supplier_field": "thread_major_diameter_mm",
+            "reference_mm": 5.0,
+            "provisional_allowance_mm": 0.3
+          }
+        },
+        "reference_only_dimensions": {
+          "head_thickness_mm": 2.9,
+          "head_diameter_mm": 11.4
+        },
+        "unsupported_for_automatic_overhead_measurement": [
+          "head_thickness_mm"
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "thin_screw",
+        "supplier_spec": "M4×10",
+        "product_name_zh": "304大扁头十字螺钉",
+        "iso_din_standard": null,
+        "source_image": "reference_images/03_thin_screw_M4x10.jpg",
+        "source_image_sha256": "7bf30c53f0f5b1171a85f2cbf5ac737a6a84482bc3b74668a6d48bbd115e533c",
+        "dimensions": {
+          "underhead_length": {
+            "supplier_field": "under_head_length_mm",
+            "reference_mm": 10.0,
+            "provisional_allowance_mm": 1.0
+          },
+          "thread_major_diameter": {
+            "supplier_field": "thread_major_diameter_mm",
+            "reference_mm": 4.0,
+            "provisional_allowance_mm": 0.3
+          }
+        },
+        "reference_only_dimensions": {
+          "head_thickness_mm": 2.4,
+          "head_diameter_mm": 9.2
+        },
+        "unsupported_for_automatic_overhead_measurement": [
+          "head_thickness_mm"
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "hex_nut",
+        "supplier_spec": "M4",
+        "product_name_zh": "304六角螺母",
+        "iso_din_standard": null,
+        "source_image": "reference_images/04_hex_nut_M4.jpg",
+        "source_image_sha256": "c041e8ce71a3d0a1b4b0a3ebdccf89b3573c4951ab3b2296080519f732706bd3",
+        "dimensions": {
+          "across_flats": {
+            "supplier_field": "across_flats_mm",
+            "reference_mm": 7.0,
+            "provisional_allowance_mm": 0.5
+          }
+        },
+        "reference_only_dimensions": {
+          "thread_nominal_diameter_mm": 4.0,
+          "thickness_mm": 3.1,
+          "wrench_size_mm": 7.0
+        },
+        "unsupported_for_automatic_overhead_measurement": [
+          "thread_nominal_diameter_mm",
+          "thickness_mm"
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "flat_washer",
+        "supplier_spec": "5×15×1.2",
+        "product_name_zh": "304平垫片",
+        "iso_din_standard": null,
+        "source_image": "reference_images/05_flat_washer_5x15x1p2.jpg",
+        "source_image_sha256": "0fa6c4629a2f004eb4c633940020971f18894f762f6d386c368b494ed155a97e",
+        "dimensions": {
+          "outer_diameter": {
+            "supplier_field": "outer_diameter_mm",
+            "reference_mm": 15.0,
+            "provisional_allowance_mm": 0.75
+          },
+          "inner_diameter": {
+            "supplier_field": "inner_diameter_mm",
+            "reference_mm": 5.0,
+            "provisional_allowance_mm": 0.5
+          }
+        },
+        "reference_only_dimensions": {
+          "thickness_mm": 1.2
+        },
+        "unsupported_for_automatic_overhead_measurement": [
+          "thickness_mm"
+        ]
+      }
+    ],
+    "notes": [
+      "Supplier values describe the intended purchased product; photographed specimen identity/caliper dimensions are not yet independently confirmed.",
+      "Do not replace washer inner diameter 5.0 with generic standard reference 5.3.",
+      "Packaging counts 50/100 are not inspection expected_counts and are deliberately excluded.",
+      "Additional head diameters are descriptive references, not new acceptance gates.",
+      "Use existing candidate x/y scales and approximate coplanar assumption; never calibrate from these product renderings.",
+      "Geometric candidates, missing/unsupported dimensions and all comparisons remain REVIEW; no automatic PASS/FAIL."
+    ]
+  },
+  "calibration": null,
+  "decision_stage": "confirmed rejection/count mismatch -> FAIL; incomplete evidence -> REVIEW; all gates -> PASS",
+  "ultralytics_version": "8.3.236",
+  "candidate_config_sha256": "427a5e704deec0e0203da7c1898fa32664f255181363c33487836ceeafc2a36b",
+  "initialization": {
+    "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "bytes": 5613764,
+    "path": "outputs/baseline3_v2/pretrained/yolo11n.pt",
+    "source": "Official Ultralytics COCO-pretrained YOLO11n; same initialization SHA as historical P06 trainer",
+    "local_mechanical_training": false
+  },
+  "selection_scope": "Train/Validation only",
+  "p06_pipeline_version": "candidate-evidence-v1",
+  "pipeline_config": {
+    "path": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\configs\\new_pipeline.json",
+    "file_sha256": "fe09ed057e60e5476f3307e3e8a078b945519f85a29610b5705318fb537534e6"
+  },
+  "foreground_enabled": false,
+  "measurement_validation_records": [],
+  "model": "baseline3",
+  "baseline3_mode": "size_verified",
+  "business_decision_owner": "baseline3_adapter",
+  "deployment_stage": "size_evidence_integration",
+  "acceptance_confirmation": null,
+  "acceptance_reason": "ACCEPTANCE_NOT_CONFIRMED",
+  "size_verification": "P06 measurements; provisional unless calibration, scope and acceptance are confirmed",
+  "rejection_validation": "Foreground/physical validation required; no automatic claim of complete unknown rejection",
+  "rule_rejection_score_convention": "Size-confirmed non-catalogue objects retain the original detector score, not a fabricated class0 probability; detector_class_id/class_assignment are in diagnostics.json",
+  "evidence_files_sha256": {
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\configs\\new_pipeline.json": "fe09ed057e60e5476f3307e3e8a078b945519f85a29610b5705318fb537534e6",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\models\\baseline3_v2_candidate\\best.pt": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\models\\baseline3_v2_candidate\\detector.json": "427a5e704deec0e0203da7c1898fa32664f255181363c33487836ceeafc2a36b",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\config\\p06_part_specs_candidate.json": "01f402be54887c14bac7f6b9b86e2d8d30cab3e0c72a69e55c004e73a243002b",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\config\\p06_foreground_candidate.json": "e8bf98edfa722b1c5acad27cfe4ff3b8f3ec1424f31e843d3a117425dfe448ba",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\config\\p06_measurement_policy.json": "246f867f77cfbe61fd392297925d4f498946eff28bcf3d66f62a6e22ed3c8209",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\adapters\\baseline3.py": "65804851f56d75bb088adfea4918ea61d6d0fd3c9fd319f0b062afb8490a05d8",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p06_pipeline.py": "1ce4edb1ea18573df92251338c036f228c67b6c2e849e3961620272ecc7a3c8f",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p06_geometry.py": "148377289fb80d4077d657e0d0456f52709d1815aafdde570cbb474707df0e46",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p06_screw_edges.py": "63e6fd8843a564f6272bdf787984de9f916088f76672942a25027a040e858d1f",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p06_size_evidence.py": "1c9c19fd149001acf9f6f55247e6db860d23074ae1d0c44834302c60beaaa1c4",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p06_measurement_policy.py": "222b05d9fb86c9e5756e4a3d271896e76b0d5b5752fa816ff3596cdcb036e6d8",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p06_foreground.py": "b854324a93fa8f2f8affb5f01f53c8812140c56260ed3c02f5bca84d6fb8d6f1",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\models\\baseline3\\inference.py": "a4e1b2eab42e23b7a48c9e855cb407929b7394d4e234c6bfbaf5272e958ac342",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\src\\p07_bridge.py": "af48c0b3ec7259efa5368ece9e1186505e54212d021d14db3edb9cdcd275c99b"
+  },
+  "count_decision_score": "none: decision derived from observed vs expected counts; object scores unchanged",
+  "per_image_expected_counts": {
+    "A019.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A026.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A061.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A084.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A099.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A102.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A109.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A131.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A147.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A154.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A162.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A170.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A194.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A198.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "A204.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "B04.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "B16.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "B31.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "C03.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "C14.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "C33.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "D10.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "D37.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "D43.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "E11.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "E23.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "E30.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "F07.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "F09.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "G13.jpg": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    }
+  },
+  "load_error": null,
+  "evidence_mode": "batch_inference",
+  "offline_timing": "perf_counter: adapter preprocess/features/classifier/postprocess/result validation + GPU completion sync; excludes image decoding, weight load and export; not live latency",
+  "derived_from": "results/baseline3_v2_experiment/evaluation/baseline3_new/baseline3-20261126-043155-520734",
+  "decision_scope": "Count-rule auxiliary derived from saved real detections; not full size verification and not a new inference run"
+}

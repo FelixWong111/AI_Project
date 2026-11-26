@@ -1,0 +1,74 @@
+[
+  {
+    "curated": "results/dataset_v2_baseline_comparison/baseline1_training.log",
+    "source": "outputs/comparison_execution_logs/baseline1_training.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "d691b5ecc6178315a7edaecb038cacb2d3b63143d42066dde7d38f0909d967e4",
+    "curated_sha256": "1af58604df7340512c2df6060b81965e662187724c98b85a1ef1682c793b68bc",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/baseline2_training.log",
+    "source": "outputs/comparison_execution_logs/baseline2_training.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "ea222624efd40cdda35a674dad4f8891c72fe7e1c277ab9b99d3e62c48fbac88",
+    "curated_sha256": "933bf248e178daf88e562ee3b04484f5ae31ba1784d659904bb75135a2f675b2",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/final_tests.log",
+    "source": "outputs/comparison_execution_logs/final_tests.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "858d479191da7205938e45d3825aded14c3395c18b42ceb6e0263034e8cb6c24",
+    "curated_sha256": "cfef808abf7e5284c208436ae9afe2cf0f6c1f05e7ee3a8db432d122d545a92e",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/integration_execution.log",
+    "source": "outputs/comparison_execution_logs/integration_execution.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "1bcc3a3418538fb62be9d2decf1bbd23cf6dc8ec27bf361922fd297e13ffed03",
+    "curated_sha256": "47a40a0a1fb06e50a35bdedd0ce94fff413ae7d32b4d9416b75fba698e17c24b",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/report_execution.log",
+    "source": "outputs/comparison_execution_logs/report_execution.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "8760f2dea60f4a5aea52fc346545810d54f5d8e3cd6d96a8ed94c3a4793ec25b",
+    "curated_sha256": "f2d1c49327c08b96e8b2c248758ba001ecd4b051494c03b1d331a34b7819a19b",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/report_execution_final.log",
+    "source": "outputs/comparison_execution_logs/report_execution_final.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "8760f2dea60f4a5aea52fc346545810d54f5d8e3cd6d96a8ed94c3a4793ec25b",
+    "curated_sha256": "f2d1c49327c08b96e8b2c248758ba001ecd4b051494c03b1d331a34b7819a19b",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/stage2_execution.log",
+    "source": "outputs/comparison_execution_logs/stage2_execution.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "0a2e6ef797aae702e2433763fce59cd1ef8886dbc830c69475febc4199a786c1",
+    "curated_sha256": "dd3fc13931306f32be81b3465aa619cd8000d04356f7737ff16dfd56df647627",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/training/baseline1/attempt02.log",
+    "source": "outputs/comparison_execution_logs/training/baseline1/attempt02.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "9976c8823632d34c51ed03ef30925d8359a9fa352bd6d71bbfb89201977ce456",
+    "curated_sha256": "69c5ed2b09420c9e932cf85e3fd86536d8642c1580504f9a79d6e470e8fc126f",
+    "text_identical_after_decoding": true
+  },
+  {
+    "curated": "results/dataset_v2_baseline_comparison/validation_execution.log",
+    "source": "outputs/comparison_execution_logs/validation_execution.log",
+    "source_encoding": "UTF-16 PowerShell receipt",
+    "source_sha256": "fa0f6db0ad5c6559cff0ee6a0e893d34aa3a4d0ebb6da0dd2a0a4040a2c0638a",
+    "curated_sha256": "d0e138064097f1f9b7ea47cdc87d1ea4d07de43f067354f3549a0e1487ba8ef1",
+    "text_identical_after_decoding": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "manual_priority": "Project-Man.pdf pp1-7,10-12 > team_plan_ai.md",
+  "algorithm": "Standard six-class YOLO11n + existing P06 geometry + P07 work-order decision; no Stage 3 innovation",
+  "existing_features": [
+    "ID0..5 original-pixel boxes",
+    "retained-object counts",
+    "ID0 mandatory FAIL",
+    "dynamic expected counts without redetection",
+    "batch/GUI shared bridge",
+    "provisional geometry and policy gates"
+  ],
+  "size_blockers": [
+    "No verified calibration matching new collection/live geometry",
+    "No specimen IDs/caliper measurements/error bounds",
+    "No instructor-confirmed tolerances/support geometry",
+    "Empty validated measurement registry",
+    "No validated foreground background reference"
+  ],
+  "measurement_decision": "Keep existing conservative full size rules; raw YOLO count-only auxiliary must be clearly separated. Do not turn validated true or force REVIEW globally.",
+  "stage3_methods": "No Highlight-Mask improvement or optional edge_audit/bounded_refine enabled; keep existing default body_profile",
+  "changes": [
+    "Add keyword-only detector/provider factories; existing no-argument path unchanged",
+    "Independent candidate bridge/config and checkpoint dirs only"
+  ],
+  "old_inference_fixed": true,
+  "test_before_freeze": false
+}

@@ -1,0 +1,25 @@
+{
+  "camera_backend": "auto",
+  "width": 1280,
+  "height": 720,
+  "reconnect_seconds": 2.0,
+  "max_count": 1000,
+  "record_fps": 20.0,
+  "bridge": null,
+  "model_config": {
+    "baseline1_config": "models/baseline1_v2_candidate/config.json",
+    "device": "cpu",
+    "baseline2_bundle": "models/baseline2_v2_candidate",
+    "baseline3_config": "config/baseline3.json",
+    "baseline3_mode": "size_verified",
+    "baseline3_pipeline_config": "config/p06_pipeline_candidate.json",
+    "baseline3_acceptance_approval": null,
+    "baseline1_bundle": "models/baseline1_v2_candidate/baseline1.joblib",
+    "baseline1_scene_guard": "models/baseline1_v2_candidate/scene_guard.npz"
+  },
+  "_live_scene_guard": false,
+  "experiment_variants": {
+    "baseline1": "baseline1_new",
+    "baseline2": "baseline2_new"
+  }
+}

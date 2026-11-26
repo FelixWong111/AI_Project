@@ -1,0 +1,12 @@
+{
+  "B": {
+    "new_incomplete": 229,
+    "original_incomplete": 35,
+    "recovered": 1
+  },
+  "C": {
+    "original_incomplete": 35,
+    "recovered": 1,
+    "new_incomplete": 2
+  }
+}

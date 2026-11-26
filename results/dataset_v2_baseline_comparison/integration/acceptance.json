@@ -1,0 +1,231 @@
+{
+  "checks": {
+    "data_ready_and_frozen": true,
+    "pre_test_model_freeze_unchanged": true,
+    "old_models_configs_app_and_baseline3_unchanged": true,
+    "original_raw_files_unchanged": true,
+    "all_model_contracts_passed": true,
+    "inference_scope_passed": true,
+    "new_headless_apps_passed": true
+  },
+  "contracts": {
+    "baseline1_old": {
+      "passed": true,
+      "version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+      "is_mock": false,
+      "validation_image": "A005.jpg",
+      "normal_status": "PASS",
+      "score": 0.7956956028938293,
+      "unsupported": "UNSUPPORTED_COUNTS",
+      "invalid_rejected": true,
+      "object_counts": "N/A"
+    },
+    "baseline1_new": {
+      "passed": true,
+      "version": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+      "is_mock": false,
+      "validation_image": "A005.jpg",
+      "normal_status": "PASS",
+      "score": 0.9992470741271973,
+      "unsupported": "UNSUPPORTED_COUNTS",
+      "invalid_rejected": true,
+      "object_counts": "N/A"
+    },
+    "baseline2_old": {
+      "passed": true,
+      "version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+      "is_mock": false,
+      "validation_image": "A005.jpg",
+      "normal_status": "PASS",
+      "score": 0.02071547077203426,
+      "unsupported": "UNSUPPORTED_COUNTS",
+      "invalid_rejected": true,
+      "object_counts": "N/A"
+    },
+    "baseline2_new": {
+      "passed": true,
+      "version": "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+      "is_mock": false,
+      "validation_image": "A005.jpg",
+      "normal_status": "PASS",
+      "score": 0.21125149271469384,
+      "unsupported": "UNSUPPORTED_COUNTS",
+      "invalid_rejected": true,
+      "object_counts": "N/A"
+    }
+  },
+  "inference_scope": [
+    {
+      "phase": "validation",
+      "variant": "baseline1_old",
+      "images": 80,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "validation",
+      "variant": "baseline1_new",
+      "images": 80,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "validation",
+      "variant": "baseline2_old",
+      "images": 80,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "validation",
+      "variant": "baseline2_new",
+      "images": 80,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "validation",
+      "variant": "baseline1_old_gui",
+      "images": 80,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "validation",
+      "variant": "baseline1_new_gui",
+      "images": 80,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "evaluation",
+      "variant": "baseline1_old",
+      "images": 30,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "evaluation",
+      "variant": "baseline1_new",
+      "images": 30,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "evaluation",
+      "variant": "baseline2_old",
+      "images": 30,
+      "no_stage3": true,
+      "passed": true
+    },
+    {
+      "phase": "evaluation",
+      "variant": "baseline2_new",
+      "images": 30,
+      "no_stage3": true,
+      "passed": true
+    }
+  ],
+  "headless_app": {
+    "baseline1": {
+      "exit_code": 0,
+      "command": [
+        "app.py",
+        "--config",
+        "results/dataset_v2_baseline_comparison/configs/new_gui.json",
+        "--model",
+        "baseline1",
+        "--image",
+        "data/mechanical_components_v2/yolo/images/val/A005.jpg",
+        "--headless",
+        "--max-frames",
+        "1",
+        "--timeout",
+        "60",
+        "--output-dir",
+        "outputs/comparison_gui_smoke/baseline1"
+      ],
+      "scope": "Actual app.py/image/backend/dashboard/snapshot pipeline; not native click/camera/live validation"
+    },
+    "baseline2": {
+      "exit_code": 0,
+      "command": [
+        "app.py",
+        "--config",
+        "results/dataset_v2_baseline_comparison/configs/new_gui.json",
+        "--model",
+        "baseline2",
+        "--image",
+        "data/mechanical_components_v2/yolo/images/val/A005.jpg",
+        "--headless",
+        "--max-frames",
+        "1",
+        "--timeout",
+        "60",
+        "--output-dir",
+        "outputs/comparison_gui_smoke/baseline2"
+      ],
+      "scope": "Actual app.py/image/backend/dashboard/snapshot pipeline; not native click/camera/live validation"
+    }
+  },
+  "protected_paths": {
+    "app.py": true,
+    "config/baseline1.json": true,
+    "config/baseline2.json": true,
+    "config/baseline3.json": true,
+    "config/inspection.json": true,
+    "config/p06_foreground_candidate.json": true,
+    "config/p06_measurement_policy.json": true,
+    "config/p06_p07_pipeline_candidate.json": true,
+    "config/p06_part_specs_candidate.json": true,
+    "config/p06_pipeline_candidate.json": true,
+    "config/p06_size_calibration_candidate.json": true,
+    "config/p07.json": true,
+    "config/p07_yolo_frozen.json": true,
+    "config/training.json": true,
+    "models/baseline1/baseline1.joblib": true,
+    "models/baseline1/config.json": true,
+    "models/baseline1/freeze.json": true,
+    "models/baseline1/scene_guard.npz": true,
+    "models/baseline1/training_record.json": true,
+    "models/baseline2/baseline2.json": true,
+    "models/baseline2/resnet18-f37072fd.pth": true,
+    "models/baseline2/training_record.json": true,
+    "models/baseline3/best.pt": true,
+    "models/baseline3/provenance.json": true,
+    "models/baseline3/training_record.json": true,
+    "src/models/baseline3/__init__.py": true,
+    "src/models/baseline3/inference.py": true,
+    "src/p06_foreground.py": true,
+    "src/p06_geometry.py": true,
+    "src/p06_measurement_policy.py": true,
+    "src/p06_pipeline.py": true,
+    "src/p06_screw_edges.py": true,
+    "src/p06_size_evidence.py": true,
+    "tools/p06_accepted_data.py": true,
+    "tools/p06_build_dataset.py": true,
+    "tools/p06_build_dataset_v2.py": true,
+    "tools/p06_check_env.py": true,
+    "tools/p06_check_part_specs.py": true,
+    "tools/p06_compare_resolution.py": true,
+    "tools/p06_edge_audit.py": true,
+    "tools/p06_geometry_stage1.py": true,
+    "tools/p06_gpu_smoke.py": true,
+    "tools/p06_measure_candidate.py": true,
+    "tools/p06_measure_geometry.py": true,
+    "tools/p06_prepare.py": true,
+    "tools/p06_preview_annotations.py": true,
+    "tools/p06_reference_v2.py": true,
+    "tools/p06_report_geometry_stage1.py": true,
+    "tools/p06_screw_review.py": true,
+    "tools/p06_train_baseline.py": true,
+    "tools/p06_verify_inference.py": true
+  },
+  "live_camera": "NOT_MEASURED",
+  "manual_gui_clicks": "NOT_RUN",
+  "stage3_inference": false,
+  "model_weights_retrained_after_stage2": false,
+  "thresholds_tuned_after_stage2": false,
+  "gui_defaults_replaced": false,
+  "commit_push": false
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3332.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3332.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3332.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3333.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3333.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3333.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3334.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3334.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3334.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3335.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3335.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3335.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3336.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3336.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3336.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3337.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3337.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3337.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3338.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3338.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3338.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_21_IMG_3339.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_21_IMG_3339.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_21_IMG_3339.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_22_IMG_3340.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_22_IMG_3340.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_22_IMG_3340.png",
+    "rgb_pixels_equal": true
+  },
+  {
+    "image_id": "R_2026_11_25_21_22_IMG_3341.png",
+    "source_path": "数据集/尺子标定10/2026_11_25_21_22_IMG_3341.HEIC",
+    "image_path": "data/mechanical_components_v2/calibration/ruler/R_2026_11_25_21_22_IMG_3341.png",
+    "rgb_pixels_equal": true
+  }
+]

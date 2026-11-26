@@ -1,0 +1,2292 @@
+[
+  {
+    "image_id": "A005.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 2: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A048.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A058.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A065.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          5
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A067.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 2: INNER_HOLE_NOT_UNAMBIGUOUS",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          5,
+          6
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A074.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A076.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A081.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A088.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 2: ELLIPSE_SUPPORT_DEGENERATE",
+      "object 3: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A091.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 2,
+    "review_reasons": [
+      "object 0: INNER_HOLE_NOT_UNAMBIGUOUS",
+      "object 1: SCREW_AXIS_AMBIGUOUS",
+      "object 4: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A095.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 2: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+      "object 4: NUT_TILT_OR_SHADOW_ASYMMETRY"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A100.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7,
+          8
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A106.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A111.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A114.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A115.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 4: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A116.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A133.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 3: OPPOSITE_FLATS_NOT_PARALLEL"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A136.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 1: MULTIPLE_FOREGROUND_OBJECTS",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          4
+        ],
+        "detection_ids": [
+          1
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A145.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A163.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A164.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 0: INNER_HOLE_NOT_UNAMBIGUOUS"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A165.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 0: MULTIPLE_FOREGROUND_OBJECTS"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "A180.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3
+        ],
+        "detection_ids": [
+          1
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 3,
+        "region_ids": [
+          4,
+          5
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A191.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "detection_ids": [
+          1
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A192.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 4: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A195.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 4: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A197.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 4: NUT_TILT_OR_SHADOW_ASYMMETRY",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A207.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 0: MULTIPLE_FOREGROUND_OBJECTS",
+      "object 3: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          3
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "A208.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 0: MULTIPLE_FOREGROUND_OBJECTS",
+      "object 3: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "B09.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 2,
+    "review_reasons": [
+      "object 0: INNER_HOLE_NOT_UNAMBIGUOUS",
+      "object 1: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "B14.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 3: SIX_FLATS_NOT_RESOLVED",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "detection_ids": [
+          0,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "B25.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 4,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "B36.jpg",
+    "status": "FAIL",
+    "measurement_calls": 3,
+    "measurement_complete": 2,
+    "review_reasons": [
+      "object 2: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1
+        ],
+        "detection_ids": [
+          1
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "B39.jpg",
+    "status": "FAIL",
+    "measurement_calls": 3,
+    "measurement_complete": 3,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "B40.jpg",
+    "status": "FAIL",
+    "measurement_calls": 2,
+    "measurement_complete": 2,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "C05.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "object 2: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "C13.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 6,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "C26.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 6,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "C29.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 6,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "detection_ids": [
+          1,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 3,
+        "region_ids": [
+          3,
+          4
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "C35.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 6,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "detection_ids": [
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 5,
+        "region_ids": [
+          21,
+          22,
+          23,
+          24
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "C41.jpg",
+    "status": "FAIL",
+    "measurement_calls": 8,
+    "measurement_complete": 8,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [
+          5,
+          7
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "CROSS_CLASS_DUPLICATE_AMBIGUOUS"
+      },
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6
+        ],
+        "detection_ids": [
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "D02.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 2: CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "D14.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 2,
+    "review_reasons": [
+      "object 1: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW",
+      "object 4: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "D17.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 4,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "D30.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 3: CIRCULAR_EDGE_ANGULAR_COVERAGE_LOW",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "detection_ids": [
+          3
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "D35.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "detection_ids": [
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "D36.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2
+        ],
+        "detection_ids": [
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "D44.jpg",
+    "status": "FAIL",
+    "measurement_calls": 3,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1
+        ],
+        "detection_ids": [
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          2,
+          4
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "E04.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "E05.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "E20.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 2: OPPOSITE_FLATS_NOT_PARALLEL",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 5,
+        "region_ids": [
+          5,
+          6
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "E25.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 5,
+        "region_ids": [
+          5,
+          6
+        ],
+        "detection_ids": [
+          3
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "E29.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "E39.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "F05.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "F14.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "object 2: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "F16.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          5
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "G11.jpg",
+    "status": "FAIL",
+    "measurement_calls": 0,
+    "measurement_complete": 0,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 3,
+        "region_ids": [
+          3
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 5,
+        "region_ids": [
+          5
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 6,
+        "region_ids": [
+          6
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 7,
+        "region_ids": [
+          7
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 8,
+        "region_ids": [
+          8
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 9,
+        "region_ids": [
+          9
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 10,
+        "region_ids": [
+          10
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 11,
+        "region_ids": [
+          11
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 12,
+        "region_ids": [
+          12
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 13,
+        "region_ids": [
+          13
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 14,
+        "region_ids": [
+          14
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 15,
+        "region_ids": [
+          15
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 16,
+        "region_ids": [
+          16
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 17,
+        "region_ids": [
+          17
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 18,
+        "region_ids": [
+          18
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 19,
+        "region_ids": [
+          19
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 20,
+        "region_ids": [
+          20
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 21,
+        "region_ids": [
+          21
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 22,
+        "region_ids": [
+          22
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 23,
+        "region_ids": [
+          23
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "G12.jpg",
+    "status": "FAIL",
+    "measurement_calls": 0,
+    "measurement_complete": 0,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H005.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 0: FOREGROUND_TOUCHES_CROP",
+      "object 1: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 3: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 4: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 3,
+        "region_ids": [
+          3
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 4,
+        "region_ids": [
+          4
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 5,
+        "region_ids": [
+          5
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 6,
+        "region_ids": [
+          6
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 7,
+        "region_ids": [
+          7
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 8,
+        "region_ids": [
+          8
+        ],
+        "detection_ids": [],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "UNMATCHED_FOREGROUND"
+      },
+      {
+        "candidate_id": 9,
+        "region_ids": [
+          9
+        ],
+        "detection_ids": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "MULTIPLE_OBJECTS_OR_MERGED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "H018.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 2,
+    "review_reasons": [
+      "object 0: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 1: FOREGROUND_TOUCHES_CROP",
+      "object 4: TARGET_COMPONENT_AMBIGUOUS",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1
+        ],
+        "detection_ids": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H020.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 0: FOREGROUND_TOUCHES_CROP",
+      "object 1: FOREGROUND_TOUCHES_CROP",
+      "object 2: FOREGROUND_TOUCHES_CROP",
+      "object 3: TARGET_COMPONENT_AMBIGUOUS",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1
+        ],
+        "detection_ids": [
+          3,
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          2
+        ],
+        "detection_ids": [
+          0,
+          1,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "MULTIPLE_OBJECTS_OR_MERGED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "H021.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 0: FOREGROUND_TOUCHES_CROP",
+      "object 1: FOREGROUND_TOUCHES_CROP",
+      "object 2: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 3: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "MULTIPLE_OBJECTS_OR_MERGED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "H034.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 0: FOREGROUND_TOUCHES_CROP",
+      "object 1: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 2: FOREGROUND_TOUCHES_CROP",
+      "object 4: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1
+        ],
+        "detection_ids": [
+          1,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "MULTIPLE_OBJECTS_OR_MERGED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "H039.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "detection_ids": [
+          0,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H040.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 2,
+        "region_ids": [
+          2,
+          3,
+          4
+        ],
+        "detection_ids": [
+          0
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H043.jpg",
+    "status": "PASS",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H044.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 4,
+    "review_reasons": [
+      "object 3: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H059.jpg",
+    "status": "REVIEW",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1
+        ],
+        "detection_ids": [
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          2,
+          3
+        ],
+        "detection_ids": [
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H076.jpg",
+    "status": "FAIL",
+    "measurement_calls": 3,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 1: FOREGROUND_TOUCHES_CROP",
+      "object 2: FOREGROUND_TOUCHES_CROP",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "detection_ids": [
+          0,
+          1,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H084.jpg",
+    "status": "FAIL",
+    "measurement_calls": 3,
+    "measurement_complete": 3,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H086.jpg",
+    "status": "FAIL",
+    "measurement_calls": 7,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 0: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 2: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 3: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 4: FOREGROUND_TOUCHES_CROP",
+      "object 5: FOREGROUND_TOUCHES_CROP",
+      "object 6: FOREGROUND_TOUCHES_CROP",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "MULTIPLE_OBJECTS_OR_MERGED_FOREGROUND"
+      }
+    ]
+  },
+  {
+    "image_id": "H096.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 6,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H104.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 3,
+    "review_reasons": [
+      "object 2: SHAFT_EDGE_AMBIGUOUS_REFLECTION_OR_SHADOW"
+    ],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H108.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 0,
+    "review_reasons": [
+      "object 0: SIX_FLATS_NOT_RESOLVED",
+      "object 1: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 2: FOREGROUND_TOUCHES_CROP",
+      "object 3: FOREGROUND_TOUCHES_CROP",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0
+        ],
+        "detection_ids": [
+          1,
+          3,
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "MULTIPLE_OBJECTS_OR_MERGED_FOREGROUND"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          1,
+          2
+        ],
+        "detection_ids": [
+          0,
+          2
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H112.jpg",
+    "status": "FAIL",
+    "measurement_calls": 4,
+    "measurement_complete": 4,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  },
+  {
+    "image_id": "H114.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 1,
+    "review_reasons": [
+      "object 2: FOREGROUND_TOUCHES_CROP",
+      "object 3: FOREGROUND_TOUCHES_CROP",
+      "object 4: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "object 5: TARGET_COMPONENT_EXTENDS_OUTSIDE_BOX",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1,
+          2
+        ],
+        "detection_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      }
+    ]
+  },
+  {
+    "image_id": "H119.jpg",
+    "status": "FAIL",
+    "measurement_calls": 6,
+    "measurement_complete": 2,
+    "review_reasons": [
+      "object 0: FOREGROUND_TOUCHES_CROP",
+      "object 2: FOREGROUND_TOUCHES_CROP",
+      "object 5: FOREGROUND_TOUCHES_CROP",
+      "object 6: FOREGROUND_TOUCHES_CROP",
+      "UNRESOLVED_FOREGROUND"
+    ],
+    "foreground_unresolved": [
+      {
+        "candidate_id": 0,
+        "region_ids": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "detection_ids": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "ONE_DETECTION_OR_CHAIN_LINKS_MULTIPLE_REGIONS"
+      },
+      {
+        "candidate_id": 1,
+        "region_ids": [
+          2
+        ],
+        "detection_ids": [
+          5,
+          6
+        ],
+        "class_id": null,
+        "retained_detection_id": null,
+        "suppressed_detection_ids": [],
+        "status": "REVIEW",
+        "reason": "CROSS_CLASS_DUPLICATE_AMBIGUOUS"
+      }
+    ]
+  },
+  {
+    "image_id": "H133.jpg",
+    "status": "FAIL",
+    "measurement_calls": 5,
+    "measurement_complete": 5,
+    "review_reasons": [],
+    "foreground_unresolved": []
+  }
+]

@@ -7,6 +7,7 @@ __pycache__/
 
 # Local raw data and generated experiment outputs. Models remain deliverables.
 /data/
+/数据集/
 /outputs/
 # Curated text evidence in /results/ is intentionally tracked; do not ignore it.
 *.pyc
@@ -19,3 +20,29 @@ P05_handoff*/
 测试/
 .pytest_cache/
 # Models are real deliverables; do not blanket-ignore models or *.pth/*.joblib.
+
+# Track curated Stage2 metadata. Images stay local and are shared by cloud drive.
+/datasets/**
+!/datasets/mechanical_components_v2/
+!/datasets/mechanical_components_v2/**
+/datasets/**/*.[jJ][pP][gG]
+/datasets/**/*.[jJ][pP][eE][gG]
+/datasets/**/*.[pP][nN][gG]
+/datasets/**/*.[bB][mM][pP]
+/datasets/**/*.[tT][iI][fF]
+/datasets/**/*.[tT][iI][fF][fF]
+/datasets/**/*.[wW][eE][bB][pP]
+/datasets/**/*.[hH][eE][iI][cC]
+/datasets/**/*.[hH][eE][iI][fF]
+/datasets/**/*.[dD][nN][gG]
+/datasets/**/*.[gG][iI][fF]
+/datasets/mechanical_components_v2/**/stage3*/
+/data/sealed/
+
+/P03/
+
+# Local environments, caches and resumable training intermediates.
+/.venv*/
+/venv/
+/.cache/
+/archive/experiments/baseline3_training_checkpoints/

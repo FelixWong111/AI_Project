@@ -6,13 +6,7 @@
   "max_count": 1000,
   "record_fps": 20.0,
   "bridge": null,
-  "model_config": {
-    "baseline1_config": "config/baseline1.json",
-    "device": "cpu",
-    "baseline2_bundle": "models/baseline2",
-    "baseline3_config": "config/baseline3.json",
-    "baseline3_mode": "size_verified",
-    "baseline3_pipeline_config": "config/p06_pipeline_candidate.json",
-    "baseline3_acceptance_approval": null
-  }
+  "model_config": {},
+  "model_registry": "config/model_registry.json",
+  "_live_scene_guard": false
 }

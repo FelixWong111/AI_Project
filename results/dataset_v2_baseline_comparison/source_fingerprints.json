@@ -1,0 +1,15 @@
+{
+  "scripts/train_candidates.py": "558eda6f20b659f78e25189785a7093df2625ea660c37af3e307682556fc7d9c",
+  "scripts/compare_baselines_v2.py": "216ae4a52dae7c1fad264202fe13326431e052024ae5c5432d9e28f548c64b69",
+  "scripts/report_baseline_comparison.py": "007e979daa5d9444ee4eafcde2fa43b3dcbaad6c3f6e4754222a650d85b816d5",
+  "scripts/check_comparison_artifacts.py": "7a06a7f2d9dfb64167473ed385b956c0bc0dad2ce9cc9165f3ba597b76c38d4a",
+  "scripts/benchmark_live.py": "8bf59ed07b3468fcfdd2dbf2712c4246f06f49fbf09266738542c8c9993a7dfa",
+  "p08_run.py": "700b17cd9d6dbe7ee68a4516619e42f4743df533e17b9c2747ecf10912e7cc37",
+  "src/evaluator.py": "f8c5330895a577c4cd80bc353aeb81f2e86579a51971a85370acca39a7533248",
+  "src/inference/batch.py": "6792891d02ee11542852d772a9b5ee7197b951b75bbf9fa3c58a2fee110dd03d",
+  "src/p07_bridge.py": "c9c3649bdd068ac10602f8e190114eed156177828c41dfe78df262268175a52d",
+  "src/models/baseline1/scene_guard.py": "52b320efe92b945960fb14b0eba15feb33635ea90d63c471c86ef0d0f8e3e421",
+  "src/models/baseline1/features.py": "68d47a25e9fcd342671f05d6a870e30cd52492b0be78cc896896d253c724ba21",
+  "src/adapters/baseline1.py": "00ac4151d8a822638cc8cf4db9cfee85318de0f39c027ccfff28c9e69a12a547",
+  "src/adapters/baseline2.py": "2112bdd6c9d65853d5b611fcb5b2a8243c254457fd70a8a5e117ac9abde6852b"
+}

@@ -1,0 +1,382 @@
+{
+  "model": "baseline1",
+  "model_version": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+  "status": "TRAINED_CANDIDATE",
+  "data": {
+    "summary": {
+      "train": {
+        "images": 360,
+        "PASS": 180,
+        "FAIL": 180
+      },
+      "validation": {
+        "images": 80,
+        "PASS": 40,
+        "FAIL": 40
+      }
+    },
+    "exclusions": [],
+    "expected_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "scene_confirmation": {
+      "each_image_is_distinct_scene": true,
+      "source": "2026-11-26 collector/user confirmation; auto IDs, conservative empty background grouping",
+      "scope": "This new collection only"
+    },
+    "source_files": {
+      "data/mechanical_components_v2/development/ground_truth_images.csv": "fdaa29fffa075687f6a92c112a77536b4ce72aebe353688585d3ba55bb8e939b",
+      "data/mechanical_components_v2/development/ground_truth_objects.csv": "af782eebb374b192299eb64174b463e09ef637beabf1191135e6e86b80f20b70",
+      "data/mechanical_components_v2/development/dataset_v2.json": "0807f8520a9a316391db08c31c62f87f51b330b72752e2eb67462d4f05258a62",
+      "data/mechanical_components_v2/dataset_status.json": "c8c5a8da278bbd0883503438fbbc1f2be5efab49f0e20733a24c576309f5c99b"
+    },
+    "dataset_status": "READY",
+    "official_held_out_test": "NOT_RUN",
+    "manifest_sha256": "378d2f517ff2d7d2f1e477040b2c1cf757e0d88b7aa6a2f6f156ca8fc5574441",
+    "settings_sha256": "1d05b80efa729f9e3a583551dae31f13b59cf2cb988cf9fa55cfeafe85ffe7a8"
+  },
+  "selection_rule": "Original selected hyperparameters only; no search",
+  "trials": [
+    {
+      "parameters": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.9,
+        "precision": 0.8636363636363636,
+        "recall": 0.95,
+        "f1": 0.9047619047619048,
+        "TP": 38,
+        "FP": 6,
+        "FN": 2,
+        "TN": 34,
+        "false_PASS": 2,
+        "false_FAIL": 6,
+        "confusion_matrix": [
+          [
+            34,
+            6
+          ],
+          [
+            2,
+            38
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 40,
+        "support_FAIL": 40,
+        "misclassified": [
+          {
+            "image_id": "A191.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7453886866569519
+          },
+          {
+            "image_id": "F14.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.0
+          },
+          {
+            "image_id": "F16.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.0001550912857055664
+          },
+          {
+            "image_id": "H021.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.7091284990310669
+          },
+          {
+            "image_id": "H039.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9798055291175842
+          },
+          {
+            "image_id": "H040.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9342983961105347
+          },
+          {
+            "image_id": "H043.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.6582110524177551
+          },
+          {
+            "image_id": "H059.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.9958177208900452
+          }
+        ]
+      },
+      "warnings": [],
+      "n_iter": 89,
+      "fit_seconds": 0.2839894999633543,
+      "loss_curve": [
+        0.976574309416794,
+        0.6609857691878112,
+        0.4750745915779515,
+        0.3509439823760477,
+        0.26747165622714153,
+        0.2083248694220514,
+        0.1662563907733031,
+        0.13411691211763574,
+        0.10963834565577267,
+        0.09109612372956306,
+        0.07642591950339915,
+        0.06487896608227706,
+        0.055612973700413564,
+        0.04800624522129166,
+        0.0419906630217435,
+        0.03693742882564224,
+        0.03298777005911023,
+        0.02966147621921588,
+        0.02689115929006532,
+        0.024472781449443568,
+        0.02242466470197444,
+        0.02074538655424255,
+        0.019248284962579364,
+        0.01798366090986955,
+        0.01683194940076228,
+        0.01586844106167554,
+        0.014962574049164205,
+        0.014201219931375,
+        0.013503886569155979,
+        0.012918688129689153,
+        0.012335001104249123,
+        0.011848121016912308,
+        0.01137885143848523,
+        0.010971379787269841,
+        0.01058483135568796,
+        0.010219979345662905,
+        0.009886947328041728,
+        0.0096011164280608,
+        0.009306914425285749,
+        0.00903625997084173,
+        0.008801758246392908,
+        0.008574525452284397,
+        0.008355083546044133,
+        0.00814919538969525,
+        0.007961824350878015,
+        0.007778949660840715,
+        0.007608648683908258,
+        0.007443285200755407,
+        0.007293169369252528,
+        0.0071452034971114225,
+        0.007002034137890613,
+        0.006870953524839258,
+        0.006746546959603315,
+        0.006625036069764735,
+        0.00650714180367827,
+        0.006397328811252851,
+        0.006290421834520256,
+        0.00619016070274186,
+        0.00609175660198846,
+        0.005996984442299342,
+        0.005905523245632252,
+        0.005821049882558368,
+        0.005738179811236415,
+        0.005657603918889383,
+        0.0055821265494849495,
+        0.00550535252576164,
+        0.005435590128492276,
+        0.005364692695336386,
+        0.005297396354895035,
+        0.005233716376097645,
+        0.0051722433390683975,
+        0.005111184321550344,
+        0.005052879956751873,
+        0.0049974489709206935,
+        0.004942604844403683,
+        0.004890092456865079,
+        0.00483897085206879,
+        0.0047896166384065065,
+        0.004742081732240127,
+        0.0046958715406498685,
+        0.0046503329914552435,
+        0.0046067601406936205,
+        0.0045648838437734015,
+        0.004523264043760388,
+        0.004483924279894229,
+        0.004445322543929205,
+        0.0044081809337746984,
+        0.004370319208584261,
+        0.004336723759179022
+      ],
+      "scaler_fit_samples": 360,
+      "fit_split": "train only"
+    }
+  ],
+  "selected_parameters": {
+    "hidden_layer_sizes": [
+      32
+    ],
+    "alpha": 0.01
+  },
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 180,
+      "FP": 0,
+      "FN": 0,
+      "TN": 180,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          180,
+          0
+        ],
+        [
+          0,
+          180
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 180,
+      "support_FAIL": 180,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 0.9,
+      "precision": 0.8636363636363636,
+      "recall": 0.95,
+      "f1": 0.9047619047619048,
+      "TP": 38,
+      "FP": 6,
+      "FN": 2,
+      "TN": 34,
+      "false_PASS": 2,
+      "false_FAIL": 6,
+      "confusion_matrix": [
+        [
+          34,
+          6
+        ],
+        [
+          2,
+          38
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 40,
+      "support_FAIL": 40,
+      "misclassified": [
+        {
+          "image_id": "A191.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.7453886866569519
+        },
+        {
+          "image_id": "F14.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.0
+        },
+        {
+          "image_id": "F16.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.0001550912857055664
+        },
+        {
+          "image_id": "H021.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.7091284990310669
+        },
+        {
+          "image_id": "H039.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9798055291175842
+        },
+        {
+          "image_id": "H040.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9342983961105347
+        },
+        {
+          "image_id": "H043.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.6582109332084656
+        },
+        {
+          "image_id": "H059.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9958177208900452
+        }
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "device": "cpu",
+    "torch_threads": 4,
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.9.1",
+      "scikit-image": "0.26.0",
+      "Pillow": "13.0.0",
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "joblib": "1.5.3",
+      "opencv-python": "4.10.0.84"
+    },
+    "cuda_available": true
+  },
+  "command": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe -m scripts.train_baseline1 --dataset-config data/mechanical_components_v2/configs/training.json --output-dir models/baseline1_v2_candidate --original-only",
+  "training_seconds": 3.1351396999671124,
+  "files": {
+    "baseline1.joblib": {
+      "sha256": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+      "size_bytes": 955515
+    },
+    "config.json": {
+      "sha256": "ae2fad4356b07c41b95dd99d51cd8669beadb31bbebe2c88ba06adb7833bbe38",
+      "size_bytes": 3313
+    },
+    "freeze.json": {
+      "sha256": "13ae1d321cc02384e34d439bbd83e9eee85317c6a32e378709309b916e776b14",
+      "size_bytes": 250
+    }
+  },
+  "official_held_out_test": "NOT_RUN"
+}

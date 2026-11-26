@@ -1,0 +1,24 @@
+{
+  "real_controller_models_and_rendering": true,
+  "physical_monitor": "NOT_VERIFIED; OS display calls intercepted",
+  "loaded": [
+    {
+      "model": "baseline1",
+      "version": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+      "is_mock": false
+    },
+    {
+      "model": "baseline2",
+      "version": "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+      "is_mock": false
+    },
+    {
+      "model": "baseline3",
+      "version": "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+      "is_mock": false
+    }
+  ],
+  "baseline3_detector_calls": 1,
+  "snapshots": 3,
+  "source": "Train A001, not live camera"
+}

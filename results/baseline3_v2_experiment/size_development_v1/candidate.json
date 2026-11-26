@@ -1,0 +1,23 @@
+{
+  "schema": "size-candidate-config/v1",
+  "mode": "size_development_candidate",
+  "detector_config": "models/baseline3_v2_candidate/detector.json",
+  "selection_path": "results/baseline3_v2_experiment/size_development_v1/selection.json",
+  "calibration_path": "results/baseline3_v2_experiment/size_development_v1/calibration.json",
+  "foreground": {
+    "background_path": "data/mechanical_components_v2/yolo/images/train/G01.jpg",
+    "reference_id": "G01.jpg",
+    "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+    "parameters": {
+      "difference_threshold": 40,
+      "minimum_area": 30,
+      "kernel_size": 3,
+      "association_fraction": 0.25,
+      "duplicate_iou": 0.8,
+      "maximum_foreground_fraction": 0.45
+    }
+  },
+  "release_status": "DEVELOPMENT_ONLY_NOT_INSTRUCTOR_APPROVED",
+  "capture_geometry_assertion": "Original fixed-collection images only; identical resolution alone does not validate lens, zoom, crop or Camo geometry",
+  "known_capture_limitations": "Digital zoom varies; one Train frame uses wide camera. EXIF absent in 180 Train/Val JPEGs. Development bands tolerate observed variability, not a rigorous parallax bound."
+}

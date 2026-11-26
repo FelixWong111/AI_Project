@@ -1,0 +1,1250 @@
+{
+  "A": {
+    "support": 15,
+    "metrics": {
+      "input_cases": 15,
+      "ground_truth_eligible": 15,
+      "completed_eligible": 15,
+      "correct": 14,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.9333333333333333,
+      "all_eligible_correct_fraction": 0.9333333333333333,
+      "completed_accuracy": 0.9333333333333333,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 14,
+        "FAIL": 1
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 14,
+        "rows_truth_PASS_FAIL": [
+          [
+            14,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "passed": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.9333333333333333
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 1,
+        "rate": 0.06666666666666667,
+        "denominator": 15,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "A019.jpg",
+      "A026.jpg",
+      "A061.jpg",
+      "A084.jpg",
+      "A099.jpg",
+      "A102.jpg",
+      "A109.jpg",
+      "A131.jpg",
+      "A147.jpg",
+      "A154.jpg",
+      "A162.jpg",
+      "A170.jpg",
+      "A194.jpg",
+      "A198.jpg",
+      "A204.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "B": {
+    "support": 3,
+    "metrics": {
+      "input_cases": 3,
+      "ground_truth_eligible": 3,
+      "completed_eligible": 3,
+      "correct": 2,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.6666666666666666,
+      "all_eligible_correct_fraction": 0.6666666666666666,
+      "completed_accuracy": 0.6666666666666666,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 1,
+        "FAIL": 2
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support_all": 3,
+        "support_scored": 3,
+        "recall_all_eligible": 0.6666666666666666
+      },
+      "passed": {
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 1,
+        "rate": 0.3333333333333333,
+        "denominator": 3,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "B04.jpg",
+      "B16.jpg",
+      "B31.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "C": {
+    "support": 3,
+    "metrics": {
+      "input_cases": 3,
+      "ground_truth_eligible": 3,
+      "completed_eligible": 3,
+      "correct": 3,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 3
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 3,
+        "support_scored": 3,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 3,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "C03.jpg",
+      "C14.jpg",
+      "C33.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "D": {
+    "support": 3,
+    "metrics": {
+      "input_cases": 3,
+      "ground_truth_eligible": 3,
+      "completed_eligible": 3,
+      "correct": 3,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 3
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 3,
+        "support_scored": 3,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 3,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "D10.jpg",
+      "D37.jpg",
+      "D43.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "E": {
+    "support": 3,
+    "metrics": {
+      "input_cases": 3,
+      "ground_truth_eligible": 3,
+      "completed_eligible": 3,
+      "correct": 3,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 3
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 3,
+        "support_scored": 3,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 3,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "E11.jpg",
+      "E23.jpg",
+      "E30.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "F": {
+    "support": 2,
+    "metrics": {
+      "input_cases": 2,
+      "ground_truth_eligible": 2,
+      "completed_eligible": 2,
+      "correct": 1,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.5,
+      "all_eligible_correct_fraction": 0.5,
+      "completed_accuracy": 0.5,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 1,
+        "FAIL": 1
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support_all": 2,
+        "support_scored": 2,
+        "recall_all_eligible": 0.5
+      },
+      "passed": {
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 1,
+        "rate": 0.5,
+        "denominator": 2,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "F07.jpg",
+      "F09.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "G": {
+    "support": 1,
+    "metrics": {
+      "input_cases": 1,
+      "ground_truth_eligible": 1,
+      "completed_eligible": 1,
+      "correct": 0,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.0,
+      "all_eligible_correct_fraction": 0.0,
+      "completed_accuracy": 0.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 1
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "fail": {
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support_all": 1,
+        "support_scored": 1,
+        "recall_all_eligible": 0.0
+      },
+      "passed": {
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 1,
+        "rate": 1.0,
+        "denominator": 1,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "G13.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "normal": {
+    "support": 30,
+    "metrics": {
+      "input_cases": 30,
+      "ground_truth_eligible": 30,
+      "completed_eligible": 30,
+      "correct": 26,
+      "wrong_on_completed": 4,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.8666666666666667,
+      "all_eligible_correct_fraction": 0.8666666666666667,
+      "completed_accuracy": 0.8666666666666667,
+      "completed_balanced_accuracy": 0.8666666666666667,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 17,
+        "FAIL": 13
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 12,
+        "fp": 1,
+        "fn": 3,
+        "tn": 14,
+        "rows_truth_PASS_FAIL": [
+          [
+            14,
+            1
+          ],
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1": 0.8571428571428571,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.8
+      },
+      "passed": {
+        "precision": 0.8235294117647058,
+        "recall": 0.9333333333333333,
+        "f1": 0.875,
+        "support_all": 15,
+        "support_scored": 15,
+        "recall_all_eligible": 0.9333333333333333
+      },
+      "false_pass": {
+        "count": 3,
+        "rate": 0.2,
+        "denominator": 15,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 1,
+        "rate": 0.06666666666666667,
+        "denominator": 15,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "A019.jpg",
+      "A026.jpg",
+      "A061.jpg",
+      "A084.jpg",
+      "A099.jpg",
+      "A102.jpg",
+      "A109.jpg",
+      "A131.jpg",
+      "A147.jpg",
+      "A154.jpg",
+      "A162.jpg",
+      "A170.jpg",
+      "A194.jpg",
+      "A198.jpg",
+      "A204.jpg",
+      "B04.jpg",
+      "B16.jpg",
+      "B31.jpg",
+      "C03.jpg",
+      "C14.jpg",
+      "C33.jpg",
+      "D10.jpg",
+      "D37.jpg",
+      "D43.jpg",
+      "E11.jpg",
+      "E23.jpg",
+      "E30.jpg",
+      "F07.jpg",
+      "F09.jpg",
+      "G13.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "crowded": {
+    "support": 0,
+    "metrics": {
+      "input_cases": 0,
+      "ground_truth_eligible": 0,
+      "completed_eligible": 0,
+      "correct": 0,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": null,
+      "all_eligible_correct_fraction": null,
+      "completed_accuracy": null,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": null,
+      "eligible_coverage": null,
+      "status_counts": {},
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "fail": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "edge": {
+    "support": 0,
+    "metrics": {
+      "input_cases": 0,
+      "ground_truth_eligible": 0,
+      "completed_eligible": 0,
+      "correct": 0,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": null,
+      "all_eligible_correct_fraction": null,
+      "completed_accuracy": null,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": null,
+      "eligible_coverage": null,
+      "status_counts": {},
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "fail": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "ID0_any": {
+    "support": 8,
+    "metrics": {
+      "input_cases": 8,
+      "ground_truth_eligible": 8,
+      "completed_eligible": 8,
+      "correct": 7,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.875,
+      "all_eligible_correct_fraction": 0.875,
+      "completed_accuracy": 0.875,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 7,
+        "PASS": 1
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 7,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333333333333333,
+        "support_all": 8,
+        "support_scored": 8,
+        "recall_all_eligible": 0.875
+      },
+      "passed": {
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 1,
+        "rate": 0.125,
+        "denominator": 8,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "D10.jpg",
+      "D37.jpg",
+      "D43.jpg",
+      "E11.jpg",
+      "E23.jpg",
+      "E30.jpg",
+      "F09.jpg",
+      "G13.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "correct_targets_plus_ID0": {
+    "support": 3,
+    "metrics": {
+      "input_cases": 3,
+      "ground_truth_eligible": 3,
+      "completed_eligible": 3,
+      "correct": 3,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 3
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 3,
+        "support_scored": 3,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 3,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "E11.jpg",
+      "E23.jpg",
+      "E30.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "empty": {
+    "support": 0,
+    "metrics": {
+      "input_cases": 0,
+      "ground_truth_eligible": 0,
+      "completed_eligible": 0,
+      "correct": 0,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": null,
+      "all_eligible_correct_fraction": null,
+      "completed_accuracy": null,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": null,
+      "eligible_coverage": null,
+      "status_counts": {},
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "fail": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "only_ID0": {
+    "support": 1,
+    "metrics": {
+      "input_cases": 1,
+      "ground_truth_eligible": 1,
+      "completed_eligible": 1,
+      "correct": 0,
+      "wrong_on_completed": 1,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 0.0,
+      "all_eligible_correct_fraction": 0.0,
+      "completed_accuracy": 0.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "PASS": 1
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "fail": {
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support_all": 1,
+        "support_scored": 1,
+        "recall_all_eligible": 0.0
+      },
+      "passed": {
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 1,
+        "rate": 1.0,
+        "denominator": 1,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "G13.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "M4x40_screw": {
+    "support": 3,
+    "metrics": {
+      "input_cases": 3,
+      "ground_truth_eligible": 3,
+      "completed_eligible": 3,
+      "correct": 3,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 3
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 3,
+        "support_scored": 3,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 3,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "D10.jpg",
+      "D43.jpg",
+      "E11.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "M4_small_washer": {
+    "support": 2,
+    "metrics": {
+      "input_cases": 2,
+      "ground_truth_eligible": 2,
+      "completed_eligible": 2,
+      "correct": 2,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 2
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 2,
+        "support_scored": 2,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 2,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "D37.jpg",
+      "E23.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  },
+  "M6_cap_nut": {
+    "support": 2,
+    "metrics": {
+      "input_cases": 2,
+      "ground_truth_eligible": 2,
+      "completed_eligible": 2,
+      "correct": 2,
+      "wrong_on_completed": 0,
+      "unresolved_eligible": 0,
+      "all_input_correct_fraction": 1.0,
+      "all_eligible_correct_fraction": 1.0,
+      "completed_accuracy": 1.0,
+      "completed_balanced_accuracy": null,
+      "prediction_coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "status_counts": {
+        "FAIL": 2
+      },
+      "confusion_matrix": {
+        "positive_class": "FAIL",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "rows_truth_PASS_FAIL": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "fail": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support_all": 2,
+        "support_scored": 2,
+        "recall_all_eligible": 1.0
+      },
+      "passed": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "support_all": 0,
+        "support_scored": 0,
+        "recall_all_eligible": null
+      },
+      "false_pass": {
+        "count": 0,
+        "rate": 0.0,
+        "denominator": 2,
+        "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+      },
+      "false_fail": {
+        "count": 0,
+        "rate": null,
+        "denominator": 0,
+        "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+      },
+      "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+    },
+    "sample_ids": [
+      "D43.jpg",
+      "E30.jpg"
+    ],
+    "subtype_basis": "Capture-record declarations; image presence, not localization or per-object subtype accuracy"
+  }
+}

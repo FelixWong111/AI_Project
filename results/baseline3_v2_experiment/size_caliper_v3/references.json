@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://www.mvtec.com/doc/halcon/2405/en/gen_measure_rectangle2.html",
+    "use": "Rotated measurement rectangles and interpolation; implement with cv2.remap, no HALCON dependency"
+  },
+  {
+    "url": "https://www.mvtec.com/doc/halcon/2605/en/measure_projection.html",
+    "use": "Average gray values across slices to obtain a local one-dimensional profile"
+  },
+  {
+    "url": "https://www.mvtec.com/doc/halcon/2405/en/measure_pairs.html",
+    "use": "Gaussian-smoothed derivative, transition polarity and paired edges"
+  },
+  {
+    "url": "https://download.mvtec.com/halcon-10.0-solution-guide-iii-a-1d-measuring.pdf",
+    "use": "Subpixel extrema principle; our implementation uses local parabolic interpolation, not the proprietary operator"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+  "image_count": 80,
+  "prediction_status_counts": {
+    "REVIEW": 27,
+    "PASS": 7,
+    "FAIL": 46
+  },
+  "five_class_vector_exact": 0.7875,
+  "classes": {
+    "0": {
+      "support": 25,
+      "tp": 25,
+      "fp": 19,
+      "fn": 0,
+      "precision": 0.5681818181818182,
+      "recall": 1.0,
+      "f1": 0.7246376811594203,
+      "count_mae": 0.2375
+    },
+    "1": {
+      "support": 72,
+      "tp": 70,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9722222222222222,
+      "f1": 0.9859154929577465,
+      "count_mae": 0.025
+    },
+    "2": {
+      "support": 77,
+      "tp": 67,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.8701298701298701,
+      "f1": 0.9305555555555556,
+      "count_mae": 0.125
+    },
+    "3": {
+      "support": 78,
+      "tp": 75,
+      "fp": 4,
+      "fn": 3,
+      "precision": 0.9493670886075949,
+      "recall": 0.9615384615384616,
+      "f1": 0.9554140127388535,
+      "count_mae": 0.0625
+    },
+    "4": {
+      "support": 73,
+      "tp": 69,
+      "fp": 1,
+      "fn": 4,
+      "precision": 0.9857142857142858,
+      "recall": 0.9452054794520548,
+      "f1": 0.965034965034965,
+      "count_mae": 0.0375
+    },
+    "5": {
+      "support": 74,
+      "tp": 74,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    }
+  }
+}

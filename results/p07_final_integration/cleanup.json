@@ -1,0 +1,43 @@
+{
+  "archived": {
+    "scripts/develop_caliper_v3.py": {
+      "archive": "archive/experiments/vision_caliper_v3/source_snapshot.zip",
+      "member": "scripts/develop_caliper_v3.py",
+      "sha256": "f19e3acb62bcef8b092ea6824d55278125edfd944f504d909ca06adc67fb6a0a"
+    },
+    "src/models/baseline3/size_caliper.py": {
+      "archive": "archive/experiments/vision_caliper_v3/source_snapshot.zip",
+      "member": "src/models/baseline3/size_caliper.py",
+      "sha256": "866375361d44ffea0780312d6b35a22a670362f9a30fd012e3d9c029f77a6fb6"
+    },
+    "src/models/baseline3/vision_caliper.py": {
+      "archive": "archive/experiments/vision_caliper_v3/source_snapshot.zip",
+      "member": "src/models/baseline3/vision_caliper.py",
+      "sha256": "468b2257f7c731caf4a49bd9c77e730a24b27f94cdfa2a83c1b314cefde933d1"
+    },
+    "tests/test_vision_caliper.py": {
+      "archive": "archive/experiments/vision_caliper_v3/source_snapshot.zip",
+      "member": "tests/test_vision_caliper.py",
+      "sha256": "3f976a5ed56f0d86c8bcb844ea5d0b575b058bee9ea5cfb57f6385d0138e6997"
+    },
+    "models/baseline3_v2_candidate/last.pt": {
+      "archive": "archive/experiments/baseline3_training_checkpoints/last.pt",
+      "sha256": "d1b2124af770272ddc66e2ed2d8ce8d826f966d09b8b1c55f33a0e3ef3f6ab64"
+    },
+    "models/baseline3_v2_candidate/resume_last.pt": {
+      "archive": "archive/experiments/baseline3_training_checkpoints/resume_last.pt",
+      "sha256": "a0f47aaf3c94e96b5a9cc75673de354b0ce5db309dc25ebc2e026a8143abba19"
+    }
+  },
+  "deleted_without_archive": [],
+  "old_frozen_models_retained_in_place": [
+    "models/baseline1",
+    "models/baseline2",
+    "models/baseline3",
+    "models/baseline1_v2_candidate",
+    "models/baseline2_v2_candidate",
+    "models/baseline3_v2_candidate"
+  ],
+  "reason": "Frozen historical profiles still reference those files. Only models/release is in production registry. Identical historical backbones are deduplicated by LFS OID.",
+  "production_mock": "No implementation imported; test-only stubs retained in tests/"
+}

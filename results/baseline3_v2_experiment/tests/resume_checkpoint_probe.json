@@ -1,0 +1,18 @@
+{
+  "checkpoint": "models\\baseline3_v2_candidate\\resume_last.pt",
+  "sha256_at_probe": "08714286f982413375f3fa48d81a6f4154eac207d74a1d5f912841b47426723d",
+  "epoch_zero_based": 32,
+  "optimizer_present": true,
+  "amp_scaler_present": true,
+  "scheduler_serialized": false,
+  "scheduler_policy": "Ultralytics native resume reconstructs scheduler using saved epoch/train_args; no independently serialized scheduler or bitwise RNG-resume guarantee",
+  "class_names": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "stage3_access": false
+}

@@ -1,0 +1,26 @@
+{
+  "session_id": "20261126T044658Z-585e8eeb",
+  "config": {
+    "camera_backend": "auto",
+    "width": 1280,
+    "height": 720,
+    "reconnect_seconds": 2.0,
+    "max_count": 1000,
+    "record_fps": 20.0,
+    "bridge": null,
+    "model_config": {},
+    "model_registry": "config/model_registry.json",
+    "_live_scene_guard": false,
+    "backend": "real",
+    "model": "baseline3"
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "python": "3.11.14",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4"
+  },
+  "timing_boundary": "frame returned by read -> imshow + waitKey returned; OS/compositor/photon latency unmeasured",
+  "frame_id": "P07 read-attempt counter; not phone frame ID, image_id, or scene_id"
+}

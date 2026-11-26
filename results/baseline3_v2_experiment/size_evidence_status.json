@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED",
+  "ruler_images": 10,
+  "dimension_photographs": 220,
+  "independent_specimen_count": "UNKNOWN",
+  "ruler_manifest": "data/mechanical_components_v2/calibration/ruler_manifest.csv",
+  "manifest_status": "PENDING_MANUAL_MEASUREMENT",
+  "missing": [
+    "Verified tick endpoints and reference lengths",
+    "Physical specimen IDs and repeated caliper readings",
+    "Confirmed imaging geometry compatible with public collection and live Camo",
+    "Instructor-confirmed tolerances and support conditions",
+    "Independent size-development/verification allocation"
+  ],
+  "old_scale_policy": "Preserved old system configuration unchanged; not accepted as new calibration",
+  "new_scale_policy": "calibration=null until valid physical evidence, not guessed",
+  "independent_size_mae": "NOT_RUN",
+  "claim": "Image-level ID0 rejection and bounding-box recall are not metric size accuracy; M6 cap nut has both type and size differences",
+  "raw_data_changes": false
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "image_id": "A001.jpg",
+    "exif_orientation": null,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "A042.jpg",
+    "exif_orientation": null,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "A081.jpg",
+    "exif_orientation": null,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "A120.jpg",
+    "exif_orientation": null,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "A164.jpg",
+    "exif_orientation": null,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "A206.jpg",
+    "exif_orientation": null,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "B37.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "C36.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "D33.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "E27.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "G03.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "H044.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  },
+  {
+    "image_id": "H105.jpg",
+    "exif_orientation": 1,
+    "opencv_vs_batch_loader_identical": true
+  }
+]

@@ -1,0 +1,8 @@
+test_detection_matching_and_ignore (test_p08_evaluator.EvaluatorTest.test_detection_matching_and_ignore) ... ok
+test_image_level_confusion_and_exclusions (test_p08_evaluator.EvaluatorTest.test_image_level_confusion_and_exclusions) ... ok
+test_rejects_missing_prediction (test_p08_evaluator.EvaluatorTest.test_rejects_missing_prediction) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.036s
+
+OK

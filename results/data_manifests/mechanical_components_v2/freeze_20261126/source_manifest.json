@@ -1,0 +1,25 @@
+{
+  "scope": "Later user-confirmed freeze and evaluation ledger",
+  "files": [
+    {
+      "path": "dataset_status.json",
+      "sha256": "c8c5a8da278bbd0883503438fbbc1f2be5efab49f0e20733a24c576309f5c99b"
+    },
+    {
+      "path": "evaluation_state.json",
+      "sha256": "b3b50419659b585744229e14ffe6393c8de2902434e2132715400ad65b6d8fcc"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "079e9aa4b189722cd8ca0aae9e2257f1453b4ac13140e088ad01b4b4339bde42"
+    },
+    {
+      "path": "human_confirmation.json",
+      "sha256": "75e5417a8efad04e5fb4868cbd7802ee3b02343d687a8e71a664288e963fb10c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad938f79e6250a1d24c786a708088f2b433564a647e42fac6e3078bf798e4c0f"
+    }
+  ]
+}

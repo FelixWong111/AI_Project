@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-11-26T05:17:55.732109+00:00",
+  "source": "User reply in current task",
+  "statement": "尚未完成实机布置或标定",
+  "rig": "NOT_READY",
+  "camo_calibration": "NOT_VERIFIED",
+  "teacher_tolerance_record": "NOT_PROVIDED",
+  "live_benchmark": "NOT_RUN",
+  "no_further_camera_sampling_in_this_task": true
+}

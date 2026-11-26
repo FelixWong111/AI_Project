@@ -1,0 +1,364 @@
+{
+  "baseline1_old": {
+    "variant": "baseline1_old",
+    "model_id": "baseline1",
+    "files": [
+      {
+        "path": "models/baseline1/baseline1.joblib",
+        "sha256": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+        "bytes": 955169
+      },
+      {
+        "path": "models/baseline1/config.json",
+        "sha256": "a0d303735b7195dba5eb4747dede8e4683e79b120da03e5ec071eb76cb763f58",
+        "bytes": 3301
+      },
+      {
+        "path": "models/baseline1/freeze.json",
+        "sha256": "d99060970307086363cb64d1e00b9d96c62887d6d28a11f3632081acd54dff73",
+        "bytes": 250
+      }
+    ],
+    "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+    "training_record": "models/baseline1/training_record.json",
+    "historical_metrics": {
+      "train": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 138,
+        "FP": 0,
+        "FN": 0,
+        "TN": 124,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            124,
+            0
+          ],
+          [
+            0,
+            138
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 124,
+        "support_FAIL": 138,
+        "misclassified": []
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 22,
+        "FP": 0,
+        "FN": 0,
+        "TN": 24,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            24,
+            0
+          ],
+          [
+            0,
+            22
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": []
+      }
+    },
+    "historical_support": {
+      "train": {
+        "images": 262,
+        "scenes": 262,
+        "FAIL": 138,
+        "PASS": 124
+      },
+      "validation": {
+        "images": 46,
+        "scenes": 46,
+        "FAIL": 22,
+        "PASS": 24
+      }
+    },
+    "source_git_commit": "bf4fda4",
+    "source_worktree": "uncommitted candidate changes; backed up before edits",
+    "selected_parameters": {
+      "hidden_layer_sizes": [
+        32
+      ],
+      "alpha": 0.01
+    },
+    "fixed_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "official_held_out_test": "NOT_RUN",
+    "data_manifest": "results/data_manifests/development.json",
+    "new_dataset_evaluation": "NOT_RUN",
+    "algorithm": "HOG handcrafted features + scikit-learn MLP (image-level PASS/FAIL classifier)",
+    "input_size": [
+      128,
+      128
+    ],
+    "preprocessing": {
+      "color": "BGR -> grayscale",
+      "resize": "stretch to image_size, aspect ratio not preserved",
+      "denoise": "none",
+      "normalization": "HOG transform_sqrt handles gradient magnitude normalization"
+    },
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        16,
+        16
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ],
+      "block_norm": "L2-Hys",
+      "transform_sqrt": true,
+      "channel_axis": null
+    },
+    "feature_dimension": 1764,
+    "mlp": {
+      "hidden_layer_sizes": [
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.01,
+      "learning_rate_init": 0.001,
+      "max_iter": 1000,
+      "early_stopping": false,
+      "validation_fraction": 0.1,
+      "n_iter_no_change": 30,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "decision": "argmax in saved classes_ order; conceptual two-class boundary 0.5",
+    "score": "P(predicted class), uncalibrated; not always P(FAIL)",
+    "raw_non_success": "Invalid input/inference exception -> ERROR; other legal work order -> UNSUPPORTED_COUNTS",
+    "gui_system_guard": {
+      "path": "models/baseline1/scene_guard.npz",
+      "sha256": "edfb5b9b06843f8997bbbe810e31115daf19f65187d98bbcd3dbfd2c4baaf2ec",
+      "rule": "Nearest standardized training-HOG support; outside -> REVIEW with null score/label",
+      "compatibility": "Bound to old model SHA; implementation fixes reference shape at 262x1764; cannot reuse for new model"
+    },
+    "deployment_model_bytes": 955169
+  },
+  "baseline2_old": {
+    "variant": "baseline2_old",
+    "model_id": "baseline2",
+    "files": [
+      {
+        "path": "models/baseline2/baseline2.json",
+        "sha256": "641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55",
+        "bytes": 44541
+      },
+      {
+        "path": "models/baseline2/resnet18-f37072fd.pth",
+        "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "bytes": 46830571
+      }
+    ],
+    "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+    "training_record": "models/baseline2/training_record.json",
+    "historical_metrics": {
+      "train": {
+        "positive_class": "FAIL",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "TP": 138,
+        "FP": 0,
+        "FN": 0,
+        "TN": 124,
+        "false_PASS": 0,
+        "false_FAIL": 0,
+        "confusion_matrix": [
+          [
+            124,
+            0
+          ],
+          [
+            0,
+            138
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 124,
+        "support_FAIL": 138,
+        "misclassified": []
+      },
+      "validation": {
+        "positive_class": "FAIL",
+        "accuracy": 0.8043478260869565,
+        "precision": 0.8421052631578947,
+        "recall": 0.7272727272727273,
+        "f1": 0.7804878048780488,
+        "TP": 16,
+        "FP": 3,
+        "FN": 6,
+        "TN": 21,
+        "false_PASS": 6,
+        "false_FAIL": 3,
+        "confusion_matrix": [
+          [
+            21,
+            3
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "matrix_order": [
+          "PASS",
+          "FAIL"
+        ],
+        "support_PASS": 24,
+        "support_FAIL": 22,
+        "misclassified": [
+          {
+            "image_id": "fail171.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.49262000204085055
+          },
+          {
+            "image_id": "fail27.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.21626966291959004
+          },
+          {
+            "image_id": "fail29.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.3419569768466413
+          },
+          {
+            "image_id": "fail35.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.48957698255603954
+          },
+          {
+            "image_id": "fail38.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.16069720899129591
+          },
+          {
+            "image_id": "fail43.jpg",
+            "true_label": "FAIL",
+            "predicted_label": "PASS",
+            "p_fail": 0.4264881247910357
+          },
+          {
+            "image_id": "pass102.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5221739649614705
+          },
+          {
+            "image_id": "pass133.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5418803494803698
+          },
+          {
+            "image_id": "pass15.jpg",
+            "true_label": "PASS",
+            "predicted_label": "FAIL",
+            "p_fail": 0.5192240570758013
+          }
+        ]
+      }
+    },
+    "historical_support": {
+      "train": {
+        "images": 262,
+        "scenes": 262,
+        "FAIL": 138,
+        "PASS": 124
+      },
+      "validation": {
+        "images": 46,
+        "scenes": 46,
+        "FAIL": 22,
+        "PASS": 24
+      }
+    },
+    "source_git_commit": "bf4fda4",
+    "source_worktree": "uncommitted candidate changes; backed up before edits",
+    "selected_parameters": {
+      "C": 0.1
+    },
+    "fixed_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "official_held_out_test": "NOT_RUN",
+    "data_manifest": "results/data_manifests/development.json",
+    "new_dataset_evaluation": "NOT_RUN",
+    "algorithm": "Frozen ImageNet ResNet18 + Train-only StandardScaler + LogisticRegression",
+    "input_size": [
+      224,
+      224
+    ],
+    "preprocessing": {
+      "color": "RGB",
+      "orientation": "EXIF for file inputs",
+      "resize": "aspect-preserving fit into 224x224, white padding, bilinear",
+      "normalization_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalization_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "feature_layer": "global average pool, 512 dimensions"
+    },
+    "feature_dimension": 512,
+    "decision": {
+      "p_fail_threshold": 0.5,
+      "positive_class": "FAIL"
+    },
+    "score": "P(FAIL), uncalibrated",
+    "frozen_backbone": true,
+    "raw_non_success": "Invalid input/inference exception -> ERROR; other legal work order -> UNSUPPORTED_COUNTS",
+    "deployment_model_bytes": 46875112
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scripts/audit_retraining_readiness.py": {
+    "archive": "archive/experiments/development_runners/source_snapshot.zip",
+    "member": "scripts/audit_retraining_readiness.py",
+    "sha256": "4435dec38461e90e62460585aae969cf73ca8ad4b6cbdae501a498e70c8d341c"
+  },
+  "scripts/compare_baselines_v2.py": {
+    "archive": "archive/experiments/development_runners/source_snapshot.zip",
+    "member": "scripts/compare_baselines_v2.py",
+    "sha256": "016703402d666d29e8ba3bc55f7cbb892a99f955833a56825d17b11b7b76739e"
+  },
+  "scripts/develop_baseline3_size.py": {
+    "archive": "archive/experiments/development_runners/source_snapshot.zip",
+    "member": "scripts/develop_baseline3_size.py",
+    "sha256": "fcccd76205b1182146378edc6ae8034c473a9b37eed45b5cc1eb5a8167ea7177"
+  },
+  "scripts/repair_baseline3_size.py": {
+    "archive": "archive/experiments/development_runners/source_snapshot.zip",
+    "member": "scripts/repair_baseline3_size.py",
+    "sha256": "9e87838cc623d5957585cf9aefb2f4addaeaa5fcaa5d014fa86a06e6eaf4781d"
+  },
+  "scripts/experiment_baseline3_v2.py": {
+    "archive": "archive/experiments/development_runners/source_snapshot.zip",
+    "member": "scripts/experiment_baseline3_v2.py",
+    "sha256": "1c4d92868d550fb1179c4fbf035cb3207f6e47f3e50cef79e62b95cfe90f1781"
+  }
+}

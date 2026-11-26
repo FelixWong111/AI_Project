@@ -1,0 +1,3 @@
+image_id,event,object_id,true_class,detection_id,predicted_class,score,iou
+A198.jpg,false_alarm,,,4,4,0.6628120541572571,
+A198.jpg,normal_miss,5,4,,,,

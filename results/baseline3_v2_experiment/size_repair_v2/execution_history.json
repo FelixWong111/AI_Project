@@ -1,0 +1,80 @@
+[
+  {
+    "phase": "replay",
+    "pid": 30756,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+      "--phase",
+      "replay"
+    ],
+    "started_at_utc": "2026-11-26T02:32:44.217181+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T02:32:45.451519+00:00"
+  },
+  {
+    "phase": "freeze",
+    "pid": 51392,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+      "--phase",
+      "freeze"
+    ],
+    "started_at_utc": "2026-11-26T02:32:47.052845+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T02:32:47.120541+00:00"
+  },
+  {
+    "phase": "regress",
+    "pid": 27384,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+      "--phase",
+      "regress"
+    ],
+    "started_at_utc": "2026-11-26T02:32:48.612877+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T02:34:45.253732+00:00"
+  },
+  {
+    "phase": "check",
+    "pid": 3996,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+      "--phase",
+      "check"
+    ],
+    "started_at_utc": "2026-11-26T02:36:49.426575+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T02:37:02.999156+00:00"
+  },
+  {
+    "phase": "develop",
+    "pid": 29120,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+      "--phase",
+      "develop"
+    ],
+    "started_at_utc": "2026-11-26T02:44:44.435783+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T02:44:44.441750+00:00"
+  },
+  {
+    "phase": "headcheck",
+    "pid": 29120,
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\repair_baseline3_size.py",
+      "--phase",
+      "headcheck"
+    ],
+    "started_at_utc": "2026-11-26T02:44:44.470491+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T02:44:44.474556+00:00"
+  }
+]

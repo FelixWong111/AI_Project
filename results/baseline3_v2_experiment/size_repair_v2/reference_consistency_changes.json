@@ -1,0 +1,301 @@
+{
+  "scope": "Shared final native quality function on cached real measurements; no image/model rerun",
+  "old_frames": {
+    "PASS": 111,
+    "correct": 291,
+    "FAIL": 195,
+    "false_fail": 15,
+    "REVIEW": 54
+  },
+  "new_frames": {
+    "PASS": 111,
+    "correct": 291,
+    "REVIEW": 60,
+    "FAIL": 189,
+    "false_fail": 9
+  },
+  "changed_cases": [
+    {
+      "image_id": "A004.jpg",
+      "old_status": "FAIL",
+      "new_status": "REVIEW",
+      "objects": [
+        {
+          "detection_id": 1,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "A006.jpg",
+      "old_status": "FAIL",
+      "new_status": "REVIEW",
+      "objects": [
+        {
+          "detection_id": 3,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "A008.jpg",
+      "old_status": "FAIL",
+      "new_status": "REVIEW",
+      "objects": [
+        {
+          "detection_id": 3,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "A009.jpg",
+      "old_status": "FAIL",
+      "new_status": "REVIEW",
+      "objects": [
+        {
+          "detection_id": 4,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "A022.jpg",
+      "old_status": "FAIL",
+      "new_status": "REVIEW",
+      "objects": [
+        {
+          "detection_id": 2,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "A117.jpg",
+      "old_status": "FAIL",
+      "new_status": "REVIEW",
+      "objects": [
+        {
+          "detection_id": 3,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "B02.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 2,
+          "class_id": 3,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "B03.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 2,
+          "class_id": 3,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "B10.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 1,
+          "class_id": 3,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "B12.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 1,
+          "class_id": 3,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "B27.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 1,
+          "class_id": 3,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "C04.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 5,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "C06.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 4,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "C07.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 4,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "C09.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 0,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "F13.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 1,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "H074.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 3,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "H075.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 3,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "H089.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 0,
+          "class_id": 3,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "H130.jpg",
+      "old_status": "FAIL",
+      "new_status": "FAIL",
+      "objects": [
+        {
+          "detection_id": 2,
+          "class_id": 2,
+          "details": [
+            "underhead_length"
+          ]
+        }
+      ]
+    }
+  ],
+  "pass_range_and_spec_allowances_unchanged": true,
+  "truth_not_used_in_decisions": true
+}

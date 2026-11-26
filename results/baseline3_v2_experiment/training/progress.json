@@ -1,0 +1,17 @@
+{
+  "epoch": 99,
+  "best_fitness": 0.57237,
+  "metrics": {
+    "metrics/precision(B)": 0.9908059232099045,
+    "metrics/recall(B)": 0.9937393423979076,
+    "metrics/mAP50(B)": 0.992777934304457,
+    "metrics/mAP50-95(B)": 0.5722472098781665
+  },
+  "losses": {
+    "train/box_loss": 1.22363,
+    "train/cls_loss": 0.5287,
+    "train/dfl_loss": 1.50615
+  },
+  "updated_at": "2026-11-25T20:27:57.971067+00:00",
+  "pid": 55380
+}

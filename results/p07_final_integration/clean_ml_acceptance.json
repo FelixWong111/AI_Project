@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "isolated_venv": true,
+  "system_site_packages": false,
+  "installation": "results/p07_final_integration/clean_ml_install.json",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "log": "results/p07_final_integration/clean_ml/pip_check.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\verify_models.py",
+        "--load-models"
+      ],
+      "log": "results/p07_final_integration/clean_ml/model_loads.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+        "--help"
+      ],
+      "log": "results/p07_final_integration/clean_ml/predict_help.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+        "--input_dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+        "--model",
+        "baseline1",
+        "--counts_file",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+        "--output_dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_ml\\baseline1"
+      ],
+      "log": "results/p07_final_integration/clean_ml/baseline1.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+        "--input_dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+        "--model",
+        "baseline2",
+        "--counts_file",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+        "--output_dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_ml\\baseline2"
+      ],
+      "log": "results/p07_final_integration/clean_ml/baseline2.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+        "--input_dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+        "--model",
+        "baseline3",
+        "--counts_file",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+        "--output_dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_ml\\baseline3"
+      ],
+      "log": "results/p07_final_integration/clean_ml/baseline3.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_model_registry.py",
+        "-v"
+      ],
+      "log": "results/p07_final_integration/clean_ml/test_model_registry.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_work_orders.py",
+        "-v"
+      ],
+      "log": "results/p07_final_integration/clean_ml/test_work_orders.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "list",
+        "--format=json"
+      ],
+      "log": "results/p07_final_integration/clean_ml/packages.log",
+      "exit_code": 0
+    }
+  ],
+  "models": {
+    "baseline1": {
+      "images": [
+        "A001.jpg",
+        "A200.jpg",
+        "A004.jpg"
+      ],
+      "statuses": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "matches_original_environment": true
+    },
+    "baseline2": {
+      "images": [
+        "A001.jpg",
+        "A200.jpg",
+        "A004.jpg"
+      ],
+      "statuses": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "matches_original_environment": true
+    },
+    "baseline3": {
+      "images": [
+        "A001.jpg",
+        "A200.jpg",
+        "A004.jpg"
+      ],
+      "statuses": [
+        "PASS",
+        "FAIL",
+        "REVIEW"
+      ],
+      "matches_original_environment": true
+    }
+  },
+  "core_interface_tests": 8,
+  "full_303_suite": "NOT_REPEATED per final user instruction",
+  "failures": 0,
+  "errors": 0,
+  "scope": "Train A001/A200/A004 only; no Test inference or Stage3 access",
+  "existing_environment": "UNCHANGED",
+  "physical_acceptance": "NOT_VERIFIED"
+}

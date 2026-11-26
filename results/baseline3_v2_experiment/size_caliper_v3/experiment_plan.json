@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "parameter_profiles": [
+    "standard",
+    "wide_projection"
+  ],
+  "primary_candidates": [
+    "A_frozen_v2",
+    "B_caliper"
+  ],
+  "hybrid_policy_trials": "Per family A-first vs B-first, quality-gated fallback; combine selected families once",
+  "selection": "Train+dimension development only; prioritize no new abnormal acceptance/False PASS, fewer normal false rejection, then coverage/completeness and processing cost",
+  "no_nominal_closeness_selection": true,
+  "numerical_acceptance_bands_sha256": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+  "scale_sha256": "ab81185188cb002f0b23fa4d292be990d9dcc964b0512f634059caaf9be6f232",
+  "yolo_config_sha256": "427a5e704deec0e0203da7c1898fa32664f255181363c33487836ceeafc2a36b",
+  "targets_are_not_prescribed_results": {
+    "complete": 0.97,
+    "all_input_accuracy": 0.9,
+    "normal_pass": 32
+  },
+  "physical_acceptance": "PENDING; no caliper MAE, instructor approval or Camo transform invented",
+  "selection_rule_clarification_before_scoring": "After no additional abnormal acceptance, maximize actual normal acceptance including unresolved cases in the denominator; then fewer false rejection, then completeness. An all-REVIEW solution cannot win by having zero false rejection.",
+  "offline_timing_plan": {
+    "data": "20 public Train frames: manifest order [::18][:20], identical for A/B/C",
+    "warmup_per_model": 2,
+    "processing": "serial fresh full backend.infer + contract validation, perf_counter + GPU sync, decoded image/model load/logging excluded",
+    "opencv_threads": 1,
+    "stats": "numpy percentile method linear, median/p95; failures retained",
+    "scope": "Offline only, not live camera latency; no Test/Stage3 input"
+  }
+}

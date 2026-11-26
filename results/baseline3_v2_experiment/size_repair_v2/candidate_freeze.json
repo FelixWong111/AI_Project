@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-11-26T02:32:47.096793+00:00",
+  "files": {
+    "results/baseline3_v2_experiment/size_repair_v2/candidate.json": "770b2803ec7587b8e5b6474a0fac0996bb6b5ff94cb4bdf799090509cf3174bc",
+    "results/baseline3_v2_experiment/size_repair_v2/p07_profile.json": "c463bff45d3ed0d9c05d3001b25734e6f6d8f3eaa8beda7d4a2e80d50d1cca30",
+    "src/models/baseline3/geometry_repair.py": "7e768a97e6b8efc0a13402e98fdf29a008bbf144f0527cee470a3e72b1a7d042",
+    "src/models/baseline3/size_repaired.py": "be330872842404e59ad3fc25d44cd0a9be409bdf6c09701ace1872ef1b476f88",
+    "results/baseline3_v2_experiment/size_development_v1/selection.json": "b6dddfa931b787269ea3c7304e9e8a05f47dd335e1534b54e1bf4e48abc3377c",
+    "results/baseline3_v2_experiment/size_development_v1/calibration.json": "ab81185188cb002f0b23fa4d292be990d9dcc964b0512f634059caaf9be6f232",
+    "models/baseline3_v2_candidate/detector.json": "427a5e704deec0e0203da7c1898fa32664f255181363c33487836ceeafc2a36b",
+    "models/baseline3_v2_candidate/best.pt": "1c16259c7b18587d405171c90a749fbc7b594cabfe0bdda09ac71bef82d5867d",
+    "config/p06_part_specs_candidate.json": "01f402be54887c14bac7f6b9b86e2d8d30cab3e0c72a69e55c004e73a243002b"
+  },
+  "no_yolo_training": true,
+  "no_numerical_band_changes": true,
+  "selection_scope": "Train360 and dimension development154; Val73 failure-output audit/A088 forensic already-used diagnosis disclosed",
+  "subsequent_val": "Reused regression only, not independent validation",
+  "formal_test": "NOT_RUN for repaired candidate; historical Test unchanged",
+  "stage3": "NOT_OPENED"
+}

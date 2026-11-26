@@ -1,0 +1,13 @@
+{
+  "software_interface": "PASS: real Validation worker/image/video/batch tests in tests/real_compatibility.json",
+  "localization_classification_counting": "MEASURED: per-class precision/recall/support and MAE in comparison_metrics.csv; performance is not perfect by assertion",
+  "learned_id0_rejection": "MEASURED: labeled seen size variants only; no universal unseen-component claim",
+  "dynamic_work_orders": "PASS: same-frame rejudge plus independent batch work orders, unchanged retained boxes/counts",
+  "wrong_size_mechanism": "PARTIAL: six-class learned ID0 real evaluation; independent calibrated metrology BLOCKED",
+  "physical_scale_tolerance_instructor_acceptance": "BLOCKED: no compatible verified scale, per-specimen caliper GT, independent error bounds or instructor confirmation",
+  "foreground_unknown_candidates": "PARTIAL: existing implementation preserved but disabled without validated reference/coverage",
+  "genuine_review_not_pass": "PASS software safeguard; actual coverage and all-input correctness reported without excluding failures",
+  "live_latency_and_rig": "NOT_RUN: needs user camera/physical platform; offline timing is separate",
+  "stage3": "NOT_ACCESSED",
+  "overall": "NOT_FULLY_ACCEPTED"
+}

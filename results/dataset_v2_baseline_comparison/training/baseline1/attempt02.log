@@ -1,0 +1,117 @@
+TRIAL baseline1 {'hidden_layer_sizes': (32,), 'alpha': 0.01} F1 0.9047619047619048 accuracy 0.9
+{
+  "model": "baseline1",
+  "version": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 180,
+      "FP": 0,
+      "FN": 0,
+      "TN": 180,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          180,
+          0
+        ],
+        [
+          0,
+          180
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 180,
+      "support_FAIL": 180,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 0.9,
+      "precision": 0.8636363636363636,
+      "recall": 0.95,
+      "f1": 0.9047619047619048,
+      "TP": 38,
+      "FP": 6,
+      "FN": 2,
+      "TN": 34,
+      "false_PASS": 2,
+      "false_FAIL": 6,
+      "confusion_matrix": [
+        [
+          34,
+          6
+        ],
+        [
+          2,
+          38
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 40,
+      "support_FAIL": 40,
+      "misclassified": [
+        {
+          "image_id": "A191.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.7453886866569519
+        },
+        {
+          "image_id": "F14.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.0
+        },
+        {
+          "image_id": "F16.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.0001550912857055664
+        },
+        {
+          "image_id": "H021.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.7091284990310669
+        },
+        {
+          "image_id": "H039.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9798055291175842
+        },
+        {
+          "image_id": "H040.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9342983961105347
+        },
+        {
+          "image_id": "H043.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.6582109332084656
+        },
+        {
+          "image_id": "H059.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9958177208900452
+        }
+      ]
+    }
+  },
+  "seconds": 3.1351396999671124
+}

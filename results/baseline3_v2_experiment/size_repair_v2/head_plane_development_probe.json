@@ -1,0 +1,1037 @@
+{
+  "scope": "45 public Train extremes/medians; no Val or retained pixels, no parameter grid",
+  "results": [
+    {
+      "uid": "train_H131_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          78.4,
+          null,
+          -12.599999999999994,
+          null,
+          -9.599999999999994,
+          null
+        ]
+      }
+    },
+    {
+      "uid": "train_H026_0",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          33.099999999999966,
+          null,
+          -7.900000000000034,
+          null,
+          -4.900000000000034
+        ]
+      }
+    },
+    {
+      "uid": "train_H029_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          38.80000000000001,
+          null,
+          -36.19999999999999,
+          null,
+          -24.19999999999999,
+          null
+        ]
+      }
+    },
+    {
+      "uid": "train_C37_0",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          9.399999999999991,
+          -3.6000000000000085,
+          2.3999999999999915,
+          -12.600000000000009,
+          -4.6000000000000085,
+          null
+        ],
+        "offset_pixels": -1.1000000000000085,
+        "old_length_mm": 21.253719766178317,
+        "new_length_mm": 21.284481728997786,
+        "line_xy": [
+          [
+            565.4867876150549,
+            892.2809967077611
+          ],
+          [
+            1180.7014207780644,
+            444.19153561533193
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H081_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          1.7000000000000028,
+          null,
+          null,
+          47.7,
+          -4.299999999999997,
+          null
+        ]
+      }
+    },
+    {
+      "uid": "train_D38_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -2.8000000000000114,
+          71.19999999999999,
+          -5.800000000000011,
+          0.19999999999998863,
+          -8.800000000000011,
+          0.19999999999998863
+        ],
+        "offset_pixels": -3.5500000000000114,
+        "old_length_mm": 23.938400157695586,
+        "new_length_mm": 24.037677401340236,
+        "line_xy": [
+          [
+            899.7813184524608,
+            554.0125577018986
+          ],
+          [
+            443.7316764855223,
+            1282.603613481358
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_D42_3",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          1.1999999999999602,
+          1.1999999999999602,
+          -1.8000000000000398,
+          -1.8000000000000398,
+          7.19999999999996,
+          -2.80000000000004
+        ],
+        "offset_pixels": 1.1999999999999602,
+        "old_length_mm": 23.938400157695586,
+        "new_length_mm": 23.904841652801622,
+        "line_xy": [
+          [
+            903.3805773913938,
+            605.3289047134351
+          ],
+          [
+            468.10748801362615,
+            1341.0057207566854
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_A130_0",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          -6.399999999999977,
+          63.60000000000002,
+          -6.399999999999977,
+          -1.3999999999999773,
+          -7.399999999999977,
+          67.60000000000002
+        ]
+      }
+    },
+    {
+      "uid": "train_A143_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -11.499999999999929,
+          40.50000000000007,
+          -10.499999999999929,
+          -6.499999999999929,
+          -11.499999999999929,
+          -3.499999999999929
+        ],
+        "offset_pixels": -7.999999999999929,
+        "old_length_mm": 23.96636557844055,
+        "new_length_mm": 24.19008894440032,
+        "line_xy": [
+          [
+            506.30312419589404,
+            621.4148634312998
+          ],
+          [
+            1369.0891802759445,
+            559.566488886517
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_A040_0",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -1.0000000000000284,
+          56.99999999999997,
+          -2.0000000000000284,
+          -2.0000000000000284,
+          -4.000000000000028,
+          -3.0000000000000284
+        ],
+        "offset_pixels": -2.7500000000000284,
+        "old_length_mm": 23.966365578440556,
+        "new_length_mm": 24.043270485489227,
+        "line_xy": [
+          [
+            553.0499361067365,
+            914.9423584546818
+          ],
+          [
+            1286.6370137742022,
+            466.58974947453106
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_B11_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          -4.499999999999929
+        ]
+      }
+    },
+    {
+      "uid": "train_A010_4",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -2.2999999999999545,
+          2.7000000000000455,
+          1.7000000000000455,
+          1.7000000000000455,
+          -16.299999999999955,
+          0.7000000000000455
+        ],
+        "offset_pixels": 0.20000000000004547,
+        "old_length_mm": 25.86801418909861,
+        "new_length_mm": 25.862421104949615,
+        "line_xy": [
+          [
+            637.3375470827066,
+            468.1345872376955
+          ],
+          [
+            524.6882675522653,
+            1386.0480797963746
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_B10_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          -1.5
+        ]
+      }
+    },
+    {
+      "uid": "train_A009_3",
+      "class_id": 1,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -9.299999999999997,
+          1.7000000000000028,
+          -10.299999999999997,
+          1.7000000000000028,
+          -2.299999999999997,
+          -0.29999999999999716
+        ],
+        "offset_pixels": -3.799999999999997,
+        "old_length_mm": 25.951910451333525,
+        "new_length_mm": 26.058179050164416,
+        "line_xy": [
+          [
+            640.4477176274236,
+            457.0839842597158
+          ],
+          [
+            532.6846829881587,
+            1382.6315888513632
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_B12_2",
+      "class_id": 1,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          null,
+          null,
+          8.500000000000071,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "uid": "train_H002_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          47.2,
+          null,
+          53.2,
+          90.2,
+          58.2,
+          41.2
+        ]
+      }
+    },
+    {
+      "uid": "train_H068_2",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          47.10000000000001,
+          5.1000000000000085,
+          -5.8999999999999915,
+          -1.8999999999999915,
+          -15.899999999999991,
+          -7.8999999999999915
+        ],
+        "offset_pixels": -7.8999999999999915,
+        "old_length_mm": 7.298974814437555,
+        "new_length_mm": 7.519901638322828,
+        "line_xy": [
+          [
+            458.25606024373377,
+            447.27253421550034
+          ],
+          [
+            206.51015913905047,
+            541.7776202002821
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H017_2",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          2.8999999999999773,
+          12.899999999999977,
+          23.899999999999977,
+          26.899999999999977,
+          58.89999999999998,
+          4.899999999999977
+        ],
+        "offset_pixels": 16.649999999999977,
+        "old_length_mm": 7.382871076672469,
+        "new_length_mm": 6.917246821268694,
+        "line_xy": [
+          [
+            405.16641243243157,
+            428.9934159420129
+          ],
+          [
+            644.7988085986145,
+            490.2986947331052
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H066_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          73.29999999999998,
+          0.29999999999998295,
+          null,
+          6.299999999999983,
+          -15.700000000000017
+        ]
+      }
+    },
+    {
+      "uid": "train_A055_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          19.500000000000014,
+          19.500000000000014,
+          11.500000000000014,
+          14.500000000000014,
+          2.500000000000014,
+          14.500000000000014
+        ],
+        "offset_pixels": 13.000000000000014,
+        "old_length_mm": 7.410836497417442,
+        "new_length_mm": 7.047286027732813,
+        "line_xy": [
+          [
+            419.3779486669975,
+            518.2911330481147
+          ],
+          [
+            445.44242477367385,
+            267.6426878399217
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_E22_4",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          5.80000000000004,
+          68.80000000000004,
+          1.8000000000000398,
+          -9.19999999999996,
+          -1.1999999999999602,
+          -14.19999999999996
+        ],
+        "offset_pixels": -5.69999999999996,
+        "old_length_mm": 8.948934638390874,
+        "new_length_mm": 9.10833753663721,
+        "line_xy": [
+          [
+            469.8935657717333,
+            517.401593827769
+          ],
+          [
+            775.5761481550658,
+            404.97984847813854
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_F04_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          73.69999999999997,
+          2.6999999999999744,
+          34.699999999999974,
+          0.6999999999999744,
+          -10.300000000000026,
+          -2.3000000000000256
+        ]
+      }
+    },
+    {
+      "uid": "train_E18_5",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -2.6999999999999886,
+          3.3000000000000114,
+          -5.699999999999989,
+          2.3000000000000114,
+          -9.699999999999989,
+          0.30000000000001137
+        ],
+        "offset_pixels": -1.6999999999999886,
+        "old_length_mm": 8.976900059135845,
+        "new_length_mm": 9.024441274402296,
+        "line_xy": [
+          [
+            500.9695080674424,
+            655.4659996021676
+          ],
+          [
+            524.4953918477448,
+            333.6246989703877
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_E19_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          2.9000000000000483,
+          2.9000000000000483,
+          -0.09999999999995168,
+          -0.09999999999995168,
+          -3.0999999999999517,
+          -3.0999999999999517
+        ],
+        "offset_pixels": -0.09999999999995168,
+        "old_length_mm": 8.976900059135847,
+        "new_length_mm": 8.979696601210343,
+        "line_xy": [
+          [
+            502.2444623721144,
+            647.0537898276292
+          ],
+          [
+            515.5168373569094,
+            326.22820783289023
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_D25_2",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          52.600000000000065,
+          21.600000000000065,
+          -12.399999999999935,
+          4.600000000000065,
+          -20.399999999999935,
+          0.6000000000000654
+        ],
+        "offset_pixels": -6.899999999999935,
+        "old_length_mm": 9.004865479880813,
+        "new_length_mm": 9.197826883021113,
+        "line_xy": [
+          [
+            491.2861822649325,
+            463.66118540006227
+          ],
+          [
+            569.5025831396339,
+            783.1254316533917
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H075_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          49.500000000000014,
+          1.5000000000000142,
+          8.500000000000014,
+          -0.4999999999999858,
+          -8.499999999999986,
+          -4.499999999999986
+        ],
+        "offset_pixels": -1.2499999999999858,
+        "old_length_mm": 10.514998200109277,
+        "new_length_mm": 10.549954976040492,
+        "line_xy": [
+          [
+            412.2930247986115,
+            563.5365115718041
+          ],
+          [
+            465.6617937716212,
+            190.08057441414476
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H109_4",
+      "class_id": 2,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          83.50000000000001,
+          -15.499999999999986,
+          41.500000000000014,
+          88.50000000000001,
+          5.500000000000014,
+          53.500000000000014
+        ]
+      }
+    },
+    {
+      "uid": "train_H131_4",
+      "class_id": 2,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          86.60000000000002,
+          -23.399999999999977,
+          65.60000000000002,
+          -32.39999999999998,
+          4.600000000000023,
+          -42.39999999999998
+        ]
+      }
+    },
+    {
+      "uid": "train_H033_3",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -0.5000000000000284,
+          53.49999999999997,
+          -1.5000000000000284,
+          1.4999999999999716,
+          -2.5000000000000284,
+          1.4999999999999716
+        ],
+        "offset_pixels": -0.2500000000000284,
+        "old_length_mm": 11.60564960916316,
+        "new_length_mm": 11.612640964349405,
+        "line_xy": [
+          [
+            406.8904853898235,
+            555.6070143864986
+          ],
+          [
+            256.9159360401683,
+            168.38589274233016
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H035_1",
+      "class_id": 2,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          -1.3000000000000114,
+          1.6999999999999886,
+          -2.3000000000000114,
+          0.6999999999999886,
+          -3.3000000000000114,
+          -0.30000000000001137
+        ],
+        "offset_pixels": -0.8000000000000114,
+        "old_length_mm": 11.60564960916316,
+        "new_length_mm": 11.628021945759137,
+        "line_xy": [
+          [
+            420.89926321296326,
+            576.551424640804
+          ],
+          [
+            271.62492236446985,
+            188.47049085991367
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H054_0",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          8.699999999999989,
+          1.6999999999999886,
+          1.6999999999999886,
+          -5.300000000000011,
+          36.69999999999999,
+          24.69999999999999
+        ]
+      }
+    },
+    {
+      "uid": "train_H079_0",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          7.199999999999989,
+          null,
+          1.1999999999999886,
+          -8.800000000000011,
+          -7.800000000000011,
+          31.19999999999999
+        ]
+      }
+    },
+    {
+      "uid": "train_H078_0",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          7.500000000000043,
+          -2.4999999999999574,
+          2.5000000000000426,
+          -10.499999999999957,
+          -4.499999999999957,
+          -20.499999999999957
+        ],
+        "offset_pixels": -3.9999999999999574,
+        "old_length_mm": 6.879493503262982,
+        "new_length_mm": 6.991355186242867,
+        "line_xy": [
+          [
+            412.0322739689168,
+            389.0481847245894
+          ],
+          [
+            499.47962385173395,
+            154.84109474123278
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_H088_2",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          79.29999999999997,
+          null,
+          null,
+          null,
+          67.29999999999997,
+          null
+        ]
+      }
+    },
+    {
+      "uid": "train_H066_4",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          null,
+          40.80000000000001,
+          -8.199999999999989,
+          2.8000000000000114,
+          -18.19999999999999,
+          -0.19999999999998863
+        ],
+        "offset_pixels": -5.949999999999989,
+        "old_length_mm": 7.382871076672469,
+        "new_length_mm": 7.549265330105049,
+        "line_xy": [
+          [
+            399.4593246344177,
+            403.593471283181
+          ],
+          [
+            665.1311989477888,
+            355.72429854309297
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_D12_4",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          36.29999999999997,
+          57.29999999999997,
+          1.2999999999999687,
+          null,
+          0.29999999999996874,
+          -7.700000000000031
+        ]
+      }
+    },
+    {
+      "uid": "train_D49_1",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          3.500000000000071,
+          0.500000000000071,
+          16.50000000000007,
+          -1.499999999999929,
+          -1.499999999999929,
+          -6.499999999999929
+        ],
+        "offset_pixels": 2.000000000000071,
+        "old_length_mm": 9.088761742115727,
+        "new_length_mm": 9.032830900625783,
+        "line_xy": [
+          [
+            435.69769584890963,
+            623.4781263655091
+          ],
+          [
+            409.458382679256,
+            301.545682451596
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_E08_5",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          7.5,
+          -0.5,
+          -3.5,
+          -14.5,
+          -7.5,
+          -20.5
+        ],
+        "offset_pixels": -9.0,
+        "old_length_mm": 9.088761742115727,
+        "new_length_mm": 9.34045052882047,
+        "line_xy": [
+          [
+            389.4626233235619,
+            397.988684615816
+          ],
+          [
+            710.3894427134368,
+            490.51963401275344
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_A018_2",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          24.599999999999966,
+          14.599999999999966,
+          3.599999999999966,
+          -10.400000000000034,
+          0.5999999999999659,
+          -14.400000000000034
+        ],
+        "offset_pixels": -3.400000000000034,
+        "old_length_mm": 9.088761742115729,
+        "new_length_mm": 9.183844172648634,
+        "line_xy": [
+          [
+            410.8976183526954,
+            498.59825706825865
+          ],
+          [
+            667.0905144808728,
+            293.14324989282636
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_A185_3",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          1.8000000000000398,
+          2.80000000000004,
+          -16.19999999999996,
+          -0.1999999999999602,
+          -3.19999999999996,
+          -4.19999999999996
+        ],
+        "offset_pixels": -3.69999999999996,
+        "old_length_mm": 9.088761742115732,
+        "new_length_mm": 9.192233798872124,
+        "line_xy": [
+          [
+            419.5135993573822,
+            447.1719175111624
+          ],
+          [
+            747.4434734307953,
+            424.68441675639923
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    },
+    {
+      "uid": "train_B13_1",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          null,
+          89.10000000000001,
+          88.10000000000001,
+          null,
+          1.1000000000000085
+        ]
+      }
+    },
+    {
+      "uid": "train_H089_0",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          20.700000000000003,
+          38.7,
+          2.700000000000003,
+          -5.299999999999997,
+          1.7000000000000028,
+          -9.299999999999997
+        ]
+      }
+    },
+    {
+      "uid": "train_B12_1",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          15.400000000000006,
+          null,
+          null,
+          66.4,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "uid": "train_H125_5",
+      "class_id": 3,
+      "measurement": {
+        "status": "UNRESOLVED",
+        "reason": "HEAD_SEATING_PLANE_NOT_CONFIRMED",
+        "tracks": [
+          null,
+          null,
+          null,
+          -2.5,
+          null,
+          -3.5
+        ]
+      }
+    },
+    {
+      "uid": "train_H131_1",
+      "class_id": 3,
+      "measurement": {
+        "status": "VISIBLE_HEAD_PLANE",
+        "tracks": [
+          3.1000000000000085,
+          -1.8999999999999915,
+          1.1000000000000085,
+          11.100000000000009,
+          -2.8999999999999915,
+          -11.899999999999991
+        ],
+        "offset_pixels": 0.6000000000000085,
+        "old_length_mm": 12.081061761827675,
+        "new_length_mm": 12.064282509380691,
+        "line_xy": [
+          [
+            388.7428340422764,
+            444.08197868781053
+          ],
+          [
+            757.6400155361852,
+            220.42860964131012
+          ]
+        ],
+        "caveat": "Visible multi-radius seating-plane consistency only; head style and caliper truth still needed"
+      }
+    }
+  ]
+}

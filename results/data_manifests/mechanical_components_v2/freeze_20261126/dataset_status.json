@@ -1,0 +1,12 @@
+{
+  "status": "READY",
+  "frozen": true,
+  "formal_training_allowed": true,
+  "blockers": [],
+  "formal_test": "NOT_RUN",
+  "human_confirmation": "data/mechanical_components_v2/audit/human_confirmation_20261126.json",
+  "human_confirmation_sha256": "75e5417a8efad04e5fb4868cbd7802ee3b02343d687a8e71a664288e963fb10c",
+  "freeze_record": "data/mechanical_components_v2/audit/freeze_20261126.json",
+  "freeze_record_sha256": "079e9aa4b189722cd8ca0aae9e2257f1453b4ac13140e088ad01b4b4339bde42",
+  "scope": "Public image/count/class/box dataset only; no claim of metric calibration readiness"
+}

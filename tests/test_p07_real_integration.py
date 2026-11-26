@@ -21,6 +21,7 @@ from p07_stubs import ImageStub
 
 from src.work_orders import reference_counts
 CONFIG = json.loads(Path("config/p07.json").read_text())
+CONFIG.pop('model_registry',None)  # Provider-contract fixtures intentionally override native artifacts.
 CONFIG.setdefault("expected_counts", reference_counts())
 FRAME = np.zeros((50, 70, 3), np.uint8)
 FIXED = reference_counts()

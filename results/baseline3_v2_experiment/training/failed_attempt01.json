@@ -1,0 +1,8 @@
+{
+  "cause": "Polars import RuntimeError unknown feature sse3 at native checkpoint CSV serialization",
+  "completed_training_epochs": 1,
+  "saved_checkpoint": false,
+  "recovery": "No checkpoint existed; restart same seed/params, change only CSV serialization and output directory",
+  "native_log": "training/train.log",
+  "preserved_original_run": "training/run01"
+}

@@ -1,0 +1,349 @@
+{
+  "venv_created": true,
+  "system_site_packages": false,
+  "offline_install": "FAILED_NO_LOCAL_WHEELS",
+  "offline_log": "outputs/final_integration/clean_env/Scripts/python.exe : ERROR: Could not find a version that satisfies the requirement\r\n numpy==1.26.4 (from versions: none)\r\n所在位置 行:11 字符: 1\r\n+ outputs/final_integration/clean_env/Scripts/python.exe -m pip install ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (ERROR: Could no...versions: none):String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\nERROR: No matching distribution found for numpy==1.26.4\r\n",
+  "online_resolution": {
+    "status": "NOT_VERIFIED",
+    "top_level_pinned_metadata": "All requested versions located online",
+    "resolution": "pip --dry-run started downloading full wheel payloads; stopped before installation",
+    "reason": "Avoid duplicating large CUDA dependency downloads for a metadata check; full clean install and prediction remain unverified",
+    "stopped_processes": [
+      {
+        "pid": 53948,
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "install",
+          "--dry-run",
+          "--ignore-installed",
+          "--no-deps",
+          "-r",
+          "requirements.txt",
+          "--report",
+          "outputs/final_integration/clean_dependency_resolution.json"
+        ]
+      }
+    ],
+    "offline_install": "FAILED_NO_LOCAL_WHEELS",
+    "packages_installed_into_clean_env": false
+  },
+  "actual_existing_environment": "pip check PASS; real three-model entrypoints and software tests PASS",
+  "clean_install_and_prediction": "PASS",
+  "no_claim_of_clean_install_success": false,
+  "clean_stdlib_verification": {
+    "clean_venv": true,
+    "system_site_packages": false,
+    "third_party_installation": false,
+    "saved_prediction_scoring": [
+      {
+        "model": "baseline1",
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "src.evaluator",
+          "--ground-truth-images",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_images.csv",
+          "--ground-truth-objects",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_objects.csv",
+          "--expected-counts",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+          "--predictions-dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline1\\predictions",
+          "--output-dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\baseline1"
+        ],
+        "status": "PASS_METRICS_IDENTICAL"
+      },
+      {
+        "model": "baseline2",
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "src.evaluator",
+          "--ground-truth-images",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_images.csv",
+          "--ground-truth-objects",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_objects.csv",
+          "--expected-counts",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+          "--predictions-dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline2\\predictions",
+          "--output-dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\baseline2"
+        ],
+        "status": "PASS_METRICS_IDENTICAL"
+      },
+      {
+        "model": "baseline3",
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "src.evaluator",
+          "--ground-truth-images",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_images.csv",
+          "--ground-truth-objects",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_objects.csv",
+          "--expected-counts",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+          "--predictions-dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline3\\predictions",
+          "--output-dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\baseline3"
+        ],
+        "status": "PASS_METRICS_IDENTICAL"
+      }
+    ],
+    "hash_verification": {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\verify_models.py"
+      ],
+      "status": "PASS_ALL_THREE"
+    },
+    "all_observation_metrics": "PASS",
+    "object_scoring_command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\p08_object_observations.py",
+      "--dataset",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test",
+      "--predictions-dir",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline3\\predictions",
+      "--output",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\object_observations.json"
+    ],
+    "model_prediction_entrypoint": {
+      "status": "NOT_VERIFIED_MISSING_DEPENDENCIES",
+      "exit_code": 1
+    },
+    "formal_model_inference": "NOT_RERUN",
+    "stage3": "NOT_OPENED",
+    "note": "Pure-Python P08 scoring and SHA checks succeed independently; not a clean ML model installation"
+  },
+  "actual_ml_install": {
+    "status": "INSTALLED_PIP_CHECK_PASS",
+    "venv": "outputs/final_integration/clean_env",
+    "system_site_packages": false,
+    "previous_attempts": [
+      "clean_ml_install_attempt1.json",
+      "clean_ml_install_attempt2.json"
+    ],
+    "installed_cuda_wheels": "clean_downloaded_wheels.json",
+    "mirror_documentation": "https://mirrors.tuna.tsinghua.edu.cn/help/pypi/",
+    "no_reinstall_or_upgrade": true,
+    "commands": [
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "install",
+          "-r",
+          "requirements.txt",
+          "--find-links",
+          "outputs/final_integration/clean_mirror_wheels",
+          "--index-url",
+          "https://pypi.tuna.tsinghua.edu.cn/simple",
+          "--timeout",
+          "15",
+          "--retries",
+          "0",
+          "--disable-pip-version-check",
+          "--report",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_install_report.json"
+        ],
+        "log": "results/p07_final_integration/clean_ml_install_final_1.log",
+        "start_time": 1795673509.0343492,
+        "exit_code": 0,
+        "elapsed_seconds": 225.21246552467346
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "check"
+        ],
+        "log": "results/p07_final_integration/clean_ml_install_final_2.log",
+        "start_time": 1795673734.2468147,
+        "exit_code": 0,
+        "elapsed_seconds": 1.0021429061889648
+      }
+    ],
+    "download_note": "pip did not prioritize the existing NumPy wheel from --find-links and downloaded it once again; already installed CUDA/Pillow were reused; no subsequent install retry"
+  },
+  "actual_ml_acceptance": {
+    "status": "PASS",
+    "isolated_venv": true,
+    "system_site_packages": false,
+    "installation": "results/p07_final_integration/clean_ml_install.json",
+    "commands": [
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "check"
+        ],
+        "log": "results/p07_final_integration/clean_ml/pip_check.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\verify_models.py",
+          "--load-models"
+        ],
+        "log": "results/p07_final_integration/clean_ml/model_loads.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+          "--help"
+        ],
+        "log": "results/p07_final_integration/clean_ml/predict_help.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+          "--input_dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+          "--model",
+          "baseline1",
+          "--counts_file",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+          "--output_dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_ml\\baseline1"
+        ],
+        "log": "results/p07_final_integration/clean_ml/baseline1.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+          "--input_dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+          "--model",
+          "baseline2",
+          "--counts_file",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+          "--output_dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_ml\\baseline2"
+        ],
+        "log": "results/p07_final_integration/clean_ml/baseline2.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\predict.py",
+          "--input_dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\train\\images",
+          "--model",
+          "baseline3",
+          "--counts_file",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\compatibility\\expected_counts.json",
+          "--output_dir",
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_ml\\baseline3"
+        ],
+        "log": "results/p07_final_integration/clean_ml/baseline3.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_model_registry.py",
+          "-v"
+        ],
+        "log": "results/p07_final_integration/clean_ml/test_model_registry.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_work_orders.py",
+          "-v"
+        ],
+        "log": "results/p07_final_integration/clean_ml/test_work_orders.log",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "list",
+          "--format=json"
+        ],
+        "log": "results/p07_final_integration/clean_ml/packages.log",
+        "exit_code": 0
+      }
+    ],
+    "models": {
+      "baseline1": {
+        "images": [
+          "A001.jpg",
+          "A200.jpg",
+          "A004.jpg"
+        ],
+        "statuses": [
+          "PASS",
+          "PASS",
+          "PASS"
+        ],
+        "matches_original_environment": true
+      },
+      "baseline2": {
+        "images": [
+          "A001.jpg",
+          "A200.jpg",
+          "A004.jpg"
+        ],
+        "statuses": [
+          "PASS",
+          "PASS",
+          "PASS"
+        ],
+        "matches_original_environment": true
+      },
+      "baseline3": {
+        "images": [
+          "A001.jpg",
+          "A200.jpg",
+          "A004.jpg"
+        ],
+        "statuses": [
+          "PASS",
+          "FAIL",
+          "REVIEW"
+        ],
+        "matches_original_environment": true
+      }
+    },
+    "core_interface_tests": 8,
+    "full_303_suite": "NOT_REPEATED per final user instruction",
+    "failures": 0,
+    "errors": 0,
+    "scope": "Train A001/A200/A004 only; no Test inference or Stage3 access",
+    "existing_environment": "UNCHANGED",
+    "physical_acceptance": "NOT_VERIFIED"
+  }
+}

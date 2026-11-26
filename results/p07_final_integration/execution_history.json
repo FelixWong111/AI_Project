@@ -1,0 +1,200 @@
+[
+  {
+    "phase": "audit",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "audit"
+    ],
+    "started_utc": "2026-11-26T04:11:36.306147+00:00",
+    "finished_utc": "2026-11-26T04:11:43.989447+00:00",
+    "recovered_from_state": true
+  },
+  {
+    "phase": "datasets",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "datasets"
+    ],
+    "started_utc": "2026-11-26T04:14:15.739335+00:00",
+    "finished_utc": "2026-11-26T04:14:22.116918+00:00",
+    "recovered_from_state": true
+  },
+  {
+    "phase": "models",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "models"
+    ],
+    "started_utc": "2026-11-26T04:14:39.109440+00:00",
+    "finished_utc": "2026-11-26T04:14:39.456348+00:00",
+    "recovered_from_state": true
+  },
+  {
+    "phase": "cleanup",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "cleanup"
+    ],
+    "started_utc": "2026-11-26T04:22:17.726233+00:00",
+    "finished_utc": "2026-11-26T04:22:17.877516+00:00",
+    "recovered_from_state": true
+  },
+  {
+    "phase": "evaluate",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "evaluate"
+    ],
+    "started_utc": "2026-11-26T04:22:18.006187+00:00",
+    "finished_utc": "2026-11-26T04:22:35.064548+00:00",
+    "recovered_from_state": true
+  },
+  {
+    "phase": "verify",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "verify"
+    ],
+    "started_utc": "2026-11-26T04:28:15.813758+00:00",
+    "finished_utc": "2026-11-26T04:29:06.042846+00:00",
+    "recovered_from_state": true
+  },
+  {
+    "phase": "provenance",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "provenance"
+    ],
+    "started_utc": "2026-11-26T04:56:57.255697+00:00",
+    "finished_utc": "2026-11-26T04:57:03.994428+00:00"
+  },
+  {
+    "phase": "reproduction",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "reproduction"
+    ],
+    "started_utc": "2026-11-26T04:57:04.157320+00:00",
+    "finished_utc": "2026-11-26T04:57:04.660261+00:00"
+  },
+  {
+    "phase": "handoff",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "handoff"
+    ],
+    "started_utc": "2026-11-26T04:57:04.830531+00:00",
+    "finished_utc": "2026-11-26T04:57:13.135125+00:00"
+  },
+  {
+    "phase": "reproduction",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "reproduction"
+    ],
+    "started_utc": "2026-11-26T05:08:05.407826+00:00",
+    "finished_utc": "2026-11-26T05:08:05.408618+00:00"
+  },
+  {
+    "phase": "handoff",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "handoff"
+    ],
+    "started_utc": "2026-11-26T05:08:05.557414+00:00",
+    "finished_utc": "2026-11-26T05:08:10.832872+00:00"
+  },
+  {
+    "phase": "handoff",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "handoff"
+    ],
+    "started_utc": "2026-11-26T05:20:35.945555+00:00",
+    "finished_utc": "2026-11-26T05:20:42.182969+00:00"
+  },
+  {
+    "phase": "handoff",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "handoff"
+    ],
+    "started_utc": "2026-11-26T05:31:00.185105+00:00",
+    "finished_utc": "2026-11-26T05:31:05.375287+00:00"
+  },
+  {
+    "phase": "clean_models",
+    "status": "ERROR",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "clean_models"
+    ],
+    "started_utc": "2026-11-26T06:15:35.346570+00:00",
+    "error": "RuntimeError(\"['C:\\\\\\\\Users\\\\\\\\王以乐\\\\\\\\Desktop\\\\\\\\大三上\\\\\\\\ai\\\\\\\\Project\\\\\\\\outputs\\\\\\\\final_integration\\\\\\\\clean_env\\\\\\\\Scripts\\\\\\\\python.exe', 'C:\\\\\\\\Users\\\\\\\\王以乐\\\\\\\\Desktop\\\\\\\\大三上\\\\\\\\ai\\\\\\\\Project\\\\\\\\scripts\\\\\\\\verify_models.py', '--load-models']: exit 1; see C:\\\\Users\\\\王以乐\\\\Desktop\\\\大三上\\\\ai\\\\Project\\\\results\\\\p07_final_integration\\\\clean_ml\\\\model_loads.log\")"
+  },
+  {
+    "phase": "clean_models",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "clean_models"
+    ],
+    "started_utc": "2026-11-26T06:18:04.364769+00:00",
+    "finished_utc": "2026-11-26T06:18:50.670141+00:00"
+  },
+  {
+    "phase": "handoff",
+    "status": "COMPLETED",
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/finalize_stage2.py",
+      "--phase",
+      "handoff"
+    ],
+    "started_utc": "2026-11-26T06:21:19.695187+00:00",
+    "finished_utc": "2026-11-26T06:21:43.681002+00:00"
+  }
+]

@@ -1,0 +1,8 @@
+test_factory_wires_scope_and_disables_foreground (test_p06_measurement_policy.PolicyTests.test_factory_wires_scope_and_disables_foreground) ... ok
+test_no_evidence_and_conflicting_evidence (test_p06_measurement_policy.PolicyTests.test_no_evidence_and_conflicting_evidence) ... ok
+test_scope_and_error_bound (test_p06_measurement_policy.PolicyTests.test_scope_and_error_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.042s
+
+OK

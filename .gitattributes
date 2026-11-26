@@ -1,2 +1,18 @@
 # Preserve published evidence bytes and SHA256 across Windows/Linux checkouts.
 /results/** -text
+
+# Immutable model weights use LFS; dataset images are excluded from Git entirely.
+/models/**/*.pt filter=lfs diff=lfs merge=lfs -text
+/models/**/*.pth filter=lfs diff=lfs merge=lfs -text
+/archive/**/*.pt filter=lfs diff=lfs merge=lfs -text
+
+# Preserve all frozen hashes across Git checkouts.
+/config/** -text
+/models/** -text
+/datasets/mechanical_components_v2/** -text
+*.py -text
+
+/results/baseline3_v2_experiment/validation/old_full/baseline3-20261126-043009-365460/predictions/diagnostics.json filter=lfs diff=lfs merge=lfs -text
+
+# CRLF is intentional in byte-frozen Windows artifacts; keep other whitespace checks.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -13,7 +13,7 @@ import numpy as np
 
 import app
 from src.camera import Frame
-from src.p07_bridge import MODELS
+from src.p07_bridge import MODELS, PRODUCTION_MODELS
 from src.p07_dashboard import GREEN, RED, AMBER, regions, hit_test, render
 from tools.p07_demo import create
 from p07_stubs import fixture_backend
@@ -49,7 +49,7 @@ class DashboardTests(unittest.TestCase):
             loaded = []
             # Mouse events are sent through app's registered callback, not directly to handlers.
             schedule = {15: 'model:baseline1', 25: 'snapshot', 35: 'model:baseline2', 45: 'snapshot',
-                        55: 'model:baseline3', 65: 'snapshot', 75: 'model:final', 85: 'snapshot',
+                        55: 'model:baseline3', 65: 'snapshot', 75: 'model:baseline3', 85: 'snapshot',
                         95: 'count+:1', 105: 'snapshot', 115: 'toggle', 120: 'toggle',
                         125: 'record', 140: 'record', 150: 'quit'}
             def register(title, fn):
@@ -72,13 +72,13 @@ class DashboardTests(unittest.TestCase):
                  patch.object(cv2, 'imshow'), patch.object(cv2, 'waitKey', side_effect=wait), \
                  patch.object(cv2, 'getWindowProperty', return_value=1), patch.object(cv2, 'destroyAllWindows'):
                 self.assertEqual(app.main(['--image', str(root/'mock-input.png'), '--output-dir', str(root/'out')]), 0)
-            self.assertEqual(loaded, ['baseline1', *MODELS])
+            self.assertEqual(loaded, ['baseline1', *PRODUCTION_MODELS, 'baseline3'])
             exports = list((root/'out').rglob('images.csv'))
             models = set()
             for path in exports:
                 with path.open() as stream:
                     models.add(next(csv.DictReader(stream))['model_id'])
-            self.assertEqual(models, set(MODELS))
+            self.assertEqual(models, set(PRODUCTION_MODELS))
             self.assertEqual(len(exports), 5)
             changed = [json.loads(p.read_text()) for p in (root/'out').rglob('run_config.json')]
             self.assertTrue(any(next(iter(c['per_image_expected_counts'].values()))['1'] == 2 for c in changed))
@@ -93,6 +93,7 @@ class DashboardTests(unittest.TestCase):
                               baseline1_bundle=str(root/'missing.joblib'), baseline2_bundle=str(root/'missing-bundle'),
                               baseline3_config=str(root/'missing-baseline3.json'),
                               baseline3_pipeline_config=str(root/'missing-pipeline.json')))
+            deployment.pop('model_registry',None)  # Explicit missing-file fixture, not the frozen release.
             config_path = root/'deployment.json'
             config_path.write_text(json.dumps(deployment), encoding='utf-8')
             callback, tick = None, 0

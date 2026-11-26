@@ -1,0 +1,98 @@
+[
+  {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_baseline3*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "results\\baseline3_v2_experiment\\tests\\test_baseline3_all.log",
+    "count": "Ran 28 tests in 0.177s"
+  },
+  {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_p06_pipeline.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "results\\baseline3_v2_experiment\\tests\\test_p06_pipeline.log",
+    "count": "Ran 10 tests in 0.086s"
+  },
+  {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_p06_measurement_policy.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "results\\baseline3_v2_experiment\\tests\\test_p06_measurement_policy.log",
+    "count": "Ran 3 tests in 0.042s"
+  },
+  {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_p08_evaluator.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "results\\baseline3_v2_experiment\\tests\\test_p08_evaluator.log",
+    "count": "Ran 3 tests in 0.036s"
+  },
+  {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_p07.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "results\\baseline3_v2_experiment\\tests\\test_p07.log",
+    "count": "Ran 23 tests in 3.401s"
+  },
+  {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_benchmark_live.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "results\\baseline3_v2_experiment\\tests\\test_benchmark_live.log",
+    "count": "Ran 7 tests in 0.113s"
+  }
+]

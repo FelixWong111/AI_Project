@@ -1,0 +1,116 @@
+Checking raw source hashes, annotations and lossless specialized images
+Read development-only images: 440
+Loading real baseline1 (no prediction)
+Loading real baseline2 (no prediction)
+Loading real baseline3 (no prediction)
+Checking actual YOLO Train/Val data loader
+Fast image access  (ping: 0.20.0 ms, read: 1075.6113.0 MB/s, size: 2171.6 KB)
+[KScanning C:\Users\王以乐\Desktop\大三上\ai\Project\data\mechanical_components_v2\yolo\labels\train.cache... 360 images, 7 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 360/360  0.0s[KScanning C:\Users\王以乐\Desktop\大三上\ai\Project\data\mechanical_components_v2\yolo\labels\train.cache... 360 images, 7 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 360/360  0.0s
+Fast image access  (ping: 0.20.0 ms, read: 1105.862.0 MB/s, size: 2195.6 KB)
+[KScanning C:\Users\王以乐\Desktop\大三上\ai\Project\data\mechanical_components_v2\yolo\labels\val.cache... 80 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 80/80  0.0s[KScanning C:\Users\王以乐\Desktop\大三上\ai\Project\data\mechanical_components_v2\yolo\labels\val.cache... 80 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 80/80  0.0s
+{
+  "checks": {
+    "original_files_unchanged": true,
+    "original_inventory_unchanged": true,
+    "unique_image_ids": true,
+    "six_class_mapping": true,
+    "scene_groups_disjoint": true,
+    "pixels_disjoint": true,
+    "ground_truth_counts_and_labels": true,
+    "no_specialized_images_in_public_gt": true,
+    "stage2_stage3_disjoint": true,
+    "test_not_in_training_yaml": true,
+    "source_and_yolo_labels_roundtrip": true,
+    "specialized_png_pixels_match_normalized_heic": true,
+    "independent_copy_bytes_match": true,
+    "baseline1_and_2_shared_data_loader": true,
+    "baseline1_real_hog_input": true,
+    "baseline2_real_rgb_feature_input": true,
+    "baseline3_current_mode": true,
+    "yolo_mapping_matches_frozen_model": true,
+    "baseline3_yolo_real_data_loader": true,
+    "p08_stage_specific_ground_truth_readable": true,
+    "seed42_split_reproduced": true,
+    "frozen_models_configs_and_historical_results_unchanged": true,
+    "all_public_annotations_present": true,
+    "public_annotations_no_unresolved_count_conflict": true
+  },
+  "automatic_acceptance_passed": true,
+  "development": {
+    "train": {
+      "images": 360,
+      "PASS": 180,
+      "FAIL": 180
+    },
+    "validation": {
+      "images": 80,
+      "PASS": 40,
+      "FAIL": 40
+    }
+  },
+  "real_models": {
+    "baseline1": {
+      "loaded": true,
+      "is_mock": false,
+      "model_version": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+      "inference": "NOT_RUN"
+    },
+    "baseline2": {
+      "loaded": true,
+      "is_mock": false,
+      "model_version": "0d6965aeb43dc7f259f96ddddf8e083c0f48430ae5922011cff103bb859329e1",
+      "inference": "NOT_RUN"
+    },
+    "baseline3": {
+      "loaded": true,
+      "is_mock": false,
+      "model_version": "p06-yolo11n-640-epoch58-4c5a1f759623",
+      "inference": "NOT_RUN"
+    }
+  },
+  "yolo": {
+    "train": {
+      "images": 360,
+      "nonignored_objects": 1805,
+      "sample_tensor_shape": [
+        3,
+        640,
+        640
+      ]
+    },
+    "val": {
+      "images": 80,
+      "nonignored_objects": 399,
+      "sample_tensor_shape": [
+        3,
+        640,
+        640
+      ]
+    }
+  },
+  "p08": {
+    "stage2": {
+      "stage": "stage2",
+      "images": 30,
+      "dataset_status": "CANDIDATE_NOT_READY",
+      "predictions": "NOT_RUN",
+      "metrics": "NOT_RUN"
+    },
+    "stage3": {
+      "stage": "stage3",
+      "images": 90,
+      "dataset_status": "CANDIDATE_NOT_READY",
+      "predictions": "NOT_RUN",
+      "metrics": "NOT_RUN"
+    }
+  },
+  "formal_training": "NOT_RUN",
+  "formal_test": "NOT_RUN",
+  "label_visual_quality": "Full human sign-off PENDING; COMPLETE means format-complete, not VERIFIED",
+  "protected_weights": {
+    "models/baseline1/baseline1.joblib": "67f99643fb16573f20922ec4ca78bb9881e8d0c1855997d595282f75fdea8d01",
+    "models/baseline2/baseline2.json": "641023153cb56693a54bad0dcc8958beda5b7cd4ef4c2a90761e9c573f1c6e55",
+    "models/baseline2/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "models/baseline3/best.pt": "4c5a1f759623a88ed2d21d639a4f3254e9da92d89107e4cdbfd6bddcf4e76b3d"
+  }
+}

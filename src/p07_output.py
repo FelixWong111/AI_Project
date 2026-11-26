@@ -11,6 +11,7 @@ from uuid import uuid4
 
 import cv2
 import numpy as np
+from .model_registry import portable
 
 CAPTURE_FIELDS = "session_id,frame_id,timestamp,camera_index,capture_backend,width,height,frame_read_ms,capture_fps,read_success".split(",")
 LATENCY_FIELDS = "frame_id,source,mode,model,model_version,width,height,inference_ms,processing_ms,processing_fps,status,expected_counts".split(",")
@@ -20,7 +21,7 @@ COUNT_FIELDS = "image_id,class_id,observed_count,expected_count,difference".spli
 
 
 def dump(path: Path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(portable(value), ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 class Journal:

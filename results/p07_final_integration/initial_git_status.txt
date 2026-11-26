@@ -1,0 +1,44 @@
+ M .gitignore
+ M README.md
+ M docs/live_benchmark.md
+ M docs/p07/advice_record.md
+ M p08_run.py
+ M scripts/benchmark_live.py
+ M scripts/train_candidates.py
+ M src/adapters/baseline3.py
+ M src/data/development.py
+ M src/evaluator.py
+ M src/inference/batch.py
+ M src/p06_pipeline.py
+ M src/p07_dashboard.py
+?? docs/dataset_v2.md
+?? models/baseline1_v2_candidate/
+?? models/baseline2_v2_candidate/
+?? models/baseline3_v2_candidate/
+?? results/baseline3_v2_experiment/
+?? results/data_manifests/mechanical_components_v2/
+?? results/dataset_v2_baseline_comparison/
+?? scripts/audit_retraining_readiness.py
+?? scripts/check_dataset_v2.py
+?? scripts/compare_baselines_v2.py
+?? scripts/develop_baseline3_size.py
+?? scripts/develop_caliper_v3.py
+?? scripts/experiment_baseline3_v2.py
+?? scripts/finalize_stage2.py
+?? scripts/prepare_dataset_v2.py
+?? scripts/repair_baseline3_size.py
+?? src/data/dataset_v2.py
+?? src/models/baseline3/candidate.py
+?? src/models/baseline3/geometry_repair.py
+?? src/models/baseline3/metrology.py
+?? src/models/baseline3/size_caliper.py
+?? src/models/baseline3/size_candidate.py
+?? src/models/baseline3/size_repaired.py
+?? src/models/baseline3/vision_caliper.py
+?? task_state.json
+?? tests/test_baseline3_candidate.py
+?? tests/test_baseline3_geometry_repair.py
+?? tests/test_baseline3_metrology.py
+?? tests/test_comparison_preparation.py
+?? tests/test_dataset_v2.py
+?? tests/test_vision_caliper.py

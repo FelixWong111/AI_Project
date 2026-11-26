@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\finalize_stage2.py", line 761, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\finalize_stage2.py", line 743, in main
+    try:globals()[args.phase]();record.update(status='COMPLETED',finished_utc=datetime.now(timezone.utc).isoformat())
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\finalize_stage2.py", line 450, in clean_models
+    run([str(interpreter),str(ROOT/'scripts/verify_models.py'),'--load-models'],'model_loads')
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\finalize_stage2.py", line 448, in run
+    log=work/(name+'.log');command(args,log);history.append(dict(command=args,log=rel(log),exit_code=0))
+                           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\王以乐\Desktop\大三上\ai\Project\scripts\finalize_stage2.py", line 26, in command
+    if r.returncode:raise RuntimeError(f'{args}: exit {r.returncode}; see {log}')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ['C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe', 'C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\verify_models.py', '--load-models']: exit 1; see C:\Users\王以乐\Desktop\大三上\ai\Project\results\p07_final_integration\clean_ml\model_loads.log

@@ -1,0 +1,36 @@
+{
+  "started_at": "2026-11-25T19:24:57.250173+00:00",
+  "pid": 55380,
+  "initialization": {
+    "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "bytes": 5613764,
+    "path": "outputs/baseline3_v2/pretrained/yolo11n.pt",
+    "source": "Official Ultralytics COCO-pretrained YOLO11n; same initialization SHA as historical P06 trainer",
+    "local_mechanical_training": false
+  },
+  "requested_params": {
+    "epochs": 100,
+    "patience": 30,
+    "imgsz": 640,
+    "batch": 8,
+    "seed": 42,
+    "workers": 0,
+    "cache": false,
+    "deterministic": true,
+    "amp": true,
+    "val": true,
+    "save": true,
+    "save_period": 10,
+    "plots": false,
+    "pretrained": true,
+    "optimizer": "auto",
+    "project": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\baseline3_v2_experiment\\training",
+    "name": "run01_csv_logging_retry",
+    "exist_ok": false,
+    "device": 0
+  },
+  "actual_device": 0,
+  "resume": false,
+  "runtime_data_sha256": "0f7c50476bd6875852284d8a417d01df787d871540438634cd31e43579617ff1"
+}

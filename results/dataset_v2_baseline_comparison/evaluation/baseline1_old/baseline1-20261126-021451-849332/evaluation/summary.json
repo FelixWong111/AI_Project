@@ -1,0 +1,105 @@
+{
+  "model_id": "baseline1",
+  "capability": "image_level",
+  "input_cases": 30,
+  "input_scenes": 30,
+  "scored_image_cases": 30,
+  "scored_scenes": 30,
+  "prediction_status_counts": {
+    "FAIL": 5,
+    "PASS": 25
+  },
+  "image_level": {
+    "positive_class": "FAIL",
+    "tp": 4,
+    "fp": 1,
+    "fn": 11,
+    "tn": 14,
+    "fail_support": 15,
+    "pass_support": 15,
+    "precision": 0.8,
+    "recall": 0.26666666666666666,
+    "f1": 0.4,
+    "false_pass": 11,
+    "false_fail": 1
+  },
+  "object_classes": {},
+  "count_vector_exact_rate": null,
+  "count_vector_support": 0,
+  "critical_errors": {
+    "false_pass_with_non_catalogue": 7
+  },
+  "matching": "Same class, score descending, detection_id numeric ascending; highest IoU >= 0.50, object_id lexical tie-break. Unmatched predictions overlapping same-class ignored ground truth at IoU >= 0.50 are neutral.",
+  "exclusions": "REVIEW ground truth and images containing ignored objects are excluded from image and count metrics; REVIEW, ERROR, UNSUPPORTED_COUNTS predictions excluded. Object metrics retain judgeable non-ignored objects in images with ignored objects.",
+  "inputs": {
+    "ground_truth_images": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\evaluation\\stage2\\ground_truth_images.csv",
+    "ground_truth_objects": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\evaluation\\stage2\\ground_truth_objects.csv",
+    "expected_counts": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\data\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+    "predictions_dir": "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\dataset_v2_baseline_comparison\\evaluation\\baseline1_old\\baseline1-20261126-021451-849332\\predictions"
+  },
+  "note": "Latency and independent test validity require separate evidence; zero-denominator metrics are null.",
+  "image_level_details": {
+    "input_cases": 30,
+    "ground_truth_eligible": 30,
+    "completed_eligible": 30,
+    "correct": 18,
+    "wrong_on_completed": 12,
+    "unresolved_eligible": 0,
+    "all_input_correct_fraction": 0.6,
+    "all_eligible_correct_fraction": 0.6,
+    "completed_accuracy": 0.6,
+    "completed_balanced_accuracy": 0.6,
+    "prediction_coverage": 1.0,
+    "eligible_coverage": 1.0,
+    "status_counts": {
+      "FAIL": 5,
+      "PASS": 25
+    },
+    "confusion_matrix": {
+      "positive_class": "FAIL",
+      "tp": 4,
+      "fp": 1,
+      "fn": 11,
+      "tn": 14,
+      "rows_truth_PASS_FAIL": [
+        [
+          14,
+          1
+        ],
+        [
+          11,
+          4
+        ]
+      ]
+    },
+    "fail": {
+      "precision": 0.8,
+      "recall": 0.26666666666666666,
+      "f1": 0.4,
+      "support_all": 15,
+      "support_scored": 15,
+      "recall_all_eligible": 0.26666666666666666
+    },
+    "passed": {
+      "precision": 0.56,
+      "recall": 0.9333333333333333,
+      "f1": 0.7,
+      "support_all": 15,
+      "support_scored": 15,
+      "recall_all_eligible": 0.9333333333333333
+    },
+    "false_pass": {
+      "count": 11,
+      "rate": 0.7333333333333333,
+      "denominator": 15,
+      "denominator_definition": "All eligible true FAIL cases, including unresolved predictions"
+    },
+    "false_fail": {
+      "count": 1,
+      "rate": 0.06666666666666667,
+      "denominator": 15,
+      "denominator_definition": "All eligible true PASS cases, including unresolved predictions"
+    },
+    "note": "Completed accuracy/precision/recall exclude unresolved predictions as in the existing evaluator; all-input correct fraction and coverage retain them explicitly. No REVIEW/ERROR remapping."
+  }
+}

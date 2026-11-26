@@ -1,0 +1,72 @@
+{
+  "scope": "Saved predicted boxes/counts, including REVIEW; does not treat REVIEW as PASS/FAIL or verify physical sizes",
+  "image_count": 360,
+  "prediction_status_counts": {
+    "PASS": 105,
+    "REVIEW": 66,
+    "FAIL": 189
+  },
+  "five_class_vector_exact": 0.9527777777777777,
+  "classes": {
+    "0": {
+      "support": 110,
+      "tp": 109,
+      "fp": 19,
+      "fn": 1,
+      "precision": 0.8515625,
+      "recall": 0.990909090909091,
+      "f1": 0.9159663865546218,
+      "count_mae": 0.05555555555555555
+    },
+    "1": {
+      "support": 325,
+      "tp": 321,
+      "fp": 1,
+      "fn": 4,
+      "precision": 0.9968944099378882,
+      "recall": 0.9876923076923076,
+      "f1": 0.9922720247295209,
+      "count_mae": 0.008333333333333333
+    },
+    "2": {
+      "support": 349,
+      "tp": 337,
+      "fp": 0,
+      "fn": 12,
+      "precision": 1.0,
+      "recall": 0.9656160458452722,
+      "f1": 0.9825072886297376,
+      "count_mae": 0.03333333333333333
+    },
+    "3": {
+      "support": 353,
+      "tp": 349,
+      "fp": 2,
+      "fn": 4,
+      "precision": 0.9943019943019943,
+      "recall": 0.9886685552407932,
+      "f1": 0.9914772727272727,
+      "count_mae": 0.011111111111111112
+    },
+    "4": {
+      "support": 332,
+      "tp": 324,
+      "fp": 9,
+      "fn": 8,
+      "precision": 0.972972972972973,
+      "recall": 0.9759036144578314,
+      "f1": 0.9744360902255639,
+      "count_mae": 0.002777777777777778
+    },
+    "5": {
+      "support": 336,
+      "tp": 336,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count_mae": 0.0
+    }
+  }
+}

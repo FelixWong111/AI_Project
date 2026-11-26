@@ -1,0 +1,20 @@
+{
+  "selected": {
+    "background_path": "data/mechanical_components_v2/yolo/images/train/G01.jpg",
+    "reference_id": "G01.jpg",
+    "capture_geometry_id": "user-confirmed-fixed-new-collection-20261125",
+    "parameters": {
+      "difference_threshold": 40,
+      "minimum_area": 30,
+      "kernel_size": 3,
+      "association_fraction": 0.25,
+      "duplicate_iou": 0.8,
+      "maximum_foreground_fraction": 0.45
+    }
+  },
+  "training_diagnostic_frames": 19,
+  "complete": 7,
+  "complete_fraction": 0.3684210526315789,
+  "heldout_unknown_object_validation": false,
+  "interpretation": "Association completeness on training frames is not proof of arbitrary unknown-object recall"
+}

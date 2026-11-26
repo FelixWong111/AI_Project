@@ -1,0 +1,146 @@
+[
+  {
+    "phase": "select",
+    "pid": 42500,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "select"
+    ],
+    "started_at_utc": "2026-11-26T03:33:48.887349+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:36:28.548417+00:00"
+  },
+  {
+    "phase": "freeze",
+    "pid": 50300,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "freeze"
+    ],
+    "started_at_utc": "2026-11-26T03:40:14.772792+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:40:14.925293+00:00"
+  },
+  {
+    "phase": "regress",
+    "pid": 11912,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "regress"
+    ],
+    "started_at_utc": "2026-11-26T03:40:24.702329+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:42:53.401302+00:00"
+  },
+  {
+    "phase": "benchmark",
+    "pid": 26028,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "benchmark"
+    ],
+    "started_at_utc": "2026-11-26T03:43:35.413007+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:44:13.376225+00:00"
+  },
+  {
+    "phase": "check",
+    "pid": 14784,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "check"
+    ],
+    "started_at_utc": "2026-11-26T03:44:24.909639+00:00",
+    "status": "ERROR",
+    "error": "AssertionError('See software_tests.log')",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\develop_caliper_v3.py\", line 683, in main\n    globals()[phases[phase]]();record.update(status='COMPLETED',finished_at_utc=datetime.now(timezone.utc).isoformat())\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\develop_caliper_v3.py\", line 487, in check\n    tests=load(OUT/'software_tests.json');assert tests['failures']==tests['errors']==0,'See software_tests.log'\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: See software_tests.log\n"
+  },
+  {
+    "phase": "check",
+    "pid": 18460,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "check"
+    ],
+    "started_at_utc": "2026-11-26T03:44:58.190288+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:46:47.647474+00:00"
+  },
+  {
+    "phase": "report",
+    "pid": 33248,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "auto"
+    ],
+    "started_at_utc": "2026-11-26T03:47:38.947514+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:47:40.729395+00:00"
+  },
+  {
+    "phase": "report",
+    "pid": 17104,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "report"
+    ],
+    "started_at_utc": "2026-11-26T03:49:26.744732+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:49:28.528319+00:00"
+  },
+  {
+    "phase": "report",
+    "pid": 36796,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "report"
+    ],
+    "started_at_utc": "2026-11-26T03:50:28.578563+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:50:30.333266+00:00"
+  },
+  {
+    "phase": "archive",
+    "pid": 2784,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "archive"
+    ],
+    "started_at_utc": "2026-11-26T03:50:30.501286+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:50:42.851440+00:00"
+  },
+  {
+    "phase": "report",
+    "pid": 43648,
+    "invocation": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\.venv311\\Scripts\\python.exe",
+      "scripts/develop_caliper_v3.py",
+      "--phase",
+      "report"
+    ],
+    "started_at_utc": "2026-11-26T03:51:34.278765+00:00",
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-26T03:51:37.418368+00:00"
+  }
+]

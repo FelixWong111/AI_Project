@@ -1,0 +1,89 @@
+{
+  "clean_venv": true,
+  "system_site_packages": false,
+  "third_party_installation": false,
+  "saved_prediction_scoring": [
+    {
+      "model": "baseline1",
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "src.evaluator",
+        "--ground-truth-images",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_images.csv",
+        "--ground-truth-objects",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_objects.csv",
+        "--expected-counts",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+        "--predictions-dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline1\\predictions",
+        "--output-dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\baseline1"
+      ],
+      "status": "PASS_METRICS_IDENTICAL"
+    },
+    {
+      "model": "baseline2",
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "src.evaluator",
+        "--ground-truth-images",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_images.csv",
+        "--ground-truth-objects",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_objects.csv",
+        "--expected-counts",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+        "--predictions-dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline2\\predictions",
+        "--output-dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\baseline2"
+      ],
+      "status": "PASS_METRICS_IDENTICAL"
+    },
+    {
+      "model": "baseline3",
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "src.evaluator",
+        "--ground-truth-images",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_images.csv",
+        "--ground-truth-objects",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test\\ground_truth_objects.csv",
+        "--expected-counts",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\configs\\expected_counts_stage2_test.json",
+        "--predictions-dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline3\\predictions",
+        "--output-dir",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\baseline3"
+      ],
+      "status": "PASS_METRICS_IDENTICAL"
+    }
+  ],
+  "hash_verification": {
+    "command": [
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+      "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\scripts\\verify_models.py"
+    ],
+    "status": "PASS_ALL_THREE"
+  },
+  "all_observation_metrics": "PASS",
+  "object_scoring_command": [
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\p08_object_observations.py",
+    "--dataset",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\datasets\\mechanical_components_v2\\public\\stage2_test",
+    "--predictions-dir",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p08_stage2_final\\baseline3\\predictions",
+    "--output",
+    "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_recheck\\object_observations.json"
+  ],
+  "model_prediction_entrypoint": {
+    "status": "NOT_VERIFIED_MISSING_DEPENDENCIES",
+    "exit_code": 1
+  },
+  "formal_model_inference": "NOT_RERUN",
+  "stage3": "NOT_OPENED",
+  "note": "Pure-Python P08 scoring and SHA checks succeed independently; not a clean ML model installation"
+}

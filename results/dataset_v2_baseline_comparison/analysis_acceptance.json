@@ -1,0 +1,49 @@
+{
+  "recomputed_p08_metrics_match": true,
+  "stage2_cases_per_model": {
+    "baseline1_old": 30,
+    "baseline1_new": 30,
+    "baseline2_old": 30,
+    "baseline2_new": 30
+  },
+  "all_stage2_ids_equal": true,
+  "stage3_used": false,
+  "post_test_retraining": false,
+  "post_test_threshold_selection": false,
+  "selection": {
+    "baseline1": "baseline1_new",
+    "baseline2": "baseline2_new"
+  },
+  "paired_cases": {
+    "validation": {
+      "baseline1": {
+        "both_correct": 34,
+        "old_wrong_new_correct": 38,
+        "old_correct_new_wrong": 4,
+        "both_wrong": 4
+      },
+      "baseline2": {
+        "both_correct": 38,
+        "old_wrong_new_correct": 31,
+        "old_correct_new_wrong": 7,
+        "both_wrong": 4
+      }
+    },
+    "stage2": {
+      "baseline1": {
+        "both_correct": 18,
+        "old_wrong_new_correct": 11,
+        "old_correct_new_wrong": 0,
+        "both_wrong": 1
+      },
+      "baseline2": {
+        "both_correct": 18,
+        "old_wrong_new_correct": 8,
+        "old_correct_new_wrong": 2,
+        "both_wrong": 2
+      }
+    }
+  },
+  "live_latency": "NOT_MEASURED",
+  "figures_from_saved_results": true
+}

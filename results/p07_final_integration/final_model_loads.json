@@ -1,0 +1,73 @@
+{
+  "baseline1": {
+    "sha256_verified": true,
+    "files": [
+      "config/model_registry.json",
+      "config/inspection.json",
+      "config/p06_part_specs_candidate.json",
+      "src/models/baseline3/geometry_repair.py",
+      "src/models/baseline3/size_repaired.py",
+      "src/models/baseline3/size_candidate.py",
+      "src/models/baseline3/candidate.py",
+      "models/release/baseline1/baseline1.joblib",
+      "models/release/baseline1/config.json",
+      "models/release/baseline1/freeze.json",
+      "models/release/baseline1/training_record.json"
+    ],
+    "model_config": {
+      "baseline1_config": "models/release/baseline1/config.json",
+      "baseline1_bundle": "models/release/baseline1/baseline1.joblib",
+      "device": "cpu"
+    },
+    "loaded": true,
+    "model_version": "4a3ecbefa90f10a9d953936072c82bc1be8322684273c55c097defaf3a61b924",
+    "is_mock": false
+  },
+  "baseline2": {
+    "sha256_verified": true,
+    "files": [
+      "config/model_registry.json",
+      "config/inspection.json",
+      "config/p06_part_specs_candidate.json",
+      "src/models/baseline3/geometry_repair.py",
+      "src/models/baseline3/size_repaired.py",
+      "src/models/baseline3/size_candidate.py",
+      "src/models/baseline3/candidate.py",
+      "models/release/baseline2/baseline2.json",
+      "models/release/baseline2/resnet18-f37072fd.pth",
+      "models/release/baseline2/training_record.json"
+    ],
+    "model_config": {
+      "baseline2_bundle": "models/release/baseline2",
+      "device": "cpu"
+    },
+    "loaded": true,
+    "model_version": "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+    "is_mock": false
+  },
+  "baseline3": {
+    "sha256_verified": true,
+    "files": [
+      "config/model_registry.json",
+      "config/inspection.json",
+      "config/p06_part_specs_candidate.json",
+      "src/models/baseline3/geometry_repair.py",
+      "src/models/baseline3/size_repaired.py",
+      "src/models/baseline3/size_candidate.py",
+      "src/models/baseline3/candidate.py",
+      "models/release/baseline3/best.pt",
+      "models/release/baseline3/calibration.json",
+      "models/release/baseline3/detector.json",
+      "models/release/baseline3/selection.json",
+      "models/release/baseline3/size.json",
+      "models/release/baseline3/training_record.json"
+    ],
+    "model_config": {
+      "baseline3_mode": "size_repaired_development",
+      "size_candidate_config": "models/release/baseline3/size.json"
+    },
+    "loaded": true,
+    "model_version": "p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2",
+    "is_mock": false
+  }
+}

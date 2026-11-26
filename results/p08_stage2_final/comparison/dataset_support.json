@@ -1,0 +1,56 @@
+{
+  "train": {
+    "images": 360,
+    "scene_ids": 360,
+    "conservative_scene_groups": 354,
+    "labels": {
+      "PASS": 180,
+      "FAIL": 180
+    },
+    "non_catalogue_scenes": 95,
+    "non_ignored_instances": {
+      "5": 336,
+      "3": 353,
+      "4": 332,
+      "2": 349,
+      "1": 325,
+      "0": 110
+    }
+  },
+  "validation": {
+    "images": 80,
+    "scene_ids": 80,
+    "conservative_scene_groups": 80,
+    "labels": {
+      "PASS": 40,
+      "FAIL": 40
+    },
+    "non_catalogue_scenes": 23,
+    "non_ignored_instances": {
+      "3": 78,
+      "1": 72,
+      "4": 73,
+      "5": 74,
+      "2": 77,
+      "0": 25
+    }
+  },
+  "stage2_test": {
+    "images": 30,
+    "scene_ids": 30,
+    "conservative_scene_groups": 30,
+    "labels": {
+      "PASS": 15,
+      "FAIL": 15
+    },
+    "non_catalogue_scenes": 8,
+    "non_ignored_instances": {
+      "5": 28,
+      "1": 27,
+      "4": 28,
+      "3": 28,
+      "2": 29,
+      "0": 9
+    }
+  }
+}

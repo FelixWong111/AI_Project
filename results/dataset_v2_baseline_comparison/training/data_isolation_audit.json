@@ -1,0 +1,24 @@
+{
+  "baseline1": {
+    "train": 360,
+    "validation": 80,
+    "feature_dimension": 1764,
+    "scaler_train_only": true,
+    "cache": "data/mechanical_components_v2/development_cache/features/baseline1-9b69fbc666aed001.npz",
+    "cache_sha256": "489dc31cc9fef6da3e686de4d787e52c9c731e5a56f188a246083e4e67b22418",
+    "manifest_sha256": "378d2f517ff2d7d2f1e477040b2c1cf757e0d88b7aa6a2f6f156ca8fc5574441",
+    "guard_training_rows": 360,
+    "guard_threshold": 88.77291096084205,
+    "guard_sha256": "1ca2dc13cdfc1df19c02acf0c7fd43671f2dcf4dc2be5465ede19a6cb155f5e7",
+    "guard_rule": "Unchanged maximum training leave-one-out nearest distance; no validation/OOD/test threshold selection"
+  },
+  "baseline2": {
+    "train": 360,
+    "validation": 80,
+    "feature_dimension": 512,
+    "scaler_train_only": true,
+    "cache": "data/mechanical_components_v2/development_cache/features/baseline2-231b5ec0110d67a5.npz",
+    "cache_sha256": "46d287fe6bc04522e390d7cfe714e3efe3c9deda91c240af83c97c95bec4aa51",
+    "manifest_sha256": "378d2f517ff2d7d2f1e477040b2c1cf757e0d88b7aa6a2f6f156ca8fc5574441"
+  }
+}

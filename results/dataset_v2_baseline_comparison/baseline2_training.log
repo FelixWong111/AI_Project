@@ -1,0 +1,190 @@
+FEATURES 8/440
+FEATURES 16/440
+FEATURES 24/440
+FEATURES 32/440
+FEATURES 40/440
+FEATURES 48/440
+FEATURES 56/440
+FEATURES 64/440
+FEATURES 72/440
+FEATURES 80/440
+FEATURES 88/440
+FEATURES 96/440
+FEATURES 104/440
+FEATURES 112/440
+FEATURES 120/440
+FEATURES 128/440
+FEATURES 136/440
+FEATURES 144/440
+FEATURES 152/440
+FEATURES 160/440
+FEATURES 168/440
+FEATURES 176/440
+FEATURES 184/440
+FEATURES 192/440
+FEATURES 200/440
+FEATURES 208/440
+FEATURES 216/440
+FEATURES 224/440
+FEATURES 232/440
+FEATURES 240/440
+FEATURES 248/440
+FEATURES 256/440
+FEATURES 264/440
+FEATURES 272/440
+FEATURES 280/440
+FEATURES 288/440
+FEATURES 296/440
+FEATURES 304/440
+FEATURES 312/440
+FEATURES 320/440
+FEATURES 328/440
+FEATURES 336/440
+FEATURES 344/440
+FEATURES 352/440
+FEATURES 360/440
+FEATURES 368/440
+FEATURES 376/440
+FEATURES 384/440
+FEATURES 392/440
+FEATURES 400/440
+FEATURES 408/440
+FEATURES 416/440
+FEATURES 424/440
+FEATURES 432/440
+FEATURES 440/440
+TRIAL baseline2 {'C': 0.1} F1 0.8674698795180723 accuracy 0.8625
+{
+  "model": "baseline2",
+  "version": "a43be66f18066af182e6fc91b51856053e08b7625e75e6be4a853fe3d15990da",
+  "metrics": {
+    "train": {
+      "positive_class": "FAIL",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TP": 180,
+      "FP": 0,
+      "FN": 0,
+      "TN": 180,
+      "false_PASS": 0,
+      "false_FAIL": 0,
+      "confusion_matrix": [
+        [
+          180,
+          0
+        ],
+        [
+          0,
+          180
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 180,
+      "support_FAIL": 180,
+      "misclassified": []
+    },
+    "validation": {
+      "positive_class": "FAIL",
+      "accuracy": 0.8625,
+      "precision": 0.8372093023255814,
+      "recall": 0.9,
+      "f1": 0.8674698795180723,
+      "TP": 36,
+      "FP": 7,
+      "FN": 4,
+      "TN": 33,
+      "false_PASS": 4,
+      "false_FAIL": 7,
+      "confusion_matrix": [
+        [
+          33,
+          7
+        ],
+        [
+          4,
+          36
+        ]
+      ],
+      "matrix_order": [
+        "PASS",
+        "FAIL"
+      ],
+      "support_PASS": 40,
+      "support_FAIL": 40,
+      "misclassified": [
+        {
+          "image_id": "A076.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5131452142708386
+        },
+        {
+          "image_id": "A197.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.5857812225448256
+        },
+        {
+          "image_id": "B39.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.025865513188109257
+        },
+        {
+          "image_id": "B40.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.005186388295055466
+        },
+        {
+          "image_id": "G12.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.3785671997886134
+        },
+        {
+          "image_id": "H018.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.883862568868338
+        },
+        {
+          "image_id": "H020.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.781711435731475
+        },
+        {
+          "image_id": "H021.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.6470990492766402
+        },
+        {
+          "image_id": "H039.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.9497737310776714
+        },
+        {
+          "image_id": "H040.jpg",
+          "true_label": "PASS",
+          "predicted_label": "FAIL",
+          "p_fail": 0.7120791388380567
+        },
+        {
+          "image_id": "H076.jpg",
+          "true_label": "FAIL",
+          "predicted_label": "PASS",
+          "p_fail": 0.4627217192922555
+        }
+      ]
+    }
+  },
+  "seconds": 46.97735870000906
+}

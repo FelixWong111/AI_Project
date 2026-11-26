@@ -1,0 +1,15 @@
+{
+  "original_files_unchanged": true,
+  "original_inventory_unchanged": true,
+  "unique_image_ids": true,
+  "six_class_mapping": true,
+  "scene_groups_disjoint": true,
+  "pixels_disjoint": true,
+  "ground_truth_counts_and_labels": true,
+  "no_specialized_images_in_public_gt": true,
+  "stage2_stage3_disjoint": true,
+  "test_not_in_training_yaml": true,
+  "source_and_yolo_labels_roundtrip": true,
+  "specialized_png_pixels_match_normalized_heic": true,
+  "independent_copy_bytes_match": true
+}

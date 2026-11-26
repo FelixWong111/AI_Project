@@ -1,0 +1,17 @@
+test_dashboard_shows_actual_development_band_and_unvalidated_error (test_baseline3_metrology.MetrologyContracts.test_dashboard_shows_actual_development_band_and_unvalidated_error) ... ok
+test_expected_changes_only_business_decision_and_differences (test_baseline3_metrology.MetrologyContracts.test_expected_changes_only_business_decision_and_differences) ... ok
+test_foreground_does_not_fabricate_unknown_classification (test_baseline3_metrology.MetrologyContracts.test_foreground_does_not_fabricate_unknown_classification) ... ok
+test_genuine_uncertainty_prevents_pass (test_baseline3_metrology.MetrologyContracts.test_genuine_uncertainty_prevents_pass) ... ok
+test_id0_forces_fail_even_when_all_catalogue_counts_match (test_baseline3_metrology.MetrologyContracts.test_id0_forces_fail_even_when_all_catalogue_counts_match) ... ok
+test_measured_dimensions_are_required_for_size_pass (test_baseline3_metrology.MetrologyContracts.test_measured_dimensions_are_required_for_size_pass) ... ok
+test_metric_interval_is_independent_of_arbitrary_ruler_zero (test_baseline3_metrology.MetrologyContracts.test_metric_interval_is_independent_of_arbitrary_ruler_zero) ... ok
+test_controls_have_distinct_hit_regions (test_p07_dashboard.DashboardTests.test_controls_have_distinct_hit_regions) ... ok
+test_missing_models_clear_old_predictions_and_reload_can_recover (test_p07_dashboard.DashboardTests.test_missing_models_clear_old_predictions_and_reload_can_recover)
+STUB_PASS for recovery; real missing-file errors use the actual loader. ... ok
+test_mouse_controls_reach_real_model_loader_and_exports (test_p07_dashboard.DashboardTests.test_mouse_controls_reach_real_model_loader_and_exports) ... ok
+test_status_colors_and_fixed_recording_size (test_p07_dashboard.DashboardTests.test_status_colors_and_fixed_recording_size) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.843s
+
+OK

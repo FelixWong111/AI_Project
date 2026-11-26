@@ -1,13 +1,11 @@
-# 界面操作
+# P07操作
 
-启动：`python app.py --model baseline1`。顶部模型按钮或 1/2/3/4 切换模型，L 重新加载。Baseline1/2 仅支持五类各 1 的固定工单。Baseline3/Final 没有检测权重时显示 ERROR。
+顶部仅Baseline1/2/3，数字1/2/3等效，L重新校验并加载；加载失败ERROR并清旧结果。Final未交付，不在选择器。生产入口不提供Mock后端。
 
-顶部 Camera / Image / Video 选择输入；摄像头编号通过 +/- 或点击编号修改。C/I/V 为对应快捷键，X 关闭输入源。本机用户已确认 DSHOW camera 0 为 Camo；其他电脑应先执行 `python app.py --list-cameras`。
+Camera/C、Image/I、Video/V选源，Close/X关源；本机DSHOW Camera0=Camo，需确认手机真实画面。Start/Pause或空格控制检测；Snapshot/S保存图像、课程CSV及诊断；Record/R保存注释视频；Q退出释放源和worker。
 
-Start/Pause 或空格控制推理。S / Snapshot 保存当前图像、结果 CSV 和运行配置；R / Record 开始或停止 MP4 记录；Q 退出。右侧 Expected 可点击编辑，也可导入课程格式的 expected_counts.json。图像级模型遇到其他合法工单时显示 UNSUPPORTED_COUNTS。
+右侧Expected可点数字输入或+/−；导入JSON按真实image_id匹配。Baseline1/2仅支持五类各1，其他合法工单UNSUPPORTED_COUNTS、标签/分数N/A，恢复各1自动恢复；无框、实际数量和ID0能力。
 
-右侧显示模型版本、PASS/FAIL、分数含义和计数能力。图像级模型的框、观测计数和 ID 0 数量为 N/A，不能把整图 FAIL 解释为定位了陌生件。模型或输入缺失时明确报错，不回退 Mock。
+Baseline3重判不再跑YOLO，框/类别/分数/观测数量不变。确认ID0必须FAIL并警告；尺寸不可信保持非PASS及原因。Sizes / Reasons或D显示测量、实际范围、provisional标记和原因；[、]翻对象。照片尺度不用于其他Camo机位/镜头/变焦。
 
-本轮仅用允许的验证图进行界面检查，正式测试图片不用于演示。相机延迟需要至少 20 个新帧另行采集，无头图片验收不能充当相机实测。
-
-当前已完成真实后端和无头 app 验收、控件回调自动测试、渲染截图检查；桌面自动化没有找到本轮启动的可操作窗口，因此人工点击验收和实时摄像头验收仍待完成。
+分数含义明确：分类器概率未校准，对象置信度不是整图PASS概率。当前完整系统NOT_READY，人工标定与现场验收见p07/final_handoff.md。

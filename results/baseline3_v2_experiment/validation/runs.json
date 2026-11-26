@@ -1,0 +1,11 @@
+{
+  "old_raw": "results/baseline3_v2_experiment/validation/old_raw/baseline3-20261126-042814-833314",
+  "new_c0.2_n0.5": "results/baseline3_v2_experiment/validation/new_c0.2_n0.5/baseline3-20261126-042831-637259",
+  "new_c0.2_n0.7": "results/baseline3_v2_experiment/validation/new_c0.2_n0.7/baseline3-20261126-042847-880650",
+  "new_c0.25_n0.5": "results/baseline3_v2_experiment/validation/new_c0.25_n0.5/baseline3-20261126-042903-932336",
+  "new_c0.25_n0.7": "results/baseline3_v2_experiment/validation/new_c0.25_n0.7/baseline3-20261126-042920-270335",
+  "new_c0.35_n0.5": "results/baseline3_v2_experiment/validation/new_c0.35_n0.5/baseline3-20261126-042936-521860",
+  "new_c0.35_n0.7": "results/baseline3_v2_experiment/validation/new_c0.35_n0.7/baseline3-20261126-042953-140489",
+  "old_full": "results/baseline3_v2_experiment/validation/old_full/baseline3-20261126-043009-365460",
+  "new_full": "results/baseline3_v2_experiment/validation/new_full/baseline3-20261126-043039-741041"
+}

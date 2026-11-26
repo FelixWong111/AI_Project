@@ -1,0 +1,8 @@
+{
+  "source_images_sha256_verified": 700,
+  "original_annotations_sha256_verified": 470,
+  "mapping": "datasets/mechanical_components_v2/manifests/provenance.csv",
+  "source_reads_only": true,
+  "stage3_images_excluded": true,
+  "dimension_and_ruler_conversion": "HEIC source and PNG derived have separate SHA; no claim of identical file encoding"
+}

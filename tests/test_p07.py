@@ -86,7 +86,7 @@ class MockIntegrationTests(unittest.TestCase):
                 self.backend.infer(invalid, ONES)
 
     def test_real_never_falls_back(self):
-        with self.assertRaisesRegex(RuntimeError, "no MOCK fallback"):
+        with self.assertRaisesRegex(RuntimeError, "final NOT_READY"):
             load_backend("real", "final", CONFIG)
 
     def test_camera_selection_matches_name_and_backend(self):

@@ -1,0 +1,2 @@
+frame_id,source,mode,model,model_version,width,height,inference_ms,processing_ms,processing_fps,status,expected_counts
+1,image:C:\Users\王以乐\Desktop\大三上\ai\Project\datasets\mechanical_components_v2\public\train\images\A001.jpg,real_headless,baseline3,p07-v2-yolo11n-standard-trial01-1c16259c7b18-size-dev-v1-b6dddfa931-geometry-repair-v2,3024,4032,762.3126999824308,792.7432000287808,0.0,PASS,"{""1"": 1, ""2"": 1, ""3"": 1, ""4"": 1, ""5"": 1}"

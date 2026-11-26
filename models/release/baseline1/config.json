@@ -1,0 +1,107 @@
+{
+  "model_id": "baseline1",
+  "method": "HOG handcrafted features + scikit-learn MLP (image-level PASS/FAIL classifier)",
+  "task_id": "SW-01",
+  "owner": "P04",
+  "stage": "Stage 2 baseline",
+  "output_capability": "image_level",
+  "description": "Baseline1 is an image-level baseline. It judges one whole image as PASS/FAIL under a single fixed expected-count vector. It does NOT output bounding boxes, per-class counts or non-catalogue boxes. Object-level outputs are exempt for this image-only baseline.",
+  "class_catalogue": [
+    {
+      "class_id": 0,
+      "class_name": "non_catalogue",
+      "size": "type/spec not in catalogue (rejection label, not a sixth target class)"
+    },
+    {
+      "class_id": 1,
+      "class_name": "long_screw",
+      "size": "M4 x 25"
+    },
+    {
+      "class_id": 2,
+      "class_name": "thick_screw",
+      "size": "M5 x 10"
+    },
+    {
+      "class_id": 3,
+      "class_name": "thin_screw",
+      "size": "M4 x 10"
+    },
+    {
+      "class_id": 4,
+      "class_name": "hex_nut",
+      "size": "M4"
+    },
+    {
+      "class_id": 5,
+      "class_name": "flat_washer",
+      "size": "M5"
+    }
+  ],
+  "supported_fixed_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "supported_counts_note": "Fixed reference_counts; audited object counts and reference_label_all_one.",
+  "image_size": [
+    128,
+    128
+  ],
+  "preprocessing": {
+    "color": "BGR -> grayscale",
+    "resize": "stretch to image_size, aspect ratio not preserved",
+    "denoise": "none",
+    "normalization": "HOG transform_sqrt handles gradient magnitude normalization"
+  },
+  "hog": {
+    "orientations": 9,
+    "pixels_per_cell": [
+      16,
+      16
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ],
+    "block_norm": "L2-Hys",
+    "transform_sqrt": true,
+    "channel_axis": null
+  },
+  "mlp": {
+    "hidden_layer_sizes": [
+      32
+    ],
+    "activation": "relu",
+    "solver": "adam",
+    "alpha": 0.01,
+    "learning_rate_init": 0.001,
+    "max_iter": 1000,
+    "early_stopping": false,
+    "validation_fraction": 0.1,
+    "n_iter_no_change": 30,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "decision": {
+    "score_threshold": 0.5,
+    "score_type": "prob",
+    "score_convention": "prediction_score is the MLP softmax probability of the predicted class (score_type=prob). It is an uncalibrated model probability; calibration is not claimed.",
+    "score_type_enum": "prob | logit | none | empty"
+  },
+  "rejection": {
+    "supported": false,
+    "note": "Image-level baseline1 does not localize or reject non-catalogue objects. ID 0 localisation/rejection is provided by the object-capable baseline3/final."
+  },
+  "size_tolerance": "N/A for image-level baseline; size verification belongs to baseline3/final (P06) and rig calibration (P01).",
+  "calibration": "N/A; scale/calibration procedure belongs to P01/P06.",
+  "freeze": {
+    "frozen": false,
+    "frozen_at": null,
+    "bundle_file": "models/baseline1_v2_candidate/baseline1.joblib",
+    "config_checksum": null,
+    "note": "Freeze checkpoint, preprocessing, thresholds, class mapping and decision rule before Stage 3; save version/checksum and prediction files."
+  }
+}

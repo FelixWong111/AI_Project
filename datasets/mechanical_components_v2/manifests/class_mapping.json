@@ -1,0 +1,39 @@
+{
+  "official_to_name": {
+    "0": "non_catalogue",
+    "1": "long_screw",
+    "2": "thick_screw",
+    "3": "thin_screw",
+    "4": "hex_nut",
+    "5": "flat_washer"
+  },
+  "official_to_yolo": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5
+  },
+  "yolo_to_official": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5
+  },
+  "source": "config/baseline3.json and frozen six-class P06 checkpoint",
+  "nominal_specifications": {
+    "1": "M4×25",
+    "2": "M5×10",
+    "3": "M4×10",
+    "4": "M4",
+    "5": "M5"
+  },
+  "non_catalogue_specifications": [
+    "M4×40 screw",
+    "M4 small washer",
+    "M6 cap nut"
+  ]
+}

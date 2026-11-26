@@ -1,0 +1,10 @@
+train: ../public/train/images
+val: ../public/validation/images
+test: ../public/stage2_test/images
+names:
+  '0': non_catalogue
+  '1': long_screw
+  '2': thick_screw
+  '3': thin_screw
+  '4': hex_nut
+  '5': flat_washer

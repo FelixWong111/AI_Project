@@ -1,0 +1,52 @@
+{
+  "status": "INSTALLED_PIP_CHECK_PASS",
+  "venv": "outputs/final_integration/clean_env",
+  "system_site_packages": false,
+  "previous_attempts": [
+    "clean_ml_install_attempt1.json",
+    "clean_ml_install_attempt2.json"
+  ],
+  "installed_cuda_wheels": "clean_downloaded_wheels.json",
+  "mirror_documentation": "https://mirrors.tuna.tsinghua.edu.cn/help/pypi/",
+  "no_reinstall_or_upgrade": true,
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt",
+        "--find-links",
+        "outputs/final_integration/clean_mirror_wheels",
+        "--index-url",
+        "https://pypi.tuna.tsinghua.edu.cn/simple",
+        "--timeout",
+        "15",
+        "--retries",
+        "0",
+        "--disable-pip-version-check",
+        "--report",
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\results\\p07_final_integration\\clean_install_report.json"
+      ],
+      "log": "results/p07_final_integration/clean_ml_install_final_1.log",
+      "start_time": 1795673509.0343492,
+      "exit_code": 0,
+      "elapsed_seconds": 225.21246552467346
+    },
+    {
+      "command": [
+        "C:\\Users\\王以乐\\Desktop\\大三上\\ai\\Project\\outputs\\final_integration\\clean_env\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "log": "results/p07_final_integration/clean_ml_install_final_2.log",
+      "start_time": 1795673734.2468147,
+      "exit_code": 0,
+      "elapsed_seconds": 1.0021429061889648
+    }
+  ],
+  "download_note": "pip did not prioritize the existing NumPy wheel from --find-links and downloaded it once again; already installed CUDA/Pillow were reused; no subsequent install retry"
+}

@@ -1,0 +1,34 @@
+{
+  "gui_batch": [
+    {
+      "image_id": "A001.jpg",
+      "source": "Train",
+      "status": "PASS",
+      "gui_batch_equal": true,
+      "rendered": true,
+      "rejudge_preserves_boxes_classes_counts_dimensions": true
+    },
+    {
+      "image_id": "A200.jpg",
+      "source": "Train",
+      "status": "FAIL",
+      "gui_batch_equal": true,
+      "rendered": true,
+      "rejudge_preserves_boxes_classes_counts_dimensions": true
+    },
+    {
+      "image_id": "A004.jpg",
+      "source": "Train",
+      "status": "REVIEW",
+      "gui_batch_equal": true,
+      "rendered": true,
+      "rejudge_preserves_boxes_classes_counts_dimensions": true
+    }
+  ],
+  "video_status": "REVIEW",
+  "video_measurement_calls": 5,
+  "video_via": "FrameProvider -> InferenceWorker -> same full real backend",
+  "camera_resolution_guard": true,
+  "real_camera": "NOT_RUN: incompatible physical scale must be calibrated first",
+  "p08_exports": "Train360 + reused Val80 evaluated by existing P08 evaluator"
+}

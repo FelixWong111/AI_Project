@@ -1,0 +1,29 @@
+{
+  "declared_before_validation_utc": "2026-11-25T19:48:57.127522+00:00",
+  "training_experiments_max": 2,
+  "confidence_grid": [
+    0.2,
+    0.25,
+    0.35
+  ],
+  "nms_iou_grid": [
+    0.5,
+    0.7
+  ],
+  "admission": {
+    "classification_coverage_min": 0.9,
+    "recall_each_image_class_min": 0.5
+  },
+  "admission_applies_to": "old and new raw count decisions equally; full size-gated outputs remain separate and physically blocked",
+  "ordering": [
+    "False PASS ascending",
+    "FAIL recall descending",
+    "FAIL F1 descending",
+    "False FAIL ascending",
+    "ID0 recall descending",
+    "five-normal-count-vector exact descending",
+    "Accuracy descending"
+  ],
+  "justification": "Avoid choosing all-FAIL or mostly one-class solutions just to reduce False PASS; minima are model-selection safeguards, not modified inference thresholds or course performance claims",
+  "test_used_to_define_protocol": false
+}

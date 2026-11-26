@@ -1,0 +1,11 @@
+{
+  "status": "CANDIDATE_NOT_READY",
+  "frozen": false,
+  "formal_training_allowed": false,
+  "blockers": [
+    "Human visual annotation sign-off scope absent",
+    "Review residual near-duplicate candidates before sealing",
+    "Confirm no prior unrecorded training/tuning use before sealing Stage 3"
+  ],
+  "formal_test": "NOT_RUN"
+}

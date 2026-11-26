@@ -1,0 +1,69 @@
+{
+  "cwd": ".",
+  "interpreter": ".venv311/Scripts/python.exe",
+  "git_commit": "f6307e85117391b59ad08da086518a33e6317d23",
+  "commands": [
+    [
+      "python",
+      "scripts/prepare_dataset_v2.py"
+    ],
+    [
+      "python",
+      "scripts/prepare_dataset_v2.py",
+      "--refresh-candidate"
+    ],
+    [
+      "python",
+      "scripts/check_dataset_v2.py"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.train_baseline1",
+      "--dataset-config",
+      "data/mechanical_components_v2/configs/training.json",
+      "--prepare-only",
+      "--audit-candidate"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.train_baseline2",
+      "--dataset-config",
+      "data/mechanical_components_v2/configs/training.json",
+      "--prepare-only",
+      "--audit-candidate"
+    ],
+    [
+      "python",
+      "p08_run.py",
+      "--evaluation-config",
+      "data/mechanical_components_v2/configs/stage2_evaluation.json",
+      "--check-data-only"
+    ],
+    [
+      "python",
+      "p08_run.py",
+      "--evaluation-config",
+      "data/mechanical_components_v2/configs/stage3_evaluation.json",
+      "--check-data-only"
+    ],
+    [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  ],
+  "results": "Final attempts passed; see acceptance JSON and final logs",
+  "training": "NOT_RUN",
+  "formal_test": "NOT_RUN",
+  "development_corrections": [
+    "Use unittest discovery to avoid external tests package",
+    "Use workspace-local Ultralytics/font cache under sandbox",
+    "Serialize derived-file writes before final validation; initial overlapping read attempt rejected, final full validation passed"
+  ]
+}
